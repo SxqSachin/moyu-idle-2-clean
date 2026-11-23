@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "fishing_waters": [
+    {
+      "id": "sunmere_shallows",
+      "order": 1,
+      "requiredFishingLevel": 1,
+      "names": {
+        "zh-CN": "晴湾浅滩",
+        "zh-TW": "晴灣淺灘",
+        "en-US": "Sunmere Shallows",
+        "ja": "陽だまりの浅瀬",
+        "ko": "햇살 얕은만",
+        "ru": "Солнечная отмель"
+      },
+      "descriptions": {
+        "zh-CN": "芦苇、睡莲和缓坡浅水组成的暖水湾。",
+        "zh-TW": "蘆葦、睡蓮和緩坡淺水組成的暖水灣。",
+        "en-US": "A warm bay of reeds, lilies, and gently sloping shallows.",
+        "ja": "葦と睡蓮が広がる、穏やかな暖水の入り江。",
+        "ko": "갈대와 수련이 어우러진 완만한 온수 만입니다.",
+        "ru": "Теплый залив с камышом, кувшинками и пологим мелководьем."
+      },
+      "baseTemperatureC": 22.5,
+      "waterKind": "warm_stillwater"
+    },
+    {
+      "id": "willowrun_valley",
+      "order": 2,
+      "requiredFishingLevel": 15,
+      "names": {
+        "zh-CN": "柳溪河谷",
+        "zh-TW": "柳溪河谷",
+        "en-US": "Willowrun Valley",
+        "ja": "柳瀬の渓谷",
+        "ko": "버들내 계곡",
+        "ru": "Ивовая долина"
+      },
+      "descriptions": {
+        "zh-CN": "清流穿过砾石滩、深潭和倒木岸。",
+        "zh-TW": "清流穿過礫石灘、深潭和倒木岸。",
+        "en-US": "A clear river winding past gravel runs, deep pools, and fallen timber.",
+        "ja": "瀬、深み、倒木の岸を縫う澄んだ川。",
+        "ko": "자갈 여울과 깊은 소, 쓰러진 나무를 지나는 맑은 강입니다.",
+        "ru": "Чистая река с галечными перекатами, омутами и затопленными деревьями."
+      },
+      "baseTemperatureC": 15.5,
+      "waterKind": "temperate_river"
+    },
+    {
+      "id": "frostglass_lake",
+      "order": 3,
+      "requiredFishingLevel": 35,
+      "names": {
+        "zh-CN": "霜镜深湖",
+        "zh-TW": "霜鏡深湖",
+        "en-US": "Frostglass Lake",
+        "ja": "霜鏡の深湖",
+        "ko": "서리거울 깊은호수",
+        "ru": "Озеро Морозное Зеркало"
+      },
+      "descriptions": {
+        "zh-CN": "雪线下的寒冷深湖，陡岸与暗色水层藏着大鱼。",
+        "zh-TW": "雪線下的寒冷深湖，陡岸與暗色水層藏著大魚。",
+        "en-US": "A cold, steep-sided lake where large fish hold in dark water below the snowline.",
+        "ja": "雪線の下、暗い深場に大魚が潜む急深の湖。",
+        "ko": "설선 아래 어두운 수심에 큰 물고기가 머무는 차가운 호수입니다.",
+        "ru": "Холодное глубокое озеро под снежной линией, где крупная рыба держится в темной воде."
+      },
+      "baseTemperatureC": 7.5,
+      "waterKind": "cold_deep_lake"
+    }
+  ]
+}

@@ -1,0 +1,3579 @@
+{
+  "version": 1,
+  "affix_definitions": [
+    {
+      "id": "strength",
+      "nameKey": "affix.strength.name",
+      "descKey": "affix.strength.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "strength": {
+              "min": 2,
+              "max": 5
+            }
+          },
+          "rare": {
+            "strength": {
+              "min": 5,
+              "max": 9
+            }
+          },
+          "epic": {
+            "strength": {
+              "min": 9,
+              "max": 12
+            }
+          },
+          "legendary": {
+            "strength": {
+              "min": 12,
+              "max": 20
+            }
+          }
+        }
+      },
+      "valuePrecision": 0,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "dexterity",
+      "nameKey": "affix.dexterity.name",
+      "descKey": "affix.dexterity.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "dexterity": {
+              "min": 2,
+              "max": 5
+            }
+          },
+          "rare": {
+            "dexterity": {
+              "min": 5,
+              "max": 9
+            }
+          },
+          "epic": {
+            "dexterity": {
+              "min": 9,
+              "max": 12
+            }
+          },
+          "legendary": {
+            "dexterity": {
+              "min": 12,
+              "max": 20
+            }
+          }
+        }
+      },
+      "valuePrecision": 0,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "intelligence",
+      "nameKey": "affix.intelligence.name",
+      "descKey": "affix.intelligence.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "intelligence": {
+              "min": 2,
+              "max": 5
+            }
+          },
+          "rare": {
+            "intelligence": {
+              "min": 5,
+              "max": 9
+            }
+          },
+          "epic": {
+            "intelligence": {
+              "min": 9,
+              "max": 12
+            }
+          },
+          "legendary": {
+            "intelligence": {
+              "min": 12,
+              "max": 20
+            }
+          }
+        }
+      },
+      "valuePrecision": 0,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "stamina",
+      "nameKey": "affix.stamina.name",
+      "descKey": "affix.stamina.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "stamina": {
+              "min": 2,
+              "max": 5
+            }
+          },
+          "rare": {
+            "stamina": {
+              "min": 5,
+              "max": 9
+            }
+          },
+          "epic": {
+            "stamina": {
+              "min": 9,
+              "max": 12
+            }
+          },
+          "legendary": {
+            "stamina": {
+              "min": 12,
+              "max": 20
+            }
+          }
+        }
+      },
+      "valuePrecision": 0,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "hp",
+      "nameKey": "affix.hp.name",
+      "descKey": "affix.hp.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "hp": {
+              "min": 20,
+              "max": 40
+            }
+          },
+          "rare": {
+            "hp": {
+              "min": 40,
+              "max": 80
+            }
+          },
+          "epic": {
+            "hp": {
+              "min": 80,
+              "max": 160
+            }
+          },
+          "legendary": {
+            "hp": {
+              "min": 160,
+              "max": 300
+            }
+          }
+        }
+      },
+      "valuePrecision": 0,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "hp_regen",
+      "nameKey": "affix.hp_regen.name",
+      "descKey": "affix.hp_regen.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {},
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": false,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "mp",
+      "nameKey": "affix.mp.name",
+      "descKey": "affix.mp.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "mp": {
+              "min": 20,
+              "max": 30
+            }
+          },
+          "rare": {
+            "mp": {
+              "min": 30,
+              "max": 60
+            }
+          },
+          "epic": {
+            "mp": {
+              "min": 60,
+              "max": 120
+            }
+          },
+          "legendary": {
+            "mp": {
+              "min": 120,
+              "max": 200
+            }
+          }
+        }
+      },
+      "valuePrecision": 0,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "mp_regen",
+      "nameKey": "affix.mp_regen.name",
+      "descKey": "affix.mp_regen.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {},
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": false,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "speed",
+      "nameKey": "affix.speed.name",
+      "descKey": "affix.speed.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "speed": {
+              "min": 5,
+              "max": 10
+            }
+          },
+          "rare": {
+            "speed": {
+              "min": 10,
+              "max": 20
+            }
+          },
+          "epic": {
+            "speed": {
+              "min": 20,
+              "max": 40
+            }
+          },
+          "legendary": {
+            "speed": {
+              "min": 40,
+              "max": 60
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "physics_damage_amplification",
+      "nameKey": "affix.physics_damage_amplification.name",
+      "descKey": "affix.physics_damage_amplification.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "physics_damage_amplification": {
+              "min": 0.02,
+              "max": 0.03
+            }
+          },
+          "rare": {
+            "physics_damage_amplification": {
+              "min": 0.03,
+              "max": 0.05
+            }
+          },
+          "epic": {
+            "physics_damage_amplification": {
+              "min": 0.05,
+              "max": 0.08
+            }
+          },
+          "legendary": {
+            "physics_damage_amplification": {
+              "min": 0.08,
+              "max": 0.15
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "physics_damage_resist",
+      "nameKey": "affix.physics_damage_resist.name",
+      "descKey": "affix.physics_damage_resist.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "physics_damage_resist": {
+              "min": 0.02,
+              "max": 0.03
+            }
+          },
+          "rare": {
+            "physics_damage_resist": {
+              "min": 0.03,
+              "max": 0.05
+            }
+          },
+          "epic": {
+            "physics_damage_resist": {
+              "min": 0.05,
+              "max": 0.08
+            }
+          },
+          "legendary": {
+            "physics_damage_resist": {
+              "min": 0.08,
+              "max": 0.15
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 4,
+      "disabled": false
+    },
+    {
+      "id": "physics_flat_defense_penetration",
+      "nameKey": "affix.physics_flat_defense_penetration.name",
+      "descKey": "affix.physics_flat_defense_penetration.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "physics_flat_defense_penetration": {
+              "min": 4,
+              "max": 8
+            }
+          },
+          "rare": {
+            "physics_flat_defense_penetration": {
+              "min": 8,
+              "max": 12
+            }
+          },
+          "epic": {
+            "physics_flat_defense_penetration": {
+              "min": 12,
+              "max": 16
+            }
+          },
+          "legendary": {
+            "physics_flat_defense_penetration": {
+              "min": 16,
+              "max": 20
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "physics_percent_defense_penetration",
+      "nameKey": "affix.physics_percent_defense_penetration.name",
+      "descKey": "affix.physics_percent_defense_penetration.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {},
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": false,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "magical_damage_amplification",
+      "nameKey": "affix.magical_damage_amplification.name",
+      "descKey": "affix.magical_damage_amplification.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "magical_damage_amplification": {
+              "min": 0.02,
+              "max": 0.03
+            }
+          },
+          "rare": {
+            "magical_damage_amplification": {
+              "min": 0.03,
+              "max": 0.05
+            }
+          },
+          "epic": {
+            "magical_damage_amplification": {
+              "min": 0.05,
+              "max": 0.08
+            }
+          },
+          "legendary": {
+            "magical_damage_amplification": {
+              "min": 0.08,
+              "max": 0.15
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "magical_damage_resist",
+      "nameKey": "affix.magical_damage_resist.name",
+      "descKey": "affix.magical_damage_resist.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "magical_damage_resist": {
+              "min": 0.02,
+              "max": 0.03
+            }
+          },
+          "rare": {
+            "magical_damage_resist": {
+              "min": 0.03,
+              "max": 0.05
+            }
+          },
+          "epic": {
+            "magical_damage_resist": {
+              "min": 0.05,
+              "max": 0.08
+            }
+          },
+          "legendary": {
+            "magical_damage_resist": {
+              "min": 0.08,
+              "max": 0.15
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 4,
+      "disabled": false
+    },
+    {
+      "id": "magicial_flat_defense_penetration",
+      "nameKey": "affix.magicial_flat_defense_penetration.name",
+      "descKey": "affix.magicial_flat_defense_penetration.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "magical_flat_defense_penetration": {
+              "min": 4,
+              "max": 8
+            }
+          },
+          "rare": {
+            "magical_flat_defense_penetration": {
+              "min": 8,
+              "max": 12
+            }
+          },
+          "epic": {
+            "magical_flat_defense_penetration": {
+              "min": 12,
+              "max": 16
+            }
+          },
+          "legendary": {
+            "magical_flat_defense_penetration": {
+              "min": 16,
+              "max": 20
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "magicial_percent_defense_penetration",
+      "nameKey": "affix.magicial_percent_defense_penetration.name",
+      "descKey": "affix.magicial_percent_defense_penetration.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {},
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": false,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "physics_damage",
+      "nameKey": "affix.physics_damage.name",
+      "descKey": "affix.physics_damage.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "physics_damage": {
+              "min": 4,
+              "max": 8
+            }
+          },
+          "rare": {
+            "physics_damage": {
+              "min": 8,
+              "max": 12
+            }
+          },
+          "epic": {
+            "physics_damage": {
+              "min": 12,
+              "max": 16
+            }
+          },
+          "legendary": {
+            "physics_damage": {
+              "min": 16,
+              "max": 20
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "physics_defence",
+      "nameKey": "affix.physics_defence.name",
+      "descKey": "affix.physics_defence.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "physics_defence": {
+              "min": 4,
+              "max": 8
+            }
+          },
+          "rare": {
+            "physics_defence": {
+              "min": 8,
+              "max": 12
+            }
+          },
+          "epic": {
+            "physics_defence": {
+              "min": 12,
+              "max": 16
+            }
+          },
+          "legendary": {
+            "physics_defence": {
+              "min": 16,
+              "max": 20
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "magical_damage",
+      "nameKey": "affix.magical_damage.name",
+      "descKey": "affix.magical_damage.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "magical_damage": {
+              "min": 4,
+              "max": 8
+            }
+          },
+          "rare": {
+            "magical_damage": {
+              "min": 8,
+              "max": 12
+            }
+          },
+          "epic": {
+            "magical_damage": {
+              "min": 12,
+              "max": 16
+            }
+          },
+          "legendary": {
+            "magical_damage": {
+              "min": 16,
+              "max": 20
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "magical_defence",
+      "nameKey": "affix.magical_defence.name",
+      "descKey": "affix.magical_defence.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "magical_defence": {
+              "min": 4,
+              "max": 8
+            }
+          },
+          "rare": {
+            "magical_defence": {
+              "min": 8,
+              "max": 12
+            }
+          },
+          "epic": {
+            "magical_defence": {
+              "min": 12,
+              "max": 16
+            }
+          },
+          "legendary": {
+            "magical_defence": {
+              "min": 16,
+              "max": 20
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "crit_chance",
+      "nameKey": "affix.crit_chance.name",
+      "descKey": "affix.crit_chance.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "crit_chance": {
+              "min": 0.05,
+              "max": 0.08
+            }
+          },
+          "rare": {
+            "crit_chance": {
+              "min": 0.08,
+              "max": 0.12
+            }
+          },
+          "epic": {
+            "crit_chance": {
+              "min": 0.12,
+              "max": 0.16
+            }
+          },
+          "legendary": {
+            "crit_chance": {
+              "min": 0.16,
+              "max": 0.2
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "crit_damage",
+      "nameKey": "affix.crit_damage.name",
+      "descKey": "affix.crit_damage.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "crit_damage": {
+              "min": 0.05,
+              "max": 0.08
+            }
+          },
+          "rare": {
+            "crit_damage": {
+              "min": 0.08,
+              "max": 0.12
+            }
+          },
+          "epic": {
+            "crit_damage": {
+              "min": 0.12,
+              "max": 0.16
+            }
+          },
+          "legendary": {
+            "crit_damage": {
+              "min": 0.16,
+              "max": 0.2
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "farming_animal_speed_minor",
+      "nameKey": "affix.farming_animal_speed_minor.name",
+      "descKey": "affix.farming_animal_speed_minor.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "farming_animal_speed": {
+              "min": 0.02,
+              "max": 0.04
+            }
+          },
+          "rare": {
+            "farming_animal_speed": {
+              "min": 0.04,
+              "max": 0.06
+            }
+          },
+          "epic": {
+            "farming_animal_speed": {
+              "min": 0.06,
+              "max": 0.08
+            }
+          },
+          "legendary": {
+            "farming_animal_speed": {
+              "min": 0.08,
+              "max": 0.12
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "work",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "mining_speed_minor",
+      "nameKey": "affix.mining_speed_minor.name",
+      "descKey": "affix.mining_speed_minor.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "mining_speed": {
+              "min": 0.02,
+              "max": 0.04
+            }
+          },
+          "rare": {
+            "mining_speed": {
+              "min": 0.04,
+              "max": 0.06
+            }
+          },
+          "epic": {
+            "mining_speed": {
+              "min": 0.06,
+              "max": 0.08
+            }
+          },
+          "legendary": {
+            "mining_speed": {
+              "min": 0.08,
+              "max": 0.12
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "work",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "crafting_speed_minor",
+      "nameKey": "affix.crafting_speed_minor.name",
+      "descKey": "affix.crafting_speed_minor.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "crafting_speed": {
+              "min": 0.02,
+              "max": 0.04
+            }
+          },
+          "rare": {
+            "crafting_speed": {
+              "min": 0.04,
+              "max": 0.06
+            }
+          },
+          "epic": {
+            "crafting_speed": {
+              "min": 0.06,
+              "max": 0.08
+            }
+          },
+          "legendary": {
+            "crafting_speed": {
+              "min": 0.08,
+              "max": 0.12
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "work",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "collecting_speed_minor",
+      "nameKey": "affix.collecting_speed_minor.name",
+      "descKey": "affix.collecting_speed_minor.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "collecting_speed": {
+              "min": 0.02,
+              "max": 0.04
+            }
+          },
+          "rare": {
+            "collecting_speed": {
+              "min": 0.04,
+              "max": 0.06
+            }
+          },
+          "epic": {
+            "collecting_speed": {
+              "min": 0.06,
+              "max": 0.08
+            }
+          },
+          "legendary": {
+            "collecting_speed": {
+              "min": 0.08,
+              "max": 0.12
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "work",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "sewing_speed_minor",
+      "nameKey": "affix.sewing_speed_minor.name",
+      "descKey": "affix.sewing_speed_minor.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "sewing_speed": {
+              "min": 0.02,
+              "max": 0.04
+            }
+          },
+          "rare": {
+            "sewing_speed": {
+              "min": 0.04,
+              "max": 0.06
+            }
+          },
+          "epic": {
+            "sewing_speed": {
+              "min": 0.06,
+              "max": 0.08
+            }
+          },
+          "legendary": {
+            "sewing_speed": {
+              "min": 0.08,
+              "max": 0.12
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "work",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "forging_speed_minor",
+      "nameKey": "affix.forging_speed_minor.name",
+      "descKey": "affix.forging_speed_minor.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "forging_speed": {
+              "min": 0.02,
+              "max": 0.04
+            }
+          },
+          "rare": {
+            "forging_speed": {
+              "min": 0.04,
+              "max": 0.06
+            }
+          },
+          "epic": {
+            "forging_speed": {
+              "min": 0.06,
+              "max": 0.08
+            }
+          },
+          "legendary": {
+            "forging_speed": {
+              "min": 0.08,
+              "max": 0.12
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "work",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "enhancement_success_rate_minor",
+      "nameKey": "affix.enhancement_success_rate_minor.name",
+      "descKey": "affix.enhancement_success_rate_minor.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "enhancement_success_rate": {
+              "min": 0.005,
+              "max": 0.01
+            }
+          },
+          "rare": {
+            "enhancement_success_rate": {
+              "min": 0.01,
+              "max": 0.02
+            }
+          },
+          "epic": {
+            "enhancement_success_rate": {
+              "min": 0.02,
+              "max": 0.03
+            }
+          },
+          "legendary": {
+            "enhancement_success_rate": {
+              "min": 0.03,
+              "max": 0.05
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "work",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 8,
+      "disabled": false
+    },
+    {
+      "id": "battle_taunt_start",
+      "nameKey": "affix.battle_taunt_start.name",
+      "descKey": "affix.battle_taunt_start.desc",
+      "effectType": "battle_trigger",
+      "effectParams": {
+        "battleHooks": [
+          {
+            "trigger": "on_battle_start",
+            "priority": 0,
+            "conditions": [],
+            "effects": [
+              {
+                "kind": "add_buff",
+                "buffId": "taunt",
+                "durationTurns": 2,
+                "targetMode": "self"
+              }
+            ]
+          }
+        ]
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "battle_taunt_start_2",
+      "nameKey": "affix.battle_taunt_start_2.name",
+      "descKey": "affix.battle_taunt_start_2.desc",
+      "effectType": "battle_trigger",
+      "effectParams": {
+        "battleHooks": [
+          {
+            "trigger": "on_battle_start",
+            "priority": 0,
+            "conditions": [],
+            "effects": [
+              {
+                "kind": "add_buff",
+                "buffId": "taunt",
+                "durationTurns": 4,
+                "targetMode": "self"
+              }
+            ]
+          }
+        ]
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "sporeveil_robe",
+      "nameKey": "affix.sporeveil_robe.name",
+      "descKey": "affix.sporeveil_robe.desc",
+      "effectType": "battle_trigger",
+      "effectParams": {
+        "battleHooks": [
+          {
+            "trigger": "on_after_take_damage",
+            "priority": 0,
+            "conditions": [],
+            "effects": [
+              {
+                "kind": "add_buff",
+                "buffId": "camouflage",
+                "durationTurns": 2,
+                "targetMode": "self"
+              }
+            ]
+          }
+        ]
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "base3_affix_snowseal_after_hit",
+      "nameKey": "affix.base3_affix_snowseal_after_hit.name",
+      "descKey": "affix.base3_affix_snowseal_after_hit.desc",
+      "effectType": "battle_trigger",
+      "effectParams": {
+        "battleHooks": [
+          {
+            "trigger": "on_battle_start",
+            "priority": 0,
+            "conditions": [],
+            "effects": [
+              {
+                "kind": "add_buff",
+                "buffId": "snowseal_guard",
+                "durationTurns": 2,
+                "targetMode": "self"
+              }
+            ]
+          }
+        ]
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "base3_affix_debt_collector_start",
+      "nameKey": "affix.base3_affix_debt_collector_start.name",
+      "descKey": "affix.base3_affix_debt_collector_start.desc",
+      "effectType": "battle_trigger",
+      "effectParams": {
+        "battleHooks": [
+          {
+            "trigger": "on_battle_start",
+            "priority": 0,
+            "conditions": [],
+            "effects": [
+              {
+                "kind": "add_buff",
+                "buffId": "debt_collector",
+                "durationTurns": 2,
+                "targetMode": "self"
+              }
+            ]
+          }
+        ]
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "base3_affix_lucky_white_coin",
+      "nameKey": "affix.base3_affix_lucky_white_coin.name",
+      "descKey": "affix.base3_affix_lucky_white_coin.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "rare": {
+            "luck": {
+              "min": 5,
+              "max": 9
+            },
+            "speed": {
+              "min": 5,
+              "max": 9
+            },
+            "magicial_flat_defense_penetration": {
+              "min": 5,
+              "max": 8
+            }
+          },
+          "epic": {
+            "luck": {
+              "min": 9,
+              "max": 14
+            },
+            "speed": {
+              "min": 9,
+              "max": 14
+            },
+            "magicial_flat_defense_penetration": {
+              "min": 8,
+              "max": 12
+            }
+          },
+          "legendary": {
+            "luck": {
+              "min": 14,
+              "max": 22
+            },
+            "speed": {
+              "min": 14,
+              "max": 20
+            },
+            "magicial_flat_defense_penetration": {
+              "min": 12,
+              "max": 18
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "sewing_attacking_targets_opt",
+      "nameKey": "affix.sewing_attacking_targets_opt.name",
+      "descKey": "affix.sewing_attacking_targets_opt.desc",
+      "effectType": "effectMutation",
+      "effectParams": {
+        "effectMutations": [
+          {
+            "scope": "basic_attack",
+            "skillIds": [],
+            "effectSelector": {
+              "mode": "index",
+              "indexes": [
+                1
+              ]
+            },
+            "ops": {
+              "targetCountDelta": 1,
+              "amountBaseAddDelta": 0,
+              "amountTermsAppend": [
+                {
+                  "attrKey": "physics_flat_defense_penetration",
+                  "coefficient": 0.25,
+                  "perSkillLevel": 0
+                },
+                {
+                  "attrKey": "magicial_flat_defense_penetration",
+                  "coefficient": 0.25,
+                  "perSkillLevel": 0
+                }
+              ],
+              "statusIdsAppend": [],
+              "statusIdsRemove": []
+            },
+            "constraints": {
+              "targetCountMin": 1
+            }
+          }
+        ]
+      },
+      "valuePrecision": 0,
+      "allowedRarities": [
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 1,
+      "maxEffectivePerBody": 2,
+      "disabled": false
+    },
+    {
+      "id": "sewing_attacking_ops",
+      "nameKey": "affix.sewing_attacking_ops.name",
+      "descKey": "affix.sewing_attacking_ops.desc",
+      "effectType": "effectMutation",
+      "effectParams": {
+        "effectMutations": [
+          {
+            "scope": "basic_attack",
+            "skillIds": [],
+            "effectSelector": {
+              "mode": "index",
+              "indexes": [
+                1
+              ]
+            },
+            "ops": {
+              "targetCountDelta": 0,
+              "amountBaseAddDelta": 0,
+              "amountTermsAppend": [
+                {
+                  "attrKey": "physics_flat_defense_penetration",
+                  "coefficient": 2,
+                  "perSkillLevel": 0
+                }
+              ],
+              "statusIdsAppend": [],
+              "statusIdsRemove": []
+            },
+            "constraints": {
+              "targetCountMin": 1
+            }
+          }
+        ]
+      },
+      "valuePrecision": 0,
+      "allowedRarities": [
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 1,
+      "maxEffectivePerBody": 2,
+      "disabled": false
+    },
+    {
+      "id": "sewing_skill_ops",
+      "nameKey": "affix.sewing_skill_ops.name",
+      "descKey": "affix.sewing_skill_ops.desc",
+      "effectType": "effectMutation",
+      "effectParams": {
+        "effectMutations": [
+          {
+            "scope": "skill",
+            "skillIds": [],
+            "effectSelector": {
+              "mode": "index",
+              "indexes": [
+                1
+              ]
+            },
+            "ops": {
+              "targetCountDelta": 0,
+              "amountBaseAddDelta": 0,
+              "amountTermsAppend": [
+                {
+                  "attrKey": "magicial_flat_defense_penetration",
+                  "coefficient": 2,
+                  "perSkillLevel": 0
+                }
+              ],
+              "statusIdsAppend": [],
+              "statusIdsRemove": []
+            },
+            "constraints": {
+              "targetCountMin": 1
+            }
+          }
+        ]
+      },
+      "valuePrecision": 0,
+      "allowedRarities": [
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 1,
+      "maxEffectivePerBody": 2,
+      "disabled": false
+    },
+    {
+      "id": "sword_enhance",
+      "nameKey": "affix.sword_enhance.name",
+      "descKey": "affix.sword_enhance.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "physics_damage": {
+              "min": 25,
+              "max": 50
+            }
+          },
+          "rare": {
+            "physics_damage": {
+              "min": 35,
+              "max": 75
+            }
+          },
+          "epic": {
+            "physics_damage": {
+              "min": 45,
+              "max": 90
+            }
+          },
+          "legendary": {
+            "physics_damage": {
+              "min": 60,
+              "max": 125
+            }
+          },
+          "mythic": {
+            "physics_damage": {
+              "min": 90,
+              "max": 180
+            }
+          }
+        }
+      },
+      "valuePrecision": 0,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary",
+        "mythic"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "bow_enhance",
+      "nameKey": "affix.bow_enhance.name",
+      "descKey": "affix.bow_enhance.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "physics_damage": {
+              "min": 25,
+              "max": 50
+            }
+          },
+          "rare": {
+            "physics_damage": {
+              "min": 35,
+              "max": 75
+            }
+          },
+          "epic": {
+            "physics_damage": {
+              "min": 45,
+              "max": 90
+            }
+          },
+          "legendary": {
+            "physics_damage": {
+              "min": 60,
+              "max": 125
+            }
+          },
+          "mythic": {
+            "physics_damage": {
+              "min": 90,
+              "max": 180
+            }
+          }
+        }
+      },
+      "valuePrecision": 0,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary",
+        "mythic"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "crossbow_enhance",
+      "nameKey": "affix.crossbow_enhance.name",
+      "descKey": "affix.crossbow_enhance.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "physics_damage": {
+              "min": 25,
+              "max": 50
+            }
+          },
+          "rare": {
+            "physics_damage": {
+              "min": 35,
+              "max": 75
+            }
+          },
+          "epic": {
+            "physics_damage": {
+              "min": 45,
+              "max": 90
+            }
+          },
+          "legendary": {
+            "physics_damage": {
+              "min": 60,
+              "max": 125
+            }
+          },
+          "mythic": {
+            "physics_damage": {
+              "min": 90,
+              "max": 180
+            }
+          }
+        }
+      },
+      "valuePrecision": 0,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary",
+        "mythic"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "staff_enhance",
+      "nameKey": "affix.staff_enhance.name",
+      "descKey": "affix.staff_enhance.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "magical_damage": {
+              "min": 25,
+              "max": 50
+            }
+          },
+          "rare": {
+            "magical_damage": {
+              "min": 35,
+              "max": 75
+            }
+          },
+          "epic": {
+            "magical_damage": {
+              "min": 45,
+              "max": 90
+            }
+          },
+          "legendary": {
+            "magical_damage": {
+              "min": 60,
+              "max": 125
+            }
+          },
+          "mythic": {
+            "magical_damage": {
+              "min": 90,
+              "max": 180
+            }
+          }
+        }
+      },
+      "valuePrecision": 0,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary",
+        "mythic"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "scythe_enhance",
+      "nameKey": "affix.scythe_enhance.name",
+      "descKey": "affix.scythe_enhance.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "physics_damage": {
+              "min": 25,
+              "max": 50
+            }
+          },
+          "rare": {
+            "physics_damage": {
+              "min": 35,
+              "max": 75
+            }
+          },
+          "epic": {
+            "physics_damage": {
+              "min": 45,
+              "max": 90
+            }
+          },
+          "legendary": {
+            "physics_damage": {
+              "min": 60,
+              "max": 125
+            }
+          },
+          "mythic": {
+            "physics_damage": {
+              "min": 90,
+              "max": 180
+            }
+          }
+        }
+      },
+      "valuePrecision": 0,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary",
+        "mythic"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "base2_affix_mistwarden_mist",
+      "nameKey": "affix.base2_affix_mistwarden_mist.name",
+      "descKey": "affix.base2_affix_mistwarden_mist.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "rare": {
+            "hp": {
+              "min": 25,
+              "max": 40
+            },
+            "magical_defence": {
+              "min": 6,
+              "max": 10
+            },
+            "magical_damage_resist": {
+              "min": 0.02,
+              "max": 0.035
+            }
+          },
+          "epic": {
+            "hp": {
+              "min": 40,
+              "max": 70
+            },
+            "magical_defence": {
+              "min": 10,
+              "max": 15
+            },
+            "magical_damage_resist": {
+              "min": 0.035,
+              "max": 0.055
+            }
+          },
+          "legendary": {
+            "hp": {
+              "min": 70,
+              "max": 110
+            },
+            "magical_defence": {
+              "min": 15,
+              "max": 22
+            },
+            "magical_damage_resist": {
+              "min": 0.055,
+              "max": 0.085
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "base2_affix_dragon_scale_guard",
+      "nameKey": "affix.base2_affix_dragon_scale_guard.name",
+      "descKey": "affix.base2_affix_dragon_scale_guard.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "rare": {
+            "strength": {
+              "min": 5,
+              "max": 8
+            },
+            "physics_defence": {
+              "min": 8,
+              "max": 12
+            },
+            "physics_damage_resist": {
+              "min": 0.025,
+              "max": 0.04
+            }
+          },
+          "epic": {
+            "strength": {
+              "min": 8,
+              "max": 12
+            },
+            "physics_defence": {
+              "min": 12,
+              "max": 18
+            },
+            "physics_damage_resist": {
+              "min": 0.04,
+              "max": 0.06
+            }
+          },
+          "legendary": {
+            "strength": {
+              "min": 12,
+              "max": 18
+            },
+            "physics_defence": {
+              "min": 18,
+              "max": 26
+            },
+            "physics_damage_resist": {
+              "min": 0.06,
+              "max": 0.09
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "base4_affix_boss_stalker",
+      "nameKey": "affix.base4_affix_boss_stalker.name",
+      "descKey": "affix.base4_affix_boss_stalker.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "rare": {
+            "crit_chance": {
+              "min": 0.06,
+              "max": 0.1
+            },
+            "crit_damage": {
+              "min": 0.2,
+              "max": 0.25
+            }
+          },
+          "epic": {
+            "crit_chance": {
+              "min": 0.1,
+              "max": 0.15
+            },
+            "crit_damage": {
+              "min": 0.125,
+              "max": 0.25
+            }
+          },
+          "legendary": {
+            "crit_chance": {
+              "min": 0.25,
+              "max": 0.35
+            },
+            "crit_damage": {
+              "min": 0.3,
+              "max": 0.4
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 1,
+      "disabled": false
+    },
+    {
+      "id": "base4_affix_fan_shadow",
+      "nameKey": "affix.base4_affix_fan_shadow.name",
+      "descKey": "affix.base4_affix_fan_shadow.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "rare": {
+            "dexterity": {
+              "min": 8,
+              "max": 12
+            },
+            "speed": {
+              "min": 8,
+              "max": 12
+            }
+          },
+          "epic": {
+            "dexterity": {
+              "min": 12,
+              "max": 18
+            },
+            "speed": {
+              "min": 12,
+              "max": 18
+            }
+          },
+          "legendary": {
+            "dexterity": {
+              "min": 18,
+              "max": 26
+            },
+            "speed": {
+              "min": 18,
+              "max": 26
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "base4_affix_shadowcleaver_stance",
+      "nameKey": "affix.base4_affix_shadowcleaver_stance.name",
+      "descKey": "affix.base4_affix_shadowcleaver_stance.desc",
+      "effectType": "battle_trigger",
+      "effectParams": {
+        "battleHooks": [
+          {
+            "trigger": "on_after_take_damage",
+            "priority": 0,
+            "conditions": [],
+            "effects": [
+              {
+                "kind": "add_buff",
+                "buffId": "base4_shadowcleaver_stance",
+                "durationTurns": 2,
+                "targetMode": "self"
+              }
+            ]
+          }
+        ]
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "base4_affix_umbral_focus",
+      "nameKey": "affix.base4_affix_umbral_focus.name",
+      "descKey": "affix.base4_affix_umbral_focus.desc",
+      "effectType": "battle_trigger",
+      "effectParams": {
+        "battleHooks": [
+          {
+            "trigger": "on_battle_start",
+            "priority": 0,
+            "conditions": [],
+            "effects": [
+              {
+                "kind": "add_buff",
+                "buffId": "base4_umbral_focus_buff",
+                "durationTurns": 2,
+                "targetMode": "self"
+              }
+            ]
+          }
+        ]
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "base4_affix_enhance_shadow_lens",
+      "nameKey": "affix.base4_affix_enhance_shadow_lens.name",
+      "descKey": "affix.base4_affix_enhance_shadow_lens.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "rare": {
+            "enhancement_success_rate": {
+              "min": 0.008,
+              "max": 0.014
+            }
+          },
+          "epic": {
+            "enhancement_success_rate": {
+              "min": 0.014,
+              "max": 0.022
+            }
+          },
+          "legendary": {
+            "enhancement_success_rate": {
+              "min": 0.022,
+              "max": 0.027
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "work",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 8,
+      "disabled": false
+    },
+    {
+      "id": "base4_affix_shadow_vigor",
+      "nameKey": "affix.base4_affix_shadow_vigor.name",
+      "descKey": "affix.base4_affix_shadow_vigor.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "rare": {
+            "hp": {
+              "min": 200,
+              "max": 275
+            },
+            "speed": {
+              "min": -48,
+              "max": -36
+            }
+          },
+          "epic": {
+            "hp": {
+              "min": 275,
+              "max": 350
+            },
+            "speed": {
+              "min": -60,
+              "max": -48
+            }
+          },
+          "legendary": {
+            "hp": {
+              "min": 350,
+              "max": 480
+            },
+            "speed": {
+              "min": -75,
+              "max": -60
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "base4_affix_shadow_hunger",
+      "nameKey": "affix.base4_affix_shadow_hunger.name",
+      "descKey": "affix.base4_affix_shadow_hunger.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "rare": {
+            "physics_damage": {
+              "min": 20,
+              "max": 25
+            },
+            "magical_damage": {
+              "min": 20,
+              "max": 25
+            },
+            "hp": {
+              "min": -200,
+              "max": -180
+            }
+          },
+          "epic": {
+            "physics_damage": {
+              "min": 25,
+              "max": 30
+            },
+            "magical_damage": {
+              "min": 25,
+              "max": 30
+            },
+            "hp": {
+              "min": -300,
+              "max": -220
+            }
+          },
+          "legendary": {
+            "physics_damage": {
+              "min": 35,
+              "max": 40
+            },
+            "magical_damage": {
+              "min": 35,
+              "max": 40
+            },
+            "hp": {
+              "min": -400,
+              "max": -300
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "base4_affix_shadow_rush",
+      "nameKey": "affix.base4_affix_shadow_rush.name",
+      "descKey": "affix.base4_affix_shadow_rush.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "rare": {
+            "speed": {
+              "min": 22,
+              "max": 32
+            },
+            "crit_chance": {
+              "min": 0.06,
+              "max": 0.09
+            },
+            "physics_damage_resist": {
+              "min": -0.065,
+              "max": -0.045
+            },
+            "magical_damage_resist": {
+              "min": -0.065,
+              "max": -0.045
+            }
+          },
+          "epic": {
+            "speed": {
+              "min": 34,
+              "max": 48
+            },
+            "crit_chance": {
+              "min": 0.1,
+              "max": 0.14
+            },
+            "physics_damage_resist": {
+              "min": -0.095,
+              "max": -0.07
+            },
+            "magical_damage_resist": {
+              "min": -0.095,
+              "max": -0.07
+            }
+          },
+          "legendary": {
+            "speed": {
+              "min": 52,
+              "max": 70
+            },
+            "crit_chance": {
+              "min": 0.14,
+              "max": 0.19
+            },
+            "physics_damage_resist": {
+              "min": -0.13,
+              "max": -0.1
+            },
+            "magical_damage_resist": {
+              "min": -0.13,
+              "max": -0.1
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 8,
+      "disabled": false
+    },
+    {
+      "id": "base4_affix_shadow_pierce",
+      "nameKey": "affix.base4_affix_shadow_pierce.name",
+      "descKey": "affix.base4_affix_shadow_pierce.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "rare": {
+            "physics_flat_defense_penetration": {
+              "min": 10,
+              "max": 16
+            },
+            "magicial_flat_defense_penetration": {
+              "min": 10,
+              "max": 16
+            },
+            "mp": {
+              "min": -180,
+              "max": -100
+            }
+          },
+          "epic": {
+            "physics_flat_defense_penetration": {
+              "min": 16,
+              "max": 24
+            },
+            "magicial_flat_defense_penetration": {
+              "min": 16,
+              "max": 24
+            },
+            "mp": {
+              "min": -220,
+              "max": -180
+            }
+          },
+          "legendary": {
+            "physics_flat_defense_penetration": {
+              "min": 24,
+              "max": 32
+            },
+            "magicial_flat_defense_penetration": {
+              "min": 24,
+              "max": 32
+            },
+            "mp": {
+              "min": -320,
+              "max": -220
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 8,
+      "disabled": false
+    },
+    {
+      "id": "perception",
+      "nameKey": "affix.perception.name",
+      "descKey": "affix.perception.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "perception": {
+              "min": 2,
+              "max": 5
+            }
+          },
+          "rare": {
+            "perception": {
+              "min": 5,
+              "max": 9
+            }
+          },
+          "epic": {
+            "perception": {
+              "min": 9,
+              "max": 12
+            }
+          },
+          "legendary": {
+            "perception": {
+              "min": 12,
+              "max": 20
+            }
+          }
+        }
+      },
+      "valuePrecision": 0,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "magic_crit_chance",
+      "nameKey": "affix.magic_crit_chance.name",
+      "descKey": "affix.magic_crit_chance.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "magic_crit_chance": {
+              "min": 0.05,
+              "max": 0.08
+            }
+          },
+          "rare": {
+            "magic_crit_chance": {
+              "min": 0.08,
+              "max": 0.12
+            }
+          },
+          "epic": {
+            "magic_crit_chance": {
+              "min": 0.12,
+              "max": 0.16
+            }
+          },
+          "legendary": {
+            "magic_crit_chance": {
+              "min": 0.16,
+              "max": 0.2
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "magic_crit_damage",
+      "nameKey": "affix.magic_crit_damage.name",
+      "descKey": "affix.magic_crit_damage.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "magic_crit_damage": {
+              "min": 0.05,
+              "max": 0.08
+            }
+          },
+          "rare": {
+            "magic_crit_damage": {
+              "min": 0.08,
+              "max": 0.12
+            }
+          },
+          "epic": {
+            "magic_crit_damage": {
+              "min": 0.12,
+              "max": 0.16
+            }
+          },
+          "legendary": {
+            "magic_crit_damage": {
+              "min": 0.16,
+              "max": 0.2
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "base4_affix_shadow_rush_magic",
+      "nameKey": "affix.base4_affix_shadow_rush_magic.name",
+      "descKey": "affix.base4_affix_shadow_rush_magic.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "rare": {
+            "speed": {
+              "min": 22,
+              "max": 32
+            },
+            "magic_crit_chance": {
+              "min": 0.06,
+              "max": 0.09
+            },
+            "physics_damage_resist": {
+              "min": -0.065,
+              "max": -0.045
+            },
+            "magical_damage_resist": {
+              "min": -0.065,
+              "max": -0.045
+            }
+          },
+          "epic": {
+            "speed": {
+              "min": 34,
+              "max": 48
+            },
+            "magic_crit_chance": {
+              "min": 0.1,
+              "max": 0.14
+            },
+            "physics_damage_resist": {
+              "min": -0.095,
+              "max": -0.07
+            },
+            "magical_damage_resist": {
+              "min": -0.095,
+              "max": -0.07
+            }
+          },
+          "legendary": {
+            "speed": {
+              "min": 52,
+              "max": 70
+            },
+            "magic_crit_chance": {
+              "min": 0.14,
+              "max": 0.19
+            },
+            "physics_damage_resist": {
+              "min": -0.13,
+              "max": -0.1
+            },
+            "magical_damage_resist": {
+              "min": -0.13,
+              "max": -0.1
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 8,
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_affix_sanctuary_start",
+      "nameKey": "affix.holy_cat_affix_sanctuary_start.name",
+      "descKey": "affix.holy_cat_affix_sanctuary_start.desc",
+      "effectType": "battle_trigger",
+      "effectParams": {
+        "battleHooks": [
+          {
+            "trigger": "on_battle_start",
+            "priority": 0,
+            "conditions": [],
+            "effects": [
+              {
+                "kind": "add_buff",
+                "buffId": "holy_cat_sanctuary_guard",
+                "durationTurns": 2,
+                "targetMode": "self"
+              }
+            ]
+          }
+        ]
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_affix_blessed_mending",
+      "nameKey": "affix.holy_cat_affix_blessed_mending.name",
+      "descKey": "affix.holy_cat_affix_blessed_mending.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "rare": {
+            "hp": {
+              "min": 200,
+              "max": 280
+            },
+            "magical_defence": {
+              "min": 20,
+              "max": 28
+            },
+            "magical_damage_resist": {
+              "min": 0.01,
+              "max": 0.018
+            }
+          },
+          "epic": {
+            "hp": {
+              "min": 300,
+              "max": 420
+            },
+            "magical_defence": {
+              "min": 30,
+              "max": 42
+            },
+            "magical_damage_resist": {
+              "min": 0.018,
+              "max": 0.03
+            }
+          },
+          "legendary": {
+            "hp": {
+              "min": 440,
+              "max": 620
+            },
+            "magical_defence": {
+              "min": 44,
+              "max": 62
+            },
+            "magical_damage_resist": {
+              "min": 0.03,
+              "max": 0.045
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 8,
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_affix_guardian_oath",
+      "nameKey": "affix.holy_cat_affix_guardian_oath.name",
+      "descKey": "affix.holy_cat_affix_guardian_oath.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "rare": {
+            "hp": {
+              "min": 160,
+              "max": 240
+            },
+            "physics_defence": {
+              "min": 18,
+              "max": 26
+            },
+            "magical_defence": {
+              "min": 16,
+              "max": 24
+            },
+            "speed": {
+              "min": -24,
+              "max": -16
+            }
+          },
+          "epic": {
+            "hp": {
+              "min": 240,
+              "max": 360
+            },
+            "physics_defence": {
+              "min": 26,
+              "max": 38
+            },
+            "magical_defence": {
+              "min": 24,
+              "max": 34
+            },
+            "speed": {
+              "min": -34,
+              "max": -24
+            }
+          },
+          "legendary": {
+            "hp": {
+              "min": 360,
+              "max": 440
+            },
+            "physics_defence": {
+              "min": 38,
+              "max": 54
+            },
+            "magical_defence": {
+              "min": 34,
+              "max": 48
+            },
+            "speed": {
+              "min": -48,
+              "max": -34
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 2,
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_affix_luminous_focus",
+      "nameKey": "affix.holy_cat_affix_luminous_focus.name",
+      "descKey": "affix.holy_cat_affix_luminous_focus.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "rare": {
+            "magical_damage": {
+              "min": 22,
+              "max": 32
+            },
+            "magicial_percent_defense_penetration": {
+              "min": 0.01,
+              "max": 0.02
+            }
+          },
+          "epic": {
+            "magical_damage": {
+              "min": 32,
+              "max": 46
+            },
+            "magicial_percent_defense_penetration": {
+              "min": 0.02,
+              "max": 0.035
+            }
+          },
+          "legendary": {
+            "magical_damage": {
+              "min": 46,
+              "max": 66
+            },
+            "magicial_percent_defense_penetration": {
+              "min": 0.035,
+              "max": 0.055
+            }
+          }
+        }
+      },
+      "valuePrecision": 2,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 2,
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_affix_temple_workflow",
+      "nameKey": "affix.holy_cat_affix_temple_workflow.name",
+      "descKey": "affix.holy_cat_affix_temple_workflow.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "rare": {
+            "crafting_speed": {
+              "min": 0.012,
+              "max": 0.018
+            },
+            "sewing_speed": {
+              "min": 0.01,
+              "max": 0.016
+            },
+            "forging_speed": {
+              "min": 0.01,
+              "max": 0.016
+            }
+          },
+          "epic": {
+            "crafting_speed": {
+              "min": 0.018,
+              "max": 0.026
+            },
+            "sewing_speed": {
+              "min": 0.016,
+              "max": 0.024
+            },
+            "forging_speed": {
+              "min": 0.016,
+              "max": 0.024
+            }
+          },
+          "legendary": {
+            "crafting_speed": {
+              "min": 0.026,
+              "max": 0.034
+            },
+            "sewing_speed": {
+              "min": 0.024,
+              "max": 0.032
+            },
+            "forging_speed": {
+              "min": 0.024,
+              "max": 0.032
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "work",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 4,
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_affix_prayer_echo",
+      "nameKey": "affix.holy_cat_affix_prayer_echo.name",
+      "descKey": "affix.holy_cat_affix_prayer_echo.desc",
+      "effectType": "effectMutation",
+      "effectParams": {
+        "effectMutations": [
+          {
+            "scope": "skill",
+            "skillIds": [
+              "holy_cat_radiant_spark",
+              "holy_cat_censer_flare"
+            ],
+            "effectSelector": {
+              "mode": "kind",
+              "kind": "damage"
+            },
+            "ops": {
+              "targetCountDelta": 1,
+              "amountBaseAddDelta": 22,
+              "amountTermsAppend": [
+                {
+                  "attrKey": "magical_damage",
+                  "coefficient": 0.16,
+                  "perSkillLevel": 0.004
+                }
+              ],
+              "statusIdsAppend": [],
+              "statusIdsRemove": []
+            },
+            "constraints": {
+              "targetCountMin": 1,
+              "targetCountMax": 3
+            }
+          },
+          {
+            "scope": "skill",
+            "skillIds": [
+              "holy_cat_radiant_spark",
+              "holy_cat_censer_flare"
+            ],
+            "effectSelector": {
+              "mode": "all"
+            },
+            "ops": {
+              "appendEffects": [
+                {
+                  "kind": "status",
+                  "targeting": {
+                    "targetPositions": [
+                      "vanguard"
+                    ],
+                    "secondarySeek": "front_to_rear",
+                    "targetScope": "enemy",
+                    "selectRule": "random",
+                    "selectAttrKey": "",
+                    "fallbackSelfIfEmpty": false,
+                    "targetCount": {
+                      "base": 1,
+                      "formula": [],
+                      "max": 1
+                    }
+                  },
+                  "statusPayload": {
+                    "statusIds": [
+                      "holy_cat_consecrated_mark"
+                    ],
+                    "durationBaseTurns": 2,
+                    "durationPerSkillLevelTurns": 0
+                  }
+                }
+              ]
+            },
+            "constraints": {
+              "targetCountMin": 1,
+              "targetCountMax": 3
+            }
+          }
+        ]
+      },
+      "valuePrecision": 0,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 1,
+      "maxEffectivePerBody": 2,
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_affix_intercession",
+      "nameKey": "affix.holy_cat_affix_intercession.name",
+      "descKey": "affix.holy_cat_affix_intercession.desc",
+      "effectType": "battle_trigger",
+      "effectParams": {
+        "battleHooks": [
+          {
+            "trigger": "on_battle_start",
+            "priority": 0,
+            "conditions": [],
+            "effects": [
+              {
+                "kind": "add_buff",
+                "buffId": "holy_cat_intercession",
+                "durationTurns": 3,
+                "targetMode": "self"
+              }
+            ]
+          }
+        ]
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_affix_royal_aegis",
+      "nameKey": "affix.holy_cat_affix_royal_aegis.name",
+      "descKey": "affix.holy_cat_affix_royal_aegis.desc",
+      "effectType": "battle_trigger",
+      "effectParams": {
+        "battleHooks": [
+          {
+            "trigger": "on_battle_start",
+            "priority": 0,
+            "conditions": [],
+            "effects": [
+              {
+                "kind": "add_buff",
+                "buffId": "holy_cat_royal_aegis",
+                "durationTurns": 2,
+                "targetMode": "self"
+              }
+            ]
+          }
+        ]
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 0,
+      "maxEffectivePerBody": 0,
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_affix_absolution_focus",
+      "nameKey": "affix.holy_cat_affix_absolution_focus.name",
+      "descKey": "affix.holy_cat_affix_absolution_focus.desc",
+      "effectType": "effectMutation",
+      "effectParams": {
+        "effectMutations": [
+          {
+            "scope": "skill",
+            "skillIds": [
+              "holy_cat_smite",
+              "holy_cat_royal_judgement"
+            ],
+            "effectSelector": {
+              "mode": "kind",
+              "kind": "status"
+            },
+            "ops": {
+              "targetCountDelta": 1,
+              "amountBaseAddDelta": 0,
+              "amountTermsAppend": [],
+              "statusIdsAppend": [
+                "holy_cat_silent_liturgy"
+              ],
+              "statusIdsRemove": []
+            },
+            "constraints": {
+              "targetCountMin": 1,
+              "targetCountMax": 3
+            }
+          }
+        ]
+      },
+      "valuePrecision": 0,
+      "allowedRarities": [
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 1,
+      "maxEffectivePerBody": 1,
+      "disabled": false
+    },
+    {
+      "id": "skillCount_1",
+      "effectType": "effectMutation",
+      "effectParams": {
+        "effectMutations": [
+          {
+            "scope": "skill",
+            "skillIds": [],
+            "effectSelector": {
+              "mode": "index",
+              "indexes": [
+                1
+              ]
+            },
+            "ops": {
+              "targetCountDelta": 1,
+              "amountBaseAddDelta": 0,
+              "statusIdsAppend": [],
+              "statusIdsRemove": []
+            },
+            "constraints": {
+              "targetCountMin": 1
+            }
+          }
+        ]
+      },
+      "valuePrecision": 0,
+      "manualScore": 1000,
+      "allowedRarities": [
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 1,
+      "maxEffectivePerBody": 1,
+      "descKey": "affix.skillCount_1.desc",
+      "nameKey": "affix.skillCount_1.name",
+      "disabled": false
+    },
+    {
+      "id": "breaker_runtime_edge",
+      "nameKey": "affix.breaker_runtime_edge.name",
+      "descKey": "affix.breaker_runtime_edge.desc",
+      "effectType": "battle_trigger",
+      "effectParams": {
+        "battleHooks": {
+          "rare": [
+            {
+              "id": "breaker_runtime_edge_hook_rare",
+              "trigger": "on_before_deal_damage",
+              "priority": 10,
+              "conditions": [
+                {
+                  "type": "target_hp_percent_gte",
+                  "value": 85
+                },
+                {
+                  "damageTypes": [
+                    "physical"
+                  ]
+                }
+              ],
+              "effects": [
+                {
+                  "kind": "runtime_damage_amp",
+                  "value": 0.12,
+                  "damageTypes": [
+                    "physical"
+                  ]
+                }
+              ]
+            }
+          ],
+          "epic": [
+            {
+              "id": "breaker_runtime_edge_hook_epic",
+              "trigger": "on_before_deal_damage",
+              "priority": 10,
+              "conditions": [
+                {
+                  "type": "target_hp_percent_gte",
+                  "value": 80
+                },
+                {
+                  "damageTypes": [
+                    "physical"
+                  ]
+                }
+              ],
+              "effects": [
+                {
+                  "kind": "runtime_damage_amp",
+                  "value": 0.16,
+                  "damageTypes": [
+                    "physical"
+                  ]
+                }
+              ]
+            }
+          ],
+          "legendary": [
+            {
+              "id": "breaker_runtime_edge_hook_legendary",
+              "trigger": "on_before_deal_damage",
+              "priority": 10,
+              "conditions": [
+                {
+                  "type": "target_hp_percent_gte",
+                  "value": 70
+                },
+                {
+                  "damageTypes": [
+                    "physical"
+                  ]
+                }
+              ],
+              "effects": [
+                {
+                  "kind": "runtime_damage_amp",
+                  "value": 0.2,
+                  "damageTypes": [
+                    "physical"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "battle",
+      "maxEffectivePerEquipment": 1,
+      "maxEffectivePerBody": 3,
+      "disabled": false
+    },
+    {
+      "id": "fishing_control_minor",
+      "nameKey": "affix.fishing_control_minor.name",
+      "descKey": "affix.fishing_control_minor.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "fishing_control": {
+              "min": 0.03,
+              "max": 0.06
+            }
+          },
+          "rare": {
+            "fishing_control": {
+              "min": 0.06,
+              "max": 0.1
+            }
+          },
+          "epic": {
+            "fishing_control": {
+              "min": 0.1,
+              "max": 0.15
+            }
+          },
+          "legendary": {
+            "fishing_control": {
+              "min": 0.15,
+              "max": 0.22
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "work",
+      "maxEffectivePerEquipment": 1,
+      "maxEffectivePerBody": 2,
+      "disabled": false
+    },
+    {
+      "id": "fishing_sensitivity_minor",
+      "nameKey": "affix.fishing_sensitivity_minor.name",
+      "descKey": "affix.fishing_sensitivity_minor.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "fishing_sensitivity": {
+              "min": 0.03,
+              "max": 0.06
+            }
+          },
+          "rare": {
+            "fishing_sensitivity": {
+              "min": 0.06,
+              "max": 0.1
+            }
+          },
+          "epic": {
+            "fishing_sensitivity": {
+              "min": 0.1,
+              "max": 0.15
+            }
+          },
+          "legendary": {
+            "fishing_sensitivity": {
+              "min": 0.15,
+              "max": 0.22
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "work",
+      "maxEffectivePerEquipment": 1,
+      "maxEffectivePerBody": 2,
+      "disabled": false
+    },
+    {
+      "id": "fishing_efficiency_minor",
+      "nameKey": "affix.fishing_efficiency_minor.name",
+      "descKey": "affix.fishing_efficiency_minor.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "fishing_efficiency": {
+              "min": 0.02,
+              "max": 0.04
+            }
+          },
+          "rare": {
+            "fishing_efficiency": {
+              "min": 0.04,
+              "max": 0.07
+            }
+          },
+          "epic": {
+            "fishing_efficiency": {
+              "min": 0.07,
+              "max": 0.1
+            }
+          },
+          "legendary": {
+            "fishing_efficiency": {
+              "min": 0.1,
+              "max": 0.15
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "work",
+      "maxEffectivePerEquipment": 1,
+      "maxEffectivePerBody": 2,
+      "disabled": false
+    },
+    {
+      "id": "fishing_casting_minor",
+      "nameKey": "affix.fishing_casting_minor.name",
+      "descKey": "affix.fishing_casting_minor.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "fishing_casting": {
+              "min": 0.03,
+              "max": 0.06
+            }
+          },
+          "rare": {
+            "fishing_casting": {
+              "min": 0.06,
+              "max": 0.1
+            }
+          },
+          "epic": {
+            "fishing_casting": {
+              "min": 0.1,
+              "max": 0.15
+            }
+          },
+          "legendary": {
+            "fishing_casting": {
+              "min": 0.15,
+              "max": 0.22
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "work",
+      "maxEffectivePerEquipment": 1,
+      "maxEffectivePerBody": 2,
+      "disabled": false
+    },
+    {
+      "id": "fishing_hooking_minor",
+      "nameKey": "affix.fishing_hooking_minor.name",
+      "descKey": "affix.fishing_hooking_minor.desc",
+      "effectType": "attr_bonus",
+      "effectParams": {
+        "attrMods": {
+          "uncommon": {
+            "fishing_hooking": {
+              "min": 0.03,
+              "max": 0.06
+            }
+          },
+          "rare": {
+            "fishing_hooking": {
+              "min": 0.06,
+              "max": 0.1
+            }
+          },
+          "epic": {
+            "fishing_hooking": {
+              "min": 0.1,
+              "max": 0.15
+            }
+          },
+          "legendary": {
+            "fishing_hooking": {
+              "min": 0.15,
+              "max": 0.22
+            }
+          }
+        }
+      },
+      "valuePrecision": 3,
+      "allowedRarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "active": true,
+      "type": "work",
+      "maxEffectivePerEquipment": 1,
+      "maxEffectivePerBody": 2,
+      "disabled": false
+    }
+  ]
+}

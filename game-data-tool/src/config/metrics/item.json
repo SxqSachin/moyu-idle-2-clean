@@ -1,0 +1,7 @@
+{
+  "module": "items",
+  "metrics": [
+    { "id": "base_value", "label": "基础价值", "expression": "Number(row.economyBaseValue || 0)" },
+    { "id": "stackable_score", "label": "堆叠评分", "expression": "row.stackable ? 1 : 0" }
+  ]
+}

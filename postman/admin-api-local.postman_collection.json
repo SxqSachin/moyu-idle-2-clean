@@ -1,0 +1,200 @@
+{
+  "info": {
+    "name": "MySecondWebGame Admin APIs (Local)",
+    "_postman_id": "3f84d2f9-5d4f-4f31-9e4d-7a9f3ab7b6d3",
+    "description": "All current /api/admin endpoints for local usage.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseAdminUrl",
+      "value": "http://127.0.0.1:8080/api/admin"
+    },
+    {
+      "key": "releaseToken",
+      "value": "replace-with-your-release-token"
+    }
+  ],
+  "item": [
+    {
+      "name": "Release - Announce",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "X-Release-Token", "value": "{{releaseToken}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"releaseId\": \"2026-05-24.1\",\n  \"kind\": \"soft\",\n  \"messageI18nKey\": \"game.clientUpdateAvailable\",\n  \"recommendedDelaySec\": 120,\n  \"minAcceptedBuild\": \"2026-05-24.1\"\n}"
+        },
+        "url": "{{baseAdminUrl}}/release/announce"
+      }
+    },
+    {
+      "name": "Battle - Metrics",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "X-Release-Token", "value": "{{releaseToken}}" }
+        ],
+        "url": "{{baseAdminUrl}}/battle/metrics"
+      }
+    },
+    {
+      "name": "Battle - Runs Cleanup",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "X-Release-Token", "value": "{{releaseToken}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"keepCount\": 10,\n  \"batchSize\": 2000,\n  \"rounds\": 20\n}"
+        },
+        "url": "{{baseAdminUrl}}/battle/runs/cleanup"
+      }
+    },
+    {
+      "name": "Battle - Rooms Reinitialize",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "X-Release-Token", "value": "{{releaseToken}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"statuses\": [\"entering\", \"playing\", \"recovering\"],\n  \"expectedSpecialization\": {\n    \"treeId\": \"player_combat_specialization\",\n    \"rulesetVersion\": \"specialization-v4\",\n    \"balanceRevision\": 1\n  }\n}"
+        },
+        "url": "{{baseAdminUrl}}/battle/rooms/reinitialize"
+      }
+    },
+    {
+      "name": "Arena - Leaderboard Reset",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "X-Release-Token", "value": "{{releaseToken}}" }
+        ],
+        "url": "{{baseAdminUrl}}/arena/leaderboard/reset"
+      }
+    },
+    {
+      "name": "Inventory - Grant",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "X-Release-Token", "value": "{{releaseToken}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": 10001,\n  \"itemId\": \"wood_sword\",\n  \"quantity\": 1,\n  \"grantMode\": \"enhanced\",\n  \"enhanceLevel\": 3\n}"
+        },
+        "url": "{{baseAdminUrl}}/inventory/grant"
+      }
+    },
+    {
+      "name": "Users - Ban Reasons",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "X-Release-Token", "value": "{{releaseToken}}" }
+        ],
+        "url": "{{baseAdminUrl}}/users/ban-reasons"
+      }
+    },
+    {
+      "name": "Users - Ban",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "X-Release-Token", "value": "{{releaseToken}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": 10001,\n  \"reason\": \"abnormal_trade\",\n  \"isPermanent\": false,\n  \"banUntil\": \"2026-12-31T23:59:59Z\"\n}"
+        },
+        "url": "{{baseAdminUrl}}/users/ban"
+      }
+    },
+    {
+      "name": "Users - Unban",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "X-Release-Token", "value": "{{releaseToken}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"player_10001\"\n}"
+        },
+        "url": "{{baseAdminUrl}}/users/unban"
+      }
+    },
+    {
+      "name": "Cattery - Trigger Diary",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "X-Release-Token", "value": "{{releaseToken}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": 10001,\n  \"kittyId\": 20001,\n  \"triggerType\": \"diary\"\n}"
+        },
+        "url": "{{baseAdminUrl}}/cattery/trigger"
+      }
+    },
+    {
+      "name": "Cattery - Trigger Encounter",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "X-Release-Token", "value": "{{releaseToken}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": 10001,\n  \"kittyId\": 20001,\n  \"triggerType\": \"encounter\",\n  \"targetUserId\": 10002,\n  \"targetKittyId\": 20077\n}"
+        },
+        "url": "{{baseAdminUrl}}/cattery/trigger"
+      }
+    },
+    {
+      "name": "Cattery - Personality Add",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "X-Release-Token", "value": "{{releaseToken}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": 10001,\n  \"kittyId\": 20001,\n  \"personalityId\": \"ore_lover\"\n}"
+        },
+        "url": "{{baseAdminUrl}}/cattery/personality/add"
+      }
+    },
+    {
+      "name": "Cattery - Personality Remove",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "X-Release-Token", "value": "{{releaseToken}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": 10001,\n  \"kittyId\": 20001,\n  \"personalityId\": \"ore_lover\"\n}"
+        },
+        "url": "{{baseAdminUrl}}/cattery/personality/remove"
+      }
+    }
+  ]
+}

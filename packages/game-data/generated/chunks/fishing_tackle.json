@@ -1,0 +1,445 @@
+{
+  "version": 1,
+  "fishing_tackle": [
+    {
+      "itemId": "basic_fishing_rod",
+      "slot": "rod",
+      "methods": [
+        "float",
+        "bottom",
+        "lure"
+      ],
+      "control": 1,
+      "sensitivity": 0.8,
+      "casting": 0.35,
+      "hooking": 0.3,
+      "maxLoadKg": 8
+    },
+    {
+      "itemId": "basic_spinning_reel",
+      "slot": "reel",
+      "methods": [
+        "float",
+        "bottom",
+        "lure"
+      ],
+      "control": 0.9,
+      "sensitivity": 0.7,
+      "casting": 0.15,
+      "hooking": 0.2,
+      "maxLoadKg": 10
+    },
+    {
+      "itemId": "silverleaf_float_rod",
+      "slot": "rod",
+      "methods": [
+        "float",
+        "bottom"
+      ],
+      "control": 0.8,
+      "sensitivity": 1.2,
+      "casting": 1,
+      "hooking": 0.4,
+      "maxLoadKg": 7.5
+    },
+    {
+      "itemId": "silkwood_search_rod",
+      "slot": "rod",
+      "methods": [
+        "float",
+        "lure"
+      ],
+      "control": 0.9,
+      "sensitivity": 0.9,
+      "casting": 1.35,
+      "hooking": 0.55,
+      "efficiency": 0.06,
+      "maxLoadKg": 8.5
+    },
+    {
+      "itemId": "rimebone_deep_rod",
+      "slot": "rod",
+      "methods": [
+        "bottom",
+        "lure"
+      ],
+      "control": 1.55,
+      "sensitivity": 0.55,
+      "casting": 0.35,
+      "hooking": 1.15,
+      "efficiency": -0.04,
+      "maxLoadKg": 15,
+      "waterBiteModifiers": {
+        "frostglass_lake": 0.18,
+        "sunmere_shallows": -0.12
+      }
+    },
+    {
+      "itemId": "moonwood_precision_rod",
+      "slot": "rod",
+      "methods": [
+        "float",
+        "bottom",
+        "lure"
+      ],
+      "control": 1.25,
+      "sensitivity": 1.25,
+      "casting": 1.55,
+      "hooking": 1,
+      "efficiency": 0.05,
+      "maxLoadKg": 12,
+      "speciesWeightModifiers": {
+        "lotus_koi": 0.12,
+        "glassback_darter": 0.12,
+        "moonmirror_carp": 0.18
+      }
+    },
+    {
+      "itemId": "light_copper_reel",
+      "slot": "reel",
+      "methods": [
+        "float",
+        "bottom",
+        "lure"
+      ],
+      "control": 0.55,
+      "sensitivity": 1,
+      "casting": 0.55,
+      "hooking": 0.1,
+      "maxLoadKg": 7.5,
+      "biteMultiplier": 1.03
+    },
+    {
+      "itemId": "sealed_drag_reel",
+      "slot": "reel",
+      "methods": [
+        "float",
+        "bottom",
+        "lure"
+      ],
+      "control": 1.35,
+      "sensitivity": 0.35,
+      "casting": -0.15,
+      "hooking": 0.85,
+      "efficiency": -0.03,
+      "maxLoadKg": 16,
+      "biteMultiplier": 0.96
+    },
+    {
+      "itemId": "braided_main_line",
+      "slot": "main_line",
+      "methods": [
+        "float",
+        "bottom",
+        "lure"
+      ],
+      "control": 0.15,
+      "sensitivity": 0.2,
+      "casting": 0.1,
+      "hooking": 0.05,
+      "maxLoadKg": 9.5,
+      "wearPerFight": 0.08
+    },
+    {
+      "itemId": "stretch_mono_line",
+      "slot": "main_line",
+      "methods": [
+        "float",
+        "bottom",
+        "lure"
+      ],
+      "control": 0.35,
+      "sensitivity": -0.18,
+      "casting": 0.2,
+      "hooking": 0.15,
+      "maxLoadKg": 11.5,
+      "wearPerFight": 0.05
+    },
+    {
+      "itemId": "clear_leader",
+      "slot": "leader",
+      "methods": [
+        "float",
+        "bottom",
+        "lure"
+      ],
+      "control": 0.1,
+      "sensitivity": 0.25,
+      "casting": 0.1,
+      "hooking": 0.05,
+      "maxLoadKg": 8.5,
+      "wearPerFight": 0.2,
+      "terminal": true
+    },
+    {
+      "itemId": "wire_leader",
+      "slot": "leader",
+      "methods": [
+        "bottom",
+        "lure"
+      ],
+      "control": 0.25,
+      "sensitivity": -0.25,
+      "casting": -0.1,
+      "hooking": 0.15,
+      "maxLoadKg": 16,
+      "wearPerFight": 0.1,
+      "biteMultiplier": 0.94,
+      "speciesWeightModifiers": {
+        "snakehead": 0.12,
+        "northern_pike": 0.3
+      },
+      "terminal": true
+    },
+    {
+      "itemId": "fine_fishing_hook",
+      "slot": "hook",
+      "methods": [
+        "float",
+        "bottom"
+      ],
+      "control": 0.1,
+      "sensitivity": 0.35,
+      "hooking": 0.15,
+      "maxLoadKg": 9,
+      "terminal": true
+    },
+    {
+      "itemId": "barbless_hook",
+      "slot": "hook",
+      "methods": [
+        "float",
+        "bottom"
+      ],
+      "sensitivity": 0.25,
+      "hooking": -0.2,
+      "maxLoadKg": 8.5,
+      "biteMultiplier": 1.08,
+      "terminal": true
+    },
+    {
+      "itemId": "reed_float",
+      "slot": "float_or_sinker",
+      "methods": [
+        "float"
+      ],
+      "sensitivity": 0.55,
+      "casting": 0.15,
+      "maxLoadKg": 8.5,
+      "terminal": true
+    },
+    {
+      "itemId": "slip_float",
+      "slot": "float_or_sinker",
+      "methods": [
+        "float"
+      ],
+      "control": 0.15,
+      "sensitivity": 0.35,
+      "casting": 0.45,
+      "maxLoadKg": 10,
+      "terminal": true
+    },
+    {
+      "itemId": "river_sinker",
+      "slot": "float_or_sinker",
+      "methods": [
+        "bottom"
+      ],
+      "control": 0.2,
+      "sensitivity": 0.05,
+      "casting": 0.1,
+      "maxLoadKg": 12,
+      "terminal": true
+    },
+    {
+      "itemId": "silver_shad_lure",
+      "slot": "lure",
+      "methods": [
+        "lure"
+      ],
+      "control": 0.35,
+      "sensitivity": 0.2,
+      "casting": 0.35,
+      "hooking": 0.15,
+      "maxLoadKg": 9,
+      "terminal": true
+    },
+    {
+      "itemId": "frost_jig",
+      "slot": "lure",
+      "methods": [
+        "lure"
+      ],
+      "control": 0.45,
+      "sensitivity": 0.35,
+      "casting": 0.15,
+      "hooking": 0.3,
+      "maxLoadKg": 14,
+      "waterBiteModifiers": {
+        "frostglass_lake": 0.25,
+        "sunmere_shallows": -0.18
+      },
+      "terminal": true
+    },
+    {
+      "itemId": "earthworm_bait",
+      "slot": "bait",
+      "methods": [
+        "float",
+        "bottom"
+      ],
+      "biteMultiplier": 1.1,
+      "terminal": true
+    },
+    {
+      "itemId": "sweet_dough_bait",
+      "slot": "bait",
+      "methods": [
+        "float",
+        "bottom"
+      ],
+      "biteMultiplier": 1.04,
+      "speciesWeightModifiers": {
+        "crucian_carp": 0.25,
+        "common_carp": 0.45,
+        "grass_carp": 0.25,
+        "lotus_koi": 0.3,
+        "moonmirror_carp": 0.35,
+        "snakehead": -0.3,
+        "northern_pike": -0.3
+      },
+      "terminal": true
+    },
+    {
+      "itemId": "starripple_bait",
+      "slot": "bait",
+      "methods": [
+        "float",
+        "bottom"
+      ],
+      "mutationChanceMultiplier": 2.5,
+      "terminal": true
+    },
+    {
+      "itemId": "cushion_braid_line",
+      "slot": "main_line",
+      "methods": [
+        "float",
+        "bottom",
+        "lure"
+      ],
+      "control": 0.15,
+      "sensitivity": 0.4,
+      "casting": 0.25,
+      "hooking": -0.05,
+      "maxLoadKg": 9,
+      "wearPerFight": 0.12,
+      "biteMultiplier": 1.02
+    },
+    {
+      "itemId": "trophy_core_line",
+      "slot": "main_line",
+      "methods": [
+        "float",
+        "bottom",
+        "lure"
+      ],
+      "control": 0.5,
+      "sensitivity": -0.45,
+      "casting": -0.25,
+      "hooking": 0.25,
+      "maxLoadKg": 20,
+      "wearPerFight": 0.04,
+      "biteMultiplier": 0.93
+    },
+    {
+      "itemId": "shock_leader",
+      "slot": "leader",
+      "methods": [
+        "float",
+        "bottom",
+        "lure"
+      ],
+      "control": 0.4,
+      "sensitivity": -0.15,
+      "casting": -0.05,
+      "hooking": 0.2,
+      "maxLoadKg": 12,
+      "wearPerFight": 0.16,
+      "biteMultiplier": 0.98,
+      "terminal": true
+    },
+    {
+      "itemId": "circle_hook",
+      "slot": "hook",
+      "methods": [
+        "float",
+        "bottom"
+      ],
+      "control": 0.15,
+      "sensitivity": -0.25,
+      "hooking": 0.65,
+      "maxLoadKg": 14,
+      "biteMultiplier": 0.94,
+      "terminal": true
+    },
+    {
+      "itemId": "quill_float",
+      "slot": "float_or_sinker",
+      "methods": [
+        "float"
+      ],
+      "sensitivity": 0.8,
+      "casting": -0.25,
+      "hooking": -0.05,
+      "maxLoadKg": 8,
+      "biteMultiplier": 1.05,
+      "terminal": true
+    },
+    {
+      "itemId": "distance_sinker",
+      "slot": "float_or_sinker",
+      "methods": [
+        "bottom"
+      ],
+      "control": -0.15,
+      "sensitivity": -0.25,
+      "casting": 0.8,
+      "hooking": 0.1,
+      "maxLoadKg": 16,
+      "biteMultiplier": 0.96,
+      "terminal": true
+    },
+    {
+      "itemId": "champion_current_rod",
+      "slot": "rod",
+      "methods": [
+        "float",
+        "bottom",
+        "lure"
+      ],
+      "control": 1.25,
+      "sensitivity": 0.9,
+      "casting": 0.7,
+      "hooking": 0.65,
+      "maxLoadKg": 9.5,
+      "tournamentReward": true
+    },
+    {
+      "itemId": "tournament_current_rod",
+      "slot": "rod",
+      "methods": [
+        "float",
+        "bottom",
+        "lure"
+      ],
+      "control": 1.25,
+      "sensitivity": 0.9,
+      "casting": 0.7,
+      "hooking": 0.65,
+      "maxLoadKg": 9.5,
+      "tournamentReward": true
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "fishing_pond_species": [
+    {
+      "id": "pond_crucian_carp",
+      "speciesId": "crucian_carp",
+      "dietClass": "herbal",
+      "secondaryFeedClasses": [
+        "insect"
+      ],
+      "maturityAgeDays": 730,
+      "lifespanDays": 3650
+    },
+    {
+      "id": "pond_common_carp",
+      "speciesId": "common_carp",
+      "dietClass": "herbal",
+      "secondaryFeedClasses": [
+        "insect"
+      ],
+      "maturityAgeDays": 1095,
+      "lifespanDays": 10950
+    },
+    {
+      "id": "pond_bluegill",
+      "speciesId": "bluegill",
+      "dietClass": "insect",
+      "secondaryFeedClasses": [
+        "herbal",
+        "protein"
+      ],
+      "maturityAgeDays": 365,
+      "lifespanDays": 3650
+    },
+    {
+      "id": "pond_grass_carp",
+      "speciesId": "grass_carp",
+      "dietClass": "herbal",
+      "secondaryFeedClasses": [
+        "insect"
+      ],
+      "maturityAgeDays": 1460,
+      "lifespanDays": 7665
+    },
+    {
+      "id": "pond_mud_loach",
+      "speciesId": "mud_loach",
+      "dietClass": "insect",
+      "secondaryFeedClasses": [
+        "herbal",
+        "protein"
+      ],
+      "maturityAgeDays": 365,
+      "lifespanDays": 2920
+    },
+    {
+      "id": "pond_snakehead",
+      "speciesId": "snakehead",
+      "dietClass": "protein",
+      "secondaryFeedClasses": [
+        "insect"
+      ],
+      "maturityAgeDays": 730,
+      "lifespanDays": 2920,
+      "predation": {
+        "maxPreyLengthRatio": 0.45,
+        "huntBelowSatiety": 65,
+        "dailyHuntChance": 0.65
+      }
+    },
+    {
+      "id": "pond_emberfin",
+      "speciesId": "emberfin",
+      "dietClass": "arcane",
+      "secondaryFeedClasses": [
+        "protein"
+      ],
+      "maturityAgeDays": 730,
+      "lifespanDays": 4380
+    },
+    {
+      "id": "pond_lotus_koi",
+      "speciesId": "lotus_koi",
+      "dietClass": "herbal",
+      "secondaryFeedClasses": [
+        "insect",
+        "arcane"
+      ],
+      "maturityAgeDays": 1095,
+      "lifespanDays": 9125
+    },
+    {
+      "id": "pond_chub",
+      "speciesId": "chub",
+      "dietClass": "insect",
+      "secondaryFeedClasses": [
+        "herbal",
+        "protein"
+      ],
+      "maturityAgeDays": 1095,
+      "lifespanDays": 7300
+    },
+    {
+      "id": "pond_dace",
+      "speciesId": "dace",
+      "dietClass": "insect",
+      "secondaryFeedClasses": [
+        "herbal",
+        "protein"
+      ],
+      "maturityAgeDays": 730,
+      "lifespanDays": 4380
+    },
+    {
+      "id": "pond_barbel",
+      "speciesId": "barbel",
+      "dietClass": "insect",
+      "secondaryFeedClasses": [
+        "herbal",
+        "protein"
+      ],
+      "maturityAgeDays": 1460,
+      "lifespanDays": 9125
+    },
+    {
+      "id": "pond_brown_trout",
+      "speciesId": "brown_trout",
+      "dietClass": "protein",
+      "secondaryFeedClasses": [
+        "insect"
+      ],
+      "maturityAgeDays": 730,
+      "lifespanDays": 7300,
+      "predation": {
+        "maxPreyLengthRatio": 0.28,
+        "huntBelowSatiety": 55,
+        "dailyHuntChance": 0.32
+      }
+    },
+    {
+      "id": "pond_river_eel",
+      "speciesId": "river_eel",
+      "dietClass": "protein",
+      "secondaryFeedClasses": [
+        "insect"
+      ],
+      "maturityAgeDays": 2190,
+      "lifespanDays": 8395,
+      "predation": {
+        "maxPreyLengthRatio": 0.25,
+        "huntBelowSatiety": 55,
+        "dailyHuntChance": 0.28
+      }
+    },
+    {
+      "id": "pond_freshwater_perch",
+      "speciesId": "freshwater_perch",
+      "dietClass": "insect",
+      "secondaryFeedClasses": [
+        "herbal",
+        "protein"
+      ],
+      "maturityAgeDays": 730,
+      "lifespanDays": 8030,
+      "predation": {
+        "maxPreyLengthRatio": 0.2,
+        "huntBelowSatiety": 45,
+        "dailyHuntChance": 0.18
+      }
+    },
+    {
+      "id": "pond_glassback_darter",
+      "speciesId": "glassback_darter",
+      "dietClass": "arcane",
+      "secondaryFeedClasses": [
+        "insect"
+      ],
+      "maturityAgeDays": 365,
+      "lifespanDays": 1460
+    },
+    {
+      "id": "pond_thunder_whisker",
+      "speciesId": "thunder_whisker",
+      "dietClass": "arcane",
+      "secondaryFeedClasses": [
+        "protein"
+      ],
+      "maturityAgeDays": 1460,
+      "lifespanDays": 5475
+    },
+    {
+      "id": "pond_whitefish",
+      "speciesId": "whitefish",
+      "dietClass": "insect",
+      "secondaryFeedClasses": [
+        "herbal",
+        "protein"
+      ],
+      "maturityAgeDays": 1095,
+      "lifespanDays": 9125
+    },
+    {
+      "id": "pond_grayling",
+      "speciesId": "grayling",
+      "dietClass": "insect",
+      "secondaryFeedClasses": [
+        "herbal",
+        "protein"
+      ],
+      "maturityAgeDays": 1095,
+      "lifespanDays": 5110
+    },
+    {
+      "id": "pond_lake_trout",
+      "speciesId": "lake_trout",
+      "dietClass": "protein",
+      "secondaryFeedClasses": [
+        "insect"
+      ],
+      "maturityAgeDays": 2190,
+      "lifespanDays": 18250,
+      "predation": {
+        "maxPreyLengthRatio": 0.32,
+        "huntBelowSatiety": 55,
+        "dailyHuntChance": 0.38
+      }
+    },
+    {
+      "id": "pond_arctic_char",
+      "speciesId": "arctic_char",
+      "dietClass": "protein",
+      "secondaryFeedClasses": [
+        "insect"
+      ],
+      "maturityAgeDays": 1095,
+      "lifespanDays": 9125,
+      "predation": {
+        "maxPreyLengthRatio": 0.27,
+        "huntBelowSatiety": 55,
+        "dailyHuntChance": 0.3
+      }
+    },
+    {
+      "id": "pond_burbot",
+      "speciesId": "burbot",
+      "dietClass": "protein",
+      "secondaryFeedClasses": [
+        "insect"
+      ],
+      "maturityAgeDays": 1095,
+      "lifespanDays": 7300,
+      "predation": {
+        "maxPreyLengthRatio": 0.35,
+        "huntBelowSatiety": 60,
+        "dailyHuntChance": 0.45
+      }
+    },
+    {
+      "id": "pond_northern_pike",
+      "speciesId": "northern_pike",
+      "dietClass": "protein",
+      "secondaryFeedClasses": [
+        "insect"
+      ],
+      "maturityAgeDays": 730,
+      "lifespanDays": 10950,
+      "predation": {
+        "maxPreyLengthRatio": 0.48,
+        "huntBelowSatiety": 70,
+        "dailyHuntChance": 0.75
+      }
+    },
+    {
+      "id": "pond_moonmirror_carp",
+      "speciesId": "moonmirror_carp",
+      "dietClass": "arcane",
+      "secondaryFeedClasses": [
+        "herbal"
+      ],
+      "maturityAgeDays": 1825,
+      "lifespanDays": 10950
+    },
+    {
+      "id": "pond_frostveil_sturgeon",
+      "speciesId": "frostveil_sturgeon",
+      "dietClass": "arcane",
+      "secondaryFeedClasses": [
+        "protein"
+      ],
+      "maturityAgeDays": 2920,
+      "lifespanDays": 18250
+    }
+  ]
+}

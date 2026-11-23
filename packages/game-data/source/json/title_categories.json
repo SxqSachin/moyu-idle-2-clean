@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "title_categories": [
+    {
+      "id": "unit",
+      "nameKey": "title_category.unit.name",
+      "order": 10,
+      "disabled": false
+    },
+    {
+      "id": "special",
+      "nameKey": "title_category.special.name",
+      "order": 20,
+      "disabled": false
+    },
+    {
+      "id": "daily",
+      "nameKey": "title_category.daily.name",
+      "order": 30,
+      "disabled": false
+    }
+  ]
+}

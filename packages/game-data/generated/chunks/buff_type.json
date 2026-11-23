@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "buff_type": [
+    {
+      "id": "battle_fervor",
+      "nameKey": "buff_type.battle_fervor.name",
+      "descKey": "buff_type.battle_fervor.desc",
+      "color": "#14B8A6",
+      "disabled": false
+    },
+    {
+      "id": "curse",
+      "nameKey": "buff_type.curse.name",
+      "descKey": "buff_type.curse.desc",
+      "color": "#B91C1C",
+      "disabled": false
+    },
+    {
+      "id": "disruption",
+      "nameKey": "buff_type.disruption.name",
+      "descKey": "buff_type.disruption.desc",
+      "color": "#E11D48",
+      "disabled": false
+    },
+    {
+      "id": "formation_aura",
+      "nameKey": "buff_type.formation_aura.name",
+      "descKey": "buff_type.formation_aura.desc",
+      "color": "#3B82F6",
+      "disabled": false
+    },
+    {
+      "id": "renewal",
+      "nameKey": "buff_type.renewal.name",
+      "descKey": "buff_type.renewal.desc",
+      "color": "#22C55E",
+      "disabled": false
+    },
+    {
+      "id": "snare",
+      "nameKey": "buff_type.snare.name",
+      "descKey": "buff_type.snare.desc",
+      "color": "#F97316",
+      "disabled": false
+    },
+    {
+      "id": "summoning_link",
+      "nameKey": "buff_type.summoning_link.name",
+      "descKey": "buff_type.summoning_link.desc",
+      "color": "#2DD4BF",
+      "disabled": false
+    },
+    {
+      "id": "suppression",
+      "nameKey": "buff_type.suppression.name",
+      "descKey": "buff_type.suppression.desc",
+      "color": "#DC2626",
+      "disabled": false
+    },
+    {
+      "id": "tactical_focus",
+      "nameKey": "buff_type.tactical_focus.name",
+      "descKey": "buff_type.tactical_focus.desc",
+      "color": "#0D9488",
+      "disabled": false
+    },
+    {
+      "id": "veilstep",
+      "nameKey": "buff_type.veilstep.name",
+      "descKey": "buff_type.veilstep.desc",
+      "color": "#06B6D4",
+      "disabled": false
+    },
+    {
+      "id": "vulnerability",
+      "nameKey": "buff_type.vulnerability.name",
+      "descKey": "buff_type.vulnerability.desc",
+      "color": "#EF4444",
+      "disabled": false
+    },
+    {
+      "id": "warding",
+      "nameKey": "buff_type.warding.name",
+      "descKey": "buff_type.warding.desc",
+      "color": "#0EA5E9",
+      "disabled": false
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "alchemy_mediums": [
+    {
+      "id": "sun_resin",
+      "itemId": "sun_resin",
+      "nameKey": "item.sun_resin.name",
+      "descKey": "item.sun_resin.desc",
+      "consumePerCraft": 310,
+      "minAlchemyLevel": 35,
+      "modifiers": {
+        "valueMultiplier": 1,
+        "negativeMultiplier": 0.78,
+        "failChanceDelta": 0.035,
+        "successFloor": 0,
+        "maxTraitSlots": 3,
+        "familyAffinity": {
+          "alchemy": 0.16,
+          "physical": 0.06
+        }
+      },
+      "active": true,
+      "disabled": false
+    },
+    {
+      "id": "moon_resin",
+      "itemId": "moon_resin",
+      "nameKey": "item.moon_resin.name",
+      "descKey": "item.moon_resin.desc",
+      "consumePerCraft": 250,
+      "minAlchemyLevel": 40,
+      "modifiers": {
+        "valueMultiplier": 1,
+        "negativeMultiplier": 0.7,
+        "failChanceDelta": 0,
+        "successFloor": 0,
+        "maxTraitSlots": 3,
+        "familyAffinity": {
+          "alchemy": 0.22,
+          "magic_crit": 0.08
+        }
+      },
+      "active": true,
+      "disabled": false
+    },
+    {
+      "id": "base4_shadow_ink",
+      "itemId": "base4_shadow_ink",
+      "nameKey": "item.base4_shadow_ink.name",
+      "descKey": "item.base4_shadow_ink.desc",
+      "consumePerCraft": 2,
+      "minAlchemyLevel": 34,
+      "modifiers": {
+        "valueMultiplier": 1.08,
+        "negativeMultiplier": 1.18,
+        "failChanceDelta": 0,
+        "successFloor": 0,
+        "maxTraitSlots": 3,
+        "familyAffinity": {
+          "shadow": 0.26,
+          "crit": 0.11
+        }
+      },
+      "active": true,
+      "disabled": false
+    },
+    {
+      "id": "glow_core",
+      "itemId": "glow_core",
+      "nameKey": "item.glow_core.name",
+      "descKey": "item.glow_core.desc",
+      "consumePerCraft": 5,
+      "minAlchemyLevel": 35,
+      "modifiers": {
+        "valueMultiplier": 1.08,
+        "negativeMultiplier": 1.16,
+        "failChanceDelta": 0,
+        "successFloor": 0,
+        "maxTraitSlots": 0,
+        "familyAffinity": {
+          "arcane": 0.19,
+          "mining": 0.08
+        }
+      },
+      "active": true,
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_sage_scroll",
+      "itemId": "holy_cat_sage_scroll",
+      "nameKey": "item.holy_cat_sage_scroll.name",
+      "descKey": "item.holy_cat_sage_scroll.desc",
+      "consumePerCraft": 1,
+      "minAlchemyLevel": 36,
+      "modifiers": {
+        "valueMultiplier": 1,
+        "negativeMultiplier": 0.96,
+        "failChanceDelta": -0.045,
+        "successFloor": 0.16,
+        "maxTraitSlots": 0,
+        "familyAffinity": {
+          "alchemy": 0.12,
+          "arcane": 0.04
+        }
+      },
+      "active": true,
+      "disabled": false
+    },
+    {
+      "id": "moon_essence",
+      "itemId": "moon_essence",
+      "nameKey": "item.moon_essence.name",
+      "descKey": "item.moon_essence.desc",
+      "consumePerCraft": 2,
+      "minAlchemyLevel": 38,
+      "modifiers": {
+        "valueMultiplier": 0.96,
+        "negativeMultiplier": 1.12,
+        "failChanceDelta": 0.045,
+        "successFloor": 0,
+        "maxTraitSlots": 5,
+        "familyAffinity": {}
+      },
+      "active": true,
+      "disabled": false
+    },
+    {
+      "id": "base4_abyssal_core",
+      "itemId": "base4_abyssal_core",
+      "nameKey": "item.base4_abyssal_core.name",
+      "descKey": "item.base4_abyssal_core.desc",
+      "consumePerCraft": 2,
+      "minAlchemyLevel": 39,
+      "modifiers": {
+        "valueMultiplier": 1.15,
+        "negativeMultiplier": 1.2,
+        "failChanceDelta": 0.07,
+        "successFloor": 0,
+        "maxTraitSlots": 2,
+        "familyAffinity": {}
+      },
+      "active": true,
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_royal_jewel",
+      "itemId": "holy_cat_royal_jewel",
+      "nameKey": "item.holy_cat_royal_jewel.name",
+      "descKey": "item.holy_cat_royal_jewel.desc",
+      "consumePerCraft": 2,
+      "minAlchemyLevel": 40,
+      "modifiers": {
+        "valueMultiplier": 1,
+        "negativeMultiplier": 1.32,
+        "failChanceDelta": 0.075,
+        "successFloor": 0,
+        "maxTraitSlots": 4,
+        "familyAffinity": {
+          "apex": 0.3,
+          "defense": 0.04
+        }
+      },
+      "active": true,
+      "disabled": false
+    },
+    {
+      "id": "crystal",
+      "itemId": "crystal",
+      "nameKey": "item.crystal.name",
+      "descKey": "item.crystal.desc",
+      "consumePerCraft": 100,
+      "minAlchemyLevel": 40,
+      "modifiers": {
+        "valueMultiplier": 1.33,
+        "negativeMultiplier": 1.4,
+        "failChanceDelta": 0.05,
+        "successFloor": 0,
+        "maxTraitSlots": 1,
+        "familyAffinity": {}
+      },
+      "active": true,
+      "disabled": false
+    }
+  ]
+}

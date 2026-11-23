@@ -1,0 +1,106 @@
+@import "../skill-tool/styles.css";
+
+table {
+  min-width: 1200px;
+}
+
+.section-head {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.editor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.editor-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.editor-field.compact {
+  min-width: 180px;
+}
+
+.modal-section + .modal-section {
+  margin-top: 12px;
+}
+
+.visual-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.visual-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.visual-item {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.visual-item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.rules-wrap {
+  display: grid;
+  gap: 10px;
+}
+
+.rule-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+  background: var(--card);
+}
+
+.rule-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.json-preview {
+  margin-top: 8px;
+}
+
+.code-grid {
+  display: grid;
+  gap: 6px;
+}
+
+.code-grid textarea {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  white-space: pre-wrap;
+}
+
+.empty-cell {
+  color: var(--muted);
+  text-align: center;
+  padding: 16px;
+}
+
+@media (max-width: 900px) {
+  .visual-grid {
+    grid-template-columns: 1fr;
+  }
+}

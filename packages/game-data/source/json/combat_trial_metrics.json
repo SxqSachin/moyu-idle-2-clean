@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "combat_trial_metrics": [
+    {
+      "id": "damage_total",
+      "schemaVersion": 2,
+      "nameKey": "game.combatTrial.metrics.damageTotal.name",
+      "shortNameKey": "game.combatTrial.metrics.damageTotal.shortName",
+      "descKey": "game.combatTrial.metrics.damageTotal.desc",
+      "eventType": "damage",
+      "aggregation": "sum",
+      "sourceScope": "player_side",
+      "targetScope": "objective_units",
+      "ranked": true,
+      "rankDirection": "desc",
+      "eligibleEndReasons": [
+        "action_budget_reached",
+        "team_defeated"
+      ],
+      "valueFormat": "number",
+      "sortOrder": 0,
+      "enabled": true
+    },
+    {
+      "id": "damage_max_segment",
+      "schemaVersion": 2,
+      "nameKey": "game.combatTrial.metrics.damageMaxSegment.name",
+      "shortNameKey": "game.combatTrial.metrics.damageMaxSegment.shortName",
+      "descKey": "game.combatTrial.metrics.damageMaxSegment.desc",
+      "eventType": "damage",
+      "aggregation": "max",
+      "sourceScope": "player_side",
+      "targetScope": "objective_units",
+      "ranked": true,
+      "rankDirection": "desc",
+      "eligibleEndReasons": [
+        "action_budget_reached",
+        "team_defeated"
+      ],
+      "valueFormat": "number",
+      "sortOrder": 10,
+      "enabled": true
+    },
+    {
+      "id": "actions_to_victory",
+      "schemaVersion": 2,
+      "nameKey": "game.combatTrial.metrics.actionsToVictory.name",
+      "shortNameKey": "game.combatTrial.metrics.actionsToVictory.shortName",
+      "descKey": "game.combatTrial.metrics.actionsToVictory.desc",
+      "eventType": "battle_end",
+      "aggregation": "final",
+      "valueSource": "player_main_actions",
+      "sourceScope": "player_side",
+      "targetScope": "objective_units",
+      "ranked": true,
+      "rankDirection": "asc",
+      "eligibleEndReasons": [
+        "enemy_team_defeated",
+        "all_waves_cleared"
+      ],
+      "valueFormat": "integer",
+      "sortOrder": 20,
+      "enabled": true
+    },
+    {
+      "id": "waves_cleared",
+      "schemaVersion": 2,
+      "nameKey": "game.combatTrial.metrics.wavesCleared.name",
+      "shortNameKey": "game.combatTrial.metrics.wavesCleared.shortName",
+      "descKey": "game.combatTrial.metrics.wavesCleared.desc",
+      "eventType": "battle_end",
+      "aggregation": "final",
+      "valueSource": "waves_cleared",
+      "sourceScope": "player_side",
+      "targetScope": "objective_units",
+      "ranked": true,
+      "rankDirection": "desc",
+      "eligibleEndReasons": [
+        "all_waves_cleared",
+        "action_budget_reached",
+        "team_defeated"
+      ],
+      "valueFormat": "integer",
+      "sortOrder": 30,
+      "enabled": true
+    },
+    {
+      "id": "objective_units_defeated",
+      "schemaVersion": 2,
+      "nameKey": "game.combatTrial.metrics.objectiveUnitsDefeated.name",
+      "shortNameKey": "game.combatTrial.metrics.objectiveUnitsDefeated.shortName",
+      "descKey": "game.combatTrial.metrics.objectiveUnitsDefeated.desc",
+      "eventType": "battle_end",
+      "aggregation": "final",
+      "valueSource": "objective_units_defeated",
+      "sourceScope": "player_side",
+      "targetScope": "objective_units",
+      "ranked": true,
+      "rankDirection": "desc",
+      "eligibleEndReasons": [
+        "all_waves_cleared",
+        "action_budget_reached",
+        "team_defeated"
+      ],
+      "valueFormat": "integer",
+      "sortOrder": 40,
+      "enabled": true
+    },
+    {
+      "id": "effective_healing",
+      "schemaVersion": 2,
+      "nameKey": "game.combatTrial.metrics.effectiveHealing.name",
+      "shortNameKey": "game.combatTrial.metrics.effectiveHealing.shortName",
+      "descKey": "game.combatTrial.metrics.effectiveHealing.desc",
+      "eventType": "heal",
+      "aggregation": "sum",
+      "sourceScope": "player_side",
+      "targetScope": "objective_units",
+      "ranked": true,
+      "rankDirection": "desc",
+      "eligibleEndReasons": [
+        "action_budget_reached",
+        "team_defeated"
+      ],
+      "valueFormat": "number",
+      "sortOrder": 50,
+      "enabled": true
+    },
+    {
+      "id": "objective_remaining_hp",
+      "schemaVersion": 2,
+      "nameKey": "game.combatTrial.metrics.objectiveRemainingHp.name",
+      "shortNameKey": "game.combatTrial.metrics.objectiveRemainingHp.shortName",
+      "descKey": "game.combatTrial.metrics.objectiveRemainingHp.desc",
+      "eventType": "battle_end",
+      "aggregation": "final",
+      "valueSource": "objective_units_remaining_hp",
+      "sourceScope": "player_side",
+      "targetScope": "objective_units",
+      "ranked": true,
+      "rankDirection": "desc",
+      "eligibleEndReasons": [
+        "action_budget_reached",
+        "team_defeated"
+      ],
+      "valueFormat": "number",
+      "sortOrder": 60,
+      "enabled": true
+    }
+  ]
+}

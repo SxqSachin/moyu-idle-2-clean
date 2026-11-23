@@ -1,0 +1,4317 @@
+{
+  "version": 1,
+  "enemies": [
+    {
+      "id": "berry_bird_001",
+      "name": "浆果鸟",
+      "position": "rearguard",
+      "exp": 1,
+      "drops": {
+        "skillbook_arrow_rain": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_bow_barrage": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "basic_attack"
+      ],
+      "nameKey": "enemy.berry_bird_001.name",
+      "descKey": "enemy.berry_bird_001.desc",
+      "level": 2,
+      "type": "normal",
+      "disabled": false,
+      "race": "beast",
+      "class": "scout",
+      "dexterity": 1,
+      "perception": 1,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 6
+    },
+    {
+      "id": "mushroom_bug_001",
+      "name": "蘑菇虫",
+      "position": "midguard",
+      "exp": 1,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_blade_guard_break": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "basic_attack"
+      ],
+      "nameKey": "enemy.mushroom_bug_001.name",
+      "descKey": "enemy.mushroom_bug_001.desc",
+      "level": 3,
+      "type": "normal",
+      "disabled": false,
+      "race": "insect",
+      "class": "scout",
+      "dexterity": 1,
+      "perception": 1,
+      "stamina": 1,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "plain_mouse_001",
+      "name": "平原小鼠",
+      "position": "midguard",
+      "exp": 1,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_blade_guard_break": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "basic_attack"
+      ],
+      "nameKey": "enemy.plain_mouse_001.name",
+      "descKey": "enemy.plain_mouse_001.desc",
+      "level": 1,
+      "type": "normal",
+      "disabled": false,
+      "race": "beast",
+      "class": "scout",
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 3
+    },
+    {
+      "id": "lazy_rabbit_001",
+      "name": "慵懒兔",
+      "position": "midguard",
+      "exp": 1,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_blade_guard_break": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "basic_attack"
+      ],
+      "nameKey": "enemy.lazy_rabbit_001.name",
+      "descKey": "enemy.lazy_rabbit_001.desc",
+      "level": 3,
+      "type": "normal",
+      "disabled": false,
+      "race": "beast",
+      "class": "support",
+      "intelligence": 1,
+      "perception": 1,
+      "stamina": 1,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "snail_001",
+      "name": "悠闲蜗牛",
+      "position": "vanguard",
+      "exp": 1,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_spear_stance_guard": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "basic_attack"
+      ],
+      "nameKey": "enemy.snail_001.name",
+      "descKey": "enemy.snail_001.desc",
+      "level": 3,
+      "type": "normal",
+      "disabled": false,
+      "race": "beast",
+      "class": "tank",
+      "stamina": 1,
+      "strength": 1,
+      "physics_defence": 1,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "catnip_kitten_001",
+      "name": "猫薄荷幼崽",
+      "position": "midguard",
+      "exp": 1,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_blade_guard_break": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "basic_attack"
+      ],
+      "nameKey": "enemy.catnip_kitten_001.name",
+      "descKey": "enemy.catnip_kitten_001.desc",
+      "level": 4,
+      "type": "normal",
+      "disabled": false,
+      "race": "feline",
+      "class": "warrior",
+      "strength": 2,
+      "stamina": 1,
+      "dexterity": 1,
+      "perception": 1,
+      "speed": 6,
+      "physics_damage": 18,
+      "magical_damage": 1,
+      "hp": 2
+    },
+    {
+      "id": "plain_boss_001",
+      "name": "平原守护猫",
+      "position": "vanguard",
+      "exp": 4,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_blade_whirlwind": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "map_base_1": {
+          "percent": 0.0001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "boss_ground_slam",
+        "power_strike",
+        "tactical_focus_break",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.plain_boss_001.name",
+      "descKey": "enemy.plain_boss_001.desc",
+      "level": 5,
+      "type": "elite",
+      "disabled": false,
+      "race": "feline",
+      "class": "tank",
+      "stamina": 4,
+      "strength": 2,
+      "perception": 1,
+      "dexterity": 1,
+      "intelligence": 1,
+      "physics_defence": 1,
+      "speed": 6,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 23
+    },
+    {
+      "id": "forest_healer_001",
+      "name": "森林治愈精灵",
+      "position": "rearguard",
+      "exp": 2,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_blade_guard_break": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "base2_moss_spore": {
+          "percent": 0.015,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "basic_heal",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.forest_healer_001.name",
+      "descKey": "enemy.forest_healer_001.desc",
+      "level": 6,
+      "type": "normal",
+      "disabled": false,
+      "race": "spirit",
+      "class": "priest",
+      "perception": 4,
+      "intelligence": 3,
+      "stamina": 2,
+      "magical_defence": 12,
+      "hp_regen": 3,
+      "mp_regen": 2,
+      "magical_damage": 1,
+      "physics_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "slime_001",
+      "name": "史莱姆",
+      "position": "vanguard",
+      "exp": 1,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_blade_guard_break": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "base2_moss_spore": {
+          "percent": 0.015,
+          "range": {
+            "min": 1,
+            "max": 2
+          }
+        }
+      },
+      "skillIds": [
+        "basic_attack"
+      ],
+      "nameKey": "enemy.slime_001.name",
+      "descKey": "enemy.slime_001.desc",
+      "level": 5,
+      "type": "normal",
+      "disabled": false,
+      "race": "elemental",
+      "class": "tank",
+      "stamina": 2,
+      "strength": 1,
+      "perception": 1,
+      "dexterity": 1,
+      "intelligence": 1,
+      "physics_defence": 1,
+      "magical_damage": 1,
+      "physics_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "slime_002",
+      "name": "变异史莱姆",
+      "position": "vanguard",
+      "exp": 1,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_blade_guard_break": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "base2_moss_spore": {
+          "percent": 0.02,
+          "range": {
+            "min": 1,
+            "max": 2
+          }
+        }
+      },
+      "skillIds": [
+        "basic_attack"
+      ],
+      "nameKey": "enemy.slime_002.name",
+      "descKey": "enemy.slime_002.desc",
+      "level": 7,
+      "type": "normal",
+      "disabled": false,
+      "race": "elemental",
+      "class": "magic_tank",
+      "stamina": 4,
+      "intelligence": 3,
+      "perception": 3,
+      "strength": 1,
+      "dexterity": 1,
+      "magical_damage": 1,
+      "physics_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "goblin_001",
+      "name": "哥布林",
+      "position": "vanguard",
+      "exp": 1,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_blade_guard_break": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "power_strike",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.goblin_001.name",
+      "descKey": "enemy.goblin_001.desc",
+      "level": 6,
+      "type": "normal",
+      "disabled": false,
+      "race": "humanoid",
+      "class": "warrior",
+      "strength": 3,
+      "stamina": 2,
+      "dexterity": 1,
+      "perception": 1,
+      "intelligence": 1,
+      "physics_damage": 23,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "goblin_002",
+      "name": "哥布林弓手",
+      "position": "rearguard",
+      "exp": 1,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_blade_guard_break": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "bow_barrage",
+        "bow_poison_shot",
+        "bow_pinning_shot",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.goblin_002.name",
+      "descKey": "enemy.goblin_002.desc",
+      "level": 8,
+      "type": "normal",
+      "disabled": false,
+      "race": "humanoid",
+      "class": "archer",
+      "dexterity": 5,
+      "strength": 3,
+      "perception": 2,
+      "stamina": 1,
+      "intelligence": 1,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 16
+    },
+    {
+      "id": "bat_001",
+      "name": "洞穴蝙蝠",
+      "position": "rearguard",
+      "exp": 1,
+      "drops": {
+        "skillbook_arrow_rain": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_bow_barrage": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "base2_cave_membrane": {
+          "percent": 0.025,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "basic_attack"
+      ],
+      "nameKey": "enemy.bat_001.name",
+      "descKey": "enemy.bat_001.desc",
+      "level": 7,
+      "type": "normal",
+      "disabled": false,
+      "race": "beast",
+      "class": "assassin",
+      "dexterity": 4,
+      "strength": 3,
+      "perception": 2,
+      "stamina": 1,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 13
+    },
+    {
+      "id": "wolf_001",
+      "name": "野狼",
+      "position": "midguard",
+      "exp": 1,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_blade_guard_break": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "power_strike",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.wolf_001.name",
+      "descKey": "enemy.wolf_001.desc",
+      "level": 9,
+      "type": "normal",
+      "disabled": false,
+      "race": "beast",
+      "class": "assassin",
+      "dexterity": 5,
+      "strength": 4,
+      "perception": 2,
+      "stamina": 2,
+      "intelligence": 1,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 10
+    },
+    {
+      "id": "skeleton_001",
+      "name": "骷髅战士",
+      "position": "vanguard",
+      "exp": 2,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_blade_guard_break": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "base2_ruin_core_shard": {
+          "percent": 0.015,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "power_strike",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.skeleton_001.name",
+      "descKey": "enemy.skeleton_001.desc",
+      "level": 8,
+      "type": "normal",
+      "disabled": false,
+      "race": "undead",
+      "class": "warrior",
+      "strength": 5,
+      "stamina": 4,
+      "dexterity": 2,
+      "perception": 1,
+      "intelligence": 1,
+      "hp": 1,
+      "physics_damage": 26,
+      "magical_damage": 1
+    },
+    {
+      "id": "mushroom_001",
+      "name": "毒蘑菇怪",
+      "position": "rearguard",
+      "exp": 1,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_blade_guard_break": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "base2_sporeveil_robe": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "base2_moss_spore": {
+          "percent": 0.02,
+          "range": {
+            "min": 1,
+            "max": 2
+          }
+        }
+      },
+      "skillIds": [
+        "power_strike",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.mushroom_001.name",
+      "descKey": "enemy.mushroom_001.desc",
+      "level": 10,
+      "type": "normal",
+      "disabled": false,
+      "race": "plant",
+      "class": "mage",
+      "intelligence": 6,
+      "perception": 5,
+      "stamina": 3,
+      "dexterity": 1,
+      "strength": 1,
+      "mp": 2,
+      "hp_regen": 2,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 8
+    },
+    {
+      "id": "lizard_001",
+      "name": "蜥蜴人",
+      "position": "vanguard",
+      "exp": 1,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_blade_guard_break": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "base2_ruin_core_shard": {
+          "percent": 0.015,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "power_strike",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.lizard_001.name",
+      "descKey": "enemy.lizard_001.desc",
+      "level": 11,
+      "type": "normal",
+      "disabled": false,
+      "race": "humanoid",
+      "class": "berserker",
+      "strength": 9,
+      "stamina": 5,
+      "dexterity": 3,
+      "perception": 2,
+      "intelligence": 1,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "spirit_001",
+      "name": "幽灵",
+      "position": "rearguard",
+      "exp": 1,
+      "drops": {
+        "skillbook_arcane_missile": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_arcane_chain_bolt": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "base2_cave_membrane": {
+          "percent": 0.02,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "arcane_missile",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.spirit_001.name",
+      "descKey": "enemy.spirit_001.desc",
+      "level": 11,
+      "type": "normal",
+      "equipment": [
+        {
+          "templateItemId": "wood_staff",
+          "equippedSlot": "right_hand",
+          "equipType": "battle",
+          "enhanceLevel": 0,
+          "baseSnapshot": {},
+          "affixes": []
+        }
+      ],
+      "disabled": false,
+      "race": "spirit",
+      "class": "mage",
+      "intelligence": 8,
+      "perception": 5,
+      "stamina": 2,
+      "dexterity": 1,
+      "strength": 1,
+      "mp": 2,
+      "magical_damage": 1,
+      "physics_damage": 1,
+      "hp": 21
+    },
+    {
+      "id": "forest_boss_001",
+      "name": "森林巨魔",
+      "position": "vanguard",
+      "exp": 5,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_blade_whirlwind": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "map_base_2": {
+          "percent": 0.0001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "boss_vine_snare",
+        "power_strike",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.forest_boss_001.name",
+      "descKey": "enemy.forest_boss_001.desc",
+      "level": 12,
+      "type": "elite",
+      "disabled": false,
+      "race": "humanoid",
+      "class": "berserker",
+      "strength": 16,
+      "stamina": 8,
+      "dexterity": 5,
+      "perception": 3,
+      "intelligence": 2,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 16
+    },
+    {
+      "id": "cave_boss_001",
+      "name": "洞窟巨蝎",
+      "position": "vanguard",
+      "exp": 42,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_blade_whirlwind": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "base2_spectral_focus_staff": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "base2_cave_membrane": {
+          "percent": 0.03,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "map_base_2": {
+          "percent": 0.0001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "boss_cave_in",
+        "arcane_missile",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.cave_boss_001.name",
+      "descKey": "enemy.cave_boss_001.desc",
+      "level": 14,
+      "type": "boss",
+      "disabled": false,
+      "race": "beast",
+      "class": "tank",
+      "stamina": 28,
+      "strength": 16,
+      "perception": 9,
+      "dexterity": 10,
+      "intelligence": 6,
+      "physics_defence": -13.2,
+      "magical_defence": -12.584,
+      "crit_damage_resist": 0.039,
+      "physics_damage": 1,
+      "magical_damage": 1
+    },
+    {
+      "id": "ruins_boss_001",
+      "name": "遗迹守卫者",
+      "position": "vanguard",
+      "exp": 48,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_blade_whirlwind": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "base2_spectral_focus_staff": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "base2_ruin_core_shard": {
+          "percent": 0.01,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_roar": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "map_base_2": {
+          "percent": 0.0001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "boss_arcane_overload",
+        "arcane_missile",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.ruins_boss_001.name",
+      "descKey": "enemy.ruins_boss_001.desc",
+      "level": 16,
+      "type": "boss",
+      "disabled": false,
+      "race": "construct",
+      "class": "tank",
+      "stamina": 36,
+      "strength": 19,
+      "perception": 11,
+      "dexterity": 8,
+      "intelligence": 6,
+      "physics_defence": -16.764,
+      "magical_defence": -15.928,
+      "crit_damage_resist": 0.018,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "dragon_boss_001",
+      "name": "熔岩巨龙",
+      "position": "rearguard",
+      "exp": 73,
+      "drops": {
+        "skillbook_power_strike": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_blade_whirlwind": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "base2_dragon_scale_chip": {
+          "percent": 0.01,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "map_base_2": {
+          "percent": 0.0001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "boss_flame_sweep",
+        "power_strike",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.dragon_boss_001.name",
+      "descKey": "enemy.dragon_boss_001.desc",
+      "level": 24,
+      "type": "boss",
+      "disabled": false,
+      "race": "dragon",
+      "class": "mage",
+      "stamina": 49,
+      "intelligence": 36,
+      "perception": 32,
+      "strength": 20,
+      "dexterity": 8,
+      "physics_defence": -22.044,
+      "magical_defence": -29.172,
+      "crit_damage_resist": -0.03,
+      "hp": 1,
+      "physics_damage": 1,
+      "magical_damage": 1
+    },
+    {
+      "id": "ice_slime_001",
+      "name": "冰霜史莱姆",
+      "position": "vanguard",
+      "exp": 5,
+      "drops": {
+        "frost_ledger_page": {
+          "percent": 0.08,
+          "range": {
+            "min": 1,
+            "max": 2
+          }
+        },
+        "snowseal_wax": {
+          "percent": 0.0015,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_snowpact_receipt": {
+          "percent": 0.0012,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "frostbite_slow",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.ice_slime_001.name",
+      "descKey": "enemy.ice_slime_001.desc",
+      "level": 28,
+      "type": "normal",
+      "disabled": false,
+      "race": "elemental",
+      "class": "magic_tank",
+      "stamina": 19,
+      "intelligence": 16,
+      "perception": 14,
+      "strength": 6,
+      "dexterity": 3,
+      "magical_damage": 1,
+      "physics_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "snow_wolf_001",
+      "name": "雪原狼",
+      "position": "midguard",
+      "exp": 6,
+      "drops": {
+        "rimebone_handle": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "frost_ledger_page": {
+          "percent": 0.06,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_rime_reaper_cut": {
+          "percent": 0.0004,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "frostbite_slow",
+        "quick_slash",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.snow_wolf_001.name",
+      "descKey": "enemy.snow_wolf_001.desc",
+      "level": 33,
+      "type": "normal",
+      "disabled": false,
+      "race": "beast",
+      "class": "assassin",
+      "dexterity": 28,
+      "strength": 20,
+      "perception": 11,
+      "stamina": 9,
+      "intelligence": 3,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "frost_goblin_001",
+      "name": "冰霜哥布林",
+      "position": "vanguard",
+      "exp": 11,
+      "drops": {
+        "white_coin_shard": {
+          "percent": 0.022,
+          "range": {
+            "min": 1,
+            "max": 2
+          }
+        },
+        "frost_ledger_page": {
+          "percent": 0.007,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_snowpact_receipt": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "frostbite_slow",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.frost_goblin_001.name",
+      "descKey": "enemy.frost_goblin_001.desc",
+      "level": 34,
+      "type": "normal",
+      "disabled": false,
+      "race": "humanoid",
+      "class": "warrior",
+      "strength": 29,
+      "stamina": 17,
+      "dexterity": 12,
+      "perception": 7,
+      "intelligence": 5,
+      "physics_damage": 117,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "ice_bat_001",
+      "name": "冰翼蝙蝠",
+      "position": "rearguard",
+      "exp": 4,
+      "drops": {
+        "white_coin_shard": {
+          "percent": 0.018,
+          "range": {
+            "min": 1,
+            "max": 2
+          }
+        },
+        "snowseal_wax": {
+          "percent": 0.0015,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_white_coin_divination": {
+          "percent": 0.0012,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "snowfield_whiteout",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.ice_bat_001.name",
+      "descKey": "enemy.ice_bat_001.desc",
+      "level": 28,
+      "type": "normal",
+      "disabled": false,
+      "race": "beast",
+      "class": "assassin",
+      "dexterity": 23,
+      "strength": 17,
+      "perception": 9,
+      "stamina": 7,
+      "intelligence": 2,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "snow_rabbit_001",
+      "name": "雪原兔",
+      "position": "midguard",
+      "exp": 4,
+      "drops": {
+        "warm_thread_core": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "frost_ledger_page": {
+          "percent": 0.05,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_hearthside_thaw": {
+          "percent": 0.0012,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "basic_attack"
+      ],
+      "nameKey": "enemy.snow_rabbit_001.name",
+      "descKey": "enemy.snow_rabbit_001.desc",
+      "level": 26,
+      "type": "normal",
+      "disabled": false,
+      "race": "beast",
+      "class": "scout",
+      "dexterity": 19,
+      "perception": 14,
+      "stamina": 10,
+      "strength": 6,
+      "intelligence": 4,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "frost_spirit_001",
+      "name": "霜之精灵",
+      "position": "rearguard",
+      "exp": 7,
+      "drops": {
+        "ice_abacus_bead": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "white_coin_shard": {
+          "percent": 0.03,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_hearthside_thaw": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "glacial_prison",
+        "snowfield_whiteout",
+        "basic_heal",
+        "hearthside_thaw",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.frost_spirit_001.name",
+      "descKey": "enemy.frost_spirit_001.desc",
+      "level": 36,
+      "type": "normal",
+      "equipment": [
+        {
+          "templateItemId": "wood_staff",
+          "equippedSlot": "right_hand",
+          "equipType": "battle",
+          "enhanceLevel": 0,
+          "baseSnapshot": {},
+          "affixes": []
+        }
+      ],
+      "disabled": false,
+      "race": "spirit",
+      "class": "mage",
+      "intelligence": 34,
+      "perception": 23,
+      "stamina": 9,
+      "dexterity": 6,
+      "strength": 4,
+      "magical_damage": 1,
+      "physics_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "snowfield_boss_001",
+      "name": "雪原巨兽",
+      "position": "vanguard",
+      "exp": 146,
+      "drops": {
+        "rimebone_handle": {
+          "percent": 0.02,
+          "range": {
+            "min": 1,
+            "max": 2
+          }
+        },
+        "snowseal_wax": {
+          "percent": 0.0015,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_rime_reaper_cut": {
+          "percent": 0.004,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "map_base_3": {
+          "percent": 0.0001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "base3_icebreaker_charge",
+        "glacial_prison",
+        "snowfield_whiteout",
+        "power_strike",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.snowfield_boss_001.name",
+      "descKey": "enemy.snowfield_boss_001.desc",
+      "level": 38,
+      "type": "boss",
+      "disabled": false,
+      "race": "beast",
+      "class": "tank",
+      "stamina": 96,
+      "strength": 54,
+      "perception": 30,
+      "dexterity": 33,
+      "intelligence": 19,
+      "physics_defence": -45.144,
+      "magical_defence": -42.768,
+      "crit_damage_resist": -0.156,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "snowfield_boss_002",
+      "name": "极寒冰灵王",
+      "position": "rearguard",
+      "exp": 155,
+      "drops": {
+        "warm_thread_core": {
+          "percent": 0.02,
+          "range": {
+            "min": 1,
+            "max": 2
+          }
+        },
+        "ice_abacus_bead": {
+          "percent": 0.03,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_hearthside_thaw": {
+          "percent": 0.004,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "map_base_3": {
+          "percent": 0.0001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "base3_absolute_freeze",
+        "glacial_prison",
+        "snowfield_whiteout",
+        "power_strike",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.snowfield_boss_002.name",
+      "descKey": "enemy.snowfield_boss_002.desc",
+      "level": 40,
+      "type": "boss",
+      "disabled": false,
+      "race": "spirit",
+      "class": "magic_tank",
+      "stamina": 86,
+      "intelligence": 75,
+      "perception": 65,
+      "strength": 30,
+      "dexterity": 15,
+      "physics_defence": -38.016,
+      "magical_defence": -55.088,
+      "crit_damage_resist": -0.147,
+      "magical_damage": 1,
+      "physics_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "shadow_cat_001",
+      "name": "暗影猫灵",
+      "position": "vanguard",
+      "exp": 12,
+      "drops": {
+        "base4_shadow_silk": {
+          "percent": 0.03,
+          "range": {
+            "min": 1,
+            "max": 2
+          }
+        },
+        "sewing_weapon_1": {
+          "percent": 0.0001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "sewing_weapon_2": {
+          "percent": 0.0001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "sewing_weapon_3": {
+          "percent": 0.0001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "base4_shadow_bind_skill",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.shadow_cat_001.name",
+      "descKey": "enemy.shadow_cat_001.desc",
+      "level": 52,
+      "type": "normal",
+      "disabled": false,
+      "race": "feline",
+      "class": "assassin",
+      "dexterity": 49,
+      "strength": 34,
+      "perception": 22,
+      "stamina": 13,
+      "intelligence": 5,
+      "physics_defence": -9.636,
+      "magical_defence": -13.684,
+      "crit_damage_resist": -0.0615,
+      "physics_damage": 1,
+      "speed": 6,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "dungeon_guard_001",
+      "name": "地牢守卫猫",
+      "position": "vanguard",
+      "exp": 12,
+      "drops": {
+        "base4_shadow_silk": {
+          "percent": 0.02,
+          "range": {
+            "min": 1,
+            "max": 2
+          }
+        },
+        "base4_shadow_orb": {
+          "percent": 0.018,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "basic_attack"
+      ],
+      "nameKey": "enemy.dungeon_guard_001.name",
+      "descKey": "enemy.dungeon_guard_001.desc",
+      "level": 56,
+      "type": "normal",
+      "disabled": false,
+      "race": "feline",
+      "class": "tank",
+      "stamina": 49,
+      "strength": 28,
+      "perception": 19,
+      "dexterity": 19,
+      "intelligence": 10,
+      "speed": 6,
+      "physics_defence": -23.1,
+      "magical_defence": -23.452,
+      "crit_damage_resist": -0.10875,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "phantom_mouse_001",
+      "name": "幻影鼠",
+      "position": "midguard",
+      "exp": 13,
+      "drops": {
+        "base4_phantom_claw": {
+          "percent": 0.025,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_base4_shadowstep_stab": {
+          "percent": 0.0012,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "base4_shadow_bind_skill",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.phantom_mouse_001.name",
+      "descKey": "enemy.phantom_mouse_001.desc",
+      "level": 54,
+      "type": "normal",
+      "equipment": [
+        {
+          "templateItemId": "iron_dagger",
+          "equippedSlot": "right_hand",
+          "equipType": "battle",
+          "enhanceLevel": 0,
+          "baseSnapshot": {},
+          "affixes": []
+        }
+      ],
+      "disabled": false,
+      "race": "beast",
+      "class": "scout",
+      "dexterity": 45,
+      "perception": 35,
+      "stamina": 24,
+      "strength": 15,
+      "intelligence": 10,
+      "physics_defence": -11.484,
+      "magical_defence": -22.792,
+      "crit_damage_resist": -0.0735,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "curse_bat_001",
+      "name": "诅咒蝙蝠",
+      "position": "midguard",
+      "exp": 10,
+      "drops": {
+        "base4_cursed_wing_membrane": {
+          "percent": 0.028,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "base4_nightfall_curse_skill",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.curse_bat_001.name",
+      "descKey": "enemy.curse_bat_001.desc",
+      "level": 48,
+      "type": "normal",
+      "disabled": false,
+      "race": "undead",
+      "class": "mage",
+      "intelligence": 44,
+      "perception": 31,
+      "stamina": 17,
+      "dexterity": 8,
+      "strength": 8,
+      "physics_defence": -7.788,
+      "magical_defence": -18.876,
+      "crit_damage_resist": -0.05475,
+      "hp": 1,
+      "physics_damage": 1,
+      "magical_damage": 1
+    },
+    {
+      "id": "iron_golem_001",
+      "name": "铁甲猫偶",
+      "position": "vanguard",
+      "exp": 50,
+      "drops": {
+        "base4_shadow_orb": {
+          "percent": 0.01,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "base4_golem_dark_core": {
+          "percent": 0.012,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "basic_attack"
+      ],
+      "nameKey": "enemy.iron_golem_001.name",
+      "descKey": "enemy.iron_golem_001.desc",
+      "level": 60,
+      "type": "elite",
+      "disabled": false,
+      "race": "construct",
+      "class": "tank",
+      "stamina": 97,
+      "strength": 50,
+      "perception": 30,
+      "dexterity": 22,
+      "intelligence": 17,
+      "physics_defence": -45.012,
+      "magical_defence": -43.076,
+      "crit_damage_resist": -0.2055,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "rock_golem",
+      "name": "岩石傀儡",
+      "position": "vanguard",
+      "exp": 34,
+      "drops": {},
+      "skillIds": [
+        "basic_attack"
+      ],
+      "nameKey": "enemy.rock_golem.name",
+      "descKey": "enemy.rock_golem.desc",
+      "level": 50,
+      "type": "elite",
+      "disabled": false,
+      "race": "construct",
+      "class": "tank",
+      "stamina": 65,
+      "strength": 34,
+      "perception": 21,
+      "dexterity": 15,
+      "intelligence": 12,
+      "physics_defence": -30.228,
+      "magical_defence": -29.26,
+      "crit_damage_resist": -0.13875,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "witch_cat_001",
+      "name": "巫术猫女",
+      "position": "rearguard",
+      "exp": 12,
+      "drops": {
+        "base4_cursed_wing_membrane": {
+          "percent": 0.01,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_base4_knife_fan_skill": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "base4_nightfall_curse_skill",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.witch_cat_001.name",
+      "descKey": "enemy.witch_cat_001.desc",
+      "level": 52,
+      "type": "normal",
+      "equipment": [
+        {
+          "templateItemId": "wood_staff",
+          "equippedSlot": "right_hand",
+          "equipType": "battle",
+          "enhanceLevel": 0,
+          "baseSnapshot": {},
+          "affixes": []
+        }
+      ],
+      "disabled": false,
+      "race": "feline",
+      "class": "mage",
+      "intelligence": 48,
+      "perception": 35,
+      "stamina": 13,
+      "dexterity": 15,
+      "strength": 8,
+      "speed": 6,
+      "physics_defence": -6.204,
+      "magical_defence": -19.404,
+      "crit_damage_resist": -0.05175,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "shadow_mage_001",
+      "name": "暗影法师猫",
+      "position": "rearguard",
+      "exp": 66,
+      "drops": {
+        "base4_shadow_ink": {
+          "percent": 0.0015,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_base4_umbral_bolt": {
+          "percent": 0.0015,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "base4_void_lance",
+        "base4_shadow_bind_skill",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.shadow_mage_001.name",
+      "descKey": "enemy.shadow_mage_001.desc",
+      "level": 62,
+      "type": "elite",
+      "equipment": [
+        {
+          "templateItemId": "wood_staff",
+          "equippedSlot": "right_hand",
+          "equipType": "battle",
+          "enhanceLevel": 0,
+          "baseSnapshot": {},
+          "affixes": []
+        }
+      ],
+      "disabled": false,
+      "race": "feline",
+      "class": "mage",
+      "intelligence": 95,
+      "perception": 70,
+      "stamina": 25,
+      "dexterity": 29,
+      "strength": 16,
+      "speed": 6,
+      "physics_defence": -12.012,
+      "magical_defence": -38.5,
+      "crit_damage_resist": -0.102,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 319
+    },
+    {
+      "id": "abyssal_lord_001",
+      "name": "深渊领主",
+      "position": "vanguard",
+      "exp": 435,
+      "drops": {
+        "base4_shadow_orb": {
+          "percent": 0.02,
+          "range": {
+            "min": 1,
+            "max": 2
+          }
+        },
+        "base4_abyssal_core": {
+          "percent": 0.02,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_base4_abyssal_pressure": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "map_base_4": {
+          "percent": 0.0001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "base4_abyssal_pressure",
+        "base4_void_lance",
+        "base4_nightfall_curse_skill",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.abyssal_lord_001.name",
+      "descKey": "enemy.abyssal_lord_001.desc",
+      "level": 66,
+      "type": "boss",
+      "equipment": [
+        {
+          "templateItemId": "wood_staff",
+          "equippedSlot": "right_hand",
+          "equipType": "battle",
+          "enhanceLevel": 0,
+          "baseSnapshot": {},
+          "affixes": []
+        }
+      ],
+      "disabled": false,
+      "race": "shadow",
+      "class": "magic_tank",
+      "stamina": 152,
+      "intelligence": 114,
+      "perception": 119,
+      "strength": 59,
+      "dexterity": 50,
+      "physics_defence": -67.98,
+      "magical_defence": -99.176,
+      "crit_damage_resist": -0.3615,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 121
+    },
+    {
+      "id": "cat_ancestor_king_001",
+      "name": "猫祖王",
+      "position": "rearguard",
+      "exp": 530,
+      "drops": {
+        "base4_ancestor_shadow_jade": {
+          "percent": 0.05,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "base4_shadow_ink": {
+          "percent": 0.003,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_base4_ancestor_decree": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_perception_disrupt": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_perception_shockburst": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_perception_mind_control": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "map_base_4": {
+          "percent": 0.0001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "base4_ancestor_decree",
+        "base4_void_lance",
+        "base4_shadow_bind_skill",
+        "base4_nightfall_curse_skill",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.cat_ancestor_king_001.name",
+      "descKey": "enemy.cat_ancestor_king_001.desc",
+      "level": 72,
+      "type": "boss",
+      "equipment": [
+        {
+          "templateItemId": "sturdy_wood_staff",
+          "equippedSlot": "right_hand",
+          "equipType": "battle",
+          "enhanceLevel": 0,
+          "baseSnapshot": {},
+          "affixes": []
+        }
+      ],
+      "disabled": false,
+      "race": "feline",
+      "class": "magic_tank",
+      "stamina": 169,
+      "intelligence": 127,
+      "perception": 127,
+      "strength": 71,
+      "dexterity": 56,
+      "speed": 6,
+      "physics_defence": -76.296,
+      "magical_defence": -107.932,
+      "crit_damage_resist": -0.402667,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 314
+    },
+    {
+      "id": "cat_acolyte_001",
+      "name": "猫侍祭",
+      "position": "rearguard",
+      "exp": 30,
+      "drops": {
+        "holy_cat_blessed_fur": {
+          "percent": 0.005,
+          "range": {
+            "min": 1,
+            "max": 2
+          }
+        },
+        "holy_cat_incense": {
+          "percent": 0.0032,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_holy_cat_radiant_spark": {
+          "percent": 0.0016,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_holy_cat_censer_flare": {
+          "percent": 0.0008,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "holy_cat_radiant_spark",
+        "holy_cat_sanctuary",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.cat_acolyte_001.name",
+      "descKey": "enemy.cat_acolyte_001.desc",
+      "level": 86,
+      "type": "normal",
+      "disabled": false,
+      "race": "feline",
+      "class": "priest",
+      "perception": 90,
+      "intelligence": 59,
+      "stamina": 42,
+      "dexterity": 23,
+      "strength": 13,
+      "hp_regen": 3,
+      "mp_regen": 2,
+      "speed": 6,
+      "physics_defence": -18.348,
+      "magical_defence": -52.536,
+      "crit_damage_resist": -0.14025,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "cat_priest_001",
+      "name": "猫祭司",
+      "position": "rearguard",
+      "exp": 32,
+      "drops": {
+        "holy_cat_blessed_fur": {
+          "percent": 0.006,
+          "range": {
+            "min": 1,
+            "max": 2
+          }
+        },
+        "holy_cat_incense": {
+          "percent": 0.007,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_holy_cat_radiant_spark": {
+          "percent": 0.0014,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_holy_cat_censer_flare": {
+          "percent": 0.0012,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "holy_cat_radiant_spark",
+        "holy_cat_censer_flare",
+        "holy_cat_royal_blessing",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.cat_priest_001.name",
+      "descKey": "enemy.cat_priest_001.desc",
+      "level": 84,
+      "type": "normal",
+      "disabled": false,
+      "race": "feline",
+      "class": "priest",
+      "perception": 87,
+      "intelligence": 57,
+      "stamina": 41,
+      "dexterity": 22,
+      "strength": 12,
+      "hp_regen": 3,
+      "mp_regen": 2,
+      "speed": 6,
+      "physics_defence": -17.82,
+      "magical_defence": -50.908,
+      "crit_damage_resist": -0.13575,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "cat_paladin_001",
+      "name": "猫圣骑士",
+      "position": "vanguard",
+      "exp": 128,
+      "drops": {
+        "holy_cat_guardian_medal": {
+          "percent": 0.0022,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "holy_cat_incense": {
+          "percent": 0.007,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_holy_cat_sanctuary": {
+          "percent": 0.001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "holy_cat_sanctuary",
+        "holy_cat_guardian_vow",
+        "holy_cat_smite",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.cat_paladin_001.name",
+      "descKey": "enemy.cat_paladin_001.desc",
+      "level": 92,
+      "type": "elite",
+      "disabled": false,
+      "race": "feline",
+      "class": "magic_tank",
+      "stamina": 102,
+      "intelligence": 77,
+      "perception": 77,
+      "strength": 43,
+      "dexterity": 34,
+      "speed": 6,
+      "physics_defence": -46.068,
+      "magical_defence": -65.296,
+      "crit_damage_resist": -0.243,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1379
+    },
+    {
+      "id": "cat_sage_001",
+      "name": "猫贤者",
+      "position": "rearguard",
+      "exp": 167,
+      "drops": {
+        "holy_cat_sage_scroll": {
+          "percent": 0.008,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "holy_cat_incense": {
+          "percent": 0.006,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_holy_cat_royal_blessing": {
+          "percent": 0.0012,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_holy_cat_censer_flare": {
+          "percent": 0.0018,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "holy_cat_royal_blessing",
+        "holy_cat_silent_liturgy_skill",
+        "holy_cat_censer_flare",
+        "holy_cat_smite",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.cat_sage_001.name",
+      "descKey": "enemy.cat_sage_001.desc",
+      "level": 100,
+      "type": "elite",
+      "disabled": false,
+      "race": "feline",
+      "class": "mage",
+      "intelligence": 142,
+      "perception": 105,
+      "stamina": 38,
+      "dexterity": 44,
+      "strength": 24,
+      "speed": 6,
+      "physics_defence": -18.216,
+      "magical_defence": -57.904,
+      "crit_damage_resist": -0.15375,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 2464
+    },
+    {
+      "id": "cat_guardian_001",
+      "name": "猫守护者",
+      "position": "vanguard",
+      "exp": 1044,
+      "drops": {
+        "holy_cat_guardian_medal": {
+          "percent": 0.0088,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "holy_cat_guardian_vow",
+        "holy_cat_sanctuary",
+        "holy_cat_smite",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.cat_guardian_001.name",
+      "descKey": "enemy.cat_guardian_001.desc",
+      "level": 105,
+      "type": "boss",
+      "disabled": false,
+      "race": "feline",
+      "class": "tank",
+      "stamina": 186,
+      "strength": 105,
+      "perception": 72,
+      "dexterity": 72,
+      "intelligence": 38,
+      "speed": 6,
+      "physics_defence": -87.516,
+      "magical_defence": -88.968,
+      "crit_damage_resist": -0.415667,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 6226
+    },
+    {
+      "id": "holy_cat_king_001",
+      "name": "神圣猫王",
+      "position": "rearguard",
+      "exp": 1317,
+      "drops": {
+        "holy_cat_royal_jewel": {
+          "percent": 0.01,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "holy_cat_sage_scroll": {
+          "percent": 0.01,
+          "range": {
+            "min": 1,
+            "max": 2
+          }
+        },
+        "skillbook_holy_cat_royal_blessing": {
+          "percent": 0.004,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_holy_cat_smite": {
+          "percent": 0.004,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_holy_cat_guardian_vow": {
+          "percent": 0.003,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_holy_cat_silent_liturgy_skill": {
+          "percent": 0.002,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_holy_cat_royal_judgement": {
+          "percent": 0.006,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_holy_cat_censer_flare": {
+          "percent": 0.003,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "map_holy_cat_temple_001": {
+          "percent": 0.0001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "holy_cat_royal_judgement",
+        "holy_cat_royal_blessing",
+        "holy_cat_silent_liturgy_skill",
+        "holy_cat_censer_flare",
+        "holy_cat_guardian_vow",
+        "holy_cat_smite",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.holy_cat_king_001.name",
+      "descKey": "enemy.holy_cat_king_001.desc",
+      "level": 110,
+      "type": "boss",
+      "disabled": false,
+      "race": "feline",
+      "class": "support",
+      "intelligence": 162,
+      "perception": 167,
+      "stamina": 101,
+      "dexterity": 76,
+      "strength": 35,
+      "speed": 6,
+      "physics_defence": -44.616,
+      "magical_defence": -104.588,
+      "crit_damage_resist": -0.284,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 7793
+    },
+    {
+      "id": "player_echo",
+      "name": "旧影",
+      "position": "vanguard",
+      "exp": 0,
+      "drops": {},
+      "hp": 0,
+      "hp_regen": 0,
+      "mp": 0,
+      "mp_regen": 0,
+      "strength": 0,
+      "dexterity": 0,
+      "intelligence": 0,
+      "stamina": 0,
+      "luck": 0,
+      "physics_damage": 0,
+      "physics_defence": 0,
+      "magical_damage": 0,
+      "magical_defence": 0,
+      "physics_damage_amplification": 0,
+      "physics_damage_resist": 0,
+      "physics_flat_defense_penetration": 0,
+      "physics_percent_defense_penetration": 0,
+      "magical_damage_amplification": 0,
+      "magical_damage_resist": 0,
+      "magicial_flat_defense_penetration": 0,
+      "magicial_percent_defense_penetration": 0,
+      "crit_chance": 0,
+      "crit_damage": 0,
+      "speed": 0,
+      "skillIds": [
+        "basic_attack"
+      ],
+      "nameKey": "enemy.player_echo.name",
+      "descKey": "enemy.player_echo.desc",
+      "level": 130,
+      "type": "summon",
+      "disabled": false,
+      "race": "shadow",
+      "class": "assassin"
+    },
+    {
+      "id": "super_berry_bird_001",
+      "name": "超级浆果鸟",
+      "nameKey": "enemy.super_berry_bird_001.name",
+      "descKey": "enemy.super_berry_bird_001.desc",
+      "position": "rearguard",
+      "exp": 10000,
+      "drops": {
+        "luminous_berry_core": {
+          "percent": 0.2,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_super_berry_bird_dive": {
+          "percent": 0.05,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_super_berry_bird_berry_burst": {
+          "percent": 0.05,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "gold_coin": {
+          "percent": 1,
+          "range": {
+            "min": 10000,
+            "max": 15000
+          }
+        }
+      },
+      "skillIds": [
+        "super_berry_bird_dive",
+        "super_berry_bird_berry_burst",
+        "basic_attack"
+      ],
+      "level": 100,
+      "type": "world_boss",
+      "disabled": false,
+      "battle": 30,
+      "race": "beast",
+      "class": "berserker",
+      "strength": 320,
+      "stamina": 181,
+      "dexterity": 100,
+      "perception": 56,
+      "intelligence": 25,
+      "physics_defence": -113.916,
+      "magical_defence": -80.388,
+      "crit_damage_resist": -0.596333,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 35787
+    },
+    {
+      "id": "wolf_king_001",
+      "name": "狼王",
+      "nameKey": "enemy.wolf_king_001.name",
+      "descKey": "enemy.wolf_king_001.desc",
+      "position": "vanguard",
+      "exp": 14000,
+      "drops": {
+        "wolf_king_fang": {
+          "percent": 0.2,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_wolf_king_savage_bite": {
+          "percent": 0.05,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_wolf_king_howl": {
+          "percent": 0.05,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_wolf_king_rend": {
+          "percent": 0.1,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "gold_coin": {
+          "percent": 1,
+          "range": {
+            "min": 15000,
+            "max": 20000
+          }
+        }
+      },
+      "skillIds": [
+        "wolf_king_savage_bite",
+        "wolf_king_howl",
+        "wolf_king_rend",
+        "basic_attack"
+      ],
+      "level": 100,
+      "type": "world_boss",
+      "disabled": false,
+      "battle": 50,
+      "race": "beast",
+      "class": "berserker",
+      "strength": 320,
+      "stamina": 181,
+      "dexterity": 100,
+      "perception": 56,
+      "intelligence": 25,
+      "physics_defence": -113.916,
+      "magical_defence": -80.388,
+      "crit_damage_resist": -0.596333,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 35787
+    },
+    {
+      "id": "frenzy_berry_bird_001",
+      "name": "狂暴浆果鸟",
+      "nameKey": "enemy.frenzy_berry_bird_001.name",
+      "descKey": "enemy.frenzy_berry_bird_001.desc",
+      "position": "rearguard",
+      "exp": 136,
+      "drops": {},
+      "skillIds": [
+        "basic_attack"
+      ],
+      "level": 100,
+      "type": "elite",
+      "disabled": false,
+      "race": "beast",
+      "class": "berserker",
+      "strength": 173,
+      "stamina": 98,
+      "dexterity": 54,
+      "perception": 30,
+      "intelligence": 14,
+      "physics_defence": -61.644,
+      "magical_defence": -43.384,
+      "crit_damage_resist": -0.29925,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1745
+    },
+    {
+      "id": "shadow_assassin_cat_001",
+      "name": "影刺客猫",
+      "nameKey": "enemy.shadow_assassin_cat_001.name",
+      "descKey": "enemy.shadow_assassin_cat_001.desc",
+      "position": "vanguard",
+      "type": "world_boss",
+      "level": 130,
+      "exp": 15000,
+      "battle": 60,
+      "disabled": false,
+      "initialBuffIds": [
+        "stealth"
+      ],
+      "magical_flat_defense_penetration": 0,
+      "magical_percent_defense_penetration": 0,
+      "skillIds": [
+        "shadow_assassin_cat_phantom_stab",
+        "shadow_assassin_cat_shadow_veil",
+        "base4_knife_fan_skill",
+        "basic_attack"
+      ],
+      "drops": {
+        "assassination_core": {
+          "percent": 0.2,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_shadow_assassin_cat_phantom_stab": {
+          "percent": 0.1,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_shadow_assassin_cat_shadow_veil": {
+          "percent": 0.1,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "gold_coin": {
+          "percent": 1,
+          "range": {
+            "min": 12000,
+            "max": 18000
+          }
+        }
+      },
+      "equipment": [
+        {
+          "templateItemId": "base4_night_fan_blades",
+          "equippedSlot": "right_hand",
+          "equipType": "battle",
+          "enhanceLevel": 0,
+          "baseSnapshot": {},
+          "affixes": []
+        }
+      ],
+      "race": "feline",
+      "class": "assassin",
+      "dexterity": 370,
+      "strength": 258,
+      "perception": 163,
+      "stamina": 96,
+      "intelligence": 34,
+      "physics_defence": -72.072,
+      "magical_defence": -101.288,
+      "crit_damage_resist": -0.471333,
+      "physics_damage": 1,
+      "speed": 6,
+      "magical_damage": 1,
+      "hp": 56426
+    },
+    {
+      "id": "glacial_phantom_001",
+      "position": "rearguard",
+      "exp": 16000,
+      "drops": {
+        "glacial_phantom_crystal": {
+          "percent": 0.2,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "gold_coin": {
+          "percent": 1,
+          "range": {
+            "min": 15000,
+            "max": 20000
+          }
+        },
+        "skillbook_glacial_shard_storm": {
+          "percent": 0.1,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_polar_vortex": {
+          "percent": 0.1,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "skillIds": [
+        "polar_vortex",
+        "glacial_shard_storm",
+        "glacial_prison",
+        "snowfield_whiteout",
+        "basic_attack"
+      ],
+      "nameKey": "enemy.glacial_phantom_001.name",
+      "descKey": "enemy.glacial_phantom_001.desc",
+      "level": 135,
+      "battle": 55,
+      "type": "world_boss",
+      "disabled": false,
+      "race": "spirit",
+      "class": "mage",
+      "intelligence": 423,
+      "perception": 288,
+      "stamina": 110,
+      "dexterity": 72,
+      "strength": 45,
+      "physics_defence": -49.5,
+      "magical_defence": -160.6,
+      "crit_damage_resist": -0.413,
+      "magical_damage": 1,
+      "physics_damage": 1,
+      "hp": 59031
+    },
+    {
+      "id": "shadow_paw_apprentice_001",
+      "name": "影爪学徒",
+      "nameKey": "enemy.shadow_paw_apprentice_001.name",
+      "descKey": "enemy.shadow_paw_apprentice_001.desc",
+      "position": "vanguard",
+      "type": "normal",
+      "level": 106,
+      "exp": 43,
+      "disabled": false,
+      "race": "feline",
+      "class": "assassin",
+      "skillIds": [
+        "shadow_paw_shadowstep",
+        "shadow_paw_veilstrike",
+        "shadow_paw_armor_pierce",
+        "basic_attack"
+      ],
+      "equipment": [
+        {
+          "templateItemId": "shadow_paw_enemy_dagger",
+          "equippedSlot": "right_hand",
+          "equipType": "battle",
+          "enhanceLevel": 0,
+          "baseSnapshot": {},
+          "affixes": []
+        }
+      ],
+      "drops": {
+        "shadow_paw_silk": {
+          "percent": 0.0075,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_shadow_paw_armor_pierce": {
+          "percent": 0.00032,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_shadow_paw_shadowstep": {
+          "percent": 0.00028,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "dexterity": 116,
+      "strength": 81,
+      "perception": 51,
+      "stamina": 30,
+      "intelligence": 11,
+      "physics_defence": -22.572,
+      "magical_defence": -31.68,
+      "crit_damage_resist": -0.144,
+      "physics_damage": 1,
+      "speed": 6,
+      "magical_damage": 1,
+      "hp": 259
+    },
+    {
+      "id": "toxic_claw_001",
+      "name": "毒爪",
+      "nameKey": "enemy.toxic_claw_001.name",
+      "descKey": "enemy.toxic_claw_001.desc",
+      "position": "vanguard",
+      "type": "normal",
+      "level": 108,
+      "exp": 47,
+      "disabled": false,
+      "race": "feline",
+      "class": "assassin",
+      "skillIds": [
+        "toxic_claw_venom_cloud",
+        "shadow_paw_fan_of_knives",
+        "toxic_claw_venom_cut",
+        "shadow_paw_armor_pierce",
+        "basic_attack"
+      ],
+      "equipment": [
+        {
+          "templateItemId": "toxic_claw_enemy_dagger",
+          "equippedSlot": "right_hand",
+          "equipType": "battle",
+          "enhanceLevel": 0,
+          "baseSnapshot": {},
+          "affixes": []
+        }
+      ],
+      "drops": {
+        "shadow_paw_silk": {
+          "percent": 0.005,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "toxic_claw_venom": {
+          "percent": 0.003,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_toxic_claw_venom_cut": {
+          "percent": 0.00028,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_toxic_claw_venom_cloud": {
+          "percent": 0.00018,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "dexterity": 118,
+      "strength": 83,
+      "perception": 52,
+      "stamina": 31,
+      "intelligence": 11,
+      "physics_defence": -23.232,
+      "magical_defence": -32.428,
+      "crit_damage_resist": -0.14775,
+      "physics_damage": 1,
+      "speed": 6,
+      "magical_damage": 1,
+      "hp": 269
+    },
+    {
+      "id": "silent_whisker_001",
+      "name": "寂须",
+      "nameKey": "enemy.silent_whisker_001.name",
+      "descKey": "enemy.silent_whisker_001.desc",
+      "position": "midguard",
+      "type": "normal",
+      "level": 110,
+      "exp": 59,
+      "disabled": false,
+      "race": "feline",
+      "class": "assassin",
+      "initialBuffIds": [
+        "shadow_paw_stealth"
+      ],
+      "skillIds": [
+        "shadow_paw_shadowstep",
+        "shadow_paw_veilstrike",
+        "silent_whisker_midline_stab",
+        "shadow_paw_armor_pierce",
+        "basic_attack",
+        "silent_whisker_smoke_bomb"
+      ],
+      "equipment": [
+        {
+          "templateItemId": "silent_whisker_enemy_blade",
+          "equippedSlot": "right_hand",
+          "equipType": "battle",
+          "enhanceLevel": 0,
+          "baseSnapshot": {},
+          "affixes": []
+        }
+      ],
+      "drops": {
+        "shadow_paw_silk": {
+          "percent": 0.0045,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "silent_whisker_thread": {
+          "percent": 0.0024,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_silent_whisker_midline_stab": {
+          "percent": 0.00026,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_silent_whisker_smoke_bomb": {
+          "percent": 0.0002,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_shadow_paw_veilstrike": {
+          "percent": 0.0002,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "dexterity": 121,
+      "strength": 84,
+      "perception": 53,
+      "stamina": 31,
+      "intelligence": 11,
+      "physics_defence": -23.364,
+      "magical_defence": -32.868,
+      "crit_damage_resist": -0.14925,
+      "physics_damage": 1,
+      "speed": 6,
+      "magical_damage": 1,
+      "hp": 290
+    },
+    {
+      "id": "smoke_tail_001",
+      "name": "烟尾",
+      "nameKey": "enemy.smoke_tail_001.name",
+      "descKey": "enemy.smoke_tail_001.desc",
+      "position": "midguard",
+      "type": "elite",
+      "level": 100,
+      "exp": 165,
+      "disabled": false,
+      "race": "feline",
+      "class": "assassin",
+      "skillIds": [
+        "shadow_paw_shadowstep",
+        "toxic_claw_venom_cloud",
+        "smoke_tail_shadow_screen",
+        "shadow_paw_armor_pierce",
+        "basic_attack"
+      ],
+      "equipment": [
+        {
+          "templateItemId": "shadow_paw_enemy_dagger",
+          "equippedSlot": "right_hand",
+          "equipType": "battle",
+          "enhanceLevel": 0,
+          "baseSnapshot": {},
+          "affixes": []
+        }
+      ],
+      "drops": {
+        "shadow_paw_silk": {
+          "percent": 0.006,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "silent_whisker_thread": {
+          "percent": 0.0021,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_smoke_tail_shadow_screen": {
+          "percent": 0.00026,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "dexterity": 146,
+      "strength": 102,
+      "perception": 64,
+      "stamina": 38,
+      "intelligence": 14,
+      "physics_defence": -28.512,
+      "magical_defence": -39.864,
+      "crit_damage_resist": -0.1815,
+      "physics_damage": 1,
+      "speed": 6,
+      "magical_damage": 1,
+      "hp": 2371
+    },
+    {
+      "id": "mirror_paw_001",
+      "name": "镜爪",
+      "nameKey": "enemy.mirror_paw_001.name",
+      "descKey": "enemy.mirror_paw_001.desc",
+      "position": "vanguard",
+      "type": "elite",
+      "level": 120,
+      "exp": 247,
+      "disabled": false,
+      "race": "feline",
+      "class": "assassin",
+      "initialBuffIds": [
+        "mirror_paw_guard"
+      ],
+      "skillIds": [
+        "shadow_paw_fan_of_knives",
+        "shadow_paw_shadowstep",
+        "mirror_paw_counter_cut",
+        "silent_whisker_midline_stab",
+        "basic_attack"
+      ],
+      "equipment": [
+        {
+          "templateItemId": "shadow_paw_threadwheel",
+          "equippedSlot": "right_hand",
+          "equipType": "battle",
+          "enhanceLevel": 0,
+          "baseSnapshot": {},
+          "affixes": []
+        }
+      ],
+      "drops": {
+        "shadow_paw_silk": {
+          "percent": 0.0055,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "mirror_paw_shard": {
+          "percent": 0.0035,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_mirror_paw_counter_cut": {
+          "percent": 0.00036,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_shadow_paw_fan_of_knives": {
+          "percent": 0.00024,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "dexterity": 181,
+      "strength": 126,
+      "perception": 80,
+      "stamina": 47,
+      "intelligence": 17,
+      "physics_defence": -35.244,
+      "magical_defence": -49.676,
+      "crit_damage_resist": -0.225,
+      "physics_damage": 1,
+      "speed": 6,
+      "magical_damage": 1,
+      "hp": 3375
+    },
+    {
+      "id": "shadow_paw_master_boss_001",
+      "name": "影爪首领",
+      "nameKey": "enemy.shadow_paw_master_boss_001.name",
+      "descKey": "enemy.shadow_paw_master_boss_001.desc",
+      "position": "vanguard",
+      "type": "boss",
+      "level": 128,
+      "exp": 2014,
+      "battle": 38,
+      "disabled": false,
+      "race": "feline",
+      "class": "assassin",
+      "initialBuffIds": [
+        "shadow_paw_stealth",
+        "shadow_paw_first_guard",
+        "shadow_paw_master_phase_watch"
+      ],
+      "skillIds": [
+        "shadow_paw_shadowstep",
+        "shadow_paw_veilstrike",
+        "toxic_claw_venom_cloud",
+        "shadow_paw_fan_of_knives",
+        "silent_whisker_smoke_bomb",
+        "shadow_paw_master_feint",
+        "shadow_paw_master_execution",
+        "shadow_paw_master_blood_focus",
+        "silent_whisker_midline_stab",
+        "basic_attack"
+      ],
+      "equipment": [
+        {
+          "templateItemId": "shadow_paw_master_claws",
+          "equippedSlot": "right_hand",
+          "equipType": "battle",
+          "enhanceLevel": 0,
+          "baseSnapshot": {},
+          "affixes": []
+        }
+      ],
+      "drops": {
+        "shadow_paw_master_sigil": {
+          "percent": 0.0045,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "mirror_paw_shard": {
+          "percent": 0.0055,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_shadow_paw_master_execution": {
+          "percent": 0.0006,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "map_shadow_paw_hideout": {
+          "percent": 0.0001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_shadow_paw_veilstrike": {
+          "percent": 0.0004,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_shadow_paw_fan_of_knives": {
+          "percent": 0.0004,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "dexterity": 261,
+      "strength": 182,
+      "perception": 115,
+      "stamina": 67,
+      "intelligence": 24,
+      "physics_defence": -50.556,
+      "magical_defence": -71.236,
+      "crit_damage_resist": -0.311,
+      "physics_damage": 1,
+      "speed": 6,
+      "magical_damage": 1,
+      "hp": 10123
+    },
+    {
+      "id": "astral_guard_001",
+      "name": "星卫士",
+      "nameKey": "enemy.astral_guard_001.name",
+      "descKey": "enemy.astral_guard_001.desc",
+      "position": "vanguard",
+      "type": "normal",
+      "level": 138,
+      "exp": 105,
+      "disabled": false,
+      "race": "construct",
+      "class": "warrior",
+      "skillIds": [
+        "astral_guard_stance",
+        "astral_guard_intercept",
+        "basic_attack"
+      ],
+      "drops": {
+        "star_rail_copper_plate": {
+          "percent": 0.0075,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "meteor_core_fragment": {
+          "percent": 0.0025,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "strength": 159.03,
+      "stamina": 111.6,
+      "dexterity": 55.8,
+      "perception": 37.2,
+      "intelligence": 18.6,
+      "physics_defence": -65.18556,
+      "magical_defence": -50.7408,
+      "crit_damage_resist": -0.314572,
+      "physics_damage": 29.76,
+      "magical_damage": 0.93,
+      "hp": 3627
+    },
+    {
+      "id": "astral_mage_001",
+      "name": "星界法师",
+      "nameKey": "enemy.astral_mage_001.name",
+      "descKey": "enemy.astral_mage_001.desc",
+      "position": "rearguard",
+      "type": "normal",
+      "level": 142,
+      "exp": 115,
+      "disabled": false,
+      "race": "construct",
+      "class": "mage",
+      "skillIds": [
+        "astral_arc_scatter",
+        "astral_mana_siphon",
+        "basic_attack"
+      ],
+      "drops": {
+        "refraction_lens_shard": {
+          "percent": 0.004,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "condensed_stardust": {
+          "percent": 0.003,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "intelligence": 160.89,
+      "perception": 115.32,
+      "stamina": 64.17,
+      "dexterity": 30.69,
+      "strength": 30.69,
+      "physics_defence": -29.4624,
+      "magical_defence": -70.50516,
+      "crit_damage_resist": -0.205762,
+      "physics_damage": 0.93,
+      "magical_damage": 32.55,
+      "hp": 4278
+    },
+    {
+      "id": "starlight_healer_001",
+      "name": "星光治疗者",
+      "nameKey": "enemy.starlight_healer_001.name",
+      "descKey": "enemy.starlight_healer_001.desc",
+      "position": "rearguard",
+      "type": "normal",
+      "level": 146,
+      "exp": 126,
+      "disabled": false,
+      "race": "construct",
+      "class": "priest",
+      "skillIds": [
+        "starlight_mend",
+        "starlight_resistance",
+        "basic_attack"
+      ],
+      "drops": {
+        "condensed_stardust": {
+          "percent": 0.0065,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "star_rail_copper_plate": {
+          "percent": 0.003,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "perception": 166.47,
+      "intelligence": 110.67,
+      "stamina": 101.37,
+      "dexterity": 24.18,
+      "strength": 27.9,
+      "hp_regen": 2.79,
+      "mp_regen": 2,
+      "physics_defence": -43.82532,
+      "magical_defence": -104.46876,
+      "crit_damage_resist": -0.297832,
+      "physics_damage": 0.93,
+      "magical_damage": 24.18,
+      "hp": 4092
+    },
+    {
+      "id": "refraction_mirror_doll_001",
+      "name": "折光镜偶",
+      "nameKey": "enemy.refraction_mirror_doll_001.name",
+      "descKey": "enemy.refraction_mirror_doll_001.desc",
+      "position": "midguard",
+      "type": "normal",
+      "level": 150,
+      "exp": 160,
+      "disabled": false,
+      "race": "construct",
+      "class": "mage",
+      "skillIds": [
+        "refraction_mark",
+        "refraction_scatter",
+        "basic_attack"
+      ],
+      "drops": {
+        "refraction_lens_shard": {
+          "percent": 0.007,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_refraction_mark": {
+          "percent": 0.0003,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "intelligence": 172.05,
+      "perception": 122.76,
+      "stamina": 67.89,
+      "dexterity": 32.55,
+      "strength": 32.55,
+      "physics_defence": -31.18104,
+      "magical_defence": -74.92452,
+      "crit_damage_resist": -0.218317,
+      "physics_damage": 0.93,
+      "magical_damage": 37.2,
+      "hp": 4650
+    },
+    {
+      "id": "meteor_core_porter_001",
+      "name": "陨核搬运猫",
+      "nameKey": "enemy.meteor_core_porter_001.name",
+      "descKey": "enemy.meteor_core_porter_001.desc",
+      "position": "vanguard",
+      "type": "elite",
+      "level": 155,
+      "exp": 475,
+      "disabled": false,
+      "race": "feline",
+      "class": "warrior",
+      "skillIds": [
+        "meteor_core_crush",
+        "meteor_rail_charge",
+        "basic_attack"
+      ],
+      "drops": {
+        "meteor_core_fragment": {
+          "percent": 0.006,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "star_rail_copper_plate": {
+          "percent": 0.0035,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_meteor_core_crush": {
+          "percent": 0.0003,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "strength": 240.87,
+      "stamina": 140.43,
+      "dexterity": 114.39,
+      "perception": 63.24,
+      "intelligence": 28.83,
+      "speed": 6,
+      "crit_chance": 0,
+      "physics_defence": -87.40512,
+      "magical_defence": -71.07804,
+      "crit_damage_resist": -0.45997,
+      "physics_damage": 51.15,
+      "magical_damage": 0.93,
+      "hp": 7905
+    },
+    {
+      "id": "deranged_calibrator_001",
+      "name": "失序校准师",
+      "nameKey": "enemy.deranged_calibrator_001.name",
+      "descKey": "enemy.deranged_calibrator_001.desc",
+      "position": "midguard",
+      "type": "elite",
+      "level": 160,
+      "exp": 510,
+      "disabled": false,
+      "race": "construct",
+      "class": "mage",
+      "skillIds": [
+        "calibrator_desync",
+        "calibrator_error_pulse",
+        "basic_attack"
+      ],
+      "drops": {
+        "star_rail_copper_plate": {
+          "percent": 0.005,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "condensed_stardust": {
+          "percent": 0.004,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "refraction_lens_shard": {
+          "percent": 0.0025,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "intelligence": 250.17,
+      "perception": 178.56,
+      "stamina": 99.51,
+      "dexterity": 47.43,
+      "strength": 47.43,
+      "physics_defence": -45.66672,
+      "magical_defence": -109.21548,
+      "crit_damage_resist": -0.318757,
+      "physics_damage": 0.93,
+      "magical_damage": 51.15,
+      "hp": 8835
+    },
+    {
+      "id": "corridor_timekeeper_cat_boss_001",
+      "name": "回廊司辰猫",
+      "nameKey": "enemy.corridor_timekeeper_cat_boss_001.name",
+      "descKey": "enemy.corridor_timekeeper_cat_boss_001.desc",
+      "position": "midguard",
+      "type": "boss",
+      "level": 170,
+      "exp": 2650,
+      "battle": 44,
+      "disabled": false,
+      "race": "feline",
+      "class": "mage",
+      "skillIds": [
+        "timekeeper_scale_sweep",
+        "timekeeper_orbit_shift",
+        "timekeeper_delay",
+        "timekeeper_stasis",
+        "basic_attack"
+      ],
+      "drops": {
+        "timekeeper_core": {
+          "percent": 0.0045,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "meteor_core_fragment": {
+          "percent": 0.006,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "refraction_lens_shard": {
+          "percent": 0.0055,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "condensed_stardust": {
+          "percent": 0.005,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_timekeeper_stasis": {
+          "percent": 0.0006,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "map_meteor_corridor_001": {
+          "percent": 0.0001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "intelligence": 360.84,
+      "perception": 266.91,
+      "stamina": 95.79,
+      "dexterity": 111.6,
+      "strength": 60.45,
+      "speed": 6,
+      "crit_chance": 0,
+      "physics_defence": -45.91224,
+      "magical_defence": -146.94372,
+      "crit_damage_resist": -0.389205,
+      "physics_damage": 27.9,
+      "magical_damage": 60.45,
+      "hp": 11904
+    },
+    {
+      "id": "silence_tome_001",
+      "name": "沉默魔典",
+      "nameKey": "enemy.silence_tome_001.name",
+      "descKey": "enemy.silence_tome_001.desc",
+      "position": "rearguard",
+      "type": "normal",
+      "level": 185,
+      "exp": 130,
+      "disabled": false,
+      "race": "construct",
+      "class": "mage",
+      "skillIds": [
+        "silence_tome_hushing_hex",
+        "basic_attack"
+      ],
+      "drops": {
+        "hushed_ink_crystal": {
+          "percent": 0.0065,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "wandering_page_silk": {
+          "percent": 0.0025,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_hushing_incantation_page": {
+          "percent": 0.0003,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "intelligence": 196.69,
+      "perception": 140.62,
+      "stamina": 78.32,
+      "dexterity": 37.38,
+      "strength": 37.38,
+      "physics_defence": -35.94888,
+      "magical_defence": -85.99536,
+      "crit_damage_resist": -0.25098,
+      "physics_damage": 0.89,
+      "magical_damage": 0.89,
+      "hp": 4946.62
+    },
+    {
+      "id": "brass_book_guard_001",
+      "name": "黄铜书卫",
+      "nameKey": "enemy.brass_book_guard_001.name",
+      "descKey": "enemy.brass_book_guard_001.desc",
+      "position": "vanguard",
+      "type": "normal",
+      "level": 192,
+      "exp": 134,
+      "disabled": false,
+      "race": "construct",
+      "class": "tank",
+      "skillIds": [
+        "brass_book_guard_bulwark",
+        "brass_book_guard_bash",
+        "basic_attack"
+      ],
+      "drops": {
+        "spell_seal_lock_plate": {
+          "percent": 0.007,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "hushed_ink_crystal": {
+          "percent": 0.0025,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "stamina": 217.16,
+      "strength": 112.14,
+      "perception": 68.53,
+      "dexterity": 48.95,
+      "intelligence": 39.16,
+      "physics_defence": -100.79784,
+      "magical_defence": -97.03848,
+      "crit_damage_resist": -0.498323,
+      "physics_damage": 0.89,
+      "magical_damage": 0.89,
+      "hp": 4319.17
+    },
+    {
+      "id": "living_bookmark_001",
+      "name": "活体书签",
+      "nameKey": "enemy.living_bookmark_001.name",
+      "descKey": "enemy.living_bookmark_001.desc",
+      "position": "midguard",
+      "type": "normal",
+      "level": 198,
+      "exp": 149,
+      "disabled": false,
+      "race": "spirit",
+      "class": "assassin",
+      "skillIds": [
+        "living_bookmark_hand_seal",
+        "living_bookmark_snare",
+        "basic_attack"
+      ],
+      "drops": {
+        "wandering_page_silk": {
+          "percent": 0.0075,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "blue_night_audit_feather": {
+          "percent": 0.0025,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "dexterity": 193.13,
+      "strength": 142.4,
+      "perception": 101.46,
+      "stamina": 62.3,
+      "intelligence": 45.39,
+      "physics_defence": -43.4676,
+      "magical_defence": -63.8308,
+      "crit_damage_resist": -0.276345,
+      "physics_damage": 0.89,
+      "crit_chance": 0,
+      "magical_damage": 0.89,
+      "hp": 5498.42
+    },
+    {
+      "id": "watcher_owl_001",
+      "name": "审查猫头鹰",
+      "nameKey": "enemy.watcher_owl_001.name",
+      "descKey": "enemy.watcher_owl_001.desc",
+      "position": "rearguard",
+      "type": "normal",
+      "level": 205,
+      "exp": 157,
+      "disabled": false,
+      "race": "beast",
+      "class": "mage",
+      "skillIds": [
+        "watcher_owl_audit_strike",
+        "watcher_owl_spell_scrutiny",
+        "basic_attack"
+      ],
+      "drops": {
+        "blue_night_audit_feather": {
+          "percent": 0.007,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "hushed_ink_crystal": {
+          "percent": 0.003,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_forbidden_trace": {
+          "percent": 0.0003,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "intelligence": 221.61,
+      "perception": 153.08,
+      "stamina": 70.31,
+      "dexterity": 63.19,
+      "strength": 42.72,
+      "physics_defence": -33.4818,
+      "magical_defence": -89.01068,
+      "crit_damage_resist": -0.252315,
+      "physics_damage": 0.89,
+      "magical_damage": 0.89,
+      "hp": 5723.59
+    },
+    {
+      "id": "binding_librarian_001",
+      "name": "禁制装订师",
+      "nameKey": "enemy.binding_librarian_001.name",
+      "descKey": "enemy.binding_librarian_001.desc",
+      "position": "midguard",
+      "type": "elite",
+      "level": 212,
+      "exp": 648,
+      "disabled": false,
+      "race": "humanoid",
+      "class": "magic_tank",
+      "skillIds": [
+        "binding_librarian_lock",
+        "binding_librarian_press",
+        "basic_attack"
+      ],
+      "drops": {
+        "spell_seal_lock_plate": {
+          "percent": 0.006,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "hushed_ink_crystal": {
+          "percent": 0.004,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "stamina": 247.42,
+      "intelligence": 200.25,
+      "perception": 178,
+      "strength": 111.25,
+      "dexterity": 66.75,
+      "physics_defence": -112.66332,
+      "magical_defence": -154.52536,
+      "crit_damage_resist": -0.65909,
+      "physics_damage": 0.89,
+      "magical_damage": 0.89,
+      "hp": 10085.48
+    },
+    {
+      "id": "banished_spellcat_001",
+      "name": "放逐术猫",
+      "nameKey": "enemy.banished_spellcat_001.name",
+      "descKey": "enemy.banished_spellcat_001.desc",
+      "position": "midguard",
+      "type": "elite",
+      "level": 218,
+      "exp": 735,
+      "disabled": false,
+      "race": "feline",
+      "class": "mage",
+      "skillIds": [
+        "banished_spellcat_flood",
+        "banished_spellcat_echo",
+        "basic_attack"
+      ],
+      "drops": {
+        "wandering_page_silk": {
+          "percent": 0.0055,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "blue_night_audit_feather": {
+          "percent": 0.0045,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "intelligence": 322.18,
+      "perception": 237.63,
+      "stamina": 85.44,
+      "dexterity": 99.68,
+      "strength": 53.4,
+      "speed": 6,
+      "crit_chance": 0,
+      "physics_defence": -40.88304,
+      "magical_defence": -130.87272,
+      "crit_damage_resist": -0.346433,
+      "physics_damage": 0.89,
+      "magical_damage": 0.89,
+      "hp": 12588.16
+    },
+    {
+      "id": "forbidden_library_keeper_boss_001",
+      "name": "禁书馆长猫",
+      "nameKey": "enemy.forbidden_library_keeper_boss_001.name",
+      "descKey": "enemy.forbidden_library_keeper_boss_001.desc",
+      "position": "midguard",
+      "type": "boss",
+      "level": 230,
+      "exp": 5220,
+      "battle": 52,
+      "disabled": false,
+      "race": "feline",
+      "class": "mage",
+      "skillIds": [
+        "library_keeper_gag_order",
+        "library_keeper_forced_extension",
+        "library_keeper_final_suppression",
+        "basic_attack"
+      ],
+      "drops": {
+        "final_volume_key_sigil": {
+          "percent": 0.0045,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "hushed_ink_crystal": {
+          "percent": 0.006,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "wandering_page_silk": {
+          "percent": 0.0055,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "blue_night_audit_feather": {
+          "percent": 0.005,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "spell_seal_lock_plate": {
+          "percent": 0.005,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_cooldown_correction": {
+          "percent": 0.0006,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "map_forbidden_library_001": {
+          "percent": 0.0001,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "intelligence": 459.24,
+      "perception": 339.09,
+      "stamina": 121.04,
+      "dexterity": 142.4,
+      "strength": 76.54,
+      "speed": 6,
+      "crit_chance": 0,
+      "physics_defence": -58.03512,
+      "magical_defence": -186.47992,
+      "crit_damage_resist": -0.524377,
+      "physics_damage": 0.89,
+      "magical_damage": 0.89,
+      "hp": 27646.07
+    },
+    {
+      "id": "stellar_testament_star",
+      "name": "遗嘱星",
+      "nameKey": "enemy.stellar_testament_star.name",
+      "descKey": "enemy.stellar_testament_star.desc",
+      "position": "rearguard",
+      "type": "normal",
+      "level": 1,
+      "exp": 0,
+      "disabled": false,
+      "race": "spirit",
+      "class": "mage",
+      "skillIds": [
+        "stellar_testament_ray"
+      ],
+      "drops": {},
+      "intelligence": 1,
+      "perception": 1,
+      "stamina": 1,
+      "dexterity": 1,
+      "strength": 1,
+      "speed": 1,
+      "crit_chance": 0,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 1
+    },
+    {
+      "id": "vow_eater_001",
+      "name": "食愿香兽·烬貘",
+      "nameKey": "enemy.vow_eater_001.name",
+      "descKey": "enemy.vow_eater_001.desc",
+      "position": "rearguard",
+      "type": "world_boss",
+      "level": 150,
+      "exp": 18000,
+      "battle": 68,
+      "disabled": false,
+      "race": "spirit",
+      "class": "mage",
+      "skillIds": [
+        "vow_eater_incense_siphon",
+        "vow_eater_ash_bloom",
+        "basic_attack"
+      ],
+      "drops": {
+        "congealed_vow_ember": {
+          "percent": 0.2,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_vow_eater_incense_siphon": {
+          "percent": 0.06,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "skillbook_vow_eater_ash_bloom": {
+          "percent": 0.06,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "gold_coin": {
+          "percent": 1,
+          "range": {
+            "min": 18000,
+            "max": 24000
+          }
+        }
+      },
+      "intelligence": 480,
+      "perception": 330,
+      "stamina": 125,
+      "dexterity": 90,
+      "strength": 55,
+      "speed": 6,
+      "crit_chance": 0.05,
+      "physics_defence": -56.76,
+      "magical_defence": -183.7,
+      "crit_damage_resist": -0.493333,
+      "physics_damage": 1,
+      "magical_damage": 1,
+      "hp": 68000
+    },
+    {
+      "id": "stardust_mouse_001",
+      "nameKey": "enemy.stardust_mouse_001.name",
+      "descKey": "enemy.stardust_mouse_001.desc",
+      "position": "rearguard",
+      "type": "normal",
+      "level": 235,
+      "exp": 170,
+      "disabled": false,
+      "race": "beast",
+      "class": "mage",
+      "initialBuffIds": ["amusement_opening_curtain"],
+      "skillIds": ["stardust_mana_pickpocket", "basic_attack"],
+      "drops": {
+        "condensed_stardust": { "percent": 0.0065, "range": { "min": 1, "max": 1 } }
+      },
+      "strength": 46.75,
+      "stamina": 106.25,
+      "dexterity": 174.25,
+      "perception": 191.25,
+      "intelligence": 233.75,
+      "speed": 22,
+      "physics_defence": -48.246,
+      "magical_defence": -116.875,
+      "crit_damage_resist": -0.337875,
+      "physics_damage": 21.25,
+      "magical_damage": 55.25,
+      "hp": 6637.65
+    },
+    {
+      "id": "carousel_cat_001",
+      "nameKey": "enemy.carousel_cat_001.name",
+      "descKey": "enemy.carousel_cat_001.desc",
+      "position": "vanguard",
+      "type": "normal",
+      "level": 240,
+      "exp": 190,
+      "disabled": false,
+      "race": "feline",
+      "class": "warrior",
+      "initialBuffIds": ["amusement_opening_curtain"],
+      "skillIds": ["carousel_roundabout_lock", "carousel_runaway_crash", "basic_attack"],
+      "drops": {
+        "wayward_carousel_spring": { "percent": 0.007, "range": { "min": 1, "max": 1 } }
+      },
+      "strength": 221,
+      "stamina": 174.25,
+      "dexterity": 114.75,
+      "perception": 72.25,
+      "intelligence": 42.5,
+      "speed": 12,
+      "physics_defence": -98.175,
+      "magical_defence": -85.459,
+      "crit_damage_resist": -0.525083,
+      "physics_damage": 51,
+      "magical_damage": 12.75,
+      "hp": 7516.55
+    },
+    {
+      "id": "candy_clown_001",
+      "nameKey": "enemy.candy_clown_001.name",
+      "descKey": "enemy.candy_clown_001.desc",
+      "position": "midguard",
+      "type": "normal",
+      "level": 245,
+      "exp": 215,
+      "disabled": false,
+      "race": "feline",
+      "class": "mage",
+      "initialBuffIds": ["amusement_opening_curtain"],
+      "skillIds": ["candy_clown_double_prank", "basic_attack"],
+      "drops": {
+        "candy_bomb": { "percent": 0.007, "range": { "min": 1, "max": 1 } }
+      },
+      "strength": 52.7,
+      "stamina": 119,
+      "dexterity": 136,
+      "perception": 229.5,
+      "intelligence": 267.75,
+      "speed": 16,
+      "physics_defence": -54.0804,
+      "magical_defence": -137.632,
+      "crit_damage_resist": -0.403533,
+      "physics_damage": 25.5,
+      "magical_damage": 61.2,
+      "hp": 7365.76
+    },
+    {
+      "id": "plush_guard_001",
+      "nameKey": "enemy.plush_guard_001.name",
+      "descKey": "enemy.plush_guard_001.desc",
+      "position": "vanguard",
+      "type": "normal",
+      "level": 250,
+      "exp": 240,
+      "disabled": false,
+      "race": "construct",
+      "class": "guardian",
+      "initialBuffIds": ["amusement_opening_curtain", "plush_guard_bulwark"],
+      "skillIds": ["plush_guard_group_taunt", "basic_attack"],
+      "drops": {
+        "plush_fur": { "percent": 0.0075, "range": { "min": 1, "max": 1 } }
+      },
+      "strength": 199.75,
+      "stamina": 280.5,
+      "dexterity": 59.5,
+      "perception": 80.75,
+      "intelligence": 42.5,
+      "speed": 5,
+      "physics_defence": -137.445,
+      "magical_defence": -121.924,
+      "crit_damage_resist": -0.724833,
+      "physics_damage": 44.2,
+      "magical_damage": 10.2,
+      "hp": 9985.8
+    },
+    {
+      "id": "starlight_healer_002",
+      "nameKey": "enemy.starlight_healer_002.name",
+      "descKey": "enemy.starlight_healer_002.desc",
+      "position": "rearguard",
+      "type": "normal",
+      "level": 255,
+      "exp": 260,
+      "disabled": false,
+      "race": "feline",
+      "class": "healer",
+      "initialBuffIds": ["amusement_opening_curtain"],
+      "skillIds": ["starlight_backstage_pass", "starlight_group_mend", "basic_attack"],
+      "drops": {
+        "bottled_starlight": { "percent": 0.0065, "range": { "min": 1, "max": 1 } },
+        "condensed_stardust": { "percent": 0.0025, "range": { "min": 1, "max": 1 } }
+      },
+      "strength": 44.2,
+      "stamina": 114.75,
+      "dexterity": 85,
+      "perception": 272,
+      "intelligence": 310.25,
+      "speed": 12,
+      "physics_defence": -51.2754,
+      "magical_defence": -156.1625,
+      "crit_damage_resist": -0.429033,
+      "physics_damage": 12.75,
+      "magical_damage": 69.7,
+      "mp": 360,
+      "hp": 6989.21
+    },
+    {
+      "id": "ghostly_rider_001",
+      "nameKey": "enemy.ghostly_rider_001.name",
+      "descKey": "enemy.ghostly_rider_001.desc",
+      "position": "midguard",
+      "type": "elite",
+      "level": 260,
+      "exp": 820,
+      "disabled": false,
+      "race": "spirit",
+      "class": "assassin",
+      "initialBuffIds": ["amusement_vip_curtain", "ghostly_rider_ethereal_tack"],
+      "skillIds": ["ghostly_rider_lowest_chase", "basic_attack"],
+      "drops": {
+        "ghost_essence": { "percent": 0.0055, "range": { "min": 1, "max": 1 } }
+      },
+      "strength": 323,
+      "stamina": 204,
+      "dexterity": 280.5,
+      "perception": 208.25,
+      "intelligence": 97.75,
+      "speed": 24,
+      "physics_defence": -123.42,
+      "magical_defence": -154.462,
+      "crit_damage_resist": -0.81425,
+      "physics_damage": 72.25,
+      "magical_damage": 51,
+      "crit_chance": 0.09,
+      "hp": 14776.4
+    },
+    {
+      "id": "parade_king_boss_001",
+      "nameKey": "enemy.parade_king_boss_001.name",
+      "descKey": "enemy.parade_king_boss_001.desc",
+      "position": "midguard",
+      "type": "boss",
+      "level": 275,
+      "exp": 6000,
+      "battle": 60,
+      "disabled": false,
+      "race": "feline",
+      "class": "mage",
+      "initialBuffIds": ["parade_three_act_curtain"],
+      "skillIds": ["parade_king_team_carnival", "parade_king_call_clowns", "parade_king_royal_aegis", "basic_attack"],
+      "drops": {
+        "parade_king_medal": { "percent": 1, "range": { "min": 1, "max": 1 } },
+        "map_amusement_park_001": { "percent": 0.0001, "range": { "min": 1, "max": 1 } },
+        "king_of_amusement_park": { "percent": 0.0001, "range": { "min": 1, "max": 1 } },
+        "parade_cape": { "percent": 0.0001, "range": { "min": 1, "max": 1 } },
+        "empress_cloak": { "percent": 0.0001, "range": { "min": 1, "max": 1 } }
+      },
+      "strength": 212.5,
+      "stamina": 306,
+      "dexterity": 187,
+      "perception": 357,
+      "intelligence": 442,
+      "speed": 18,
+      "physics_defence": -149.226,
+      "magical_defence": -255.6,
+      "crit_damage_resist": -1.048167,
+      "physics_damage": 59.5,
+      "magical_damage": 93.5,
+      "crit_chance": 0.06,
+      "hp": 39491
+    },
+    {
+      "id": "midnight_ticket_collector_001",
+      "nameKey": "enemy.midnight_ticket_collector_001.name",
+      "descKey": "enemy.midnight_ticket_collector_001.desc",
+      "position": "vanguard",
+      "type": "elite",
+      "level": 280,
+      "exp": 8500,
+      "battle": 70,
+      "disabled": false,
+      "race": "spirit",
+      "class": "warrior",
+      "initialBuffIds": ["amusement_vip_curtain", "midnight_audit_watch"],
+      "skillIds": ["midnight_ticket_punch", "midnight_last_call", "basic_attack"],
+      "drops": {
+        "candy_bomb": { "percent": 0.04, "range": { "min": 1, "max": 1 } },
+        "plush_fur": { "percent": 0.04, "range": { "min": 1, "max": 1 } },
+        "ghost_essence": { "percent": 0.03, "range": { "min": 1, "max": 1 } },
+        "parade_king_medal": { "percent": 0.25, "range": { "min": 1, "max": 1 } }
+      },
+      "strength": 425,
+      "stamina": 331.5,
+      "dexterity": 255,
+      "perception": 306,
+      "intelligence": 195.5,
+      "speed": 18,
+      "physics_defence": -187.925,
+      "magical_defence": -244.025,
+      "crit_damage_resist": -1.269,
+      "physics_damage": 170,
+      "magical_damage": 59.5,
+      "crit_chance": 0.07,
+      "hp": 47506.5
+    },
+    {
+      "id": "plush_stunt_double_001",
+      "nameKey": "enemy.plush_stunt_double_001.name",
+      "descKey": "enemy.plush_stunt_double_001.desc",
+      "position": "vanguard",
+      "type": "normal",
+      "level": 1,
+      "exp": 0,
+      "disabled": false,
+      "race": "construct",
+      "class": "guardian",
+      "initialBuffIds": ["plush_stunt_double_role"],
+      "skillIds": [],
+      "drops": {},
+      "strength": 0,
+      "stamina": 0,
+      "dexterity": 0,
+      "perception": 0,
+      "intelligence": 0,
+      "speed": 0,
+      "physics_damage": 0,
+      "magical_damage": 0,
+      "hp": 1
+    },
+    {
+      "id": "faceless_understudy_001",
+      "nameKey": "enemy.faceless_understudy_001.name",
+      "descKey": "enemy.faceless_understudy_001.desc",
+      "position": "midguard",
+      "type": "boss",
+      "level": 290,
+      "exp": 28000,
+      "battle": 90,
+      "disabled": false,
+      "race": "spirit",
+      "class": "mage",
+      "initialBuffIds": ["faceless_understudy_three_curtains", "faceless_understudy_last_bow"],
+      "skillIds": ["faceless_understudy_stolen_bow", "faceless_understudy_finale_debt", "basic_attack"],
+      "drops": {
+        "faceless_understudy_mask": { "percent": 1, "range": { "min": 1, "max": 1 } },
+        "gold_coin": { "percent": 1, "range": { "min": 24000, "max": 32000 } }
+      },
+      "strength": 357,
+      "stamina": 552.5,
+      "dexterity": 289,
+      "perception": 459,
+      "intelligence": 646,
+      "speed": 28,
+      "physics_defence": -272.175,
+      "magical_defence": -392.875,
+      "crit_damage_resist": -1.787667,
+      "physics_damage": 102,
+      "magical_damage": 178.5,
+      "crit_chance": 0.1,
+      "hp": 102000,
+      "mp": 1200
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "module": "enemies",
+  "metrics": [
+    { "id": "hp", "label": "生命", "expression": "Number(row.hp || row.baseHp || 0)" },
+    { "id": "attack", "label": "攻击", "expression": "Number(row.attack || row.atk || 0)" },
+    { "id": "growth", "label": "成长", "expression": "Number(row.growthRate || 0)" }
+  ]
+}

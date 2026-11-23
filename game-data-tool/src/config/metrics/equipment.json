@@ -1,0 +1,8 @@
+{
+  "module": "equipment_templates",
+  "metrics": [
+    { "id": "atk", "label": "攻击", "expression": "Number(row.baseAttrs?.atk || 0)" },
+    { "id": "def", "label": "防御", "expression": "Number(row.baseAttrs?.def || 0)" },
+    { "id": "combat_score", "label": "战力", "expression": "Number(row.baseAttrs?.atk || 0) * 1.5 + Number(row.baseAttrs?.def || 0)" }
+  ]
+}

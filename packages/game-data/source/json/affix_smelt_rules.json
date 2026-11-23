@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "affix_smelt_rules": [
+    {
+      "id": "default",
+      "active": true,
+      "rarityRewards": {
+        "common": [
+          {
+            "itemId": "afterglow",
+            "minCount": 1,
+            "maxCount": 1
+          }
+        ],
+        "uncommon": [
+          {
+            "itemId": "afterglow",
+            "minCount": 2,
+            "maxCount": 2
+          }
+        ],
+        "rare": [
+          {
+            "itemId": "afterglow",
+            "minCount": 3,
+            "maxCount": 3
+          }
+        ],
+        "epic": [
+          {
+            "itemId": "afterglow",
+            "minCount": 4,
+            "maxCount": 4
+          }
+        ],
+        "legendary": [
+          {
+            "itemId": "glow_core",
+            "minCount": 1,
+            "maxCount": 1
+          }
+        ],
+        "mythic": [
+          {
+            "itemId": "glow_core",
+            "minCount": 2,
+            "maxCount": 2
+          }
+        ]
+      },
+      "disabled": false
+    }
+  ]
+}

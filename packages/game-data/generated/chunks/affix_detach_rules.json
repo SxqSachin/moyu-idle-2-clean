@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "affix_detach_rules": [
+    {
+      "id": "craftsmans_hammer",
+      "toolItemId": "craftsmans_hammer",
+      "destroyChanceBase": 0.5,
+      "luckImpactFactor": 0,
+      "affixDropBeforeDestroyCheck": true,
+      "active": true
+    },
+    {
+      "id": "hammer_of_divine_work",
+      "toolItemId": "hammer_of_divine_work",
+      "destroyChanceBase": 0,
+      "luckImpactFactor": 0,
+      "affixDropBeforeDestroyCheck": true,
+      "active": true
+    }
+  ]
+}

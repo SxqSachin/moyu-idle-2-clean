@@ -1,0 +1,739 @@
+{
+  "version": 2,
+  "cattery_furniture": [
+    {
+      "id": "kitty_training_bench",
+      "version": "kitty-training-bench-v1",
+      "nameKey": "game.furniture.trainingBench",
+      "iconId": "item.kitty_training_bench",
+      "service": "permanent",
+      "installCosts": {
+        "wood_blank": 420,
+        "copper": 22,
+        "iron": 28,
+        "flax_fiber": 160,
+        "soft_resin": 24,
+        "base2_cave_membrane": 24,
+        "base2_ruin_core_shard": 12
+      },
+      "refillCosts": {},
+      "capacitySeconds": 0,
+      "refillSeconds": 0,
+      "rules": [
+        {
+          "kind": "action_efficiency_add",
+          "domain": "action_start",
+          "rateBps": 2000,
+          "selector": {
+            "mainTypes": [
+              "collecting",
+              "mining",
+              "farming_animal",
+              "crafting",
+              "sewing",
+              "forging",
+              "alchemy",
+              "cooking"
+            ]
+          }
+        }
+      ],
+      "levels": [
+        {
+          "level": 2,
+          "upgradeCosts": {
+            "wood_blank": 160,
+            "copper": 12,
+            "iron": 36,
+            "flax_fiber": 160,
+            "soft_resin": 24,
+            "sturdy_wood_blank": 600,
+            "silver": 32,
+            "base2_cave_membrane": 36,
+            "base2_ruin_core_shard": 18
+          },
+          "refillCostAdd": {},
+          "rules": [
+            {
+              "kind": "action_efficiency_add",
+              "domain": "action_start",
+              "rateBps": 4000,
+              "selector": {
+                "mainTypes": [
+                  "collecting",
+                  "mining",
+                  "farming_animal",
+                  "crafting",
+                  "sewing",
+                  "forging",
+                  "alchemy",
+                  "cooking"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "upgradeCosts": {
+            "wood_blank": 160,
+            "copper": 12,
+            "iron": 12,
+            "flax_fiber": 160,
+            "soft_resin": 24,
+            "silverleaf_wood_blank": 480,
+            "silkwood_blank": 560,
+            "silver": 96,
+            "base2_cave_membrane": 48,
+            "base2_ruin_core_shard": 24,
+            "white_coin_shard": 40
+          },
+          "refillCostAdd": {},
+          "rules": [
+            {
+              "kind": "action_efficiency_add",
+              "domain": "action_start",
+              "rateBps": 6000,
+              "selector": {
+                "mainTypes": [
+                  "collecting",
+                  "mining",
+                  "farming_animal",
+                  "crafting",
+                  "sewing",
+                  "forging",
+                  "alchemy",
+                  "cooking"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "upgradeCosts": {
+            "wood_blank": 160,
+            "copper": 12,
+            "iron": 12,
+            "flax_fiber": 160,
+            "soft_resin": 24,
+            "silkwood_blank": 720,
+            "goldvine_wood_blank": 840,
+            "gold": 144,
+            "base2_cave_membrane": 64,
+            "base2_ruin_core_shard": 32,
+            "white_coin_shard": 60,
+            "base4_shadow_silk": 80
+          },
+          "refillCostAdd": {},
+          "rules": [
+            {
+              "kind": "action_efficiency_add",
+              "domain": "action_start",
+              "rateBps": 8000,
+              "selector": {
+                "mainTypes": [
+                  "collecting",
+                  "mining",
+                  "farming_animal",
+                  "crafting",
+                  "sewing",
+                  "forging",
+                  "alchemy",
+                  "cooking"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "upgradeCosts": {
+            "wood_blank": 160,
+            "copper": 12,
+            "iron": 12,
+            "flax_fiber": 160,
+            "soft_resin": 24,
+            "moonwood_blank": 2160,
+            "base2_cave_membrane": 80,
+            "base2_ruin_core_shard": 40,
+            "white_coin_shard": 80,
+            "base4_shadow_silk": 120,
+            "base4_golem_dark_core": 24,
+            "crystal": 224
+          },
+          "refillCostAdd": {},
+          "rules": [
+            {
+              "kind": "action_efficiency_add",
+              "domain": "action_start",
+              "rateBps": 10000,
+              "selector": {
+                "mainTypes": [
+                  "collecting",
+                  "mining",
+                  "farming_animal",
+                  "crafting",
+                  "sewing",
+                  "forging",
+                  "alchemy",
+                  "cooking"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "upgradeCosts": {
+            "wood_blank": 160,
+            "copper": 12,
+            "iron": 12,
+            "flax_fiber": 160,
+            "soft_resin": 24,
+            "sturdy_wood_blank": 240,
+            "silverleaf_wood_blank": 240,
+            "silkwood_blank": 320,
+            "goldvine_wood_blank": 400,
+            "moonwood_blank": 2400,
+            "silver": 120,
+            "gold": 160,
+            "base2_cave_membrane": 100,
+            "base2_ruin_core_shard": 50,
+            "white_coin_shard": 100,
+            "base4_shadow_silk": 160,
+            "base4_golem_dark_core": 24,
+            "crystal": 320
+          },
+          "refillCostAdd": {},
+          "rules": [
+            {
+              "kind": "action_efficiency_add",
+              "domain": "action_start",
+              "rateBps": 10800,
+              "selector": {
+                "mainTypes": [
+                  "collecting",
+                  "mining",
+                  "farming_animal",
+                  "crafting",
+                  "sewing",
+                  "forging",
+                  "alchemy",
+                  "cooking"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "upgradeCosts": {
+            "wood_blank": 160,
+            "copper": 12,
+            "iron": 12,
+            "flax_fiber": 160,
+            "soft_resin": 24,
+            "sturdy_wood_blank": 320,
+            "silverleaf_wood_blank": 320,
+            "silkwood_blank": 400,
+            "goldvine_wood_blank": 520,
+            "moonwood_blank": 3200,
+            "silver": 160,
+            "gold": 200,
+            "base2_cave_membrane": 120,
+            "base2_ruin_core_shard": 60,
+            "white_coin_shard": 120,
+            "base4_shadow_silk": 200,
+            "base4_golem_dark_core": 28,
+            "crystal": 440
+          },
+          "refillCostAdd": {},
+          "rules": [
+            {
+              "kind": "action_efficiency_add",
+              "domain": "action_start",
+              "rateBps": 11600,
+              "selector": {
+                "mainTypes": [
+                  "collecting",
+                  "mining",
+                  "farming_animal",
+                  "crafting",
+                  "sewing",
+                  "forging",
+                  "alchemy",
+                  "cooking"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "upgradeCosts": {
+            "wood_blank": 160,
+            "copper": 12,
+            "iron": 12,
+            "flax_fiber": 160,
+            "soft_resin": 24,
+            "sturdy_wood_blank": 400,
+            "silverleaf_wood_blank": 400,
+            "silkwood_blank": 480,
+            "goldvine_wood_blank": 640,
+            "moonwood_blank": 4200,
+            "silver": 200,
+            "gold": 260,
+            "base2_cave_membrane": 140,
+            "base2_ruin_core_shard": 70,
+            "white_coin_shard": 140,
+            "base4_shadow_silk": 240,
+            "base4_golem_dark_core": 32,
+            "crystal": 600
+          },
+          "refillCostAdd": {},
+          "rules": [
+            {
+              "kind": "action_efficiency_add",
+              "domain": "action_start",
+              "rateBps": 12400,
+              "selector": {
+                "mainTypes": [
+                  "collecting",
+                  "mining",
+                  "farming_animal",
+                  "crafting",
+                  "sewing",
+                  "forging",
+                  "alchemy",
+                  "cooking"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "level": 9,
+          "upgradeCosts": {
+            "wood_blank": 160,
+            "copper": 12,
+            "iron": 12,
+            "flax_fiber": 160,
+            "soft_resin": 24,
+            "sturdy_wood_blank": 480,
+            "silverleaf_wood_blank": 480,
+            "silkwood_blank": 560,
+            "goldvine_wood_blank": 760,
+            "moonwood_blank": 5500,
+            "silver": 260,
+            "gold": 340,
+            "base2_cave_membrane": 160,
+            "base2_ruin_core_shard": 80,
+            "white_coin_shard": 160,
+            "base4_shadow_silk": 280,
+            "base4_golem_dark_core": 36,
+            "crystal": 800
+          },
+          "refillCostAdd": {},
+          "rules": [
+            {
+              "kind": "action_efficiency_add",
+              "domain": "action_start",
+              "rateBps": 13200,
+              "selector": {
+                "mainTypes": [
+                  "collecting",
+                  "mining",
+                  "farming_animal",
+                  "crafting",
+                  "sewing",
+                  "forging",
+                  "alchemy",
+                  "cooking"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "upgradeCosts": {
+            "wood_blank": 160,
+            "copper": 12,
+            "iron": 12,
+            "flax_fiber": 160,
+            "soft_resin": 24,
+            "sturdy_wood_blank": 560,
+            "silverleaf_wood_blank": 560,
+            "silkwood_blank": 640,
+            "goldvine_wood_blank": 880,
+            "moonwood_blank": 7200,
+            "silver": 340,
+            "gold": 440,
+            "base2_cave_membrane": 180,
+            "base2_ruin_core_shard": 90,
+            "white_coin_shard": 180,
+            "base4_shadow_silk": 320,
+            "base4_golem_dark_core": 40,
+            "crystal": 1100
+          },
+          "refillCostAdd": {},
+          "rules": [
+            {
+              "kind": "action_efficiency_add",
+              "domain": "action_start",
+              "rateBps": 14000,
+              "selector": {
+                "mainTypes": [
+                  "collecting",
+                  "mining",
+                  "farming_animal",
+                  "crafting",
+                  "sewing",
+                  "forging",
+                  "alchemy",
+                  "cooking"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "study_desk",
+      "version": "study-desk-v2",
+      "nameKey": "game.furniture.studyDesk",
+      "iconId": "item.study_desk",
+      "installCosts": {
+        "wood_blank": 240,
+        "copper": 24,
+        "iron": 18,
+        "flax_fiber": 180,
+        "soft_resin": 36
+      },
+      "refillCosts": {
+        "wood": 80,
+        "copper": 3,
+        "iron": 2,
+        "flax_fiber": 80,
+        "soft_resin": 8
+      },
+      "capacitySeconds": 120000,
+      "refillSeconds": 36000,
+      "rules": [
+        {
+          "kind": "owner_experience",
+          "domain": "life_action",
+          "rateBps": 1500
+        },
+        {
+          "kind": "owner_experience",
+          "domain": "fishing_cast",
+          "rateBps": 1500
+        }
+      ],
+      "levels": [
+        {
+          "level": 2,
+          "upgradeCosts": {
+            "wood_blank": 60,
+            "copper": 6,
+            "iron": 24,
+            "soft_resin": 18,
+            "sturdy_wood_blank": 120,
+            "flax_fiber": 60
+          },
+          "refillCostAdd": {
+            "sturdy_wood": 6,
+            "iron": 1
+          },
+          "rules": [
+            {
+              "kind": "owner_experience",
+              "domain": "life_action",
+              "rateBps": 1600
+            },
+            {
+              "kind": "owner_experience",
+              "domain": "fishing_cast",
+              "rateBps": 1600
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "upgradeCosts": {
+            "wood_blank": 60,
+            "copper": 6,
+            "iron": 12,
+            "soft_resin": 18,
+            "silverleaf_wood_blank": 150,
+            "silver": 15,
+            "flax_fiber": 60,
+            "frost_ledger_page": 18
+          },
+          "refillCostAdd": {
+            "silverleaf_wood": 5,
+            "silver": 1,
+            "frost_ledger_page": 1
+          },
+          "rules": [
+            {
+              "kind": "owner_experience",
+              "domain": "life_action",
+              "rateBps": 1700
+            },
+            {
+              "kind": "owner_experience",
+              "domain": "fishing_cast",
+              "rateBps": 1700
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "upgradeCosts": {
+            "wood_blank": 60,
+            "copper": 6,
+            "iron": 12,
+            "soft_resin": 18,
+            "silkwood_blank": 180,
+            "silver": 18,
+            "flax_fiber": 60
+          },
+          "refillCostAdd": {
+            "silkwood": 4,
+            "silver": 1
+          },
+          "rules": [
+            {
+              "kind": "owner_experience",
+              "domain": "life_action",
+              "rateBps": 1800
+            },
+            {
+              "kind": "owner_experience",
+              "domain": "fishing_cast",
+              "rateBps": 1800
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "upgradeCosts": {
+            "wood_blank": 60,
+            "copper": 6,
+            "iron": 12,
+            "soft_resin": 18,
+            "goldvine_wood_blank": 210,
+            "gold": 21,
+            "flax_fiber": 60
+          },
+          "refillCostAdd": {
+            "goldvine_wood": 3,
+            "gold": 1
+          },
+          "rules": [
+            {
+              "kind": "owner_experience",
+              "domain": "life_action",
+              "rateBps": 1900
+            },
+            {
+              "kind": "owner_experience",
+              "domain": "fishing_cast",
+              "rateBps": 1900
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "upgradeCosts": {
+            "wood_blank": 60,
+            "copper": 6,
+            "iron": 12,
+            "soft_resin": 18,
+            "moonwood_blank": 240,
+            "crystal": 24,
+            "flax_fiber": 60
+          },
+          "refillCostAdd": {
+            "moonwood": 2,
+            "crystal": 1
+          },
+          "rules": [
+            {
+              "kind": "owner_experience",
+              "domain": "life_action",
+              "rateBps": 2000
+            },
+            {
+              "kind": "owner_experience",
+              "domain": "fishing_cast",
+              "rateBps": 2000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_cabinet",
+      "version": "loot-cabinet-v2",
+      "nameKey": "game.furniture.lootCabinet",
+      "iconId": "item.loot_cabinet",
+      "installCosts": {
+        "wood_blank": 300,
+        "copper": 30,
+        "iron": 48,
+        "soft_resin": 48,
+        "base2_cave_membrane": 36,
+        "base2_ruin_core_shard": 18
+      },
+      "refillCosts": {
+        "wood": 60,
+        "copper": 1,
+        "iron": 2,
+        "soft_resin": 6,
+        "base2_cave_membrane": 4,
+        "base2_ruin_core_shard": 2
+      },
+      "capacitySeconds": 120000,
+      "refillSeconds": 36000,
+      "rules": [
+        {
+          "kind": "kitty_extra_loot",
+          "domain": "battle_reward",
+          "rateBps": 500
+        }
+      ],
+      "levels": [
+        {
+          "level": 2,
+          "upgradeCosts": {
+            "wood_blank": 60,
+            "copper": 6,
+            "iron": 24,
+            "soft_resin": 18,
+            "sturdy_wood_blank": 120,
+            "base2_cave_membrane": 12,
+            "base2_ruin_core_shard": 6
+          },
+          "refillCostAdd": {
+            "sturdy_wood": 6,
+            "iron": 1
+          },
+          "rules": [
+            {
+              "kind": "kitty_extra_loot",
+              "domain": "battle_reward",
+              "rateBps": 700
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "upgradeCosts": {
+            "wood_blank": 60,
+            "copper": 6,
+            "iron": 12,
+            "soft_resin": 18,
+            "silverleaf_wood_blank": 150,
+            "silver": 15,
+            "base2_cave_membrane": 12,
+            "base2_ruin_core_shard": 6,
+            "white_coin_shard": 18
+          },
+          "refillCostAdd": {
+            "silverleaf_wood": 5,
+            "silver": 1,
+            "white_coin_shard": 1
+          },
+          "rules": [
+            {
+              "kind": "kitty_extra_loot",
+              "domain": "battle_reward",
+              "rateBps": 900
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "upgradeCosts": {
+            "wood_blank": 60,
+            "copper": 6,
+            "iron": 12,
+            "soft_resin": 18,
+            "silkwood_blank": 180,
+            "silver": 18,
+            "base2_cave_membrane": 12,
+            "base2_ruin_core_shard": 6,
+            "base4_shadow_silk": 24
+          },
+          "refillCostAdd": {
+            "silkwood": 4,
+            "silver": 1,
+            "base4_shadow_silk": 1
+          },
+          "rules": [
+            {
+              "kind": "kitty_extra_loot",
+              "domain": "battle_reward",
+              "rateBps": 1100
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "upgradeCosts": {
+            "wood_blank": 60,
+            "copper": 6,
+            "iron": 12,
+            "soft_resin": 18,
+            "goldvine_wood_blank": 210,
+            "gold": 21,
+            "base2_cave_membrane": 12,
+            "base2_ruin_core_shard": 6
+          },
+          "refillCostAdd": {
+            "goldvine_wood": 3,
+            "gold": 1
+          },
+          "rules": [
+            {
+              "kind": "kitty_extra_loot",
+              "domain": "battle_reward",
+              "rateBps": 1300
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "upgradeCosts": {
+            "wood_blank": 60,
+            "copper": 6,
+            "iron": 12,
+            "soft_resin": 18,
+            "moonwood_blank": 240,
+            "crystal": 24,
+            "base2_cave_membrane": 12,
+            "base2_ruin_core_shard": 6,
+            "base4_golem_dark_core": 36
+          },
+          "refillCostAdd": {
+            "moonwood": 2,
+            "crystal": 1,
+            "base4_golem_dark_core": 1
+          },
+          "rules": [
+            {
+              "kind": "kitty_extra_loot",
+              "domain": "battle_reward",
+              "rateBps": 1500
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

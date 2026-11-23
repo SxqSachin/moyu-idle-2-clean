@@ -1,0 +1,38 @@
+{
+  "name": "mysecondwebgame-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:web": "cd ../web && npm run build",
+    "pack:dir": "npm run build:web && electron-builder --dir",
+    "pack:mac": "npm run build:web && electron-builder --mac",
+    "pack:win": "npm run build:web && electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^31.1.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.mysecondwebgame.desktop",
+    "productName": "MySecondWebGame",
+    "files": [
+      "main.js",
+      "preload.js"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    }
+  }
+}

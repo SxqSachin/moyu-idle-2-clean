@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "weapon_classes": [
+    {
+      "id": "sword",
+      "nameKey": "weapon_class.sword.name",
+      "descKey": "weapon_class.sword.desc",
+      "icon": "",
+      "color": "#ef4444",
+      "order": 1,
+      "disabled": false
+    },
+    {
+      "id": "spear",
+      "nameKey": "weapon_class.spear.name",
+      "descKey": "weapon_class.spear.desc",
+      "icon": "",
+      "color": "#f97316",
+      "order": 2,
+      "disabled": false
+    },
+    {
+      "id": "bow",
+      "nameKey": "weapon_class.bow.name",
+      "descKey": "weapon_class.bow.desc",
+      "icon": "",
+      "color": "#22c55e",
+      "order": 3,
+      "disabled": false
+    },
+    {
+      "id": "crossbow",
+      "nameKey": "weapon_class.crossbow.name",
+      "descKey": "weapon_class.crossbow.desc",
+      "icon": "",
+      "color": "#14b8a6",
+      "order": 4,
+      "disabled": false
+    },
+    {
+      "id": "staff",
+      "nameKey": "weapon_class.staff.name",
+      "descKey": "weapon_class.staff.desc",
+      "icon": "",
+      "color": "#8b5cf6",
+      "order": 5,
+      "disabled": false
+    },
+    {
+      "id": "dagger",
+      "nameKey": "weapon_class.dagger.name",
+      "descKey": "weapon_class.dagger.desc",
+      "icon": "",
+      "color": "#ef4444",
+      "order": 6,
+      "disabled": false
+    },
+    {
+      "id": "scythe",
+      "nameKey": "weapon_class.scythe.name",
+      "descKey": "weapon_class.scythe.desc",
+      "icon": "",
+      "color": "#ef4444",
+      "order": 7,
+      "disabled": false
+    },
+    {
+      "id": "single_edged_sword",
+      "nameKey": "weapon_class.single_edged_sword.name",
+      "descKey": "weapon_class.single_edged_sword.desc",
+      "icon": "",
+      "color": "#f97316",
+      "order": 8,
+      "disabled": false
+    },
+    {
+      "id": "shield",
+      "nameKey": "weapon_class.shield.name",
+      "descKey": "weapon_class.shield.desc",
+      "icon": "",
+      "color": "#ef4444",
+      "order": 9,
+      "disabled": false
+    },
+    {
+      "id": "knife_fan",
+      "nameKey": "weapon_class.knife_fan.name",
+      "descKey": "weapon_class.knife_fan.desc",
+      "icon": "game-icons:fan-of-knives",
+      "color": "#0ea5e9",
+      "order": 10,
+      "disabled": false
+    },
+    {
+      "id": "special",
+      "nameKey": "weapon_class.special.name",
+      "descKey": "weapon_class.special.desc",
+      "icon": "game-icons:mesh-network",
+      "color": "#64748b",
+      "order": 11,
+      "disabled": false
+    },
+    {
+      "id": "mind_orb",
+      "nameKey": "weapon_class.mind_orb.name",
+      "descKey": "weapon_class.mind_orb.desc",
+      "icon": "game-icons:crystal-ball",
+      "color": "#a855f7",
+      "order": 12,
+      "disabled": false
+    }
+  ]
+}

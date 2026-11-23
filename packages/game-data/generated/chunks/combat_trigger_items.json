@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "combat_trigger_items": [
+    {
+      "id": "trigger_wolf_king_photo",
+      "itemId": "wolf_king_photo",
+      "dungeonIds": [
+        "base_1"
+      ],
+      "perWaveChance": 0.3,
+      "consumeOnTrigger": true,
+      "spawnEnemyId": "wolf_king_001",
+      "disabled": false
+    }
+  ]
+}

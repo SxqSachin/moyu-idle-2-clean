@@ -1,0 +1,119 @@
+services:
+  pg:
+    image: ${POSTGRES_IMAGE:-docker.m.daocloud.io/library/postgres:16}
+    environment:
+      POSTGRES_USER: game
+      POSTGRES_PASSWORD: game
+      POSTGRES_DB: game
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  redis:
+    image: ${REDIS_IMAGE:-docker.m.daocloud.io/library/redis:7}
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+  nats:
+    image: ${NATS_IMAGE:-docker.m.daocloud.io/library/nats:2.10}
+    command: ["-js"]
+    restart: unless-stopped
+
+  server:
+    build:
+      context: ../server
+    environment:
+      APP_PORT: 8080
+      DATABASE_URL: postgres://game:game@pg:5432/game?sslmode=disable
+      AUTH_DB_POOL_MAX_CONNS: 4
+      AUTH_DB_TIMEOUT_MS: 800
+      REDIS_ADDR: redis:6379
+      REDIS_DB: 0
+      NATS_URL: nats://nats:4222
+      MQ_TOPIC_PREFIX: game
+      ORDINARY_SETTLEMENT_ENABLED: ${ORDINARY_SETTLEMENT_ENABLED:-false}
+      SCHEDULER_SHARDS: 16
+      SCHEDULER_ENGINE: minheap
+      SCHEDULER_TICK_MS: 100
+      SCHEDULER_WHEEL_SIZE: 512
+      NODE_ADVERTISE_ADDR: ${NODE_ADVERTISE_ADDR:-}
+      NODE_REGISTRY_PREFIX: ${NODE_REGISTRY_PREFIX:-ws:backend:node:}
+      NODE_HEARTBEAT_SECONDS: ${NODE_HEARTBEAT_SECONDS:-30}
+      NODE_HEARTBEAT_INTERVAL_SECONDS: ${NODE_HEARTBEAT_INTERVAL_SECONDS:-10}
+      GAME_DATA_PATH: /app/game-data/generated/game-data.json
+      GLOBAL_CONFIG_PATH: /app/game-data/game-config/source/global-config.json
+      SHARED_GLOBAL_CONFIG_PATH: /app/game-data/game-config/source/shared-global-config.json
+      JWT_SECRET: change-this-in-prod
+    volumes:
+      - ../packages:/app/game-data
+    depends_on:
+      - pg
+      - redis
+      - nats
+    restart: unless-stopped
+
+  battle-worker:
+    build:
+      context: ../server
+      dockerfile: Dockerfile.battle-worker
+    environment:
+      DATABASE_URL: postgres://game:game@pg:5432/game?sslmode=disable
+      REDIS_ADDR: redis:6379
+      REDIS_DB: 0
+      NATS_URL: nats://nats:4222
+      MQ_TOPIC_PREFIX: game
+      ORDINARY_SETTLEMENT_ENABLED: ${ORDINARY_SETTLEMENT_ENABLED:-false}
+      WS_TARGETED_ROUTING_ENABLED: "false"
+      WS_BATTLE_BATCH_COMPRESSION_ENABLED: ${WS_BATTLE_BATCH_COMPRESSION_ENABLED:-false}
+      GAME_DATA_PATH: /app/game-data/generated/game-data.json
+      GLOBAL_CONFIG_PATH: /app/game-data/game-config/source/global-config.json
+      SHARED_GLOBAL_CONFIG_PATH: /app/game-data/game-config/source/shared-global-config.json
+      JWT_SECRET: change-this-in-prod
+    volumes:
+      - ../packages:/app/game-data
+    depends_on:
+      - pg
+      - redis
+      - nats
+    restart: unless-stopped
+
+  action-worker:
+    build:
+      context: ../server
+      dockerfile: Dockerfile.action-worker
+    environment:
+      DATABASE_URL: postgres://game:game@pg:5432/game?sslmode=disable
+      REDIS_ADDR: redis:6379
+      REDIS_DB: 0
+      NATS_URL: nats://nats:4222
+      MQ_TOPIC_PREFIX: game
+      ORDINARY_SETTLEMENT_ENABLED: ${ORDINARY_SETTLEMENT_ENABLED:-false}
+      ACTION_WORKER_BATCH_SIZE: 8
+      ACTION_WORKER_USER_TIMEOUT_MS: 2000
+      ACTION_WORKER_POLL_MS: 200
+      GAME_DATA_PATH: /app/game-data/generated/game-data.json
+      GLOBAL_CONFIG_PATH: /app/game-data/game-config/source/global-config.json
+      SHARED_GLOBAL_CONFIG_PATH: /app/game-data/game-config/source/shared-global-config.json
+      JWT_SECRET: change-this-in-prod
+    volumes:
+      - ../packages:/app/game-data
+    depends_on:
+      - pg
+      - redis
+      - nats
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ../web
+    ports:
+      - "80:80"
+    depends_on:
+      - server
+    restart: unless-stopped
+
+volumes:
+  pg_data:
+  redis_data:

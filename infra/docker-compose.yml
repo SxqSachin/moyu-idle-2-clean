@@ -1,0 +1,29 @@
+services:
+  pg:
+    image: ${POSTGRES_IMAGE:-docker.m.daocloud.io/library/postgres:16}
+    environment:
+      POSTGRES_USER: game
+      POSTGRES_PASSWORD: game
+      POSTGRES_DB: game
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+  redis:
+    image: ${REDIS_IMAGE:-docker.m.daocloud.io/library/redis:7}
+    ports:
+      - "6379:6379"
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis_data:/data
+
+  nats:
+    image: ${NATS_IMAGE:-docker.m.daocloud.io/library/nats:2.10}
+    ports:
+      - "4222:4222"
+    command: ["-js"]
+
+volumes:
+  pg_data:
+  redis_data:

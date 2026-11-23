@@ -1,0 +1,103 @@
+- generic [ref=f5e1]:
+  - main [ref=f5e3]:
+    - generic [ref=f5e5]:
+      - generic [ref=f5e7]:
+        - generic [ref=f5e8]: 选择战斗区域
+        - button "刷新房间" [ref=f5e9] [cursor=pointer]
+      - generic [ref=f5e14] [cursor=pointer]:
+        - generic [ref=f5e15]:
+          - generic [ref=f5e16]: 星夜游乐园
+          - generic [ref=f5e18]: "普通敌人数: 4~5"
+          - generic [ref=f5e19]: "进入时长: 15s"
+          - generic [ref=f5e20]: "最大组队人数: 4"
+        - generic [ref=f5e21]:
+          - button "详情" [ref=f5e22]
+          - button "创建房间" [ref=f5e24]
+  - dialog "星夜游乐园" [ref=f5e27]:
+    - generic [active] [ref=f5e28]:
+      - banner [ref=f5e29]:
+        - heading "星夜游乐园" [level=2] [ref=f5e30]
+        - button "Close this dialog" [ref=f5e31] [cursor=pointer]
+      - generic [ref=f5e36]:
+        - paragraph [ref=f5e37]: 散场铃永远不会响的猫咪游乐园。演员在帷幕层数耗尽前免疫直接伤害，每次正式行动结束退一幕；帷幕可被驱散，持续伤害与毛绒护送等伤害转移仍可绕幕后手，正常落幕则留下1回合25%易伤。攻击未落幕的演员会被聚光，更容易成为敌方目标。普通波次保留常规阵容；每4波追加失控游乐组，每8波由三幕游行王猫接管特殊名额。携带鬼屋夜场券时，第17波起每8波还会追加午夜检票员。
+        - generic [ref=f5e38]:
+          - generic [ref=f5e39]:
+            - generic [ref=f5e40]: 普通敌人数
+            - generic [ref=f5e41]: 4~5
+          - generic [ref=f5e42]:
+            - generic [ref=f5e43]: 每额外玩家增怪
+            - generic [ref=f5e44]: 1~2
+          - generic [ref=f5e45]:
+            - generic [ref=f5e46]: 进入时长
+            - generic [ref=f5e47]: 15s
+          - generic [ref=f5e48]:
+            - generic [ref=f5e49]: 最大组队人数
+            - generic [ref=f5e50]: "4"
+        - generic [ref=f5e51]:
+          - generic [ref=f5e52]: 普通敌人
+          - generic [ref=f5e53]:
+            - generic [ref=f5e54] [cursor=pointer]: 星尘鼠
+            - generic [ref=f5e56] [cursor=pointer]: 旋转木马猫
+            - generic [ref=f5e58] [cursor=pointer]: 糖果小丑猫
+            - generic [ref=f5e60] [cursor=pointer]: 毛绒守卫猫
+            - generic [ref=f5e62] [cursor=pointer]: 星光治愈猫
+            - generic [ref=f5e64] [cursor=pointer]: 幽灵骑手猫
+        - generic [ref=f5e66]:
+          - generic [ref=f5e67]: 特殊敌人
+          - generic [ref=f5e68]:
+            - generic [ref=f5e69] [cursor=pointer]: 糖果小丑猫
+            - generic [ref=f5e71] [cursor=pointer]: 旋转木马猫
+            - generic [ref=f5e73] [cursor=pointer]: 幽灵骑手猫
+            - generic [ref=f5e75] [cursor=pointer]: 游行王猫
+        - generic [ref=f5e77]:
+          - generic [ref=f5e78]: 特殊波次
+          - generic [ref=f5e79]: "-"
+        - generic [ref=f5e81]:
+          - generic [ref=f5e82]: 周期演出
+          - generic [ref=f5e83]:
+            - generic [ref=f5e84]:
+              - generic [ref=f5e85]:
+                - generic [ref=f5e86]: 游行王登场
+                - generic [ref=f5e87]: 每 8 波
+                - generic [ref=f5e88]: 登场 1~1 个
+              - generic [ref=f5e89]: 每8波固定追加1只带三幕可驱散帷幕的游行王猫；与第4波节奏同时命中时，以本节奏为准。
+              - generic [ref=f5e91]:
+                - generic [ref=f5e92] [cursor=pointer]: 游行王猫
+                - generic [ref=f5e94]: 权重 1
+            - generic [ref=f5e95]:
+              - generic [ref=f5e96]:
+                - generic [ref=f5e97]: 失控游乐组
+                - generic [ref=f5e98]: 每 4 波
+                - generic [ref=f5e99]: 登场 1~3 个
+              - generic [ref=f5e100]: 每4波按40/30/30权重从糖果小丑猫、旋转木马猫、幽灵骑手猫中抽取1至3只；幽灵骑手带有两幕可驱散护场。
+              - generic [ref=f5e101]:
+                - generic [ref=f5e102]:
+                  - generic [ref=f5e103] [cursor=pointer]: 糖果小丑猫
+                  - generic [ref=f5e105]: 权重 40
+                - generic [ref=f5e106]:
+                  - generic [ref=f5e107] [cursor=pointer]: 旋转木马猫
+                  - generic [ref=f5e109]: 权重 30
+                - generic [ref=f5e110]:
+                  - generic [ref=f5e111] [cursor=pointer]: 幽灵骑手猫
+                  - generic [ref=f5e113]: 权重 30
+        - generic [ref=f5e114]:
+          - generic [ref=f5e115]: 道具触发的隐藏遭遇
+          - generic [ref=f5e117]:
+            - generic [ref=f5e118]:
+              - generic [ref=f5e119]: 触发条件
+              - generic [ref=f5e122]:
+                - img "鬼屋夜场券" [ref=f5e123]
+                - generic [ref=f5e124]: 鬼屋夜场券
+            - generic [ref=f5e125]:
+              - generic [ref=f5e126]: 召唤目标
+              - generic [ref=f5e127] [cursor=pointer]: 午夜检票员
+            - generic [ref=f5e129]:
+              - generic [ref=f5e130]: "最早触发波次: 17"
+              - generic [ref=f5e132]: "间隔波次: 8"
+              - generic [ref=f5e134]: "每波触发概率: 100%"
+        - generic [ref=f5e136]:
+          - generic [ref=f5e137]: 特殊阵容
+          - generic [ref=f5e138]: "-"
+        - generic [ref=f5e139]:
+          - generic [ref=f5e140]: 进入消耗
+          - generic [ref=f5e141]: "-"

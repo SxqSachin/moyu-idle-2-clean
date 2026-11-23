@@ -1,0 +1,7 @@
+{
+  "module": "actions",
+  "metrics": [
+    { "id": "cost", "label": "消耗", "expression": "Number(row.cost || 0)" },
+    { "id": "duration", "label": "耗时", "expression": "Number(row.duration || 0)" }
+  ]
+}

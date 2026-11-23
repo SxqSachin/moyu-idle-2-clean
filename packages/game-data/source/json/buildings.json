@@ -1,0 +1,107 @@
+{
+  "version": 2,
+  "buildings": [
+    {
+      "id": "workshop",
+      "iconId": "item.craftsmans_hammer",
+      "nameKey": "building.workshop.name",
+      "descKey": "building.workshop.desc",
+      "order": 1,
+      "maxLevel": 1,
+      "baseDurationS": 300,
+      "stepDurationS": 150,
+      "baseCosts": {
+        "wood": 500,
+        "stone": 200
+      },
+      "stepCosts": {
+        "wood": 200,
+        "stone": 100
+      },
+      "baseStatusRequirement": {
+        "crafting": 0
+      },
+      "stepStatusRequirement": {
+        "crafting": 12
+      },
+      "disabled": false
+    },
+    {
+      "id": "cattery",
+      "iconId": "item.craftsmans_hammer",
+      "nameKey": "building.cattery.name",
+      "descKey": "building.cattery.desc",
+      "order": 2,
+      "maxLevel": 2,
+      "baseDurationS": 600,
+      "stepDurationS": 300,
+      "baseCosts": {
+        "wood": 2000,
+        "stone": 1000
+      },
+      "stepCosts": {
+        "iron": 200,
+        "wood_blank": 500
+      },
+      "baseStatusRequirement": {
+        "crafting": 0
+      },
+      "stepStatusRequirement": {
+        "crafting": 0
+      },
+      "disabled": false
+    },
+    {
+      "id": "fish_pond",
+      "iconId": "item.fish_catch",
+      "nameKey": "building.fish_pond.name",
+      "descKey": "building.fish_pond.desc",
+      "order": 3,
+      "maxLevel": 5,
+      "baseDurationS": 600,
+      "stepDurationS": 0,
+      "baseCosts": {},
+      "stepCosts": {},
+      "baseStatusRequirement": {},
+      "stepStatusRequirement": {},
+      "levels": [
+        {
+          "level": 1,
+          "durationS": 600,
+          "costs": { "wood": 1200, "copper": 300, "soft_resin": 500, "stone": 1500, "base2_moss_spore": 240, "base2_cave_membrane": 80 },
+          "statusRequirement": { "crafting": 5, "forging": 5 },
+          "bonuses": { "fishCapacity": 12, "nurseryCapacity": 12, "biomassKg": 60, "breedingPairs": 1, "feederNutrition": 600 }
+        },
+        {
+          "level": 2,
+          "durationS": 1800,
+          "costs": { "sturdy_wood": 1600, "iron": 1250, "silverleaf_resin": 650, "base2_moss_spore": 480, "base2_cave_membrane": 160, "base2_ruin_core_shard": 80 },
+          "statusRequirement": { "crafting": 15, "forging": 15 },
+          "bonuses": { "fishCapacity": 21, "nurseryCapacity": 12, "biomassKg": 150, "breedingPairs": 1, "feederNutrition": 1200 }
+        },
+        {
+          "level": 3,
+          "durationS": 3600,
+          "costs": { "silkwood": 2200, "silver": 1600, "clear_resin": 900, "white_coin_shard": 400, "snowseal_wax": 400, "base2_ruin_core_shard": 200, "base2_dragon_scale_chip": 40 },
+          "statusRequirement": { "crafting": 25, "forging": 25 },
+          "bonuses": { "fishCapacity": 27, "nurseryCapacity": 12, "biomassKg": 350, "breedingPairs": 2, "feederNutrition": 2400 }
+        },
+        {
+          "level": 4,
+          "durationS": 7200,
+          "costs": { "goldvine_wood": 3000, "gold": 2200, "sun_resin": 1300, "base4_shadow_silk": 400, "base4_phantom_claw": 160, "base4_cursed_wing_membrane": 160, "base4_golem_dark_core": 60, "base4_abyssal_core": 20 },
+          "statusRequirement": { "crafting": 40, "forging": 40 },
+          "bonuses": { "fishCapacity": 33, "nurseryCapacity": 12, "biomassKg": 800, "breedingPairs": 2, "feederNutrition": 4800 }
+        },
+        {
+          "level": 5,
+          "durationS": 14400,
+          "costs": { "moonwood": 4200, "crystal": 3000, "moon_resin": 1800, "base4_abyssal_core": 100, "star_rail_copper_plate": 400, "refraction_lens_shard": 240, "meteor_core_fragment": 160, "condensed_stardust": 80, "timekeeper_core": 20 },
+          "statusRequirement": { "crafting": 50, "forging": 50 },
+          "bonuses": { "fishCapacity": 39, "nurseryCapacity": 12, "biomassKg": 1800, "breedingPairs": 3, "feederNutrition": 9000 }
+        }
+      ],
+      "disabled": false
+    }
+  ]
+}

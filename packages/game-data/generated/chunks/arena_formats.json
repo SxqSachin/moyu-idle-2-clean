@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "arena_formats": [
+    {
+      "id": "standard",
+      "schemaVersion": 1,
+      "rulesetVersion": "arena-format-v1",
+      "balanceRevision": 2,
+      "nameKey": "game.arena.formats.standard.name",
+      "shortDescKey": "game.arena.formats.standard.shortDesc",
+      "descKey": "game.arena.formats.standard.desc",
+      "icon": "game-icons:heart-shield",
+      "sortOrder": 0,
+      "enabled": true,
+      "triggers": [
+        {
+          "id": "standard_matchup_balance",
+          "event": "battle_start",
+          "effects": [
+            {
+              "kind": "matchup_hp_buff",
+              "targetScope": "formal_units_by_side",
+              "includeSummons": false,
+              "buffId": "arena_matchup_hp_adjustment",
+              "payloadKey": "hpBonus",
+              "matchupHp": {
+                "levelSource": "player_battle_level",
+                "bothAtLeastLevel": 400,
+                "bothSidesFlatBonus": 50000,
+                "lowerSideBonusPerLevel": 100
+              }
+            },
+            {
+              "kind": "warmup_buff",
+              "targetScope": "eligible_side_units",
+              "includeSummons": true,
+              "buffId": "arena_output_warmup",
+              "warmup": {
+                "levelSource": "player_battle_level",
+                "higherSideGapExceeds": 100,
+                "alwaysAboveLevel": 400,
+                "normalActions": 2,
+                "startMultiplier": 0.4,
+                "recoveryPerNormalAction": 0.3,
+                "maximumMultiplier": 1,
+                "outputs": [
+                  "damage",
+                  "heal"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "natural_talents",
+      "baseFormatId": "standard",
+      "schemaVersion": 1,
+      "rulesetVersion": "arena-format-v1",
+      "balanceRevision": 1,
+      "nameKey": "game.arena.formats.natural_talents.name",
+      "shortDescKey": "game.arena.formats.natural_talents.shortDesc",
+      "descKey": "game.arena.formats.natural_talents.desc",
+      "icon": "lucide:circle-off",
+      "sortOrder": 10,
+      "enabled": true,
+      "triggers": [
+        {
+          "id": "natural_talents_specialization_policy",
+          "event": "lineup_snapshot",
+          "effects": [
+            {
+              "kind": "specialization_policy",
+              "targetScope": "player_units",
+              "includeSummons": false,
+              "specializationEnabled": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "three_layer_boxes",
+      "baseFormatId": "standard",
+      "schemaVersion": 1,
+      "rulesetVersion": "arena-format-v1",
+      "balanceRevision": 1,
+      "nameKey": "game.arena.formats.three_layer_boxes.name",
+      "shortDescKey": "game.arena.formats.three_layer_boxes.shortDesc",
+      "descKey": "game.arena.formats.three_layer_boxes.desc",
+      "icon": "game-icons:cardboard-box",
+      "sortOrder": 20,
+      "enabled": true,
+      "triggers": [
+        {
+          "id": "opening_boxes",
+          "event": "battle_start",
+          "effects": [
+            {
+              "kind": "turn_barrier",
+              "targetScope": "all_units",
+              "includeSummons": false,
+              "buffId": "arena_format_three_layer_boxes",
+              "charges": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lively_arrivals",
+      "baseFormatId": "standard",
+      "schemaVersion": 1,
+      "rulesetVersion": "arena-format-v1",
+      "balanceRevision": 1,
+      "nameKey": "game.arena.formats.lively_arrivals.name",
+      "shortDescKey": "game.arena.formats.lively_arrivals.shortDesc",
+      "descKey": "game.arena.formats.lively_arrivals.desc",
+      "icon": "game-icons:cat",
+      "sortOrder": 30,
+      "enabled": true,
+      "triggers": [
+        {
+          "id": "arrival_ripple",
+          "event": "after_summon",
+          "effects": [
+            {
+              "kind": "damage",
+              "targetScope": "all_alive_units",
+              "includeSummons": true,
+              "damageType": "physical",
+              "skipFinalDamageModifiers": true,
+              "dispatchHooks": false,
+              "simultaneous": true,
+              "amount": {
+                "basis": "target_max_hp",
+                "multiplier": 0.04,
+                "flat": 30,
+                "minimum": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

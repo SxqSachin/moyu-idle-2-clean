@@ -1,0 +1,1354 @@
+{
+  "version": 1,
+  "fish_food_recipes": [
+    {
+      "id": "mossfire_dual_fish_grill",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_mossfire_dual_fish_grill",
+      "outputItemId": "mossfire_dual_fish_grill",
+      "kind": "grilled_fish",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "crucian_carp",
+          "quantity": 1
+        },
+        {
+          "speciesId": "bluegill",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "extraMaterialQuantity": {
+          "curve": "size_growth",
+          "length": 0.3,
+          "weight": 0.7,
+          "traits": 0.1,
+          "min": 50,
+          "max": 400,
+          "maxBeforeMutation": 200,
+          "integer": true
+        },
+        "positiveFloorReductionRate": {
+          "length": 0.4,
+          "weight": 0.1,
+          "traits": 0.2,
+          "min": 0.05,
+          "max": 0.2,
+          "inverse": true
+        },
+        "quantityLimitBonusRate": {
+          "curve": "size_growth",
+          "length": 0.65,
+          "weight": 0.35,
+          "traits": 0.1,
+          "min": 0.07,
+          "max": 0.2,
+          "maxBeforeMutation": 0.12
+        },
+        "successRatePenalty": {
+          "length": 0.15,
+          "weight": 0.05,
+          "traits": 0.05,
+          "min": 0.01,
+          "max": 0.03,
+          "inverse": true
+        }
+      },
+      "legacyEffectIds": [
+        "food_mossfire_dual_fish_grill",
+        "food_mossfire_dual_fish_grill_v4",
+        "food_mossfire_dual_fish_grill_v5",
+        "food_mossfire_dual_fish_grill_v6"
+      ],
+      "mutationLifetimeBonuses": {
+        "prismatic": {
+          "charges": 1
+        }
+      },
+      "replacedEffectIds": [
+        "food_mossfire_dual_fish_grill_v2"
+      ]
+    },
+    {
+      "id": "mossfire_dual_fish_soup",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_mossfire_dual_fish_soup",
+      "outputItemId": "mossfire_dual_fish_soup",
+      "kind": "fish_soup",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "crucian_carp",
+          "quantity": 1
+        },
+        {
+          "speciesId": "bluegill",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "extraMaterialQuantity": {
+          "curve": "size_growth",
+          "length": 0.3,
+          "weight": 0.7,
+          "traits": 0.1,
+          "min": 45,
+          "max": 360,
+          "maxBeforeMutation": 180,
+          "integer": true
+        },
+        "positiveFloorReductionRate": {
+          "length": 0.4,
+          "weight": 0.1,
+          "traits": 0.2,
+          "min": 0.05,
+          "max": 0.2,
+          "inverse": true
+        },
+        "quantityLimitBonusRate": {
+          "curve": "size_growth",
+          "length": 0.65,
+          "weight": 0.35,
+          "traits": 0.1,
+          "min": 0.07,
+          "max": 0.2,
+          "maxBeforeMutation": 0.12
+        },
+        "successRatePenalty": {
+          "length": 0.15,
+          "weight": 0.05,
+          "traits": 0.05,
+          "min": 0.01,
+          "max": 0.025,
+          "inverse": true
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "rainbow": {
+          "durationSeconds": 900
+        }
+      },
+      "replacedEffectIds": [
+        "food_mossfire_dual_fish_soup_v2"
+      ],
+      "legacyEffectIds": [
+        "food_mossfire_dual_fish_soup_v4",
+        "food_mossfire_dual_fish_soup_v5",
+        "food_mossfire_dual_fish_soup_v6"
+      ]
+    },
+    {
+      "id": "starlight_silverfish_grill",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_starlight_silverfish_grill",
+      "outputItemId": "starlight_silverfish_grill",
+      "kind": "grilled_fish",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "whitefish",
+          "quantity": 1
+        },
+        {
+          "speciesId": "grayling",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "positiveCeilingBonusRate": {
+          "length": 0.45,
+          "weight": 0.1,
+          "traits": 0.15,
+          "min": 0.01,
+          "max": 0.12
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "prismatic": {
+          "charges": 1
+        }
+      }
+    },
+    {
+      "id": "starlight_silverfish_soup",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_starlight_silverfish_soup",
+      "outputItemId": "starlight_silverfish_soup",
+      "kind": "fish_soup",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "whitefish",
+          "quantity": 1
+        },
+        {
+          "speciesId": "grayling",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "positiveCeilingBonusRate": {
+          "length": 0.45,
+          "weight": 0.1,
+          "traits": 0.15,
+          "min": 0.01,
+          "max": 0.12
+        }
+      },
+      "legacyEffectIds": [
+        "food_starlight_silverfish_soup"
+      ],
+      "mutationLifetimeBonuses": {
+        "rainbow": {
+          "durationSeconds": 900
+        }
+      }
+    },
+    {
+      "id": "steadyfin_grill",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_steadyfin_grill",
+      "outputItemId": "steadyfin_grill",
+      "kind": "grilled_fish",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "common_carp",
+          "quantity": 1
+        },
+        {
+          "speciesId": "freshwater_perch",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "bonusRate": {
+          "length": 0.4,
+          "weight": 0.1,
+          "traits": 0.2,
+          "min": 0.004,
+          "max": 0.05
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "prismatic": {
+          "charges": 1
+        }
+      }
+    },
+    {
+      "id": "steadyfin_soup",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_steadyfin_soup",
+      "outputItemId": "steadyfin_soup",
+      "kind": "fish_soup",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "common_carp",
+          "quantity": 1
+        },
+        {
+          "speciesId": "freshwater_perch",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "bonusRate": {
+          "length": 0.4,
+          "weight": 0.1,
+          "traits": 0.2,
+          "min": 0.004,
+          "max": 0.05
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "rainbow": {
+          "durationSeconds": 900
+        }
+      }
+    },
+    {
+      "id": "frugal_river_grill",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_frugal_river_grill",
+      "outputItemId": "frugal_river_grill",
+      "kind": "grilled_fish",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "grass_carp",
+          "quantity": 1
+        },
+        {
+          "speciesId": "mud_loach",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "rate": {
+          "length": 0.15,
+          "weight": 0.4,
+          "traits": 0.15,
+          "min": 0.005,
+          "max": 0.15
+        }
+      },
+      "replacedEffectIds": [
+        "food_frugal_river_grill_v2"
+      ],
+      "mutationLifetimeBonuses": {
+        "prismatic": {
+          "charges": 8
+        }
+      }
+    },
+    {
+      "id": "frugal_river_soup",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_frugal_river_soup",
+      "outputItemId": "frugal_river_soup",
+      "kind": "fish_soup",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "grass_carp",
+          "quantity": 1
+        },
+        {
+          "speciesId": "mud_loach",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "rate": {
+          "length": 0.15,
+          "weight": 0.4,
+          "traits": 0.15,
+          "min": 0.005,
+          "max": 0.15
+        }
+      },
+      "replacedEffectIds": [
+        "food_frugal_river_soup_v2"
+      ],
+      "mutationLifetimeBonuses": {
+        "rainbow": {
+          "durationSeconds": 900
+        }
+      }
+    },
+    {
+      "id": "harvest_river_grill",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_harvest_river_grill",
+      "outputItemId": "harvest_river_grill",
+      "kind": "grilled_fish",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "chub",
+          "quantity": 1
+        },
+        {
+          "speciesId": "dace",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "rate": {
+          "length": 0.4,
+          "weight": 0.15,
+          "traits": 0.15,
+          "min": 0.005,
+          "max": 0.15
+        }
+      },
+      "replacedEffectIds": [
+        "food_harvest_river_grill_v2"
+      ],
+      "mutationLifetimeBonuses": {
+        "prismatic": {
+          "charges": 8
+        }
+      }
+    },
+    {
+      "id": "harvest_river_soup",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_harvest_river_soup",
+      "outputItemId": "harvest_river_soup",
+      "kind": "fish_soup",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "chub",
+          "quantity": 1
+        },
+        {
+          "speciesId": "dace",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "rate": {
+          "length": 0.4,
+          "weight": 0.15,
+          "traits": 0.15,
+          "min": 0.005,
+          "max": 0.15
+        }
+      },
+      "replacedEffectIds": [
+        "food_harvest_river_soup_v2"
+      ],
+      "mutationLifetimeBonuses": {
+        "rainbow": {
+          "durationSeconds": 900
+        }
+      }
+    },
+    {
+      "id": "reedbank_grill",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_reedbank_grill",
+      "outputItemId": "reedbank_grill",
+      "kind": "grilled_fish",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "brown_trout",
+          "quantity": 1
+        },
+        {
+          "speciesId": "barbel",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "bonusRate": {
+          "length": 0.15,
+          "weight": 0.4,
+          "traits": 0.15,
+          "min": 0.01,
+          "max": 0.2
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "prismatic": {
+          "charges": 8
+        }
+      },
+      "replacedEffectIds": [
+        "food_reedbank_grill_v2"
+      ]
+    },
+    {
+      "id": "reedbank_soup",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_reedbank_soup",
+      "outputItemId": "reedbank_soup",
+      "kind": "fish_soup",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "brown_trout",
+          "quantity": 1
+        },
+        {
+          "speciesId": "barbel",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "bonusRate": {
+          "length": 0.15,
+          "weight": 0.4,
+          "traits": 0.15,
+          "min": 0.01,
+          "max": 0.2
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "rainbow": {
+          "durationSeconds": 900
+        }
+      }
+    },
+    {
+      "id": "frostmoon_dual_fish_grill",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_frostmoon_dual_fish_grill",
+      "outputItemId": "frostmoon_dual_fish_grill",
+      "kind": "grilled_fish",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "moonmirror_carp",
+          "quantity": 1
+        },
+        {
+          "speciesId": "frostveil_sturgeon",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "extraMaterialQuantity": {
+          "curve": "size_growth",
+          "length": 0.3,
+          "weight": 0.7,
+          "traits": 0.1,
+          "min": 25,
+          "max": 100,
+          "maxBeforeMutation": 50,
+          "integer": true
+        },
+        "quantityLimitBonusRate": {
+          "curve": "size_growth",
+          "length": 0.65,
+          "weight": 0.35,
+          "traits": 0.1,
+          "min": 0.07,
+          "max": 0.12,
+          "maxBeforeMutation": 0.09
+        },
+        "successRatePenalty": {
+          "length": 0.15,
+          "weight": 0.05,
+          "traits": 0.05,
+          "min": 0.015,
+          "max": 0.045,
+          "inverse": true
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "prismatic": {
+          "charges": 1
+        }
+      },
+      "legacyEffectIds": [
+        "food_frostmoon_dual_fish_grill_v1",
+        "food_frostmoon_dual_fish_grill_v2",
+        "food_frostmoon_dual_fish_grill_v3"
+      ]
+    },
+    {
+      "id": "frostmoon_dual_fish_soup",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_frostmoon_dual_fish_soup",
+      "outputItemId": "frostmoon_dual_fish_soup",
+      "kind": "fish_soup",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "moonmirror_carp",
+          "quantity": 1
+        },
+        {
+          "speciesId": "frostveil_sturgeon",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "extraMaterialQuantity": {
+          "curve": "size_growth",
+          "length": 0.3,
+          "weight": 0.7,
+          "traits": 0.1,
+          "min": 25,
+          "max": 100,
+          "maxBeforeMutation": 50,
+          "integer": true
+        },
+        "quantityLimitBonusRate": {
+          "curve": "size_growth",
+          "length": 0.65,
+          "weight": 0.35,
+          "traits": 0.1,
+          "min": 0.07,
+          "max": 0.12,
+          "maxBeforeMutation": 0.09
+        },
+        "successRatePenalty": {
+          "length": 0.15,
+          "weight": 0.05,
+          "traits": 0.05,
+          "min": 0.015,
+          "max": 0.04,
+          "inverse": true
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "rainbow": {
+          "durationSeconds": 900
+        }
+      },
+      "legacyEffectIds": [
+        "food_frostmoon_dual_fish_soup_v1",
+        "food_frostmoon_dual_fish_soup_v2",
+        "food_frostmoon_dual_fish_soup_v3"
+      ]
+    },
+    {
+      "id": "lotusflame_dual_fish_grill",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_lotusflame_dual_fish_grill",
+      "outputItemId": "lotusflame_dual_fish_grill",
+      "kind": "grilled_fish",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "lotus_koi",
+          "quantity": 1
+        },
+        {
+          "speciesId": "emberfin",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "extraMaterialQuantity": {
+          "curve": "size_growth",
+          "length": 0.3,
+          "weight": 0.7,
+          "traits": 0.1,
+          "min": 35,
+          "max": 200,
+          "maxBeforeMutation": 100,
+          "integer": true
+        },
+        "positiveFloorReductionRate": {
+          "length": 0.4,
+          "weight": 0.1,
+          "traits": 0.2,
+          "min": 0.04,
+          "max": 0.2,
+          "inverse": true
+        },
+        "quantityLimitBonusRate": {
+          "curve": "size_growth",
+          "length": 0.65,
+          "weight": 0.35,
+          "traits": 0.1,
+          "min": 0.07,
+          "max": 0.15,
+          "maxBeforeMutation": 0.1
+        },
+        "successRatePenalty": {
+          "length": 0.15,
+          "weight": 0.05,
+          "traits": 0.05,
+          "min": 0.0125,
+          "max": 0.0375,
+          "inverse": true
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "prismatic": {
+          "charges": 1
+        }
+      }
+    },
+    {
+      "id": "lotusflame_dual_fish_soup",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_lotusflame_dual_fish_soup",
+      "outputItemId": "lotusflame_dual_fish_soup",
+      "kind": "fish_soup",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "lotus_koi",
+          "quantity": 1
+        },
+        {
+          "speciesId": "emberfin",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "extraMaterialQuantity": {
+          "curve": "size_growth",
+          "length": 0.3,
+          "weight": 0.7,
+          "traits": 0.1,
+          "min": 35,
+          "max": 200,
+          "maxBeforeMutation": 100,
+          "integer": true
+        },
+        "positiveFloorReductionRate": {
+          "length": 0.4,
+          "weight": 0.1,
+          "traits": 0.2,
+          "min": 0.04,
+          "max": 0.2,
+          "inverse": true
+        },
+        "quantityLimitBonusRate": {
+          "curve": "size_growth",
+          "length": 0.65,
+          "weight": 0.35,
+          "traits": 0.1,
+          "min": 0.07,
+          "max": 0.15,
+          "maxBeforeMutation": 0.1
+        },
+        "successRatePenalty": {
+          "length": 0.15,
+          "weight": 0.05,
+          "traits": 0.05,
+          "min": 0.0125,
+          "max": 0.03,
+          "inverse": true
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "rainbow": {
+          "durationSeconds": 900
+        }
+      }
+    },
+    {
+      "id": "creamfin_dual_fish_grill",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_creamfin_dual_fish_grill",
+      "outputItemId": "creamfin_dual_fish_grill",
+      "kind": "grilled_fish",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "whitefish",
+          "quantity": 1
+        },
+        {
+          "speciesId": "burbot",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "bonusRate": {
+          "length": 0.4,
+          "weight": 0.1,
+          "traits": 0.2,
+          "min": 0.025,
+          "max": 0.1
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "prismatic": {
+          "charges": 4
+        }
+      }
+    },
+    {
+      "id": "creamfin_dual_fish_soup",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_creamfin_dual_fish_soup",
+      "outputItemId": "creamfin_dual_fish_soup",
+      "kind": "fish_soup",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "whitefish",
+          "quantity": 1
+        },
+        {
+          "speciesId": "burbot",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "bonusRate": {
+          "length": 0.4,
+          "weight": 0.1,
+          "traits": 0.2,
+          "min": 0.025,
+          "max": 0.1
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "rainbow": {
+          "durationSeconds": 900
+        }
+      }
+    },
+    {
+      "id": "honeyflame_quick_grill",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_honeyflame_quick_grill",
+      "outputItemId": "honeyflame_quick_grill",
+      "kind": "grilled_fish",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "chub",
+          "quantity": 1
+        },
+        {
+          "speciesId": "dace",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {},
+      "mutationLifetimeBonuses": {
+        "prismatic": {
+          "charges": 8
+        }
+      },
+      "lifetimeScaling": {
+        "charges": {
+          "curve": "bounded_growth",
+          "maxBeforeMutation": 40,
+          "length": 0.3,
+          "weight": 0.7,
+          "traits": 0.1,
+          "min": 20,
+          "max": 80
+        }
+      }
+    },
+    {
+      "id": "sunhoney_gold_grill",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_sunhoney_gold_grill",
+      "outputItemId": "sunhoney_gold_grill",
+      "kind": "grilled_fish",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "common_carp",
+          "quantity": 1
+        },
+        {
+          "speciesId": "barbel",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "bonusRate": {
+          "curve": "bounded_growth",
+          "maxBeforeMutation": 0.06,
+          "length": 0.65,
+          "weight": 0.35,
+          "traits": 0.1,
+          "min": 0.04,
+          "max": 0.1
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "prismatic": {
+          "charges": 7
+        }
+      },
+      "lifetimeScaling": {
+        "charges": {
+          "curve": "bounded_growth",
+          "maxBeforeMutation": 24,
+          "length": 0.3,
+          "weight": 0.7,
+          "traits": 0.1,
+          "min": 12,
+          "max": 50
+        }
+      }
+    },
+    {
+      "id": "sunhoney_gold_soup",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_sunhoney_gold_soup",
+      "outputItemId": "sunhoney_gold_soup",
+      "kind": "fish_soup",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "common_carp",
+          "quantity": 1
+        },
+        {
+          "speciesId": "barbel",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "bonusRate": {
+          "curve": "bounded_growth",
+          "maxBeforeMutation": 0.06,
+          "length": 0.65,
+          "weight": 0.35,
+          "traits": 0.1,
+          "min": 0.04,
+          "max": 0.1
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "rainbow": {
+          "durationSeconds": 900
+        }
+      }
+    },
+    {
+      "id": "moonglass_dual_fish_grill",
+      "rulesetVersion": "fish-food-v2",
+      "actionId": "cook_moonglass_dual_fish_grill",
+      "outputItemId": "moonglass_dual_fish_grill",
+      "kind": "grilled_fish",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "lotus_koi",
+          "quantity": 1
+        },
+        {
+          "speciesId": "glassback_darter",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "weightBonusRate": {
+          "curve": "bounded_growth",
+          "maxBeforeMutation": 0.15,
+          "length": 0.75,
+          "weight": 0.25,
+          "traits": 0.1,
+          "min": 0.1,
+          "max": 0.25
+        }
+      },
+      "mutationLifetimeBonuses": {}
+    },
+    {
+      "id": "field_honey_grill",
+      "rulesetVersion": "primary-work-food-v3",
+      "actionId": "cook_field_honey_grill",
+      "outputItemId": "field_honey_grill",
+      "kind": "grilled_fish",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "dace",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "chance": {
+          "curve": "bounded_growth",
+          "length": 0.7,
+          "weight": 0.3,
+          "traits": 0.1,
+          "min": 0.01,
+          "maxBeforeMutation": 0.015,
+          "max": 0.03
+        },
+        "durationReductionRate": {
+          "curve": "bounded_growth",
+          "length": 0.25,
+          "weight": 0.75,
+          "traits": 0.1,
+          "min": 0.02,
+          "maxBeforeMutation": 0.03,
+          "max": 0.05
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "prismatic": {
+          "charges": 50
+        }
+      },
+      "lifetimeScaling": {
+        "charges": {
+          "curve": "bounded_growth",
+          "length": 0.25,
+          "weight": 0.75,
+          "traits": 0.1,
+          "min": 220,
+          "maxBeforeMutation": 325,
+          "max": 500
+        }
+      },
+      "replacedEffectIds": [
+        "food_field_honey_grill_v1",
+        "food_field_honey_grill_v2"
+      ]
+    },
+    {
+      "id": "field_honey_soup",
+      "rulesetVersion": "primary-work-food-v3",
+      "actionId": "cook_field_honey_soup",
+      "outputItemId": "field_honey_soup",
+      "kind": "fish_soup",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "dace",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "chance": {
+          "curve": "bounded_growth",
+          "length": 0.7,
+          "weight": 0.3,
+          "traits": 0.1,
+          "min": 0.01,
+          "maxBeforeMutation": 0.015,
+          "max": 0.03
+        },
+        "durationReductionRate": {
+          "curve": "bounded_growth",
+          "length": 0.25,
+          "weight": 0.75,
+          "traits": 0.1,
+          "min": 0.02,
+          "maxBeforeMutation": 0.03,
+          "max": 0.05
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "rainbow": {
+          "durationSeconds": 200
+        }
+      },
+      "replacedEffectIds": [
+        "food_field_honey_soup_v1",
+        "food_field_honey_soup_v2"
+      ],
+      "lifetimeScaling": {
+        "durationSeconds": {
+          "curve": "bounded_growth",
+          "length": 0.25,
+          "weight": 0.75,
+          "traits": 0.1,
+          "min": 900,
+          "maxBeforeMutation": 1300,
+          "max": 2000
+        }
+      }
+    },
+    {
+      "id": "patient_dual_grill",
+      "rulesetVersion": "primary-work-food-v3",
+      "actionId": "cook_patient_dual_grill",
+      "outputItemId": "patient_dual_grill",
+      "kind": "grilled_fish",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "dace",
+          "quantity": 1
+        },
+        {
+          "speciesId": "bluegill",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "chance": {
+          "curve": "bounded_growth",
+          "length": 0.7,
+          "weight": 0.3,
+          "traits": 0.1,
+          "min": 0.01,
+          "maxBeforeMutation": 0.015,
+          "max": 0.03
+        },
+        "durationReductionRate": {
+          "curve": "bounded_growth",
+          "length": 0.25,
+          "weight": 0.75,
+          "traits": 0.1,
+          "min": 0.03,
+          "maxBeforeMutation": 0.05,
+          "max": 0.08
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "prismatic": {
+          "charges": 50
+        }
+      },
+      "lifetimeScaling": {
+        "charges": {
+          "curve": "bounded_growth",
+          "length": 0.25,
+          "weight": 0.75,
+          "traits": 0.1,
+          "min": 220,
+          "maxBeforeMutation": 325,
+          "max": 500
+        }
+      },
+      "replacedEffectIds": [
+        "food_patient_dual_grill_v1",
+        "food_patient_dual_grill_v2"
+      ]
+    },
+    {
+      "id": "patient_dual_soup",
+      "rulesetVersion": "primary-work-food-v3",
+      "actionId": "cook_patient_dual_soup",
+      "outputItemId": "patient_dual_soup",
+      "kind": "fish_soup",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "dace",
+          "quantity": 1
+        },
+        {
+          "speciesId": "bluegill",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "chance": {
+          "curve": "bounded_growth",
+          "length": 0.7,
+          "weight": 0.3,
+          "traits": 0.1,
+          "min": 0.01,
+          "maxBeforeMutation": 0.015,
+          "max": 0.03
+        },
+        "durationReductionRate": {
+          "curve": "bounded_growth",
+          "length": 0.25,
+          "weight": 0.75,
+          "traits": 0.1,
+          "min": 0.03,
+          "maxBeforeMutation": 0.05,
+          "max": 0.08
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "rainbow": {
+          "durationSeconds": 200
+        }
+      },
+      "replacedEffectIds": [
+        "food_patient_dual_soup_v1",
+        "food_patient_dual_soup_v2"
+      ],
+      "lifetimeScaling": {
+        "durationSeconds": {
+          "curve": "bounded_growth",
+          "length": 0.25,
+          "weight": 0.75,
+          "traits": 0.1,
+          "min": 900,
+          "maxBeforeMutation": 1300,
+          "max": 2000
+        }
+      }
+    },
+    {
+      "id": "clear_mind_grill",
+      "rulesetVersion": "primary-work-food-v3",
+      "actionId": "cook_clear_mind_grill",
+      "outputItemId": "clear_mind_grill",
+      "kind": "grilled_fish",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "bluegill",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "experienceBonusRate": {
+          "curve": "bounded_growth",
+          "length": 0.75,
+          "weight": 0.25,
+          "traits": 0.1,
+          "min": 0.05,
+          "maxBeforeMutation": 0.07,
+          "max": 0.1
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "prismatic": {
+          "charges": 50
+        }
+      },
+      "lifetimeScaling": {
+        "charges": {
+          "curve": "bounded_growth",
+          "length": 0.25,
+          "weight": 0.75,
+          "traits": 0.1,
+          "min": 220,
+          "maxBeforeMutation": 325,
+          "max": 500
+        }
+      },
+      "replacedEffectIds": [
+        "food_clear_mind_grill_v1",
+        "food_clear_mind_grill_v2"
+      ]
+    },
+    {
+      "id": "clear_mind_soup",
+      "rulesetVersion": "primary-work-food-v3",
+      "actionId": "cook_clear_mind_soup",
+      "outputItemId": "clear_mind_soup",
+      "kind": "fish_soup",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "bluegill",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "experienceBonusRate": {
+          "curve": "bounded_growth",
+          "length": 0.75,
+          "weight": 0.25,
+          "traits": 0.1,
+          "min": 0.05,
+          "maxBeforeMutation": 0.07,
+          "max": 0.1
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "rainbow": {
+          "durationSeconds": 200
+        }
+      },
+      "replacedEffectIds": [
+        "food_clear_mind_soup_v1",
+        "food_clear_mind_soup_v2"
+      ],
+      "lifetimeScaling": {
+        "durationSeconds": {
+          "curve": "bounded_growth",
+          "length": 0.25,
+          "weight": 0.75,
+          "traits": 0.1,
+          "min": 900,
+          "maxBeforeMutation": 1300,
+          "max": 2000
+        }
+      }
+    },
+    {
+      "id": "gentle_current_grill",
+      "rulesetVersion": "conversion-food-v2",
+      "actionId": "cook_gentle_current_grill",
+      "outputItemId": "gentle_current_grill",
+      "kind": "grilled_fish",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "mud_loach",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "lossReductionRate": {
+          "curve": "bounded_growth",
+          "length": 0.75,
+          "weight": 0.25,
+          "traits": 0.1,
+          "min": 0.05,
+          "maxBeforeMutation": 0.07,
+          "max": 0.1
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "prismatic": {
+          "charges": 50
+        }
+      },
+      "lifetimeScaling": {
+        "charges": {
+          "curve": "bounded_growth",
+          "length": 0.25,
+          "weight": 0.75,
+          "traits": 0.1,
+          "min": 220,
+          "maxBeforeMutation": 325,
+          "max": 500
+        }
+      },
+      "replacedEffectIds": [
+        "food_gentle_current_grill_v1"
+      ]
+    },
+    {
+      "id": "gentle_current_soup",
+      "rulesetVersion": "conversion-food-v2",
+      "actionId": "cook_gentle_current_soup",
+      "outputItemId": "gentle_current_soup",
+      "kind": "fish_soup",
+      "qualityRulesetVersion": "fish-food-quality-v2",
+      "allowSpecificIngredients": true,
+      "fishIngredients": [
+        {
+          "speciesId": "mud_loach",
+          "quantity": 1
+        }
+      ],
+      "parameterScaling": {
+        "lossReductionRate": {
+          "curve": "bounded_growth",
+          "length": 0.75,
+          "weight": 0.25,
+          "traits": 0.1,
+          "min": 0.05,
+          "maxBeforeMutation": 0.07,
+          "max": 0.1
+        }
+      },
+      "mutationLifetimeBonuses": {
+        "rainbow": {
+          "durationSeconds": 200
+        }
+      },
+      "lifetimeScaling": {
+        "durationSeconds": {
+          "curve": "bounded_growth",
+          "length": 0.25,
+          "weight": 0.75,
+          "traits": 0.1,
+          "min": 900,
+          "maxBeforeMutation": 1300,
+          "max": 2000
+        }
+      },
+      "replacedEffectIds": [
+        "food_gentle_current_soup_v1"
+      ]
+    }
+  ]
+}

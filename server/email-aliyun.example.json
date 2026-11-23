@@ -1,0 +1,9 @@
+{
+  "accessKeyId": "replace-me",
+  "accessKeySecret": "replace-me",
+  "accountName": "no-reply@example.com",
+  "regionId": "cn-hangzhou",
+  "endpoint": "dm.aliyuncs.com",
+  "fromAlias": "MySecondWebGame",
+  "templateId": "417547"
+}

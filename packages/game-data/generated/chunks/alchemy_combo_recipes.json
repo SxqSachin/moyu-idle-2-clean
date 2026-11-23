@@ -1,0 +1,935 @@
+{
+  "version": 1,
+  "alchemy_combo_recipes": [
+    {
+      "id": "recipe.golem_core_matrix",
+      "nameKey": "alchemy.recipe.golem_core_matrix.name",
+      "descKey": "alchemy.recipe.golem_core_matrix.desc",
+      "summaryKey": "alchemy.recipe.golem_core_matrix.summary",
+      "minAlchemyLevel": 7,
+      "kind": "combat",
+      "inputs": {
+        "clear_resin": 8,
+        "base2_ruin_core_shard": 8,
+        "glow_core": 5
+      },
+      "outputAffix": {
+        "effectType": "battle_hook",
+        "params": {
+          "attrMods": {
+            "speed": {
+              "alchemyValueCoeff": -0.04
+            }
+          },
+          "battleHooks": [
+            {
+              "id": "alchemy_golem_core_matrix_start",
+              "trigger": "on_battle_start",
+              "priority": 0,
+              "conditions": [],
+              "effects": [
+                {
+                  "kind": "summon",
+                  "targetMode": "self",
+                  "summonPayload": {
+                    "unitId": "rock_golem",
+                    "side": "player",
+                    "countFormula": {
+                      "baseAdd": 1,
+                      "terms": []
+                    },
+                    "durationFormula": {
+                      "baseAdd": 4,
+                      "terms": []
+                    },
+                    "durationTurns": 4,
+                    "maxCountPerUnit": 4,
+                    "persistAcrossBattles": true,
+                    "onCasterDeath": "keep_until_duration_end",
+                    "onCapOverflow": "replace_oldest",
+                    "onDispel": "despawn_immediately",
+                    "onDurationEnd": "despawn_immediately",
+                    "statsFormula": {
+                      "hp": {
+                        "baseAdd": {
+                          "alchemyValueCoeff": 1.4
+                        },
+                        "terms": []
+                      },
+                      "physics_damage": {
+                        "baseAdd": {
+                          "alchemyValueCoeff": 0.09
+                        },
+                        "terms": []
+                      },
+                      "physics_defence": {
+                        "baseAdd": {
+                          "alchemyValueCoeff": 0.02
+                        },
+                        "terms": []
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "valueRange": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "outputRarity": "epic",
+      "extraGoldCost": 120,
+      "extraDurationSec": 8,
+      "failBaseChance": 0.34,
+      "failChancePerLevelAbove": 0.008,
+      "priority": 300,
+      "disabled": false
+    },
+    {
+      "id": "recipe.luminous_brood",
+      "nameKey": "alchemy.recipe.luminous_brood.name",
+      "descKey": "alchemy.recipe.luminous_brood.desc",
+      "summaryKey": "alchemy.recipe.luminous_brood.summary",
+      "minAlchemyLevel": 15,
+      "kind": "combat",
+      "inputs": {
+        "luminous_berry_core": 5,
+        "glow_core": 5,
+        "afterglow": 10
+      },
+      "outputAffix": {
+        "effectType": "battle_hook",
+        "params": {
+          "attrMods": {
+            "physics_defence": {
+              "alchemyValueCoeff": -0.42
+            },
+            "speed": {
+              "alchemyValueCoeff": -0.02
+            }
+          },
+          "battleHooks": [
+            {
+              "id": "alchemy_luminous_brood_start",
+              "trigger": "on_battle_start",
+              "priority": 0,
+              "conditions": [],
+              "effects": [
+                {
+                  "kind": "summon",
+                  "targetMode": "self",
+                  "summonPayload": {
+                    "unitId": "frenzy_berry_bird_001",
+                    "side": "player",
+                    "countFormula": {
+                      "baseAdd": 2,
+                      "terms": []
+                    },
+                    "durationFormula": {
+                      "baseAdd": 4,
+                      "terms": []
+                    },
+                    "durationTurns": 4,
+                    "maxCountPerUnit": 4,
+                    "persistAcrossBattles": true,
+                    "onCasterDeath": "keep_until_duration_end",
+                    "onCapOverflow": "replace_oldest",
+                    "onDispel": "despawn_immediately",
+                    "onDurationEnd": "despawn_immediately",
+                    "statsFormula": {
+                      "hp": {
+                        "baseAdd": {
+                          "alchemyValueCoeff": 0.8
+                        },
+                        "terms": []
+                      },
+                      "physics_damage": {
+                        "baseAdd": {
+                          "alchemyValueCoeff": 0.08
+                        },
+                        "terms": []
+                      },
+                      "speed": {
+                        "baseAdd": {
+                          "alchemyValueCoeff": 0.012
+                        },
+                        "terms": []
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "valueRange": {
+          "min": 7,
+          "max": 10
+        }
+      },
+      "outputRarity": "mythic",
+      "extraGoldCost": 260,
+      "extraDurationSec": 16,
+      "failBaseChance": 0.48,
+      "failChancePerLevelAbove": 0.006,
+      "priority": 310,
+      "disabled": false
+    },
+    {
+      "id": "recipe.dragon_scale_bastion",
+      "nameKey": "alchemy.recipe.dragon_scale_bastion.name",
+      "descKey": "alchemy.recipe.dragon_scale_bastion.desc",
+      "summaryKey": "alchemy.recipe.dragon_scale_bastion.summary",
+      "minAlchemyLevel": 7,
+      "kind": "combat",
+      "inputs": {
+        "base2_dragon_scale_chip": 5,
+        "holy_cat_guardian_medal": 8,
+        "glow_core": 5
+      },
+      "outputAffix": {
+        "effectType": "battle_hook",
+        "params": {
+          "attrMods": {
+            "speed": {
+              "alchemyValueCoeff": -0.14
+            }
+          },
+          "battleHooks": [
+            {
+              "id": "alchemy_dragon_scale_bastion_start",
+              "trigger": "on_battle_start",
+              "priority": 0,
+              "conditions": [],
+              "effects": [
+                {
+                  "kind": "add_buff",
+                  "buffId": "holy_cat_sanctuary_guard",
+                  "durationTurns": 2,
+                  "targetMode": "self",
+                  "payload": {
+                    "alchemyPower": {
+                      "alchemyValueCoeff": 0.35
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "valueRange": {
+          "min": 3,
+          "max": 5
+        }
+      },
+      "outputRarity": "epic",
+      "extraGoldCost": 120,
+      "extraDurationSec": 8,
+      "failBaseChance": 0.3,
+      "failChancePerLevelAbove": 0.008,
+      "priority": 290,
+      "disabled": false
+    },
+    {
+      "id": "recipe.umbral_execution",
+      "nameKey": "alchemy.recipe.umbral_execution.name",
+      "descKey": "alchemy.recipe.umbral_execution.desc",
+      "summaryKey": "alchemy.recipe.umbral_execution.summary",
+      "minAlchemyLevel": 15,
+      "kind": "combat",
+      "inputs": {
+        "wolf_king_fang": 5,
+        "assassination_core": 5,
+        "glow_core": 5
+      },
+      "outputAffix": {
+        "effectType": "battle_hook",
+        "params": {
+          "attrMods": {
+            "hp": {
+              "alchemyValueCoeff": -8
+            },
+            "physics_defence": {
+              "alchemyValueCoeff": -0.8
+            }
+          },
+          "battleHooks": [
+            {
+              "id": "alchemy_umbral_execution_start",
+              "trigger": "on_battle_start",
+              "priority": 0,
+              "conditions": [],
+              "effects": [
+                {
+                  "kind": "add_buff",
+                  "buffId": "base4_veilstep",
+                  "durationTurns": 2,
+                  "targetMode": "self",
+                  "payload": {
+                    "alchemyPower": {
+                      "alchemyValueCoeff": 0.32
+                    }
+                  }
+                },
+                {
+                  "kind": "add_buff",
+                  "buffId": "counter_focus",
+                  "durationTurns": 2,
+                  "targetMode": "self",
+                  "payload": {
+                    "alchemyPower": {
+                      "alchemyValueCoeff": 0.32
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "valueRange": {
+          "min": 4,
+          "max": 7
+        }
+      },
+      "outputRarity": "mythic",
+      "extraGoldCost": 260,
+      "extraDurationSec": 16,
+      "failBaseChance": 0.5,
+      "failChancePerLevelAbove": 0.006,
+      "priority": 320,
+      "disabled": false
+    },
+    {
+      "id": "recipe.glacial_mark",
+      "nameKey": "alchemy.recipe.glacial_mark.name",
+      "descKey": "alchemy.recipe.glacial_mark.desc",
+      "summaryKey": "alchemy.recipe.glacial_mark.summary",
+      "minAlchemyLevel": 15,
+      "kind": "combat",
+      "inputs": {
+        "glacial_phantom_crystal": 5,
+        "snowseal_wax": 8,
+        "glow_core": 5
+      },
+      "outputAffix": {
+        "effectType": "battle_hook",
+        "params": {
+          "attrMods": {
+            "hp": {
+              "alchemyValueCoeff": -5
+            }
+          },
+          "battleHooks": [
+            {
+              "id": "alchemy_glacial_mark_after_damage",
+              "trigger": "on_after_deal_damage",
+              "priority": 0,
+              "conditions": [],
+              "effects": [
+                {
+                  "kind": "add_buff",
+                  "buffId": "frost_slow",
+                  "durationTurns": 2,
+                  "targetMode": "targeting",
+                  "targeting": {
+                    "targetPositions": [
+                      "vanguard"
+                    ],
+                    "secondarySeek": "front_to_rear",
+                    "targetScope": "enemy",
+                    "selectRule": "random",
+                    "selectAttrKey": "",
+                    "fallbackSelfIfEmpty": false,
+                    "excludeSelf": false,
+                    "targetCount": {
+                      "base": 1,
+                      "formula": []
+                    },
+                    "targetPredicates": []
+                  },
+                  "payload": {
+                    "alchemyPower": {
+                      "alchemyValueCoeff": 0.32
+                    }
+                  },
+                  "procChanceBase": 0.14,
+                  "procChanceMax": 0.32,
+                  "procChanceFormula": {
+                    "baseAdd": {
+                      "alchemyValueCoeff": 0.004
+                    },
+                    "terms": []
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "valueRange": {
+          "min": 4,
+          "max": 6
+        }
+      },
+      "outputRarity": "mythic",
+      "extraGoldCost": 260,
+      "extraDurationSec": 16,
+      "failBaseChance": 0.46,
+      "failChancePerLevelAbove": 0.006,
+      "priority": 305,
+      "disabled": false
+    },
+    {
+      "id": "recipe.wolf_blood_frenzy",
+      "nameKey": "alchemy.recipe.wolf_blood_frenzy.name",
+      "descKey": "alchemy.recipe.wolf_blood_frenzy.desc",
+      "summaryKey": "alchemy.recipe.wolf_blood_frenzy.summary",
+      "minAlchemyLevel": 15,
+      "kind": "combat",
+      "inputs": {
+        "wolf_king_fang": 5,
+        "strange_wolf_fur": 5,
+        "glow_core": 5
+      },
+      "outputAffix": {
+        "effectType": "battle_hook",
+        "params": {
+          "attrMods": {
+            "magical_defence": {
+              "alchemyValueCoeff": -0.85
+            },
+            "mp_regen": {
+              "alchemyValueCoeff": -0.14
+            }
+          },
+          "battleHooks": [
+            {
+              "id": "alchemy_wolf_blood_frenzy_start",
+              "trigger": "on_battle_start",
+              "priority": 0,
+              "conditions": [],
+              "effects": [
+                {
+                  "kind": "add_buff",
+                  "buffId": "rage_power",
+                  "durationTurns": 3,
+                  "targetMode": "self",
+                  "payload": {
+                    "alchemyPower": {
+                      "alchemyValueCoeff": 0.35
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "valueRange": {
+          "min": 4,
+          "max": 6
+        }
+      },
+      "outputRarity": "mythic",
+      "extraGoldCost": 260,
+      "extraDurationSec": 16,
+      "failBaseChance": 0.47,
+      "failChancePerLevelAbove": 0.006,
+      "priority": 315,
+      "disabled": false
+    },
+    {
+      "id": "recipe.sanctuary_intercession",
+      "nameKey": "alchemy.recipe.sanctuary_intercession.name",
+      "descKey": "alchemy.recipe.sanctuary_intercession.desc",
+      "summaryKey": "alchemy.recipe.sanctuary_intercession.summary",
+      "minAlchemyLevel": 7,
+      "kind": "combat",
+      "inputs": {
+        "holy_cat_guardian_medal": 8,
+        "holy_cat_sage_scroll": 5,
+        "glow_core": 5
+      },
+      "outputAffix": {
+        "effectType": "battle_hook",
+        "params": {
+          "attrMods": {
+            "speed": {
+              "alchemyValueCoeff": -0.12
+            },
+            "crit_chance": {
+              "alchemyValueCoeff": -0.003
+            }
+          },
+          "battleHooks": [
+            {
+              "id": "alchemy_sanctuary_intercession_start",
+              "trigger": "on_battle_start",
+              "priority": 0,
+              "conditions": [],
+              "effects": [
+                {
+                  "kind": "add_buff",
+                  "buffId": "holy_cat_intercession",
+                  "durationTurns": 2,
+                  "targetMode": "self",
+                  "payload": {
+                    "alchemyPower": {
+                      "alchemyValueCoeff": 0.32
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "valueRange": {
+          "min": 3,
+          "max": 5
+        }
+      },
+      "outputRarity": "epic",
+      "extraGoldCost": 120,
+      "extraDurationSec": 8,
+      "failBaseChance": 0.32,
+      "failChancePerLevelAbove": 0.008,
+      "priority": 285,
+      "disabled": false
+    },
+    {
+      "id": "recipe.abyssal_focus",
+      "nameKey": "alchemy.recipe.abyssal_focus.name",
+      "descKey": "alchemy.recipe.abyssal_focus.desc",
+      "summaryKey": "alchemy.recipe.abyssal_focus.summary",
+      "minAlchemyLevel": 7,
+      "kind": "combat",
+      "inputs": {
+        "base4_abyssal_core": 5,
+        "holy_cat_sage_scroll": 5,
+        "glow_core": 5
+      },
+      "outputAffix": {
+        "effectType": "battle_hook",
+        "params": {
+          "attrMods": {
+            "stamina": {
+              "alchemyValueCoeff": -0.65
+            },
+            "hp": {
+              "alchemyValueCoeff": -3
+            }
+          },
+          "battleHooks": [
+            {
+              "id": "alchemy_abyssal_focus_start",
+              "trigger": "on_battle_start",
+              "priority": 0,
+              "conditions": [],
+              "effects": [
+                {
+                  "kind": "add_buff",
+                  "buffId": "base4_umbral_focus_buff",
+                  "durationTurns": 2,
+                  "targetMode": "self",
+                  "payload": {
+                    "alchemyPower": {
+                      "alchemyValueCoeff": 0.32
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "valueRange": {
+          "min": 4,
+          "max": 6
+        }
+      },
+      "outputRarity": "epic",
+      "extraGoldCost": 120,
+      "extraDurationSec": 8,
+      "failBaseChance": 0.36,
+      "failChancePerLevelAbove": 0.008,
+      "priority": 295,
+      "disabled": false
+    },
+    {
+      "id": "recipe.shadow_snare",
+      "nameKey": "alchemy.recipe.shadow_snare.name",
+      "descKey": "alchemy.recipe.shadow_snare.desc",
+      "summaryKey": "alchemy.recipe.shadow_snare.summary",
+      "minAlchemyLevel": 7,
+      "kind": "combat",
+      "inputs": {
+        "base4_ancestor_shadow_jade": 5,
+        "base4_shadow_iron": 8,
+        "glow_core": 5
+      },
+      "outputAffix": {
+        "effectType": "battle_hook",
+        "params": {
+          "attrMods": {
+            "hp": {
+              "alchemyValueCoeff": -4.5
+            },
+            "magical_defence": {
+              "alchemyValueCoeff": -0.6
+            }
+          },
+          "battleHooks": [
+            {
+              "id": "alchemy_shadow_snare_after_damage",
+              "trigger": "on_after_deal_damage",
+              "priority": 0,
+              "conditions": [],
+              "effects": [
+                {
+                  "kind": "add_buff",
+                  "buffId": "base4_shadow_mark",
+                  "durationTurns": 2,
+                  "targetMode": "targeting",
+                  "targeting": {
+                    "targetPositions": [
+                      "vanguard"
+                    ],
+                    "secondarySeek": "front_to_rear",
+                    "targetScope": "enemy",
+                    "selectRule": "random",
+                    "selectAttrKey": "",
+                    "fallbackSelfIfEmpty": false,
+                    "excludeSelf": false,
+                    "targetCount": {
+                      "base": 1,
+                      "formula": []
+                    },
+                    "targetPredicates": []
+                  },
+                  "payload": {
+                    "alchemyPower": {
+                      "alchemyValueCoeff": 0.32
+                    }
+                  },
+                  "procChanceBase": 0.16,
+                  "procChanceMax": 0.36,
+                  "procChanceFormula": {
+                    "baseAdd": {
+                      "alchemyValueCoeff": 0.004
+                    },
+                    "terms": []
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "valueRange": {
+          "min": 3,
+          "max": 5
+        }
+      },
+      "outputRarity": "epic",
+      "extraGoldCost": 120,
+      "extraDurationSec": 8,
+      "failBaseChance": 0.35,
+      "failChancePerLevelAbove": 0.008,
+      "priority": 288,
+      "disabled": false
+    },
+    {
+      "id": "recipe.crystal_piercer",
+      "nameKey": "alchemy.recipe.crystal_piercer.name",
+      "descKey": "alchemy.recipe.crystal_piercer.desc",
+      "summaryKey": "alchemy.recipe.crystal_piercer.summary",
+      "minAlchemyLevel": 11,
+      "kind": "combat",
+      "inputs": {
+        "crystal": 4,
+        "gold": 5,
+        "glow_core": 5
+      },
+      "outputAffix": {
+        "effectType": "battle_hook",
+        "params": {
+          "attrMods": {
+            "hp": {
+              "alchemyValueCoeff": -5
+            },
+            "magical_damage_resist": {
+              "alchemyValueCoeff": -0.004
+            }
+          },
+          "battleHooks": [
+            {
+              "id": "alchemy_crystal_piercer_after_damage",
+              "trigger": "on_after_deal_damage",
+              "priority": 0,
+              "conditions": [],
+              "effects": [
+                {
+                  "kind": "add_buff",
+                  "buffId": "armor_break",
+                  "durationTurns": 2,
+                  "targetMode": "targeting",
+                  "targeting": {
+                    "targetPositions": [
+                      "vanguard"
+                    ],
+                    "secondarySeek": "front_to_rear",
+                    "targetScope": "enemy",
+                    "selectRule": "random",
+                    "selectAttrKey": "",
+                    "fallbackSelfIfEmpty": false,
+                    "excludeSelf": false,
+                    "targetCount": {
+                      "base": 1,
+                      "formula": []
+                    },
+                    "targetPredicates": []
+                  },
+                  "payload": {
+                    "alchemyPower": {
+                      "alchemyValueCoeff": 0.32
+                    }
+                  },
+                  "procChanceBase": 0.15,
+                  "procChanceMax": 0.34,
+                  "procChanceFormula": {
+                    "baseAdd": {
+                      "alchemyValueCoeff": 0.004
+                    },
+                    "terms": []
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "valueRange": {
+          "min": 4,
+          "max": 6
+        }
+      },
+      "outputRarity": "legendary",
+      "extraGoldCost": 180,
+      "extraDurationSec": 12,
+      "failBaseChance": 0.42,
+      "failChancePerLevelAbove": 0.007,
+      "priority": 300,
+      "disabled": false
+    },
+    {
+      "id": "recipe.shadow_paw_ambush",
+      "nameKey": "alchemy.recipe.shadow_paw_ambush.name",
+      "descKey": "alchemy.recipe.shadow_paw_ambush.desc",
+      "summaryKey": "alchemy.recipe.shadow_paw_ambush.summary",
+      "minAlchemyLevel": 24,
+      "kind": "combat",
+      "inputs": {
+        "shadow_paw_silk": 5,
+        "toxic_claw_venom": 2,
+        "glow_core": 5
+      },
+      "outputAffix": {
+        "effectType": "battle_hook",
+        "params": {
+          "attrMods": {
+            "hp": {
+              "base": 0,
+              "alchemyValueCoeff": -4
+            },
+            "crit_chance": {
+              "base": 0,
+              "alchemyValueCoeff": 0.001
+            }
+          },
+          "battleHooks": [
+            {
+              "id": "alchemy_shadow_paw_ambush_start",
+              "trigger": "on_battle_start",
+              "priority": 0,
+              "conditions": [],
+              "effects": [
+                {
+                  "kind": "add_buff",
+                  "buffId": "shadow_paw_stealth",
+                  "durationTurns": 1,
+                  "targetMode": "self",
+                  "payload": {
+                    "alchemyPower": {
+                      "alchemyValueCoeff": 0.25
+                    }
+                  },
+                  "procChanceBase": 0.7,
+                  "procChanceMin": 0,
+                  "procChanceMax": 1,
+                  "procChanceFormula": {
+                    "baseAdd": {
+                      "base": 0,
+                      "alchemyValueCoeff": 0.002
+                    },
+                    "terms": []
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "valueRange": {
+          "min": 4,
+          "max": 7
+        }
+      },
+      "outputRarity": "legendary",
+      "extraGoldCost": 180,
+      "extraDurationSec": 10,
+      "failBaseChance": 0.36,
+      "failChancePerLevelAbove": 0.007,
+      "priority": 330,
+      "disabled": false
+    },
+    {
+      "id": "recipe.mirror_paw_rebuke",
+      "nameKey": "alchemy.recipe.mirror_paw_rebuke.name",
+      "descKey": "alchemy.recipe.mirror_paw_rebuke.desc",
+      "summaryKey": "alchemy.recipe.mirror_paw_rebuke.summary",
+      "minAlchemyLevel": 30,
+      "kind": "combat",
+      "inputs": {
+        "mirror_paw_shard": 1,
+        "silent_whisker_thread": 3,
+        "glow_core": 5
+      },
+      "outputAffix": {
+        "effectType": "battle_hook",
+        "params": {
+          "attrMods": {
+            "speed": {
+              "alchemyValueCoeff": 0.04
+            },
+            "physics_defence": {
+              "alchemyValueCoeff": -0.5
+            }
+          },
+          "battleHooks": [
+            {
+              "id": "alchemy_mirror_paw_rebuke_start",
+              "trigger": "on_battle_start",
+              "priority": 0,
+              "conditions": [],
+              "effects": [
+                {
+                  "kind": "add_buff",
+                  "buffId": "mirror_paw_guard",
+                  "durationTurns": 2,
+                  "targetMode": "self",
+                  "payload": {
+                    "alchemyPower": {
+                      "alchemyValueCoeff": 0.22
+                    }
+                  },
+                  "procChanceBase": 0.7,
+                  "procChanceMin": 0,
+                  "procChanceMax": 1,
+                  "procChanceFormula": {
+                    "baseAdd": {
+                      "base": 0,
+                      "alchemyValueCoeff": 0.002
+                    },
+                    "terms": []
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "valueRange": {
+          "min": 3,
+          "max": 5
+        }
+      },
+      "outputRarity": "legendary",
+      "extraGoldCost": 260,
+      "extraDurationSec": 16,
+      "failBaseChance": 0.44,
+      "failChancePerLevelAbove": 0.007,
+      "priority": 335,
+      "disabled": false
+    },
+    {
+      "id": "recipe.venom_piercer",
+      "nameKey": "alchemy.recipe.venom_piercer.name",
+      "descKey": "alchemy.recipe.venom_piercer.desc",
+      "summaryKey": "alchemy.recipe.venom_piercer.summary",
+      "minAlchemyLevel": 27,
+      "kind": "combat",
+      "inputs": {
+        "toxic_claw_venom": 4,
+        "mirror_paw_shard": 1,
+        "glow_core": 5
+      },
+      "outputAffix": {
+        "effectType": "battle_hook",
+        "params": {
+          "attrMods": {
+            "physics_flat_defense_penetration": {
+              "alchemyValueCoeff": 0.75
+            },
+            "hp": {
+              "alchemyValueCoeff": -5.5
+            }
+          },
+          "battleHooks": [
+            {
+              "id": "alchemy_venom_piercer_after_damage",
+              "trigger": "on_after_deal_damage",
+              "priority": 0,
+              "conditions": [],
+              "effects": [
+                {
+                  "kind": "add_buff",
+                  "buffId": "shadow_paw_venom",
+                  "durationTurns": 2,
+                  "targetMode": "targeting",
+                  "targeting": {
+                    "targetPositions": [
+                      "vanguard",
+                      "midguard"
+                    ],
+                    "secondarySeek": "front_to_rear",
+                    "targetScope": "enemy",
+                    "selectRule": "random",
+                    "selectAttrKey": "",
+                    "fallbackSelfIfEmpty": false,
+                    "excludeSelf": false,
+                    "targetCount": {
+                      "base": 1,
+                      "formula": [],
+                      "max": 1
+                    },
+                    "targetPredicates": []
+                  },
+                  "procChanceBase": 0.25,
+                  "procChanceMin": 0,
+                  "procChanceMax": 1
+                }
+              ]
+            }
+          ]
+        },
+        "valueRange": {
+          "min": 5,
+          "max": 8
+        }
+      },
+      "outputRarity": "epic",
+      "extraGoldCost": 220,
+      "extraDurationSec": 12,
+      "failBaseChance": 0.4,
+      "failChancePerLevelAbove": 0.007,
+      "priority": 340,
+      "disabled": false
+    }
+  ]
+}

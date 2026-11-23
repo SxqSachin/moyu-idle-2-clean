@@ -1,0 +1,745 @@
+{
+  "version": 1,
+  "world": [
+    {
+      "id": "base_1",
+      "fogMapItemId": "map_base_1_denseFog",
+      "enemyIds": "berry_bird_001,mushroom_bug_001,plain_mouse_001,lazy_rabbit_001,snail_001,catnip_kitten_001",
+      "specialEnemyIds": "plain_boss_001",
+      "specialWaves": {
+        "every": 15,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      "entryDurationSeconds": 15,
+      "entryCosts": {},
+      "normalEnemyCount": {
+        "min": 1,
+        "max": 2
+      },
+      "extraEnemyPerPlayer": {
+        "min": 1,
+        "max": 1
+      },
+      "maxTeamSize": 4,
+      "customLineupConf": [],
+      "waveDrops": {
+        "strange_wolf_fur": {
+          "percent": 0.01,
+          "range": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      "nameKey": "world.base_1.name",
+      "descKey": "world.base_1.desc",
+      "disabled": false,
+      "difficultySettings": {
+        "maxLevel": 10,
+        "statBonuses": [
+          {
+            "attrKey": "hp",
+            "base": 40,
+            "perLevelMult": 0.5
+          },
+          {
+            "attrKey": "physics_defence",
+            "base": 10,
+            "perLevelMult": 0.3
+          },
+          {
+            "attrKey": "magical_defence",
+            "base": 10,
+            "perLevelMult": 0.3
+          },
+          {
+            "attrKey": "physics_damage",
+            "base": 10,
+            "perLevelMult": 0.3
+          },
+          {
+            "attrKey": "magical_damage",
+            "base": 10,
+            "perLevelMult": 0.3
+          }
+        ],
+        "specialDrops": []
+      },
+      "waveSchedules": []
+    },
+    {
+      "id": "base_2",
+      "fogMapItemId": "map_base_2_denseFog",
+      "enemyIds": "forest_healer_001,slime_001,slime_002,goblin_001,goblin_002,bat_001,wolf_001,skeleton_001,mushroom_001,lizard_001,spirit_001",
+      "specialEnemyIds": "forest_boss_001,cave_boss_001,ruins_boss_001,dragon_boss_001",
+      "specialWaves": {
+        "every": 30,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      "entryDurationSeconds": 15,
+      "entryCosts": {},
+      "normalEnemyCount": {
+        "min": 4,
+        "max": 6
+      },
+      "extraEnemyPerPlayer": {
+        "min": 1,
+        "max": 1
+      },
+      "maxTeamSize": 4,
+      "customLineupConf": [],
+      "nameKey": "world.base_2.name",
+      "descKey": "world.base_2.desc",
+      "disabled": false,
+      "difficultySettings": {
+        "maxLevel": 10,
+        "statBonuses": [
+          {
+            "attrKey": "hp",
+            "base": 60,
+            "perLevelMult": 0.5
+          },
+          {
+            "attrKey": "physics_defence",
+            "base": 10,
+            "perLevelMult": 0.3
+          },
+          {
+            "attrKey": "magical_defence",
+            "base": 10,
+            "perLevelMult": 0.3
+          },
+          {
+            "attrKey": "physics_damage",
+            "base": 12,
+            "perLevelMult": 0.3
+          },
+          {
+            "attrKey": "magical_damage",
+            "base": 12,
+            "perLevelMult": 0.3
+          }
+        ],
+        "specialDrops": []
+      },
+      "waveSchedules": []
+    },
+    {
+      "id": "base_3",
+      "fogMapItemId": "map_base_3_denseFog",
+      "enemyIds": "ice_slime_001,snow_wolf_001,frost_goblin_001,ice_bat_001,snow_rabbit_001,frost_spirit_001",
+      "specialEnemyIds": "snowfield_boss_001,snowfield_boss_002",
+      "specialWaves": {
+        "every": 20,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      "entryDurationSeconds": 15,
+      "entryCosts": {},
+      "normalEnemyCount": {
+        "min": 4,
+        "max": 6
+      },
+      "extraEnemyPerPlayer": {
+        "min": 1,
+        "max": 1
+      },
+      "maxTeamSize": 4,
+      "customLineupConf": [],
+      "nameKey": "world.base_3.name",
+      "descKey": "world.base_3.desc",
+      "disabled": false,
+      "difficultySettings": {
+        "maxLevel": 10,
+        "statBonuses": [
+          {
+            "attrKey": "hp",
+            "base": 200,
+            "perLevelMult": 0.75
+          },
+          {
+            "attrKey": "physics_defence",
+            "base": 15,
+            "perLevelMult": 0.4
+          },
+          {
+            "attrKey": "magical_defence",
+            "base": 15,
+            "perLevelMult": 0.4
+          },
+          {
+            "attrKey": "physics_damage",
+            "base": 15,
+            "perLevelMult": 0.4
+          },
+          {
+            "attrKey": "magical_damage",
+            "base": 15,
+            "perLevelMult": 0.4
+          },
+          {
+            "attrKey": "magical_damage_resist",
+            "base": 0.1,
+            "perLevelMult": 0.02
+          },
+          {
+            "attrKey": "physics_damage_resist",
+            "base": 0.1,
+            "perLevelMult": 0.02
+          }
+        ],
+        "specialDrops": []
+      },
+      "waveSchedules": []
+    },
+    {
+      "id": "base_4",
+      "fogMapItemId": "map_base_4_denseFog",
+      "enemyIds": "shadow_cat_001,dungeon_guard_001,phantom_mouse_001,curse_bat_001,iron_golem_001,witch_cat_001,shadow_mage_001",
+      "specialEnemyIds": "shadow_mage_001,abyssal_lord_001,cat_ancestor_king_001",
+      "specialWaves": {
+        "every": 15,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      "entryDurationSeconds": 15,
+      "entryCosts": {},
+      "normalEnemyCount": {
+        "min": 4,
+        "max": 6
+      },
+      "extraEnemyPerPlayer": {
+        "min": 1,
+        "max": 1
+      },
+      "maxTeamSize": 4,
+      "customLineupConf": [],
+      "nameKey": "world.base_4.name",
+      "descKey": "world.base_4.desc",
+      "disabled": false,
+      "difficultySettings": {
+        "maxLevel": 10,
+        "statBonuses": [
+          {
+            "attrKey": "hp",
+            "base": 350,
+            "perLevelMult": 0.75
+          },
+          {
+            "attrKey": "physics_defence",
+            "base": 15,
+            "perLevelMult": 0.4
+          },
+          {
+            "attrKey": "magical_defence",
+            "base": 18,
+            "perLevelMult": 0.4
+          },
+          {
+            "attrKey": "physics_damage",
+            "base": 30,
+            "perLevelMult": 0.4
+          },
+          {
+            "attrKey": "magical_damage",
+            "base": 30,
+            "perLevelMult": 0.4
+          },
+          {
+            "attrKey": "physics_damage_resist",
+            "base": 0.33,
+            "perLevelMult": 0.02
+          }
+        ],
+        "specialDrops": []
+      },
+      "waveSchedules": []
+    },
+    {
+      "id": "holy_cat_temple_001",
+      "fogMapItemId": "map_holy_cat_temple_001_denseFog",
+      "enemyIds": "cat_priest_001,cat_paladin_001,cat_sage_001,cat_guardian_001,cat_acolyte_001",
+      "specialEnemyIds": "holy_cat_king_001",
+      "specialWaves": {
+        "every": 12,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      "entryDurationSeconds": 15,
+      "entryCosts": {},
+      "normalEnemyCount": {
+        "min": 3,
+        "max": 4
+      },
+      "extraEnemyPerPlayer": {
+        "min": 2,
+        "max": 2
+      },
+      "maxTeamSize": 4,
+      "customLineupConf": [],
+      "nameKey": "world.holy_cat_temple_001.name",
+      "descKey": "world.holy_cat_temple_001.desc",
+      "disabled": false,
+      "difficultySettings": {
+        "maxLevel": 10,
+        "statBonuses": [
+          {
+            "attrKey": "hp",
+            "base": 800,
+            "perLevelMult": 0.75
+          },
+          {
+            "attrKey": "physics_defence",
+            "base": 20,
+            "perLevelMult": 0.4
+          },
+          {
+            "attrKey": "magical_defence",
+            "base": 20,
+            "perLevelMult": 0.4
+          },
+          {
+            "attrKey": "physics_damage",
+            "base": 100,
+            "perLevelMult": 0.5
+          },
+          {
+            "attrKey": "magical_damage",
+            "base": 100,
+            "perLevelMult": 0.5
+          },
+          {
+            "attrKey": "physics_damage_resist",
+            "base": 0.33,
+            "perLevelMult": 0.01
+          },
+          {
+            "attrKey": "magical_damage_resist",
+            "base": 0.33,
+            "perLevelMult": 0.01
+          }
+        ],
+        "specialDrops": []
+      },
+      "waveSchedules": []
+    },
+    {
+      "id": "shadow_paw_hideout",
+      "fogMapItemId": "map_shadow_paw_hideout_denseFog",
+      "enemyIds": "shadow_paw_apprentice_001,toxic_claw_001,silent_whisker_001,smoke_tail_001,mirror_paw_001",
+      "specialEnemyIds": "shadow_paw_master_boss_001",
+      "specialWaves": {
+        "every": 12,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      "entryDurationSeconds": 15,
+      "entryCosts": {},
+      "normalEnemyCount": {
+        "min": 4,
+        "max": 5
+      },
+      "extraEnemyPerPlayer": {
+        "min": 1,
+        "max": 2
+      },
+      "maxTeamSize": 4,
+      "customLineupConf": [],
+      "nameKey": "world.shadow_paw_hideout.name",
+      "descKey": "world.shadow_paw_hideout.desc",
+      "disabled": false,
+      "difficultySettings": {
+        "maxLevel": 10,
+        "statBonuses": [
+          {
+            "attrKey": "hp",
+            "base": 950,
+            "perLevelMult": 1.25
+          },
+          {
+            "attrKey": "physics_defence",
+            "base": 18,
+            "perLevelMult": 0.35
+          },
+          {
+            "attrKey": "physics_damage",
+            "base": 72,
+            "perLevelMult": 0.55
+          },
+          {
+            "attrKey": "speed",
+            "base": 60,
+            "perLevelMult": 0.6
+          },
+          {
+            "attrKey": "crit_chance",
+            "base": 0.035,
+            "perLevelMult": 0.006
+          },
+          {
+            "attrKey": "physics_flat_defense_penetration",
+            "base": 8,
+            "perLevelMult": 1.2
+          }
+        ],
+        "specialDrops": []
+      },
+      "waveSchedules": []
+    },
+    {
+      "id": "meteor_corridor_001",
+      "fogMapItemId": "map_meteor_corridor_001_denseFog",
+      "enemyIds": "astral_guard_001,astral_mage_001,starlight_healer_001,refraction_mirror_doll_001,meteor_core_porter_001,deranged_calibrator_001",
+      "specialEnemyIds": "corridor_timekeeper_cat_boss_001",
+      "specialWaves": {
+        "every": 12,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      "entryDurationSeconds": 15,
+      "entryCosts": {},
+      "normalEnemyCount": {
+        "min": 4,
+        "max": 5
+      },
+      "extraEnemyPerPlayer": {
+        "min": 1,
+        "max": 2
+      },
+      "maxTeamSize": 4,
+      "customLineupConf": [],
+      "nameKey": "world.meteor_corridor_001.name",
+      "descKey": "world.meteor_corridor_001.desc",
+      "disabled": false,
+      "difficultySettings": {
+        "maxLevel": 10,
+        "statBonuses": [
+          {
+            "attrKey": "hp",
+            "base": 1023,
+            "perLevelMult": 1.3
+          },
+          {
+            "attrKey": "physics_defence",
+            "base": 10,
+            "perLevelMult": 0.25
+          },
+          {
+            "attrKey": "magical_defence",
+            "base": 10,
+            "perLevelMult": 0.25
+          },
+          {
+            "attrKey": "physics_damage",
+            "base": 76.26,
+            "perLevelMult": 0.58
+          },
+          {
+            "attrKey": "magical_damage",
+            "base": 76.26,
+            "perLevelMult": 0.58
+          },
+          {
+            "attrKey": "speed",
+            "base": 64,
+            "perLevelMult": 0.55
+          }
+        ],
+        "specialDrops": []
+      },
+      "battlefieldEffects": [
+        {
+          "id": "meteor_corridor_starburst",
+          "nameKey": "battlefield_effect.meteor_corridor_starburst.name",
+          "descKey": "battlefield_effect.meteor_corridor_starburst.desc",
+          "icon": "game-icons:falling-star",
+          "counter": {
+            "source": "turn_consumed",
+            "actorFilter": {
+              "sides": [
+                "player"
+              ],
+              "unitTypes": [
+                "player",
+                "kitty"
+              ],
+              "includeSummons": false,
+              "turnKinds": [
+                "ordered"
+              ],
+              "includePreparation": false
+            },
+            "aggregation": "alive_roster_cycle",
+            "countSuppressedTurns": true,
+            "initial": 8,
+            "resetTo": 8,
+            "carryProgressAcrossWaves": true
+          },
+          "triggerEffects": [
+            {
+              "kind": "damage",
+              "targetScope": "all_alive_players",
+              "includeSummons": true,
+              "damageType": "magical",
+              "amountByDifficulty": {
+                "base": 3520,
+                "perLevelMult": 0.17
+              }
+            }
+          ],
+          "postTriggerWindows": [
+            {
+              "id": "timekeeper_exposed",
+              "duration": 2,
+              "unit": "player_round"
+            }
+          ],
+          "conditionalModifiers": [
+            {
+              "kind": "incoming_damage_reduction",
+              "targetScope": "special_enemies",
+              "value": 0.75,
+              "inactiveDuringWindow": "timekeeper_exposed"
+            }
+          ]
+        }
+      ],
+      "waveSchedules": []
+    },
+    {
+      "id": "forbidden_library_001",
+      "fogMapItemId": "map_forbidden_library_001_denseFog",
+      "enemyIds": "silence_tome_001,brass_book_guard_001,living_bookmark_001,watcher_owl_001,binding_librarian_001,banished_spellcat_001",
+      "specialEnemyIds": "forbidden_library_keeper_boss_001",
+      "specialWaves": {
+        "every": 12,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      "entryDurationSeconds": 15,
+      "entryCosts": {},
+      "normalEnemyCount": {
+        "min": 4,
+        "max": 5
+      },
+      "extraEnemyPerPlayer": {
+        "min": 1,
+        "max": 2
+      },
+      "maxTeamSize": 4,
+      "customLineupConf": [],
+      "nameKey": "world.forbidden_library_001.name",
+      "descKey": "world.forbidden_library_001.desc",
+      "disabled": false,
+      "difficultySettings": {
+        "maxLevel": 10,
+        "statBonuses": [
+          {
+            "attrKey": "hp",
+            "base": 1335,
+            "perLevelMult": 1.35
+          },
+          {
+            "attrKey": "physics_defence",
+            "base": 12,
+            "perLevelMult": 0.27
+          },
+          {
+            "attrKey": "magical_defence",
+            "base": 14,
+            "perLevelMult": 0.28
+          },
+          {
+            "attrKey": "physics_damage",
+            "base": 85.44,
+            "perLevelMult": 0.62
+          },
+          {
+            "attrKey": "magical_damage",
+            "base": 99.68,
+            "perLevelMult": 0.65
+          },
+          {
+            "attrKey": "speed",
+            "base": 72,
+            "perLevelMult": 0.58
+          }
+        ],
+        "specialDrops": []
+      },
+      "battlefieldEffects": [
+        {
+          "id": "forbidden_library_audit",
+          "nameKey": "battlefield_effect.forbidden_library_audit.name",
+          "descKey": "battlefield_effect.forbidden_library_audit.desc",
+          "icon": "game-icons:spell-book",
+          "displayMode": "progress",
+          "counter": {
+            "source": "turn_consumed",
+            "actorFilter": {
+              "sides": [
+                "player"
+              ],
+              "unitTypes": [
+                "player",
+                "kitty"
+              ],
+              "includeSummons": false,
+              "turnKinds": [
+                "ordered"
+              ],
+              "includePreparation": false
+            },
+            "aggregation": "alive_roster_cycle",
+            "countSuppressedTurns": true,
+            "initial": 1,
+            "resetTo": 1,
+            "carryProgressAcrossWaves": true
+          },
+          "triggerEffects": [
+            {
+              "kind": "weighted_random_per_target",
+              "targetScope": "alive_players",
+              "targetFilter": {
+                "unitTypes": [
+                  "player",
+                  "kitty"
+                ],
+                "includeSummons": false
+              },
+              "targetCount": {
+                "source": "eligible_count",
+                "divisor": 4,
+                "rounding": "ceil",
+                "min": 1,
+                "max": 2
+              },
+              "selection": "uniform_without_replacement",
+              "choices": [
+                {
+                  "id": "silence",
+                  "weight": 0.4,
+                  "effect": {
+                    "kind": "status",
+                    "statusId": "silence",
+                    "durationTurns": 1
+                  }
+                },
+                {
+                  "id": "sealed",
+                  "weight": 0.6,
+                  "effect": {
+                    "kind": "adjust_skill_cooldown",
+                    "amount": 1,
+                    "includeBasic": false
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "waveSchedules": []
+    },
+    {
+      "id": "amusement_park_001",
+      "fogMapItemId": "map_amusement_park_001_denseFog",
+      "enemyIds": "stardust_mouse_001,carousel_cat_001,candy_clown_001,plush_guard_001,starlight_healer_002,ghostly_rider_001",
+      "specialEnemyIds": "candy_clown_001,carousel_cat_001,ghostly_rider_001,parade_king_boss_001",
+      "waveSchedules": [
+        {
+          "id": "amusement_elite_troupe",
+          "nameKey": "world.amusement_park_001.waveSchedule.amusement_elite_troupe.name",
+          "descKey": "world.amusement_park_001.waveSchedule.amusement_elite_troupe.desc",
+          "every": 4,
+          "priority": 10,
+          "enemyChoices": [
+            {
+              "enemyId": "candy_clown_001",
+              "weight": 40
+            },
+            {
+              "enemyId": "carousel_cat_001",
+              "weight": 30
+            },
+            {
+              "enemyId": "ghostly_rider_001",
+              "weight": 30
+            }
+          ],
+          "minCount": 1,
+          "maxCount": 3
+        },
+        {
+          "id": "amusement_parade_king",
+          "nameKey": "world.amusement_park_001.waveSchedule.amusement_parade_king.name",
+          "descKey": "world.amusement_park_001.waveSchedule.amusement_parade_king.desc",
+          "every": 8,
+          "priority": 20,
+          "enemyChoices": [
+            {
+              "enemyId": "parade_king_boss_001",
+              "weight": 1
+            }
+          ],
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ],
+      "entryDurationSeconds": 15,
+      "entryCosts": {},
+      "normalEnemyCount": {
+        "min": 4,
+        "max": 5
+      },
+      "extraEnemyPerPlayer": {
+        "min": 1,
+        "max": 2
+      },
+      "maxTeamSize": 4,
+      "customLineupConf": [],
+      "nameKey": "world.amusement_park_001.name",
+      "descKey": "world.amusement_park_001.desc",
+      "disabled": false,
+      "difficultySettings": {
+        "maxLevel": 10,
+        "statBonuses": [
+          {
+            "attrKey": "hp",
+            "base": 1402.5,
+            "perLevelMult": 1.4
+          },
+          {
+            "attrKey": "physics_defence",
+            "base": 14,
+            "perLevelMult": 0.3
+          },
+          {
+            "attrKey": "magical_defence",
+            "base": 16,
+            "perLevelMult": 0.3
+          },
+          {
+            "attrKey": "physics_damage",
+            "base": 88.4,
+            "perLevelMult": 0.66
+          },
+          {
+            "attrKey": "magical_damage",
+            "base": 103.7,
+            "perLevelMult": 0.69
+          },
+          {
+            "attrKey": "speed",
+            "base": 78,
+            "perLevelMult": 0.61
+          }
+        ],
+        "specialDrops": []
+      },
+      "specialWaves": []
+    }
+  ]
+}

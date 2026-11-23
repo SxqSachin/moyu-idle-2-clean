@@ -1,0 +1,1746 @@
+{
+  "version": 1,
+  "collectibles": [
+    {
+      "id": "collectible_berry_bird",
+      "itemId": "berry_bird_trophy",
+      "nameKey": "collectible.berry_bird.name",
+      "descKey": "collectible.berry_bird.desc",
+      "playerMods": {
+        "collecting_speed": 0.02
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "plains",
+      "disabled": false
+    },
+    {
+      "id": "collectible_mushroom_bug",
+      "itemId": "mushroom_bug_trophy",
+      "nameKey": "collectible.mushroom_bug.name",
+      "descKey": "collectible.mushroom_bug.desc",
+      "playerMods": {
+        "farming_animal_speed": 0.02
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "plains",
+      "disabled": false
+    },
+    {
+      "id": "collectible_plain_mouse",
+      "itemId": "plain_mouse_trophy",
+      "nameKey": "collectible.plain_mouse.name",
+      "descKey": "collectible.plain_mouse.desc",
+      "playerMods": {
+        "mining_speed": 0.02
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "plains",
+      "disabled": false
+    },
+    {
+      "id": "collectible_lazy_rabbit",
+      "itemId": "lazy_rabbit_trophy",
+      "nameKey": "collectible.lazy_rabbit.name",
+      "descKey": "collectible.lazy_rabbit.desc",
+      "playerMods": {
+        "luck": 1
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "plains",
+      "disabled": false
+    },
+    {
+      "id": "collectible_snail",
+      "itemId": "snail_trophy",
+      "nameKey": "collectible.snail.name",
+      "descKey": "collectible.snail.desc",
+      "playerMods": {
+        "stamina": 4
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "plains",
+      "disabled": false
+    },
+    {
+      "id": "collectible_catnip_kitten",
+      "itemId": "catnip_kitten_trophy",
+      "nameKey": "collectible.catnip_kitten.name",
+      "descKey": "collectible.catnip_kitten.desc",
+      "playerMods": {
+        "dexterity": 4
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "plains",
+      "disabled": false
+    },
+    {
+      "id": "collectible_plain_guardian",
+      "itemId": "plain_guardian_trophy",
+      "nameKey": "collectible.plain_guardian.name",
+      "descKey": "collectible.plain_guardian.desc",
+      "playerMods": {
+        "collecting_speed": 0.01,
+        "stamina": 3
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "plains",
+      "disabled": false
+    },
+    {
+      "id": "collectible_forest_healer",
+      "itemId": "forest_healer_trophy",
+      "nameKey": "collectible.forest_healer.name",
+      "descKey": "collectible.forest_healer.desc",
+      "playerMods": {
+        "hp_regen": 2
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "forest",
+      "disabled": false
+    },
+    {
+      "id": "collectible_slime",
+      "itemId": "slime_trophy",
+      "nameKey": "collectible.slime.name",
+      "descKey": "collectible.slime.desc",
+      "playerMods": {
+        "hp": 25
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "forest",
+      "disabled": false
+    },
+    {
+      "id": "collectible_mutant_slime",
+      "itemId": "mutant_slime_trophy",
+      "nameKey": "collectible.mutant_slime.name",
+      "descKey": "collectible.mutant_slime.desc",
+      "playerMods": {
+        "hp": 35
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "forest",
+      "disabled": false
+    },
+    {
+      "id": "collectible_goblin",
+      "itemId": "goblin_trophy",
+      "nameKey": "collectible.goblin.name",
+      "descKey": "collectible.goblin.desc",
+      "playerMods": {
+        "physics_damage": 3
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "forest",
+      "disabled": false
+    },
+    {
+      "id": "collectible_goblin_archer",
+      "itemId": "goblin_archer_trophy",
+      "nameKey": "collectible.goblin_archer.name",
+      "descKey": "collectible.goblin_archer.desc",
+      "playerMods": {
+        "dexterity": 2
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "forest",
+      "disabled": false
+    },
+    {
+      "id": "collectible_bat",
+      "itemId": "bat_trophy",
+      "nameKey": "collectible.bat.name",
+      "descKey": "collectible.bat.desc",
+      "playerMods": {
+        "speed": 1
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "forest",
+      "disabled": false
+    },
+    {
+      "id": "collectible_wolf",
+      "itemId": "wolf_trophy",
+      "nameKey": "collectible.wolf.name",
+      "descKey": "collectible.wolf.desc",
+      "playerMods": {
+        "dexterity": 0.75,
+        "physics_damage": 1
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "forest",
+      "disabled": false
+    },
+    {
+      "id": "collectible_skeleton",
+      "itemId": "skeleton_trophy",
+      "nameKey": "collectible.skeleton.name",
+      "descKey": "collectible.skeleton.desc",
+      "playerMods": {
+        "physics_defence": 3
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "forest",
+      "disabled": false
+    },
+    {
+      "id": "collectible_poison_mushroom",
+      "itemId": "poison_mushroom_trophy",
+      "nameKey": "collectible.poison_mushroom.name",
+      "descKey": "collectible.poison_mushroom.desc",
+      "playerMods": {
+        "magical_damage": 3
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "forest",
+      "disabled": false
+    },
+    {
+      "id": "collectible_lizard",
+      "itemId": "lizard_trophy",
+      "nameKey": "collectible.lizard.name",
+      "descKey": "collectible.lizard.desc",
+      "playerMods": {
+        "stamina": 1.5,
+        "physics_defence": 2
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "forest",
+      "disabled": false
+    },
+    {
+      "id": "collectible_spirit",
+      "itemId": "spirit_trophy",
+      "nameKey": "collectible.spirit.name",
+      "descKey": "collectible.spirit.desc",
+      "playerMods": {
+        "intelligence": 3
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "forest",
+      "disabled": false
+    },
+    {
+      "id": "collectible_forest_troll",
+      "itemId": "forest_troll_trophy",
+      "nameKey": "collectible.forest_troll.name",
+      "descKey": "collectible.forest_troll.desc",
+      "playerMods": {
+        "farming_animal_speed": 0.02,
+        "physics_damage": 3
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "forest",
+      "disabled": false
+    },
+    {
+      "id": "collectible_cave_scorpion",
+      "itemId": "cave_scorpion_trophy",
+      "nameKey": "collectible.cave_scorpion.name",
+      "descKey": "collectible.cave_scorpion.desc",
+      "playerMods": {
+        "mining_speed": 0.015,
+        "crit_chance": 0.005
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "cave",
+      "disabled": false
+    },
+    {
+      "id": "collectible_ruins_guardian",
+      "itemId": "ruins_guardian_trophy",
+      "nameKey": "collectible.ruins_guardian.name",
+      "descKey": "collectible.ruins_guardian.desc",
+      "playerMods": {
+        "crafting_speed": 0.02,
+        "physics_defence": 5
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "ruins",
+      "disabled": false
+    },
+    {
+      "id": "collectible_dragon",
+      "itemId": "dragon_trophy",
+      "nameKey": "collectible.dragon.name",
+      "descKey": "collectible.dragon.desc",
+      "playerMods": {
+        "forging_speed": 0.02,
+        "magical_damage": 5
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "dragon",
+      "disabled": false
+    },
+    {
+      "id": "collectible_ice_slime",
+      "itemId": "ice_slime_trophy",
+      "nameKey": "collectible.ice_slime.name",
+      "descKey": "collectible.ice_slime.desc",
+      "playerMods": {
+        "magical_defence": 3
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "snowfield",
+      "disabled": false
+    },
+    {
+      "id": "collectible_snow_wolf",
+      "itemId": "snow_wolf_trophy",
+      "nameKey": "collectible.snow_wolf.name",
+      "descKey": "collectible.snow_wolf.desc",
+      "playerMods": {
+        "dexterity": 3
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "snowfield",
+      "disabled": false
+    },
+    {
+      "id": "collectible_frost_goblin",
+      "itemId": "frost_goblin_trophy",
+      "nameKey": "collectible.frost_goblin.name",
+      "descKey": "collectible.frost_goblin.desc",
+      "playerMods": {
+        "strength": 3
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "snowfield",
+      "disabled": false
+    },
+    {
+      "id": "collectible_ice_bat",
+      "itemId": "ice_bat_trophy",
+      "nameKey": "collectible.ice_bat.name",
+      "descKey": "collectible.ice_bat.desc",
+      "playerMods": {
+        "speed": 2
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "snowfield",
+      "disabled": false
+    },
+    {
+      "id": "collectible_snow_rabbit",
+      "itemId": "snow_rabbit_trophy",
+      "nameKey": "collectible.snow_rabbit.name",
+      "descKey": "collectible.snow_rabbit.desc",
+      "playerMods": {
+        "luck": 1
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "snowfield",
+      "disabled": false
+    },
+    {
+      "id": "collectible_frost_spirit",
+      "itemId": "frost_spirit_trophy",
+      "nameKey": "collectible.frost_spirit.name",
+      "descKey": "collectible.frost_spirit.desc",
+      "playerMods": {
+        "intelligence": 2
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "snowfield",
+      "disabled": false
+    },
+    {
+      "id": "collectible_snow_beast",
+      "itemId": "snow_beast_trophy",
+      "nameKey": "collectible.snow_beast.name",
+      "descKey": "collectible.snow_beast.desc",
+      "playerMods": {
+        "sewing_speed": 0.02,
+        "hp": 20
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "snowfield",
+      "disabled": false
+    },
+    {
+      "id": "collectible_ice_spirit_king",
+      "itemId": "ice_spirit_king_trophy",
+      "nameKey": "collectible.ice_spirit_king.name",
+      "descKey": "collectible.ice_spirit_king.desc",
+      "playerMods": {
+        "enhancement_success_rate": 0.015,
+        "magical_damage": 2
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "snowfield",
+      "disabled": false
+    },
+    {
+      "id": "collectible_shadow_cat",
+      "itemId": "shadow_cat_trophy",
+      "nameKey": "collectible.shadow_cat.name",
+      "descKey": "collectible.shadow_cat.desc",
+      "playerMods": {
+        "perception": 2
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "shadow",
+      "disabled": false
+    },
+    {
+      "id": "collectible_dungeon_guard",
+      "itemId": "dungeon_guard_trophy",
+      "nameKey": "collectible.dungeon_guard.name",
+      "descKey": "collectible.dungeon_guard.desc",
+      "playerMods": {
+        "stamina": 2
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "shadow",
+      "disabled": false
+    },
+    {
+      "id": "collectible_phantom_mouse",
+      "itemId": "phantom_mouse_trophy",
+      "nameKey": "collectible.phantom_mouse.name",
+      "descKey": "collectible.phantom_mouse.desc",
+      "playerMods": {
+        "crit_chance": 0.01
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "shadow",
+      "disabled": false
+    },
+    {
+      "id": "collectible_curse_bat",
+      "itemId": "curse_bat_trophy",
+      "nameKey": "collectible.curse_bat.name",
+      "descKey": "collectible.curse_bat.desc",
+      "playerMods": {
+        "magic_crit_damage": 0.01
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "shadow",
+      "disabled": false
+    },
+    {
+      "id": "collectible_iron_golem",
+      "itemId": "iron_golem_trophy",
+      "nameKey": "collectible.iron_golem.name",
+      "descKey": "collectible.iron_golem.desc",
+      "playerMods": {
+        "physics_defence": 3
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "shadow",
+      "disabled": false
+    },
+    {
+      "id": "collectible_witch_cat",
+      "itemId": "witch_cat_trophy",
+      "nameKey": "collectible.witch_cat.name",
+      "descKey": "collectible.witch_cat.desc",
+      "playerMods": {
+        "magical_damage": 2,
+        "intelligence": 1
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "shadow",
+      "disabled": false
+    },
+    {
+      "id": "collectible_shadow_mage",
+      "itemId": "shadow_mage_trophy",
+      "nameKey": "collectible.shadow_mage.name",
+      "descKey": "collectible.shadow_mage.desc",
+      "playerMods": {
+        "intelligence": 3,
+        "magical_damage": 2
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "shadow",
+      "disabled": false
+    },
+    {
+      "id": "collectible_abyssal_lord",
+      "itemId": "abyssal_lord_trophy",
+      "nameKey": "collectible.abyssal_lord.name",
+      "descKey": "collectible.abyssal_lord.desc",
+      "playerMods": {
+        "strength": 3,
+        "physics_damage": 2
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "shadow",
+      "disabled": false
+    },
+    {
+      "id": "collectible_cat_ancestor",
+      "itemId": "cat_ancestor_trophy",
+      "nameKey": "collectible.cat_ancestor.name",
+      "descKey": "collectible.cat_ancestor.desc",
+      "playerMods": {
+        "battle_drop_rate_bonus": 0.01,
+        "perception": 3
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "shadow",
+      "disabled": false
+    },
+    {
+      "id": "collectible_cat_acolyte",
+      "itemId": "cat_acolyte_trophy",
+      "nameKey": "collectible.cat_acolyte.name",
+      "descKey": "collectible.cat_acolyte.desc",
+      "playerMods": {
+        "mp": 45
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "holy_temple",
+      "disabled": false
+    },
+    {
+      "id": "collectible_cat_priest",
+      "itemId": "cat_priest_trophy",
+      "nameKey": "collectible.cat_priest.name",
+      "descKey": "collectible.cat_priest.desc",
+      "playerMods": {
+        "mp_regen": 1,
+        "magical_defence": 2
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "holy_temple",
+      "disabled": false
+    },
+    {
+      "id": "collectible_paladin",
+      "itemId": "paladin_trophy",
+      "nameKey": "collectible.paladin.name",
+      "descKey": "collectible.paladin.desc",
+      "playerMods": {
+        "stamina": 4,
+        "physics_defence": 3
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "holy_temple",
+      "disabled": false
+    },
+    {
+      "id": "collectible_sage",
+      "itemId": "sage_trophy",
+      "nameKey": "collectible.sage.name",
+      "descKey": "collectible.sage.desc",
+      "playerMods": {
+        "intelligence": 4,
+        "magical_damage": 3
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "holy_temple",
+      "disabled": false
+    },
+    {
+      "id": "collectible_cat_guardian",
+      "itemId": "cat_guardian_trophy",
+      "nameKey": "collectible.cat_guardian.name",
+      "descKey": "collectible.cat_guardian.desc",
+      "playerMods": {
+        "perception": 4,
+        "hp": 30
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "holy_temple",
+      "disabled": false
+    },
+    {
+      "id": "collectible_holy_cat_king",
+      "itemId": "holy_cat_king_trophy",
+      "nameKey": "collectible.holy_cat_king.name",
+      "descKey": "collectible.holy_cat_king.desc",
+      "playerMods": {
+        "intelligence": 5,
+        "mp": 20,
+        "battle_exp_bonus": 0.025
+      },
+      "kittyMods": {},
+      "rarity": "mythic",
+      "categoryId": "holy_temple",
+      "disabled": false
+    },
+    {
+      "id": "collectible_super_berry_bird",
+      "itemId": "super_berry_bird_trophy",
+      "nameKey": "collectible.super_berry_bird.name",
+      "descKey": "collectible.super_berry_bird.desc",
+      "playerMods": {
+        "battle_drop_rate_bonus": 0.03,
+        "collecting_speed": 0.025
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "special",
+      "disabled": false
+    },
+    {
+      "id": "collectible_wolf_king_head",
+      "itemId": "wolf_king_head_trophy",
+      "nameKey": "collectible.wolf_king_head.name",
+      "descKey": "collectible.wolf_king_head.desc",
+      "playerMods": {
+        "strength": 5,
+        "physics_damage": 3,
+        "crit_damage": 0.03
+      },
+      "kittyMods": {},
+      "rarity": "mythic",
+      "categoryId": "special",
+      "disabled": false
+    },
+    {
+      "id": "collectible_wolf_king_claw",
+      "itemId": "wolf_king_claw_trophy",
+      "nameKey": "collectible.wolf_king_claw.name",
+      "descKey": "collectible.wolf_king_claw.desc",
+      "playerMods": {
+        "dexterity": 5,
+        "crit_chance": 0.04
+      },
+      "kittyMods": {
+        "strength": 3
+      },
+      "rarity": "mythic",
+      "categoryId": "special",
+      "disabled": false
+    },
+    {
+      "id": "collectible_shadow_assassin_cat_claw",
+      "itemId": "shadow_assassin_cat_claw_trophy",
+      "nameKey": "collectible.shadow_assassin_cat_claw.name",
+      "descKey": "collectible.shadow_assassin_cat_claw.desc",
+      "playerMods": {
+        "dexterity": 6,
+        "crit_chance": 0.04,
+        "speed": 3
+      },
+      "kittyMods": {
+        "dexterity": 3
+      },
+      "rarity": "mythic",
+      "categoryId": "shadow",
+      "disabled": false
+    },
+    {
+      "id": "collectible_glacial_phantom_ice",
+      "itemId": "glacial_phantom_ice_trophy",
+      "nameKey": "collectible.glacial_phantom_ice.name",
+      "descKey": "collectible.glacial_phantom_ice.desc",
+      "playerMods": {
+        "magical_damage": 5,
+        "magical_damage_amplification": 0.01
+      },
+      "kittyMods": {},
+      "rarity": "mythic",
+      "categoryId": "special",
+      "disabled": false
+    },
+    {
+      "id": "collectible_lucky_clover_statue",
+      "itemId": "lucky_clover_statue",
+      "nameKey": "collectible.lucky_clover_statue.name",
+      "descKey": "collectible.lucky_clover_statue.desc",
+      "playerMods": {},
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "special",
+      "upgradeable": true,
+      "levelMaxLevel": 200,
+      "levelAttrCurve": {
+        "base": {
+          "luck": 1
+        },
+        "step": {
+          "luck": 0.05
+        },
+        "overrides": {
+          "10": {
+            "luck": 1
+          },
+          "25": {
+            "luck": 1
+          },
+          "50": {
+            "luck": 1
+          },
+          "100": {
+            "luck": 1
+          },
+          "150": {
+            "luck": 1
+          },
+          "200": {
+            "luck": 1
+          }
+        }
+      },
+      "disabled": false
+    },
+    {
+      "id": "collectible_shadow_paw_apprentice",
+      "itemId": "shadow_paw_apprentice_trophy",
+      "nameKey": "collectible.shadow_paw_apprentice.name",
+      "descKey": "collectible.shadow_paw_apprentice.desc",
+      "playerMods": {
+        "dexterity": 2
+      },
+      "kittyMods": {},
+      "rarity": "rare",
+      "categoryId": "shadow_paw",
+      "disabled": false
+    },
+    {
+      "id": "collectible_toxic_claw",
+      "itemId": "toxic_claw_trophy",
+      "nameKey": "collectible.toxic_claw.name",
+      "descKey": "collectible.toxic_claw.desc",
+      "playerMods": {
+        "physics_flat_defense_penetration": 2
+      },
+      "kittyMods": {},
+      "rarity": "rare",
+      "categoryId": "shadow_paw",
+      "disabled": false
+    },
+    {
+      "id": "collectible_silent_whisker",
+      "itemId": "silent_whisker_trophy",
+      "nameKey": "collectible.silent_whisker.name",
+      "descKey": "collectible.silent_whisker.desc",
+      "playerMods": {
+        "dexterity": 2,
+        "speed": 2
+      },
+      "kittyMods": {
+        "dexterity": 2
+      },
+      "rarity": "epic",
+      "categoryId": "shadow_paw",
+      "disabled": false
+    },
+    {
+      "id": "collectible_smoke_tail",
+      "itemId": "smoke_tail_trophy",
+      "nameKey": "collectible.smoke_tail.name",
+      "descKey": "collectible.smoke_tail.desc",
+      "playerMods": {
+        "physics_damage_resist": 0.012,
+        "magical_damage_resist": 0.012
+      },
+      "kittyMods": {},
+      "rarity": "epic",
+      "categoryId": "shadow_paw",
+      "disabled": false
+    },
+    {
+      "id": "collectible_mirror_paw",
+      "itemId": "mirror_paw_trophy",
+      "nameKey": "collectible.mirror_paw.name",
+      "descKey": "collectible.mirror_paw.desc",
+      "playerMods": {
+        "crit_chance": 0.02,
+        "physics_damage_resist": 0.016
+      },
+      "kittyMods": {
+        "speed": 2
+      },
+      "rarity": "legendary",
+      "categoryId": "shadow_paw",
+      "disabled": false
+    },
+    {
+      "id": "collectible_shadow_paw_master",
+      "itemId": "shadow_paw_master_trophy",
+      "nameKey": "collectible.shadow_paw_master.name",
+      "descKey": "collectible.shadow_paw_master.desc",
+      "playerMods": {
+        "dexterity": 6,
+        "crit_chance": 0.03,
+        "speed": 4,
+        "physics_flat_defense_penetration": 4
+      },
+      "kittyMods": {
+        "dexterity": 2
+      },
+      "rarity": "mythic",
+      "categoryId": "shadow_paw",
+      "disabled": false
+    },
+    {
+      "id": "collectible_astral_guard",
+      "itemId": "astral_guard_trophy",
+      "nameKey": "collectible.astral_guard.name",
+      "descKey": "collectible.astral_guard.desc",
+      "playerMods": {
+        "physics_defence": 3
+      },
+      "kittyMods": {},
+      "rarity": "rare",
+      "categoryId": "meteor_corridor",
+      "disabled": false
+    },
+    {
+      "id": "collectible_astral_mage",
+      "itemId": "astral_mage_trophy",
+      "nameKey": "collectible.astral_mage.name",
+      "descKey": "collectible.astral_mage.desc",
+      "playerMods": {
+        "magical_damage": 2
+      },
+      "kittyMods": {},
+      "rarity": "rare",
+      "categoryId": "meteor_corridor",
+      "disabled": false
+    },
+    {
+      "id": "collectible_starlight_healer",
+      "itemId": "starlight_healer_trophy",
+      "nameKey": "collectible.starlight_healer.name",
+      "descKey": "collectible.starlight_healer.desc",
+      "playerMods": {
+        "mp": 25
+      },
+      "kittyMods": {},
+      "rarity": "rare",
+      "categoryId": "meteor_corridor",
+      "disabled": false
+    },
+    {
+      "id": "collectible_refraction_mirror_doll",
+      "itemId": "refraction_mirror_doll_trophy",
+      "nameKey": "collectible.refraction_mirror_doll.name",
+      "descKey": "collectible.refraction_mirror_doll.desc",
+      "playerMods": {
+        "magical_damage_resist": 0.008
+      },
+      "kittyMods": {},
+      "rarity": "rare",
+      "categoryId": "meteor_corridor",
+      "disabled": false
+    },
+    {
+      "id": "collectible_meteor_core_porter",
+      "itemId": "meteor_core_porter_trophy",
+      "nameKey": "collectible.meteor_core_porter.name",
+      "descKey": "collectible.meteor_core_porter.desc",
+      "playerMods": {
+        "stamina": 3,
+        "hp": 20
+      },
+      "kittyMods": {},
+      "rarity": "epic",
+      "categoryId": "meteor_corridor",
+      "disabled": false
+    },
+    {
+      "id": "collectible_deranged_calibrator",
+      "itemId": "deranged_calibrator_trophy",
+      "nameKey": "collectible.deranged_calibrator.name",
+      "descKey": "collectible.deranged_calibrator.desc",
+      "playerMods": {
+        "perception": 2,
+        "speed": 2
+      },
+      "kittyMods": {},
+      "rarity": "epic",
+      "categoryId": "meteor_corridor",
+      "disabled": false
+    },
+    {
+      "id": "collectible_corridor_timekeeper_cat",
+      "itemId": "corridor_timekeeper_cat_trophy",
+      "nameKey": "collectible.corridor_timekeeper_cat.name",
+      "descKey": "collectible.corridor_timekeeper_cat.desc",
+      "playerMods": {
+        "intelligence": 4,
+        "speed": 2,
+        "magical_damage": 2,
+        "battle_exp_bonus": 0.01
+      },
+      "kittyMods": {
+        "speed": 1
+      },
+      "rarity": "mythic",
+      "categoryId": "meteor_corridor",
+      "disabled": false
+    },
+    {
+      "id": "collectible_silence_tome",
+      "itemId": "silence_tome_trophy",
+      "nameKey": "collectible.silence_tome.name",
+      "descKey": "collectible.silence_tome.desc",
+      "playerMods": {
+        "mp": 20
+      },
+      "kittyMods": {},
+      "rarity": "rare",
+      "categoryId": "forbidden_library",
+      "disabled": false
+    },
+    {
+      "id": "collectible_brass_book_guard",
+      "itemId": "brass_book_guard_trophy",
+      "nameKey": "collectible.brass_book_guard.name",
+      "descKey": "collectible.brass_book_guard.desc",
+      "playerMods": {
+        "physics_defence": 3
+      },
+      "kittyMods": {},
+      "rarity": "rare",
+      "categoryId": "forbidden_library",
+      "disabled": false
+    },
+    {
+      "id": "collectible_living_bookmark",
+      "itemId": "living_bookmark_trophy",
+      "nameKey": "collectible.living_bookmark.name",
+      "descKey": "collectible.living_bookmark.desc",
+      "playerMods": {
+        "dexterity": 2,
+        "speed": 1
+      },
+      "kittyMods": {},
+      "rarity": "rare",
+      "categoryId": "forbidden_library",
+      "disabled": false
+    },
+    {
+      "id": "collectible_watcher_owl",
+      "itemId": "watcher_owl_trophy",
+      "nameKey": "collectible.watcher_owl.name",
+      "descKey": "collectible.watcher_owl.desc",
+      "playerMods": {
+        "perception": 2,
+        "magic_crit_chance": 0.005
+      },
+      "kittyMods": {},
+      "rarity": "rare",
+      "categoryId": "forbidden_library",
+      "disabled": false
+    },
+    {
+      "id": "collectible_binding_librarian",
+      "itemId": "binding_librarian_trophy",
+      "nameKey": "collectible.binding_librarian.name",
+      "descKey": "collectible.binding_librarian.desc",
+      "playerMods": {
+        "stamina": 3,
+        "magical_defence": 3
+      },
+      "kittyMods": {},
+      "rarity": "epic",
+      "categoryId": "forbidden_library",
+      "disabled": false
+    },
+    {
+      "id": "collectible_banished_spellcat",
+      "itemId": "banished_spellcat_trophy",
+      "nameKey": "collectible.banished_spellcat.name",
+      "descKey": "collectible.banished_spellcat.desc",
+      "playerMods": {
+        "intelligence": 3,
+        "magical_damage": 2
+      },
+      "kittyMods": {},
+      "rarity": "epic",
+      "categoryId": "forbidden_library",
+      "disabled": false
+    },
+    {
+      "id": "collectible_forbidden_library_keeper",
+      "itemId": "forbidden_library_keeper_trophy",
+      "nameKey": "collectible.forbidden_library_keeper.name",
+      "descKey": "collectible.forbidden_library_keeper.desc",
+      "playerMods": {
+        "intelligence": 4,
+        "perception": 3,
+        "magical_defence": 4,
+        "crit_damage_resist": 0.015
+      },
+      "kittyMods": {
+        "intelligence": 1
+      },
+      "rarity": "mythic",
+      "categoryId": "forbidden_library",
+      "disabled": false
+    },
+    {
+      "id": "collectible_stardust_mouse",
+      "itemId": "stardust_mouse_trophy",
+      "nameKey": "collectible.stardust_mouse.name",
+      "descKey": "collectible.stardust_mouse.desc",
+      "playerMods": {
+        "luck": 1
+      },
+      "kittyMods": {},
+      "rarity": "rare",
+      "categoryId": "amusement_park",
+      "disabled": false
+    },
+    {
+      "id": "collectible_carousel_cat",
+      "itemId": "carousel_cat_trophy",
+      "nameKey": "collectible.carousel_cat.name",
+      "descKey": "collectible.carousel_cat.desc",
+      "playerMods": {
+        "speed": 2
+      },
+      "kittyMods": {},
+      "rarity": "rare",
+      "categoryId": "amusement_park",
+      "disabled": false
+    },
+    {
+      "id": "collectible_candy_clown",
+      "itemId": "candy_clown_trophy",
+      "nameKey": "collectible.candy_clown.name",
+      "descKey": "collectible.candy_clown.desc",
+      "playerMods": {
+        "magical_damage": 2,
+        "magic_crit_damage": 0.005
+      },
+      "kittyMods": {},
+      "rarity": "rare",
+      "categoryId": "amusement_park",
+      "disabled": false
+    },
+    {
+      "id": "collectible_plush_guard",
+      "itemId": "plush_guard_trophy",
+      "nameKey": "collectible.plush_guard.name",
+      "descKey": "collectible.plush_guard.desc",
+      "playerMods": {
+        "hp": 25,
+        "physics_defence": 2
+      },
+      "kittyMods": {},
+      "rarity": "rare",
+      "categoryId": "amusement_park",
+      "disabled": false
+    },
+    {
+      "id": "collectible_backstage_starlight_healer",
+      "itemId": "backstage_starlight_healer_trophy",
+      "nameKey": "collectible.backstage_starlight_healer.name",
+      "descKey": "collectible.backstage_starlight_healer.desc",
+      "playerMods": {
+        "hp_regen": 1
+      },
+      "kittyMods": {},
+      "rarity": "rare",
+      "categoryId": "amusement_park",
+      "disabled": false
+    },
+    {
+      "id": "collectible_ghostly_rider",
+      "itemId": "ghostly_rider_trophy",
+      "nameKey": "collectible.ghostly_rider.name",
+      "descKey": "collectible.ghostly_rider.desc",
+      "playerMods": {
+        "speed": 2,
+        "crit_chance": 0.01
+      },
+      "kittyMods": {},
+      "rarity": "epic",
+      "categoryId": "amusement_park",
+      "disabled": false
+    },
+    {
+      "id": "collectible_parade_king",
+      "itemId": "parade_king_trophy",
+      "nameKey": "collectible.parade_king.name",
+      "descKey": "collectible.parade_king.desc",
+      "playerMods": {
+        "stamina": 4,
+        "hp": 35,
+        "physics_defence": 3,
+        "magical_defence": 3
+      },
+      "kittyMods": {
+        "stamina": 2
+      },
+      "rarity": "mythic",
+      "categoryId": "amusement_park",
+      "disabled": false
+    },
+    {
+      "id": "collectible_midnight_ticket_collector",
+      "itemId": "midnight_ticket_collector_trophy",
+      "nameKey": "collectible.midnight_ticket_collector.name",
+      "descKey": "collectible.midnight_ticket_collector.desc",
+      "playerMods": {
+        "perception": 3,
+        "physics_flat_defense_penetration": 3,
+        "crit_damage_resist": 0.01
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "amusement_park",
+      "disabled": false
+    },
+    {
+      "id": "collectible_faceless_understudy",
+      "itemId": "faceless_understudy_trophy",
+      "nameKey": "collectible.faceless_understudy.name",
+      "descKey": "collectible.faceless_understudy.desc",
+      "playerMods": {
+        "intelligence": 5,
+        "magical_damage": 3,
+        "magic_crit_damage": 0.015,
+        "magical_damage_resist": 0.012
+      },
+      "kittyMods": {
+        "intelligence": 2
+      },
+      "rarity": "mythic",
+      "categoryId": "amusement_park",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_crucian_carp",
+      "itemId": "crucian_carp_fishing_memento",
+      "nameKey": "collectible.fishing_crucian_carp.name",
+      "descKey": "collectible.fishing_crucian_carp.desc",
+      "names": {
+        "zh-CN": "鲫鳞计数坠",
+        "en-US": "Crucian Tally Charm"
+      },
+      "descs": {
+        "zh-CN": "一枚会轻响的黄铜鱼鳞坠，认真记着每一条不起眼的收获。",
+        "en-US": "A chiming brass scale that remembers every unassuming catch."
+      },
+      "titleNames": {
+        "zh-CN": "小鲫大办",
+        "en-US": "Making a Big Deal of Crucians"
+      },
+      "playerMods": {
+        "fishing_sensitivity": 0.12
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_common_carp",
+      "itemId": "common_carp_fishing_memento",
+      "nameKey": "collectible.fishing_common_carp.name",
+      "descKey": "collectible.fishing_common_carp.desc",
+      "names": {
+        "zh-CN": "鲤须红绳结",
+        "en-US": "Red Carp-Whisker Knot"
+      },
+      "descs": {
+        "zh-CN": "红绳扎成两撇神气的鲤须，风一吹就像又有鱼在试探。",
+        "en-US": "A jaunty red knot shaped like carp whiskers, twitching at the faintest breeze."
+      },
+      "titleNames": {
+        "zh-CN": "十斤鲤证人",
+        "en-US": "Witness to the Ten-Catty Carp"
+      },
+      "playerMods": {
+        "fishing_control": 0.16
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_bluegill",
+      "itemId": "bluegill_fishing_memento",
+      "nameKey": "collectible.fishing_bluegill.name",
+      "descKey": "collectible.fishing_bluegill.desc",
+      "names": {
+        "zh-CN": "蓝鳃日轮片",
+        "en-US": "Bluegill Sun Disc"
+      },
+      "descs": {
+        "zh-CN": "蓝釉小圆片在阳光下亮得招摇，像一尾绝不肯低调的太阳鱼。",
+        "en-US": "A blue-glazed sun disc as bright and unapologetic as its namesake."
+      },
+      "titleNames": {
+        "zh-CN": "蓝鳃观察员",
+        "en-US": "Bluegill Observer"
+      },
+      "playerMods": {
+        "fishing_casting": 0.12
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_grass_carp",
+      "itemId": "grass_carp_fishing_memento",
+      "nameKey": "collectible.fishing_grass_carp.name",
+      "descKey": "collectible.fishing_grass_carp.desc",
+      "names": {
+        "zh-CN": "草叶漂标",
+        "en-US": "Rivergrass Float"
+      },
+      "descs": {
+        "zh-CN": "用晒干河草编成的细长漂标，闻起来总像刚下过雨。",
+        "en-US": "A slender float braided from dried rivergrass, forever scented with rain."
+      },
+      "titleNames": {
+        "zh-CN": "水草清点员",
+        "en-US": "Rivergrass Accountant"
+      },
+      "playerMods": {
+        "fishing_power": 0.002
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_mud_loach",
+      "itemId": "mud_loach_fishing_memento",
+      "nameKey": "collectible.fishing_mud_loach.name",
+      "descKey": "collectible.fishing_mud_loach.desc",
+      "names": {
+        "zh-CN": "泥鳅陶哨",
+        "en-US": "Loach Clay Whistle"
+      },
+      "descs": {
+        "zh-CN": "泥釉烧成的小哨子，声音滑溜得像有什么从手里逃走了。",
+        "en-US": "A mud-glazed whistle whose slippery note seems to wriggle free."
+      },
+      "titleNames": {
+        "zh-CN": "泥袖钓客",
+        "en-US": "Muddy-Sleeved Angler"
+      },
+      "playerMods": {
+        "fishing_hooking": 0.12
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_snakehead",
+      "itemId": "snakehead_fishing_memento",
+      "nameKey": "collectible.fishing_snakehead.name",
+      "descKey": "collectible.fishing_snakehead.desc",
+      "names": {
+        "zh-CN": "乌鳢黑鳍扣",
+        "en-US": "Blackfin Clasp"
+      },
+      "descs": {
+        "zh-CN": "一枚像黑鳍般利落的金属扣，专门提醒人别和倔鱼讲道理。",
+        "en-US": "A sharp blackfin clasp and a reminder never to reason with stubborn fish."
+      },
+      "titleNames": {
+        "zh-CN": "乌鳢谈判官",
+        "en-US": "Snakehead Negotiator"
+      },
+      "playerMods": {
+        "fishing_control": 0.2
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_lotus_koi",
+      "itemId": "lotus_koi_fishing_memento",
+      "nameKey": "collectible.fishing_lotus_koi.name",
+      "descKey": "collectible.fishing_lotus_koi.desc",
+      "names": {
+        "zh-CN": "莲纹好运签",
+        "en-US": "Lotus Luck Token"
+      },
+      "descs": {
+        "zh-CN": "莲纹与锦鲤叠在一枚小签上，好运多得像有点用力过猛。",
+        "en-US": "Lotus and koi motifs crowd one tiny token with almost excessive good fortune."
+      },
+      "titleNames": {
+        "zh-CN": "锦鲤好运管家",
+        "en-US": "Keeper of Koi Fortune"
+      },
+      "playerMods": {
+        "fishing_efficiency": 0.003
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_emberfin",
+      "itemId": "emberfin_fishing_memento",
+      "nameKey": "collectible.fishing_emberfin.name",
+      "descKey": "collectible.fishing_emberfin.desc",
+      "names": {
+        "zh-CN": "烬鳍余温鳞",
+        "en-US": "Emberfin Warm Scale"
+      },
+      "descs": {
+        "zh-CN": "一片永远带着余温的赤铜鳞，冬夜握着格外舍不得放手。",
+        "en-US": "A red-copper scale that keeps a stubborn warmth through winter nights."
+      },
+      "titleNames": {
+        "zh-CN": "烫手烬鳍客",
+        "en-US": "Hot-Handed Ember Angler"
+      },
+      "playerMods": {
+        "fishing_power": 0.003
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_brown_trout",
+      "itemId": "brown_trout_fishing_memento",
+      "nameKey": "collectible.fishing_brown_trout.name",
+      "descKey": "collectible.fishing_brown_trout.desc",
+      "names": {
+        "zh-CN": "褐鳟斑羽匙",
+        "en-US": "Spotted Trout Spoon"
+      },
+      "descs": {
+        "zh-CN": "斑点羽片嵌进旧匙形亮片里，转动时像河面闪过一截褐影。",
+        "en-US": "A feather-speckled spoon lure that flashes like a brown shadow in current."
+      },
+      "titleNames": {
+        "zh-CN": "褐影追踪者",
+        "en-US": "Tracker of Brown Shadows"
+      },
+      "playerMods": {
+        "fishing_casting": 0.16
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_chub",
+      "itemId": "chub_fishing_memento",
+      "nameKey": "collectible.fishing_chub.name",
+      "descKey": "collectible.fishing_chub.desc",
+      "names": {
+        "zh-CN": "河湾鱼印石",
+        "en-US": "Riverbend Fishprint Stone"
+      },
+      "descs": {
+        "zh-CN": "圆润河石上留着笨拙鱼印，像某位河湾熟客亲自盖的章。",
+        "en-US": "A smooth river stone stamped with the clumsy seal of a familiar chub."
+      },
+      "titleNames": {
+        "zh-CN": "河湾熟客",
+        "en-US": "Riverbend Regular"
+      },
+      "playerMods": {
+        "fishing_efficiency": 0.0015
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_dace",
+      "itemId": "dace_fishing_memento",
+      "nameKey": "collectible.fishing_dace.name",
+      "descKey": "collectible.fishing_dace.desc",
+      "names": {
+        "zh-CN": "雅罗轻口针",
+        "en-US": "Dace Bite Needle"
+      },
+      "descs": {
+        "zh-CN": "细得几乎没分量的银针，会为最轻的一次试口微微颤动。",
+        "en-US": "A nearly weightless silver needle that trembles at the gentlest nibble."
+      },
+      "titleNames": {
+        "zh-CN": "轻口捕手",
+        "en-US": "Whisper-Bite Catcher"
+      },
+      "playerMods": {
+        "fishing_sensitivity": 0.12
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_barbel",
+      "itemId": "barbel_fishing_memento",
+      "nameKey": "collectible.fishing_barbel.name",
+      "descKey": "collectible.fishing_barbel.desc",
+      "names": {
+        "zh-CN": "鲃须沉底环",
+        "en-US": "Barbel Bottom Ring"
+      },
+      "descs": {
+        "zh-CN": "带双须刻纹的沉底环，拿在手里就能想起河床那股拧劲。",
+        "en-US": "A whisker-etched sink ring weighted with the stubborn pull of the riverbed."
+      },
+      "titleNames": {
+        "zh-CN": "河底拔河手",
+        "en-US": "Riverbed Tug Champion"
+      },
+      "playerMods": {
+        "fishing_hooking": 0.16
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_freshwater_perch",
+      "itemId": "freshwater_perch_fishing_memento",
+      "nameKey": "collectible.fishing_freshwater_perch.name",
+      "descKey": "collectible.fishing_freshwater_perch.desc",
+      "names": {
+        "zh-CN": "河鲈纹章",
+        "en-US": "Perch Stripe Badge"
+      },
+      "descs": {
+        "zh-CN": "墨绿与金色竖纹排得一丝不苟，像河鲈自己审过稿。",
+        "en-US": "Green and gold stripes arranged with the exacting approval of a perch."
+      },
+      "titleNames": {
+        "zh-CN": "条纹鉴赏家",
+        "en-US": "Connoisseur of Stripes"
+      },
+      "playerMods": {
+        "fishing_control": 0.16
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_river_eel",
+      "itemId": "river_eel_fishing_memento",
+      "nameKey": "collectible.fishing_river_eel.name",
+      "descKey": "collectible.fishing_river_eel.desc",
+      "names": {
+        "zh-CN": "夜鳗盘月扣",
+        "en-US": "Mooncoil Eel Clasp"
+      },
+      "descs": {
+        "zh-CN": "银鳗绕着月石盘成一圈，怎么看都像准备趁夜溜走。",
+        "en-US": "A silver eel coils around moonstone, apparently plotting its nightly escape."
+      },
+      "titleNames": {
+        "zh-CN": "夜钓不收竿",
+        "en-US": "Never Reels In at Night"
+      },
+      "playerMods": {
+        "fishing_hooking": 0.2
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_glassback_darter",
+      "itemId": "glassback_darter_fishing_memento",
+      "nameKey": "collectible.fishing_glassback_darter.name",
+      "descKey": "collectible.fishing_glassback_darter.desc",
+      "names": {
+        "zh-CN": "璃背雨光棱",
+        "en-US": "Glassback Rain Prism"
+      },
+      "descs": {
+        "zh-CN": "透明鱼棱把一滴雨光分成细碎虹色，转眼又藏得无影无踪。",
+        "en-US": "A clear fish prism that splits one raindrop into a fleeting rainbow."
+      },
+      "titleNames": {
+        "zh-CN": "玻璃光拾荒者",
+        "en-US": "Scavenger of Glasslight"
+      },
+      "playerMods": {
+        "fishing_casting": 0.25
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_thunder_whisker",
+      "itemId": "thunder_whisker_fishing_memento",
+      "nameKey": "collectible.fishing_thunder_whisker.name",
+      "descKey": "collectible.fishing_thunder_whisker.desc",
+      "names": {
+        "zh-CN": "雷须听雷铃",
+        "en-US": "Thunderwhisker Bell"
+      },
+      "descs": {
+        "zh-CN": "两根蓝银长须护着一枚小铃，没打雷时也偶尔自己响。",
+        "en-US": "Twin blue-silver whiskers guard a bell that occasionally rings before thunder."
+      },
+      "titleNames": {
+        "zh-CN": "雷声下钩者",
+        "en-US": "Casts Beneath Thunder"
+      },
+      "playerMods": {
+        "fishing_power": 0.003
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_lake_trout",
+      "itemId": "lake_trout_fishing_memento",
+      "nameKey": "collectible.fishing_lake_trout.name",
+      "descKey": "collectible.fishing_lake_trout.desc",
+      "names": {
+        "zh-CN": "湖鳟冰匙章",
+        "en-US": "Icespoon Trout Medal"
+      },
+      "descs": {
+        "zh-CN": "冰蓝匙形章总是凉得恰到好处，像从深湖刚捞上来。",
+        "en-US": "An ice-blue spoon medal, always as cool as if lifted from deep water."
+      },
+      "titleNames": {
+        "zh-CN": "冰湖耐心派",
+        "en-US": "Disciple of Icy Patience"
+      },
+      "playerMods": {
+        "fishing_control": 0.2
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_arctic_char",
+      "itemId": "arctic_char_fishing_memento",
+      "nameKey": "collectible.fishing_arctic_char.name",
+      "descKey": "collectible.fishing_arctic_char.desc",
+      "names": {
+        "zh-CN": "红点霜珠",
+        "en-US": "Redspot Frost Bead"
+      },
+      "descs": {
+        "zh-CN": "霜白珠里浮着几点暖红，靠近耳边仿佛能听见冰层轻裂。",
+        "en-US": "Warm red flecks float in a frost-white bead that whispers of cracking ice."
+      },
+      "titleNames": {
+        "zh-CN": "寒气搬运工",
+        "en-US": "Courier of Cold Air"
+      },
+      "playerMods": {
+        "fishing_sensitivity": 0.16
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_burbot",
+      "itemId": "burbot_fishing_memento",
+      "nameKey": "collectible.fishing_burbot.name",
+      "descKey": "collectible.fishing_burbot.desc",
+      "names": {
+        "zh-CN": "江鳕夜灯钩",
+        "en-US": "Burbot Night-Lamp Hook"
+      },
+      "descs": {
+        "zh-CN": "深色鱼钩托着豆大冷光，专为那些不肯睡的河底夜晚。",
+        "en-US": "A dark hook cradles a cold pinprick of light for sleepless river nights."
+      },
+      "titleNames": {
+        "zh-CN": "深夜守底人",
+        "en-US": "Midnight Bottom Watch"
+      },
+      "playerMods": {
+        "fishing_hooking": 0.16
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_whitefish",
+      "itemId": "whitefish_fishing_memento",
+      "nameKey": "collectible.fishing_whitefish.name",
+      "descKey": "collectible.fishing_whitefish.desc",
+      "names": {
+        "zh-CN": "湖白鲑雪鳞",
+        "en-US": "Whitefish Snow Scale"
+      },
+      "descs": {
+        "zh-CN": "几片珠白薄鳞叠成小扇，迎光时像一捧没来得及化的雪。",
+        "en-US": "Pearl-white scales fan into a small handful of snow that never melts."
+      },
+      "titleNames": {
+        "zh-CN": "雪光寻鱼者",
+        "en-US": "Seeker by Snowlight"
+      },
+      "playerMods": {
+        "fishing_efficiency": 0.0015
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_northern_pike",
+      "itemId": "northern_pike_fishing_memento",
+      "nameKey": "collectible.fishing_northern_pike.name",
+      "descKey": "collectible.fishing_northern_pike.desc",
+      "names": {
+        "zh-CN": "狗鱼长吻夹",
+        "en-US": "Pike Longsnout Clip"
+      },
+      "descs": {
+        "zh-CN": "长吻金属夹咬合得干脆，多少保留了白斑狗鱼的坏脾气。",
+        "en-US": "A longsnout clip with a decisive bite and much of a pike's temperament."
+      },
+      "titleNames": {
+        "zh-CN": "狗鱼劝退员",
+        "en-US": "Official Pike Discourager"
+      },
+      "playerMods": {
+        "fishing_power": 0.0025
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_grayling",
+      "itemId": "grayling_fishing_memento",
+      "nameKey": "collectible.fishing_grayling.name",
+      "descKey": "collectible.fishing_grayling.desc",
+      "names": {
+        "zh-CN": "茴鱼旗鳍羽",
+        "en-US": "Grayling Sail Feather"
+      },
+      "descs": {
+        "zh-CN": "轻羽染成高高的旗鳍纹样，抛出去时连风都像有了方向。",
+        "en-US": "A light feather dyed like a tall sail fin, lending direction even to wind."
+      },
+      "titleNames": {
+        "zh-CN": "旗鳍追风客",
+        "en-US": "Sailfin Wind Chaser"
+      },
+      "playerMods": {
+        "fishing_casting": 0.16
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_moonmirror_carp",
+      "itemId": "moonmirror_carp_fishing_memento",
+      "nameKey": "collectible.fishing_moonmirror_carp.name",
+      "descKey": "collectible.fishing_moonmirror_carp.desc",
+      "names": {
+        "zh-CN": "月镜鲤影盘",
+        "en-US": "Moonmirror Koi Pendant"
+      },
+      "descs": {
+        "zh-CN": "月白镜盘里总有一尾鲤影慢慢游过，却从不肯停在正中。",
+        "en-US": "A koi shadow circles a moon-white mirror, never pausing at its center."
+      },
+      "titleNames": {
+        "zh-CN": "月中遛鱼人",
+        "en-US": "Walking Fish Through Moonlight"
+      },
+      "playerMods": {
+        "fishing_sensitivity": 0.3
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    },
+    {
+      "id": "collectible_fishing_frostveil_sturgeon",
+      "itemId": "frostveil_sturgeon_fishing_memento",
+      "nameKey": "collectible.fishing_frostveil_sturgeon.name",
+      "descKey": "collectible.fishing_frostveil_sturgeon.desc",
+      "names": {
+        "zh-CN": "霜幕鲟骨冠",
+        "en-US": "Frostveil Scute Crown"
+      },
+      "descs": {
+        "zh-CN": "霜银骨片排成沉稳小冠，握住时仿佛有一艘船在冰下转身。",
+        "en-US": "Frost-silver scutes form a quiet crown, heavy as a ship turning below ice."
+      },
+      "titleNames": {
+        "zh-CN": "霜幕拖船夫",
+        "en-US": "Tugboat of the Frostveil"
+      },
+      "playerMods": {
+        "fishing_control": 0.3
+      },
+      "kittyMods": {},
+      "rarity": "legendary",
+      "categoryId": "fishing",
+      "disabled": false
+    }
+  ]
+}

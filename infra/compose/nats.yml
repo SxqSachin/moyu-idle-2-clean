@@ -1,0 +1,18 @@
+services:
+  nats:
+    image: ${NATS_IMAGE:-docker.m.daocloud.io/library/nats:2.10}
+    container_name: game-nats
+    command:
+      - --name
+      - ${NATS_NAME:-game-nats-1}
+      - --http_port
+      - "8222"
+      - -js
+      - --store_dir
+      - /data/jetstream
+    ports:
+      - "${NATS_BIND_IP:-0.0.0.0}:${NATS_PORT:-4222}:4222"
+      - "${NATS_MONITOR_BIND_IP:-0.0.0.0}:${NATS_MONITOR_PORT:-8222}:8222"
+    volumes:
+      - ${NATS_DATA_DIR:-/data/game/nats}:/data
+    restart: unless-stopped

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>技能表工具</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <div>
+          <h1>技能表工具</h1>
+          <p>编辑 <code>combat.xlsx</code> 的 <code>skills</code> sheet，直接复制表格到 Excel。</p>
+        </div>
+        <div class="hero-actions">
+          <button id="copy-btn" class="primary">复制表格</button>
+        </div>
+      </header>
+
+      <section class="panel toolbar">
+        <label>
+          模板
+          <select id="template-select"></select>
+        </label>
+        <button id="add-row-btn">新增一行</button>
+        <button id="import-json-btn">导入 JSON</button>
+        <button id="import-btn">导入表格</button>
+        <button id="format-json-btn">格式化 JSON</button>
+        <button id="reset-btn">重置示例</button>
+        <span id="status" class="status">准备就绪</span>
+      </section>
+
+      <section class="panel note">
+        <strong>用法</strong>
+        <span>先选模板并编辑表格，再点“复制表格”，直接粘贴到 Excel 的 <code>skills</code> sheet。</span>
+      </section>
+
+      <section class="panel table-wrap">
+        <table id="skill-table">
+          <thead>
+            <tr id="table-head"></tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <div id="editor-modal" class="modal hidden" aria-hidden="true">
+      <div class="modal-backdrop" data-action="close-editor"></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="editor-title">
+        <header class="modal-header">
+          <h2 id="editor-title">编辑器</h2>
+          <button type="button" class="icon-btn" data-action="close-editor" id="editor-close-btn">✕</button>
+        </header>
+        <div id="editor-content" class="modal-body"></div>
+        <footer class="modal-footer">
+          <button type="button" data-action="close-editor">取消</button>
+          <button type="button" class="primary" id="editor-save-btn" data-action="save-editor">保存</button>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+services:
+  action-worker:
+    image: ${ACTION_WORKER_IMAGE:-mysecondwebgame-action-worker:latest}
+    container_name: game-action-worker
+    build:
+      context: ../../server
+      dockerfile: Dockerfile.action-worker
+    environment:
+      APP_ENV: ${APP_ENV:-production}
+      DATABASE_URL: ${DATABASE_URL:?DATABASE_URL is required}
+      REDIS_ADDR: ${REDIS_ADDR:?REDIS_ADDR is required}
+      REDIS_PASSWORD: ${REDIS_PASSWORD:-}
+      REDIS_DB: ${REDIS_DB:-0}
+      NATS_URL: ${NATS_URL:?NATS_URL is required}
+      MQ_TOPIC_PREFIX: ${MQ_TOPIC_PREFIX:-game}
+      ORDINARY_SETTLEMENT_ENABLED: ${ORDINARY_SETTLEMENT_ENABLED:-false}
+      ACTION_WORKER_BATCH_SIZE: ${ACTION_WORKER_BATCH_SIZE:-8}
+      ACTION_WORKER_USER_TIMEOUT_MS: ${ACTION_WORKER_USER_TIMEOUT_MS:-2000}
+      ACTION_WORKER_POLL_MS: ${ACTION_WORKER_POLL_MS:-200}
+      GAME_DATA_PATH: /app/game-data/generated/game-data.json
+      GLOBAL_CONFIG_PATH: /app/game-data/game-config/source/global-config.json
+      SHARED_GLOBAL_CONFIG_PATH: /app/game-data/game-config/source/shared-global-config.json
+      JWT_SECRET: ${JWT_SECRET:?JWT_SECRET is required}
+      WS_MESSAGE_KEY: ${WS_MESSAGE_KEY:-}
+    volumes:
+      - ../../packages:/app/game-data
+    restart: unless-stopped

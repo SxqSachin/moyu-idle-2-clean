@@ -1,0 +1,117 @@
+- generic [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: 选择战斗区域
+        - button "刷新房间" [ref=e9] [cursor=pointer]
+      - generic [ref=e14] [cursor=pointer]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: 星夜游乐园
+          - generic [ref=e18]: "普通敌人数: 4~5"
+          - generic [ref=e19]: "进入时长: 15s"
+          - generic [ref=e20]: "最大组队人数: 4"
+        - generic [ref=e21]:
+          - button "详情" [ref=e22]
+          - button "创建房间" [ref=e24]
+  - dialog "星夜游乐园" [ref=e27]:
+    - generic [active] [ref=e28]:
+      - banner [ref=e29]:
+        - heading "星夜游乐园" [level=2] [ref=e30]
+        - button "Close this dialog" [ref=e31] [cursor=pointer]
+      - generic [ref=e36]:
+        - paragraph [ref=e37]: 演员躲在可驱散的帷幕后，挡住直接伤害并在正式行动后退一幕；持续伤害和伤害转移可绕过，正常落幕会暴露25%易伤，攻幕者则被聚光。每4波失控加演，每8波巡游王压轴；携鬼屋夜场券后，第17波起每8波追加午夜检票官。
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - generic [ref=e40]: 普通敌人数
+            - generic [ref=e41]: 4~5
+          - generic [ref=e42]:
+            - generic [ref=e43]: 每额外玩家增怪
+            - generic [ref=e44]: 1~2
+          - generic [ref=e45]:
+            - generic [ref=e46]: 进入时长
+            - generic [ref=e47]: 15s
+          - generic [ref=e48]:
+            - generic [ref=e49]: 最大组队人数
+            - generic [ref=e50]: "4"
+        - generic [ref=e51]:
+          - generic [ref=e52]: 普通敌人
+          - generic [ref=e53]:
+            - generic [ref=e54] [cursor=pointer]: 星尘鼠
+            - generic [ref=e56] [cursor=pointer]: 木马猫
+            - generic [ref=e58] [cursor=pointer]: 糖果小丑
+            - generic [ref=e60] [cursor=pointer]: 毛绒守卫
+            - generic [ref=e62] [cursor=pointer]: 星光医猫
+            - generic [ref=e64] [cursor=pointer]: 幽骑猫
+        - generic [ref=e66]:
+          - generic [ref=e67]: 特殊敌人
+          - generic [ref=e68]:
+            - generic [ref=e69] [cursor=pointer]: 糖果小丑
+            - generic [ref=e71] [cursor=pointer]: 木马猫
+            - generic [ref=e73] [cursor=pointer]: 幽骑猫
+            - generic [ref=e75] [cursor=pointer]: 巡游王猫
+        - generic [ref=e77]:
+          - generic [ref=e78]: 特殊波次
+          - generic [ref=e79]: "-"
+        - generic [ref=e81]:
+          - generic [ref=e82]: 周期演出
+          - generic [ref=e83]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - generic [ref=e86]: 王者压轴
+                - generic [ref=e87]: 每 8 波
+                - generic [ref=e88]: 登场 1~1 个
+              - generic [ref=e89]: 每8波追加1只三幕巡游王猫；与失控加演重合时取代它。
+              - generic [ref=e91]:
+                - generic [ref=e92] [cursor=pointer]: 巡游王猫
+                - generic [ref=e94]: 权重 1
+            - generic [ref=e95]:
+              - generic [ref=e96]:
+                - generic [ref=e97]: 失控加演
+                - generic [ref=e98]: 每 4 波
+                - generic [ref=e99]: 登场 1~3 个
+              - generic [ref=e100]: 每4波追加1~3只失控演员：糖果小丑40%、木马猫30%、幽骑猫30%；幽骑猫带两幕帷幕。
+              - generic [ref=e101]:
+                - generic [ref=e102]:
+                  - generic [ref=e103] [cursor=pointer]: 糖果小丑
+                  - generic [ref=e105]: 权重 40
+                - generic [ref=e106]:
+                  - generic [ref=e107] [cursor=pointer]: 木马猫
+                  - generic [ref=e109]: 权重 30
+                - generic [ref=e110]:
+                  - generic [ref=e111] [cursor=pointer]: 幽骑猫
+                  - generic [ref=e113]: 权重 30
+        - generic [ref=e114]:
+          - generic [ref=e115]: 道具触发的隐藏遭遇
+          - generic [ref=e116]:
+            - generic [ref=e117]:
+              - generic [ref=e118]:
+                - generic [ref=e119]: 触发条件
+                - generic [ref=e122]:
+                  - img "午夜请柬" [ref=e123]
+                  - generic [ref=e124]: 午夜请柬
+              - generic [ref=e125]:
+                - generic [ref=e126]: 召唤目标
+                - generic [ref=e127] [cursor=pointer]: 无面替演猫
+              - generic [ref=e129]:
+                - generic [ref=e130]: "最早触发波次: 17"
+                - generic [ref=e132]: "间隔波次: 8"
+                - generic [ref=e134]: "每波触发概率: 100%"
+            - generic [ref=e136]:
+              - generic [ref=e137]:
+                - generic [ref=e138]: 触发条件
+                - generic [ref=e141]:
+                  - img "鬼屋夜场券" [ref=e142]
+                  - generic [ref=e143]: 鬼屋夜场券
+              - generic [ref=e144]:
+                - generic [ref=e145]: 召唤目标
+                - generic [ref=e146] [cursor=pointer]: 午夜检票官
+              - generic [ref=e148]:
+                - generic [ref=e149]: "最早触发波次: 17"
+                - generic [ref=e151]: "间隔波次: 8"
+                - generic [ref=e153]: "每波触发概率: 100%"
+        - generic [ref=e155]:
+          - generic [ref=e156]: 特殊阵容
+          - generic [ref=e157]: "-"
+        - generic [ref=e158]:
+          - generic [ref=e159]: 进入消耗
+          - generic [ref=e160]: "-"

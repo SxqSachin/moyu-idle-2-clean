@@ -1,0 +1,2 @@
+ALTER TABLE battle_rooms
+  ADD COLUMN IF NOT EXISTS disable_entry_round BOOLEAN NOT NULL DEFAULT FALSE;

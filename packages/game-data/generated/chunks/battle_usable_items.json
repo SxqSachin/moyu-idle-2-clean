@@ -1,0 +1,1170 @@
+{
+  "version": 1,
+  "battle_usable_items": [
+    {
+      "id": "battle_item_morning_egg",
+      "itemId": "battle_morning_egg",
+      "cooldownTurns": 2,
+      "effects": [
+        {
+          "kind": "heal",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "damageType": "magical",
+          "amountFormula": {
+            "baseAdd": 70,
+            "terms": []
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_sweet_milk",
+      "itemId": "battle_sweet_milk",
+      "cooldownTurns": 2,
+      "effects": [
+        {
+          "kind": "resource",
+          "resource": "mp",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "amountFormula": {
+            "baseAdd": 34,
+            "terms": []
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_silverleaf_custard",
+      "itemId": "battle_silverleaf_custard",
+      "cooldownTurns": 2,
+      "effects": [
+        {
+          "kind": "heal",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "damageType": "magical",
+          "amountFormula": {
+            "baseAdd": 130,
+            "terms": []
+          }
+        },
+        {
+          "kind": "resource",
+          "resource": "mp",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "amountFormula": {
+            "baseAdd": 38,
+            "terms": []
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_silkweed_custard",
+      "itemId": "battle_silkweed_custard",
+      "cooldownTurns": 2,
+      "effects": [
+        {
+          "kind": "heal",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "damageType": "magical",
+          "amountFormula": {
+            "baseAdd": 210,
+            "terms": []
+          }
+        },
+        {
+          "kind": "resource",
+          "resource": "mp",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "amountFormula": {
+            "baseAdd": 58,
+            "terms": []
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_sunlit_omelette",
+      "itemId": "battle_sunlit_omelette",
+      "cooldownTurns": 3,
+      "effects": [
+        {
+          "kind": "heal",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "damageType": "magical",
+          "amountFormula": {
+            "baseAdd": 340,
+            "terms": []
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_moon_pudding",
+      "itemId": "battle_moon_pudding",
+      "cooldownTurns": 3,
+      "effects": [
+        {
+          "kind": "heal",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "damageType": "magical",
+          "amountFormula": {
+            "baseAdd": 430,
+            "terms": []
+          }
+        },
+        {
+          "kind": "resource",
+          "resource": "mp",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "amountFormula": {
+            "baseAdd": 110,
+            "terms": []
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "trigger_wolf_king_photo",
+      "itemId": "wolf_king_photo",
+      "isTrigger": true,
+      "dungeonIds": [
+        "base_1"
+      ],
+      "spawnEnemyIds": [
+        "wolf_king_001"
+      ],
+      "minWave": 16,
+      "perWaveChance": 1,
+      "cooldownTurns": 0,
+      "effects": [],
+      "disabled": false,
+      "intervalWaves": 6
+    },
+    {
+      "id": "trigger_super_sweet_berry",
+      "itemId": "super_sweet_berry",
+      "isTrigger": true,
+      "dungeonIds": [
+        "base_1"
+      ],
+      "spawnEnemyIds": [
+        "super_berry_bird_001"
+      ],
+      "minWave": 16,
+      "perWaveChance": 1,
+      "cooldownTurns": 0,
+      "effects": [],
+      "disabled": false,
+      "intervalWaves": 8
+    },
+    {
+      "id": "trigger_shadow_assassin_cat_summon_token",
+      "itemId": "shadow_assassin_cat_summon_token",
+      "isTrigger": true,
+      "dungeonIds": [
+        "base_4"
+      ],
+      "spawnEnemyIds": [
+        "shadow_assassin_cat_001"
+      ],
+      "minWave": 16,
+      "perWaveChance": 1,
+      "cooldownTurns": 0,
+      "effects": [],
+      "disabled": false,
+      "intervalWaves": 6
+    },
+    {
+      "id": "trigger_glacial_phantom_summon_token",
+      "itemId": "glacial_phantom_summon_token",
+      "isTrigger": true,
+      "dungeonIds": [
+        "base_3"
+      ],
+      "spawnEnemyIds": [
+        "glacial_phantom_001"
+      ],
+      "minWave": 16,
+      "perWaveChance": 1,
+      "cooldownTurns": 0,
+      "effects": [],
+      "disabled": false,
+      "intervalWaves": 8
+    },
+    {
+      "id": "battle_item_mending_broth",
+      "itemId": "battle_mending_broth",
+      "cooldownTurns": 23,
+      "effects": [
+        {
+          "kind": "status",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "statusPayload": {
+            "statusIds": [
+              "food_mending_broth_regen"
+            ],
+            "durationBaseTurns": 24,
+            "durationPerSkillLevelTurns": 0,
+            "durationFormula": {
+              "baseAdd": 0,
+              "terms": []
+            }
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_mana_tea",
+      "itemId": "battle_mana_tea",
+      "cooldownTurns": 23,
+      "effects": [
+        {
+          "kind": "status",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "statusPayload": {
+            "statusIds": [
+              "food_mana_tea_regen"
+            ],
+            "durationBaseTurns": 24,
+            "durationPerSkillLevelTurns": 0,
+            "durationFormula": {
+              "baseAdd": 0,
+              "terms": []
+            }
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_moondew_stew",
+      "itemId": "battle_moondew_stew",
+      "cooldownTurns": 23,
+      "effects": [
+        {
+          "kind": "status",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "statusPayload": {
+            "statusIds": [
+              "food_moondew_stew_regen"
+            ],
+            "durationBaseTurns": 24,
+            "durationPerSkillLevelTurns": 0,
+            "durationFormula": {
+              "baseAdd": 0,
+              "terms": []
+            }
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_training_ration",
+      "itemId": "battle_training_ration",
+      "cooldownTurns": 79,
+      "effects": [
+        {
+          "kind": "heal",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "damageType": "magical",
+          "amountFormula": {
+            "baseAdd": 180,
+            "terms": []
+          }
+        },
+        {
+          "kind": "status",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "statusPayload": {
+            "statusIds": [
+              "food_training_ration_focus"
+            ],
+            "durationBaseTurns": 80,
+            "durationPerSkillLevelTurns": 0,
+            "durationFormula": {
+              "baseAdd": 0,
+              "terms": []
+            }
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_lucky_feast",
+      "itemId": "battle_lucky_feast",
+      "cooldownTurns": 79,
+      "effects": [
+        {
+          "kind": "heal",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "damageType": "magical",
+          "amountFormula": {
+            "baseAdd": 220,
+            "terms": []
+          }
+        },
+        {
+          "kind": "resource",
+          "resource": "mp",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "amountFormula": {
+            "baseAdd": 55,
+            "terms": []
+          }
+        },
+        {
+          "kind": "status",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "statusPayload": {
+            "statusIds": [
+              "food_lucky_feast_fortune"
+            ],
+            "durationBaseTurns": 80,
+            "durationPerSkillLevelTurns": 0,
+            "durationFormula": {
+              "baseAdd": 0,
+              "terms": []
+            }
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_mirror_paw_shield_vial",
+      "itemId": "battle_mirror_paw_shield_vial",
+      "cooldownTurns": 2,
+      "effects": [
+        {
+          "kind": "status",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "statusPayload": {
+            "statusIds": [
+              "mirror_paw_guard"
+            ],
+            "durationBaseTurns": 5,
+            "durationPerSkillLevelTurns": 0,
+            "durationFormula": {
+              "baseAdd": 0,
+              "terms": []
+            }
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_claw_venom_flask",
+      "itemId": "battle_claw_venom_flask",
+      "cooldownTurns": 2,
+      "effects": [
+        {
+          "kind": "status",
+          "targeting": {
+            "targetPositions": [
+              "vanguard",
+              "midguard",
+              "rearguard"
+            ],
+            "secondarySeek": "random_alive",
+            "targetScope": "enemy",
+            "selectRule": "random",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": false,
+            "targetCount": {
+              "base": 3,
+              "formula": [],
+              "max": 3
+            }
+          },
+          "statusPayload": {
+            "statusIds": [
+              "consumable_claw_venom"
+            ],
+            "durationBaseTurns": 5,
+            "durationPerSkillLevelTurns": 0,
+            "durationFormula": {
+              "baseAdd": 0,
+              "terms": []
+            }
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_furfire_broth",
+      "itemId": "battle_furfire_broth",
+      "cooldownTurns": 23,
+      "effects": [
+        {
+          "kind": "status",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "statusPayload": {
+            "statusIds": [
+              "food_furfire_broth_guard"
+            ],
+            "durationBaseTurns": 24,
+            "durationPerSkillLevelTurns": 0,
+            "durationFormula": {
+              "baseAdd": 0,
+              "terms": []
+            }
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_mosslight_breach_soup",
+      "itemId": "battle_mosslight_breach_soup",
+      "cooldownTurns": 23,
+      "effects": [
+        {
+          "kind": "status",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "statusPayload": {
+            "statusIds": [
+              "food_mosslight_breach_soup"
+            ],
+            "durationBaseTurns": 24,
+            "durationPerSkillLevelTurns": 0,
+            "durationFormula": {
+              "baseAdd": 0,
+              "terms": []
+            }
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_snowseal_swift_soup",
+      "itemId": "battle_snowseal_swift_soup",
+      "cooldownTurns": 23,
+      "effects": [
+        {
+          "kind": "status",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "statusPayload": {
+            "statusIds": [
+              "food_snowseal_swift_soup"
+            ],
+            "durationBaseTurns": 24,
+            "durationPerSkillLevelTurns": 0,
+            "durationFormula": {
+              "baseAdd": 0,
+              "terms": []
+            }
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_shadowmoon_pudding",
+      "itemId": "battle_shadowmoon_pudding",
+      "cooldownTurns": 23,
+      "effects": [
+        {
+          "kind": "status",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "statusPayload": {
+            "statusIds": [
+              "food_shadowmoon_pudding"
+            ],
+            "durationBaseTurns": 24,
+            "durationPerSkillLevelTurns": 0,
+            "durationFormula": {
+              "baseAdd": 0,
+              "terms": []
+            }
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_holy_incense_jelly",
+      "itemId": "battle_holy_incense_jelly",
+      "cooldownTurns": 23,
+      "effects": [
+        {
+          "kind": "status",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "statusPayload": {
+            "statusIds": [
+              "food_holy_incense_jelly"
+            ],
+            "durationBaseTurns": 24,
+            "durationPerSkillLevelTurns": 0,
+            "durationFormula": {
+              "baseAdd": 0,
+              "terms": []
+            }
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_silent_whisker_plate",
+      "itemId": "battle_silent_whisker_plate",
+      "cooldownTurns": 23,
+      "effects": [
+        {
+          "kind": "status",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 0
+            }
+          },
+          "statusPayload": {
+            "statusIds": [
+              "food_silent_whisker_plate"
+            ],
+            "durationBaseTurns": 24,
+            "durationPerSkillLevelTurns": 0,
+            "durationFormula": {
+              "baseAdd": 0,
+              "terms": []
+            }
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "trigger_vow_eater_incense_bundle",
+      "itemId": "vow_eater_incense_bundle",
+      "isTrigger": true,
+      "dungeonIds": [
+        "holy_cat_temple_001"
+      ],
+      "spawnEnemyIds": [
+        "vow_eater_001"
+      ],
+      "minWave": 16,
+      "perWaveChance": 1,
+      "cooldownTurns": 0,
+      "effects": [],
+      "disabled": false,
+      "intervalWaves": 8
+    },
+    {
+      "id": "battle_item_expired_candy_salute",
+      "itemId": "expired_candy_salute",
+      "cooldownTurns": 8,
+      "effects": [
+        {
+          "kind": "damage",
+          "targeting": {
+            "targetPositions": [
+              "vanguard",
+              "midguard",
+              "rearguard"
+            ],
+            "secondarySeek": "random_alive",
+            "targetScope": "enemy",
+            "selectRule": "random",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": false,
+            "targetCount": {
+              "base": 2,
+              "formula": [],
+              "max": 2
+            }
+          },
+          "damageType": "magical",
+          "amountFormula": {
+            "baseAdd": 180,
+            "terms": [
+              {
+                "attrKey": "physics_damage",
+                "coefficient": 0.25,
+                "perSkillLevel": 0
+              },
+              {
+                "attrKey": "magical_damage",
+                "coefficient": 0.25,
+                "perSkillLevel": 0
+              }
+            ]
+          }
+        },
+        {
+          "kind": "weighted_random_per_target",
+          "reuseTargetsFromEffect": 1,
+          "targeting": {
+            "targetPositions": [
+              "vanguard",
+              "midguard",
+              "rearguard"
+            ],
+            "secondarySeek": "random_alive",
+            "targetScope": "enemy",
+            "selectRule": "random",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": false,
+            "targetCount": {
+              "base": 2,
+              "formula": [],
+              "max": 2
+            }
+          },
+          "applyChanceBase": 0.45,
+          "applyChanceMin": 0.45,
+          "applyChanceMax": 0.45,
+          "choices": [
+            {
+              "id": "poison",
+              "weight": 1,
+              "statusId": "candy_poison",
+              "durationTurns": 2
+            },
+            {
+              "id": "frozen",
+              "weight": 1,
+              "statusId": "candy_frozen",
+              "durationTurns": 1
+            },
+            {
+              "id": "silence",
+              "weight": 1,
+              "statusId": "candy_silence",
+              "durationTurns": 1
+            },
+            {
+              "id": "burning",
+              "weight": 1,
+              "statusId": "candy_burning",
+              "durationTurns": 2
+            }
+          ]
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_plush_stunt_double_box",
+      "itemId": "plush_stunt_double_box",
+      "cooldownTurns": 12,
+      "effects": [
+        {
+          "kind": "summon",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 1
+            }
+          },
+          "summonPayload": {
+            "unitId": "plush_stunt_double_001",
+            "side": "source",
+            "countFormula": {
+              "baseAdd": 1,
+              "terms": []
+            },
+            "durationFormula": {
+              "baseAdd": 3,
+              "terms": []
+            },
+            "durationTurns": 3,
+            "maxCountPerUnit": 1,
+            "persistAcrossBattles": false,
+            "onCasterDeath": "despawn_immediately",
+            "onCapOverflow": "replace_oldest",
+            "onDispel": "despawn_immediately",
+            "onDurationEnd": "despawn_immediately",
+            "statsFormula": {
+              "hp": {
+                "baseAdd": -1,
+                "terms": [
+                  {
+                    "attrKey": "max_hp",
+                    "coefficient": 0.4,
+                    "perSkillLevel": 0
+                  }
+                ]
+              },
+              "physics_defence": {
+                "baseAdd": 0,
+                "terms": [
+                  {
+                    "attrKey": "physics_defence",
+                    "coefficient": 0.2,
+                    "perSkillLevel": 0
+                  }
+                ]
+              },
+              "magical_defence": {
+                "baseAdd": 0,
+                "terms": [
+                  {
+                    "attrKey": "magical_defence",
+                    "coefficient": 0.2,
+                    "perSkillLevel": 0
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_mirror_house_reflection_candy",
+      "itemId": "mirror_house_reflection_candy",
+      "cooldownTurns": 16,
+      "effects": [
+        {
+          "kind": "status",
+          "targeting": {
+            "targetPositions": [
+              "vanguard",
+              "midguard",
+              "rearguard"
+            ],
+            "secondarySeek": "random_alive",
+            "targetScope": "enemy",
+            "selectRule": "random",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": false,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 1
+            }
+          },
+          "statusPayload": {
+            "statusIds": [
+              "mirror_house_reversal"
+            ],
+            "durationBaseTurns": 1,
+            "durationPerSkillLevelTurns": 0,
+            "applyChanceBase": 0.45,
+            "applyChanceMin": 0.45,
+            "applyChanceMax": 0.45
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "battle_item_reverse_carousel_spring",
+      "itemId": "reverse_carousel_spring",
+      "cooldownTurns": 20,
+      "effects": [
+        {
+          "kind": "status",
+          "targeting": {
+            "targetPositions": [
+              "vanguard",
+              "midguard",
+              "rearguard"
+            ],
+            "secondarySeek": "none",
+            "targetScope": "ally",
+            "selectRule": "first",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 999,
+              "formula": [],
+              "max": 999
+            }
+          },
+          "statusPayload": {
+            "statusIds": [
+              "carousel_reverse_position"
+            ],
+            "durationBaseTurns": 2,
+            "durationPerSkillLevelTurns": 0
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "trigger_haunted_after_hours_ticket",
+      "itemId": "haunted_after_hours_ticket",
+      "isTrigger": true,
+      "dungeonIds": [
+        "amusement_park_001"
+      ],
+      "spawnEnemyIds": [
+        "midnight_ticket_collector_001"
+      ],
+      "minWave": 17,
+      "perWaveChance": 1,
+      "cooldownTurns": 0,
+      "effects": [],
+      "disabled": false,
+      "intervalWaves": 8,
+      "partyTriggerGroup": "amusement_after_hours"
+    },
+    {
+      "id": "trigger_faceless_understudy_invitation",
+      "itemId": "faceless_understudy_invitation",
+      "isTrigger": true,
+      "dungeonIds": [
+        "amusement_park_001"
+      ],
+      "spawnEnemyIds": [
+        "faceless_understudy_001"
+      ],
+      "minWave": 17,
+      "perWaveChance": 1,
+      "cooldownTurns": 0,
+      "effects": [],
+      "disabled": false,
+      "intervalWaves": 8,
+      "partyTriggerGroup": "amusement_faceless_understudy"
+    },
+    {
+      "id": "battle_item_curse_lure_talisman",
+      "itemId": "curse_lure_talisman",
+      "cooldownTurns": 5,
+      "effects": [
+        {
+          "kind": "status",
+          "targeting": {
+            "targetPositions": [],
+            "secondarySeek": "none",
+            "targetScope": "self",
+            "selectRule": "self",
+            "selectAttrKey": "",
+            "fallbackSelfIfEmpty": true,
+            "targetCount": {
+              "base": 1,
+              "formula": [],
+              "max": 1
+            }
+          },
+          "statusPayload": {
+            "statusIds": [
+              "curse_lure_enemy_refresh"
+            ],
+            "durationBaseTurns": 5,
+            "durationPerSkillLevelTurns": 0,
+            "durationFormula": {
+              "baseAdd": 0,
+              "terms": []
+            },
+            "applyChanceBase": 1,
+            "applyChancePerSkillLevel": 0,
+            "applyChanceFormula": {
+              "baseAdd": 0,
+              "terms": []
+            },
+            "applyChanceMin": 1,
+            "applyChanceMax": 1
+          }
+        }
+      ],
+      "disabled": false
+    }
+  ]
+}

@@ -1,0 +1,4370 @@
+{
+  "version": 1,
+  "buff_effects": [
+    {
+      "id": "rage_power_while_active",
+      "buffId": "rage_power",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "strength",
+          "value": 3,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": 0.7
+        },
+        {
+          "kind": "add_stat_percent",
+          "attr": "crit_chance",
+          "value": 0.1,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": 0.006
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "regen_aura_on_turn_end",
+      "buffId": "regen_aura",
+      "trigger": "on_turn_end",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "heal",
+          "value": 10
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "last_stand_guard_reduce_damage",
+      "buffId": "last_stand_guard",
+      "trigger": "on_before_take_damage",
+      "priority": 10,
+      "conditions": [
+        {
+          "kind": "self_hp_percent_lte",
+          "value": 0.5
+        }
+      ],
+      "effects": [
+        {
+          "kind": "reduce_damage_percent",
+          "value": 0.1
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "counter_focus_before_deal",
+      "buffId": "counter_focus",
+      "trigger": "on_before_deal_damage",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_damage_percent",
+          "value": 0.15,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": 0.012
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "counter_focus_after_deal",
+      "buffId": "counter_focus",
+      "trigger": "on_after_deal_damage",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "resource",
+          "resource": "mp",
+          "value": 3,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": 0.3
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "armor_break_while_active",
+      "buffId": "armor_break",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_defence",
+          "value": -2,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": -0.8
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "blessing_while_active",
+      "buffId": "blessing",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "strength",
+          "value": 3
+        },
+        {
+          "kind": "add_stat",
+          "attr": "dexterity",
+          "value": 3
+        },
+        {
+          "kind": "add_stat",
+          "attr": "intelligence",
+          "value": 3
+        },
+        {
+          "kind": "add_stat",
+          "attr": "stamina",
+          "value": 3
+        },
+        {
+          "kind": "add_stat",
+          "attr": "luck",
+          "value": 3
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "formation_frontline_guard_while_active",
+      "buffId": "formation_frontline_guard",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": 0.05
+        },
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -5
+        },
+        {
+          "kind": "add_stat",
+          "attr": "stamina",
+          "value": 5
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": 0.05
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "formation_midline_speed_while_active",
+      "buffId": "formation_midline_speed",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": 10
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "formation_rearline_amplify_while_active",
+      "buffId": "formation_rearline_amplify",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_amplification",
+          "value": 0.05
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_amplification",
+          "value": 0.05
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "stealth_untargetable_while_active",
+      "buffId": "stealth",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "untargetable_by_enemy"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "panic_treat_all_as_enemy_while_active",
+      "buffId": "panic",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "treat_all_as_enemy"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "camouflage_targeting_remap_while_active",
+      "buffId": "camouflage",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "camouflage_targeting_remap"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "taunt_prefer_as_enemy_target_while_active",
+      "buffId": "taunt",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "prefer_as_enemy_target"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "ice_debt_while_active",
+      "buffId": "ice_debt",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -16
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": -0.04
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": -0.02
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "debt_collector_before_deal",
+      "buffId": "debt_collector",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_amplification",
+          "value": 0.1
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "snowseal_guard_before_take",
+      "buffId": "snowseal_guard",
+      "trigger": "while_active",
+      "priority": 5,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": 0.1
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "base4_shadow_mark_while_active",
+      "buffId": "base4_shadow_mark",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -10,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": -1
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": -0.035,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": -0.004
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": -0.035,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": -0.004
+        },
+        {
+          "kind": "marked_target"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "base4_veilstep_while_active",
+      "buffId": "base4_veilstep",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": 18,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": 1.4
+        },
+        {
+          "kind": "add_stat",
+          "attr": "crit_chance",
+          "value": 0.06,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": 0.006
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "base4_shadowcleaver_stance_while_active",
+      "buffId": "base4_shadowcleaver_stance",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_amplification",
+          "value": 0.12
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": 0.08
+        },
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -12
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "base4_umbral_focus_buff_while_active",
+      "buffId": "base4_umbral_focus_buff",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_amplification",
+          "value": 0.1,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": 0.01
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magicial_flat_defense_penetration",
+          "value": 12,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": 1.4
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "frost_slow_while_active",
+      "buffId": "frost_slow",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -22,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": -1.2
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": -0.1,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": -0.008
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "frozen_action_suppressed_while_active",
+      "buffId": "frozen_action_suppressed",
+      "trigger": "while_active",
+      "priority": 20,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "turn_action_suppressed"
+        },
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -40
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "base4_shadow_bind_while_active",
+      "buffId": "base4_shadow_bind",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -16
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": -0.025
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": -0.025
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "base4_nightfall_curse_while_active",
+      "buffId": "base4_nightfall_curse",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -8
+        },
+        {
+          "kind": "add_stat",
+          "attr": "crit_chance",
+          "value": -0.05
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": -0.04
+        },
+        {
+          "kind": "damage",
+          "damageType": "physical",
+          "value": 0,
+          "amountFormula": {
+            "baseAdd": 15,
+            "terms": [
+              {
+                "attrKey": "dexterity",
+                "coefficient": 0.5,
+                "perSkillLevel": 0
+              }
+            ]
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "boss_root_snare_while_active",
+      "buffId": "boss_root_snare",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -20
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": -0.025
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "boss_arcane_exposure_while_active",
+      "buffId": "boss_arcane_exposure",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": -0.06
+        },
+        {
+          "kind": "add_stat",
+          "attr": "mp_regen",
+          "value": -1
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "boss_scorched_armor_while_active",
+      "buffId": "boss_scorched_armor",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": -0.04
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": -0.04
+        },
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -4
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_regen_turn_end",
+      "buffId": "holy_cat_regen",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage",
+          "value": 12
+        },
+        {
+          "kind": "add_damage_percent",
+          "value": 0.03
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_sanctuary_guard_while_active",
+      "buffId": "holy_cat_sanctuary_guard",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_defence",
+          "value": 28,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": 2.2
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_defence",
+          "value": 24,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": 1.8
+        },
+        {
+          "kind": "reduce_damage_percent",
+          "value": 0.08,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": 0.006
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_blessing_while_active",
+      "buffId": "holy_cat_blessing",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "magical_defence",
+          "value": 34
+        },
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": 4
+        },
+        {
+          "kind": "avoid_as_ally_target"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_focus_light_while_active",
+      "buffId": "holy_cat_focus_light",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage",
+          "value": 30
+        },
+        {
+          "kind": "add_damage_percent",
+          "value": 0.07
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_light_exposure_while_active",
+      "buffId": "holy_cat_light_exposure",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": -0.05
+        },
+        {
+          "kind": "add_stat",
+          "attr": "mp_regen",
+          "value": -2
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_vigil_turn_end",
+      "buffId": "holy_cat_vigil",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage",
+          "value": 16
+        },
+        {
+          "kind": "skill_action_suppressed"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_intercession_while_active",
+      "buffId": "holy_cat_intercession",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_defence",
+          "value": 18,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": 1.6
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_defence",
+          "value": 18,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": 1.6
+        },
+        {
+          "kind": "reduce_damage_percent",
+          "value": 0.06,
+          "payloadValueKey": "alchemyPower",
+          "payloadValueCoeff": 0.005
+        },
+        {
+          "kind": "prefer_as_enemy_target"
+        },
+        {
+          "kind": "damage_redirect_to_source",
+          "percent": 1
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_absolution_mark_while_active",
+      "buffId": "holy_cat_absolution_mark",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage",
+          "value": -18
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage",
+          "value": -18
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": -0.07
+        },
+        {
+          "kind": "prefer_as_enemy_target"
+        },
+        {
+          "kind": "marked_target"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_silent_liturgy_while_active",
+      "buffId": "holy_cat_silent_liturgy",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "skill_action_suppressed"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "silence_while_active",
+      "buffId": "silence",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "skill_action_suppressed"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_royal_aegis_while_active",
+      "buffId": "holy_cat_royal_aegis",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_defence",
+          "value": 40
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_defence",
+          "value": 40
+        },
+        {
+          "kind": "reduce_damage_percent",
+          "value": 0.12
+        },
+        {
+          "kind": "prefer_as_enemy_target"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_consecrated_mark_while_active",
+      "buffId": "holy_cat_consecrated_mark",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": -0.08
+        },
+        {
+          "kind": "prefer_as_enemy_target"
+        },
+        {
+          "kind": "marked_target"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_searing_incense_while_active",
+      "buffId": "holy_cat_searing_incense",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -7
+        },
+        {
+          "kind": "basic_attack_suppressed"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_frontline_fixation_while_active",
+      "buffId": "holy_cat_frontline_fixation",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "frontline_fixation"
+        },
+        {
+          "kind": "position_override",
+          "position": "vanguard"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "basic_hook_claw_dragged_while_active",
+      "buffId": "basic_hook_claw_dragged",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "advance_position",
+          "steps": 1
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "basic_left_dagger_shadow_cross_while_active",
+      "buffId": "basic_left_dagger_shadow_cross",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "side_override",
+          "side": "enemy"
+        },
+        {
+          "kind": "position_override",
+          "position": "midguard"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "basic_left_dagger_betrayal_while_active",
+      "buffId": "basic_left_dagger_betrayal",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "invert_relation_perspective"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "basic_left_dagger_armor_break_while_active",
+      "buffId": "basic_left_dagger_armor_break",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_percent_defense_penetration",
+          "value": 0.5
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "basic_left_dagger_targeting_override_while_active",
+      "buffId": "basic_left_dagger_targeting_override",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "override_targeting",
+          "applyToBasicAttack": true,
+          "applyToSkills": true,
+          "skillIds": [],
+          "targeting": {
+            "targetPositions": [
+              "midguard"
+            ],
+            "secondarySeek": "none"
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "base2_dragon_scale_scorch_on_turn_start",
+      "buffId": "base2_dragon_scale_scorch",
+      "trigger": "on_turn_start",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "damage",
+          "damageType": "magical",
+          "amountFormula": {
+            "baseAdd": 15,
+            "terms": [
+              {
+                "attrKey": "strength",
+                "coefficient": 0.3
+              }
+            ]
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "base4_nightveil_wound_on_turn_start",
+      "buffId": "base4_nightveil_wound",
+      "trigger": "on_turn_start",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "damage",
+          "damageType": "magical",
+          "amountFormula": {
+            "baseAdd": 15,
+            "terms": [
+              {
+                "attrKey": "dexterity",
+                "coefficient": 0.2
+              }
+            ]
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "base5_bloodforge_counter_edge_on_before_deal_damage",
+      "buffId": "base5_bloodforge_counter_edge",
+      "trigger": "on_before_deal_damage",
+      "priority": 5,
+      "conditions": [
+        {
+          "damageTypes": [
+            "physical"
+          ]
+        }
+      ],
+      "effects": [
+        {
+          "kind": "add_damage_percent",
+          "value": 0.25
+        },
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "moss_sleep_while_active_regen",
+      "buffId": "moss_sleep",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "hp_regen",
+          "value": 3
+        },
+        {
+          "kind": "add_stat",
+          "attr": "mp_regen",
+          "value": 1
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "floating_silver_crit_guarantee",
+      "buffId": "floating_silver",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "crit_chance",
+          "value": 9999
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magic_crit_chance",
+          "value": 9999
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "silver_corrode_stack_while_active",
+      "buffId": "silver_corrode_stack",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage",
+          "value": 6
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "silver_corrode_burst_while_active",
+      "buffId": "silver_corrode_burst",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_amplification",
+          "value": 0.2
+        },
+        {
+          "kind": "add_stat",
+          "attr": "crit_damage",
+          "value": 0.15
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "moss_sleep_surge_while_active",
+      "buffId": "moss_sleep_surge",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage",
+          "value": 28
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage",
+          "value": 18
+        },
+        {
+          "kind": "add_stat_percent",
+          "attr": "magical_damage_amplification",
+          "value": 0.12
+        },
+        {
+          "kind": "add_stat_percent",
+          "attr": "physics_damage_amplification",
+          "value": 0.08
+        },
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": 10
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "snow_oath_on_before_take_damage",
+      "buffId": "snow_oath",
+      "trigger": "on_before_take_damage",
+      "priority": 8,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "reduce_damage_percent",
+          "value": 0.2
+        },
+        {
+          "kind": "consume_charge",
+          "buffId": "snow_oath"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "condensed_light_target_prefer_enemy_target",
+      "buffId": "condensed_light_target",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "prefer_as_enemy_target"
+        },
+        {
+          "kind": "marked_target"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "crystal_fang_blood_rage_while_active",
+      "buffId": "crystal_fang_blood_rage",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage",
+          "value": 150
+        },
+        {
+          "kind": "add_stat",
+          "attr": "strength",
+          "value": 50
+        },
+        {
+          "kind": "add_stat_percent",
+          "attr": "crit_chance",
+          "value": 0.15
+        },
+        {
+          "kind": "add_stat_percent",
+          "attr": "crit_damage",
+          "value": 1
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "crystal_fang_blood_rage_mp_drain",
+      "buffId": "crystal_fang_blood_rage",
+      "trigger": "on_turn_start",
+      "priority": 10,
+      "conditions": [
+        {
+          "kind": "self_mp_gte",
+          "value": 50
+        }
+      ],
+      "effects": [
+        {
+          "kind": "resource",
+          "resource": "mp",
+          "value": -50
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "crystal_fang_blood_rage_mp_remove",
+      "buffId": "crystal_fang_blood_rage",
+      "trigger": "on_turn_start",
+      "priority": 9,
+      "conditions": [
+        {
+          "kind": "self_mp_lt",
+          "value": 50
+        }
+      ],
+      "effects": [
+        {
+          "kind": "remove_buff",
+          "buffId": "crystal_fang_blood_rage"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "summon_sync_trinket_wa",
+      "buffId": "summon_sync_trinket",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "trigger_synced_summon_turn"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "summon_sync_entrained_wa",
+      "buffId": "summon_sync_entrained",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "skip_turn_order"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "stellar_testament_command_wa",
+      "buffId": "stellar_testament_command",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "trigger_synced_summon_turn",
+          "includeSummonTemplateIds": [
+            "stellar_testament_star"
+          ]
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "stellar_testament_star_orbit_wa",
+      "buffId": "stellar_testament_star_orbit",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "skip_turn_order"
+        },
+        {
+          "kind": "untargetable_by_enemy"
+        },
+        {
+          "kind": "untargetable_by_ally"
+        },
+        {
+          "kind": "avoid_as_enemy_target"
+        },
+        {
+          "kind": "suppress_mirror_cast_trigger"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "shadow_paw_stealth_untargetable",
+      "buffId": "shadow_paw_stealth",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "untargetable_by_enemy"
+        },
+        {
+          "kind": "avoid_as_enemy_target"
+        },
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": 8
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "shadow_paw_first_guard_block",
+      "buffId": "shadow_paw_first_guard",
+      "trigger": "on_before_take_damage",
+      "priority": -100,
+      "conditions": [
+        {
+          "type": "incoming_damage_gte",
+          "value": 1
+        },
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "set_damage_multiplier",
+          "value": 0
+        },
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "shadow_paw_armor_break_while_active",
+      "buffId": "shadow_paw_armor_break",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_defence",
+          "value": -28
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": -0.055
+        },
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -3
+        },
+        {
+          "kind": "prefer_as_enemy_target"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "shadow_paw_mark_while_active",
+      "buffId": "shadow_paw_mark",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -5
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": -0.025
+        },
+        {
+          "kind": "add_stat",
+          "attr": "crit_chance",
+          "value": -0.01
+        },
+        {
+          "kind": "marked_target"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "shadow_paw_venom_while_active",
+      "buffId": "shadow_paw_venom",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "hp_regen",
+          "value": -5
+        },
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -4
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": -0.018
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "shadow_paw_venom_on_turn_start",
+      "buffId": "shadow_paw_venom",
+      "trigger": "on_turn_start",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "damage",
+          "damageType": "magical",
+          "value": 0,
+          "amountFormula": {
+            "baseAdd": 25,
+            "terms": [
+              {
+                "attrKey": "perception",
+                "coefficient": 0.1,
+                "perSkillLevel": 0
+              }
+            ]
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "silent_whisker_smoke_lock_on_attach",
+      "buffId": "silent_whisker_smoke_lock",
+      "trigger": "on_attach",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_skill_cooldown",
+          "value": 2,
+          "includeBasic": false
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "mirror_paw_guard_block",
+      "buffId": "mirror_paw_guard",
+      "trigger": "on_before_take_damage",
+      "priority": -100,
+      "conditions": [
+        {
+          "type": "incoming_damage_gte",
+          "value": 1
+        },
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "set_damage_multiplier",
+          "value": 0
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "mirror_paw_guard_mark_source",
+      "buffId": "mirror_paw_guard",
+      "trigger": "on_after_take_damage",
+      "priority": 0,
+      "conditions": [
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "add_buff",
+          "buffId": "shadow_paw_mark",
+          "durationTurns": 2,
+          "targetMode": "source"
+        },
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "consumable_claw_venom_while_active",
+      "buffId": "consumable_claw_venom",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "hp_regen",
+          "value": -8
+        },
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -6
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": -0.025
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "consumable_claw_venom_on_turn_start",
+      "buffId": "consumable_claw_venom",
+      "trigger": "on_turn_start",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "damage",
+          "damageType": "magical",
+          "value": 0,
+          "amountFormula": {
+            "baseAdd": 36,
+            "terms": []
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "boss_shadow_focus_while_active",
+      "buffId": "boss_shadow_focus",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "crit_chance",
+          "value": 0.09
+        },
+        {
+          "kind": "add_stat",
+          "attr": "crit_damage",
+          "value": 0.18
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_flat_defense_penetration",
+          "value": 14
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_percent_defense_penetration",
+          "value": 0.12
+        },
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": 8
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_defence",
+          "value": -50
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_defence",
+          "value": -35
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": -0.08
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "shadow_paw_master_phase_watch_trigger",
+      "buffId": "shadow_paw_master_phase_watch",
+      "trigger": "on_turn_start",
+      "priority": 0,
+      "conditions": [
+        {
+          "type": "self_hp_percent_lte",
+          "value": 35
+        }
+      ],
+      "effects": [
+        {
+          "kind": "add_buff",
+          "buffId": "boss_shadow_focus",
+          "durationTurns": 3,
+          "targetMode": "self"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "silent_thread_readiness_mark_source",
+      "buffId": "silent_thread_readiness",
+      "trigger": "on_after_take_damage",
+      "priority": 0,
+      "conditions": [
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "add_buff",
+          "buffId": "shadow_paw_mark",
+          "durationTurns": 2,
+          "targetMode": "source"
+        },
+        {
+          "kind": "add_buff",
+          "buffId": "shadow_paw_stealth",
+          "durationTurns": 1,
+          "targetMode": "self"
+        },
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "shadow_paw_breaker_stance_while_active",
+      "buffId": "shadow_paw_breaker_stance",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_amplification",
+          "value": 0.08
+        },
+        {
+          "kind": "add_stat",
+          "attr": "crit_damage",
+          "value": 0.08
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "shadow_paw_battle_fervor_while_active",
+      "buffId": "shadow_paw_battle_fervor",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_amplification",
+          "value": 0.025
+        },
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": 2
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "mirror_paw_guard_focus_while_active",
+      "buffId": "mirror_paw_guard_focus",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "prefer_as_enemy_target"
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": 0.035
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": 0.02
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "silent_whisker_aim_while_active",
+      "buffId": "silent_whisker_aim",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "crit_damage",
+          "value": 0.08
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "shadow_paw_threadwheel_bind_while_active",
+      "buffId": "shadow_paw_threadwheel_bind",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "basic_attack_suppressed"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "formation_commander_rearline_order_while_active",
+      "buffId": "formation_commander_rearline_order",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "reduce_damage_percent",
+          "value": 0.1,
+          "payloadValueKey": "damageReduction",
+          "payloadValueCoeff": 1
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_amplification",
+          "value": 0.08,
+          "payloadValueKey": "damageAmplification",
+          "payloadValueCoeff": 1
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_amplification",
+          "value": 0.08,
+          "payloadValueKey": "damageAmplification",
+          "payloadValueCoeff": 1
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "formation_commander_midline_order_while_active",
+      "buffId": "formation_commander_midline_order",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": 15,
+          "payloadValueKey": "speedBonus",
+          "payloadValueCoeff": 1
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_flat_defense_penetration",
+          "value": 10,
+          "payloadValueKey": "penetrationBonus",
+          "payloadValueCoeff": 1
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magicial_flat_defense_penetration",
+          "value": 10,
+          "payloadValueKey": "penetrationBonus",
+          "payloadValueCoeff": 1
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "formation_commander_frontline_order_while_active",
+      "buffId": "formation_commander_frontline_order",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_defence",
+          "value": 40,
+          "payloadValueKey": "defenceBonus",
+          "payloadValueCoeff": 1
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_defence",
+          "value": 40,
+          "payloadValueKey": "defenceBonus",
+          "payloadValueCoeff": 1
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "formation_commander_order_while_active",
+      "buffId": "formation_commander_order",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage",
+          "value": 10,
+          "payloadValueKey": "attackBonus",
+          "payloadValueCoeff": 1
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage",
+          "value": 10,
+          "payloadValueKey": "attackBonus",
+          "payloadValueCoeff": 1
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "food_mending_broth_regen_on_turn_start",
+      "buffId": "food_mending_broth_regen",
+      "trigger": "on_turn_start",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "heal",
+          "value": 44
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "food_mana_tea_regen_on_turn_start",
+      "buffId": "food_mana_tea_regen",
+      "trigger": "on_turn_start",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "resource",
+          "resource": "mp",
+          "value": 18
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "food_moondew_stew_regen_on_turn_start",
+      "buffId": "food_moondew_stew_regen",
+      "trigger": "on_turn_start",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "heal",
+          "value": 36
+        },
+        {
+          "kind": "resource",
+          "resource": "mp",
+          "value": 14
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "food_training_ration_focus_while_active",
+      "buffId": "food_training_ration_focus",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "battle_exp_bonus",
+          "value": 0.06
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "food_lucky_feast_fortune_while_active",
+      "buffId": "food_lucky_feast_fortune",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "battle_drop_rate_bonus",
+          "value": 0.05
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "food_furfire_broth_guard_on_turn_start",
+      "buffId": "food_furfire_broth_guard",
+      "trigger": "on_turn_start",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "heal",
+          "value": 31
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "food_furfire_broth_guard_while_active",
+      "buffId": "food_furfire_broth_guard",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": 0.06
+        },
+        {
+          "kind": "add_stat",
+          "attr": "hp",
+          "value": 80
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "food_mosslight_breach_soup_on_turn_start",
+      "buffId": "food_mosslight_breach_soup",
+      "trigger": "on_turn_start",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "resource",
+          "resource": "mp",
+          "value": 13
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "food_mosslight_breach_soup_while_active",
+      "buffId": "food_mosslight_breach_soup",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_amplification",
+          "value": 0.06
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_flat_defense_penetration",
+          "value": 8
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "food_snowseal_swift_soup_on_turn_start",
+      "buffId": "food_snowseal_swift_soup",
+      "trigger": "on_turn_start",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "heal",
+          "value": 25
+        },
+        {
+          "kind": "resource",
+          "resource": "mp",
+          "value": 10
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "food_snowseal_swift_soup_while_active",
+      "buffId": "food_snowseal_swift_soup",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": 18
+        },
+        {
+          "kind": "add_stat",
+          "attr": "mp",
+          "value": 80
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "food_shadowmoon_pudding_on_turn_start",
+      "buffId": "food_shadowmoon_pudding",
+      "trigger": "on_turn_start",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "heal",
+          "value": 13
+        },
+        {
+          "kind": "resource",
+          "resource": "mp",
+          "value": 3
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "food_shadowmoon_pudding_while_active",
+      "buffId": "food_shadowmoon_pudding",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": 0.08
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_amplification",
+          "value": 0.05
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "food_holy_incense_jelly_on_turn_start",
+      "buffId": "food_holy_incense_jelly",
+      "trigger": "on_turn_start",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "heal",
+          "value": 25
+        },
+        {
+          "kind": "resource",
+          "resource": "mp",
+          "value": 10
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "food_holy_incense_jelly_while_active",
+      "buffId": "food_holy_incense_jelly",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "magical_defence",
+          "value": 35
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magicial_flat_defense_penetration",
+          "value": 8
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "food_silent_whisker_plate_on_turn_start",
+      "buffId": "food_silent_whisker_plate",
+      "trigger": "on_turn_start",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "heal",
+          "value": 10
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "food_silent_whisker_plate_while_active",
+      "buffId": "food_silent_whisker_plate",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "crit_damage_resist",
+          "value": 0.12
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_defence",
+          "value": 35
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "fusion_heart_resonance_while_active",
+      "buffId": "fusion_heart_resonance",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage",
+          "value": 0,
+          "payloadValueKey": "magicalDamageBonus",
+          "payloadValueCoeff": 1
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "astral_guard_stance_while_active",
+      "buffId": "astral_guard_stance_buff",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "reduce_damage_percent",
+          "value": 0.3
+        },
+        {
+          "kind": "prefer_as_enemy_target"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "astral_mana_drain_on_attach",
+      "buffId": "astral_mana_drain_debuff",
+      "trigger": "on_attach",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "resource",
+          "resource": "mp",
+          "value": -24
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "starlight_resistance_while_active",
+      "buffId": "starlight_resistance_buff",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": 0.18
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "refraction_mark_while_active",
+      "buffId": "refraction_mark_debuff",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat_percent",
+          "attr": "magical_defence",
+          "value": -0.18
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "calibrator_desync_while_active",
+      "buffId": "calibrator_desync_debuff",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat_percent",
+          "attr": "speed",
+          "value": -0.2
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "calibrator_desync_on_attach",
+      "buffId": "calibrator_desync_debuff",
+      "trigger": "on_attach",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "resource",
+          "resource": "mp",
+          "value": -30
+        },
+        {
+          "kind": "add_skill_cooldown",
+          "value": 1,
+          "includeBasic": false
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "timekeeper_orbit_shift_while_active",
+      "buffId": "timekeeper_orbit_shift_buff",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "advance_position",
+          "steps": 1
+        },
+        {
+          "kind": "add_stat_percent",
+          "attr": "speed",
+          "value": 0.2
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "timekeeper_delay_while_active",
+      "buffId": "timekeeper_delay_debuff",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat_percent",
+          "attr": "speed",
+          "value": -0.24
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "timekeeper_stasis_while_active",
+      "buffId": "timekeeper_stasis_buff",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "reduce_damage_percent",
+          "value": 0.45
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "brass_book_guard_bulwark_while_active",
+      "buffId": "brass_book_guard_bulwark_buff",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physical_damage_resist",
+          "value": 0.32
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": 0.32
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "living_bookmark_basic_lock_while_active",
+      "buffId": "living_bookmark_basic_lock",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "basic_attack_suppressed"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "living_bookmark_slow_while_active",
+      "buffId": "living_bookmark_slow_debuff",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat_percent",
+          "attr": "speed",
+          "value": -0.18
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "watcher_owl_spell_scrutiny_while_active",
+      "buffId": "watcher_owl_spell_scrutiny_debuff",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat_percent",
+          "attr": "magical_damage",
+          "value": -0.15
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "banished_spellcat_magic_shred_while_active",
+      "buffId": "banished_spellcat_magic_shred_debuff",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat_percent",
+          "attr": "magical_defence",
+          "value": -0.15
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "vow_eater_ash_debt_while_active",
+      "buffId": "vow_eater_ash_debt",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -10
+        },
+        {
+          "kind": "add_stat",
+          "attr": "mp_regen",
+          "value": -2
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": -0.06
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "vow_eater_ash_debt_on_turn_start",
+      "buffId": "vow_eater_ash_debt",
+      "trigger": "on_turn_start",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "resource",
+          "resource": "mp",
+          "value": -12
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "vow_eater_devoured_prayer_while_active",
+      "buffId": "vow_eater_devoured_prayer",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_amplification",
+          "value": 0.05
+        },
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": 2
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": -0.025
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": -0.025
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "lucky_blessing_probability_bonus",
+      "buffId": "lucky_blessing",
+      "trigger": "on_before_probability_check",
+      "priority": 10,
+      "eventFilter": {
+        "probabilityKinds": [
+          "equipment_proc",
+          "status_apply"
+        ]
+      },
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_probability",
+          "value": 0.03
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "lucky_blessing_success_restore",
+      "buffId": "lucky_blessing",
+      "trigger": "on_probability_success",
+      "priority": 0,
+      "eventFilter": {
+        "probabilityKinds": [
+          "equipment_proc",
+          "status_apply"
+        ]
+      },
+      "maxTriggersPerTurn": 3,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "heal",
+          "amountFormula": {
+            "baseAdd": 0,
+            "terms": [
+              {
+                "attrKey": "max_hp",
+                "coefficient": 0.05,
+                "perSkillLevel": 0
+              },
+              {
+                "attrKey": "current_hp",
+                "coefficient": -0.05,
+                "perSkillLevel": 0
+              }
+            ]
+          }
+        },
+        {
+          "kind": "resource",
+          "resource": "mp",
+          "amountFormula": {
+            "baseAdd": 0,
+            "terms": [
+              {
+                "attrKey": "max_mp",
+                "coefficient": 0.05,
+                "perSkillLevel": 0
+              },
+              {
+                "attrKey": "current_mp",
+                "coefficient": -0.05,
+                "perSkillLevel": 0
+              }
+            ]
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "dark_heart_while_active",
+      "buffId": "dark_heart",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "strength",
+          "value": 0,
+          "payloadValueKey": "mainStatBonus",
+          "payloadValueCoeff": 1
+        },
+        {
+          "kind": "add_stat",
+          "attr": "dexterity",
+          "value": 0,
+          "payloadValueKey": "mainStatBonus",
+          "payloadValueCoeff": 1
+        },
+        {
+          "kind": "add_stat",
+          "attr": "stamina",
+          "value": 0,
+          "payloadValueKey": "mainStatBonus",
+          "payloadValueCoeff": 1
+        },
+        {
+          "kind": "add_stat",
+          "attr": "intelligence",
+          "value": 0,
+          "payloadValueKey": "mainStatBonus",
+          "payloadValueCoeff": 1
+        },
+        {
+          "kind": "add_stat",
+          "attr": "perception",
+          "value": 0,
+          "payloadValueKey": "mainStatBonus",
+          "payloadValueCoeff": 1
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": 0,
+          "payloadValueKey": "damageResistBonus",
+          "payloadValueCoeff": 1
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": 0,
+          "payloadValueKey": "damageResistBonus",
+          "payloadValueCoeff": 1
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "jackpot_payout_ticket_probability",
+      "buffId": "jackpot_payout_ticket",
+      "trigger": "on_before_probability_check",
+      "priority": -1000,
+      "eventFilter": {
+        "probabilityKinds": [
+          "status_apply"
+        ]
+      },
+      "conditions": [
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "set_probability",
+          "value": 1
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "jackpot_payout_ticket_redeem_success",
+      "buffId": "jackpot_payout_ticket",
+      "trigger": "on_probability_success",
+      "priority": 0,
+      "eventFilter": {
+        "probabilityKinds": [
+          "status_apply"
+        ]
+      },
+      "conditions": [
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "jackpot_payout_ticket_redeem_failure",
+      "buffId": "jackpot_payout_ticket",
+      "trigger": "on_probability_failure",
+      "priority": 0,
+      "eventFilter": {
+        "probabilityKinds": [
+          "status_apply"
+        ]
+      },
+      "conditions": [
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "sugar_shell_break",
+      "buffId": "sugar_shell",
+      "trigger": "on_before_take_damage",
+      "priority": 900,
+      "conditions": [
+        {
+          "type": "incoming_damage_gte",
+          "value": 1
+        },
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "set_damage_multiplier",
+          "value": 0
+        },
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "parade_applause_while_active",
+      "buffId": "parade_applause",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "position_map",
+          "priority": 50,
+          "mapping": {
+            "vanguard": "vanguard",
+            "midguard": "vanguard",
+            "rearguard": "midguard"
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "parade_shelter_while_active",
+      "buffId": "parade_shelter",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "position_map",
+          "priority": 50,
+          "mapping": {
+            "vanguard": "midguard",
+            "midguard": "rearguard",
+            "rearguard": "rearguard"
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "empress_command_while_active",
+      "buffId": "empress_command",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat_percent",
+          "attr": "strength",
+          "value": 0,
+          "payloadValueKey": "mainStatPercent",
+          "payloadValueCoeff": 1
+        },
+        {
+          "kind": "add_stat_percent",
+          "attr": "dexterity",
+          "value": 0,
+          "payloadValueKey": "mainStatPercent",
+          "payloadValueCoeff": 1
+        },
+        {
+          "kind": "add_stat_percent",
+          "attr": "intelligence",
+          "value": 0,
+          "payloadValueKey": "mainStatPercent",
+          "payloadValueCoeff": 1
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "empress_cloak_enthroned_while_active",
+      "buffId": "empress_cloak_enthroned",
+      "trigger": "while_active",
+      "priority": 100,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "turn_ineligible"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "last_parade_light_catch_lethal",
+      "buffId": "last_parade_light",
+      "trigger": "on_before_take_damage",
+      "priority": 950,
+      "conditions": [
+        {
+          "type": "incoming_damage_would_be_lethal"
+        },
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "set_damage_multiplier",
+          "value": 0
+        },
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "haunted_exit_route_while_active",
+      "buffId": "haunted_exit_route",
+      "trigger": "while_active",
+      "priority": 80,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "position_override",
+          "position": "rearguard",
+          "priority": 80
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "candy_sticky_while_active",
+      "buffId": "candy_sticky",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -18
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "amusement_stun_while_active",
+      "buffId": "amusement_stun",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "turn_action_suppressed"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "amusement_opening_curtain_block",
+      "buffId": "amusement_opening_curtain",
+      "trigger": "on_before_take_damage",
+      "priority": 1000,
+      "conditions": [
+        {
+          "type": "incoming_damage_gte",
+          "value": 1
+        },
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "set_damage_multiplier",
+          "value": 0.5
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "amusement_opening_curtain_spotlight_source",
+      "buffId": "amusement_opening_curtain",
+      "trigger": "on_after_take_damage",
+      "priority": 0,
+      "maxTriggersPerTurn": 1,
+      "conditions": [
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "add_buff",
+          "buffId": "amusement_spotlight",
+          "durationTurns": 1,
+          "targetMode": "source"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "amusement_opening_curtain_finale",
+      "buffId": "amusement_opening_curtain",
+      "trigger": "on_turn_end",
+      "priority": 10,
+      "eventFilter": {
+        "turnKinds": [
+          "ordered"
+        ],
+        "includePreparation": false,
+        "includeSuppressedTurns": true
+      },
+      "conditions": [
+        {
+          "type": "self_charges_remaining_lte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "add_buff",
+          "buffId": "amusement_curtain_fall_vulnerability",
+          "durationTurns": 1,
+          "targetMode": "self"
+        },
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "amusement_vip_curtain_block",
+      "buffId": "amusement_vip_curtain",
+      "trigger": "on_before_take_damage",
+      "priority": 1000,
+      "conditions": [
+        {
+          "type": "incoming_damage_gte",
+          "value": 1
+        },
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 2
+        },
+        {
+          "type": "self_charges_remaining_lte",
+          "value": 2
+        }
+      ],
+      "effects": [
+        {
+          "kind": "set_damage_multiplier",
+          "value": 0.35
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "amusement_vip_curtain_block_last_act",
+      "buffId": "amusement_vip_curtain",
+      "trigger": "on_before_take_damage",
+      "priority": 1000,
+      "conditions": [
+        {
+          "type": "incoming_damage_gte",
+          "value": 1
+        },
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        },
+        {
+          "type": "self_charges_remaining_lte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "set_damage_multiplier",
+          "value": 0.5
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "amusement_vip_curtain_spotlight_source",
+      "buffId": "amusement_vip_curtain",
+      "trigger": "on_after_take_damage",
+      "priority": 0,
+      "maxTriggersPerTurn": 1,
+      "conditions": [
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "add_buff",
+          "buffId": "amusement_spotlight",
+          "durationTurns": 1,
+          "targetMode": "source"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "amusement_vip_curtain_finale",
+      "buffId": "amusement_vip_curtain",
+      "trigger": "on_turn_end",
+      "priority": 10,
+      "eventFilter": {
+        "turnKinds": [
+          "ordered"
+        ],
+        "includePreparation": false,
+        "includeSuppressedTurns": true
+      },
+      "conditions": [
+        {
+          "type": "self_charges_remaining_lte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "add_buff",
+          "buffId": "amusement_curtain_fall_vulnerability",
+          "durationTurns": 1,
+          "targetMode": "self"
+        },
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "amusement_vip_curtain_advance",
+      "buffId": "amusement_vip_curtain",
+      "trigger": "on_turn_end",
+      "priority": 0,
+      "eventFilter": {
+        "turnKinds": [
+          "ordered"
+        ],
+        "includePreparation": false,
+        "includeSuppressedTurns": true
+      },
+      "conditions": [
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 2
+        }
+      ],
+      "effects": [
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "parade_three_act_curtain_block",
+      "buffId": "parade_three_act_curtain",
+      "trigger": "on_before_take_damage",
+      "priority": 1000,
+      "conditions": [
+        {
+          "type": "incoming_damage_gte",
+          "value": 1
+        },
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 3
+        },
+        {
+          "type": "self_charges_remaining_lte",
+          "value": 3
+        }
+      ],
+      "effects": [
+        {
+          "kind": "set_damage_multiplier",
+          "value": 0.01
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "parade_three_act_curtain_block_second_act",
+      "buffId": "parade_three_act_curtain",
+      "trigger": "on_before_take_damage",
+      "priority": 1000,
+      "conditions": [
+        {
+          "type": "incoming_damage_gte",
+          "value": 1
+        },
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 2
+        },
+        {
+          "type": "self_charges_remaining_lte",
+          "value": 2
+        }
+      ],
+      "effects": [
+        {
+          "kind": "set_damage_multiplier",
+          "value": 0.35
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "parade_three_act_curtain_block_final_act",
+      "buffId": "parade_three_act_curtain",
+      "trigger": "on_before_take_damage",
+      "priority": 1000,
+      "conditions": [
+        {
+          "type": "incoming_damage_gte",
+          "value": 1
+        },
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        },
+        {
+          "type": "self_charges_remaining_lte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "set_damage_multiplier",
+          "value": 0.5
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "parade_three_act_curtain_spotlight_source",
+      "buffId": "parade_three_act_curtain",
+      "trigger": "on_after_take_damage",
+      "priority": 0,
+      "maxTriggersPerTurn": 1,
+      "conditions": [
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "add_buff",
+          "buffId": "amusement_spotlight",
+          "durationTurns": 1,
+          "targetMode": "source"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "parade_three_act_curtain_fall",
+      "buffId": "parade_three_act_curtain",
+      "trigger": "on_turn_end",
+      "priority": 30,
+      "maxTriggersPerTurn": 1,
+      "sharedTriggerGroup": "parade_three_act_curtain_step",
+      "eventFilter": {
+        "turnKinds": [
+          "ordered"
+        ],
+        "includePreparation": false,
+        "includeSuppressedTurns": true
+      },
+      "conditions": [
+        {
+          "type": "self_charges_remaining_lte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "add_buff",
+          "buffId": "amusement_curtain_fall_vulnerability",
+          "durationTurns": 1,
+          "targetMode": "self"
+        },
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "parade_three_act_curtain_open_finale",
+      "buffId": "parade_three_act_curtain",
+      "trigger": "on_turn_end",
+      "priority": 20,
+      "maxTriggersPerTurn": 1,
+      "sharedTriggerGroup": "parade_three_act_curtain_step",
+      "eventFilter": {
+        "turnKinds": [
+          "ordered"
+        ],
+        "includePreparation": false,
+        "includeSuppressedTurns": true
+      },
+      "conditions": [
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 2
+        },
+        {
+          "type": "self_charges_remaining_lte",
+          "value": 2
+        }
+      ],
+      "effects": [
+        {
+          "kind": "add_buff",
+          "buffId": "parade_finale",
+          "durationTurns": 3,
+          "targetMode": "self"
+        },
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "parade_three_act_curtain_open_second_act",
+      "buffId": "parade_three_act_curtain",
+      "trigger": "on_turn_end",
+      "priority": 10,
+      "maxTriggersPerTurn": 1,
+      "sharedTriggerGroup": "parade_three_act_curtain_step",
+      "eventFilter": {
+        "turnKinds": [
+          "ordered"
+        ],
+        "includePreparation": false,
+        "includeSuppressedTurns": true
+      },
+      "conditions": [
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 3
+        },
+        {
+          "type": "self_charges_remaining_lte",
+          "value": 3
+        }
+      ],
+      "effects": [
+        {
+          "kind": "add_buff",
+          "buffId": "parade_second_act",
+          "durationTurns": 3,
+          "targetMode": "self"
+        },
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "amusement_curtain_fall_vulnerability_before_damage",
+      "buffId": "amusement_curtain_fall_vulnerability",
+      "trigger": "on_before_take_damage",
+      "priority": 100,
+      "conditions": [
+        {
+          "type": "incoming_damage_gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "set_damage_multiplier",
+          "value": 1.25
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "amusement_spotlight_while_active",
+      "buffId": "amusement_spotlight",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "prefer_as_enemy_target"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "plush_guard_cover_link_while_active",
+      "buffId": "plush_guard_cover_link",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "reduce_damage_percent",
+          "value": 0.15
+        },
+        {
+          "kind": "damage_redirect_to_source",
+          "percent": 0.55
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "starlight_backstage_pass_before_damage",
+      "buffId": "starlight_backstage_pass_buff",
+      "trigger": "on_before_take_damage",
+      "priority": 20,
+      "conditions": [
+        {
+          "type": "incoming_damage_gte",
+          "value": 1
+        },
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "reduce_damage_percent",
+          "value": 0.6
+        },
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "ghostly_rider_ethereal_tack_while_active",
+      "buffId": "ghostly_rider_ethereal_tack",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": 0.55
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": -0.18
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "ghostly_rider_preyscent_while_active",
+      "buffId": "ghostly_rider_preyscent",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -15
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": -0.12
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": -0.12
+        },
+        {
+          "kind": "marked_target"
+        },
+        {
+          "kind": "position_override",
+          "position": "vanguard",
+          "priority": 60
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "parade_second_act_while_active",
+      "buffId": "parade_second_act",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": 15
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_amplification",
+          "value": 0.15
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_amplification",
+          "value": 0.15
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "parade_finale_while_active",
+      "buffId": "parade_finale",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_amplification",
+          "value": 0.25
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_amplification",
+          "value": 0.25
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "midnight_audit_watch_mark_source",
+      "buffId": "midnight_audit_watch",
+      "trigger": "on_after_take_damage",
+      "priority": 0,
+      "maxTriggersPerTurn": 1,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_buff",
+          "buffId": "midnight_punched_stamp",
+          "durationTurns": 4,
+          "targetMode": "source"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "midnight_punched_stamp_while_active",
+      "buffId": "midnight_punched_stamp",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": -8
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_amplification",
+          "value": -0.06
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_amplification",
+          "value": -0.06
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "midnight_punched_stamp_third_strike",
+      "buffId": "midnight_punched_stamp",
+      "trigger": "while_active",
+      "priority": 50,
+      "conditions": [
+        {
+          "type": "self_buff_count_gte",
+          "buffId": "midnight_punched_stamp",
+          "value": 3
+        }
+      ],
+      "effects": [
+        {
+          "kind": "skill_action_suppressed"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "candy_poison_on_turn_start",
+      "buffId": "candy_poison",
+      "trigger": "on_turn_start",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "damage",
+          "damageType": "magical",
+          "amountFormula": {
+            "baseAdd": 120,
+            "terms": []
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "candy_frozen_while_active",
+      "buffId": "candy_frozen",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "turn_action_suppressed"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "candy_silence_while_active",
+      "buffId": "candy_silence",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "skill_action_suppressed"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "candy_burning_on_turn_start",
+      "buffId": "candy_burning",
+      "trigger": "on_turn_start",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "damage",
+          "damageType": "magical",
+          "amountFormula": {
+            "baseAdd": 170,
+            "terms": []
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "plush_guard_bulwark_while_active",
+      "buffId": "plush_guard_bulwark",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "prefer_as_enemy_target"
+        },
+        {
+          "kind": "reduce_damage_percent",
+          "value": 0.25
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "parade_frenzy_while_active",
+      "buffId": "parade_frenzy",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_amplification",
+          "value": 0.15
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_amplification",
+          "value": 0.15
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "parade_frenzy_sync_clowns",
+      "buffId": "parade_frenzy",
+      "trigger": "on_turn_end",
+      "priority": 0,
+      "eventFilter": {
+        "turnKinds": [
+          "ordered"
+        ],
+        "includePreparation": false,
+        "includeSuppressedTurns": true
+      },
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "trigger_synced_summon_turn",
+          "includeSummonTemplateIds": [
+            "candy_clown_001"
+          ]
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "parade_royal_aegis_while_active",
+      "buffId": "parade_royal_aegis",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "reduce_damage_percent",
+          "value": 0.1
+        },
+        {
+          "kind": "damage_redirect_to_source",
+          "percent": 0.7
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "mirror_house_reversal_while_active",
+      "buffId": "mirror_house_reversal",
+      "trigger": "while_active",
+      "priority": 100,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "invert_relation_perspective"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "carousel_reverse_position_while_active",
+      "buffId": "carousel_reverse_position",
+      "trigger": "while_active",
+      "priority": 40,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "position_map",
+          "priority": 40,
+          "mapping": {
+            "vanguard": "rearguard",
+            "midguard": "vanguard",
+            "rearguard": "midguard"
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "plush_stunt_double_role_while_active",
+      "buffId": "plush_stunt_double_role",
+      "trigger": "while_active",
+      "priority": 100,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "skip_turn_order"
+        },
+        {
+          "kind": "prefer_as_enemy_target"
+        },
+        {
+          "kind": "reduce_damage_percent",
+          "value": 0.25
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "plush_stunt_double_role_trap",
+      "buffId": "plush_stunt_double_role",
+      "trigger": "on_after_take_damage",
+      "priority": 0,
+      "conditions": [
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "add_buff",
+          "buffId": "amusement_stun",
+          "durationTurns": 1,
+          "targetMode": "source"
+        },
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "faceless_understudy_three_curtains_block",
+      "buffId": "faceless_understudy_three_curtains",
+      "trigger": "on_before_take_damage",
+      "priority": 1000,
+      "conditions": [
+        {
+          "type": "incoming_damage_gte",
+          "value": 1
+        },
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 3
+        },
+        {
+          "type": "self_charges_remaining_lte",
+          "value": 3
+        }
+      ],
+      "effects": [
+        {
+          "kind": "set_damage_multiplier",
+          "value": 0.01
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "faceless_understudy_three_curtains_block_second_act",
+      "buffId": "faceless_understudy_three_curtains",
+      "trigger": "on_before_take_damage",
+      "priority": 1000,
+      "conditions": [
+        {
+          "type": "incoming_damage_gte",
+          "value": 1
+        },
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 2
+        },
+        {
+          "type": "self_charges_remaining_lte",
+          "value": 2
+        }
+      ],
+      "effects": [
+        {
+          "kind": "set_damage_multiplier",
+          "value": 0.35
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "faceless_understudy_three_curtains_block_final_act",
+      "buffId": "faceless_understudy_three_curtains",
+      "trigger": "on_before_take_damage",
+      "priority": 1000,
+      "conditions": [
+        {
+          "type": "incoming_damage_gte",
+          "value": 1
+        },
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        },
+        {
+          "type": "self_charges_remaining_lte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "set_damage_multiplier",
+          "value": 0.5
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "faceless_understudy_three_curtains_mark_source",
+      "buffId": "faceless_understudy_three_curtains",
+      "trigger": "on_after_take_damage",
+      "priority": 0,
+      "maxTriggersPerTurn": 1,
+      "conditions": [
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "add_buff",
+          "buffId": "amusement_spotlight",
+          "durationTurns": 1,
+          "targetMode": "source"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "faceless_understudy_three_curtains_fall",
+      "buffId": "faceless_understudy_three_curtains",
+      "trigger": "on_turn_end",
+      "priority": 20,
+      "maxTriggersPerTurn": 1,
+      "sharedTriggerGroup": "faceless_understudy_curtain_step",
+      "eventFilter": {
+        "turnKinds": [
+          "ordered"
+        ],
+        "includePreparation": false,
+        "includeSuppressedTurns": true
+      },
+      "conditions": [
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        },
+        {
+          "type": "self_charges_remaining_lte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "add_buff",
+          "buffId": "amusement_curtain_fall_vulnerability",
+          "durationTurns": 1,
+          "targetMode": "self"
+        },
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "faceless_understudy_three_curtains_advance",
+      "buffId": "faceless_understudy_three_curtains",
+      "trigger": "on_turn_end",
+      "priority": 10,
+      "maxTriggersPerTurn": 1,
+      "sharedTriggerGroup": "faceless_understudy_curtain_step",
+      "eventFilter": {
+        "turnKinds": [
+          "ordered"
+        ],
+        "includePreparation": false,
+        "includeSuppressedTurns": true
+      },
+      "conditions": [
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 2
+        }
+      ],
+      "effects": [
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "faceless_understudy_last_bow_rewrite",
+      "buffId": "faceless_understudy_last_bow",
+      "trigger": "on_before_take_damage",
+      "priority": 1100,
+      "maxTriggersPerBattle": 1,
+      "conditions": [
+        {
+          "type": "incoming_damage_would_be_lethal"
+        },
+        {
+          "type": "self_charges_remaining_gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "kind": "set_damage_multiplier",
+          "value": 0
+        },
+        {
+          "kind": "heal",
+          "amountFormula": {
+            "baseAdd": 0,
+            "terms": [
+              {
+                "attrKey": "max_hp",
+                "coefficient": 0.35,
+                "perSkillLevel": 0
+              }
+            ]
+          }
+        },
+        {
+          "kind": "add_buff",
+          "buffId": "faceless_understudy_encore_form",
+          "durationTurns": 99,
+          "targetMode": "self"
+        },
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "faceless_understudy_encore_form_while_active",
+      "buffId": "faceless_understudy_encore_form",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": 25
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_amplification",
+          "value": 0.3
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_amplification",
+          "value": 0.3
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": -0.15
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": -0.15
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "faceless_understudy_forgotten_cue_on_attach",
+      "buffId": "faceless_understudy_forgotten_cue",
+      "trigger": "on_attach",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_skill_cooldown",
+          "value": 1,
+          "includeBasic": false
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "faceless_understudy_forgotten_cue_while_active",
+      "buffId": "faceless_understudy_forgotten_cue",
+      "trigger": "while_active",
+      "priority": 50,
+      "conditions": [
+        {
+          "type": "self_skill_cooldown_count_gte",
+          "value": 2,
+          "includeBasicAttack": false
+        }
+      ],
+      "effects": [
+        {
+          "kind": "skill_action_suppressed"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "faceless_understudy_stage_debt_on_turn_start",
+      "buffId": "faceless_understudy_stage_debt",
+      "trigger": "on_turn_start",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "resource",
+          "resource": "hp",
+          "amountFormula": {
+            "baseAdd": 0,
+            "terms": [
+              {
+                "attrKey": "max_hp",
+                "coefficient": -0.06,
+                "perSkillLevel": 0
+              }
+            ]
+          }
+        },
+        {
+          "kind": "resource",
+          "resource": "mp",
+          "amountFormula": {
+            "baseAdd": 0,
+            "terms": [
+              {
+                "attrKey": "max_mp",
+                "coefficient": -0.08,
+                "perSkillLevel": 0
+              }
+            ]
+          }
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "specialization_hunter_mark_prefer_as_enemy_target_while_active",
+      "buffId": "specialization_hunter_mark",
+      "trigger": "while_active",
+      "priority": 21,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "prefer_as_enemy_target"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "specialization_eagle_eye_prefer_as_enemy_target_while_active",
+      "buffId": "specialization_eagle_eye",
+      "trigger": "while_active",
+      "priority": 24,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "prefer_as_enemy_target"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "specialization_preemptive_target_prefer_as_enemy_target_while_active",
+      "buffId": "specialization_preemptive_target",
+      "trigger": "while_active",
+      "priority": 25,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "prefer_as_enemy_target"
+        },
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": -0.15
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": -0.15
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "specialization_bow_rhythm_while_active",
+      "buffId": "specialization_bow_rhythm",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": 6
+        },
+        {
+          "kind": "add_stat",
+          "attr": "crit_damage",
+          "value": 0.12
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "specialization_quick_nock_while_active",
+      "buffId": "specialization_quick_nock",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": 8
+        },
+        {
+          "kind": "add_stat",
+          "attr": "crit_chance",
+          "value": 0.05
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "specialization_shadow_dance_while_active",
+      "buffId": "specialization_shadow_dance",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "speed",
+          "value": 10
+        },
+        {
+          "kind": "add_stat",
+          "attr": "crit_damage",
+          "value": 0.15
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "specialization_sword_composure_while_active",
+      "buffId": "specialization_sword_composure",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_amplification",
+          "value": 0.12
+        },
+        {
+          "kind": "add_stat",
+          "attr": "hp_regen",
+          "value": 5
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "specialization_reaper_wound_while_active",
+      "buffId": "specialization_reaper_wound",
+      "trigger": "while_active",
+      "priority": 28,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": -0.12
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "specialization_critical_exposure_while_active",
+      "buffId": "specialization_critical_exposure",
+      "trigger": "while_active",
+      "priority": 28,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "crit_damage_resist",
+          "value": -0.05
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "specialization_shield_wall_while_active",
+      "buffId": "specialization_shield_wall",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "physics_damage_resist",
+          "value": 0.12
+        },
+        {
+          "kind": "add_stat",
+          "attr": "magical_damage_resist",
+          "value": 0.12
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "curse_lure_enemy_refresh_on_enemy_refresh",
+      "buffId": "curse_lure_enemy_refresh",
+      "trigger": "on_enemy_refresh",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "extra_enemy_refresh",
+          "enemyPool": "current_world",
+          "count": 1
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "arena_matchup_hp_adjustment_while_active",
+      "buffId": "arena_matchup_hp_adjustment",
+      "trigger": "while_active",
+      "priority": 100,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat",
+          "attr": "hp",
+          "value": 0,
+          "payloadValueKey": "hpBonus"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "arena_output_warmup_while_active",
+      "buffId": "arena_output_warmup",
+      "trigger": "while_active",
+      "priority": 100,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "linear_output_multiplier",
+          "outputs": [
+            "damage",
+            "heal"
+          ],
+          "startMultiplier": 0.4,
+          "startMultiplierPayloadKey": "startMultiplier",
+          "recoveryPerChargeConsumed": 0.3,
+          "recoveryPerChargeConsumedPayloadKey": "recoveryPerNormalAction",
+          "maximumMultiplier": 1,
+          "maximumMultiplierPayloadKey": "maximumMultiplier"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "arena_output_warmup_after_normal_action",
+      "buffId": "arena_output_warmup",
+      "trigger": "on_turn_settled",
+      "priority": 100,
+      "eventFilter": {
+        "turnKinds": [
+          "ordered"
+        ],
+        "includePreparation": false
+      },
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "consume_charge"
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "cursed_silk_sachet_curse_while_active",
+      "buffId": "cursed_silk_sachet_curse",
+      "trigger": "while_active",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "add_stat_percent",
+          "attr": "speed",
+          "value": -0.2
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "cursed_silk_sachet_curse_before_take_damage",
+      "buffId": "cursed_silk_sachet_curse",
+      "trigger": "on_before_take_damage",
+      "priority": 0,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "set_damage_multiplier",
+          "value": 1.2
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "combat_trial_patient_deterioration_on_turn_start",
+      "buffId": "combat_trial_patient_deterioration",
+      "trigger": "on_turn_start",
+      "priority": 100,
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "resource",
+          "resource": "hp",
+          "value": 0,
+          "payloadValueKey": "max_hp_loss_ratio",
+          "payloadValueCoeff": -1,
+          "valueScale": "max_resource",
+          "minimumHp": 1
+        }
+      ],
+      "disabled": false
+    }
+  ]
+}

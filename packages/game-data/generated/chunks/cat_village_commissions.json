@@ -1,0 +1,4567 @@
+{
+  "version": 1,
+  "cat_village_commissions": [
+    {
+      "id": "cvc_toyshop_wood",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_toyshop_wood.name",
+      "descKey": "catVillage.commission.cvc_toyshop_wood.desc",
+      "costOptions": [
+        {
+          "wood": {
+            "min": 15,
+            "max": 25
+          }
+        },
+        {
+          "stone": {
+            "min": 15,
+            "max": 25
+          }
+        }
+      ],
+      "rewardPool": {
+        "gold_coin": {
+          "min": 280,
+          "max": 490
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 7,
+      "weight": 12,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_bakery_firewood",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_bakery_firewood.name",
+      "descKey": "catVillage.commission.cvc_bakery_firewood.desc",
+      "costs": {
+        "wood": {
+          "min": 20,
+          "max": 30
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 380,
+          "max": 580
+        }
+      },
+      "reputationMin": 5,
+      "reputationMax": 9,
+      "weight": 10,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_morning_eggs",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_morning_eggs.name",
+      "descKey": "catVillage.commission.cvc_morning_eggs.desc",
+      "costs": {
+        "egg": {
+          "min": 12,
+          "max": 20
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 230,
+          "max": 390
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 7,
+      "weight": 11,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_cafe_milk",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_cafe_milk.name",
+      "descKey": "catVillage.commission.cvc_cafe_milk.desc",
+      "costs": {
+        "milk": {
+          "min": 10,
+          "max": 16
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 380,
+          "max": 620
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 7,
+      "weight": 11,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_tailor_wool",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_tailor_wool.name",
+      "descKey": "catVillage.commission.cvc_tailor_wool.desc",
+      "costs": {
+        "wool": {
+          "min": 10,
+          "max": 16
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 570,
+          "max": 930
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 7,
+      "weight": 11,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_well_stone",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_well_stone.name",
+      "descKey": "catVillage.commission.cvc_well_stone.desc",
+      "costs": {
+        "stone": {
+          "min": 15,
+          "max": 25
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 280,
+          "max": 490
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 6,
+      "weight": 10,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_road_stone",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_road_stone.name",
+      "descKey": "catVillage.commission.cvc_road_stone.desc",
+      "costs": {
+        "stone": {
+          "min": 25,
+          "max": 40
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 480,
+          "max": 770
+        }
+      },
+      "reputationMin": 5,
+      "reputationMax": 9,
+      "weight": 8,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_sap_pharmacy",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_sap_pharmacy.name",
+      "descKey": "catVillage.commission.cvc_sap_pharmacy.desc",
+      "costs": {
+        "tree_sap": {
+          "min": 12,
+          "max": 20
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 340,
+          "max": 580
+        }
+      },
+      "reputationMin": 4,
+      "reputationMax": 7,
+      "weight": 9,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_dew_garden",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_dew_garden.name",
+      "descKey": "catVillage.commission.cvc_dew_garden.desc",
+      "costs": {
+        "morning_dew": {
+          "min": 20,
+          "max": 35
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 190,
+          "max": 340
+        }
+      },
+      "reputationMin": 4,
+      "reputationMax": 7,
+      "weight": 9,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_flax_weaver",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_flax_weaver.name",
+      "descKey": "catVillage.commission.cvc_flax_weaver.desc",
+      "costs": {
+        "flax_fiber": {
+          "min": 15,
+          "max": 25
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 210,
+          "max": 360
+        }
+      },
+      "reputationMin": 4,
+      "reputationMax": 8,
+      "weight": 9,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_coal_kitchen",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_coal_kitchen.name",
+      "descKey": "catVillage.commission.cvc_coal_kitchen.desc",
+      "costs": {
+        "coal": {
+          "min": 12,
+          "max": 20
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 270,
+          "max": 460
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 6,
+      "weight": 9,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_copper_tools",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_copper_tools.name",
+      "descKey": "catVillage.commission.cvc_copper_tools.desc",
+      "costs": {
+        "copper_ore": {
+          "min": 10,
+          "max": 18
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 310,
+          "max": 570
+        }
+      },
+      "reputationMin": 4,
+      "reputationMax": 8,
+      "weight": 8,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_fence_wood",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_fence_wood.name",
+      "descKey": "catVillage.commission.cvc_fence_wood.desc",
+      "costs": {
+        "wood": {
+          "min": 10,
+          "max": 18
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 190,
+          "max": 350
+        }
+      },
+      "reputationMin": 2,
+      "reputationMax": 5,
+      "weight": 10,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_bridge_stone",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_bridge_stone.name",
+      "descKey": "catVillage.commission.cvc_bridge_stone.desc",
+      "costs": {
+        "stone": {
+          "min": 12,
+          "max": 20
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 230,
+          "max": 390
+        }
+      },
+      "reputationMin": 2,
+      "reputationMax": 5,
+      "weight": 10,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_candle_sap",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_candle_sap.name",
+      "descKey": "catVillage.commission.cvc_candle_sap.desc",
+      "costs": {
+        "tree_sap": {
+          "min": 10,
+          "max": 18
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 280,
+          "max": 520
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 6,
+      "weight": 9,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_market_dew",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_market_dew.name",
+      "descKey": "catVillage.commission.cvc_market_dew.desc",
+      "costs": {
+        "morning_dew": {
+          "min": 15,
+          "max": 25
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 140,
+          "max": 240
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 6,
+      "weight": 9,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_henhouse_eggs",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_henhouse_eggs.name",
+      "descKey": "catVillage.commission.cvc_henhouse_eggs.desc",
+      "costs": {
+        "egg": {
+          "min": 15,
+          "max": 25
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 280,
+          "max": 490
+        }
+      },
+      "reputationMin": 4,
+      "reputationMax": 8,
+      "weight": 9,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_cheese_milk",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_cheese_milk.name",
+      "descKey": "catVillage.commission.cvc_cheese_milk.desc",
+      "costs": {
+        "milk": {
+          "min": 10,
+          "max": 16
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 380,
+          "max": 620
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 7,
+      "weight": 9,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_blanket_wool",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_blanket_wool.name",
+      "descKey": "catVillage.commission.cvc_blanket_wool.desc",
+      "costs": {
+        "wool": {
+          "min": 10,
+          "max": 16
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 570,
+          "max": 930
+        }
+      },
+      "reputationMin": 4,
+      "reputationMax": 8,
+      "weight": 9,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_lumber_new_house",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_lumber_new_house.name",
+      "descKey": "catVillage.commission.cvc_lumber_new_house.desc",
+      "costs": {
+        "wood": {
+          "min": 18,
+          "max": 28
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 340,
+          "max": 540
+        }
+      },
+      "reputationMin": 4,
+      "reputationMax": 8,
+      "weight": 8,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_gravel_garden",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_gravel_garden.name",
+      "descKey": "catVillage.commission.cvc_gravel_garden.desc",
+      "costs": {
+        "stone": {
+          "min": 14,
+          "max": 22
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 260,
+          "max": 430
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 6,
+      "weight": 8,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_morning_nectar",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_morning_nectar.name",
+      "descKey": "catVillage.commission.cvc_morning_nectar.desc",
+      "costs": {
+        "sweet_nectar": {
+          "min": 12,
+          "max": 20
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 200,
+          "max": 340
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 7,
+      "weight": 9,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_coal_forge_daily",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_coal_forge_daily.name",
+      "descKey": "catVillage.commission.cvc_coal_forge_daily.desc",
+      "costs": {
+        "coal": {
+          "min": 10,
+          "max": 16
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 220,
+          "max": 370
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 6,
+      "weight": 9,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_fiber_combo_light",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_fiber_combo_light.name",
+      "descKey": "catVillage.commission.cvc_fiber_combo_light.desc",
+      "costOptions": [
+        {
+          "flax_fiber": {
+            "min": 12,
+            "max": 20
+          }
+        },
+        {
+          "cotton_fiber": {
+            "min": 12,
+            "max": 20
+          }
+        }
+      ],
+      "rewardPool": {
+        "gold_coin": {
+          "min": 250,
+          "max": 480
+        }
+      },
+      "reputationMin": 4,
+      "reputationMax": 7,
+      "weight": 9,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_village_prep_basic",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_village_prep_basic.name",
+      "descKey": "catVillage.commission.cvc_village_prep_basic.desc",
+      "costOptions": [
+        {
+          "wood": {
+            "min": 15,
+            "max": 25
+          }
+        },
+        {
+          "stone": {
+            "min": 15,
+            "max": 25
+          }
+        },
+        {
+          "egg": {
+            "min": 12,
+            "max": 20
+          }
+        },
+        {
+          "milk": {
+            "min": 10,
+            "max": 16
+          }
+        },
+        {
+          "wool": {
+            "min": 10,
+            "max": 16
+          }
+        },
+        {
+          "flax_fiber": {
+            "min": 15,
+            "max": 25
+          }
+        },
+        {
+          "coal": {
+            "min": 12,
+            "max": 20
+          }
+        },
+        {
+          "tree_sap": {
+            "min": 12,
+            "max": 20
+          }
+        },
+        {
+          "morning_dew": {
+            "min": 20,
+            "max": 35
+          }
+        },
+        {
+          "copper_ore": {
+            "min": 10,
+            "max": 18
+          }
+        }
+      ],
+      "rewardOptions": [
+        {
+          "gold_coin": {
+            "min": 260,
+            "max": 480
+          }
+        },
+        {
+          "gold_coin": {
+            "min": 300,
+            "max": 540
+          }
+        }
+      ],
+      "reputationMin": 4,
+      "reputationMax": 8,
+      "weight": 15,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_inn_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_inn_combo.name",
+      "descKey": "catVillage.commission.cvc_inn_combo.desc",
+      "costOptions": [
+        {
+          "wood": {
+            "min": 15,
+            "max": 22
+          },
+          "coal": {
+            "min": 10,
+            "max": 16
+          }
+        },
+        {
+          "egg": {
+            "min": 12,
+            "max": 18
+          },
+          "milk": {
+            "min": 6,
+            "max": 10
+          }
+        },
+        {
+          "wool": {
+            "min": 8,
+            "max": 12
+          },
+          "flax_fiber": {
+            "min": 10,
+            "max": 16
+          }
+        },
+        {
+          "stone": {
+            "min": 12,
+            "max": 20
+          },
+          "wood": {
+            "min": 10,
+            "max": 16
+          }
+        }
+      ],
+      "rewardOptions": [
+        {
+          "gold_coin": {
+            "min": 460,
+            "max": 790
+          }
+        },
+        {
+          "gold_coin": {
+            "min": 500,
+            "max": 840
+          }
+        }
+      ],
+      "reputationMin": 6,
+      "reputationMax": 11,
+      "weight": 9,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_furniture_sturdy",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_furniture_sturdy.name",
+      "descKey": "catVillage.commission.cvc_furniture_sturdy.desc",
+      "costs": {
+        "sturdy_wood": {
+          "min": 10,
+          "max": 16
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 310,
+          "max": 500
+        }
+      },
+      "reputationMin": 8,
+      "reputationMax": 14,
+      "weight": 8,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_dock_sturdy",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_dock_sturdy.name",
+      "descKey": "catVillage.commission.cvc_dock_sturdy.desc",
+      "costs": {
+        "sturdy_wood": {
+          "min": 12,
+          "max": 20
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 370,
+          "max": 620
+        }
+      },
+      "reputationMin": 10,
+      "reputationMax": 18,
+      "weight": 6,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_iron_smithy",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_iron_smithy.name",
+      "descKey": "catVillage.commission.cvc_iron_smithy.desc",
+      "costs": {
+        "iron_ore": {
+          "min": 8,
+          "max": 14
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 330,
+          "max": 590
+        }
+      },
+      "reputationMin": 9,
+      "reputationMax": 15,
+      "weight": 7,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_cotton_mill",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_cotton_mill.name",
+      "descKey": "catVillage.commission.cvc_cotton_mill.desc",
+      "costs": {
+        "cotton_fiber": {
+          "min": 12,
+          "max": 20
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 300,
+          "max": 510
+        }
+      },
+      "reputationMin": 8,
+      "reputationMax": 14,
+      "weight": 7,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_soft_resin_apothecary",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_soft_resin_apothecary.name",
+      "descKey": "catVillage.commission.cvc_soft_resin_apothecary.desc",
+      "costs": {
+        "soft_resin": {
+          "min": 8,
+          "max": 14
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 360,
+          "max": 640
+        }
+      },
+      "reputationMin": 8,
+      "reputationMax": 13,
+      "weight": 7,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_nectar_brewery",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_nectar_brewery.name",
+      "descKey": "catVillage.commission.cvc_nectar_brewery.desc",
+      "costs": {
+        "sweet_nectar": {
+          "min": 12,
+          "max": 20
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 200,
+          "max": 340
+        }
+      },
+      "reputationMin": 8,
+      "reputationMax": 14,
+      "weight": 7,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_dairy_bulk",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_dairy_bulk.name",
+      "descKey": "catVillage.commission.cvc_dairy_bulk.desc",
+      "costs": {
+        "milk": {
+          "min": 14,
+          "max": 22
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 530,
+          "max": 850
+        }
+      },
+      "reputationMin": 9,
+      "reputationMax": 15,
+      "weight": 7,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_harvest_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_harvest_combo.name",
+      "descKey": "catVillage.commission.cvc_harvest_combo.desc",
+      "costs": {
+        "egg": {
+          "min": 10,
+          "max": 16
+        },
+        "wool": {
+          "min": 6,
+          "max": 10
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 530,
+          "max": 890
+        }
+      },
+      "reputationMin": 10,
+      "reputationMax": 17,
+      "weight": 6,
+      "minRepLevel": 3
+    },
+    {
+      "id": "cvc_bookshelf_sturdy",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_bookshelf_sturdy.name",
+      "descKey": "catVillage.commission.cvc_bookshelf_sturdy.desc",
+      "costs": {
+        "sturdy_wood": {
+          "min": 8,
+          "max": 14
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 250,
+          "max": 440
+        }
+      },
+      "reputationMin": 7,
+      "reputationMax": 12,
+      "weight": 7,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_bridge_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_bridge_combo.name",
+      "descKey": "catVillage.commission.cvc_bridge_combo.desc",
+      "costOptions": [
+        {
+          "sturdy_wood": {
+            "min": 5,
+            "max": 8
+          },
+          "stone": {
+            "min": 10,
+            "max": 16
+          }
+        },
+        {
+          "iron_ore": {
+            "min": 5,
+            "max": 8
+          },
+          "stone": {
+            "min": 12,
+            "max": 18
+          }
+        }
+      ],
+      "rewardPool": {
+        "gold_coin": {
+          "min": 470,
+          "max": 780
+        }
+      },
+      "reputationMin": 10,
+      "reputationMax": 16,
+      "weight": 6,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_medicine_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_medicine_combo.name",
+      "descKey": "catVillage.commission.cvc_medicine_combo.desc",
+      "costOptions": [
+        {
+          "soft_resin": {
+            "min": 8,
+            "max": 14
+          }
+        },
+        {
+          "sweet_nectar": {
+            "min": 12,
+            "max": 20
+          }
+        },
+        {
+          "tree_sap": {
+            "min": 12,
+            "max": 20
+          }
+        }
+      ],
+      "rewardPool": {
+        "gold_coin": {
+          "min": 300,
+          "max": 570
+        }
+      },
+      "reputationMin": 8,
+      "reputationMax": 14,
+      "weight": 7,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_kitchen_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_kitchen_combo.name",
+      "descKey": "catVillage.commission.cvc_kitchen_combo.desc",
+      "costOptions": [
+        {
+          "coal": {
+            "min": 14,
+            "max": 22
+          }
+        },
+        {
+          "egg": {
+            "min": 10,
+            "max": 16
+          },
+          "milk": {
+            "min": 6,
+            "max": 10
+          }
+        },
+        {
+          "wood": {
+            "min": 14,
+            "max": 20
+          },
+          "coal": {
+            "min": 8,
+            "max": 12
+          }
+        }
+      ],
+      "rewardPool": {
+        "gold_coin": {
+          "min": 450,
+          "max": 780
+        }
+      },
+      "reputationMin": 9,
+      "reputationMax": 15,
+      "weight": 7,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_iron_cotton_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_iron_cotton_combo.name",
+      "descKey": "catVillage.commission.cvc_iron_cotton_combo.desc",
+      "costs": {
+        "iron_ore": {
+          "min": 5,
+          "max": 8
+        },
+        "cotton_fiber": {
+          "min": 10,
+          "max": 16
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 570,
+          "max": 940
+        }
+      },
+      "reputationMin": 11,
+      "reputationMax": 18,
+      "weight": 6,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_wool_milk_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_wool_milk_combo.name",
+      "descKey": "catVillage.commission.cvc_wool_milk_combo.desc",
+      "costs": {
+        "wool": {
+          "min": 8,
+          "max": 12
+        },
+        "milk": {
+          "min": 6,
+          "max": 10
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 680,
+          "max": 1070
+        }
+      },
+      "reputationMin": 10,
+      "reputationMax": 17,
+      "weight": 7,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_building_foundation",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_building_foundation.name",
+      "descKey": "catVillage.commission.cvc_building_foundation.desc",
+      "costs": {
+        "stone": {
+          "min": 18,
+          "max": 28
+        },
+        "coal": {
+          "min": 8,
+          "max": 12
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 530,
+          "max": 820
+        }
+      },
+      "reputationMin": 11,
+      "reputationMax": 18,
+      "weight": 6,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_fiber_bulk_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_fiber_bulk_combo.name",
+      "descKey": "catVillage.commission.cvc_fiber_bulk_combo.desc",
+      "costOptions": [
+        {
+          "flax_fiber": {
+            "min": 18,
+            "max": 28
+          }
+        },
+        {
+          "cotton_fiber": {
+            "min": 15,
+            "max": 24
+          }
+        },
+        {
+          "wool": {
+            "min": 10,
+            "max": 16
+          }
+        }
+      ],
+      "rewardPool": {
+        "gold_coin": {
+          "min": 400,
+          "max": 760
+        }
+      },
+      "reputationMin": 10,
+      "reputationMax": 16,
+      "weight": 6,
+      "minRepLevel": 3
+    },
+    {
+      "id": "cvc_copper_sap_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_copper_sap_combo.name",
+      "descKey": "catVillage.commission.cvc_copper_sap_combo.desc",
+      "costs": {
+        "copper_ore": {
+          "min": 8,
+          "max": 12
+        },
+        "tree_sap": {
+          "min": 10,
+          "max": 16
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 540,
+          "max": 840
+        }
+      },
+      "reputationMin": 9,
+      "reputationMax": 15,
+      "weight": 7,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_forge_mid",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_forge_mid.name",
+      "descKey": "catVillage.commission.cvc_forge_mid.desc",
+      "costOptions": [
+        {
+          "iron_ore": {
+            "min": 5,
+            "max": 8
+          },
+          "coal": {
+            "min": 8,
+            "max": 12
+          }
+        },
+        {
+          "copper_ore": {
+            "min": 8,
+            "max": 12
+          },
+          "soft_resin": {
+            "min": 5,
+            "max": 8
+          }
+        }
+      ],
+      "rewardPool": {
+        "gold_coin": {
+          "min": 560,
+          "max": 910
+        }
+      },
+      "reputationMin": 11,
+      "reputationMax": 18,
+      "weight": 6,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_egg_milk_wool_triple",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_egg_milk_wool_triple.name",
+      "descKey": "catVillage.commission.cvc_egg_milk_wool_triple.desc",
+      "costs": {
+        "egg": {
+          "min": 8,
+          "max": 12
+        },
+        "milk": {
+          "min": 5,
+          "max": 8
+        },
+        "wool": {
+          "min": 4,
+          "max": 7
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 660,
+          "max": 1060
+        }
+      },
+      "reputationMin": 12,
+      "reputationMax": 19,
+      "weight": 5,
+      "minRepLevel": 3
+    },
+    {
+      "id": "cvc_coal_winter_stock",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_coal_winter_stock.name",
+      "descKey": "catVillage.commission.cvc_coal_winter_stock.desc",
+      "costs": {
+        "coal": {
+          "min": 20,
+          "max": 30
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 450,
+          "max": 690
+        }
+      },
+      "reputationMin": 9,
+      "reputationMax": 15,
+      "weight": 6,
+      "minRepLevel": 3
+    },
+    {
+      "id": "cvc_warehouse_stone",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_warehouse_stone.name",
+      "descKey": "catVillage.commission.cvc_warehouse_stone.desc",
+      "costs": {
+        "stone": {
+          "min": 30,
+          "max": 50
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 570,
+          "max": 960
+        }
+      },
+      "reputationMin": 10,
+      "reputationMax": 18,
+      "weight": 6,
+      "minRepLevel": 3
+    },
+    {
+      "id": "cvc_workshop_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_workshop_combo.name",
+      "descKey": "catVillage.commission.cvc_workshop_combo.desc",
+      "costOptions": [
+        {
+          "stone": {
+            "min": 12,
+            "max": 20
+          },
+          "copper_ore": {
+            "min": 6,
+            "max": 10
+          }
+        },
+        {
+          "iron_ore": {
+            "min": 5,
+            "max": 8
+          },
+          "coal": {
+            "min": 8,
+            "max": 12
+          }
+        },
+        {
+          "sturdy_wood": {
+            "min": 6,
+            "max": 10
+          },
+          "iron_ore": {
+            "min": 4,
+            "max": 7
+          }
+        },
+        {
+          "cotton_fiber": {
+            "min": 10,
+            "max": 16
+          },
+          "soft_resin": {
+            "min": 5,
+            "max": 8
+          }
+        }
+      ],
+      "rewardPool": {
+        "gold_coin": {
+          "min": 500,
+          "max": 840
+        }
+      },
+      "reputationMin": 11,
+      "reputationMax": 18,
+      "weight": 7,
+      "minRepLevel": 3
+    },
+    {
+      "id": "cvc_village_prep_mid",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_village_prep_mid.name",
+      "descKey": "catVillage.commission.cvc_village_prep_mid.desc",
+      "costOptions": [
+        {
+          "sturdy_wood": {
+            "min": 10,
+            "max": 16
+          }
+        },
+        {
+          "iron_ore": {
+            "min": 8,
+            "max": 14
+          }
+        },
+        {
+          "cotton_fiber": {
+            "min": 12,
+            "max": 20
+          }
+        },
+        {
+          "soft_resin": {
+            "min": 8,
+            "max": 14
+          }
+        },
+        {
+          "sweet_nectar": {
+            "min": 12,
+            "max": 20
+          }
+        },
+        {
+          "coal": {
+            "min": 18,
+            "max": 28
+          }
+        },
+        {
+          "milk": {
+            "min": 12,
+            "max": 20
+          }
+        }
+      ],
+      "rewardOptions": [
+        {
+          "gold_coin": {
+            "min": 350,
+            "max": 600
+          }
+        },
+        {
+          "gold_coin": {
+            "min": 400,
+            "max": 660
+          }
+        }
+      ],
+      "reputationMin": 10,
+      "reputationMax": 16,
+      "weight": 12,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_temple_silverleaf",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_temple_silverleaf.name",
+      "descKey": "catVillage.commission.cvc_temple_silverleaf.desc",
+      "costs": {
+        "silverleaf_wood": {
+          "min": 5,
+          "max": 10
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 190,
+          "max": 400
+        }
+      },
+      "reputationMin": 18,
+      "reputationMax": 30,
+      "weight": 5,
+      "minRepLevel": 5
+    },
+    {
+      "id": "cvc_luxury_silverleaf_fiber",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_luxury_silverleaf_fiber.name",
+      "descKey": "catVillage.commission.cvc_luxury_silverleaf_fiber.desc",
+      "costs": {
+        "silverleaf_fiber": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 230,
+          "max": 470
+        }
+      },
+      "reputationMin": 20,
+      "reputationMax": 32,
+      "weight": 4,
+      "minRepLevel": 5
+    },
+    {
+      "id": "cvc_jeweler_silver",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_jeweler_silver.name",
+      "descKey": "catVillage.commission.cvc_jeweler_silver.desc",
+      "costs": {
+        "silver_ore": {
+          "min": 5,
+          "max": 9
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 280,
+          "max": 510
+        }
+      },
+      "reputationMin": 20,
+      "reputationMax": 32,
+      "weight": 4,
+      "minRepLevel": 5
+    },
+    {
+      "id": "cvc_alchemy_silverleaf_resin",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_alchemy_silverleaf_resin.name",
+      "descKey": "catVillage.commission.cvc_alchemy_silverleaf_resin.desc",
+      "costs": {
+        "silverleaf_resin": {
+          "min": 4,
+          "max": 8
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 240,
+          "max": 480
+        }
+      },
+      "reputationMin": 18,
+      "reputationMax": 30,
+      "weight": 4,
+      "minRepLevel": 5
+    },
+    {
+      "id": "cvc_silverleaf_dew_perfumer",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_silverleaf_dew_perfumer.name",
+      "descKey": "catVillage.commission.cvc_silverleaf_dew_perfumer.desc",
+      "costs": {
+        "silverleaf_dew": {
+          "min": 10,
+          "max": 16
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 250,
+          "max": 410
+        }
+      },
+      "reputationMin": 20,
+      "reputationMax": 33,
+      "weight": 4,
+      "minRepLevel": 6
+    },
+    {
+      "id": "cvc_clear_resin_workshop",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_clear_resin_workshop.name",
+      "descKey": "catVillage.commission.cvc_clear_resin_workshop.desc",
+      "costs": {
+        "clear_resin": {
+          "min": 4,
+          "max": 7
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 270,
+          "max": 480
+        }
+      },
+      "reputationMin": 18,
+      "reputationMax": 30,
+      "weight": 4,
+      "minRepLevel": 5
+    },
+    {
+      "id": "cvc_sculptor_engrave_stone",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_sculptor_engrave_stone.name",
+      "descKey": "catVillage.commission.cvc_sculptor_engrave_stone.desc",
+      "costs": {
+        "engrave_stone": {
+          "min": 1,
+          "max": 2
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 570,
+          "max": 1160
+        }
+      },
+      "reputationMin": 17,
+      "reputationMax": 28,
+      "weight": 4,
+      "minRepLevel": 5
+    },
+    {
+      "id": "cvc_silverleaf_sap_craft",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_silverleaf_sap_craft.name",
+      "descKey": "catVillage.commission.cvc_silverleaf_sap_craft.desc",
+      "costs": {
+        "silverleaf_wood": {
+          "min": 3,
+          "max": 5
+        },
+        "tree_sap": {
+          "min": 8,
+          "max": 12
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 350,
+          "max": 550
+        }
+      },
+      "reputationMin": 20,
+      "reputationMax": 33,
+      "weight": 4,
+      "minRepLevel": 5
+    },
+    {
+      "id": "cvc_temple_ceremony",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_temple_ceremony.name",
+      "descKey": "catVillage.commission.cvc_temple_ceremony.desc",
+      "costs": {
+        "silverleaf_wood": {
+          "min": 4,
+          "max": 7
+        },
+        "engrave_stone": {
+          "min": 1,
+          "max": 2
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 720,
+          "max": 1320
+        }
+      },
+      "reputationMin": 22,
+      "reputationMax": 36,
+      "weight": 3,
+      "minRepLevel": 5
+    },
+    {
+      "id": "cvc_luxury_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_luxury_combo.name",
+      "descKey": "catVillage.commission.cvc_luxury_combo.desc",
+      "costs": {
+        "silverleaf_fiber": {
+          "min": 5,
+          "max": 9
+        },
+        "silverleaf_dew": {
+          "min": 6,
+          "max": 10
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 430,
+          "max": 780
+        }
+      },
+      "reputationMin": 25,
+      "reputationMax": 40,
+      "weight": 3,
+      "minRepLevel": 6
+    },
+    {
+      "id": "cvc_rare_fiber_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_rare_fiber_combo.name",
+      "descKey": "catVillage.commission.cvc_rare_fiber_combo.desc",
+      "costOptions": [
+        {
+          "silverleaf_fiber": {
+            "min": 6,
+            "max": 10
+          }
+        },
+        {
+          "silkweed_fiber": {
+            "min": 4,
+            "max": 8
+          }
+        }
+      ],
+      "rewardPool": {
+        "gold_coin": {
+          "min": 200,
+          "max": 410
+        }
+      },
+      "reputationMin": 22,
+      "reputationMax": 35,
+      "weight": 4,
+      "minRepLevel": 6
+    },
+    {
+      "id": "cvc_alchemy_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_alchemy_combo.name",
+      "descKey": "catVillage.commission.cvc_alchemy_combo.desc",
+      "costOptions": [
+        {
+          "silverleaf_resin": {
+            "min": 3,
+            "max": 5
+          },
+          "clear_resin": {
+            "min": 3,
+            "max": 5
+          }
+        },
+        {
+          "silverleaf_dew": {
+            "min": 6,
+            "max": 10
+          },
+          "sun_resin": {
+            "min": 2,
+            "max": 4
+          }
+        }
+      ],
+      "rewardPool": {
+        "gold_coin": {
+          "min": 490,
+          "max": 840
+        }
+      },
+      "reputationMin": 22,
+      "reputationMax": 38,
+      "weight": 3,
+      "minRepLevel": 6
+    },
+    {
+      "id": "cvc_scholar_rare",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_scholar_rare.name",
+      "descKey": "catVillage.commission.cvc_scholar_rare.desc",
+      "costOptions": [
+        {
+          "engrave_stone": {
+            "min": 1,
+            "max": 2
+          }
+        },
+        {
+          "clear_resin": {
+            "min": 4,
+            "max": 7
+          }
+        },
+        {
+          "moon_essence": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ],
+      "rewardOptions": [
+        {
+          "gold_coin": {
+            "min": 570,
+            "max": 1160
+          }
+        },
+        {
+          "gold_coin": {
+            "min": 270,
+            "max": 480
+          }
+        },
+        {
+          "gold_coin": {
+            "min": 7680,
+            "max": 7680
+          }
+        }
+      ],
+      "reputationMin": 20,
+      "reputationMax": 33,
+      "weight": 4,
+      "minRepLevel": 5
+    },
+    {
+      "id": "cvc_silver_engrave_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_silver_engrave_combo.name",
+      "descKey": "catVillage.commission.cvc_silver_engrave_combo.desc",
+      "costs": {
+        "silver_ore": {
+          "min": 3,
+          "max": 5
+        },
+        "engrave_stone": {
+          "min": 1,
+          "max": 2
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 740,
+          "max": 1440
+        }
+      },
+      "reputationMin": 23,
+      "reputationMax": 38,
+      "weight": 3,
+      "minRepLevel": 6
+    },
+    {
+      "id": "cvc_village_prep_rare",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_village_prep_rare.name",
+      "descKey": "catVillage.commission.cvc_village_prep_rare.desc",
+      "costOptions": [
+        {
+          "silverleaf_wood": {
+            "min": 5,
+            "max": 10
+          }
+        },
+        {
+          "silverleaf_fiber": {
+            "min": 6,
+            "max": 12
+          }
+        },
+        {
+          "silver_ore": {
+            "min": 4,
+            "max": 8
+          }
+        },
+        {
+          "silverleaf_resin": {
+            "min": 4,
+            "max": 8
+          }
+        },
+        {
+          "silverleaf_dew": {
+            "min": 8,
+            "max": 14
+          }
+        },
+        {
+          "clear_resin": {
+            "min": 4,
+            "max": 7
+          }
+        },
+        {
+          "engrave_stone": {
+            "min": 1,
+            "max": 2
+          }
+        }
+      ],
+      "rewardOptions": [
+        {
+          "gold_coin": {
+            "min": 230,
+            "max": 560
+          }
+        },
+        {
+          "gold_coin": {
+            "min": 280,
+            "max": 620
+          }
+        }
+      ],
+      "reputationMin": 18,
+      "reputationMax": 30,
+      "weight": 8,
+      "minRepLevel": 5
+    },
+    {
+      "id": "cvc_rare_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_rare_combo.name",
+      "descKey": "catVillage.commission.cvc_rare_combo.desc",
+      "costOptions": [
+        {
+          "silverleaf_wood": {
+            "min": 3,
+            "max": 5
+          },
+          "silverleaf_resin": {
+            "min": 2,
+            "max": 4
+          }
+        },
+        {
+          "silver_ore": {
+            "min": 3,
+            "max": 5
+          },
+          "clear_resin": {
+            "min": 3,
+            "max": 5
+          }
+        },
+        {
+          "silverleaf_fiber": {
+            "min": 4,
+            "max": 7
+          },
+          "silverleaf_dew": {
+            "min": 5,
+            "max": 8
+          }
+        }
+      ],
+      "rewardPool": {
+        "gold_coin": {
+          "min": 440,
+          "max": 770
+        }
+      },
+      "reputationMin": 25,
+      "reputationMax": 40,
+      "weight": 3,
+      "minRepLevel": 7
+    },
+    {
+      "id": "cvc_moon_essence_secret",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_moon_essence_secret.name",
+      "descKey": "catVillage.commission.cvc_moon_essence_secret.desc",
+      "costs": {
+        "moon_essence": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 7680,
+          "max": 7680
+        }
+      },
+      "reputationMin": 22,
+      "reputationMax": 38,
+      "weight": 3,
+      "minRepLevel": 7
+    },
+    {
+      "id": "cvc_silkweed_fiber_guild",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_silkweed_fiber_guild.name",
+      "descKey": "catVillage.commission.cvc_silkweed_fiber_guild.desc",
+      "costs": {
+        "silkweed_fiber": {
+          "min": 4,
+          "max": 8
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 200,
+          "max": 410
+        }
+      },
+      "reputationMin": 24,
+      "reputationMax": 40,
+      "weight": 3,
+      "minRepLevel": 7
+    },
+    {
+      "id": "cvc_sun_resin_alchemist",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_sun_resin_alchemist.name",
+      "descKey": "catVillage.commission.cvc_sun_resin_alchemist.desc",
+      "costs": {
+        "sun_resin": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 240,
+          "max": 490
+        }
+      },
+      "reputationMin": 20,
+      "reputationMax": 35,
+      "weight": 3,
+      "minRepLevel": 7
+    },
+    {
+      "id": "cvc_moon_essence_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_moon_essence_combo.name",
+      "descKey": "catVillage.commission.cvc_moon_essence_combo.desc",
+      "costs": {
+        "moon_essence": {
+          "min": 1,
+          "max": 1
+        },
+        "soft_resin": {
+          "min": 5,
+          "max": 8
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 7870,
+          "max": 8070
+        }
+      },
+      "reputationMin": 24,
+      "reputationMax": 40,
+      "weight": 3,
+      "minRepLevel": 7
+    },
+    {
+      "id": "cvc_silkweed_nectar_guild",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_silkweed_nectar_guild.name",
+      "descKey": "catVillage.commission.cvc_silkweed_nectar_guild.desc",
+      "costs": {
+        "silkweed_nectar": {
+          "min": 5,
+          "max": 10
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 180,
+          "max": 360
+        }
+      },
+      "reputationMin": 22,
+      "reputationMax": 38,
+      "weight": 3,
+      "minRepLevel": 7
+    },
+    {
+      "id": "cvc_sunlit_nectar_rare",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_sunlit_nectar_rare.name",
+      "descKey": "catVillage.commission.cvc_sunlit_nectar_rare.desc",
+      "costs": {
+        "sunlit_nectar": {
+          "min": 4,
+          "max": 8
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 170,
+          "max": 360
+        }
+      },
+      "reputationMin": 20,
+      "reputationMax": 35,
+      "weight": 3,
+      "minRepLevel": 6
+    },
+    {
+      "id": "cvc_moon_resin_lab",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_moon_resin_lab.name",
+      "descKey": "catVillage.commission.cvc_moon_resin_lab.desc",
+      "costs": {
+        "moon_resin": {
+          "min": 3,
+          "max": 5
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 280,
+          "max": 480
+        }
+      },
+      "reputationMin": 22,
+      "reputationMax": 38,
+      "weight": 3,
+      "minRepLevel": 7
+    },
+    {
+      "id": "cvc_silkwood_vault",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_silkwood_vault.name",
+      "descKey": "catVillage.commission.cvc_silkwood_vault.desc",
+      "costs": {
+        "silkwood": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 160,
+          "max": 330
+        }
+      },
+      "reputationMin": 35,
+      "reputationMax": 55,
+      "weight": 2,
+      "minRepLevel": 10
+    },
+    {
+      "id": "cvc_gold_ore_treasury",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_gold_ore_treasury.name",
+      "descKey": "catVillage.commission.cvc_gold_ore_treasury.desc",
+      "costs": {
+        "gold_ore": {
+          "min": 3,
+          "max": 5
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 240,
+          "max": 410
+        }
+      },
+      "reputationMin": 40,
+      "reputationMax": 65,
+      "weight": 2,
+      "minRepLevel": 12
+    },
+    {
+      "id": "cvc_goldvine_fiber_royal",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_goldvine_fiber_royal.name",
+      "descKey": "catVillage.commission.cvc_goldvine_fiber_royal.desc",
+      "costs": {
+        "goldvine_fiber": {
+          "min": 2,
+          "max": 5
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 130,
+          "max": 340
+        }
+      },
+      "reputationMin": 40,
+      "reputationMax": 62,
+      "weight": 2,
+      "minRepLevel": 12
+    },
+    {
+      "id": "cvc_silkwood_gold_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_silkwood_gold_combo.name",
+      "descKey": "catVillage.commission.cvc_silkwood_gold_combo.desc",
+      "costs": {
+        "silkwood": {
+          "min": 2,
+          "max": 3
+        },
+        "gold_ore": {
+          "min": 2,
+          "max": 3
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 270,
+          "max": 410
+        }
+      },
+      "reputationMin": 45,
+      "reputationMax": 72,
+      "weight": 2,
+      "minRepLevel": 12
+    },
+    {
+      "id": "cvc_moonwood_moonvine",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_moonwood_moonvine.name",
+      "descKey": "catVillage.commission.cvc_moonwood_moonvine.desc",
+      "costs": {
+        "moonwood": {
+          "min": 1,
+          "max": 2
+        },
+        "moonvine_fiber": {
+          "min": 2,
+          "max": 4
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 250,
+          "max": 490
+        }
+      },
+      "reputationMin": 48,
+      "reputationMax": 75,
+      "weight": 2,
+      "minRepLevel": 14
+    },
+    {
+      "id": "cvc_golden_textile",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_golden_textile.name",
+      "descKey": "catVillage.commission.cvc_golden_textile.desc",
+      "costs": {
+        "goldvine_fiber": {
+          "min": 2,
+          "max": 4
+        },
+        "silkweed_fiber": {
+          "min": 2,
+          "max": 4
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 230,
+          "max": 460
+        }
+      },
+      "reputationMin": 45,
+      "reputationMax": 70,
+      "weight": 2,
+      "minRepLevel": 12
+    },
+    {
+      "id": "cvc_vault_max",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_vault_max.name",
+      "descKey": "catVillage.commission.cvc_vault_max.desc",
+      "costs": {
+        "gold_ore": {
+          "min": 2,
+          "max": 4
+        },
+        "silver_ore": {
+          "min": 3,
+          "max": 5
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 330,
+          "max": 580
+        }
+      },
+      "reputationMin": 50,
+      "reputationMax": 80,
+      "weight": 2,
+      "minRepLevel": 13
+    },
+    {
+      "id": "cvc_moon_dew_essence_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_moon_dew_essence_combo.name",
+      "descKey": "catVillage.commission.cvc_moon_dew_essence_combo.desc",
+      "costs": {
+        "moon_dew": {
+          "min": 1,
+          "max": 2
+        },
+        "moon_essence": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 7730,
+          "max": 7840
+        }
+      },
+      "reputationMin": 48,
+      "reputationMax": 75,
+      "weight": 2,
+      "minRepLevel": 14
+    },
+    {
+      "id": "cvc_village_grand_prep",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_village_grand_prep.name",
+      "descKey": "catVillage.commission.cvc_village_grand_prep.desc",
+      "costOptions": [
+        {
+          "silkwood": {
+            "min": 3,
+            "max": 5
+          }
+        },
+        {
+          "gold_ore": {
+            "min": 3,
+            "max": 5
+          }
+        },
+        {
+          "goldvine_fiber": {
+            "min": 2,
+            "max": 5
+          }
+        },
+        {
+          "moonvine_fiber": {
+            "min": 2,
+            "max": 4
+          }
+        },
+        {
+          "moon_dew": {
+            "min": 3,
+            "max": 5
+          }
+        },
+        {
+          "moonwood": {
+            "min": 1,
+            "max": 3
+          }
+        },
+        {
+          "goldvine_wood": {
+            "min": 2,
+            "max": 4
+          }
+        }
+      ],
+      "rewardOptions": [
+        {
+          "gold_coin": {
+            "min": 160,
+            "max": 410
+          }
+        },
+        {
+          "gold_coin": {
+            "min": 200,
+            "max": 450
+          }
+        }
+      ],
+      "reputationMin": 45,
+      "reputationMax": 70,
+      "weight": 5,
+      "minRepLevel": 12
+    },
+    {
+      "id": "cvc_goldvine_moonwood_combo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_goldvine_moonwood_combo.name",
+      "descKey": "catVillage.commission.cvc_goldvine_moonwood_combo.desc",
+      "costs": {
+        "goldvine_fiber": {
+          "min": 2,
+          "max": 3
+        },
+        "moonwood": {
+          "min": 1,
+          "max": 2
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 200,
+          "max": 370
+        }
+      },
+      "reputationMin": 50,
+      "reputationMax": 80,
+      "weight": 1,
+      "minRepLevel": 15
+    },
+    {
+      "id": "cvc_moon_dew_mystery",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_moon_dew_mystery.name",
+      "descKey": "catVillage.commission.cvc_moon_dew_mystery.desc",
+      "costs": {
+        "moon_dew": {
+          "min": 3,
+          "max": 5
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 160,
+          "max": 280
+        }
+      },
+      "reputationMin": 45,
+      "reputationMax": 70,
+      "weight": 2,
+      "minRepLevel": 14
+    },
+    {
+      "id": "cvc_moonwood_legendary",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_moonwood_legendary.name",
+      "descKey": "catVillage.commission.cvc_moonwood_legendary.desc",
+      "costs": {
+        "moonwood": {
+          "min": 1,
+          "max": 2
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 80,
+          "max": 170
+        }
+      },
+      "reputationMin": 50,
+      "reputationMax": 80,
+      "weight": 1,
+      "minRepLevel": 15
+    },
+    {
+      "id": "cvc_base2_moss_spore_pharmacy",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_base2_moss_spore_pharmacy.name",
+      "descKey": "catVillage.commission.cvc_base2_moss_spore_pharmacy.desc",
+      "costs": {
+        "base2_moss_spore": {
+          "min": 12,
+          "max": 20
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 504,
+          "max": 756
+        }
+      },
+      "reputationMin": 2,
+      "reputationMax": 6,
+      "weight": 8,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_base2_cave_membrane_tannery",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_base2_cave_membrane_tannery.name",
+      "descKey": "catVillage.commission.cvc_base2_cave_membrane_tannery.desc",
+      "costs": {
+        "base2_cave_membrane": {
+          "min": 8,
+          "max": 14
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 432,
+          "max": 648
+        }
+      },
+      "reputationMin": 2,
+      "reputationMax": 6,
+      "weight": 7,
+      "minRepLevel": 1
+    },
+    {
+      "id": "cvc_base2_ruin_shard_museum",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_base2_ruin_shard_museum.name",
+      "descKey": "catVillage.commission.cvc_base2_ruin_shard_museum.desc",
+      "costs": {
+        "base2_ruin_core_shard": {
+          "min": 8,
+          "max": 14
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 1120,
+          "max": 1680
+        }
+      },
+      "reputationMin": 2,
+      "reputationMax": 6,
+      "weight": 7,
+      "minRepLevel": 1
+    },
+    {
+      "id": "cvc_base2_dragon_scale_forge",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_base2_dragon_scale_forge.name",
+      "descKey": "catVillage.commission.cvc_base2_dragon_scale_forge.desc",
+      "costs": {
+        "base2_dragon_scale_chip": {
+          "min": 4,
+          "max": 7
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 1576,
+          "max": 2364
+        }
+      },
+      "reputationMin": 2,
+      "reputationMax": 6,
+      "weight": 6,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_base2_forest_loot_combo",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_base2_forest_loot_combo.name",
+      "descKey": "catVillage.commission.cvc_base2_forest_loot_combo.desc",
+      "costOptions": [
+        {
+          "base2_moss_spore": {
+            "min": 14,
+            "max": 22
+          }
+        },
+        {
+          "base2_cave_membrane": {
+            "min": 11,
+            "max": 16
+          }
+        }
+      ],
+      "rewardPool": {
+        "gold_coin": {
+          "min": 588,
+          "max": 882
+        }
+      },
+      "reputationMin": 2,
+      "reputationMax": 6,
+      "weight": 7,
+      "minRepLevel": 0
+    },
+    {
+      "id": "cvc_base2_ruins_dragon_combo",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_base2_ruins_dragon_combo.name",
+      "descKey": "catVillage.commission.cvc_base2_ruins_dragon_combo.desc",
+      "costs": {
+        "base2_ruin_core_shard": {
+          "min": 5,
+          "max": 8
+        },
+        "base2_dragon_scale_chip": {
+          "min": 2,
+          "max": 4
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 1488,
+          "max": 2232
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 9,
+      "weight": 5,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_base3_frost_ledger_historian",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_base3_frost_ledger_historian.name",
+      "descKey": "catVillage.commission.cvc_base3_frost_ledger_historian.desc",
+      "costs": {
+        "frost_ledger_page": {
+          "min": 15,
+          "max": 25
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 915,
+          "max": 1373
+        }
+      },
+      "reputationMin": 2,
+      "reputationMax": 6,
+      "weight": 7,
+      "minRepLevel": 3
+    },
+    {
+      "id": "cvc_base3_white_coin_mint",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_base3_white_coin_mint.name",
+      "descKey": "catVillage.commission.cvc_base3_white_coin_mint.desc",
+      "costs": {
+        "white_coin_shard": {
+          "min": 15,
+          "max": 25
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 2280,
+          "max": 3420
+        }
+      },
+      "reputationMin": 2,
+      "reputationMax": 6,
+      "weight": 7,
+      "minRepLevel": 3
+    },
+    {
+      "id": "cvc_base3_snowseal_workshop",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_base3_snowseal_workshop.name",
+      "descKey": "catVillage.commission.cvc_base3_snowseal_workshop.desc",
+      "costs": {
+        "snowseal_wax": {
+          "min": 10,
+          "max": 18
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 610,
+          "max": 915
+        }
+      },
+      "reputationMin": 2,
+      "reputationMax": 6,
+      "weight": 7,
+      "minRepLevel": 3
+    },
+    {
+      "id": "cvc_base3_rimebone_forger",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_base3_rimebone_forger.name",
+      "descKey": "catVillage.commission.cvc_base3_rimebone_forger.desc",
+      "costs": {
+        "rimebone_handle": {
+          "min": 5,
+          "max": 9
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 580,
+          "max": 870
+        }
+      },
+      "reputationMin": 2,
+      "reputationMax": 6,
+      "weight": 6,
+      "minRepLevel": 4
+    },
+    {
+      "id": "cvc_base3_warm_thread_tailor",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_base3_warm_thread_tailor.name",
+      "descKey": "catVillage.commission.cvc_base3_warm_thread_tailor.desc",
+      "costs": {
+        "warm_thread_core": {
+          "min": 8,
+          "max": 14
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 768,
+          "max": 1152
+        }
+      },
+      "reputationMin": 2,
+      "reputationMax": 6,
+      "weight": 7,
+      "minRepLevel": 3
+    },
+    {
+      "id": "cvc_base3_snowfield_combo",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_base3_snowfield_combo.name",
+      "descKey": "catVillage.commission.cvc_base3_snowfield_combo.desc",
+      "costOptions": [
+        {
+          "frost_ledger_page": {
+            "min": 15,
+            "max": 25
+          }
+        },
+        {
+          "white_coin_shard": {
+            "min": 6,
+            "max": 10
+          }
+        },
+        {
+          "snowseal_wax": {
+            "min": 15,
+            "max": 25
+          }
+        }
+      ],
+      "rewardPool": {
+        "gold_coin": {
+          "min": 900,
+          "max": 1350
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 9,
+      "weight": 8,
+      "minRepLevel": 3
+    },
+    {
+      "id": "cvc_base4_shadow_silk_guild",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_base4_shadow_silk_guild.name",
+      "descKey": "catVillage.commission.cvc_base4_shadow_silk_guild.desc",
+      "costs": {
+        "base4_shadow_silk": {
+          "min": 12,
+          "max": 20
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 1440,
+          "max": 2160
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 9,
+      "weight": 7,
+      "minRepLevel": 4
+    },
+    {
+      "id": "cvc_base4_shadow_orb_lab",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_base4_shadow_orb_lab.name",
+      "descKey": "catVillage.commission.cvc_base4_shadow_orb_lab.desc",
+      "costs": {
+        "base4_shadow_orb": {
+          "min": 7,
+          "max": 12
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 1589,
+          "max": 2384
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 9,
+      "weight": 6,
+      "minRepLevel": 5
+    },
+    {
+      "id": "cvc_base4_phantom_claw_crafter",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_base4_phantom_claw_crafter.name",
+      "descKey": "catVillage.commission.cvc_base4_phantom_claw_crafter.desc",
+      "costs": {
+        "base4_phantom_claw": {
+          "min": 6,
+          "max": 11
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 2160,
+          "max": 3240
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 9,
+      "weight": 6,
+      "minRepLevel": 5
+    },
+    {
+      "id": "cvc_base4_cursed_membrane_apothecary",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_base4_cursed_membrane_apothecary.name",
+      "descKey": "catVillage.commission.cvc_base4_cursed_membrane_apothecary.desc",
+      "costs": {
+        "base4_cursed_wing_membrane": {
+          "min": 6,
+          "max": 10
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 1692,
+          "max": 2538
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 9,
+      "weight": 6,
+      "minRepLevel": 5
+    },
+    {
+      "id": "cvc_base4_golem_core_engineer",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_base4_golem_core_engineer.name",
+      "descKey": "catVillage.commission.cvc_base4_golem_core_engineer.desc",
+      "costs": {
+        "base4_golem_dark_core": {
+          "min": 3,
+          "max": 5
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 1524,
+          "max": 2286
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 9,
+      "weight": 5,
+      "minRepLevel": 6
+    },
+    {
+      "id": "cvc_base4_abyss_combo",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_base4_abyss_combo.name",
+      "descKey": "catVillage.commission.cvc_base4_abyss_combo.desc",
+      "costOptions": [
+        {
+          "base4_abyssal_core": {
+            "min": 3,
+            "max": 5
+          }
+        },
+        {
+          "base4_ancestor_shadow_jade": {
+            "min": 3,
+            "max": 5
+          }
+        }
+      ],
+      "rewardPool": {
+        "gold_coin": {
+          "min": 1644,
+          "max": 2466
+        }
+      },
+      "reputationMin": 3,
+      "reputationMax": 9,
+      "weight": 5,
+      "minRepLevel": 6
+    },
+    {
+      "id": "cvc_holy_cat_fur_weaver",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_holy_cat_fur_weaver.name",
+      "descKey": "catVillage.commission.cvc_holy_cat_fur_weaver.desc",
+      "costs": {
+        "holy_cat_blessed_fur": {
+          "min": 10,
+          "max": 18
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 1440,
+          "max": 2160
+        }
+      },
+      "reputationMin": 4,
+      "reputationMax": 12,
+      "weight": 5,
+      "minRepLevel": 8
+    },
+    {
+      "id": "cvc_holy_cat_incense_ceremony",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_holy_cat_incense_ceremony.name",
+      "descKey": "catVillage.commission.cvc_holy_cat_incense_ceremony.desc",
+      "costs": {
+        "holy_cat_incense": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 2592,
+          "max": 3888
+        }
+      },
+      "reputationMin": 4,
+      "reputationMax": 12,
+      "weight": 5,
+      "minRepLevel": 8
+    },
+    {
+      "id": "cvc_holy_cat_medal_collector",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_holy_cat_medal_collector.name",
+      "descKey": "catVillage.commission.cvc_holy_cat_medal_collector.desc",
+      "costs": {
+        "holy_cat_guardian_medal": {
+          "min": 5,
+          "max": 9
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 2160,
+          "max": 3240
+        }
+      },
+      "reputationMin": 4,
+      "reputationMax": 12,
+      "weight": 4,
+      "minRepLevel": 9
+    },
+    {
+      "id": "cvc_holy_cat_scroll_scholar",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_holy_cat_scroll_scholar.name",
+      "descKey": "catVillage.commission.cvc_holy_cat_scroll_scholar.desc",
+      "costs": {
+        "holy_cat_sage_scroll": {
+          "min": 4,
+          "max": 8
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 2304,
+          "max": 3456
+        }
+      },
+      "reputationMin": 4,
+      "reputationMax": 12,
+      "weight": 4,
+      "minRepLevel": 10
+    },
+    {
+      "id": "cvc_holy_cat_jewel_treasury",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_holy_cat_jewel_treasury.name",
+      "descKey": "catVillage.commission.cvc_holy_cat_jewel_treasury.desc",
+      "costs": {
+        "holy_cat_royal_jewel": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 2700,
+          "max": 4050
+        }
+      },
+      "reputationMin": 4,
+      "reputationMax": 12,
+      "weight": 4,
+      "minRepLevel": 10
+    },
+    {
+      "id": "cvc_holy_cat_temple_combo",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_holy_cat_temple_combo.name",
+      "descKey": "catVillage.commission.cvc_holy_cat_temple_combo.desc",
+      "costOptions": [
+        {
+          "holy_cat_blessed_fur": {
+            "min": 12,
+            "max": 20
+          }
+        },
+        {
+          "holy_cat_incense": {
+            "min": 4,
+            "max": 7
+          }
+        },
+        {
+          "holy_cat_guardian_medal": {
+            "min": 4,
+            "max": 7
+          }
+        }
+      ],
+      "rewardPool": {
+        "gold_coin": {
+          "min": 1728,
+          "max": 2592
+        }
+      },
+      "reputationMin": 4,
+      "reputationMax": 12,
+      "weight": 6,
+      "minRepLevel": 8
+    },
+    {
+      "id": "cvc_b2_moss_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_b2_moss_bulk.name",
+      "descKey": "catVillage.commission.cvc_b2_moss_bulk.desc",
+      "costs": {
+        "base2_moss_spore": {
+          "min": 50,
+          "max": 80
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 2100,
+          "max": 3150
+        }
+      },
+      "reputationMin": 4,
+      "reputationMax": 7,
+      "weight": 5,
+      "minRepLevel": 1
+    },
+    {
+      "id": "cvc_b2_membrane_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_b2_membrane_bulk.name",
+      "descKey": "catVillage.commission.cvc_b2_membrane_bulk.desc",
+      "costs": {
+        "base2_cave_membrane": {
+          "min": 40,
+          "max": 70
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 2160,
+          "max": 3240
+        }
+      },
+      "reputationMin": 4,
+      "reputationMax": 7,
+      "weight": 5,
+      "minRepLevel": 1
+    },
+    {
+      "id": "cvc_b2_ruin_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_b2_ruin_bulk.name",
+      "descKey": "catVillage.commission.cvc_b2_ruin_bulk.desc",
+      "costs": {
+        "base2_ruin_core_shard": {
+          "min": 25,
+          "max": 40
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 3500,
+          "max": 5250
+        }
+      },
+      "reputationMin": 5,
+      "reputationMax": 9,
+      "weight": 4,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_b2_dragon_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_b2_dragon_bulk.name",
+      "descKey": "catVillage.commission.cvc_b2_dragon_bulk.desc",
+      "costs": {
+        "base2_dragon_scale_chip": {
+          "min": 20,
+          "max": 30
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 7880,
+          "max": 11820
+        }
+      },
+      "reputationMin": 6,
+      "reputationMax": 10,
+      "weight": 3,
+      "minRepLevel": 2
+    },
+    {
+      "id": "cvc_b3_frost_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_b3_frost_bulk.name",
+      "descKey": "catVillage.commission.cvc_b3_frost_bulk.desc",
+      "costs": {
+        "frost_ledger_page": {
+          "min": 60,
+          "max": 100
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 3660,
+          "max": 5490
+        }
+      },
+      "reputationMin": 5,
+      "reputationMax": 9,
+      "weight": 5,
+      "minRepLevel": 3
+    },
+    {
+      "id": "cvc_b3_coin_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_b3_coin_bulk.name",
+      "descKey": "catVillage.commission.cvc_b3_coin_bulk.desc",
+      "costs": {
+        "white_coin_shard": {
+          "min": 30,
+          "max": 50
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 4560,
+          "max": 6840
+        }
+      },
+      "reputationMin": 6,
+      "reputationMax": 10,
+      "weight": 4,
+      "minRepLevel": 3
+    },
+    {
+      "id": "cvc_b3_rime_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_b3_rime_bulk.name",
+      "descKey": "catVillage.commission.cvc_b3_rime_bulk.desc",
+      "costs": {
+        "rimebone_handle": {
+          "min": 30,
+          "max": 50
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 3480,
+          "max": 5220
+        }
+      },
+      "reputationMin": 6,
+      "reputationMax": 10,
+      "weight": 4,
+      "minRepLevel": 4
+    },
+    {
+      "id": "cvc_b3_ice_bead_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_b3_ice_bead_bulk.name",
+      "descKey": "catVillage.commission.cvc_b3_ice_bead_bulk.desc",
+      "costs": {
+        "ice_abacus_bead": {
+          "min": 20,
+          "max": 30
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 7480,
+          "max": 11220
+        }
+      },
+      "reputationMin": 7,
+      "reputationMax": 12,
+      "weight": 3,
+      "minRepLevel": 4
+    },
+    {
+      "id": "cvc_b3_thread_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_b3_thread_bulk.name",
+      "descKey": "catVillage.commission.cvc_b3_thread_bulk.desc",
+      "costs": {
+        "warm_thread_core": {
+          "min": 40,
+          "max": 70
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 3840,
+          "max": 5760
+        }
+      },
+      "reputationMin": 5,
+      "reputationMax": 9,
+      "weight": 4,
+      "minRepLevel": 3
+    },
+    {
+      "id": "cvc_b4_silk_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_b4_silk_bulk.name",
+      "descKey": "catVillage.commission.cvc_b4_silk_bulk.desc",
+      "costs": {
+        "base4_shadow_silk": {
+          "min": 50,
+          "max": 80
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 6000,
+          "max": 9000
+        }
+      },
+      "reputationMin": 7,
+      "reputationMax": 12,
+      "weight": 5,
+      "minRepLevel": 4
+    },
+    {
+      "id": "cvc_b4_orb_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_b4_orb_bulk.name",
+      "descKey": "catVillage.commission.cvc_b4_orb_bulk.desc",
+      "costs": {
+        "base4_shadow_orb": {
+          "min": 30,
+          "max": 50
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 6810,
+          "max": 10215
+        }
+      },
+      "reputationMin": 8,
+      "reputationMax": 13,
+      "weight": 4,
+      "minRepLevel": 5
+    },
+    {
+      "id": "cvc_b4_claw_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_b4_claw_bulk.name",
+      "descKey": "catVillage.commission.cvc_b4_claw_bulk.desc",
+      "costs": {
+        "base4_phantom_claw": {
+          "min": 20,
+          "max": 35
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 7200,
+          "max": 10800
+        }
+      },
+      "reputationMin": 8,
+      "reputationMax": 13,
+      "weight": 4,
+      "minRepLevel": 5
+    },
+    {
+      "id": "cvc_b4_curse_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_b4_curse_bulk.name",
+      "descKey": "catVillage.commission.cvc_b4_curse_bulk.desc",
+      "costs": {
+        "base4_cursed_wing_membrane": {
+          "min": 25,
+          "max": 40
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 7050,
+          "max": 10575
+        }
+      },
+      "reputationMin": 8,
+      "reputationMax": 13,
+      "weight": 4,
+      "minRepLevel": 5
+    },
+    {
+      "id": "cvc_b4_golem_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_b4_golem_bulk.name",
+      "descKey": "catVillage.commission.cvc_b4_golem_bulk.desc",
+      "costs": {
+        "base4_golem_dark_core": {
+          "min": 20,
+          "max": 30
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 10160,
+          "max": 15240
+        }
+      },
+      "reputationMin": 9,
+      "reputationMax": 15,
+      "weight": 3,
+      "minRepLevel": 6
+    },
+    {
+      "id": "cvc_b4_abyssal_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_b4_abyssal_bulk.name",
+      "descKey": "catVillage.commission.cvc_b4_abyssal_bulk.desc",
+      "costs": {
+        "base4_abyssal_core": {
+          "min": 20,
+          "max": 30
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 10960,
+          "max": 16440
+        }
+      },
+      "reputationMin": 9,
+      "reputationMax": 15,
+      "weight": 3,
+      "minRepLevel": 6
+    },
+    {
+      "id": "cvc_b4_jade_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_b4_jade_bulk.name",
+      "descKey": "catVillage.commission.cvc_b4_jade_bulk.desc",
+      "costs": {
+        "base4_ancestor_shadow_jade": {
+          "min": 20,
+          "max": 30
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 10960,
+          "max": 16440
+        }
+      },
+      "reputationMin": 9,
+      "reputationMax": 15,
+      "weight": 3,
+      "minRepLevel": 6
+    },
+    {
+      "id": "cvc_holy_fur_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_holy_fur_bulk.name",
+      "descKey": "catVillage.commission.cvc_holy_fur_bulk.desc",
+      "costs": {
+        "holy_cat_blessed_fur": {
+          "min": 50,
+          "max": 80
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 7200,
+          "max": 10800
+        }
+      },
+      "reputationMin": 13,
+      "reputationMax": 20,
+      "weight": 4,
+      "minRepLevel": 8
+    },
+    {
+      "id": "cvc_holy_incense_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_holy_incense_bulk.name",
+      "descKey": "catVillage.commission.cvc_holy_incense_bulk.desc",
+      "costs": {
+        "holy_cat_incense": {
+          "min": 25,
+          "max": 40
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 10800,
+          "max": 16200
+        }
+      },
+      "reputationMin": 14,
+      "reputationMax": 22,
+      "weight": 3,
+      "minRepLevel": 9
+    },
+    {
+      "id": "cvc_holy_medal_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_holy_medal_bulk.name",
+      "descKey": "catVillage.commission.cvc_holy_medal_bulk.desc",
+      "costs": {
+        "holy_cat_guardian_medal": {
+          "min": 25,
+          "max": 40
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 10800,
+          "max": 16200
+        }
+      },
+      "reputationMin": 14,
+      "reputationMax": 22,
+      "weight": 3,
+      "minRepLevel": 9
+    },
+    {
+      "id": "cvc_holy_scroll_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_holy_scroll_bulk.name",
+      "descKey": "catVillage.commission.cvc_holy_scroll_bulk.desc",
+      "costs": {
+        "holy_cat_sage_scroll": {
+          "min": 20,
+          "max": 35
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 11520,
+          "max": 17280
+        }
+      },
+      "reputationMin": 15,
+      "reputationMax": 24,
+      "weight": 3,
+      "minRepLevel": 10
+    },
+    {
+      "id": "cvc_holy_jewel_bulk",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_holy_jewel_bulk.name",
+      "descKey": "catVillage.commission.cvc_holy_jewel_bulk.desc",
+      "costs": {
+        "holy_cat_royal_jewel": {
+          "min": 20,
+          "max": 30
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 18000,
+          "max": 27000
+        }
+      },
+      "reputationMin": 16,
+      "reputationMax": 26,
+      "weight": 2,
+      "minRepLevel": 10
+    },
+    {
+      "id": "cvc_cross_b2b3_joint",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_cross_b2b3_joint.name",
+      "descKey": "catVillage.commission.cvc_cross_b2b3_joint.desc",
+      "costs": {
+        "base2_ruin_core_shard": {
+          "min": 15,
+          "max": 25
+        },
+        "frost_ledger_page": {
+          "min": 20,
+          "max": 35
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 3320,
+          "max": 4980
+        }
+      },
+      "reputationMin": 6,
+      "reputationMax": 10,
+      "weight": 4,
+      "minRepLevel": 3
+    },
+    {
+      "id": "cvc_cross_b3b4_joint",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_cross_b3b4_joint.name",
+      "descKey": "catVillage.commission.cvc_cross_b3b4_joint.desc",
+      "costs": {
+        "rimebone_handle": {
+          "min": 15,
+          "max": 25
+        },
+        "base4_shadow_silk": {
+          "min": 20,
+          "max": 30
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 4140,
+          "max": 6210
+        }
+      },
+      "reputationMin": 7,
+      "reputationMax": 12,
+      "weight": 4,
+      "minRepLevel": 4
+    },
+    {
+      "id": "cvc_cross_b4holy_joint",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_cross_b4holy_joint.name",
+      "descKey": "catVillage.commission.cvc_cross_b4holy_joint.desc",
+      "costs": {
+        "base4_shadow_orb": {
+          "min": 10,
+          "max": 15
+        },
+        "holy_cat_incense": {
+          "min": 5,
+          "max": 10
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 4430,
+          "max": 6645
+        }
+      },
+      "reputationMin": 9,
+      "reputationMax": 15,
+      "weight": 3,
+      "minRepLevel": 7
+    },
+    {
+      "id": "cvc_cross_b2b4_joint",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_cross_b2b4_joint.name",
+      "descKey": "catVillage.commission.cvc_cross_b2b4_joint.desc",
+      "costs": {
+        "base2_cave_membrane": {
+          "min": 30,
+          "max": 50
+        },
+        "base4_shadow_silk": {
+          "min": 15,
+          "max": 25
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 3420,
+          "max": 5130
+        }
+      },
+      "reputationMin": 7,
+      "reputationMax": 11,
+      "weight": 3,
+      "minRepLevel": 4
+    },
+    {
+      "id": "cvc_cross_b3holy_joint",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_cross_b3holy_joint.name",
+      "descKey": "catVillage.commission.cvc_cross_b3holy_joint.desc",
+      "costs": {
+        "white_coin_shard": {
+          "min": 15,
+          "max": 25
+        },
+        "holy_cat_blessed_fur": {
+          "min": 15,
+          "max": 25
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 4440,
+          "max": 6660
+        }
+      },
+      "reputationMin": 8,
+      "reputationMax": 13,
+      "weight": 3,
+      "minRepLevel": 7
+    },
+    {
+      "id": "cvc_cross_epic",
+      "disabled": false,
+      "isBattle": true,
+      "nameKey": "catVillage.commission.cvc_cross_epic.name",
+      "descKey": "catVillage.commission.cvc_cross_epic.desc",
+      "costs": {
+        "base2_dragon_scale_chip": {
+          "min": 8,
+          "max": 12
+        },
+        "ice_abacus_bead": {
+          "min": 5,
+          "max": 10
+        },
+        "base4_golem_dark_core": {
+          "min": 3,
+          "max": 5
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 6546,
+          "max": 9819
+        }
+      },
+      "reputationMin": 10,
+      "reputationMax": 16,
+      "weight": 2,
+      "minRepLevel": 7
+    },
+    {
+      "id": "cvc_rumor_wolf_king_prequel",
+      "disabled": false,
+      "isRumor": true,
+      "rumorBadge": "wolf_king",
+      "oncePerAccount": true,
+      "notRefreshable": true,
+      "pityThreshold": 56,
+      "prereqRumorIds": [],
+      "nameKey": "catVillage.commission.cvc_rumor_wolf_king_prequel.name",
+      "descKey": "catVillage.commission.cvc_rumor_wolf_king_prequel.desc",
+      "costs": {
+        "strange_wolf_fur": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "rewardPool": {
+        "wolf_king_trail_clue": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "reputationMin": 20,
+      "reputationMax": 20,
+      "weight": 1,
+      "minRepLevel": 1
+    },
+    {
+      "id": "cvc_rumor_wolf_king",
+      "disabled": false,
+      "isRumor": true,
+      "rumorBadge": "wolf_king",
+      "oncePerAccount": true,
+      "notRefreshable": true,
+      "notDeletable": true,
+      "prereqRumorIds": [
+        "cvc_rumor_wolf_king_prequel"
+      ],
+      "nameKey": "catVillage.commission.cvc_rumor_wolf_king.name",
+      "descKey": "catVillage.commission.cvc_rumor_wolf_king.desc",
+      "costs": {
+        "wolf_king_trail_clue": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "rewardPool": {
+        "wolf_king_photo": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "reputationMin": 20,
+      "reputationMax": 20,
+      "weight": 1,
+      "minRepLevel": 2,
+      "clearCompletionIds": [
+        "cvc_rumor_wolf_king",
+        "cvc_rumor_wolf_king_prequel"
+      ],
+      "pityThreshold": 24
+    },
+    {
+      "id": "cvc_rumor_super_berry_bird",
+      "disabled": false,
+      "isRumor": true,
+      "rumorBadge": "super_berry_bird",
+      "oncePerAccount": false,
+      "notRefreshable": true,
+      "pityThreshold": 48,
+      "prereqRumorIds": [],
+      "nameKey": "catVillage.commission.cvc_rumor_super_berry_bird.name",
+      "descKey": "catVillage.commission.cvc_rumor_super_berry_bird.desc",
+      "costs": {
+        "gold_coin": {
+          "min": 20000,
+          "max": 20000
+        },
+        "sweet_nectar": {
+          "min": 100,
+          "max": 100
+        },
+        "tree_sap": {
+          "min": 50,
+          "max": 50
+        }
+      },
+      "rewardPool": {
+        "super_sweet_berry": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "reputationMin": 10,
+      "reputationMax": 10,
+      "weight": 1,
+      "minRepLevel": 1,
+      "clearCompletionIds": [
+        "cvc_rumor_super_berry_bird"
+      ]
+    },
+    {
+      "id": "cvc_rumor_shadow_assassin_cat_prequel",
+      "disabled": false,
+      "isRumor": true,
+      "rumorBadge": "shadow_assassin_cat",
+      "oncePerAccount": false,
+      "notRefreshable": true,
+      "pityThreshold": 72,
+      "prereqRumorIds": [],
+      "nameKey": "catVillage.commission.cvc_rumor_shadow_assassin_cat_prequel.name",
+      "descKey": "catVillage.commission.cvc_rumor_shadow_assassin_cat_prequel.desc",
+      "costs": {
+        "base4_shadow_silk": {
+          "min": 50,
+          "max": 50
+        },
+        "base4_phantom_claw": {
+          "min": 50,
+          "max": 50
+        }
+      },
+      "rewardPool": {
+        "shadow_assassin_cat_paw_print": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "reputationMin": 20,
+      "reputationMax": 20,
+      "weight": 1,
+      "minRepLevel": 4
+    },
+    {
+      "id": "cvc_rumor_shadow_assassin_cat",
+      "disabled": false,
+      "isRumor": true,
+      "rumorBadge": "shadow_assassin_cat",
+      "oncePerAccount": false,
+      "notRefreshable": true,
+      "notDeletable": true,
+      "pityThreshold": 24,
+      "prereqRumorIds": [
+        "cvc_rumor_shadow_assassin_cat_prequel"
+      ],
+      "clearCompletionIds": [
+        "cvc_rumor_shadow_assassin_cat",
+        "cvc_rumor_shadow_assassin_cat_prequel"
+      ],
+      "nameKey": "catVillage.commission.cvc_rumor_shadow_assassin_cat.name",
+      "descKey": "catVillage.commission.cvc_rumor_shadow_assassin_cat.desc",
+      "costs": {
+        "shadow_assassin_cat_paw_print": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "rewardPool": {
+        "shadow_assassin_cat_summon_token": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "reputationMin": 20,
+      "reputationMax": 20,
+      "weight": 1,
+      "minRepLevel": 3
+    },
+    {
+      "id": "cvc_rumor_glacial_phantom",
+      "disabled": false,
+      "isRumor": true,
+      "rumorBadge": "glacial_phantom",
+      "oncePerAccount": false,
+      "notRefreshable": true,
+      "pityThreshold": 48,
+      "prereqRumorIds": [],
+      "nameKey": "catVillage.commission.cvc_rumor_glacial_phantom.name",
+      "descKey": "catVillage.commission.cvc_rumor_glacial_phantom.desc",
+      "costs": {
+        "snowseal_wax": {
+          "min": 25,
+          "max": 25
+        },
+        "ice_abacus_bead": {
+          "min": 25,
+          "max": 25
+        },
+        "frost_ledger_page": {
+          "min": 25,
+          "max": 25
+        }
+      },
+      "rewardPool": {
+        "glacial_phantom_summon_token": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "reputationMin": 10,
+      "reputationMax": 10,
+      "weight": 1,
+      "minRepLevel": 3,
+      "clearCompletionIds": [
+        "cvc_rumor_glacial_phantom"
+      ]
+    },
+    {
+      "id": "cvc_shadow_paw_footprints",
+      "disabled": false,
+      "isRumor": true,
+      "rumorBadge": "shadow_paw_hideout",
+      "oncePerAccount": false,
+      "notRefreshable": true,
+      "pityThreshold": 42,
+      "prereqRumorIds": [],
+      "nameKey": "catVillage.commission.cvc_shadow_paw_footprints.name",
+      "descKey": "catVillage.commission.cvc_shadow_paw_footprints.desc",
+      "costs": {
+        "shadow_paw_silk": {
+          "min": 8,
+          "max": 8
+        },
+        "toxic_claw_venom": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "rewardPool": {
+        "shadow_paw_silent_footprint": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "reputationMin": 18,
+      "reputationMax": 18,
+      "weight": 1,
+      "minRepLevel": 3
+    },
+    {
+      "id": "cvc_shadow_paw_mirror_clue",
+      "disabled": false,
+      "isRumor": true,
+      "rumorBadge": "shadow_paw_hideout",
+      "oncePerAccount": false,
+      "notRefreshable": true,
+      "notDeletable": true,
+      "pityThreshold": 32,
+      "prereqRumorIds": [
+        "cvc_shadow_paw_footprints"
+      ],
+      "nameKey": "catVillage.commission.cvc_shadow_paw_mirror_clue.name",
+      "descKey": "catVillage.commission.cvc_shadow_paw_mirror_clue.desc",
+      "costs": {
+        "shadow_paw_silent_footprint": {
+          "min": 1,
+          "max": 1
+        },
+        "mirror_paw_shard": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "rewardPool": {
+        "shadow_paw_mirror_clue": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "reputationMin": 20,
+      "reputationMax": 20,
+      "weight": 1,
+      "minRepLevel": 4
+    },
+    {
+      "id": "cvc_shadow_paw_master_trace",
+      "disabled": false,
+      "isRumor": true,
+      "rumorBadge": "shadow_paw_hideout",
+      "oncePerAccount": false,
+      "notRefreshable": true,
+      "notDeletable": true,
+      "pityThreshold": 22,
+      "prereqRumorIds": [
+        "cvc_shadow_paw_mirror_clue"
+      ],
+      "clearCompletionIds": [
+        "cvc_shadow_paw_footprints",
+        "cvc_shadow_paw_mirror_clue",
+        "cvc_shadow_paw_master_trace"
+      ],
+      "nameKey": "catVillage.commission.cvc_shadow_paw_master_trace.name",
+      "descKey": "catVillage.commission.cvc_shadow_paw_master_trace.desc",
+      "costs": {
+        "shadow_paw_mirror_clue": {
+          "min": 1,
+          "max": 1
+        },
+        "shadow_paw_master_sigil": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "rewardPool": {
+        "shadow_paw_master_trace": {
+          "min": 1,
+          "max": 1
+        },
+        "map_shadow_paw_hideout": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "reputationMin": 24,
+      "reputationMax": 24,
+      "weight": 1,
+      "minRepLevel": 5
+    },
+    {
+      "id": "cvc_rumor_harmonic_lunar_loom_thread",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_rumor_harmonic_lunar_loom_thread.name",
+      "descKey": "catVillage.commission.cvc_rumor_harmonic_lunar_loom_thread.desc",
+      "isRumor": true,
+      "rumorBadge": "harmonic_lunar_loom",
+      "rumorMutexGroup": "harmonic_embryo_legend",
+      "oncePerAccount": true,
+      "notRefreshable": true,
+      "pityThreshold": 36,
+      "prereqRumorIds": [],
+      "clearCompletionIds": [],
+      "costs": {
+        "clear_resin": {
+          "min": 40,
+          "max": 40
+        },
+        "silkweed_fiber": {
+          "min": 50,
+          "max": 50
+        },
+        "holy_cat_blessed_fur": {
+          "min": 30,
+          "max": 30
+        },
+        "base4_shadow_silk": {
+          "min": 25,
+          "max": 25
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 9360,
+          "max": 9360
+        }
+      },
+      "reputationMin": 30,
+      "reputationMax": 30,
+      "weight": 1,
+      "minRepLevel": 12
+    },
+    {
+      "id": "cvc_rumor_harmonic_lunar_loom_pattern",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_rumor_harmonic_lunar_loom_pattern.name",
+      "descKey": "catVillage.commission.cvc_rumor_harmonic_lunar_loom_pattern.desc",
+      "isRumor": true,
+      "rumorBadge": "harmonic_lunar_loom",
+      "rumorMutexGroup": "harmonic_embryo_legend",
+      "oncePerAccount": true,
+      "notRefreshable": true,
+      "notDeletable": true,
+      "pityThreshold": 36,
+      "prereqRumorIds": [
+        "cvc_rumor_harmonic_lunar_loom_thread"
+      ],
+      "clearCompletionIds": [],
+      "costs": {
+        "goldvine_fiber": {
+          "min": 60,
+          "max": 60
+        },
+        "glow_core": {
+          "min": 40,
+          "max": 40
+        },
+        "base4_phantom_claw": {
+          "min": 15,
+          "max": 15
+        },
+        "holy_cat_incense": {
+          "min": 10,
+          "max": 10
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 13072,
+          "max": 13072
+        }
+      },
+      "reputationMin": 30,
+      "reputationMax": 30,
+      "weight": 1,
+      "minRepLevel": 12
+    },
+    {
+      "id": "cvc_rumor_harmonic_lunar_loom_embryo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_rumor_harmonic_lunar_loom_embryo.name",
+      "descKey": "catVillage.commission.cvc_rumor_harmonic_lunar_loom_embryo.desc",
+      "isRumor": true,
+      "rumorBadge": "harmonic_lunar_loom",
+      "rumorMutexGroup": "harmonic_embryo_legend",
+      "oncePerAccount": true,
+      "notRefreshable": true,
+      "notDeletable": true,
+      "pityThreshold": 36,
+      "prereqRumorIds": [
+        "cvc_rumor_harmonic_lunar_loom_pattern"
+      ],
+      "clearCompletionIds": [
+        "cvc_rumor_harmonic_lunar_loom_thread",
+        "cvc_rumor_harmonic_lunar_loom_pattern",
+        "cvc_rumor_harmonic_lunar_loom_embryo",
+        "cvc_rumor_harmonic_shadow_echo_print",
+        "cvc_rumor_harmonic_shadow_echo_chord",
+        "cvc_rumor_harmonic_shadow_echo_embryo",
+        "cvc_rumor_harmonic_sacred_accord_seal",
+        "cvc_rumor_harmonic_sacred_accord_writ",
+        "cvc_rumor_harmonic_sacred_accord_embryo"
+      ],
+      "costs": {
+        "crystal": {
+          "min": 12,
+          "max": 12
+        },
+        "lunar_veil": {
+          "min": 10,
+          "max": 10
+        },
+        "holy_cat_sage_scroll": {
+          "min": 8,
+          "max": 8
+        },
+        "holy_cat_royal_jewel": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "rewardPool": {
+        "harmonic_embryo": {
+          "min": 1,
+          "max": 1
+        },
+        "gold_coin": {
+          "min": 14641,
+          "max": 14641
+        }
+      },
+      "reputationMin": 36,
+      "reputationMax": 36,
+      "weight": 1,
+      "minRepLevel": 12
+    },
+    {
+      "id": "cvc_rumor_harmonic_shadow_echo_print",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_rumor_harmonic_shadow_echo_print.name",
+      "descKey": "catVillage.commission.cvc_rumor_harmonic_shadow_echo_print.desc",
+      "isRumor": true,
+      "rumorBadge": "harmonic_shadow_echo",
+      "rumorMutexGroup": "harmonic_embryo_legend",
+      "oncePerAccount": true,
+      "notRefreshable": true,
+      "pityThreshold": 36,
+      "prereqRumorIds": [],
+      "clearCompletionIds": [],
+      "costs": {
+        "silkweed_fiber": {
+          "min": 45,
+          "max": 45
+        },
+        "clear_resin": {
+          "min": 35,
+          "max": 35
+        },
+        "shadow_paw_silk": {
+          "min": 40,
+          "max": 40
+        },
+        "base4_shadow_silk": {
+          "min": 25,
+          "max": 25
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 10308,
+          "max": 10308
+        }
+      },
+      "reputationMin": 30,
+      "reputationMax": 30,
+      "weight": 1,
+      "minRepLevel": 12
+    },
+    {
+      "id": "cvc_rumor_harmonic_shadow_echo_chord",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_rumor_harmonic_shadow_echo_chord.name",
+      "descKey": "catVillage.commission.cvc_rumor_harmonic_shadow_echo_chord.desc",
+      "isRumor": true,
+      "rumorBadge": "harmonic_shadow_echo",
+      "rumorMutexGroup": "harmonic_embryo_legend",
+      "oncePerAccount": true,
+      "notRefreshable": true,
+      "notDeletable": true,
+      "pityThreshold": 36,
+      "prereqRumorIds": [
+        "cvc_rumor_harmonic_shadow_echo_print"
+      ],
+      "clearCompletionIds": [],
+      "costs": {
+        "goldvine_fiber": {
+          "min": 55,
+          "max": 55
+        },
+        "silver": {
+          "min": 12,
+          "max": 12
+        },
+        "toxic_claw_venom": {
+          "min": 16,
+          "max": 16
+        },
+        "base4_phantom_claw": {
+          "min": 14,
+          "max": 14
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 15314,
+          "max": 15314
+        }
+      },
+      "reputationMin": 30,
+      "reputationMax": 30,
+      "weight": 1,
+      "minRepLevel": 12
+    },
+    {
+      "id": "cvc_rumor_harmonic_shadow_echo_embryo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_rumor_harmonic_shadow_echo_embryo.name",
+      "descKey": "catVillage.commission.cvc_rumor_harmonic_shadow_echo_embryo.desc",
+      "isRumor": true,
+      "rumorBadge": "harmonic_shadow_echo",
+      "rumorMutexGroup": "harmonic_embryo_legend",
+      "oncePerAccount": true,
+      "notRefreshable": true,
+      "notDeletable": true,
+      "pityThreshold": 36,
+      "prereqRumorIds": [
+        "cvc_rumor_harmonic_shadow_echo_chord"
+      ],
+      "clearCompletionIds": [
+        "cvc_rumor_harmonic_lunar_loom_thread",
+        "cvc_rumor_harmonic_lunar_loom_pattern",
+        "cvc_rumor_harmonic_lunar_loom_embryo",
+        "cvc_rumor_harmonic_shadow_echo_print",
+        "cvc_rumor_harmonic_shadow_echo_chord",
+        "cvc_rumor_harmonic_shadow_echo_embryo",
+        "cvc_rumor_harmonic_sacred_accord_seal",
+        "cvc_rumor_harmonic_sacred_accord_writ",
+        "cvc_rumor_harmonic_sacred_accord_embryo"
+      ],
+      "costs": {
+        "crystal": {
+          "min": 10,
+          "max": 10
+        },
+        "glow_core": {
+          "min": 60,
+          "max": 60
+        },
+        "mirror_paw_shard": {
+          "min": 6,
+          "max": 6
+        },
+        "shadow_paw_master_sigil": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "rewardPool": {
+        "harmonic_embryo": {
+          "min": 1,
+          "max": 1
+        },
+        "gold_coin": {
+          "min": 15192,
+          "max": 15192
+        }
+      },
+      "reputationMin": 36,
+      "reputationMax": 36,
+      "weight": 1,
+      "minRepLevel": 12
+    },
+    {
+      "id": "cvc_rumor_harmonic_sacred_accord_seal",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_rumor_harmonic_sacred_accord_seal.name",
+      "descKey": "catVillage.commission.cvc_rumor_harmonic_sacred_accord_seal.desc",
+      "isRumor": true,
+      "rumorBadge": "harmonic_sacred_accord",
+      "rumorMutexGroup": "harmonic_embryo_legend",
+      "oncePerAccount": true,
+      "notRefreshable": true,
+      "pityThreshold": 36,
+      "prereqRumorIds": [],
+      "clearCompletionIds": [],
+      "costs": {
+        "silver": {
+          "min": 12,
+          "max": 12
+        },
+        "clear_resin": {
+          "min": 35,
+          "max": 35
+        },
+        "holy_cat_blessed_fur": {
+          "min": 35,
+          "max": 35
+        },
+        "base4_shadow_silk": {
+          "min": 20,
+          "max": 20
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 10946,
+          "max": 10946
+        }
+      },
+      "reputationMin": 30,
+      "reputationMax": 30,
+      "weight": 1,
+      "minRepLevel": 12
+    },
+    {
+      "id": "cvc_rumor_harmonic_sacred_accord_writ",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_rumor_harmonic_sacred_accord_writ.name",
+      "descKey": "catVillage.commission.cvc_rumor_harmonic_sacred_accord_writ.desc",
+      "isRumor": true,
+      "rumorBadge": "harmonic_sacred_accord",
+      "rumorMutexGroup": "harmonic_embryo_legend",
+      "oncePerAccount": true,
+      "notRefreshable": true,
+      "notDeletable": true,
+      "pityThreshold": 36,
+      "prereqRumorIds": [
+        "cvc_rumor_harmonic_sacred_accord_seal"
+      ],
+      "clearCompletionIds": [],
+      "costs": {
+        "gold": {
+          "min": 10,
+          "max": 10
+        },
+        "goldvine_fiber": {
+          "min": 45,
+          "max": 45
+        },
+        "holy_cat_incense": {
+          "min": 12,
+          "max": 12
+        },
+        "holy_cat_guardian_medal": {
+          "min": 10,
+          "max": 10
+        }
+      },
+      "rewardPool": {
+        "gold_coin": {
+          "min": 13199,
+          "max": 13199
+        }
+      },
+      "reputationMin": 30,
+      "reputationMax": 30,
+      "weight": 1,
+      "minRepLevel": 12
+    },
+    {
+      "id": "cvc_rumor_harmonic_sacred_accord_embryo",
+      "disabled": false,
+      "nameKey": "catVillage.commission.cvc_rumor_harmonic_sacred_accord_embryo.name",
+      "descKey": "catVillage.commission.cvc_rumor_harmonic_sacred_accord_embryo.desc",
+      "isRumor": true,
+      "rumorBadge": "harmonic_sacred_accord",
+      "rumorMutexGroup": "harmonic_embryo_legend",
+      "oncePerAccount": true,
+      "notRefreshable": true,
+      "notDeletable": true,
+      "pityThreshold": 36,
+      "prereqRumorIds": [
+        "cvc_rumor_harmonic_sacred_accord_writ"
+      ],
+      "clearCompletionIds": [
+        "cvc_rumor_harmonic_lunar_loom_thread",
+        "cvc_rumor_harmonic_lunar_loom_pattern",
+        "cvc_rumor_harmonic_lunar_loom_embryo",
+        "cvc_rumor_harmonic_shadow_echo_print",
+        "cvc_rumor_harmonic_shadow_echo_chord",
+        "cvc_rumor_harmonic_shadow_echo_embryo",
+        "cvc_rumor_harmonic_sacred_accord_seal",
+        "cvc_rumor_harmonic_sacred_accord_writ",
+        "cvc_rumor_harmonic_sacred_accord_embryo"
+      ],
+      "costs": {
+        "crystal": {
+          "min": 8,
+          "max": 8
+        },
+        "lunar_veil": {
+          "min": 10,
+          "max": 10
+        },
+        "holy_cat_sage_scroll": {
+          "min": 6,
+          "max": 6
+        },
+        "holy_cat_royal_jewel": {
+          "min": 5,
+          "max": 5
+        }
+      },
+      "rewardPool": {
+        "harmonic_embryo": {
+          "min": 1,
+          "max": 1
+        },
+        "gold_coin": {
+          "min": 12913,
+          "max": 12913
+        }
+      },
+      "reputationMin": 36,
+      "reputationMax": 36,
+      "weight": 1,
+      "minRepLevel": 12
+    },
+    {
+      "id": "cvc_rumor_vow_eater_prequel",
+      "disabled": false,
+      "isRumor": true,
+      "rumorBadge": "vow_eater",
+      "oncePerAccount": false,
+      "notRefreshable": true,
+      "pityThreshold": 72,
+      "prereqRumorIds": [],
+      "nameKey": "catVillage.commission.cvc_rumor_vow_eater_prequel.name",
+      "descKey": "catVillage.commission.cvc_rumor_vow_eater_prequel.desc",
+      "costs": {
+        "holy_cat_blessed_fur": {
+          "min": 120,
+          "max": 120
+        },
+        "holy_cat_incense": {
+          "min": 80,
+          "max": 80
+        },
+        "holy_cat_sage_scroll": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "rewardPool": {
+        "vow_eater_prayer_rubbing": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "reputationMin": 24,
+      "reputationMax": 24,
+      "weight": 1,
+      "minRepLevel": 8
+    },
+    {
+      "id": "cvc_rumor_vow_eater",
+      "disabled": false,
+      "isRumor": true,
+      "rumorBadge": "vow_eater",
+      "oncePerAccount": false,
+      "notRefreshable": true,
+      "notDeletable": true,
+      "pityThreshold": 24,
+      "prereqRumorIds": [
+        "cvc_rumor_vow_eater_prequel"
+      ],
+      "clearCompletionIds": [
+        "cvc_rumor_vow_eater",
+        "cvc_rumor_vow_eater_prequel"
+      ],
+      "nameKey": "catVillage.commission.cvc_rumor_vow_eater.name",
+      "descKey": "catVillage.commission.cvc_rumor_vow_eater.desc",
+      "costs": {
+        "vow_eater_prayer_rubbing": {
+          "min": 1,
+          "max": 1
+        },
+        "holy_cat_guardian_medal": {
+          "min": 80,
+          "max": 80
+        },
+        "holy_cat_sage_scroll": {
+          "min": 30,
+          "max": 30
+        },
+        "holy_cat_royal_jewel": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "rewardPool": {
+        "vow_eater_incense_bundle": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "reputationMin": 24,
+      "reputationMax": 24,
+      "weight": 1,
+      "minRepLevel": 8
+    },
+    {
+      "id": "cvc_rumor_faceless_understudy_playbill",
+      "disabled": false,
+      "isRumor": true,
+      "rumorBadge": "faceless_understudy",
+      "oncePerAccount": false,
+      "notRefreshable": true,
+      "pityThreshold": 72,
+      "prereqRumorIds": [],
+      "nameKey": "catVillage.commission.cvc_rumor_faceless_understudy_playbill.name",
+      "descKey": "catVillage.commission.cvc_rumor_faceless_understudy_playbill.desc",
+      "costs": {
+        "candy_bomb": {
+          "min": 12,
+          "max": 12
+        },
+        "plush_fur": {
+          "min": 12,
+          "max": 12
+        },
+        "bottled_starlight": {
+          "min": 8,
+          "max": 8
+        },
+        "ghost_essence": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "rewardPool": {
+        "smudged_encore_playbill": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "reputationMin": 30,
+      "reputationMax": 30,
+      "weight": 1,
+      "minRepLevel": 10
+    },
+    {
+      "id": "cvc_rumor_faceless_understudy_invitation",
+      "disabled": false,
+      "isRumor": true,
+      "rumorBadge": "faceless_understudy",
+      "oncePerAccount": false,
+      "notRefreshable": true,
+      "notDeletable": true,
+      "pityThreshold": 24,
+      "prereqRumorIds": [
+        "cvc_rumor_faceless_understudy_playbill"
+      ],
+      "clearCompletionIds": [
+        "cvc_rumor_faceless_understudy_playbill",
+        "cvc_rumor_faceless_understudy_invitation"
+      ],
+      "nameKey": "catVillage.commission.cvc_rumor_faceless_understudy_invitation.name",
+      "descKey": "catVillage.commission.cvc_rumor_faceless_understudy_invitation.desc",
+      "costs": {
+        "smudged_encore_playbill": {
+          "min": 1,
+          "max": 1
+        },
+        "parade_king_medal": {
+          "min": 8,
+          "max": 8
+        },
+        "spell_seal_lock_plate": {
+          "min": 4,
+          "max": 4
+        },
+        "holy_cat_sage_scroll": {
+          "min": 8,
+          "max": 8
+        },
+        "holy_cat_royal_jewel": {
+          "min": 2,
+          "max": 2
+        },
+        "condensed_stardust": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "rewardPool": {
+        "faceless_understudy_invitation": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "reputationMin": 36,
+      "reputationMax": 36,
+      "weight": 1,
+      "minRepLevel": 10
+    }
+  ]
+}

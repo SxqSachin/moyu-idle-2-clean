@@ -1,0 +1,628 @@
+{
+  "warehouse": {
+    "defaultCols": 25,
+    "defaultRows": 10,
+    "logDefaultLookbackDays": 7
+  },
+  "activity": {
+    "offlineProgressMaxDurationSeconds": 86400
+  },
+  "actionQueue": {
+    "fastForward": {
+      "maxSteps": 10000,
+      "maxExecMs": 1000
+    }
+  },
+  "kittyJournal": {
+    "enabled": true,
+    "intervalSeconds": 1800,
+    "jitterSeconds": 600,
+    "diaryProbability": 0.1,
+    "encounterProbability": 0.1,
+    "maxEntriesPerKitty": 200
+  },
+  "release": {
+    "buildId": "129",
+    "defaultReloadDelaySeconds": 120
+  },
+  "admin": {
+    "userBanReasons": [
+      {
+        "key": "abnormal_trade",
+        "nameKey": "admin.banReason.abnormalTrade"
+      },
+      {
+        "key": "multi_account",
+        "nameKey": "admin.banReason.multiAccount"
+      }
+    ]
+  },
+  "transport": {
+    "compression": {
+      "enabled": true,
+      "minBytes": 512,
+      "level": 1,
+      "format": "zlib-base64"
+    }
+  },
+  "rateLimit": {
+    "api": {
+      "max": 120,
+      "windowSeconds": 60
+    },
+    "register": {
+      "max": 6,
+      "windowSeconds": 60
+    },
+    "login": {
+      "max": 12,
+      "windowSeconds": 60
+    },
+    "wsConnect": {
+      "max": 30,
+      "windowSeconds": 60
+    },
+    "chatSend": {
+      "max": 10,
+      "windowSeconds": 10
+    },
+    "loginAttempt": {
+      "maxFailures": 5,
+      "lockDurationSeconds": 600,
+      "failureWindowSeconds": 600
+    },
+    "wsAuthAttempt": {
+      "maxFailures": 8,
+      "lockDurationSeconds": 600,
+      "failureWindowSeconds": 600
+    }
+  },
+  "emailDomainPolicy": {
+    "enabled": true,
+    "blocklistPath": "disposable-email-domains.txt",
+    "blockedDomains": [],
+    "allowedDomains": []
+  },
+  "chat": {
+    "maxContentLength": 300,
+    "defaultHistoryLimit": 30,
+    "channels": [
+      {
+        "id": "world",
+        "nameKey": "chat.channel.world",
+        "order": 10,
+        "playerSendable": true
+      },
+      {
+        "id": "system",
+        "nameKey": "chat.channel.system",
+        "order": 20,
+        "playerSendable": false
+      },
+      {
+        "id": "life",
+        "nameKey": "chat.channel.life",
+        "order": 30,
+        "playerSendable": true
+      },
+      {
+        "id": "battle",
+        "nameKey": "chat.channel.battle",
+        "order": 40,
+        "playerSendable": true
+      }
+    ]
+  },
+  "contentModeration": {
+    "enabled": true,
+    "vocabularyJsonPath": "../../Sensitive-lexicon-1.2/compiled/sensitive-words.json",
+    "blockMessageKey": "error.contentModeration.blocked",
+    "targets": {
+      "chat": true,
+      "username": true,
+      "kittyName": true,
+      "battleRoomName": true,
+      "loadoutName": true,
+      "itemCustomName": true
+    }
+  },
+  "battle": {
+    "dropLuckFactor": 0.01,
+    "tickShardWorkers": 4,
+    "tickClaimRoomsMin": 12,
+    "tickClaimRoomsMax": 24,
+    "tickTargetLeaseUtilPct": 60,
+    "compileKickoffSlots": 4,
+    "compileTurnsPerPlayerUnit": 100,
+    "compileMaxTurns": 300,
+    "compileMaxExecMs": 2500,
+    "timelinePushIntervalMs": 1380,
+    "playbackFixedIntervalMs": 1380,
+    "playbackIntervalJitterTolerancePct": 10,
+    "settlementRequirePlaybackFinished": true,
+    "playbackMaxEventsBatch": 120,
+    "playbackMaxGapMs": 3000,
+    "settlementWorkers": 4,
+    "skillExpWorkers": 2,
+    "attrExpWorkers": 4,
+    "finalizeSlots": 4,
+    "interBattleIntervalMs": 3000,
+    "recoveryDurationMs": 10000,
+    "runHistoryKeepCount": 10,
+    "roomNameMaxChars": 12,
+    "workerHeartbeat": {
+      "ttlSeconds": 30,
+      "refreshIntervalSeconds": 5
+    },
+    "expBonusStartSeconds": 300,
+    "expBonusPerSecond": 0.001,
+    "expBonusMaxMultiplier": 3,
+    "resetItemId": "gold_coin",
+    "resetItemCount": 5000,
+    "stateMachineV2": true
+  },
+  "arena": {
+    "enabled": true,
+    "historyKeepCount": 50,
+    "targetCount": 12,
+    "nearbyTargetCount": 7,
+    "relaxedTargetCount": 4,
+    "challengeChargeCapacity": 10,
+    "challengeChargeRecoverySeconds": 600,
+    "opponentChallengeCooldownSeconds": 900,
+    "recommendationRefreshCooldownSeconds": 300,
+    "workerCount": 4,
+    "workerPollIntervalMs": 250,
+    "workerLeaseSeconds": 30,
+    "maxAttempts": 3,
+    "defaultRating": 1000,
+    "attackerWinTokens": 20,
+    "attackerLossTokens": 5,
+    "defenderWinTokens": 5,
+    "bountyPerDefenseWin": 10,
+    "bountyCap": 100,
+    "attackerWinRating": 20,
+    "attackerLossRatingPenalty": 5,
+    "defenderWinRating": 10,
+    "defenderLossRatingPenalty": 10,
+    "shopOffers": []
+  },
+  "combatTrial": {
+    "enabled": true,
+    "historyKeepCount": 50,
+    "workerCount": 2,
+    "workerPollIntervalMs": 250,
+    "workerLeaseSeconds": 30,
+    "maxAttempts": 3
+  },
+  "economy": {
+    "itemRecycleGoldCoefficient": 0.5,
+    "itemRecycleAffixMismatchExtraCoefficient": 0.6
+  },
+  "rule": {
+    "maxGroups": 6,
+    "maxConditionsPerGroup": 6
+  },
+  "skill": {
+    "levelUpBaseExp": 100,
+    "levelUpPerLevelExtraExp": 100
+  },
+  "skillForge": {
+    "compilerVersion": 10,
+    "rulesetVersion": 1,
+    "disabledRulesetVersions": [],
+    "baseSuccessChance": 0.3,
+    "sourceSkillbookMinCount": 200,
+    "sourceSkillbookMaxCount": 1000,
+    "sourceSkillbookCountStep": 100,
+    "sourceSkillbookBonusPerStep": 0.1,
+    "sourceSkillbookMaxBonus": 0.8,
+    "maxCustomSkills": 12,
+    "maxDrafts": 4,
+    "maxPendingResultsPerDraft": 1,
+    "recentHistoryLimit": 50,
+    "idempotencyRetentionDays": 30,
+    "maxNodes": 64,
+    "maxEdges": 96,
+    "maxEffects": 3,
+    "maxFormulaTermsPerEffect": 4,
+    "maxTargetCount": 8,
+    "maxHitCount": 8,
+    "minCooldown": 1,
+    "maxCooldown": 12,
+    "maxGraphBytes": 131072,
+    "maxTradeoffRefundRatio": 0.35,
+    "statusBaseApplyChance": 0.25,
+    "statusApplyChancePerStep": 0.1,
+    "customizedNodeSealItemId": "spell_seal_lock_plate",
+    "customizedNodeSealCount": 10,
+    "forgeCatalystItemId": "final_volume_key_sigil",
+    "forgeCatalystCount": 5,
+    "goldCostItemId": "gold_coin",
+    "goldCostBase": 10000,
+    "goldCostPerMaterial": 20,
+    "goldCostPerBudget": 5000
+  },
+  "derivedStats": {
+    "version": "v2",
+    "operators": [
+      "+",
+      "-",
+      "*",
+      "/"
+    ],
+    "formulas": [
+      {
+        "targetAttr": "physics_damage",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "strength",
+            "coefficient": 0.55
+          },
+          {
+            "attrKey": "dexterity",
+            "coefficient": 0.25
+          }
+        ]
+      },
+      {
+        "targetAttr": "magical_damage",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "intelligence",
+            "coefficient": 0.7
+          },
+          {
+            "attrKey": "perception",
+            "coefficient": 0.3
+          }
+        ]
+      },
+      {
+        "targetAttr": "speed",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "dexterity",
+            "coefficient": 0.45
+          }
+        ]
+      },
+      {
+        "targetAttr": "crit_chance",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "dexterity",
+            "coefficient": 0.005
+          },
+          {
+            "attrKey": "luck",
+            "coefficient": 0.007
+          }
+        ]
+      },
+      {
+        "targetAttr": "crit_damage",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "dexterity",
+            "coefficient": 0.009
+          },
+          {
+            "attrKey": "strength",
+            "coefficient": 0.003
+          }
+        ]
+      },
+      {
+        "targetAttr": "magic_crit_chance",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "perception",
+            "coefficient": 0.004
+          },
+          {
+            "attrKey": "luck",
+            "coefficient": 0.007
+          }
+        ]
+      },
+      {
+        "targetAttr": "magic_crit_damage",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "perception",
+            "coefficient": 0.005
+          },
+          {
+            "attrKey": "intelligence",
+            "coefficient": 0.0025
+          }
+        ]
+      },
+      {
+        "targetAttr": "crit_damage_resist",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "strength",
+            "coefficient": 0.001
+          },
+          {
+            "attrKey": "perception",
+            "coefficient": 0.001
+          },
+          {
+            "attrKey": "stamina",
+            "coefficient": 0.002
+          }
+        ]
+      },
+      {
+        "targetAttr": "hp",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "stamina",
+            "coefficient": 9
+          },
+          {
+            "attrKey": "strength",
+            "coefficient": 1.2
+          }
+        ]
+      },
+      {
+        "targetAttr": "hp_regen",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "stamina",
+            "coefficient": 0.2
+          }
+        ]
+      },
+      {
+        "targetAttr": "mp",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "intelligence",
+            "coefficient": 4
+          }
+        ]
+      },
+      {
+        "targetAttr": "mp_regen",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "intelligence",
+            "coefficient": 0.1
+          }
+        ]
+      },
+      {
+        "targetAttr": "physics_defence",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "stamina",
+            "coefficient": 0.45
+          },
+          {
+            "attrKey": "strength",
+            "coefficient": 0.15
+          }
+        ]
+      },
+      {
+        "targetAttr": "magical_defence",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "stamina",
+            "coefficient": 0.35
+          },
+          {
+            "attrKey": "perception",
+            "coefficient": 0.5
+          }
+        ]
+      },
+      {
+        "targetAttr": "physics_flat_defense_penetration",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "strength",
+            "coefficient": 0.2
+          }
+        ]
+      },
+      {
+        "targetAttr": "magicial_flat_defense_penetration",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "intelligence",
+            "coefficient": 0.1
+          },
+          {
+            "attrKey": "perception",
+            "coefficient": 0.15
+          }
+        ]
+      },
+      {
+        "targetAttr": "enhancement_success_rate",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "enhance",
+            "coefficient": 0.002
+          }
+        ]
+      },
+      {
+        "targetAttr": "battle_drop_rate_bonus",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "luck",
+            "coefficient": 0.05
+          }
+        ]
+      },
+      {
+        "targetAttr": "alchemy_precision",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "luck",
+            "coefficient": 0.005
+          },
+          {
+            "attrKey": "alchemy_level",
+            "coefficient": 0.002
+          }
+        ]
+      },
+      {
+        "targetAttr": "alchemy_lucky_chance",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "luck",
+            "coefficient": 0.002
+          }
+        ]
+      },
+      {
+        "targetAttr": "alchemy_craft_success",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "alchemy_level",
+            "coefficient": 0.002
+          },
+          {
+            "attrKey": "luck",
+            "coefficient": 0.005
+          }
+        ]
+      },
+      {
+        "targetAttr": "fishing_control",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "fishing",
+            "coefficient": 0.01
+          }
+        ]
+      },
+      {
+        "targetAttr": "fishing_casting",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "fishing",
+            "coefficient": 0.01
+          }
+        ]
+      },
+      {
+        "targetAttr": "fishing_sensitivity",
+        "includeBase": true,
+        "terms": [
+          {
+            "attrKey": "fishing",
+            "coefficient": 0.01
+          }
+        ]
+      }
+    ]
+  },
+  "catVillageCommission": {
+    "refreshIntervalHours": 4,
+    "refreshBatchSize": 6,
+    "maxActiveTasks": 24
+  },
+  "fishing": {
+    "mutations": [
+      {
+        "id": "prismatic",
+        "nameKey": "game.fishing.mutation_prismatic",
+        "descriptionKey": "game.fishing.mutation_prismaticDesc",
+        "visualEffect": "prismatic",
+        "badgeIcon": "lucide:gem",
+        "appearanceChance": 0.000833,
+        "inheritanceChance": 0.06,
+        "lifespanMultiplier": 1.8,
+        "saleValueMultiplier": 2.0,
+        "alchemy": {
+          "primaryValueMultiplier": 1.5,
+          "bonusAttributes": [
+            { "attrKey": "alchemy_precision", "min": 0.018, "max": 0.032 }
+          ]
+        }
+      },
+      {
+        "id": "rainbow",
+        "nameKey": "game.fishing.mutation_rainbow",
+        "descriptionKey": "game.fishing.mutation_rainbowDesc",
+        "visualEffect": "rainbow",
+        "badgeIcon": "lucide:rainbow",
+        "appearanceChance": 0.0005,
+        "inheritanceChance": 0.04,
+        "lifespanMultiplier": 1.6,
+        "saleValueMultiplier": 2.5,
+        "alchemy": {
+          "primaryValueMultiplier": 1.35,
+          "bonusAttributes": [
+            { "attrKey": "alchemy_lucky_chance", "min": 0.012, "max": 0.025 }
+          ]
+        }
+      },
+      {
+        "id": "shimmering",
+        "nameKey": "game.fishing.mutation_shimmering",
+        "descriptionKey": "game.fishing.mutation_shimmeringDesc",
+        "visualEffect": "shimmering",
+        "badgeIcon": "lucide:sparkles",
+        "appearanceChance": 0.001667,
+        "inheritanceChance": 0.1,
+        "lifespanMultiplier": 1.35,
+        "saleValueMultiplier": 1.5,
+        "alchemy": {
+          "primaryValueMultiplier": 1.25,
+          "bonusAttributes": [
+            { "attrKey": "battle_drop_rate_bonus", "min": 0.008, "max": 0.016 }
+          ]
+        }
+      }
+    ]
+  },
+  "alchemy": {
+    "infusionBaseGoldCost": 32,
+    "infusionBaseDurationSec": 16,
+    "infusionBaseExp": 2,
+    "durationsSec": {
+      "default": 16,
+      "convert": 14,
+      "bench": 16,
+      "transmute": 8,
+      "smelt": 24
+    },
+    "transmuteDurationByRarityIndex": [8, 9, 10, 11, 12, 12],
+    "levelDeficitFailChancePerLevel": 0.06,
+    "levelDeficitFailChanceCap": 0.85
+  }
+}

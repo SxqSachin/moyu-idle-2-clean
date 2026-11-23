@@ -1,0 +1,57 @@
+/* ── Skin overrides ──
+ * Skins adjust HUE tokens only: --app-primary/hover/active and --game-* color
+ * tokens. They do NOT touch surface/bg/brightness tokens — those stay under
+ * .dark in style.css so brightness (light/dark) remains orthogonal to skin.
+ *
+ * Compound specificity (html[data-skin]) ensures skin hue wins over any
+ * accidental primary resets in :root, but never fights .dark brightness.
+ *
+ * To add a skin: add an html[data-skin="my-skin"] block here, register the
+ * ID in registry.ts, and add i18n keys (skin.mySkin). */
+
+/* ── Default ──
+ * Explicit block documents intent — no overrides, use base :root values.
+ * Kept as a no-op so the registry and CSS stay in lockstep visually. */
+html[data-skin="default"] {
+  /* intentionally empty */
+}
+
+/* ── Mystic — twilight arcane ──
+ * Deep indigo primary, amethyst accent, jewel-tone rarity ramp, warm copper
+ * gold. Evokes arcane study / starlit library. */
+html[data-skin="mystic"] {
+  --app-primary: #7c3aed;
+  --app-primary-hover: #8b5cf6;
+  --app-primary-active: #6d28d9;
+
+  --game-gold: #d97706;
+  --game-xp: #a855f7;
+  --game-hp: #e11d48;
+  --game-success: #10b981;
+  --game-danger: #ef4444;
+
+  --game-rarity-common: #94a3b8;
+  --game-rarity-uncommon: #34d399;
+  --game-rarity-rare: #60a5fa;
+  --game-rarity-epic: #c084fc;
+}
+
+/* ── Ember — forge / warrior ──
+ * Molten orange primary, ember red accents, warm metallic rarity ramp.
+ * Evokes smithy / battlefield. */
+html[data-skin="ember"] {
+  --app-primary: #ea580c;
+  --app-primary-hover: #f97316;
+  --app-primary-active: #c2410c;
+
+  --game-gold: #f59e0b;
+  --game-xp: #dc2626;
+  --game-hp: #b91c1c;
+  --game-success: #65a30d;
+  --game-danger: #dc2626;
+
+  --game-rarity-common: #a8a29e;
+  --game-rarity-uncommon: #84cc16;
+  --game-rarity-rare: #0ea5e9;
+  --game-rarity-epic: #e879f9;
+}

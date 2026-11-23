@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "rarity_definitions": [
+    {
+      "id": "common",
+      "nameKey": "rarity.common",
+      "order": 1,
+      "color": "#9CA3AF",
+      "economyMultiplier": 1,
+      "disabled": false
+    },
+    {
+      "id": "uncommon",
+      "nameKey": "rarity.uncommon",
+      "order": 2,
+      "color": "#22C55E",
+      "economyMultiplier": 1,
+      "disabled": false
+    },
+    {
+      "id": "rare",
+      "nameKey": "rarity.rare",
+      "order": 3,
+      "color": "#001fff",
+      "economyMultiplier": 1,
+      "disabled": false
+    },
+    {
+      "id": "epic",
+      "nameKey": "rarity.epic",
+      "order": 4,
+      "color": "#A855F7",
+      "economyMultiplier": 1,
+      "disabled": false
+    },
+    {
+      "id": "legendary",
+      "nameKey": "rarity.legendary",
+      "order": 5,
+      "color": "#F59E0B",
+      "economyMultiplier": 1,
+      "disabled": false
+    },
+    {
+      "id": "mythic",
+      "nameKey": "rarity.mythic",
+      "order": 6,
+      "color": "#EF4444",
+      "economyMultiplier": 1,
+      "disabled": false
+    }
+  ]
+}

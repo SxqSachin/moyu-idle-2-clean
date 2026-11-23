@@ -1,0 +1,14 @@
+services:
+  pg:
+    image: ${POSTGRES_IMAGE:-docker.m.daocloud.io/library/postgres:16}
+    container_name: game-pg
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-game}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-game}
+      POSTGRES_DB: ${POSTGRES_DB:-game}
+    command: ["postgres", "-c", "max_connections=${PG_MAX_CONNECTIONS:-300}"]
+    ports:
+      - "${PG_BIND_IP:-0.0.0.0}:${PG_PORT:-5432}:5432"
+    volumes:
+      - ${PG_DATA_DIR:-/data/game/pg}:/var/lib/postgresql/data
+    restart: unless-stopped

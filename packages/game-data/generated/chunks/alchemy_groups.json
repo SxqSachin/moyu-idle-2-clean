@@ -1,0 +1,1226 @@
+{
+  "version": 1,
+  "alchemy_groups": [
+    {
+      "id": "group.battle_loot_common",
+      "nameKey": "alchemy.group.battle_loot_common.name",
+      "descKey": "alchemy.group.battle_loot_common.desc",
+      "minAlchemyLevel": 1,
+      "goldCost": 45,
+      "durationSec": 14,
+      "alchemyExp": 2,
+      "failChanceBase": 0.1,
+      "minFailChance": 0.1,
+      "upgradeChanceBase": 0.025,
+      "upgradeEntries": [
+        {
+          "itemId": "afterglow",
+          "weight": 379
+        }
+      ],
+      "entries": [
+        {
+          "itemId": "base2_moss_spore",
+          "weight": 185
+        },
+        {
+          "itemId": "base4_shadow_silk",
+          "weight": 110
+        },
+        {
+          "itemId": "holy_cat_blessed_fur",
+          "weight": 100
+        },
+        {
+          "itemId": "hushed_ink_crystal",
+          "weight": 28
+        },
+        {
+          "itemId": "shadow_paw_silk",
+          "weight": 98
+        },
+        {
+          "itemId": "star_rail_copper_plate",
+          "weight": 29
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "group.battle_loot_uncommon",
+      "nameKey": "alchemy.group.battle_loot_uncommon.name",
+      "descKey": "alchemy.group.battle_loot_uncommon.desc",
+      "minAlchemyLevel": 8,
+      "goldCost": 105,
+      "durationSec": 27,
+      "alchemyExp": 3.5,
+      "failChanceBase": 0.12,
+      "minFailChance": 0.13,
+      "upgradeChanceBase": 0.05,
+      "upgradeEntries": [
+        {
+          "itemId": "base2_cave_membrane",
+          "weight": 163
+        },
+        {
+          "itemId": "base2_ruin_core_shard",
+          "weight": 101
+        },
+        {
+          "itemId": "base4_cursed_wing_membrane",
+          "weight": 71
+        },
+        {
+          "itemId": "base4_phantom_claw",
+          "weight": 63
+        },
+        {
+          "itemId": "blue_night_audit_feather",
+          "weight": 20
+        },
+        {
+          "itemId": "bottled_starlight",
+          "weight": 16
+        },
+        {
+          "itemId": "candy_bomb",
+          "weight": 18
+        },
+        {
+          "itemId": "meteor_core_fragment",
+          "weight": 21
+        },
+        {
+          "itemId": "plush_fur",
+          "weight": 19
+        },
+        {
+          "itemId": "refraction_lens_shard",
+          "weight": 22
+        },
+        {
+          "itemId": "wandering_page_silk",
+          "weight": 21
+        },
+        {
+          "itemId": "wayward_carousel_spring",
+          "weight": 17
+        }
+      ],
+      "entries": [
+        {
+          "itemId": "afterglow",
+          "weight": 379
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "group.battle_loot_rare",
+      "nameKey": "alchemy.group.battle_loot_rare.name",
+      "descKey": "alchemy.group.battle_loot_rare.desc",
+      "minAlchemyLevel": 15,
+      "goldCost": 245,
+      "durationSec": 39,
+      "alchemyExp": 5,
+      "failChanceBase": 0.14,
+      "minFailChance": 0.14,
+      "upgradeChanceBase": 0.02,
+      "upgradeEntries": [
+        {
+          "itemId": "base2_dragon_scale_chip",
+          "weight": 20
+        },
+        {
+          "itemId": "base4_abyssal_core",
+          "weight": 30
+        },
+        {
+          "itemId": "base4_ancestor_shadow_jade",
+          "weight": 30
+        },
+        {
+          "itemId": "base4_golem_dark_core",
+          "weight": 53
+        },
+        {
+          "itemId": "condensed_stardust",
+          "weight": 18
+        },
+        {
+          "itemId": "ghost_essence",
+          "weight": 13
+        },
+        {
+          "itemId": "spell_seal_lock_plate",
+          "weight": 17
+        }
+      ],
+      "entries": [
+        {
+          "itemId": "base2_cave_membrane",
+          "weight": 163
+        },
+        {
+          "itemId": "base2_ruin_core_shard",
+          "weight": 101
+        },
+        {
+          "itemId": "base4_cursed_wing_membrane",
+          "weight": 71
+        },
+        {
+          "itemId": "base4_phantom_claw",
+          "weight": 63
+        },
+        {
+          "itemId": "base4_shadow_iron",
+          "weight": 89
+        },
+        {
+          "itemId": "base4_shadow_orb",
+          "weight": 80
+        },
+        {
+          "itemId": "blue_night_audit_feather",
+          "weight": 20
+        },
+        {
+          "itemId": "bottled_starlight",
+          "weight": 16
+        },
+        {
+          "itemId": "candy_bomb",
+          "weight": 18
+        },
+        {
+          "itemId": "frost_ledger_page",
+          "weight": 154
+        },
+        {
+          "itemId": "holy_cat_guardian_medal",
+          "weight": 58
+        },
+        {
+          "itemId": "holy_cat_incense",
+          "weight": 58
+        },
+        {
+          "itemId": "holy_cat_luminous_thread",
+          "weight": 48
+        },
+        {
+          "itemId": "meteor_core_fragment",
+          "weight": 21
+        },
+        {
+          "itemId": "plush_fur",
+          "weight": 19
+        },
+        {
+          "itemId": "refraction_lens_shard",
+          "weight": 22
+        },
+        {
+          "itemId": "silent_whisker_thread",
+          "weight": 55
+        },
+        {
+          "itemId": "snowseal_wax",
+          "weight": 154
+        },
+        {
+          "itemId": "strange_wolf_fur",
+          "weight": 54
+        },
+        {
+          "itemId": "toxic_claw_venom",
+          "weight": 59
+        },
+        {
+          "itemId": "wandering_page_silk",
+          "weight": 21
+        },
+        {
+          "itemId": "wayward_carousel_spring",
+          "weight": 17
+        },
+        {
+          "itemId": "white_coin_shard",
+          "weight": 97
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "group.battle_loot_epic",
+      "nameKey": "alchemy.group.battle_loot_epic.name",
+      "descKey": "alchemy.group.battle_loot_epic.desc",
+      "minAlchemyLevel": 20,
+      "goldCost": 550,
+      "durationSec": 52,
+      "alchemyExp": 6.5,
+      "failChanceBase": 0.16,
+      "minFailChance": 0.15,
+      "upgradeChanceBase": 0.05,
+      "upgradeEntries": [
+        {
+          "itemId": "holy_cat_royal_jewel",
+          "weight": 40
+        },
+        {
+          "itemId": "shadow_paw_master_sigil",
+          "weight": 31
+        },
+        {
+          "itemId": "final_volume_key_sigil",
+          "weight": 13
+        },
+        {
+          "itemId": "parade_king_medal",
+          "weight": 10
+        },
+        {
+          "itemId": "timekeeper_core",
+          "weight": 14
+        }
+      ],
+      "entries": [
+        {
+          "itemId": "base2_dragon_scale_chip",
+          "weight": 50
+        },
+        {
+          "itemId": "base4_abyssal_core",
+          "weight": 51
+        },
+        {
+          "itemId": "base4_ancestor_shadow_jade",
+          "weight": 51
+        },
+        {
+          "itemId": "base4_golem_dark_core",
+          "weight": 53
+        },
+        {
+          "itemId": "condensed_stardust",
+          "weight": 18
+        },
+        {
+          "itemId": "ghost_essence",
+          "weight": 13
+        },
+        {
+          "itemId": "glow_core",
+          "weight": 134
+        },
+        {
+          "itemId": "holy_cat_sage_scroll",
+          "weight": 50
+        },
+        {
+          "itemId": "ice_abacus_bead",
+          "weight": 62
+        },
+        {
+          "itemId": "mirror_paw_shard",
+          "weight": 42
+        },
+        {
+          "itemId": "rimebone_handle",
+          "weight": 111
+        },
+        {
+          "itemId": "spell_seal_lock_plate",
+          "weight": 17
+        },
+        {
+          "itemId": "warm_thread_core",
+          "weight": 50
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "group.life_primary_common",
+      "nameKey": "alchemy.group.life_primary_common.name",
+      "descKey": "alchemy.group.life_primary_common.desc",
+      "minAlchemyLevel": 1,
+      "goldCost": 45,
+      "durationSec": 14,
+      "alchemyExp": 2,
+      "failChanceBase": 0.1,
+      "minFailChance": 0.1,
+      "upgradeChanceBase": 0.025,
+      "upgradeEntries": [
+        {
+          "itemId": "copper_ore",
+          "weight": 235
+        },
+        {
+          "itemId": "cotton_fiber",
+          "weight": 262
+        },
+        {
+          "itemId": "iron_ore",
+          "weight": 203
+        },
+        {
+          "itemId": "silverleaf_dew",
+          "weight": 262
+        }
+      ],
+      "entries": [
+        {
+          "itemId": "coal",
+          "weight": 275
+        },
+        {
+          "itemId": "egg",
+          "weight": 300
+        },
+        {
+          "itemId": "flax_fiber",
+          "weight": 346
+        },
+        {
+          "itemId": "milk",
+          "weight": 212
+        },
+        {
+          "itemId": "morning_dew",
+          "weight": 424
+        },
+        {
+          "itemId": "stone",
+          "weight": 300
+        },
+        {
+          "itemId": "tree_sap",
+          "weight": 245
+        },
+        {
+          "itemId": "wood",
+          "weight": 300
+        },
+        {
+          "itemId": "wool",
+          "weight": 173
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "group.life_primary_uncommon",
+      "nameKey": "alchemy.group.life_primary_uncommon.name",
+      "descKey": "alchemy.group.life_primary_uncommon.desc",
+      "minAlchemyLevel": 8,
+      "goldCost": 105,
+      "durationSec": 27,
+      "alchemyExp": 3.5,
+      "failChanceBase": 0.12,
+      "minFailChance": 0.13,
+      "upgradeChanceBase": 0.05,
+      "upgradeEntries": [
+        {
+          "itemId": "clear_resin",
+          "weight": 159
+        },
+        {
+          "itemId": "silkweed_fiber",
+          "weight": 185
+        },
+        {
+          "itemId": "silkweed_nectar",
+          "weight": 219
+        },
+        {
+          "itemId": "silkwood",
+          "weight": 179
+        }
+      ],
+      "entries": [
+        {
+          "itemId": "copper_ore",
+          "weight": 235
+        },
+        {
+          "itemId": "cotton_fiber",
+          "weight": 262
+        },
+        {
+          "itemId": "iron_ore",
+          "weight": 203
+        },
+        {
+          "itemId": "silverleaf_dew",
+          "weight": 262
+        },
+        {
+          "itemId": "silverleaf_fiber",
+          "weight": 212
+        },
+        {
+          "itemId": "silverleaf_resin",
+          "weight": 170
+        },
+        {
+          "itemId": "silverleaf_wood",
+          "weight": 209
+        },
+        {
+          "itemId": "soft_resin",
+          "weight": 195
+        },
+        {
+          "itemId": "sturdy_wood",
+          "weight": 235
+        },
+        {
+          "itemId": "sweet_nectar",
+          "weight": 321
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "group.life_primary_rare",
+      "nameKey": "alchemy.group.life_primary_rare.name",
+      "descKey": "alchemy.group.life_primary_rare.desc",
+      "minAlchemyLevel": 15,
+      "goldCost": 245,
+      "durationSec": 39,
+      "alchemyExp": 5,
+      "failChanceBase": 0.14,
+      "minFailChance": 0.14,
+      "upgradeChanceBase": 0.02,
+      "upgradeEntries": [
+        {
+          "itemId": "gold_ore",
+          "weight": 147
+        },
+        {
+          "itemId": "goldvine_fiber",
+          "weight": 159
+        },
+        {
+          "itemId": "goldvine_wood",
+          "weight": 158
+        },
+        {
+          "itemId": "sun_resin",
+          "weight": 146
+        }
+      ],
+      "entries": [
+        {
+          "itemId": "clear_resin",
+          "weight": 159
+        },
+        {
+          "itemId": "silkweed_fiber",
+          "weight": 185
+        },
+        {
+          "itemId": "silkweed_nectar",
+          "weight": 219
+        },
+        {
+          "itemId": "silkwood",
+          "weight": 179
+        },
+        {
+          "itemId": "silver_ore",
+          "weight": 175
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "group.life_primary_epic",
+      "nameKey": "alchemy.group.life_primary_epic.name",
+      "descKey": "alchemy.group.life_primary_epic.desc",
+      "minAlchemyLevel": 20,
+      "goldCost": 550,
+      "durationSec": 52,
+      "alchemyExp": 6.5,
+      "failChanceBase": 0.16,
+      "minFailChance": 0.15,
+      "upgradeChanceBase": 0.01,
+      "upgradeEntries": [
+        {
+          "itemId": "crystal_chunk",
+          "weight": 140
+        },
+        {
+          "itemId": "moon_dew",
+          "weight": 177
+        },
+        {
+          "itemId": "moon_resin",
+          "weight": 134
+        },
+        {
+          "itemId": "moonvine_fiber",
+          "weight": 147
+        }
+      ],
+      "entries": [
+        {
+          "itemId": "gold_ore",
+          "weight": 147
+        },
+        {
+          "itemId": "goldvine_fiber",
+          "weight": 159
+        },
+        {
+          "itemId": "goldvine_wood",
+          "weight": 158
+        },
+        {
+          "itemId": "sun_resin",
+          "weight": 146
+        },
+        {
+          "itemId": "sunlit_nectar",
+          "weight": 197
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "group.life_primary_legendary",
+      "nameKey": "alchemy.group.life_primary_legendary.name",
+      "descKey": "alchemy.group.life_primary_legendary.desc",
+      "minAlchemyLevel": 25,
+      "goldCost": 1200,
+      "durationSec": 64,
+      "alchemyExp": 8,
+      "failChanceBase": 0.2,
+      "minFailChance": 0.16,
+      "upgradeChanceBase": 0,
+      "upgradeEntries": [],
+      "entries": [
+        {
+          "itemId": "crystal_chunk",
+          "weight": 140
+        },
+        {
+          "itemId": "moon_dew",
+          "weight": 177
+        },
+        {
+          "itemId": "moon_resin",
+          "weight": 134
+        },
+        {
+          "itemId": "moonvine_fiber",
+          "weight": 147
+        },
+        {
+          "itemId": "moonwood",
+          "weight": 143
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "group.skillbook_arcane",
+      "nameKey": "skill_type.arcane.name",
+      "descKey": "skill_type.arcane.desc",
+      "minAlchemyLevel": 15,
+      "goldCost": 245,
+      "durationSec": 39,
+      "alchemyExp": 5,
+      "failChanceBase": 0.15,
+      "minFailChance": 0.15,
+      "upgradeChanceBase": 0.05,
+      "upgradeEntries": [
+        {
+          "itemId": "skillbook_perception_mind_control",
+          "weight": 51
+        },
+        {
+          "itemId": "skillbook_quick_slash",
+          "weight": 170
+        }
+      ],
+      "entries": [
+        {
+          "itemId": "skillbook_arcane_chain_bolt",
+          "weight": 129
+        },
+        {
+          "itemId": "skillbook_arcane_mana_burst",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_arcane_meteor",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_arcane_missile",
+          "weight": 129
+        },
+        {
+          "itemId": "skillbook_base4_abyssal_pressure",
+          "weight": 52
+        },
+        {
+          "itemId": "skillbook_base4_ancestor_decree",
+          "weight": 51
+        },
+        {
+          "itemId": "skillbook_base4_nightfall_curse_skill",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_base4_shadow_bind_skill",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_base4_umbral_bolt",
+          "weight": 61
+        },
+        {
+          "itemId": "skillbook_base4_void_lance",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_forbidden_trace",
+          "weight": 14
+        },
+        {
+          "itemId": "skillbook_hushing_incantation_page",
+          "weight": 17
+        },
+        {
+          "itemId": "skillbook_magic_bombardment",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_piercing_missile",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_refraction_mark",
+          "weight": 17
+        },
+        {
+          "itemId": "skillbook_super_berry_bird_berry_burst",
+          "weight": 31
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "group.skillbook_perception",
+      "nameKey": "skill_type.perception.name",
+      "descKey": "skill_type.perception.desc",
+      "minAlchemyLevel": 15,
+      "goldCost": 245,
+      "durationSec": 39,
+      "alchemyExp": 5,
+      "failChanceBase": 0.15,
+      "minFailChance": 0.15,
+      "upgradeChanceBase": 0.05,
+      "upgradeEntries": [
+        {
+          "itemId": "skillbook_wolf_king_rend",
+          "weight": 31
+        },
+        {
+          "itemId": "skillbook_bow_barrage",
+          "weight": 170
+        }
+      ],
+      "entries": [
+        {
+          "itemId": "skillbook_perception_corpse_explosion",
+          "weight": 10
+        },
+        {
+          "itemId": "skillbook_perception_disrupt",
+          "weight": 51
+        },
+        {
+          "itemId": "skillbook_perception_mind_control",
+          "weight": 51
+        },
+        {
+          "itemId": "skillbook_perception_shockburst",
+          "weight": 51
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "group.skillbook_blade",
+      "nameKey": "skill_type.blade.name",
+      "descKey": "skill_type.blade.desc",
+      "minAlchemyLevel": 15,
+      "goldCost": 245,
+      "durationSec": 39,
+      "alchemyExp": 5,
+      "failChanceBase": 0.15,
+      "minFailChance": 0.15,
+      "upgradeChanceBase": 0.05,
+      "upgradeEntries": [
+        {
+          "itemId": "skillbook_bow_barrage",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_holy_prayer_wave",
+          "weight": 170
+        }
+      ],
+      "entries": [
+        {
+          "itemId": "skillbook_base4_knife_fan_skill",
+          "weight": 69
+        },
+        {
+          "itemId": "skillbook_base4_shadowcleaver_break",
+          "weight": 69
+        },
+        {
+          "itemId": "skillbook_base4_shadowstep_stab",
+          "weight": 69
+        },
+        {
+          "itemId": "skillbook_blade_guard_break",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_blade_hemorrhage",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_blade_whirlwind",
+          "weight": 76
+        },
+        {
+          "itemId": "skillbook_meteor_core_crush",
+          "weight": 17
+        },
+        {
+          "itemId": "skillbook_mirror_paw_counter_cut",
+          "weight": 28
+        },
+        {
+          "itemId": "skillbook_power_strike",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_quick_slash",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_shadow_assassin_cat_phantom_stab",
+          "weight": 31
+        },
+        {
+          "itemId": "skillbook_shadow_assassin_cat_shadow_veil",
+          "weight": 31
+        },
+        {
+          "itemId": "skillbook_shadow_paw_armor_pierce",
+          "weight": 41
+        },
+        {
+          "itemId": "skillbook_shadow_paw_fan_of_knives",
+          "weight": 27
+        },
+        {
+          "itemId": "skillbook_shadow_paw_master_execution",
+          "weight": 20
+        },
+        {
+          "itemId": "skillbook_shadow_paw_master_feint",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_shadow_paw_veilstrike",
+          "weight": 28
+        },
+        {
+          "itemId": "skillbook_silent_whisker_midline_stab",
+          "weight": 28
+        },
+        {
+          "itemId": "skillbook_super_berry_bird_dive",
+          "weight": 31
+        },
+        {
+          "itemId": "skillbook_sweep",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_toxic_claw_venom_cut",
+          "weight": 41
+        },
+        {
+          "itemId": "skillbook_wolf_king_howl",
+          "weight": 31
+        },
+        {
+          "itemId": "skillbook_wolf_king_rend",
+          "weight": 31
+        },
+        {
+          "itemId": "skillbook_wolf_king_savage_bite",
+          "weight": 31
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "group.skillbook_bow",
+      "nameKey": "skill_type.bow.name",
+      "descKey": "skill_type.bow.desc",
+      "minAlchemyLevel": 15,
+      "goldCost": 245,
+      "durationSec": 39,
+      "alchemyExp": 5,
+      "failChanceBase": 0.15,
+      "minFailChance": 0.15,
+      "upgradeChanceBase": 0.05,
+      "upgradeEntries": [
+        {
+          "itemId": "skillbook_basic_heal",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_frostbite_slow",
+          "weight": 170
+        }
+      ],
+      "entries": [
+        {
+          "itemId": "skillbook_arrow_rain",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_bow_barrage",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_bow_pinning_shot",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_bow_poison_shot",
+          "weight": 170
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "group.skillbook_holy",
+      "nameKey": "skill_type.holy.name",
+      "descKey": "skill_type.holy.desc",
+      "minAlchemyLevel": 15,
+      "goldCost": 245,
+      "durationSec": 39,
+      "alchemyExp": 5,
+      "failChanceBase": 0.15,
+      "minFailChance": 0.15,
+      "upgradeChanceBase": 0.05,
+      "upgradeEntries": [
+        {
+          "itemId": "skillbook_base3_absolute_freeze",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_stab",
+          "weight": 170
+        }
+      ],
+      "entries": [
+        {
+          "itemId": "skillbook_adv_heal",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_basic_heal",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_blessing",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_holy_barrier",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_holy_prayer_wave",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_holy_purify",
+          "weight": 170
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "group.skillbook_snowpact",
+      "nameKey": "skill_type.snowpact.name",
+      "descKey": "skill_type.snowpact.desc",
+      "minAlchemyLevel": 15,
+      "goldCost": 245,
+      "durationSec": 39,
+      "alchemyExp": 5,
+      "failChanceBase": 0.15,
+      "minFailChance": 0.15,
+      "upgradeChanceBase": 0.05,
+      "upgradeEntries": [
+        {
+          "itemId": "skillbook_base4_nightveil_execution",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_tactical_focus_break",
+          "weight": 170
+        }
+      ],
+      "entries": [
+        {
+          "itemId": "skillbook_base3_absolute_freeze",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_base3_icebreaker_charge",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_frostbite_slow",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_glacial_prison",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_glacial_shard_storm",
+          "weight": 31
+        },
+        {
+          "itemId": "skillbook_hearthside_thaw",
+          "weight": 163
+        },
+        {
+          "itemId": "skillbook_polar_vortex",
+          "weight": 31
+        },
+        {
+          "itemId": "skillbook_rime_reaper_cut",
+          "weight": 148
+        },
+        {
+          "itemId": "skillbook_snowfield_whiteout",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_snowpact_receipt",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_white_coin_divination",
+          "weight": 119
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "group.skillbook_spear",
+      "nameKey": "skill_type.spear.name",
+      "descKey": "skill_type.spear.desc",
+      "minAlchemyLevel": 15,
+      "goldCost": 245,
+      "durationSec": 39,
+      "alchemyExp": 5,
+      "failChanceBase": 0.15,
+      "minFailChance": 0.15,
+      "upgradeChanceBase": 0.05,
+      "upgradeEntries": [
+        {
+          "itemId": "skillbook_roar",
+          "weight": 63
+        },
+        {
+          "itemId": "skillbook_holy_cat_royal_blessing",
+          "weight": 45
+        }
+      ],
+      "entries": [
+        {
+          "itemId": "skillbook_base2_dragon_scale_rupture",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_base2_dragon_scale_wave",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_base4_nightveil_execution",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_base4_nightveil_sweep",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_spear_hunter_mark",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_spear_line_pierce",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_spear_stance_guard",
+          "weight": 133
+        },
+        {
+          "itemId": "skillbook_stab",
+          "weight": 170
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "group.skillbook_tactical",
+      "nameKey": "skill_type.tactical.name",
+      "descKey": "skill_type.tactical.desc",
+      "minAlchemyLevel": 15,
+      "goldCost": 245,
+      "durationSec": 39,
+      "alchemyExp": 5,
+      "failChanceBase": 0.15,
+      "minFailChance": 0.15,
+      "upgradeChanceBase": 0.05,
+      "upgradeEntries": [
+        {
+          "itemId": "skillbook_holy_cat_smite",
+          "weight": 50
+        },
+        {
+          "itemId": "skillbook_arcane_meteor",
+          "weight": 170
+        }
+      ],
+      "entries": [
+        {
+          "itemId": "skillbook_cooldown_correction",
+          "weight": 10
+        },
+        {
+          "itemId": "skillbook_roar",
+          "weight": 63
+        },
+        {
+          "itemId": "skillbook_shadow_paw_master_blood_focus",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_shadow_paw_shadowstep",
+          "weight": 34
+        },
+        {
+          "itemId": "skillbook_shield_skill_1",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_silent_whisker_smoke_bomb",
+          "weight": 28
+        },
+        {
+          "itemId": "skillbook_smoke_tail_shadow_screen",
+          "weight": 41
+        },
+        {
+          "itemId": "skillbook_tactical_cripple",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_tactical_focus_break",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_tactical_taunt",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_timekeeper_stasis",
+          "weight": 12
+        },
+        {
+          "itemId": "skillbook_toxic_claw_venom_cloud",
+          "weight": 26
+        }
+      ],
+      "disabled": false
+    },
+    {
+      "id": "group.skillbook_holy_cat",
+      "nameKey": "skill_type.holy_cat.name",
+      "descKey": "skill_type.holy_cat.desc",
+      "minAlchemyLevel": 15,
+      "goldCost": 245,
+      "durationSec": 39,
+      "alchemyExp": 5,
+      "failChanceBase": 0.15,
+      "minFailChance": 0.15,
+      "upgradeChanceBase": 0.05,
+      "upgradeEntries": [
+        {
+          "itemId": "skillbook_base4_nightfall_curse_skill",
+          "weight": 170
+        },
+        {
+          "itemId": "skillbook_perception_shockburst",
+          "weight": 51
+        }
+      ],
+      "entries": [
+        {
+          "itemId": "skillbook_holy_cat_censer_flare",
+          "weight": 69
+        },
+        {
+          "itemId": "skillbook_holy_cat_guardian_vow",
+          "weight": 50
+        },
+        {
+          "itemId": "skillbook_holy_cat_radiant_spark",
+          "weight": 69
+        },
+        {
+          "itemId": "skillbook_holy_cat_royal_blessing",
+          "weight": 45
+        },
+        {
+          "itemId": "skillbook_holy_cat_royal_judgement",
+          "weight": 31
+        },
+        {
+          "itemId": "skillbook_holy_cat_sanctuary",
+          "weight": 58
+        },
+        {
+          "itemId": "skillbook_holy_cat_silent_liturgy_skill",
+          "weight": 45
+        },
+        {
+          "itemId": "skillbook_holy_cat_smite",
+          "weight": 50
+        }
+      ],
+      "disabled": false
+    }
+  ]
+}

@@ -1,0 +1,2125 @@
+@import "tailwindcss";
+@import "./themes/tokens.game.css";
+@import "./themes/skins.css";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@property --game-page-visual-r {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 22;
+}
+
+@property --game-page-visual-g {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 132;
+}
+
+@property --game-page-visual-b {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 71;
+}
+
+:root {
+  --app-bg: #ffffff;
+  --app-surface: #ffffff;
+  --app-surface-elevated: #fafafa;
+  --app-border: #d2d2d7;
+  --app-text: #1d1d1f;
+  --app-muted: #6e6e73;
+  --app-primary: #0066cc;
+  --app-primary-hover: #2997ff;
+  --app-primary-active: #0051a3;
+
+  --el-bg-color: var(--app-bg);
+  --el-bg-color-page: var(--app-bg);
+  --el-bg-color-overlay: var(--app-surface);
+  --el-fill-color-blank: var(--app-surface);
+  --el-fill-color: #f5f5f7;
+  --el-fill-color-light: var(--app-surface-elevated);
+  --el-fill-color-lighter: #fafafa;
+  --el-fill-color-extra-light: #fcfcfd;
+  --el-border-color: var(--app-border);
+  --el-border-color-light: var(--app-border);
+  --el-border-color-lighter: #e5e5ea;
+  --el-border-color-extra-light: #f2f2f7;
+  --el-border-color-dark: #b7b7bf;
+  --el-border-color-darker: #8e8e93;
+  --el-text-color-primary: var(--app-text);
+  --el-text-color-regular: var(--app-text);
+  --el-text-color-secondary: var(--app-muted);
+  --el-text-color-placeholder: #86868b;
+  --el-text-color-disabled: #a1a1aa;
+  --el-color-primary: var(--app-primary);
+  --el-color-primary-light-3: var(--app-primary-hover);
+  --el-color-primary-light-5: color-mix(in srgb, var(--app-primary) 42%, white);
+  --el-color-primary-light-7: color-mix(in srgb, var(--app-primary) 24%, white);
+  --el-color-primary-light-8: color-mix(in srgb, var(--app-primary) 16%, white);
+  --el-color-primary-light-9: color-mix(in srgb, var(--app-primary) 9%, white);
+  --el-color-primary-dark-2: var(--app-primary-active);
+  --el-menu-item-height: 30px;
+  --el-menu-sub-item-height: 30px;
+  --el-menu-base-level-padding: 6px;
+
+  --el-card-padding: 12px;
+
+  /* ── Motion tokens (generic UX) ──
+   * Theme-able like the color tokens above: a future theme just overrides
+   * these (e.g. under .dark or a [data-theme="…"] selector). Consumed by the
+   * dialog enter/leave animation below; reuse them for any other motion. */
+  --motion-dialog-from-scale: 0.97;
+  --motion-dialog-slide: 8px;
+  --motion-dialog-in-duration: 0.32s;
+  --motion-dialog-out-duration: 0.24s;
+  /* Elegant ease — smooth decelerate in, gentle accelerate out. No overshoot. */
+  --motion-dialog-ease-in: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --motion-dialog-ease-out: cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  --motion-overlay-in-duration: 0.24s;
+  --motion-overlay-out-duration: 0.18s;
+  --motion-toast-in-duration: 0.34s;
+  --motion-toast-out-duration: 0.2s;
+  --motion-toast-ease-in: cubic-bezier(0.16, 1, 0.3, 1);
+  --motion-toast-ease-out: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.dark {
+  --app-bg: #111216;
+  --app-surface: #1c1c1e;
+  --app-surface-elevated: #2b2b2e;
+  --app-border: #3b3b40;
+  --app-text: #f5f5f7;
+  --app-muted: #a1a1aa;
+  --app-primary: #2997ff;
+  --app-primary-hover: #50a8ff;
+  --app-primary-active: #1677d2;
+
+  --el-bg-color: var(--app-bg);
+  --el-bg-color-page: var(--app-bg);
+  --el-bg-color-overlay: #202126;
+  --el-fill-color-blank: var(--app-surface);
+  --el-fill-color: #24252a;
+  --el-fill-color-light: #292a30;
+  --el-fill-color-lighter: #30313a;
+  --el-fill-color-extra-light: #353743;
+  --el-border-color: var(--app-border);
+  --el-border-color-light: #464750;
+  --el-border-color-lighter: #50515c;
+  --el-border-color-extra-light: #5b5c68;
+  --el-border-color-dark: #666876;
+  --el-border-color-darker: #7a7c8c;
+  --el-text-color-primary: var(--app-text);
+  --el-text-color-regular: #d7dae3;
+  --el-text-color-secondary: var(--app-muted);
+  --el-text-color-placeholder: #7f8391;
+  --el-text-color-disabled: #686c78;
+
+  --el-color-primary-light-3: color-mix(in srgb, var(--app-primary) 74%, white);
+  --el-color-primary-light-5: color-mix(in srgb, var(--app-primary) 46%, var(--app-surface));
+  --el-color-primary-light-7: color-mix(in srgb, var(--app-primary) 28%, var(--app-surface));
+  --el-color-primary-light-8: color-mix(in srgb, var(--app-primary) 20%, var(--app-surface));
+  --el-color-primary-light-9: color-mix(in srgb, var(--app-primary) 14%, var(--app-surface));
+
+  --el-color-success-light-3: color-mix(in srgb, var(--game-success) 72%, white);
+  --el-color-success-light-5: color-mix(in srgb, var(--game-success) 46%, var(--app-surface));
+  --el-color-success-light-7: color-mix(in srgb, var(--game-success) 30%, var(--app-surface));
+  --el-color-success-light-8: color-mix(in srgb, var(--game-success) 22%, var(--app-surface));
+  --el-color-success-light-9: color-mix(in srgb, var(--game-success) 16%, var(--app-surface));
+  --el-color-warning-light-3: color-mix(in srgb, var(--game-gold) 72%, white);
+  --el-color-warning-light-5: color-mix(in srgb, var(--game-gold) 46%, var(--app-surface));
+  --el-color-warning-light-7: color-mix(in srgb, var(--game-gold) 30%, var(--app-surface));
+  --el-color-warning-light-8: color-mix(in srgb, var(--game-gold) 22%, var(--app-surface));
+  --el-color-warning-light-9: color-mix(in srgb, var(--game-gold) 16%, var(--app-surface));
+  --el-color-danger-light-3: color-mix(in srgb, var(--game-danger) 72%, white);
+  --el-color-danger-light-5: color-mix(in srgb, var(--game-danger) 46%, var(--app-surface));
+  --el-color-danger-light-7: color-mix(in srgb, var(--game-danger) 30%, var(--app-surface));
+  --el-color-danger-light-8: color-mix(in srgb, var(--game-danger) 22%, var(--app-surface));
+  --el-color-danger-light-9: color-mix(in srgb, var(--game-danger) 16%, var(--app-surface));
+  --el-color-info-light-3: #c7cad4;
+  --el-color-info-light-5: #6c7080;
+  --el-color-info-light-7: #41434d;
+  --el-color-info-light-8: #343640;
+  --el-color-info-light-9: #292b34;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  min-height: 100%;
+  background: var(--app-bg);
+  color: var(--app-text);
+}
+
+.app-root {
+  min-height: 100vh;
+  background: var(--app-bg);
+  color: var(--app-text);
+}
+
+/* .page-shell {
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #e8f1ff 0%, var(--app-bg) 42%);
+  color: var(--app-text);
+}
+
+.dark .page-shell {
+  background: radial-gradient(circle at top left, #1a2434 0%, var(--app-bg) 40%);
+} */
+
+.el-menu {
+  border-right: 0;
+}
+
+.game-shell-view__sidebar {
+  border-right: 1px solid var(--el-border-color);
+}
+
+.app-card.el-card {
+  background: var(--app-surface);
+  border-color: var(--app-border);
+  color: var(--app-text);
+}
+
+.app-card--no-border.el-card {
+  --game-page-body-padding: var(--el-card-padding);
+  --game-page-mobile-body-padding: 0.5rem 1rem;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-width: 1px;
+
+  overflow-x: hidden;
+}
+
+.app-card--no-border.el-card > .el-card__body {
+  padding: var(--game-page-body-padding);
+}
+
+@media (max-width: 767px) {
+  .app-card--no-border.el-card > .el-card__body {
+    padding: var(--game-page-mobile-body-padding);
+  }
+}
+
+.app-card .el-card__header {
+  position: relative;
+  overflow: hidden;
+  border-bottom-color: var(--app-border);
+}
+
+html:not(.game-simple-mode) body .game-shell-view {
+  --game-page-visual-r: 22;
+  --game-page-visual-g: 132;
+  --game-page-visual-b: 71;
+
+  transition:
+    --game-page-visual-r 0.38s cubic-bezier(0.16, 1, 0.3, 1),
+    --game-page-visual-g 0.38s cubic-bezier(0.16, 1, 0.3, 1),
+    --game-page-visual-b 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html:not(.game-simple-mode) body .game-shell-view:has(.game-page-header__visual--green) {
+  --game-page-visual-r: 22;
+  --game-page-visual-g: 132;
+  --game-page-visual-b: 71;
+}
+
+html:not(.game-simple-mode) body .game-shell-view:has(.game-page-header__visual--blue) {
+  --game-page-visual-r: 37;
+  --game-page-visual-g: 99;
+  --game-page-visual-b: 235;
+}
+
+html:not(.game-simple-mode) body .game-shell-view:has(.game-page-header__visual--amber) {
+  --game-page-visual-r: 217;
+  --game-page-visual-g: 119;
+  --game-page-visual-b: 6;
+}
+
+html:not(.game-simple-mode) body .game-shell-view:has(.game-page-header__visual--violet) {
+  --game-page-visual-r: 109;
+  --game-page-visual-g: 40;
+  --game-page-visual-b: 217;
+}
+
+html:not(.game-simple-mode) body .game-shell-view:has(.game-page-header__visual--rose) {
+  --game-page-visual-r: 225;
+  --game-page-visual-g: 29;
+  --game-page-visual-b: 72;
+}
+
+html:not(.game-simple-mode) body .game-shell-view:has(.game-page-header__visual--cyan) {
+  --game-page-visual-r: 8;
+  --game-page-visual-g: 145;
+  --game-page-visual-b: 178;
+}
+
+html:not(.game-simple-mode) body .game-shell-view:has(.game-page-header__visual--flame) {
+  --game-page-visual-r: 234;
+  --game-page-visual-g: 88;
+  --game-page-visual-b: 12;
+}
+
+html:not(.game-simple-mode) body .game-shell-view__topbar {
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--app-surface-elevated) 72%, var(--app-surface)), var(--app-surface));
+  box-shadow: inset 0 -1px 0 color-mix(in srgb, var(--app-border) 84%, transparent);
+}
+
+html:not(.game-simple-mode) body .game-shell-view__sidebar {
+  border-right: 1px solid color-mix(in srgb, var(--app-border) 92%, transparent);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--app-surface-elevated) 38%, var(--app-surface)), var(--app-surface));
+}
+
+html:not(.game-simple-mode) body .game-route-stage {
+  position: relative;
+  min-height: 100%;
+}
+
+html:not(.game-simple-mode) body .game-route-page {
+  min-height: 100%;
+}
+
+html:not(.game-simple-mode) body .game-route-view-enter-active,
+html:not(.game-simple-mode) body .game-route-view-leave-active {
+  transition:
+    opacity 0.26s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.26s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html:not(.game-simple-mode) body .game-route-view-enter-from {
+  opacity: 0;
+  transform: translate3d(0, 4px, 0);
+}
+
+html:not(.game-simple-mode) body .game-route-view-leave-to {
+  opacity: 0;
+  transform: translate3d(0, -4px, 0);
+}
+
+html:not(.game-simple-mode) body .game-route-view-leave-active {
+  position: absolute !important;
+  inset: 0;
+  width: 100%;
+  min-height: 100%;
+  pointer-events: none;
+}
+
+html:not(.game-simple-mode) body .game-shell-view__menu.el-menu {
+  padding: 6px 8px;
+}
+
+html:not(.game-simple-mode) body .game-shell-view__menu .el-menu-item,
+html:not(.game-simple-mode) body .game-shell-view__menu .el-sub-menu__title {
+  position: relative;
+  border: 1px solid transparent;
+  color: color-mix(in srgb, var(--app-text) 88%, var(--app-muted));
+  transition:
+    background-color 0.22s ease,
+    border-color 0.22s ease,
+    color 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+html:not(.game-simple-mode) body .game-shell-view__menu .el-menu-item:hover,
+html:not(.game-simple-mode) body .game-shell-view__menu .el-sub-menu__title:hover {
+  border-color: color-mix(in srgb, var(--app-primary) 13%, var(--app-border));
+  background: color-mix(in srgb, var(--app-primary) 6%, var(--app-surface-elevated));
+  color: var(--app-text);
+}
+
+html:not(.game-simple-mode) body .game-shell-view__menu .el-menu-item.is-active {
+  border-color: color-mix(in srgb, rgb(var(--game-page-visual-r) var(--game-page-visual-g) var(--game-page-visual-b)) 30%, var(--app-border));
+  background:
+    linear-gradient(90deg, rgb(var(--game-page-visual-r) var(--game-page-visual-g) var(--game-page-visual-b) / 0.14), transparent 74%),
+    color-mix(in srgb, rgb(var(--game-page-visual-r) var(--game-page-visual-g) var(--game-page-visual-b)) 7%, var(--app-surface));
+  color: color-mix(in srgb, rgb(var(--game-page-visual-r) var(--game-page-visual-g) var(--game-page-visual-b)) 82%, var(--app-primary));
+  font-weight: 850;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 24%, transparent);
+}
+
+html:not(.game-simple-mode) body .game-shell-view__menu .el-menu-item.is-active::before {
+  position: absolute;
+  inset: 7px auto 7px 0;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: rgb(var(--game-page-visual-r) var(--game-page-visual-g) var(--game-page-visual-b));
+  content: "";
+  transition: background-color 0.22s ease;
+}
+
+@media (max-width: 1023px) {
+  html:not(.game-simple-mode) body .game-shell-mobile-icon-rail.game-shell-view__sidebar {
+    width: 42px;
+    border-right-color: color-mix(in srgb, var(--app-border) 86%, transparent);
+    background: var(--app-surface);
+  }
+
+  html:not(.game-simple-mode) body .game-shell-mobile-icon-rail .game-shell-view__menu.el-menu {
+    width: 100%;
+    padding: 4px 0;
+  }
+
+  html:not(.game-simple-mode) body .game-shell-mobile-icon-rail .el-menu-item,
+  html:not(.game-simple-mode) body .game-shell-mobile-icon-rail .el-sub-menu__title {
+    width: 100%;
+    height: 36px;
+    justify-content: center;
+    margin: 1px 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    color: color-mix(in srgb, var(--app-text) 88%, var(--app-muted));
+  }
+
+  html:not(.game-simple-mode) body .game-shell-mobile-icon-rail .el-menu-item:hover,
+  html:not(.game-simple-mode) body .game-shell-mobile-icon-rail .el-sub-menu__title:hover {
+    border-color: transparent;
+    background: transparent;
+    color: var(--app-text);
+  }
+
+  html:not(.game-simple-mode) body .game-shell-mobile-icon-rail .el-menu-item.is-active {
+    border-color: transparent;
+    background: transparent;
+    color: color-mix(in srgb, rgb(var(--game-page-visual-r) var(--game-page-visual-g) var(--game-page-visual-b)) 82%, var(--app-primary));
+    box-shadow: none;
+  }
+
+  html:not(.game-simple-mode) body .game-shell-mobile-icon-rail .el-menu-item.is-active::before {
+    inset: 6px auto 6px 0;
+    width: 3px;
+    border-radius: 0 3px 3px 0;
+  }
+
+  html:not(.game-simple-mode) body .game-shell-mobile-icon-rail .el-menu-item.is-active::after {
+    position: absolute;
+    inset: 5px 5px 5px 6px;
+    z-index: -1;
+    border: 1px solid rgb(var(--game-page-visual-r) var(--game-page-visual-g) var(--game-page-visual-b) / 0.20);
+    border-radius: 8px;
+    background: rgb(var(--game-page-visual-r) var(--game-page-visual-g) var(--game-page-visual-b) / 0.08);
+    content: "";
+    transition:
+      background-color 0.22s ease,
+      border-color 0.22s ease;
+  }
+
+  html:not(.game-simple-mode) body .game-shell-mobile-icon-rail .el-menu-item .el-icon,
+  html:not(.game-simple-mode) body .game-shell-mobile-icon-rail .el-sub-menu__title .el-icon {
+    margin: 0;
+    font-size: 17px;
+  }
+
+  html:not(.game-simple-mode) body .game-shell-mobile-icon-rail .el-divider {
+    margin: 4px 6px !important;
+  }
+}
+
+html:not(.game-simple-mode) body .game-shell-view .game-content-scroll .el-card {
+  border-color: color-mix(in srgb, var(--app-border) 88%, transparent);
+  border-radius: 9px;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--app-surface-elevated) 58%, var(--app-surface)), var(--app-surface));
+  box-shadow:
+    0 1px 2px color-mix(in srgb, var(--app-text) 5%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 24%, transparent);
+}
+
+html:not(.game-simple-mode) body .game-shell-view .game-content-scroll .game-page-frame.el-card {
+  border-radius: 0;
+  background:
+    radial-gradient(
+      ellipse 760px 420px at left top,
+      rgb(var(--game-page-visual-r) var(--game-page-visual-g) var(--game-page-visual-b) / 0.24),
+      rgb(var(--game-page-visual-r) var(--game-page-visual-g) var(--game-page-visual-b) / 0.06) 34%,
+      transparent 68%
+    ),
+    linear-gradient(180deg, color-mix(in srgb, var(--app-surface-elevated) 48%, var(--app-surface)), var(--app-surface));
+  box-shadow: inset 0 -1px 0 color-mix(in srgb, var(--app-border) 72%, transparent);
+}
+
+@media (max-width: 767px) {
+  html:not(.game-simple-mode) body .game-shell-view .game-content-scroll .game-page-frame.el-card {
+    background:
+      radial-gradient(
+      ellipse 620px 460px at left top,
+        rgb(var(--game-page-visual-r) var(--game-page-visual-g) var(--game-page-visual-b) / 0.065),
+        rgb(var(--game-page-visual-r) var(--game-page-visual-g) var(--game-page-visual-b) / 0.024) 38%,
+        transparent 74%
+      ),
+      linear-gradient(180deg, color-mix(in srgb, var(--app-surface-elevated) 48%, var(--app-surface)), var(--app-surface));
+  }
+}
+
+html:not(.game-simple-mode) body .game-shell-view .game-content-scroll .el-card .el-card__header {
+  border-bottom-color: color-mix(in srgb, var(--app-border) 72%, transparent);
+}
+
+html:not(.game-simple-mode) body .game-shell-view .game-content-scroll .el-card:not(.app-card--no-border):hover {
+  border-color: color-mix(in srgb, var(--app-primary) 15%, var(--app-border));
+}
+
+.game-shell-view .game-content-scroll > *,
+.game-shell-view .game-content-scroll .game-route-stage,
+.game-shell-view .game-content-scroll .game-route-page,
+.game-shell-view .game-content-scroll > .page-shell > .app-card--no-border.el-card,
+.game-shell-view .game-content-scroll .game-route-page > .page-shell,
+.game-shell-view .game-content-scroll .game-route-page > .page-shell > .app-card--no-border.el-card {
+  min-height: 100%;
+}
+
+.game-shell-view .game-content-scroll > .page-shell,
+.game-shell-view .game-content-scroll .game-route-page > .page-shell {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-shell-view .game-content-scroll > .page-shell > .app-card--no-border.el-card,
+.game-shell-view .game-content-scroll .game-route-page > .page-shell > .app-card--no-border.el-card {
+  flex: 1 1 auto;
+}
+
+.game-shell-view .game-content-scroll > .app-card--no-border.el-card,
+.game-shell-view .game-content-scroll > .page-shell > .app-card--no-border.el-card,
+.game-shell-view .game-content-scroll .game-route-page > .page-shell > .app-card--no-border.el-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-shell-view .game-content-scroll > .app-card--no-border.el-card > .el-card__body,
+.game-shell-view .game-content-scroll > .page-shell > .app-card--no-border.el-card > .el-card__body,
+.game-shell-view .game-content-scroll .game-route-page > .page-shell > .app-card--no-border.el-card > .el-card__body {
+  flex: 1 1 auto;
+}
+
+.app-muted {
+  color: var(--app-muted);
+}
+
+.item-custom-label {
+  font-weight: 700;
+  color: var(--item-custom-label-color);
+  text-shadow: 0 1px 0 color-mix(in srgb, #ffffff 70%, transparent);
+}
+
+.item-custom-label--gold {
+  --item-custom-label-color: #b7791f;
+}
+
+.item-custom-label--violet {
+  --item-custom-label-color: #7c3aed;
+}
+
+.item-custom-label--rose {
+  --item-custom-label-color: #e11d48;
+}
+
+.item-custom-label--amber {
+  --item-custom-label-color: #b45309;
+}
+
+.item-custom-label--sky {
+  --item-custom-label-color: #0369a1;
+}
+
+.item-custom-label--emerald {
+  --item-custom-label-color: #047857;
+}
+
+.item-custom-label--fuchsia {
+  --item-custom-label-color: #c026d3;
+}
+
+.dark .item-custom-label {
+  text-shadow: 0 1px 2px color-mix(in srgb, #000000 70%, transparent);
+}
+
+.dark .item-custom-label--gold {
+  --item-custom-label-color: #f6d365;
+}
+
+.dark .item-custom-label--violet {
+  --item-custom-label-color: #c4b5fd;
+}
+
+.dark .item-custom-label--rose {
+  --item-custom-label-color: #fda4af;
+}
+
+.dark .item-custom-label--amber {
+  --item-custom-label-color: #fcd34d;
+}
+
+.dark .item-custom-label--sky {
+  --item-custom-label-color: #7dd3fc;
+}
+
+.dark .item-custom-label--emerald {
+  --item-custom-label-color: #6ee7b7;
+}
+
+.dark .item-custom-label--fuchsia {
+  --item-custom-label-color: #f0abfc;
+}
+
+.el-card {
+  background-color: var(--app-surface);
+  border-color: var(--app-border);
+  color: var(--app-text);
+}
+
+.el-popper,
+.el-popover.el-popper,
+.el-select__popper.el-popper,
+.el-picker__popper.el-popper {
+  background: var(--el-bg-color-overlay);
+  border-color: var(--app-border);
+  color: var(--app-text);
+  box-shadow:
+    0 14px 34px color-mix(in srgb, #000 28%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--app-border) 70%, transparent);
+}
+
+.el-popper .el-popper__arrow::before {
+  background: var(--el-bg-color-overlay);
+  border-color: var(--app-border);
+}
+
+.el-popper :is(.app-muted, .el-text, .el-text--info) {
+  color: var(--app-muted);
+}
+
+.el-input__wrapper,
+.el-textarea__inner,
+.el-select__wrapper,
+.el-input-number .el-input__wrapper {
+  background-color: var(--el-fill-color-light);
+  border-color: var(--app-border);
+  box-shadow: 0 0 0 1px var(--app-border) inset;
+}
+
+.el-input__wrapper:hover,
+.el-select__wrapper:hover,
+.el-textarea__inner:hover {
+  box-shadow: 0 0 0 1px var(--el-border-color-light) inset;
+}
+
+.el-input__wrapper.is-focus,
+.el-select__wrapper.is-focused,
+.el-textarea__inner:focus {
+  box-shadow: 0 0 0 1px var(--el-color-primary) inset;
+}
+
+.el-input__inner,
+.el-textarea__inner,
+.el-select__placeholder,
+.el-select__selected-item {
+  color: var(--app-text);
+}
+
+/* .el-tag {
+  font-weight: 600;
+} */
+
+.dark .el-tag--primary {
+  --el-tag-bg-color: var(--el-color-primary-light-9);
+  --el-tag-border-color: var(--el-color-primary-light-5);
+  --el-tag-text-color: color-mix(in srgb, var(--app-primary) 72%, white);
+}
+
+.dark .el-tag--success {
+  --el-tag-bg-color: var(--el-color-success-light-9);
+  --el-tag-border-color: var(--el-color-success-light-5);
+  --el-tag-text-color: color-mix(in srgb, var(--game-success) 68%, white);
+}
+
+.dark .el-tag--warning {
+  --el-tag-bg-color: var(--el-color-warning-light-9);
+  --el-tag-border-color: var(--el-color-warning-light-5);
+  --el-tag-text-color: color-mix(in srgb, var(--game-gold) 70%, white);
+}
+
+.dark .el-tag--danger {
+  --el-tag-bg-color: var(--el-color-danger-light-9);
+  --el-tag-border-color: var(--el-color-danger-light-5);
+  --el-tag-text-color: color-mix(in srgb, var(--game-danger) 68%, white);
+}
+
+.dark .el-tag--info {
+  --el-tag-bg-color: var(--el-color-info-light-9);
+  --el-tag-border-color: var(--el-color-info-light-5);
+  --el-tag-text-color: #c7cad4;
+}
+
+/* Element Plus button skin. Keep text/link buttons lightweight. */
+html:not(.game-simple-mode) body .el-button {
+  --game-button-accent: var(--app-primary);
+  --game-button-accent-hover: var(--app-primary-hover);
+  --game-button-accent-active: color-mix(in srgb, var(--game-button-accent) 82%, black);
+  --game-button-accent-soft: color-mix(in srgb, var(--game-button-accent) 10%, var(--app-surface));
+  --game-button-accent-ring: color-mix(in srgb, var(--game-button-accent) 16%, transparent);
+  --game-button-text: var(--app-text);
+  --game-button-bg: color-mix(in srgb, var(--app-surface) 96%, var(--app-surface-elevated));
+  --game-button-border: color-mix(in srgb, var(--app-border) 92%, var(--app-text) 8%);
+
+  border-radius: 8px;
+  font-weight: 760;
+  letter-spacing: 0;
+  transition:
+    transform 0.12s ease,
+    border-color 0.14s ease,
+    background-color 0.14s ease,
+    color 0.14s ease,
+    box-shadow 0.14s ease;
+}
+
+html:not(.game-simple-mode) body .el-button:not(.is-text):not(.is-link) {
+  border-color: var(--game-button-border);
+  background: var(--game-button-bg);
+  box-shadow: 0 0 0 0 transparent;
+  color: var(--game-button-text);
+}
+
+html:not(.game-simple-mode) body .el-button:not(.is-text):not(.is-link):not(.is-disabled):not(:disabled):hover {
+  border-color: color-mix(in srgb, var(--game-button-accent) 44%, var(--app-border));
+  background: var(--game-button-accent-soft);
+  color: color-mix(in srgb, var(--game-button-accent) 76%, var(--app-text));
+  box-shadow: 0 0 0 3px var(--game-button-accent-ring);
+}
+
+html:not(.game-simple-mode) body .el-button:not(.is-text):not(.is-link):not(.is-disabled):not(:disabled):active {
+  border-color: color-mix(in srgb, var(--game-button-accent) 58%, var(--app-border));
+  background: color-mix(in srgb, var(--game-button-accent) 16%, var(--app-surface));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--game-button-accent) 16%, transparent);
+  transform: translateY(1px);
+}
+
+html:not(.game-simple-mode) body .el-button:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--game-button-accent) 42%, transparent);
+  outline-offset: 2px;
+}
+
+html:not(.game-simple-mode) body .el-button--primary {
+  --game-button-accent: var(--app-primary);
+  --game-button-accent-hover: var(--app-primary-hover);
+  --game-button-accent-active: var(--app-primary-active);
+}
+
+html:not(.game-simple-mode) body .el-button--success {
+  --game-button-accent: var(--game-success);
+  --game-button-accent-hover: color-mix(in srgb, var(--game-success) 84%, white);
+  --game-button-accent-active: color-mix(in srgb, var(--game-success) 78%, black);
+}
+
+html:not(.game-simple-mode) body .el-button--warning {
+  --game-button-accent: #e99a16;
+  --game-button-accent-hover: #f2ad2e;
+  --game-button-accent-active: #c97908;
+}
+
+html:not(.game-simple-mode) body .el-button--danger {
+  --game-button-accent: var(--game-danger);
+  --game-button-accent-hover: color-mix(in srgb, var(--game-danger) 84%, white);
+  --game-button-accent-active: color-mix(in srgb, var(--game-danger) 78%, black);
+}
+
+html:not(.game-simple-mode) body .el-button--info {
+  --game-button-accent: var(--el-color-info);
+  --game-button-accent-hover: var(--el-color-info-light-3);
+  --game-button-accent-active: var(--el-color-info-dark-2);
+}
+
+html:not(.game-simple-mode) body .el-button--primary:not(.is-text):not(.is-link):not(.is-plain),
+html:not(.game-simple-mode) body .el-button--success:not(.is-text):not(.is-link):not(.is-plain),
+html:not(.game-simple-mode) body .el-button--warning:not(.is-text):not(.is-link):not(.is-plain),
+html:not(.game-simple-mode) body .el-button--danger:not(.is-text):not(.is-link):not(.is-plain),
+html:not(.game-simple-mode) body .el-button--info:not(.is-text):not(.is-link):not(.is-plain) {
+  border-color: var(--game-button-accent);
+  background: var(--game-button-accent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--game-button-accent) 12%, transparent);
+  color: #fff;
+}
+
+html:not(.game-simple-mode) body .el-button--primary:not(.is-text):not(.is-link):not(.is-plain):not(.is-disabled):not(:disabled):hover,
+html:not(.game-simple-mode) body .el-button--success:not(.is-text):not(.is-link):not(.is-plain):not(.is-disabled):not(:disabled):hover,
+html:not(.game-simple-mode) body .el-button--warning:not(.is-text):not(.is-link):not(.is-plain):not(.is-disabled):not(:disabled):hover,
+html:not(.game-simple-mode) body .el-button--danger:not(.is-text):not(.is-link):not(.is-plain):not(.is-disabled):not(:disabled):hover,
+html:not(.game-simple-mode) body .el-button--info:not(.is-text):not(.is-link):not(.is-plain):not(.is-disabled):not(:disabled):hover {
+  border-color: var(--game-button-accent-hover);
+  background: var(--game-button-accent-hover);
+  color: #fff;
+  box-shadow: 0 0 0 3px var(--game-button-accent-ring);
+}
+
+html:not(.game-simple-mode) body .el-button--primary:not(.is-text):not(.is-link):not(.is-plain):not(.is-disabled):not(:disabled):active,
+html:not(.game-simple-mode) body .el-button--success:not(.is-text):not(.is-link):not(.is-plain):not(.is-disabled):not(:disabled):active,
+html:not(.game-simple-mode) body .el-button--warning:not(.is-text):not(.is-link):not(.is-plain):not(.is-disabled):not(:disabled):active,
+html:not(.game-simple-mode) body .el-button--danger:not(.is-text):not(.is-link):not(.is-plain):not(.is-disabled):not(:disabled):active,
+html:not(.game-simple-mode) body .el-button--info:not(.is-text):not(.is-link):not(.is-plain):not(.is-disabled):not(:disabled):active {
+  border-color: var(--game-button-accent-active);
+  background: var(--game-button-accent-active);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, black 10%, transparent);
+  transform: translateY(1px);
+}
+
+html:not(.game-simple-mode) body .el-button.is-plain:not(.is-text):not(.is-link) {
+  border-color: color-mix(in srgb, var(--game-button-accent) 36%, var(--app-border));
+  background: color-mix(in srgb, var(--game-button-accent) 8%, var(--app-surface));
+  color: color-mix(in srgb, var(--game-button-accent) 78%, var(--app-text));
+  box-shadow: none;
+}
+
+html:not(.game-simple-mode) body .el-button.is-text,
+html:not(.game-simple-mode) body .el-button.is-link {
+  border-radius: 6px;
+  color: color-mix(in srgb, var(--game-button-accent) 78%, var(--app-text));
+  font-weight: 760;
+}
+
+html:not(.game-simple-mode) body .el-button.is-text:not(.is-disabled):not(:disabled):hover,
+html:not(.game-simple-mode) body .el-button.is-link:not(.is-disabled):not(:disabled):hover {
+  background: var(--game-button-accent-soft);
+  color: var(--game-button-accent);
+}
+
+html:not(.game-simple-mode) body .el-button.is-disabled,
+html:not(.game-simple-mode) body .el-button.is-disabled:hover,
+html:not(.game-simple-mode) body .el-button.is-disabled:focus,
+html:not(.game-simple-mode) body .el-button.is-disabled:active,
+html:not(.game-simple-mode) body .el-button:disabled,
+html:not(.game-simple-mode) body .el-button:disabled:hover,
+html:not(.game-simple-mode) body .el-button:disabled:focus,
+html:not(.game-simple-mode) body .el-button:disabled:active {
+  border-color: color-mix(in srgb, var(--app-border) 54%, transparent) !important;
+  background: color-mix(in srgb, var(--el-fill-color-lighter) 88%, var(--app-bg)) !important;
+  color: var(--el-text-color-disabled) !important;
+  cursor: not-allowed;
+  filter: grayscale(0.25);
+  opacity: 1;
+  transform: none;
+  box-shadow: none;
+}
+
+html:not(.game-simple-mode) body .el-button.is-text.is-disabled,
+html:not(.game-simple-mode) body .el-button.is-link.is-disabled,
+html:not(.game-simple-mode) body .el-button.is-text:disabled,
+html:not(.game-simple-mode) body .el-button.is-link:disabled {
+  border-color: transparent !important;
+  background: transparent !important;
+  color: var(--el-text-color-disabled) !important;
+}
+
+html:not(.game-simple-mode) body .el-button.is-loading:not(.is-disabled):not(:disabled) {
+  cursor: wait;
+  opacity: 0.78;
+}
+
+html:not(.game-simple-mode) body .el-button.is-circle {
+  border-radius: 999px;
+}
+
+html:not(.game-simple-mode) body .el-button > span {
+  min-width: 0;
+}
+
+html.dark:not(.game-simple-mode) body .el-button {
+  --game-button-bg: color-mix(in srgb, var(--app-surface-elevated) 88%, var(--app-surface));
+  --game-button-border: color-mix(in srgb, var(--app-border) 84%, var(--game-button-accent) 16%);
+  --game-button-accent-soft: color-mix(in srgb, var(--game-button-accent) 14%, var(--app-surface-elevated));
+}
+
+/* Game notifications: Element Plus service popups live outside Vue scopes. */
+html:not(.game-simple-mode) body .el-message.el-message,
+html:not(.game-simple-mode) body .el-notification.el-notification {
+  --game-toast-accent: var(--el-color-info);
+  --game-toast-accent-soft: var(--el-color-info-light-9);
+  --game-toast-surface: color-mix(in srgb, var(--app-surface-elevated) 92%, white);
+  --game-toast-border: color-mix(in srgb, var(--game-toast-accent) 28%, var(--app-border));
+  --game-toast-shadow:
+    0 16px 36px color-mix(in srgb, var(--app-text) 15%, transparent),
+    0 4px 12px color-mix(in srgb, var(--game-toast-accent) 12%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 48%, transparent);
+
+  border: 1px solid var(--game-toast-border);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--game-toast-accent) 10%, transparent), transparent 38%),
+    linear-gradient(180deg, var(--game-toast-surface), var(--app-surface));
+  box-shadow: var(--game-toast-shadow);
+  color: var(--app-text);
+  overflow: hidden;
+  backdrop-filter: blur(14px);
+}
+
+html.dark:not(.game-simple-mode) body .el-message.el-message,
+html.dark:not(.game-simple-mode) body .el-notification.el-notification {
+  --game-toast-surface: color-mix(in srgb, var(--app-surface-elevated) 90%, #ffffff 4%);
+  --game-toast-border: color-mix(in srgb, var(--game-toast-accent) 36%, var(--app-border));
+  --game-toast-shadow:
+    0 18px 42px color-mix(in srgb, #000 42%, transparent),
+    0 4px 14px color-mix(in srgb, var(--game-toast-accent) 18%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 9%, transparent);
+}
+
+html:not(.game-simple-mode) body .el-message.el-message--success,
+html:not(.game-simple-mode) body .el-notification.el-notification:has(.el-notification--success) {
+  --game-toast-accent: var(--game-success);
+  --game-toast-accent-soft: var(--el-color-success-light-9);
+}
+
+html:not(.game-simple-mode) body .el-message.el-message--warning,
+html:not(.game-simple-mode) body .el-notification.el-notification:has(.el-notification--warning) {
+  --game-toast-accent: var(--game-gold);
+  --game-toast-accent-soft: var(--el-color-warning-light-9);
+}
+
+html:not(.game-simple-mode) body .el-message.el-message--error,
+html:not(.game-simple-mode) body .el-notification.el-notification:has(.el-notification--error) {
+  --game-toast-accent: var(--game-danger);
+  --game-toast-accent-soft: var(--el-color-danger-light-9);
+}
+
+html:not(.game-simple-mode) body .el-message.el-message--primary,
+html:not(.game-simple-mode) body .el-notification.el-notification:has(.el-notification--primary) {
+  --game-toast-accent: var(--app-primary);
+  --game-toast-accent-soft: var(--el-color-primary-light-9);
+}
+
+html:not(.game-simple-mode) body .el-message.el-message {
+  min-height: 44px;
+  max-width: min(560px, calc(100vw - 32px));
+  padding: 11px 16px 11px 14px;
+  gap: 10px;
+  transform-origin: top center;
+  transition:
+    opacity var(--motion-toast-out-duration) var(--motion-toast-ease-out),
+    transform var(--motion-toast-in-duration) var(--motion-toast-ease-in),
+    top 0.36s var(--motion-toast-ease-in),
+    bottom 0.36s var(--motion-toast-ease-in);
+}
+
+html:not(.game-simple-mode) body .el-message.el-message::before,
+html:not(.game-simple-mode) body .el-notification.el-notification::before {
+  position: absolute;
+  inset: 8px auto 8px 0;
+  width: 4px;
+  border-radius: 0 4px 4px 0;
+  background: linear-gradient(180deg, var(--game-toast-accent), color-mix(in srgb, var(--game-toast-accent) 44%, transparent));
+  content: "";
+}
+
+html:not(.game-simple-mode) body .el-message.el-message::after {
+  position: absolute;
+  inset: 1px;
+  border: 1px solid color-mix(in srgb, var(--game-toast-accent) 16%, transparent);
+  border-radius: 7px;
+  content: "";
+  pointer-events: none;
+}
+
+html:not(.game-simple-mode) body .el-message.el-message .el-message__icon {
+  position: relative;
+  z-index: 1;
+  box-sizing: content-box;
+  margin-left: 2px;
+  padding: 5px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--game-toast-accent) 12%, transparent);
+  color: var(--game-toast-accent);
+}
+
+html:not(.game-simple-mode) body .el-message.el-message .el-message__content {
+  position: relative;
+  z-index: 1;
+  color: var(--app-text);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+html:not(.game-simple-mode) body .el-message.el-message .el-message__closeBtn,
+html:not(.game-simple-mode) body .el-notification.el-notification .el-notification__closeBtn {
+  z-index: 2;
+  border-radius: 999px;
+  color: color-mix(in srgb, var(--app-muted) 86%, var(--game-toast-accent));
+  transition:
+    background-color 0.16s ease,
+    color 0.16s ease,
+    transform 0.16s ease;
+}
+
+html:not(.game-simple-mode) body .el-message.el-message .el-message__closeBtn:hover,
+html:not(.game-simple-mode) body .el-notification.el-notification .el-notification__closeBtn:hover {
+  background: color-mix(in srgb, var(--game-toast-accent) 12%, transparent);
+  color: var(--game-toast-accent);
+  transform: scale(1.06);
+}
+
+html:not(.game-simple-mode) body .el-notification.el-notification {
+  --game-toast-border: color-mix(in srgb, var(--game-toast-accent) 16%, var(--app-border));
+  --game-toast-shadow:
+    0 12px 30px color-mix(in srgb, var(--app-text) 10%, transparent),
+    0 1px 3px color-mix(in srgb, var(--app-text) 8%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 54%, transparent);
+
+  width: min(360px, calc(100vw - 32px));
+  min-height: 86px;
+  padding: 15px 34px 15px 15px;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--app-surface-elevated) 96%, white), var(--app-surface));
+  box-shadow: var(--game-toast-shadow);
+  transform-origin: top right;
+  transition:
+    opacity var(--motion-toast-out-duration) var(--motion-toast-ease-out),
+    transform var(--motion-toast-in-duration) var(--motion-toast-ease-in),
+    left var(--motion-toast-in-duration) var(--motion-toast-ease-in),
+    right var(--motion-toast-in-duration) var(--motion-toast-ease-in),
+    top 0.36s var(--motion-toast-ease-in),
+    bottom 0.36s var(--motion-toast-ease-in);
+}
+
+html.dark:not(.game-simple-mode) body .el-notification.el-notification {
+  --game-toast-border: color-mix(in srgb, var(--game-toast-accent) 20%, var(--app-border));
+  --game-toast-shadow:
+    0 16px 36px color-mix(in srgb, #000 34%, transparent),
+    0 1px 3px color-mix(in srgb, #000 24%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 8%, transparent);
+
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--app-surface-elevated) 94%, white 3%), var(--app-surface));
+}
+
+html:not(.game-simple-mode) body .el-notification.el-notification:has(.el-notification--warning) {
+  --game-toast-accent: #d59618;
+  --game-toast-accent-soft: #fff7e5;
+}
+
+html:not(.game-simple-mode) body .el-notification.el-notification::before {
+  inset: 8px auto 8px 0;
+  width: 4px;
+}
+
+html:not(.game-simple-mode) body .el-notification.el-notification::after {
+  display: none;
+  content: none;
+}
+
+html:not(.game-simple-mode) body .el-notification.el-notification.left {
+  transform-origin: top left;
+}
+
+html:not(.game-simple-mode) body .el-notification.el-notification.left::before {
+  inset: 8px 0 8px auto;
+  border-radius: 4px 0 0 4px;
+}
+
+html:not(.game-simple-mode) body .el-notification.el-notification.left::after {
+  display: none;
+  content: none;
+}
+
+html:not(.game-simple-mode) body .el-notification.el-notification .el-notification__icon {
+  position: relative;
+  z-index: 1;
+  box-sizing: content-box;
+  padding: 7px;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--game-toast-accent) 12%, transparent);
+  color: var(--game-toast-accent);
+}
+
+html:not(.game-simple-mode) body .el-notification.el-notification .el-notification__group {
+  position: relative;
+  z-index: 1;
+  margin-left: 12px;
+  margin-right: 0;
+}
+
+html:not(.game-simple-mode) body .el-notification.el-notification .el-notification__title {
+  color: var(--app-text);
+  font-size: 15px;
+  font-weight: 850;
+  line-height: 1.4;
+}
+
+html:not(.game-simple-mode) body .el-notification.el-notification .el-notification__content {
+  margin-top: 5px;
+  color: var(--app-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+html:not(.game-simple-mode) body .el-notification.el-notification .el-notification__closeBtn {
+  top: -4px;
+  right: -22px;
+  font-size: 18px;
+}
+
+html:not(.game-simple-mode) body .el-message.el-message-fade-enter-from.is-center,
+html:not(.game-simple-mode) body .el-message.el-message-fade-leave-to.is-center {
+  opacity: 0;
+  transform: translate(-50%, -14px) scale(0.96);
+}
+
+html:not(.game-simple-mode) body .el-message.el-message-fade-enter-from.is-center.is-bottom,
+html:not(.game-simple-mode) body .el-message.el-message-fade-leave-to.is-center.is-bottom {
+  transform: translate(-50%, 14px) scale(0.96);
+}
+
+html:not(.game-simple-mode) body .el-message.el-message-fade-enter-from.is-left,
+html:not(.game-simple-mode) body .el-message.el-message-fade-leave-to.is-left,
+html:not(.game-simple-mode) body .el-message.el-message-fade-enter-from.is-right,
+html:not(.game-simple-mode) body .el-message.el-message-fade-leave-to.is-right {
+  opacity: 0;
+  transform: translateY(-14px) scale(0.96);
+}
+
+html:not(.game-simple-mode) body .el-message.el-message-fade-enter-from.is-left.is-bottom,
+html:not(.game-simple-mode) body .el-message.el-message-fade-leave-to.is-left.is-bottom,
+html:not(.game-simple-mode) body .el-message.el-message-fade-enter-from.is-right.is-bottom,
+html:not(.game-simple-mode) body .el-message.el-message-fade-leave-to.is-right.is-bottom {
+  transform: translateY(14px) scale(0.96);
+}
+
+html:not(.game-simple-mode) body .el-notification.el-notification-fade-enter-from.right,
+html:not(.game-simple-mode) body .el-notification.el-notification-fade-leave-to.right {
+  opacity: 0;
+  transform: translate3d(18px, -4px, 0) scale(0.96);
+}
+
+html:not(.game-simple-mode) body .el-notification.el-notification-fade-enter-from.left,
+html:not(.game-simple-mode) body .el-notification.el-notification-fade-leave-to.left {
+  opacity: 0;
+  transform: translate3d(-18px, -4px, 0) scale(0.96);
+}
+
+@media (max-width: 767px) {
+  html:not(.game-simple-mode) body .el-message.el-message {
+    width: max-content;
+    max-width: calc(100vw - 24px);
+  }
+
+  html:not(.game-simple-mode) body .el-notification.el-notification {
+    width: calc(100vw - 24px);
+    right: 12px;
+    left: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:not(.game-simple-mode) body .el-message.el-message,
+  html:not(.game-simple-mode) body .el-notification.el-notification,
+  html:not(.game-simple-mode) body .el-message.el-message .el-message__closeBtn,
+  html:not(.game-simple-mode) body .el-notification.el-notification .el-notification__closeBtn {
+    transition-duration: 0.01s;
+  }
+
+  html:not(.game-simple-mode) body .el-message.el-message-fade-enter-from,
+  html:not(.game-simple-mode) body .el-message.el-message-fade-leave-to,
+  html:not(.game-simple-mode) body .el-notification.el-notification-fade-enter-from,
+  html:not(.game-simple-mode) body .el-notification.el-notification-fade-leave-to {
+    transform: none;
+  }
+}
+
+.game-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 248px 1fr;
+}
+
+.game-shell__menu {
+  border-right: 1px solid var(--app-border);
+  background: var(--app-surface);
+  padding: 20px 16px;
+}
+
+.game-shell__brand {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.game-shell__el-menu.el-menu {
+  border-right: none;
+  background: transparent;
+}
+
+.game-shell__main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.game-shell__status {
+  margin: 16px 16px 0;
+  padding: 12px 16px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.game-shell__resource {
+  font-size: 14px;
+}
+
+.game-shell__content {
+  min-width: 0;
+}
+
+.game-shell-v2 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 248px 1fr;
+  overflow: hidden;
+}
+
+.game-shell-v2__sidebar {
+  border-right: 1px solid var(--app-border);
+  background: var(--app-surface);
+  padding: 10px 8px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+}
+
+.game-shell-v2__brand {
+  font-weight: 700;
+  margin-bottom: 6px;
+  padding: 0 8px;
+  font-size: 13px;
+  color: var(--app-muted);
+}
+
+.game-shell-v2__menu.el-menu {
+  border-right: none;
+  background: transparent;
+  --el-menu-item-height: 30px;
+  --el-menu-sub-item-height: 30px;
+  --el-menu-base-level-padding: 6px;
+}
+
+.game-shell-v2__menu :is(.el-menu-item, .el-sub-menu__title) {
+  font-size: 13px;
+  margin: 1px 0;
+  border-radius: 8px;
+}
+
+.game-shell-v2__divider.el-divider {
+  margin: 5px 0;
+}
+
+.game-shell-v2__main {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.game-shell-v2__top {
+  margin: 16px 16px 0;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.game-shell-v2__top-left,
+.game-shell-v2__top-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.game-shell-v2__user-btn {
+  border: 1px solid var(--app-border);
+  background: var(--app-surface);
+  color: var(--app-text);
+  border-radius: 999px;
+  padding: 4px 10px 4px 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.game-shell-v2__user-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--app-primary);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.game-shell-v2__user-name {
+  font-size: 13px;
+  line-height: 1;
+}
+
+.game-shell-v2__resource {
+  font-size: 14px;
+}
+
+.game-shell-v2__content {
+  padding: 16px;
+  min-width: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+.game-shell-v2__mobile-menu-btn {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .game-shell-v2 {
+    grid-template-columns: 1fr;
+  }
+
+  .game-shell-v2__sidebar {
+    display: none;
+  }
+
+  .game-shell-v2__mobile-menu-btn {
+    display: inline-flex;
+  }
+
+  .game-shell-mobile-icon-rail {
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+  }
+
+  .game-shell-mobile-icon-rail :is(.el-menu, .el-menu-item, .el-sub-menu__title) {
+    touch-action: pan-y;
+  }
+}
+
+/* Game dialogs escape the shell's nested scroll containers while preserving
+ * Element Plus' dynamic z-index ordering for dialogs opened from dialogs. */
+.game-dialog-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100dvh !important;
+  min-height: 100svh;
+}
+
+.game-dialog-overlay .el-overlay-dialog {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* Global dialog policy: mobile fullscreen, desktop keeps per-dialog config. */
+@media (max-width: 767px) {
+  .game-dialog-overlay {
+    height: 100dvh !important;
+    min-height: 100svh;
+  }
+
+  .el-overlay-dialog {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .game-dialog-overlay .el-overlay-dialog {
+    padding:
+      env(safe-area-inset-top, 0px)
+      env(safe-area-inset-right, 0px)
+      env(safe-area-inset-bottom, 0px)
+      env(safe-area-inset-left, 0px);
+    box-sizing: border-box;
+  }
+
+  .game-dialog-overlay .el-dialog:not(.dialog-mobile-windowed) {
+    height: 100% !important;
+    max-height: 100%;
+  }
+
+  .el-dialog {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100dvh;
+    margin: 0 !important;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .el-dialog__body {
+    flex: 1 1 auto;
+    min-height: 0;
+    max-height: none;
+    overflow: auto;
+    padding-bottom: max(var(--el-dialog-padding-primary), env(safe-area-inset-bottom, 0px));
+  }
+
+  /* Opt-out class: keep dialog windowed on mobile instead of fullscreen. */
+  .el-dialog.dialog-mobile-windowed {
+    width: min(92vw, 560px) !important;
+    max-width: 92vw !important;
+    height: auto;
+    max-height: 85dvh;
+    margin: auto !important;
+    border-radius: 12px;
+  }
+
+  .el-dialog.dialog-mobile-windowed .el-dialog__body {
+    flex: 0 1 auto;
+    max-height: calc(85dvh - 112px);
+  }
+}
+
+/* ===== Game-feel dialog enter/leave animation (generic UX) =====
+ * Overrides element-plus default `dialog-fade` (a flat translateY+opacity)
+ * with an elegant fade + subtle scale. No bounce/overshoot.
+ * Specificity is raised to .el-overlay.dialog-fade-* .el-dialog (0,3,0) so it
+ * beats element-plus' own .dialog-fade-* .el-dialog (0,2,0) regardless of
+ * which stylesheet the auto-import injects last.
+ * All tunables come from the --motion-* tokens in :root, so theming = override
+ * those vars (var() inside keyframes resolves against the animated element).
+ * Opt-out per dialog with class="dialog-no-pop".
+ */
+@keyframes game-dialog-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, var(--motion-dialog-slide), 0)
+      scale(var(--motion-dialog-from-scale));
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes game-dialog-out {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, var(--motion-dialog-slide), 0) scale(0.99);
+  }
+}
+
+@keyframes game-overlay-fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes game-overlay-fade-out {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.el-overlay.dialog-fade-enter-active .el-dialog:not(.dialog-no-pop) {
+  transform-origin: center center;
+  animation: game-dialog-in var(--motion-dialog-in-duration)
+    var(--motion-dialog-ease-in) both;
+}
+
+.el-overlay.dialog-fade-leave-active .el-dialog:not(.dialog-no-pop) {
+  transform-origin: center center;
+  animation: game-dialog-out var(--motion-dialog-out-duration)
+    var(--motion-dialog-ease-out) both;
+}
+
+/* Snappier overlay backdrop to match the quicker box motion. */
+.el-overlay.dialog-fade-enter-active {
+  animation: game-overlay-fade-in var(--motion-overlay-in-duration) ease both;
+}
+.el-overlay.dialog-fade-leave-active {
+  animation: game-overlay-fade-out var(--motion-overlay-out-duration) ease both;
+}
+
+/* Override Element Plus default dialog wrapper animation (has translateY(-20px)) */
+.el-overlay.dialog-fade-enter-active .el-overlay-dialog {
+  animation: game-overlay-fade-in var(--motion-overlay-in-duration) ease both;
+}
+.el-overlay.dialog-fade-leave-active .el-overlay-dialog {
+  animation: game-overlay-fade-out var(--motion-overlay-out-duration) ease both;
+}
+
+/* Accessibility: collapse to a near-instant fade when motion is reduced. */
+@media (prefers-reduced-motion: reduce) {
+  .el-overlay.dialog-fade-enter-active .el-dialog:not(.dialog-no-pop),
+  .el-overlay.dialog-fade-leave-active .el-dialog:not(.dialog-no-pop) {
+    animation-duration: 0.01s;
+    transform: none;
+  }
+  .el-overlay.dialog-fade-enter-active .el-dialog:not(.dialog-no-pop) {
+    animation-name: game-overlay-fade-in;
+  }
+  .el-overlay.dialog-fade-leave-active .el-dialog:not(.dialog-no-pop) {
+    animation-name: game-overlay-fade-out;
+  }
+}
+
+/* Long-press detail targets (item cards, quick-ref tags). Suppresses the
+ * iOS/Android callout, text-selection magnifier, selection highlight and tap
+ * highlight so a long-press opens our detail popover instead of OS UI.
+ * Inherited properties (user-select / touch-callout) also cover descendants. */
+.lp-suppress {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.detail-surface {
+  border: 1px solid var(--app-border);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--app-surface-elevated) 88%, var(--app-bg));
+  color: var(--app-text);
+  padding: 10px;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 7%, transparent);
+}
+
+.detail-section {
+  display: grid;
+  gap: 4px;
+}
+
+.detail-section-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--app-text);
+}
+
+.detail-row-label {
+  font-size: 12px;
+  color: var(--app-muted);
+}
+
+.detail-row-value {
+  font-size: 12px;
+  color: var(--el-text-color-regular);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.detail-row-hint {
+  font-size: 12px;
+  opacity: 0.75;
+  cursor: help;
+}
+
+.detail-row-preview {
+  @apply text-green-600 dark:text-green-400;
+}
+
+.detail-buff-list {
+  @apply flex flex-row flex-wrap gap-1 items-center;
+}
+
+@keyframes tutorial-popover-in {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes tutorial-popover-glow {
+  0%,
+  100% {
+    box-shadow:
+      0 18px 44px color-mix(in srgb, var(--el-text-color-primary) 26%, transparent),
+      0 0 0 1px color-mix(in srgb, var(--el-color-warning) 50%, transparent),
+      0 0 22px color-mix(in srgb, var(--el-color-warning) 26%, transparent),
+      inset 0 1px 0 color-mix(in srgb, white 46%, transparent);
+  }
+  50% {
+    box-shadow:
+      0 18px 44px color-mix(in srgb, var(--el-text-color-primary) 26%, transparent),
+      0 0 0 1px color-mix(in srgb, var(--el-color-warning) 70%, transparent),
+      0 0 34px color-mix(in srgb, var(--el-color-warning) 42%, transparent),
+      inset 0 1px 0 color-mix(in srgb, white 46%, transparent);
+  }
+}
+
+html:not(.game-simple-mode) body .driver-popover.tutorial-popover {
+  max-width: min(400px, calc(100vw - 28px));
+  border: 1px solid color-mix(in srgb, var(--el-color-warning) 42%, var(--app-border));
+  border-radius: 10px;
+  padding: 18px 18px 16px 20px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--el-color-warning) 10%, transparent), transparent 42%),
+    linear-gradient(180deg, color-mix(in srgb, var(--app-surface-elevated) 94%, white 6%), var(--app-surface));
+  box-shadow:
+    0 18px 46px color-mix(in srgb, var(--el-text-color-primary) 24%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--el-color-warning) 30%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 42%, transparent);
+  color: var(--app-text);
+  animation: tutorial-popover-in 0.26s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html:not(.game-simple-mode) body .driver-popover.tutorial-popover .driver-popover-title::after {
+  content: "";
+  position: absolute;
+  top: -72px;
+  right: 18px;
+  z-index: 1;
+  width: 112px;
+  aspect-ratio: 1;
+  background: url("/images/dialog_kitty_1.png") center / contain no-repeat;
+  opacity: 0.9;
+  filter: drop-shadow(0 10px 12px color-mix(in srgb, var(--el-text-color-primary) 18%, transparent));
+  pointer-events: none;
+}
+
+/* Left accent bar to anchor attention. */
+html:not(.game-simple-mode) body .driver-popover.tutorial-popover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  bottom: 10px;
+  width: 4px;
+  border-radius: 0 4px 4px 0;
+  background: linear-gradient(180deg, var(--el-color-warning), color-mix(in srgb, var(--el-color-warning) 60%, transparent));
+  pointer-events: none;
+}
+
+html:not(.game-simple-mode) body .driver-popover.tutorial-popover::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  pointer-events: none;
+  border: 1px solid color-mix(in srgb, var(--el-color-warning) 24%, transparent);
+  border-radius: 9px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:not(.game-simple-mode) body .driver-popover.tutorial-popover {
+    animation: none;
+  }
+}
+
+html:not(.game-simple-mode) body .driver-popover.tutorial-popover .driver-popover-title {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  align-items: center;
+  gap: 8px;
+  padding-right: 86px;
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 1.35;
+  color: var(--app-text);
+}
+
+html:not(.game-simple-mode) body .driver-popover.tutorial-popover .driver-popover-title::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--el-color-warning);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--el-color-warning) 18%, transparent);
+}
+
+html:not(.game-simple-mode) body .driver-popover.tutorial-popover .driver-popover-description {
+  position: relative;
+  z-index: 2;
+  color: var(--app-muted);
+  line-height: 1.7;
+}
+
+html:not(.game-simple-mode) body .driver-popover.tutorial-popover .driver-popover-progress-text {
+  position: relative;
+  z-index: 2;
+  color: var(--el-color-warning);
+  font-weight: 700;
+}
+
+html:not(.game-simple-mode) body .driver-popover.tutorial-popover .driver-popover-footer {
+  position: relative;
+  z-index: 3;
+}
+
+html:not(.game-simple-mode) body .driver-popover.tutorial-popover .driver-popover-close-btn {
+  z-index: 3;
+}
+
+html:not(.game-simple-mode) body .driver-popover.tutorial-popover .driver-popover-footer button {
+  min-height: 32px;
+  border-radius: 8px;
+  border: 1px solid var(--app-border);
+  font-weight: 850;
+}
+
+html:not(.game-simple-mode) body .driver-popover.tutorial-popover .driver-popover-next-btn,
+html:not(.game-simple-mode) body .driver-popover.tutorial-popover .driver-popover-done-btn {
+  border-color: color-mix(in srgb, var(--el-color-warning) 62%, var(--app-border));
+  background: linear-gradient(180deg, var(--el-color-warning-light-7), var(--el-color-warning-light-8));
+  color: color-mix(in srgb, var(--el-color-warning) 58%, black);
+}
+
+html:not(.game-simple-mode) body .driver-popover.tutorial-popover .driver-popover-prev-btn {
+  background: var(--app-surface-elevated);
+  color: var(--app-text);
+}
+
+html:not(.game-simple-mode) body .onboarding-prompt-overlay .el-overlay-dialog {
+  padding: 28px 12px;
+}
+
+html:not(.game-simple-mode) body .onboarding-prompt-dialog.el-dialog {
+  overflow: visible;
+  border: 1px solid color-mix(in srgb, var(--el-color-warning) 42%, var(--app-border));
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--el-color-warning) 10%, transparent), transparent 42%),
+    linear-gradient(180deg, color-mix(in srgb, var(--app-surface-elevated) 94%, white 6%), var(--app-surface));
+  box-shadow:
+    0 22px 58px color-mix(in srgb, var(--el-text-color-primary) 26%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--el-color-warning) 28%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 42%, transparent);
+  animation: tutorial-popover-in 0.26s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html:not(.game-simple-mode) body .onboarding-prompt-dialog.el-dialog::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  z-index: 0;
+  pointer-events: none;
+  border: 1px solid color-mix(in srgb, var(--el-color-warning) 24%, transparent);
+  border-radius: 10px;
+}
+
+html:not(.game-simple-mode) body .onboarding-prompt-dialog.el-dialog::after {
+  content: "";
+  position: absolute;
+  top: -78px;
+  right: 24px;
+  z-index: 2;
+  width: 118px;
+  aspect-ratio: 1;
+  background: url("/images/dialog_kitty_1.png") center / contain no-repeat;
+  opacity: 0.94;
+  filter: drop-shadow(0 12px 14px color-mix(in srgb, var(--el-text-color-primary) 18%, transparent));
+  pointer-events: none;
+}
+
+html:not(.game-simple-mode) body .onboarding-prompt-dialog.el-dialog .el-dialog__header {
+  position: relative;
+  z-index: 1;
+  margin-right: 0;
+  padding: 22px 24px 8px 26px;
+}
+
+html:not(.game-simple-mode) body .onboarding-prompt-dialog.el-dialog .el-dialog__title {
+  display: inline-flex;
+  max-width: calc(100% - 80px);
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.35;
+  color: var(--app-text);
+}
+
+html:not(.game-simple-mode) body .onboarding-prompt-dialog.el-dialog .el-dialog__title::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: var(--el-color-warning);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--el-color-warning) 18%, transparent);
+}
+
+html:not(.game-simple-mode) body .onboarding-prompt-dialog.el-dialog .el-dialog__headerbtn {
+  z-index: 3;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+}
+
+html:not(.game-simple-mode) body .onboarding-prompt-dialog.el-dialog .el-dialog__headerbtn:hover {
+  background: color-mix(in srgb, var(--el-color-warning) 12%, transparent);
+}
+
+html:not(.game-simple-mode) body .onboarding-prompt-dialog.el-dialog .el-dialog__body {
+  position: relative;
+  z-index: 1;
+  padding: 10px 26px 8px;
+}
+
+html:not(.game-simple-mode) body .onboarding-prompt-body {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+
+html:not(.game-simple-mode) body .onboarding-prompt-icon {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid color-mix(in srgb, var(--el-color-warning) 42%, var(--app-border));
+  border-radius: 10px;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--el-color-warning) 16%, var(--app-surface-elevated)), var(--app-surface));
+  color: var(--el-color-warning);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 40%, transparent);
+  font-size: 24px;
+}
+
+html:not(.game-simple-mode) body .onboarding-prompt-message {
+  margin: 0;
+  color: var(--app-muted);
+  font-size: 15px;
+  font-weight: 650;
+  line-height: 1.75;
+}
+
+html:not(.game-simple-mode) body .onboarding-prompt-dialog.el-dialog .el-dialog__footer {
+  position: relative;
+  z-index: 1;
+  padding: 10px 24px 22px;
+}
+
+html:not(.game-simple-mode) body .onboarding-prompt-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+html:not(.game-simple-mode) body .onboarding-prompt-actions .el-button {
+  min-height: 36px;
+  margin-left: 0;
+  border-radius: 9px;
+  font-weight: 850;
+}
+
+html:not(.game-simple-mode) body .onboarding-prompt-secondary.el-button {
+  border-color: var(--app-border);
+  background: var(--app-surface-elevated);
+  color: var(--app-text);
+}
+
+html:not(.game-simple-mode) body .onboarding-prompt-primary.el-button {
+  border-color: color-mix(in srgb, var(--el-color-warning) 62%, var(--app-border));
+  background: linear-gradient(180deg, var(--el-color-warning-light-7), var(--el-color-warning-light-8));
+  color: color-mix(in srgb, var(--el-color-warning) 58%, black);
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--el-color-warning) 18%, transparent);
+}
+
+html:not(.game-simple-mode) body .tutorial-guide-dialog.el-dialog {
+  border: 1px solid color-mix(in srgb, var(--el-color-warning) 32%, var(--app-border));
+  border-radius: 10px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--el-color-warning) 8%, transparent), transparent 40%),
+    linear-gradient(180deg, color-mix(in srgb, var(--app-surface-elevated) 92%, white 8%), var(--app-surface));
+  box-shadow:
+    0 20px 60px color-mix(in srgb, var(--el-text-color-primary) 24%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 38%, transparent);
+  overflow: hidden;
+}
+
+html:not(.game-simple-mode) body .tutorial-guide-dialog.el-dialog .el-dialog__header {
+  margin-right: 0;
+  padding: 18px 20px 12px;
+  border-bottom: 1px solid color-mix(in srgb, var(--el-color-warning) 18%, var(--app-border));
+}
+
+html:not(.game-simple-mode) body .tutorial-guide-dialog.el-dialog .el-dialog__title {
+  font-weight: 800;
+}
+
+html:not(.game-simple-mode) body .tutorial-guide-body {
+  padding-top: 2px;
+}
+
+html:not(.game-simple-mode) body .tutorial-guide-entry {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--app-surface-elevated) 86%, white 14%), var(--app-surface));
+  box-shadow:
+    0 1px 2px color-mix(in srgb, var(--app-text) 7%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 36%, transparent);
+}
+
+html:not(.game-simple-mode) body .tutorial-guide-entry--unlocked::before {
+  position: absolute;
+  inset: 8px auto 8px 0;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: var(--el-color-warning);
+  content: "";
+}
+
+html:not(.game-simple-mode) body .tutorial-guide-entry--unlocked:hover {
+  border-color: color-mix(in srgb, var(--el-color-warning) 46%, var(--app-border));
+  box-shadow:
+    0 8px 22px color-mix(in srgb, var(--el-color-warning) 14%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 42%, transparent);
+  transform: translateY(-1px);
+}
+
+html:not(.game-simple-mode) body .tutorial-guide-icon {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid color-mix(in srgb, var(--el-color-warning) 34%, var(--app-border));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--el-color-warning) 9%, var(--app-surface-elevated));
+  color: var(--el-color-warning);
+}
+
+/* ── Tutorial (Driver.js) mobile overrides ── */
+@media (max-width: 767px) {
+  html:not(.game-simple-mode) body .driver-popover.tutorial-popover {
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
+  }
+
+  html:not(.game-simple-mode) body .tutorial-popover-mobile.driver-popover {
+    width: min(360px, calc(100vw - 24px)) !important;
+    max-width: calc(100vw - 24px) !important;
+    max-height: min(56dvh, 380px);
+    /* overflow-y: auto; */
+    box-sizing: border-box;
+    z-index: 1000000001;
+    font-size: 14px;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    pointer-events: auto !important;
+    touch-action: manipulation;
+  }
+
+  html:not(.game-simple-mode) body .tutorial-popover-mobile.driver-popover * {
+    pointer-events: auto !important;
+  }
+
+  html:not(.game-simple-mode) body .tutorial-popover-mobile.driver-popover .driver-popover-footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    padding-top: 10px;
+    background: var(--app-surface);
+  }
+
+  html:not(.game-simple-mode) body .tutorial-popover-mobile.driver-popover .driver-popover-footer button {
+    position: relative;
+    z-index: 2;
+    min-height: 44px;
+    min-width: 44px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html:not(.game-simple-mode) body .tutorial-popover-mobile.driver-popover .driver-popover-close-btn {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    z-index: 3;
+    min-height: 44px;
+    min-width: 44px;
+    color: var(--app-muted);
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html:not(.game-simple-mode) body .tutorial-popover-mobile.driver-popover .driver-popover-title {
+    padding-right: 44px;
+    font-size: 15px;
+  }
+
+  html:not(.game-simple-mode) body .tutorial-popover-mobile.driver-popover .driver-popover-title::before {
+    flex: 0 0 10px;
+  }
+
+  html:not(.game-simple-mode) body .tutorial-popover-mobile.driver-popover .driver-popover-description {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  html:not(.game-simple-mode) body .onboarding-prompt-dialog.el-dialog {
+    width: min(92vw, 430px) !important;
+  }
+
+  html:not(.game-simple-mode) body .onboarding-prompt-dialog.el-dialog::after {
+    top: -58px;
+    right: 42px;
+    width: 92px;
+  }
+
+  html:not(.game-simple-mode) body .onboarding-prompt-dialog.el-dialog .el-dialog__title {
+    max-width: calc(100% - 54px);
+    font-size: 18px;
+  }
+
+  html:not(.game-simple-mode) body .onboarding-prompt-body {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  html:not(.game-simple-mode) body .onboarding-prompt-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 21px;
+  }
+
+  html:not(.game-simple-mode) body .onboarding-prompt-actions {
+    justify-content: stretch;
+  }
+
+  html:not(.game-simple-mode) body .onboarding-prompt-actions .el-button {
+    flex: 1 1 138px;
+  }
+
+  html:not(.game-simple-mode) body .tutorial-guide-dialog.el-dialog {
+    width: calc(100vw - 20px) !important;
+  }
+
+  html:not(.game-simple-mode) body .tutorial-guide-entry {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  html:not(.game-simple-mode) body .tutorial-guide-entry > .flex:last-child {
+    justify-content: flex-end;
+  }
+}
+
+/* ── Game form utilities ──
+ * Standard structure for game operation forms (create/edit/config dialogs).
+ * See docs/ops/harness-coding-standard.md §Frontend — 游戏表单规范 */
+
+.game-form {
+  width: 100%;
+}
+
+.game-form__section {
+  margin-top: 16px;
+  padding: 12px;
+  background: var(--game-section-bg);
+  border-radius: 6px;
+  border: 1px solid var(--app-border);
+}
+.game-form__section:first-child {
+  margin-top: 0;
+}
+
+.game-form__legend {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--app-text);
+  margin-bottom: 8px;
+  padding: 0 4px;
+}
+
+.game-form__header {
+  margin-bottom: 16px;
+}
+
+.game-form__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--app-text);
+}
+
+.game-form__icon {
+  font-size: 20px;
+}
+
+.game-form__subtitle {
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--app-muted);
+}
+
+.game-form__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+/* ── Dialog quality enhancement ──
+ * Subtle texture and refinement for el-dialog. Premium feel, not flashy.
+ * Applies to all dialogs game-wide. */
+
+.el-dialog {
+  border-radius: 12px;
+  border: 1px solid var(--app-border);
+  background: var(--app-surface);
+  color: var(--app-text);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.15),
+    0 8px 24px rgba(0, 0, 0, 0.1),
+    0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.dark .el-dialog {
+  background: #1a1b20;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    0 8px 24px rgba(0, 0, 0, 0.3),
+    0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.el-dialog__header {
+  /* background: linear-gradient(180deg, var(--app-surface-elevated) 0%, var(--app-surface) 100%); */
+  /* border-bottom: 1px solid var(--app-border); */
+  /* padding: 16px 20px; */
+  margin: 0;
+}
+
+.el-dialog__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--app-text);
+  letter-spacing: 0.01em;
+}
+
+.el-dialog__headerbtn {
+  top: -2px;
+  right: -4px;
+  font-size: 18px;
+}
+
+.el-dialog__body {
+  /* padding: 0 0 12px 0; */
+  color: var(--app-text);
+}
+
+.el-dialog__footer {
+  /* padding: 16px 20px; */
+  /* border-top: 1px solid var(--app-border); */
+  background: var(--app-surface);
+}

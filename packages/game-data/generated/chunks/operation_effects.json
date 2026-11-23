@@ -1,0 +1,2421 @@
+{
+  "version": 1,
+  "operation_effects": [
+    {
+      "id": "food_mossfire_dual_fish_grill",
+      "rulesetVersion": "food-alchemy-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_capacity_floor_tradeoff",
+      "nameKey": "game.operationEffects.foods.mossfireDualFishGrill.name",
+      "descKey": "game.operationEffects.foods.mossfireDualFishGrill.desc",
+      "iconId": "item.mossfire_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 6
+      },
+      "stacking": {
+        "key": "food.alchemy.infusion_capacity_floor_tradeoff",
+        "mode": "add_charges",
+        "maxCharges": 18
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 40,
+        "positiveFloorReductionRate": 0.12
+      }
+    },
+    {
+      "id": "food_starlight_silverfish_soup",
+      "rulesetVersion": "food-alchemy-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_precision_ceiling_bonus",
+      "nameKey": "game.operationEffects.foods.starlightSilverfishSoup.name",
+      "descKey": "game.operationEffects.foods.starlightSilverfishSoup.desc",
+      "iconId": "item.starlight_silverfish_soup",
+      "priority": 110,
+      "allowedTargets": [
+        "player"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 1800
+      },
+      "stacking": {
+        "key": "food.alchemy.infusion_precision_ceiling_bonus",
+        "mode": "extend_duration",
+        "maxDurationSeconds": 5400
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "positiveCeilingBonusRate": 0.06
+      }
+    },
+    {
+      "id": "food_mossfire_dual_fish_grill_v2",
+      "rulesetVersion": "food-v2",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_capacity_floor_tradeoff",
+      "nameKey": "game.fishCuisine.names.mossfire_dual_fish_grill",
+      "descKey": "game.fishCuisine.descriptions.mossfire_dual_fish_grill",
+      "iconId": "item.mossfire_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.mossfire_dual_fish",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 2
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 40,
+        "positiveFloorReductionRate": 0.12
+      }
+    },
+    {
+      "id": "food_mossfire_dual_fish_soup_v2",
+      "rulesetVersion": "food-v2",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_capacity_floor_tradeoff",
+      "nameKey": "game.fishCuisine.names.mossfire_dual_fish_soup",
+      "descKey": "game.fishCuisine.descriptions.mossfire_dual_fish_soup",
+      "iconId": "item.starlight_silverfish_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.mossfire_dual_fish",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 1500
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 20,
+        "positiveFloorReductionRate": 0.12
+      }
+    },
+    {
+      "id": "food_starlight_silverfish_grill_v2",
+      "rulesetVersion": "food-v2",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_precision_ceiling_bonus",
+      "nameKey": "game.fishCuisine.names.starlight_silverfish_grill",
+      "descKey": "game.fishCuisine.descriptions.starlight_silverfish_grill",
+      "iconId": "item.starlight_silverfish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.starlight_silverfish",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 100
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "positiveCeilingBonusRate": 0.06
+      }
+    },
+    {
+      "id": "food_starlight_silverfish_soup_v2",
+      "rulesetVersion": "food-v2",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_precision_ceiling_bonus",
+      "nameKey": "game.fishCuisine.names.starlight_silverfish_soup",
+      "descKey": "game.fishCuisine.descriptions.starlight_silverfish_soup",
+      "iconId": "item.starlight_silverfish_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.starlight_silverfish",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 86400
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "positiveCeilingBonusRate": 0.05
+      }
+    },
+    {
+      "id": "food_steadyfin_grill_v2",
+      "rulesetVersion": "food-v2",
+      "domain": "enhancement",
+      "kind": "enhancement.success_bonus",
+      "nameKey": "game.fishCuisine.names.steadyfin_grill",
+      "descKey": "game.fishCuisine.descriptions.steadyfin_grill",
+      "iconId": "item.steadyfin_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.steadyfin",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 100
+      },
+      "selector": {
+        "actionIds": [
+          "equipment_enhance"
+        ]
+      },
+      "params": {
+        "bonusRate": 0.025
+      }
+    },
+    {
+      "id": "food_steadyfin_soup_v2",
+      "rulesetVersion": "food-v2",
+      "domain": "enhancement",
+      "kind": "enhancement.success_bonus",
+      "nameKey": "game.fishCuisine.names.steadyfin_soup",
+      "descKey": "game.fishCuisine.descriptions.steadyfin_soup",
+      "iconId": "item.steadyfin_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.steadyfin",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 86400
+      },
+      "selector": {
+        "actionIds": [
+          "equipment_enhance"
+        ]
+      },
+      "params": {
+        "bonusRate": 0.02
+      }
+    },
+    {
+      "id": "food_frugal_river_grill_v2",
+      "rulesetVersion": "food-v2",
+      "domain": "life_action",
+      "kind": "life_action.material_refund_chance",
+      "nameKey": "game.fishCuisine.names.frugal_river_grill",
+      "descKey": "game.fishCuisine.descriptions.frugal_river_grill",
+      "iconId": "item.mossfire_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.frugal_river",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 2
+      },
+      "selector": {},
+      "params": {
+        "chance": 0.5,
+        "refundRate": 1
+      }
+    },
+    {
+      "id": "food_frugal_river_soup_v2",
+      "rulesetVersion": "food-v2",
+      "domain": "life_action",
+      "kind": "life_action.material_refund_chance",
+      "nameKey": "game.fishCuisine.names.frugal_river_soup",
+      "descKey": "game.fishCuisine.descriptions.frugal_river_soup",
+      "iconId": "item.starlight_silverfish_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.frugal_river",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 1500
+      },
+      "selector": {},
+      "params": {
+        "chance": 0.04,
+        "refundRate": 1
+      }
+    },
+    {
+      "id": "food_harvest_river_grill_v2",
+      "rulesetVersion": "food-v2",
+      "domain": "life_action",
+      "kind": "life_action.extra_main_output_chance",
+      "nameKey": "game.fishCuisine.names.harvest_river_grill",
+      "descKey": "game.fishCuisine.descriptions.harvest_river_grill",
+      "iconId": "item.mossfire_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.harvest_river",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 2
+      },
+      "selector": {},
+      "params": {
+        "chance": 0.5,
+        "quantity": 1
+      }
+    },
+    {
+      "id": "food_harvest_river_soup_v2",
+      "rulesetVersion": "food-v2",
+      "domain": "life_action",
+      "kind": "life_action.extra_main_output_chance",
+      "nameKey": "game.fishCuisine.names.harvest_river_soup",
+      "descKey": "game.fishCuisine.descriptions.harvest_river_soup",
+      "iconId": "item.starlight_silverfish_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.harvest_river",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 1500
+      },
+      "selector": {},
+      "params": {
+        "chance": 0.04,
+        "quantity": 1
+      }
+    },
+    {
+      "id": "food_reedbank_grill_v2",
+      "rulesetVersion": "food-v2",
+      "domain": "fishing_cast",
+      "kind": "fishing_cast.bite_bonus",
+      "nameKey": "game.fishCuisine.names.reedbank_grill",
+      "descKey": "game.fishCuisine.descriptions.reedbank_grill",
+      "iconId": "item.mossfire_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.reedbank",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 2
+      },
+      "selector": {
+        "actionIds": [
+          "fishing.trip"
+        ]
+      },
+      "params": {
+        "bonusRate": 0.1
+      }
+    },
+    {
+      "id": "food_reedbank_soup_v2",
+      "rulesetVersion": "food-v2",
+      "domain": "fishing_cast",
+      "kind": "fishing_cast.bite_bonus",
+      "nameKey": "game.fishCuisine.names.reedbank_soup",
+      "descKey": "game.fishCuisine.descriptions.reedbank_soup",
+      "iconId": "item.reedbank_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.reedbank",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 86400
+      },
+      "selector": {
+        "actionIds": [
+          "fishing.trip"
+        ]
+      },
+      "params": {
+        "bonusRate": 0.08
+      }
+    },
+    {
+      "id": "food_frugal_river_grill_v3",
+      "rulesetVersion": "food-fishing-v3",
+      "domain": "fishing_cast",
+      "kind": "fishing_cast.line_load_reduction",
+      "nameKey": "game.fishCuisine.names.frugal_river_grill",
+      "descKey": "game.fishCuisine.descriptions.frugal_river_grill",
+      "iconId": "item.frugal_river_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 12
+      },
+      "stacking": {
+        "key": "food.frugal_river:fishing-v3",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 1200
+      },
+      "selector": {
+        "actionIds": [
+          "fishing.trip"
+        ]
+      },
+      "params": {
+        "rate": 0.08
+      }
+    },
+    {
+      "id": "food_frugal_river_soup_v3",
+      "rulesetVersion": "food-fishing-v3",
+      "domain": "fishing_cast",
+      "kind": "fishing_cast.line_load_reduction",
+      "nameKey": "game.fishCuisine.names.frugal_river_soup",
+      "descKey": "game.fishCuisine.descriptions.frugal_river_soup",
+      "iconId": "item.frugal_river_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.frugal_river:fishing-v3",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 86400
+      },
+      "selector": {
+        "actionIds": [
+          "fishing.trip"
+        ]
+      },
+      "params": {
+        "rate": 0.07
+      }
+    },
+    {
+      "id": "food_harvest_river_grill_v3",
+      "rulesetVersion": "food-fishing-v3",
+      "domain": "fishing_cast",
+      "kind": "fishing_cast.landing_bonus",
+      "nameKey": "game.fishCuisine.names.harvest_river_grill",
+      "descKey": "game.fishCuisine.descriptions.harvest_river_grill",
+      "iconId": "item.harvest_river_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 12
+      },
+      "stacking": {
+        "key": "food.harvest_river:fishing-v3",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 1200
+      },
+      "selector": {
+        "actionIds": [
+          "fishing.trip"
+        ]
+      },
+      "params": {
+        "rate": 0.06
+      }
+    },
+    {
+      "id": "food_harvest_river_soup_v3",
+      "rulesetVersion": "food-fishing-v3",
+      "domain": "fishing_cast",
+      "kind": "fishing_cast.landing_bonus",
+      "nameKey": "game.fishCuisine.names.harvest_river_soup",
+      "descKey": "game.fishCuisine.descriptions.harvest_river_soup",
+      "iconId": "item.harvest_river_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.harvest_river:fishing-v3",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 86400
+      },
+      "selector": {
+        "actionIds": [
+          "fishing.trip"
+        ]
+      },
+      "params": {
+        "rate": 0.05
+      }
+    },
+    {
+      "id": "food_reedbank_grill_v3",
+      "rulesetVersion": "food-fishing-v3",
+      "domain": "fishing_cast",
+      "kind": "fishing_cast.bite_bonus",
+      "nameKey": "game.fishCuisine.names.reedbank_grill",
+      "descKey": "game.fishCuisine.descriptions.reedbank_grill",
+      "iconId": "item.reedbank_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 12
+      },
+      "stacking": {
+        "key": "food.reedbank",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 1200
+      },
+      "selector": {
+        "actionIds": [
+          "fishing.trip"
+        ]
+      },
+      "params": {
+        "bonusRate": 0.1
+      }
+    },
+    {
+      "id": "food_mossfire_dual_fish_grill_v4",
+      "rulesetVersion": "food-alchemy-bulk-v4",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_bulk_capacity_floor_tradeoff",
+      "nameKey": "game.fishCuisine.names.mossfire_dual_fish_grill",
+      "descKey": "game.fishCuisine.descriptions.mossfire_dual_fish_grill",
+      "iconId": "item.mossfire_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.mossfire_dual_fish:bulk-v4",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 2
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 50,
+        "positiveFloorReductionRate": 0.12
+      }
+    },
+    {
+      "id": "food_mossfire_dual_fish_grill_v5",
+      "rulesetVersion": "food-capacity-breakthrough-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_bulk_capacity_floor_tradeoff",
+      "nameKey": "game.fishCuisine.names.mossfire_dual_fish_grill",
+      "descKey": "game.fishCuisine.descriptions.mossfire_dual_fish_grill",
+      "iconId": "item.mossfire_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.mossfire_dual_fish:bulk-v4",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 2
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 50,
+        "positiveFloorReductionRate": 0.12,
+        "quantityLimitBonusRate": 0.1
+      }
+    },
+    {
+      "id": "food_mossfire_dual_fish_soup_v4",
+      "rulesetVersion": "food-alchemy-bulk-v4",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_bulk_capacity_floor_tradeoff",
+      "nameKey": "game.fishCuisine.names.mossfire_dual_fish_soup",
+      "descKey": "game.fishCuisine.descriptions.mossfire_dual_fish_soup",
+      "iconId": "item.mossfire_dual_fish_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.mossfire_dual_fish:bulk-v4",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 1500
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 45,
+        "positiveFloorReductionRate": 0.1
+      }
+    },
+    {
+      "id": "food_mossfire_dual_fish_soup_v5",
+      "rulesetVersion": "food-capacity-breakthrough-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_bulk_capacity_floor_tradeoff",
+      "nameKey": "game.fishCuisine.names.mossfire_dual_fish_soup",
+      "descKey": "game.fishCuisine.descriptions.mossfire_dual_fish_soup",
+      "iconId": "item.mossfire_dual_fish_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.mossfire_dual_fish:bulk-v4",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 1500
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 45,
+        "positiveFloorReductionRate": 0.1,
+        "quantityLimitBonusRate": 0.1
+      }
+    },
+    {
+      "id": "food_frostmoon_dual_fish_grill_v1",
+      "rulesetVersion": "food-frostmoon-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_precious_capacity_bonus",
+      "nameKey": "game.fishCuisine.names.frostmoon_dual_fish_grill",
+      "descKey": "game.fishCuisine.descriptions.frostmoon_dual_fish_grill",
+      "iconId": "item.frostmoon_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.frostmoon_dual_fish",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 2
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 25
+      }
+    },
+    {
+      "id": "food_frostmoon_dual_fish_grill_v2",
+      "rulesetVersion": "food-capacity-breakthrough-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_precious_capacity_bonus",
+      "nameKey": "game.fishCuisine.names.frostmoon_dual_fish_grill",
+      "descKey": "game.fishCuisine.descriptions.frostmoon_dual_fish_grill",
+      "iconId": "item.frostmoon_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.frostmoon_dual_fish",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 2
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 25,
+        "quantityLimitBonusRate": 0.1
+      }
+    },
+    {
+      "id": "food_frostmoon_dual_fish_soup_v1",
+      "rulesetVersion": "food-frostmoon-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_precious_capacity_bonus",
+      "nameKey": "game.fishCuisine.names.frostmoon_dual_fish_soup",
+      "descKey": "game.fishCuisine.descriptions.frostmoon_dual_fish_soup",
+      "iconId": "item.frostmoon_dual_fish_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.frostmoon_dual_fish",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 1500
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 25
+      }
+    },
+    {
+      "id": "food_frostmoon_dual_fish_soup_v2",
+      "rulesetVersion": "food-capacity-breakthrough-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_precious_capacity_bonus",
+      "nameKey": "game.fishCuisine.names.frostmoon_dual_fish_soup",
+      "descKey": "game.fishCuisine.descriptions.frostmoon_dual_fish_soup",
+      "iconId": "item.frostmoon_dual_fish_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.frostmoon_dual_fish",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 1500
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 25,
+        "quantityLimitBonusRate": 0.1
+      }
+    },
+    {
+      "id": "food_mossfire_dual_fish_grill_v6",
+      "rulesetVersion": "food-capacity-risk-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_bulk_capacity_floor_tradeoff",
+      "nameKey": "game.fishCuisine.names.mossfire_dual_fish_grill",
+      "descKey": "game.fishCuisine.descriptions.mossfire_dual_fish_grill",
+      "iconId": "item.mossfire_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.mossfire_dual_fish:bulk-v4",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 2
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 50,
+        "positiveFloorReductionRate": 0.12,
+        "quantityLimitBonusRate": 0.1,
+        "successRatePenalty": 0.04
+      }
+    },
+    {
+      "id": "food_mossfire_dual_fish_soup_v6",
+      "rulesetVersion": "food-capacity-risk-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_bulk_capacity_floor_tradeoff",
+      "nameKey": "game.fishCuisine.names.mossfire_dual_fish_soup",
+      "descKey": "game.fishCuisine.descriptions.mossfire_dual_fish_soup",
+      "iconId": "item.mossfire_dual_fish_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.mossfire_dual_fish:bulk-v4",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 1500
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 45,
+        "positiveFloorReductionRate": 0.1,
+        "quantityLimitBonusRate": 0.1,
+        "successRatePenalty": 0.03
+      }
+    },
+    {
+      "id": "food_frostmoon_dual_fish_grill_v3",
+      "rulesetVersion": "food-capacity-risk-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_precious_capacity_bonus",
+      "nameKey": "game.fishCuisine.names.frostmoon_dual_fish_grill",
+      "descKey": "game.fishCuisine.descriptions.frostmoon_dual_fish_grill",
+      "iconId": "item.frostmoon_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.frostmoon_dual_fish",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 2
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 25,
+        "quantityLimitBonusRate": 0.1,
+        "successRatePenalty": 0.06
+      }
+    },
+    {
+      "id": "food_frostmoon_dual_fish_soup_v3",
+      "rulesetVersion": "food-capacity-risk-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_precious_capacity_bonus",
+      "nameKey": "game.fishCuisine.names.frostmoon_dual_fish_soup",
+      "descKey": "game.fishCuisine.descriptions.frostmoon_dual_fish_soup",
+      "iconId": "item.frostmoon_dual_fish_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.frostmoon_dual_fish",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 1500
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 25,
+        "quantityLimitBonusRate": 0.1,
+        "successRatePenalty": 0.05
+      }
+    },
+    {
+      "id": "food_mossfire_dual_fish_grill_v7",
+      "rulesetVersion": "food-capacity-tiers-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_bulk_capacity_floor_tradeoff",
+      "nameKey": "game.fishCuisine.names.mossfire_dual_fish_grill",
+      "descKey": "game.fishCuisine.descriptions.mossfire_dual_fish_grill",
+      "iconId": "item.mossfire_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.mossfire_dual_fish:bulk-v4",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 2
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 50,
+        "positiveFloorReductionRate": 0.12,
+        "quantityLimitBonusRate": 0.07,
+        "successRatePenalty": 0.04,
+        "materialTier": 1
+      }
+    },
+    {
+      "id": "food_frostmoon_dual_fish_grill_v4",
+      "rulesetVersion": "food-capacity-tiers-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_precious_capacity_bonus",
+      "nameKey": "game.fishCuisine.names.frostmoon_dual_fish_grill",
+      "descKey": "game.fishCuisine.descriptions.frostmoon_dual_fish_grill",
+      "iconId": "item.frostmoon_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.frostmoon_dual_fish",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 2
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 25,
+        "quantityLimitBonusRate": 0.07,
+        "successRatePenalty": 0.06
+      }
+    },
+    {
+      "id": "food_lotusflame_dual_fish_grill_v1",
+      "rulesetVersion": "food-capacity-tiers-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_bulk_capacity_floor_tradeoff",
+      "nameKey": "game.fishCuisine.names.lotusflame_dual_fish_grill",
+      "descKey": "game.fishCuisine.descriptions.lotusflame_dual_fish_grill",
+      "iconId": "item.lotusflame_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.lotusflame_dual_fish",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 2
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "materialTier": 2,
+        "extraMaterialQuantity": 35,
+        "positiveFloorReductionRate": 0.08,
+        "quantityLimitBonusRate": 0.07,
+        "successRatePenalty": 0.05
+      }
+    },
+    {
+      "id": "food_mossfire_dual_fish_soup_v7",
+      "rulesetVersion": "food-capacity-tiers-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_bulk_capacity_floor_tradeoff",
+      "nameKey": "game.fishCuisine.names.mossfire_dual_fish_soup",
+      "descKey": "game.fishCuisine.descriptions.mossfire_dual_fish_soup",
+      "iconId": "item.mossfire_dual_fish_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.mossfire_dual_fish:bulk-v4",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 1500
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 45,
+        "positiveFloorReductionRate": 0.1,
+        "quantityLimitBonusRate": 0.07,
+        "successRatePenalty": 0.03,
+        "materialTier": 1
+      }
+    },
+    {
+      "id": "food_frostmoon_dual_fish_soup_v4",
+      "rulesetVersion": "food-capacity-tiers-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_precious_capacity_bonus",
+      "nameKey": "game.fishCuisine.names.frostmoon_dual_fish_soup",
+      "descKey": "game.fishCuisine.descriptions.frostmoon_dual_fish_soup",
+      "iconId": "item.frostmoon_dual_fish_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.frostmoon_dual_fish",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 1500
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 25,
+        "quantityLimitBonusRate": 0.07,
+        "successRatePenalty": 0.05
+      }
+    },
+    {
+      "id": "food_lotusflame_dual_fish_soup_v1",
+      "rulesetVersion": "food-capacity-tiers-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_bulk_capacity_floor_tradeoff",
+      "nameKey": "game.fishCuisine.names.lotusflame_dual_fish_soup",
+      "descKey": "game.fishCuisine.descriptions.lotusflame_dual_fish_soup",
+      "iconId": "item.lotusflame_dual_fish_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.lotusflame_dual_fish",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 1500
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "materialTier": 2,
+        "extraMaterialQuantity": 35,
+        "positiveFloorReductionRate": 0.08,
+        "quantityLimitBonusRate": 0.07,
+        "successRatePenalty": 0.04
+      }
+    },
+    {
+      "id": "food_creamfin_dual_fish_grill_v1",
+      "rulesetVersion": "creamfin-food-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_success_bonus",
+      "nameKey": "game.fishCuisine.names.creamfin_dual_fish_grill",
+      "descKey": "game.fishCuisine.descriptions.creamfin_dual_fish_grill",
+      "iconId": "item.creamfin_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 6
+      },
+      "stacking": {
+        "key": "food.creamfin_dual_fish",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 10
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "bonusRate": 0.03
+      }
+    },
+    {
+      "id": "food_creamfin_dual_fish_soup_v1",
+      "rulesetVersion": "creamfin-food-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_success_bonus",
+      "nameKey": "game.fishCuisine.names.creamfin_dual_fish_soup",
+      "descKey": "game.fishCuisine.descriptions.creamfin_dual_fish_soup",
+      "iconId": "item.creamfin_dual_fish_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.creamfin_dual_fish",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 1500
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "bonusRate": 0.03
+      }
+    },
+    {
+      "id": "food_mossfire_dual_fish_grill_v8",
+      "rulesetVersion": "food-capacity-gentle-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_bulk_capacity_floor_tradeoff",
+      "nameKey": "game.fishCuisine.names.mossfire_dual_fish_grill",
+      "descKey": "game.fishCuisine.descriptions.mossfire_dual_fish_grill",
+      "iconId": "item.mossfire_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.mossfire_dual_fish:bulk-v4",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 100
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 50,
+        "positiveFloorReductionRate": 0.12,
+        "quantityLimitBonusRate": 0.07,
+        "successRatePenalty": 0.02,
+        "materialTier": 1
+      }
+    },
+    {
+      "id": "food_mossfire_dual_fish_soup_v8",
+      "rulesetVersion": "food-capacity-gentle-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_bulk_capacity_floor_tradeoff",
+      "nameKey": "game.fishCuisine.names.mossfire_dual_fish_soup",
+      "descKey": "game.fishCuisine.descriptions.mossfire_dual_fish_soup",
+      "iconId": "item.mossfire_dual_fish_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.mossfire_dual_fish:bulk-v4",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 86400
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 45,
+        "positiveFloorReductionRate": 0.1,
+        "quantityLimitBonusRate": 0.07,
+        "successRatePenalty": 0.015,
+        "materialTier": 1
+      }
+    },
+    {
+      "id": "food_frostmoon_dual_fish_grill_v5",
+      "rulesetVersion": "food-capacity-gentle-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_precious_capacity_bonus",
+      "nameKey": "game.fishCuisine.names.frostmoon_dual_fish_grill",
+      "descKey": "game.fishCuisine.descriptions.frostmoon_dual_fish_grill",
+      "iconId": "item.frostmoon_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.frostmoon_dual_fish",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 100
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 25,
+        "quantityLimitBonusRate": 0.07,
+        "successRatePenalty": 0.03
+      }
+    },
+    {
+      "id": "food_frostmoon_dual_fish_soup_v5",
+      "rulesetVersion": "food-capacity-gentle-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_precious_capacity_bonus",
+      "nameKey": "game.fishCuisine.names.frostmoon_dual_fish_soup",
+      "descKey": "game.fishCuisine.descriptions.frostmoon_dual_fish_soup",
+      "iconId": "item.frostmoon_dual_fish_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.frostmoon_dual_fish",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 86400
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "extraMaterialQuantity": 25,
+        "quantityLimitBonusRate": 0.07,
+        "successRatePenalty": 0.025
+      }
+    },
+    {
+      "id": "food_lotusflame_dual_fish_grill_v2",
+      "rulesetVersion": "food-capacity-gentle-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_bulk_capacity_floor_tradeoff",
+      "nameKey": "game.fishCuisine.names.lotusflame_dual_fish_grill",
+      "descKey": "game.fishCuisine.descriptions.lotusflame_dual_fish_grill",
+      "iconId": "item.lotusflame_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.lotusflame_dual_fish",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 100
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "materialTier": 2,
+        "extraMaterialQuantity": 35,
+        "positiveFloorReductionRate": 0.08,
+        "quantityLimitBonusRate": 0.07,
+        "successRatePenalty": 0.025
+      }
+    },
+    {
+      "id": "food_lotusflame_dual_fish_soup_v2",
+      "rulesetVersion": "food-capacity-gentle-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_bulk_capacity_floor_tradeoff",
+      "nameKey": "game.fishCuisine.names.lotusflame_dual_fish_soup",
+      "descKey": "game.fishCuisine.descriptions.lotusflame_dual_fish_soup",
+      "iconId": "item.lotusflame_dual_fish_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.lotusflame_dual_fish",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 86400
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "materialTier": 2,
+        "extraMaterialQuantity": 35,
+        "positiveFloorReductionRate": 0.08,
+        "quantityLimitBonusRate": 0.07,
+        "successRatePenalty": 0.02
+      }
+    },
+    {
+      "id": "food_creamfin_dual_fish_grill_v2",
+      "rulesetVersion": "creamfin-food-v2",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_success_bonus",
+      "nameKey": "game.fishCuisine.names.creamfin_dual_fish_grill",
+      "descKey": "game.fishCuisine.descriptions.creamfin_dual_fish_grill",
+      "iconId": "item.creamfin_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 6
+      },
+      "stacking": {
+        "key": "food.creamfin_dual_fish",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 600
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "bonusRate": 0.05
+      }
+    },
+    {
+      "id": "food_creamfin_dual_fish_soup_v2",
+      "rulesetVersion": "creamfin-food-v2",
+      "domain": "alchemy",
+      "kind": "alchemy.infusion_success_bonus",
+      "nameKey": "game.fishCuisine.names.creamfin_dual_fish_soup",
+      "descKey": "game.fishCuisine.descriptions.creamfin_dual_fish_soup",
+      "iconId": "item.creamfin_dual_fish_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.creamfin_dual_fish",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 86400
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.bench"
+        ]
+      },
+      "params": {
+        "bonusRate": 0.05
+      }
+    },
+    {
+      "id": "food_honeyflame_quick_grill_v1",
+      "rulesetVersion": "transmute-enchant-food-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.transmute_duration",
+      "nameKey": "game.fishCuisine.names.honeyflame_quick_grill",
+      "descKey": "game.fishCuisine.descriptions.honeyflame_quick_grill",
+      "iconId": "item.honeyflame_quick_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 20
+      },
+      "stacking": {
+        "key": "food.transmute",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 2000
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.transmute"
+        ]
+      },
+      "params": {
+        "durationSeconds": 1
+      }
+    },
+    {
+      "id": "food_sunhoney_gold_grill_v1",
+      "rulesetVersion": "transmute-enchant-food-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.transmute_gold_bonus",
+      "nameKey": "game.fishCuisine.names.sunhoney_gold_grill",
+      "descKey": "game.fishCuisine.descriptions.sunhoney_gold_grill",
+      "iconId": "item.sunhoney_gold_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 12
+      },
+      "stacking": {
+        "key": "food.transmute",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 1200
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.transmute"
+        ]
+      },
+      "params": {
+        "bonusRate": 0.04
+      }
+    },
+    {
+      "id": "food_sunhoney_gold_soup_v1",
+      "rulesetVersion": "transmute-enchant-food-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.transmute_gold_bonus",
+      "nameKey": "game.fishCuisine.names.sunhoney_gold_soup",
+      "descKey": "game.fishCuisine.descriptions.sunhoney_gold_soup",
+      "iconId": "item.sunhoney_gold_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 600
+      },
+      "stacking": {
+        "key": "food.transmute",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 86400
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.transmute"
+        ]
+      },
+      "params": {
+        "bonusRate": 0.04
+      }
+    },
+    {
+      "id": "food_moonglass_dual_fish_grill_v1",
+      "rulesetVersion": "transmute-enchant-food-v1",
+      "domain": "enchantment",
+      "kind": "enchantment.high_rarity_weight",
+      "nameKey": "game.fishCuisine.names.moonglass_dual_fish_grill",
+      "descKey": "game.fishCuisine.descriptions.moonglass_dual_fish_grill",
+      "iconId": "item.moonglass_dual_fish_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1
+      },
+      "stacking": {
+        "key": "food.enchantment",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 100
+      },
+      "selector": {
+        "actionIds": [
+          "equipment.enchant"
+        ]
+      },
+      "params": {
+        "weightBonusRate": 0.1
+      }
+    },
+    {
+      "id": "food_field_honey_grill_v1",
+      "rulesetVersion": "primary-work-food-v1",
+      "domain": "life_action",
+      "kind": "life_action.harvest_bonus",
+      "nameKey": "game.fishCuisine.names.field_honey_grill",
+      "descKey": "game.fishCuisine.descriptions.field_honey_grill",
+      "iconId": "item.field_honey_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 1800
+      },
+      "stacking": {
+        "key": "food.primary_work",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 4200
+      },
+      "selector": {
+        "mainTypes": [
+          "collecting",
+          "mining",
+          "farming_animal"
+        ]
+      },
+      "params": {
+        "chance": 0.03
+      }
+    },
+    {
+      "id": "food_field_honey_soup_v1",
+      "rulesetVersion": "primary-work-food-v1",
+      "domain": "life_action",
+      "kind": "life_action.harvest_bonus",
+      "nameKey": "game.fishCuisine.names.field_honey_soup",
+      "descKey": "game.fishCuisine.descriptions.field_honey_soup",
+      "iconId": "item.field_honey_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 14400
+      },
+      "stacking": {
+        "key": "food.primary_work",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 21600
+      },
+      "selector": {
+        "mainTypes": [
+          "collecting",
+          "mining",
+          "farming_animal"
+        ]
+      },
+      "params": {
+        "chance": 0.03
+      }
+    },
+    {
+      "id": "food_patient_dual_grill_v1",
+      "rulesetVersion": "primary-work-food-v1",
+      "domain": "life_action",
+      "kind": "life_action.patient_harvest",
+      "nameKey": "game.fishCuisine.names.patient_dual_grill",
+      "descKey": "game.fishCuisine.descriptions.patient_dual_grill",
+      "iconId": "item.patient_dual_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 3000
+      },
+      "stacking": {
+        "key": "food.primary_work",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 7200
+      },
+      "selector": {
+        "mainTypes": [
+          "collecting",
+          "mining",
+          "farming_animal"
+        ]
+      },
+      "params": {
+        "chance": 0.08,
+        "durationPenaltyRate": 0.04
+      }
+    },
+    {
+      "id": "food_patient_dual_soup_v1",
+      "rulesetVersion": "primary-work-food-v1",
+      "domain": "life_action",
+      "kind": "life_action.patient_harvest",
+      "nameKey": "game.fishCuisine.names.patient_dual_soup",
+      "descKey": "game.fishCuisine.descriptions.patient_dual_soup",
+      "iconId": "item.patient_dual_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 28800
+      },
+      "stacking": {
+        "key": "food.primary_work",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 43200
+      },
+      "selector": {
+        "mainTypes": [
+          "collecting",
+          "mining",
+          "farming_animal"
+        ]
+      },
+      "params": {
+        "chance": 0.08,
+        "durationPenaltyRate": 0.04
+      }
+    },
+    {
+      "id": "food_clear_mind_grill_v1",
+      "rulesetVersion": "primary-work-food-v1",
+      "domain": "life_action",
+      "kind": "life_action.work_experience",
+      "nameKey": "game.fishCuisine.names.clear_mind_grill",
+      "descKey": "game.fishCuisine.descriptions.clear_mind_grill",
+      "iconId": "item.clear_mind_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 900
+      },
+      "stacking": {
+        "key": "food.primary_work",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 2400
+      },
+      "selector": {
+        "mainTypes": [
+          "collecting",
+          "mining",
+          "farming_animal"
+        ]
+      },
+      "params": {
+        "experienceBonusRate": 0.08
+      }
+    },
+    {
+      "id": "food_clear_mind_soup_v1",
+      "rulesetVersion": "primary-work-food-v1",
+      "domain": "life_action",
+      "kind": "life_action.work_experience",
+      "nameKey": "game.fishCuisine.names.clear_mind_soup",
+      "descKey": "game.fishCuisine.descriptions.clear_mind_soup",
+      "iconId": "item.clear_mind_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 7200
+      },
+      "stacking": {
+        "key": "food.primary_work",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 10800
+      },
+      "selector": {
+        "mainTypes": [
+          "collecting",
+          "mining",
+          "farming_animal"
+        ]
+      },
+      "params": {
+        "experienceBonusRate": 0.08
+      }
+    },
+    {
+      "id": "food_field_honey_grill_v2",
+      "rulesetVersion": "primary-work-food-v2",
+      "domain": "life_action",
+      "kind": "life_action.harvest_bonus",
+      "nameKey": "game.fishCuisine.names.field_honey_grill",
+      "descKey": "game.fishCuisine.descriptions.field_honey_grill",
+      "iconId": "item.field_honey_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 500
+      },
+      "stacking": {
+        "key": "food.primary_work",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 1000
+      },
+      "selector": {
+        "mainTypes": [
+          "collecting",
+          "mining",
+          "farming_animal"
+        ]
+      },
+      "params": {
+        "chance": 0.01,
+        "durationReductionRate": 0.02
+      }
+    },
+    {
+      "id": "food_field_honey_soup_v2",
+      "rulesetVersion": "primary-work-food-v2",
+      "domain": "life_action",
+      "kind": "life_action.harvest_bonus",
+      "nameKey": "game.fishCuisine.names.field_honey_soup",
+      "descKey": "game.fishCuisine.descriptions.field_honey_soup",
+      "iconId": "item.field_honey_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 2000
+      },
+      "stacking": {
+        "key": "food.primary_work",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 4000
+      },
+      "selector": {
+        "mainTypes": [
+          "collecting",
+          "mining",
+          "farming_animal"
+        ]
+      },
+      "params": {
+        "chance": 0.01,
+        "durationReductionRate": 0.02
+      }
+    },
+    {
+      "id": "food_patient_dual_grill_v2",
+      "rulesetVersion": "primary-work-food-v2",
+      "domain": "life_action",
+      "kind": "life_action.focused_harvest",
+      "nameKey": "game.fishCuisine.names.patient_dual_grill",
+      "descKey": "game.fishCuisine.descriptions.patient_dual_grill",
+      "iconId": "item.patient_dual_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 500
+      },
+      "stacking": {
+        "key": "food.primary_work",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 1000
+      },
+      "selector": {
+        "mainTypes": [
+          "collecting",
+          "mining",
+          "farming_animal"
+        ]
+      },
+      "params": {
+        "chance": 0.01,
+        "durationReductionRate": 0.03
+      }
+    },
+    {
+      "id": "food_patient_dual_soup_v2",
+      "rulesetVersion": "primary-work-food-v2",
+      "domain": "life_action",
+      "kind": "life_action.focused_harvest",
+      "nameKey": "game.fishCuisine.names.patient_dual_soup",
+      "descKey": "game.fishCuisine.descriptions.patient_dual_soup",
+      "iconId": "item.patient_dual_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 2000
+      },
+      "stacking": {
+        "key": "food.primary_work",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 4000
+      },
+      "selector": {
+        "mainTypes": [
+          "collecting",
+          "mining",
+          "farming_animal"
+        ]
+      },
+      "params": {
+        "chance": 0.01,
+        "durationReductionRate": 0.03
+      }
+    },
+    {
+      "id": "food_clear_mind_grill_v2",
+      "rulesetVersion": "primary-work-food-v2",
+      "domain": "life_action",
+      "kind": "life_action.work_experience",
+      "nameKey": "game.fishCuisine.names.clear_mind_grill",
+      "descKey": "game.fishCuisine.descriptions.clear_mind_grill",
+      "iconId": "item.clear_mind_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 500
+      },
+      "stacking": {
+        "key": "food.primary_work",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 1000
+      },
+      "selector": {
+        "mainTypes": [
+          "collecting",
+          "mining",
+          "farming_animal"
+        ]
+      },
+      "params": {
+        "experienceBonusRate": 0.05
+      }
+    },
+    {
+      "id": "food_clear_mind_soup_v2",
+      "rulesetVersion": "primary-work-food-v2",
+      "domain": "life_action",
+      "kind": "life_action.work_experience",
+      "nameKey": "game.fishCuisine.names.clear_mind_soup",
+      "descKey": "game.fishCuisine.descriptions.clear_mind_soup",
+      "iconId": "item.clear_mind_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 2000
+      },
+      "stacking": {
+        "key": "food.primary_work",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 4000
+      },
+      "selector": {
+        "mainTypes": [
+          "collecting",
+          "mining",
+          "farming_animal"
+        ]
+      },
+      "params": {
+        "experienceBonusRate": 0.05
+      }
+    },
+    {
+      "id": "food_gentle_current_grill_v1",
+      "rulesetVersion": "conversion-food-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.conversion_loss_reduction",
+      "nameKey": "game.fishCuisine.names.gentle_current_grill",
+      "descKey": "game.fishCuisine.descriptions.gentle_current_grill",
+      "iconId": "item.gentle_current_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 500
+      },
+      "stacking": {
+        "key": "food.conversion",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 1000
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.convert"
+        ]
+      },
+      "params": {
+        "lossReductionRate": 0.05
+      }
+    },
+    {
+      "id": "food_gentle_current_soup_v1",
+      "rulesetVersion": "conversion-food-v1",
+      "domain": "alchemy",
+      "kind": "alchemy.conversion_loss_reduction",
+      "nameKey": "game.fishCuisine.names.gentle_current_soup",
+      "descKey": "game.fishCuisine.descriptions.gentle_current_soup",
+      "iconId": "item.gentle_current_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 2000
+      },
+      "stacking": {
+        "key": "food.conversion",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 4000
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.convert"
+        ]
+      },
+      "params": {
+        "lossReductionRate": 0.05
+      }
+    },
+    {
+      "id": "food_field_honey_grill_v3",
+      "rulesetVersion": "primary-work-food-v3",
+      "domain": "life_action",
+      "kind": "life_action.harvest_bonus",
+      "nameKey": "game.fishCuisine.names.field_honey_grill",
+      "descKey": "game.fishCuisine.descriptions.field_honey_grill",
+      "iconId": "item.field_honey_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 220
+      },
+      "stacking": {
+        "key": "food.primary_work",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 22000
+      },
+      "selector": {
+        "mainTypes": [
+          "collecting",
+          "mining",
+          "farming_animal"
+        ]
+      },
+      "params": {
+        "chance": 0.01,
+        "durationReductionRate": 0.02
+      }
+    },
+    {
+      "id": "food_field_honey_soup_v3",
+      "rulesetVersion": "primary-work-food-v3",
+      "domain": "life_action",
+      "kind": "life_action.harvest_bonus",
+      "nameKey": "game.fishCuisine.names.field_honey_soup",
+      "descKey": "game.fishCuisine.descriptions.field_honey_soup",
+      "iconId": "item.field_honey_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 900
+      },
+      "stacking": {
+        "key": "food.primary_work",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 86400
+      },
+      "selector": {
+        "mainTypes": [
+          "collecting",
+          "mining",
+          "farming_animal"
+        ]
+      },
+      "params": {
+        "chance": 0.01,
+        "durationReductionRate": 0.02
+      }
+    },
+    {
+      "id": "food_patient_dual_grill_v3",
+      "rulesetVersion": "primary-work-food-v3",
+      "domain": "life_action",
+      "kind": "life_action.focused_harvest",
+      "nameKey": "game.fishCuisine.names.patient_dual_grill",
+      "descKey": "game.fishCuisine.descriptions.patient_dual_grill",
+      "iconId": "item.patient_dual_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 220
+      },
+      "stacking": {
+        "key": "food.primary_work",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 22000
+      },
+      "selector": {
+        "mainTypes": [
+          "collecting",
+          "mining",
+          "farming_animal"
+        ]
+      },
+      "params": {
+        "chance": 0.01,
+        "durationReductionRate": 0.03
+      }
+    },
+    {
+      "id": "food_patient_dual_soup_v3",
+      "rulesetVersion": "primary-work-food-v3",
+      "domain": "life_action",
+      "kind": "life_action.focused_harvest",
+      "nameKey": "game.fishCuisine.names.patient_dual_soup",
+      "descKey": "game.fishCuisine.descriptions.patient_dual_soup",
+      "iconId": "item.patient_dual_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 900
+      },
+      "stacking": {
+        "key": "food.primary_work",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 86400
+      },
+      "selector": {
+        "mainTypes": [
+          "collecting",
+          "mining",
+          "farming_animal"
+        ]
+      },
+      "params": {
+        "chance": 0.01,
+        "durationReductionRate": 0.03
+      }
+    },
+    {
+      "id": "food_clear_mind_grill_v3",
+      "rulesetVersion": "primary-work-food-v3",
+      "domain": "life_action",
+      "kind": "life_action.work_experience",
+      "nameKey": "game.fishCuisine.names.clear_mind_grill",
+      "descKey": "game.fishCuisine.descriptions.clear_mind_grill",
+      "iconId": "item.clear_mind_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 220
+      },
+      "stacking": {
+        "key": "food.primary_work",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 22000
+      },
+      "selector": {
+        "mainTypes": [
+          "collecting",
+          "mining",
+          "farming_animal"
+        ]
+      },
+      "params": {
+        "experienceBonusRate": 0.05
+      }
+    },
+    {
+      "id": "food_clear_mind_soup_v3",
+      "rulesetVersion": "primary-work-food-v3",
+      "domain": "life_action",
+      "kind": "life_action.work_experience",
+      "nameKey": "game.fishCuisine.names.clear_mind_soup",
+      "descKey": "game.fishCuisine.descriptions.clear_mind_soup",
+      "iconId": "item.clear_mind_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 900
+      },
+      "stacking": {
+        "key": "food.primary_work",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 86400
+      },
+      "selector": {
+        "mainTypes": [
+          "collecting",
+          "mining",
+          "farming_animal"
+        ]
+      },
+      "params": {
+        "experienceBonusRate": 0.05
+      }
+    },
+    {
+      "id": "food_gentle_current_grill_v2",
+      "rulesetVersion": "conversion-food-v2",
+      "domain": "alchemy",
+      "kind": "alchemy.conversion_loss_reduction",
+      "nameKey": "game.fishCuisine.names.gentle_current_grill",
+      "descKey": "game.fishCuisine.descriptions.gentle_current_grill",
+      "iconId": "item.gentle_current_grill",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty",
+        "player_and_kitties"
+      ],
+      "lifetime": {
+        "kind": "charges",
+        "charges": 220
+      },
+      "stacking": {
+        "key": "food.conversion",
+        "exclusive": true,
+        "mode": "add_charges",
+        "maxCharges": 22000
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.convert"
+        ]
+      },
+      "params": {
+        "lossReductionRate": 0.05
+      }
+    },
+    {
+      "id": "food_gentle_current_soup_v2",
+      "rulesetVersion": "conversion-food-v2",
+      "domain": "alchemy",
+      "kind": "alchemy.conversion_loss_reduction",
+      "nameKey": "game.fishCuisine.names.gentle_current_soup",
+      "descKey": "game.fishCuisine.descriptions.gentle_current_soup",
+      "iconId": "item.gentle_current_soup",
+      "priority": 100,
+      "allowedTargets": [
+        "player",
+        "kitty"
+      ],
+      "lifetime": {
+        "kind": "duration",
+        "durationSeconds": 900
+      },
+      "stacking": {
+        "key": "food.conversion",
+        "exclusive": true,
+        "mode": "extend_duration",
+        "maxDurationSeconds": 86400
+      },
+      "selector": {
+        "actionIds": [
+          "alchemy.convert"
+        ]
+      },
+      "params": {
+        "lossReductionRate": 0.05
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "cat_village_rep_levels": [
+    {
+      "level": 1,
+      "xpRequired": 100
+    },
+    {
+      "level": 2,
+      "xpRequired": 200
+    },
+    {
+      "level": 3,
+      "xpRequired": 350
+    },
+    {
+      "level": 4,
+      "xpRequired": 550
+    },
+    {
+      "level": 5,
+      "xpRequired": 800
+    },
+    {
+      "level": 6,
+      "xpRequired": 1100
+    },
+    {
+      "level": 7,
+      "xpRequired": 1500
+    },
+    {
+      "level": 8,
+      "xpRequired": 2000
+    },
+    {
+      "level": 9,
+      "xpRequired": 2700
+    },
+    {
+      "level": 10,
+      "xpRequired": 3600
+    },
+    {
+      "level": 11,
+      "xpRequired": 4800
+    },
+    {
+      "level": 12,
+      "xpRequired": 6400
+    },
+    {
+      "level": 13,
+      "xpRequired": 8500
+    },
+    {
+      "level": 14,
+      "xpRequired": 11000
+    },
+    {
+      "level": 15,
+      "xpRequired": 15000
+    }
+  ]
+}

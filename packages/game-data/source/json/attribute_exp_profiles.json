@@ -1,0 +1,4199 @@
+{
+  "version": 1,
+  "attribute_exp_profiles": [
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 1,
+      "expRequired": 3
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 2,
+      "expRequired": 7
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 3,
+      "expRequired": 12
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 4,
+      "expRequired": 19
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 5,
+      "expRequired": 29
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 6,
+      "expRequired": 40
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 7,
+      "expRequired": 52
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 8,
+      "expRequired": 67
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 9,
+      "expRequired": 85
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 10,
+      "expRequired": 104
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 11,
+      "expRequired": 126
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 12,
+      "expRequired": 150
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 13,
+      "expRequired": 176
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 14,
+      "expRequired": 205
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 15,
+      "expRequired": 237
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 16,
+      "expRequired": 271
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 17,
+      "expRequired": 308
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 18,
+      "expRequired": 348
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 19,
+      "expRequired": 390
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 20,
+      "expRequired": 436
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 21,
+      "expRequired": 485
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 22,
+      "expRequired": 537
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 23,
+      "expRequired": 593
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 24,
+      "expRequired": 651
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 25,
+      "expRequired": 714
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 26,
+      "expRequired": 779
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 27,
+      "expRequired": 849
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 28,
+      "expRequired": 922
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 29,
+      "expRequired": 999
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 30,
+      "expRequired": 1080
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 31,
+      "expRequired": 1165
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 32,
+      "expRequired": 1254
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 33,
+      "expRequired": 1347
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 34,
+      "expRequired": 1445
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 35,
+      "expRequired": 1546
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 36,
+      "expRequired": 1653
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 37,
+      "expRequired": 1764
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 38,
+      "expRequired": 1880
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 39,
+      "expRequired": 2000
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 40,
+      "expRequired": 2125
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 41,
+      "expRequired": 2256
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 42,
+      "expRequired": 2391
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 43,
+      "expRequired": 2532
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 44,
+      "expRequired": 2678
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 45,
+      "expRequired": 2829
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 46,
+      "expRequired": 2986
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 47,
+      "expRequired": 3148
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 48,
+      "expRequired": 3316
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 49,
+      "expRequired": 3490
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 50,
+      "expRequired": 3670
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 51,
+      "expRequired": 3856
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 52,
+      "expRequired": 4048
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 53,
+      "expRequired": 4246
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 54,
+      "expRequired": 4450
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 55,
+      "expRequired": 4661
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 56,
+      "expRequired": 4879
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 57,
+      "expRequired": 5103
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 58,
+      "expRequired": 5334
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 59,
+      "expRequired": 5571
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 60,
+      "expRequired": 5816
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 61,
+      "expRequired": 6068
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 62,
+      "expRequired": 6327
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 63,
+      "expRequired": 6593
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 64,
+      "expRequired": 6867
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 65,
+      "expRequired": 7148
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 66,
+      "expRequired": 7437
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 67,
+      "expRequired": 7734
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 68,
+      "expRequired": 8038
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 69,
+      "expRequired": 8351
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 70,
+      "expRequired": 8672
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 71,
+      "expRequired": 9000
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 72,
+      "expRequired": 9337
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 73,
+      "expRequired": 9683
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 74,
+      "expRequired": 10037
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 75,
+      "expRequired": 10400
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 76,
+      "expRequired": 10772
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 77,
+      "expRequired": 11152
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 78,
+      "expRequired": 11542
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 79,
+      "expRequired": 11940
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 80,
+      "expRequired": 12348
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 81,
+      "expRequired": 12765
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 82,
+      "expRequired": 13192
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 83,
+      "expRequired": 13628
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 84,
+      "expRequired": 14074
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 85,
+      "expRequired": 14530
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 86,
+      "expRequired": 14996
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 87,
+      "expRequired": 15472
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 88,
+      "expRequired": 15958
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 89,
+      "expRequired": 16454
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 90,
+      "expRequired": 16961
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 91,
+      "expRequired": 17479
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 92,
+      "expRequired": 18007
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 93,
+      "expRequired": 18545
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 94,
+      "expRequired": 19095
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 95,
+      "expRequired": 19656
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 96,
+      "expRequired": 20228
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 97,
+      "expRequired": 20811
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 98,
+      "expRequired": 21406
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 99,
+      "expRequired": 22012
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 100,
+      "expRequired": 22630
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 101,
+      "expRequired": 23260
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 102,
+      "expRequired": 23901
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 103,
+      "expRequired": 24555
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 104,
+      "expRequired": 25220
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 105,
+      "expRequired": 25898
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 106,
+      "expRequired": 26589
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 107,
+      "expRequired": 27292
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 108,
+      "expRequired": 28007
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 109,
+      "expRequired": 28736
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 110,
+      "expRequired": 29477
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 111,
+      "expRequired": 30231
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 112,
+      "expRequired": 30999
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 113,
+      "expRequired": 31779
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 114,
+      "expRequired": 32573
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 115,
+      "expRequired": 33381
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 116,
+      "expRequired": 34202
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 117,
+      "expRequired": 35038
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 118,
+      "expRequired": 35887
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 119,
+      "expRequired": 36750
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 120,
+      "expRequired": 37627
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 121,
+      "expRequired": 38519
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 122,
+      "expRequired": 39425
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 123,
+      "expRequired": 40345
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 124,
+      "expRequired": 41281
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 125,
+      "expRequired": 42231
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 126,
+      "expRequired": 43196
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 127,
+      "expRequired": 44176
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 128,
+      "expRequired": 45171
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 129,
+      "expRequired": 46182
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 130,
+      "expRequired": 47209
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 131,
+      "expRequired": 48250
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 132,
+      "expRequired": 49308
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 133,
+      "expRequired": 50382
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 134,
+      "expRequired": 51471
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 135,
+      "expRequired": 52577
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 136,
+      "expRequired": 53699
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 137,
+      "expRequired": 54837
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 138,
+      "expRequired": 55992
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 139,
+      "expRequired": 57164
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 140,
+      "expRequired": 58352
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 141,
+      "expRequired": 59557
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 142,
+      "expRequired": 60780
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 143,
+      "expRequired": 62019
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 144,
+      "expRequired": 63276
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 145,
+      "expRequired": 64551
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 146,
+      "expRequired": 65843
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 147,
+      "expRequired": 67153
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 148,
+      "expRequired": 68481
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 149,
+      "expRequired": 69826
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 150,
+      "expRequired": 71190
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 151,
+      "expRequired": 72573
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 152,
+      "expRequired": 73973
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 153,
+      "expRequired": 75393
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 154,
+      "expRequired": 76831
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 155,
+      "expRequired": 78287
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 156,
+      "expRequired": 79763
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 157,
+      "expRequired": 81258
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 158,
+      "expRequired": 82773
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 159,
+      "expRequired": 84306
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 160,
+      "expRequired": 85859
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 161,
+      "expRequired": 87432
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 162,
+      "expRequired": 89025
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 163,
+      "expRequired": 90637
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 164,
+      "expRequired": 92270
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 165,
+      "expRequired": 93923
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 166,
+      "expRequired": 95596
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 167,
+      "expRequired": 97290
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 168,
+      "expRequired": 99005
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 169,
+      "expRequired": 100740
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 170,
+      "expRequired": 102496
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 171,
+      "expRequired": 104274
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 172,
+      "expRequired": 106072
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 173,
+      "expRequired": 107892
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 174,
+      "expRequired": 109734
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 175,
+      "expRequired": 111597
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 176,
+      "expRequired": 113481
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 177,
+      "expRequired": 115388
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 178,
+      "expRequired": 117317
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 179,
+      "expRequired": 119268
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 180,
+      "expRequired": 121241
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 181,
+      "expRequired": 123237
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 182,
+      "expRequired": 125256
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 183,
+      "expRequired": 127297
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 184,
+      "expRequired": 129361
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 185,
+      "expRequired": 131449
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 186,
+      "expRequired": 133559
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 187,
+      "expRequired": 135693
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 188,
+      "expRequired": 137850
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 189,
+      "expRequired": 140031
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 190,
+      "expRequired": 142236
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 191,
+      "expRequired": 144465
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 192,
+      "expRequired": 146718
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 193,
+      "expRequired": 148995
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 194,
+      "expRequired": 151296
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 195,
+      "expRequired": 153622
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 196,
+      "expRequired": 155972
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 197,
+      "expRequired": 158348
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 198,
+      "expRequired": 160748
+    },
+    {
+      "id": "base",
+      "attr": "*",
+      "level": 199,
+      "expRequired": 163173
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 1,
+      "expRequired": 4
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 2,
+      "expRequired": 10
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 3,
+      "expRequired": 14
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 4,
+      "expRequired": 18
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 5,
+      "expRequired": 23
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 6,
+      "expRequired": 28
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 7,
+      "expRequired": 33
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 8,
+      "expRequired": 39
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 9,
+      "expRequired": 45
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 10,
+      "expRequired": 52
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 11,
+      "expRequired": 59
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 12,
+      "expRequired": 67
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 13,
+      "expRequired": 75
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 14,
+      "expRequired": 85
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 15,
+      "expRequired": 94
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 16,
+      "expRequired": 105
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 17,
+      "expRequired": 116
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 18,
+      "expRequired": 129
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 19,
+      "expRequired": 142
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 20,
+      "expRequired": 156
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 21,
+      "expRequired": 171
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 22,
+      "expRequired": 186
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 23,
+      "expRequired": 203
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 24,
+      "expRequired": 221
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 25,
+      "expRequired": 240
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 26,
+      "expRequired": 261
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 27,
+      "expRequired": 282
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 28,
+      "expRequired": 305
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 29,
+      "expRequired": 329
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 30,
+      "expRequired": 355
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 31,
+      "expRequired": 382
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 32,
+      "expRequired": 411
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 33,
+      "expRequired": 441
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 34,
+      "expRequired": 473
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 35,
+      "expRequired": 507
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 36,
+      "expRequired": 542
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 37,
+      "expRequired": 580
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 38,
+      "expRequired": 619
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 39,
+      "expRequired": 661
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 40,
+      "expRequired": 704
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 41,
+      "expRequired": 750
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 42,
+      "expRequired": 799
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 43,
+      "expRequired": 849
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 44,
+      "expRequired": 903
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 45,
+      "expRequired": 959
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 46,
+      "expRequired": 1017
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 47,
+      "expRequired": 1079
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 48,
+      "expRequired": 1143
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 49,
+      "expRequired": 1211
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 50,
+      "expRequired": 1282
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 51,
+      "expRequired": 1356
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 52,
+      "expRequired": 1433
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 53,
+      "expRequired": 1515
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 54,
+      "expRequired": 1599
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 55,
+      "expRequired": 1688
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 56,
+      "expRequired": 1781
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 57,
+      "expRequired": 1878
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 58,
+      "expRequired": 1979
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 59,
+      "expRequired": 2085
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 60,
+      "expRequired": 2195
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 61,
+      "expRequired": 2310
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 62,
+      "expRequired": 2430
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 63,
+      "expRequired": 2555
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 64,
+      "expRequired": 2686
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 65,
+      "expRequired": 2822
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 66,
+      "expRequired": 2963
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 67,
+      "expRequired": 3111
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 68,
+      "expRequired": 3265
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 69,
+      "expRequired": 3425
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 70,
+      "expRequired": 3591
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 71,
+      "expRequired": 3764
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 72,
+      "expRequired": 3945
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 73,
+      "expRequired": 4132
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 74,
+      "expRequired": 4327
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 75,
+      "expRequired": 4530
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 76,
+      "expRequired": 4740
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 77,
+      "expRequired": 4959
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 78,
+      "expRequired": 5187
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 79,
+      "expRequired": 5423
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 80,
+      "expRequired": 5668
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 81,
+      "expRequired": 5923
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 82,
+      "expRequired": 6187
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 83,
+      "expRequired": 6461
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 84,
+      "expRequired": 6746
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 85,
+      "expRequired": 7041
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 86,
+      "expRequired": 7348
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 87,
+      "expRequired": 7665
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 88,
+      "expRequired": 7994
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 89,
+      "expRequired": 8336
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 90,
+      "expRequired": 8689
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 91,
+      "expRequired": 9056
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 92,
+      "expRequired": 9436
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 93,
+      "expRequired": 9829
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 94,
+      "expRequired": 10237
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 95,
+      "expRequired": 10659
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 96,
+      "expRequired": 11095
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 97,
+      "expRequired": 11548
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 98,
+      "expRequired": 12016
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 99,
+      "expRequired": 12500
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 100,
+      "expRequired": 13500
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 101,
+      "expRequired": 14122
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 102,
+      "expRequired": 14618
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 103,
+      "expRequired": 15084
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 104,
+      "expRequired": 15536
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 105,
+      "expRequired": 15980
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 106,
+      "expRequired": 16421
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 107,
+      "expRequired": 16860
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 108,
+      "expRequired": 17299
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 109,
+      "expRequired": 17740
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 110,
+      "expRequired": 18182
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 111,
+      "expRequired": 18628
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 112,
+      "expRequired": 19077
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 113,
+      "expRequired": 19530
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 114,
+      "expRequired": 19987
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 115,
+      "expRequired": 20448
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 116,
+      "expRequired": 20915
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 117,
+      "expRequired": 21387
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 118,
+      "expRequired": 21864
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 119,
+      "expRequired": 22348
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 120,
+      "expRequired": 22837
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 121,
+      "expRequired": 23332
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 122,
+      "expRequired": 23834
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 123,
+      "expRequired": 24342
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 124,
+      "expRequired": 24857
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 125,
+      "expRequired": 25379
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 126,
+      "expRequired": 25908
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 127,
+      "expRequired": 26444
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 128,
+      "expRequired": 26988
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 129,
+      "expRequired": 27539
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 130,
+      "expRequired": 28098
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 131,
+      "expRequired": 28665
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 132,
+      "expRequired": 29240
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 133,
+      "expRequired": 29824
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 134,
+      "expRequired": 30415
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 135,
+      "expRequired": 31015
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 136,
+      "expRequired": 31624
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 137,
+      "expRequired": 32242
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 138,
+      "expRequired": 32868
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 139,
+      "expRequired": 33504
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 140,
+      "expRequired": 34149
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 141,
+      "expRequired": 34803
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 142,
+      "expRequired": 35467
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 143,
+      "expRequired": 36141
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 144,
+      "expRequired": 36825
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 145,
+      "expRequired": 37519
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 146,
+      "expRequired": 38222
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 147,
+      "expRequired": 38937
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 148,
+      "expRequired": 39662
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 149,
+      "expRequired": 40397
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 150,
+      "expRequired": 41144
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 151,
+      "expRequired": 41901
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 152,
+      "expRequired": 42670
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 153,
+      "expRequired": 43450
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 154,
+      "expRequired": 44241
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 155,
+      "expRequired": 45045
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 156,
+      "expRequired": 45860
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 157,
+      "expRequired": 46687
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 158,
+      "expRequired": 47527
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 159,
+      "expRequired": 48379
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 160,
+      "expRequired": 49243
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 161,
+      "expRequired": 50121
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 162,
+      "expRequired": 51011
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 163,
+      "expRequired": 51914
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 164,
+      "expRequired": 52831
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 165,
+      "expRequired": 53762
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 166,
+      "expRequired": 54706
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 167,
+      "expRequired": 55664
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 168,
+      "expRequired": 56636
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 169,
+      "expRequired": 57623
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 170,
+      "expRequired": 58624
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 171,
+      "expRequired": 59639
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 172,
+      "expRequired": 60670
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 173,
+      "expRequired": 61716
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 174,
+      "expRequired": 62778
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 175,
+      "expRequired": 63855
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 176,
+      "expRequired": 64947
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 177,
+      "expRequired": 66056
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 178,
+      "expRequired": 67181
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 179,
+      "expRequired": 68323
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 180,
+      "expRequired": 69481
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 181,
+      "expRequired": 70657
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 182,
+      "expRequired": 71849
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 183,
+      "expRequired": 73059
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 184,
+      "expRequired": 74287
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 185,
+      "expRequired": 75533
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 186,
+      "expRequired": 76796
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 187,
+      "expRequired": 78079
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 188,
+      "expRequired": 79380
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 189,
+      "expRequired": 80700
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 190,
+      "expRequired": 82039
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 191,
+      "expRequired": 83397
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 192,
+      "expRequired": 84776
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 193,
+      "expRequired": 86174
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 194,
+      "expRequired": 87592
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 195,
+      "expRequired": 89032
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 196,
+      "expRequired": 90492
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 197,
+      "expRequired": 91973
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 198,
+      "expRequired": 93476
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 199,
+      "expRequired": 95000
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 200,
+      "expRequired": 97500
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 201,
+      "expRequired": 103698
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 202,
+      "expRequired": 107995
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 203,
+      "expRequired": 111865
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 204,
+      "expRequired": 115517
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 205,
+      "expRequired": 119034
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 206,
+      "expRequired": 122464
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 207,
+      "expRequired": 125835
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 208,
+      "expRequired": 129165
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 209,
+      "expRequired": 132469
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 210,
+      "expRequired": 135755
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 211,
+      "expRequired": 139031
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 212,
+      "expRequired": 142305
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 213,
+      "expRequired": 145579
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 214,
+      "expRequired": 148860
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 215,
+      "expRequired": 152150
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 216,
+      "expRequired": 155451
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 217,
+      "expRequired": 158767
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 218,
+      "expRequired": 162100
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 219,
+      "expRequired": 165452
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 220,
+      "expRequired": 168824
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 221,
+      "expRequired": 172218
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 222,
+      "expRequired": 175636
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 223,
+      "expRequired": 179079
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 224,
+      "expRequired": 182548
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 225,
+      "expRequired": 186044
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 226,
+      "expRequired": 189569
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 227,
+      "expRequired": 193122
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 228,
+      "expRequired": 196706
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 229,
+      "expRequired": 200321
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 230,
+      "expRequired": 203969
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 231,
+      "expRequired": 207649
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 232,
+      "expRequired": 211362
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 233,
+      "expRequired": 215110
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 234,
+      "expRequired": 218893
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 235,
+      "expRequired": 222712
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 236,
+      "expRequired": 226567
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 237,
+      "expRequired": 230460
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 238,
+      "expRequired": 234390
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 239,
+      "expRequired": 238359
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 240,
+      "expRequired": 242367
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 241,
+      "expRequired": 246415
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 242,
+      "expRequired": 250503
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 243,
+      "expRequired": 254632
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 244,
+      "expRequired": 258803
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 245,
+      "expRequired": 263016
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 246,
+      "expRequired": 267271
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 247,
+      "expRequired": 271570
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 248,
+      "expRequired": 275913
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 249,
+      "expRequired": 280300
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 250,
+      "expRequired": 284733
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 251,
+      "expRequired": 289211
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 252,
+      "expRequired": 293735
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 253,
+      "expRequired": 298306
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 254,
+      "expRequired": 302925
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 255,
+      "expRequired": 307591
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 256,
+      "expRequired": 312306
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 257,
+      "expRequired": 317070
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 258,
+      "expRequired": 321884
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 259,
+      "expRequired": 326747
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 260,
+      "expRequired": 331662
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 261,
+      "expRequired": 336628
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 262,
+      "expRequired": 341646
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 263,
+      "expRequired": 346716
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 264,
+      "expRequired": 351840
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 265,
+      "expRequired": 357017
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 266,
+      "expRequired": 362248
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 267,
+      "expRequired": 367534
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 268,
+      "expRequired": 372876
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 269,
+      "expRequired": 378274
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 270,
+      "expRequired": 383728
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 271,
+      "expRequired": 389239
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 272,
+      "expRequired": 394808
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 273,
+      "expRequired": 400436
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 274,
+      "expRequired": 406122
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 275,
+      "expRequired": 411869
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 276,
+      "expRequired": 417675
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 277,
+      "expRequired": 423542
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 278,
+      "expRequired": 429471
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 279,
+      "expRequired": 435462
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 280,
+      "expRequired": 441515
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 281,
+      "expRequired": 447632
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 282,
+      "expRequired": 453812
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 283,
+      "expRequired": 460058
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 284,
+      "expRequired": 466368
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 285,
+      "expRequired": 472745
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 286,
+      "expRequired": 479188
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 287,
+      "expRequired": 485698
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 288,
+      "expRequired": 492276
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 289,
+      "expRequired": 498922
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 290,
+      "expRequired": 505638
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 291,
+      "expRequired": 512424
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 292,
+      "expRequired": 519280
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 293,
+      "expRequired": 526208
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 294,
+      "expRequired": 533207
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 295,
+      "expRequired": 540279
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 296,
+      "expRequired": 547424
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 297,
+      "expRequired": 554644
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 298,
+      "expRequired": 561938
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 299,
+      "expRequired": 569307
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 300,
+      "expRequired": 576753
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 301,
+      "expRequired": 584276
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 302,
+      "expRequired": 591876
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 303,
+      "expRequired": 599554
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 304,
+      "expRequired": 607312
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 305,
+      "expRequired": 615150
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 306,
+      "expRequired": 623068
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 307,
+      "expRequired": 631068
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 308,
+      "expRequired": 639150
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 309,
+      "expRequired": 647315
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 310,
+      "expRequired": 655563
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 311,
+      "expRequired": 663896
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 312,
+      "expRequired": 672314
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 313,
+      "expRequired": 680819
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 314,
+      "expRequired": 689410
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 315,
+      "expRequired": 698089
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 316,
+      "expRequired": 706856
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 317,
+      "expRequired": 715713
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 318,
+      "expRequired": 724660
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 319,
+      "expRequired": 733698
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 320,
+      "expRequired": 742828
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 321,
+      "expRequired": 752051
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 322,
+      "expRequired": 761367
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 323,
+      "expRequired": 770777
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 324,
+      "expRequired": 780283
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 325,
+      "expRequired": 789885
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 326,
+      "expRequired": 799584
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 327,
+      "expRequired": 809381
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 328,
+      "expRequired": 819277
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 329,
+      "expRequired": 829273
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 330,
+      "expRequired": 839369
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 331,
+      "expRequired": 849567
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 332,
+      "expRequired": 859867
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 333,
+      "expRequired": 870271
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 334,
+      "expRequired": 880780
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 335,
+      "expRequired": 891393
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 336,
+      "expRequired": 902113
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 337,
+      "expRequired": 912940
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 338,
+      "expRequired": 923876
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 339,
+      "expRequired": 934920
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 340,
+      "expRequired": 946075
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 341,
+      "expRequired": 957341
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 342,
+      "expRequired": 968720
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 343,
+      "expRequired": 980211
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 344,
+      "expRequired": 991817
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 345,
+      "expRequired": 1003538
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 346,
+      "expRequired": 1015376
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 347,
+      "expRequired": 1027331
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 348,
+      "expRequired": 1039404
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 349,
+      "expRequired": 1051596
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 350,
+      "expRequired": 1063910
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 351,
+      "expRequired": 1076345
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 352,
+      "expRequired": 1088902
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 353,
+      "expRequired": 1101584
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 354,
+      "expRequired": 1114390
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 355,
+      "expRequired": 1127323
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 356,
+      "expRequired": 1140382
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 357,
+      "expRequired": 1153570
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 358,
+      "expRequired": 1166888
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 359,
+      "expRequired": 1180336
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 360,
+      "expRequired": 1193916
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 361,
+      "expRequired": 1207629
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 362,
+      "expRequired": 1221475
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 363,
+      "expRequired": 1235458
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 364,
+      "expRequired": 1249576
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 365,
+      "expRequired": 1263833
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 366,
+      "expRequired": 1278228
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 367,
+      "expRequired": 1292764
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 368,
+      "expRequired": 1307441
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 369,
+      "expRequired": 1322260
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 370,
+      "expRequired": 1337224
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 371,
+      "expRequired": 1352333
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 372,
+      "expRequired": 1367588
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 373,
+      "expRequired": 1382991
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 374,
+      "expRequired": 1398543
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 375,
+      "expRequired": 1414245
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 376,
+      "expRequired": 1430099
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 377,
+      "expRequired": 1446106
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 378,
+      "expRequired": 1462268
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 379,
+      "expRequired": 1478585
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 380,
+      "expRequired": 1495059
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 381,
+      "expRequired": 1511692
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 382,
+      "expRequired": 1528484
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 383,
+      "expRequired": 1545438
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 384,
+      "expRequired": 1562555
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 385,
+      "expRequired": 1579835
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 386,
+      "expRequired": 1597281
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 387,
+      "expRequired": 1614894
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 388,
+      "expRequired": 1632675
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 389,
+      "expRequired": 1650626
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 390,
+      "expRequired": 1668748
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 391,
+      "expRequired": 1687044
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 392,
+      "expRequired": 1705513
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 393,
+      "expRequired": 1724158
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 394,
+      "expRequired": 1742981
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 395,
+      "expRequired": 1761983
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 396,
+      "expRequired": 1781164
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 397,
+      "expRequired": 1800528
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 398,
+      "expRequired": 1820076
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 399,
+      "expRequired": 1839809
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 400,
+      "expRequired": 1859728
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 401,
+      "expRequired": 1879836
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 402,
+      "expRequired": 1900133
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 403,
+      "expRequired": 1920623
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 404,
+      "expRequired": 1941305
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 405,
+      "expRequired": 1962183
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 406,
+      "expRequired": 1983257
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 407,
+      "expRequired": 2004530
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 408,
+      "expRequired": 2026002
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 409,
+      "expRequired": 2047676
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 410,
+      "expRequired": 2069554
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 411,
+      "expRequired": 2091636
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 412,
+      "expRequired": 2113926
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 413,
+      "expRequired": 2136424
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 414,
+      "expRequired": 2159133
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 415,
+      "expRequired": 2182055
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 416,
+      "expRequired": 2205190
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 417,
+      "expRequired": 2228541
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 418,
+      "expRequired": 2252110
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 419,
+      "expRequired": 2275899
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 420,
+      "expRequired": 2299909
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 421,
+      "expRequired": 2324142
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 422,
+      "expRequired": 2348601
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 423,
+      "expRequired": 2373287
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 424,
+      "expRequired": 2398202
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 425,
+      "expRequired": 2423348
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 426,
+      "expRequired": 2448727
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 427,
+      "expRequired": 2474342
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 428,
+      "expRequired": 2500193
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 429,
+      "expRequired": 2526283
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 430,
+      "expRequired": 2552614
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 431,
+      "expRequired": 2579189
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 432,
+      "expRequired": 2606008
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 433,
+      "expRequired": 2633075
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 434,
+      "expRequired": 2660391
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 435,
+      "expRequired": 2687958
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 436,
+      "expRequired": 2715779
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 437,
+      "expRequired": 2743856
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 438,
+      "expRequired": 2772190
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 439,
+      "expRequired": 2800784
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 440,
+      "expRequired": 2829641
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 441,
+      "expRequired": 2858761
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 442,
+      "expRequired": 2888149
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 443,
+      "expRequired": 2917805
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 444,
+      "expRequired": 2947732
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 445,
+      "expRequired": 2977933
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 446,
+      "expRequired": 3008409
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 447,
+      "expRequired": 3039163
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 448,
+      "expRequired": 3070198
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 449,
+      "expRequired": 3101515
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 450,
+      "expRequired": 3133117
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 451,
+      "expRequired": 3165006
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 452,
+      "expRequired": 3197185
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 453,
+      "expRequired": 3229657
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 454,
+      "expRequired": 3262423
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 455,
+      "expRequired": 3295486
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 456,
+      "expRequired": 3328849
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 457,
+      "expRequired": 3362513
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 458,
+      "expRequired": 3396483
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 459,
+      "expRequired": 3430759
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 460,
+      "expRequired": 3465345
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 461,
+      "expRequired": 3500243
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 462,
+      "expRequired": 3535456
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 463,
+      "expRequired": 3570987
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 464,
+      "expRequired": 3606837
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 465,
+      "expRequired": 3643011
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 466,
+      "expRequired": 3679509
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 467,
+      "expRequired": 3716336
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 468,
+      "expRequired": 3753494
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 469,
+      "expRequired": 3790985
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 470,
+      "expRequired": 3828812
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 471,
+      "expRequired": 3866979
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 472,
+      "expRequired": 3905487
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 473,
+      "expRequired": 3944340
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 474,
+      "expRequired": 3983541
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 475,
+      "expRequired": 4023092
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 476,
+      "expRequired": 4062996
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 477,
+      "expRequired": 4103257
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 478,
+      "expRequired": 4143876
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 479,
+      "expRequired": 4184858
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 480,
+      "expRequired": 4226205
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 481,
+      "expRequired": 4267920
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 482,
+      "expRequired": 4310006
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 483,
+      "expRequired": 4352466
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 484,
+      "expRequired": 4395303
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 485,
+      "expRequired": 4438521
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 486,
+      "expRequired": 4482122
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 487,
+      "expRequired": 4526109
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 488,
+      "expRequired": 4570486
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 489,
+      "expRequired": 4615257
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 490,
+      "expRequired": 4660423
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 491,
+      "expRequired": 4705989
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 492,
+      "expRequired": 4751957
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 493,
+      "expRequired": 4798331
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 494,
+      "expRequired": 4845115
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 495,
+      "expRequired": 4892311
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 496,
+      "expRequired": 4939923
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 497,
+      "expRequired": 4987954
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 498,
+      "expRequired": 5036408
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 499,
+      "expRequired": 5085288
+    },
+    {
+      "id": "battle",
+      "attr": "battle",
+      "level": 500,
+      "expRequired": 0
+    }
+  ]
+}

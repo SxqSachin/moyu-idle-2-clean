@@ -1,0 +1,137 @@
+[
+  {
+    "id": "work_gathering_set",
+    "module": "work",
+    "order": 10,
+    "nameKey": "equipment_secondary_class.work_gathering_set.name",
+    "descKey": "equipment_secondary_class.work_gathering_set.desc",
+    "zhCN": { "name": "采集套装", "desc": "偏向采集效率的工作装备组合。" },
+    "enUS": { "name": "Gathering Set", "desc": "Work gear focused on gathering efficiency." }
+  },
+  {
+    "id": "work_mining_set",
+    "module": "work",
+    "order": 20,
+    "nameKey": "equipment_secondary_class.work_mining_set.name",
+    "descKey": "equipment_secondary_class.work_mining_set.desc",
+    "zhCN": { "name": "采矿套装", "desc": "偏向采矿效率的工作装备组合。" },
+    "enUS": { "name": "Mining Set", "desc": "Work gear focused on mining efficiency." }
+  },
+  {
+    "id": "work_ranching_set",
+    "module": "work",
+    "order": 30,
+    "nameKey": "equipment_secondary_class.work_ranching_set.name",
+    "descKey": "equipment_secondary_class.work_ranching_set.desc",
+    "zhCN": { "name": "牧场套装", "desc": "偏向畜牧与养成流程的工作装备组合。" },
+    "enUS": { "name": "Ranching Set", "desc": "Work gear for ranching and husbandry workflows." }
+  },
+  {
+    "id": "work_crafting_set",
+    "module": "work",
+    "order": 40,
+    "nameKey": "equipment_secondary_class.work_crafting_set.name",
+    "descKey": "equipment_secondary_class.work_crafting_set.desc",
+    "zhCN": { "name": "制作套装", "desc": "偏向通用制作效率的工作装备组合。" },
+    "enUS": { "name": "Crafting Set", "desc": "Work gear focused on generic crafting throughput." }
+  },
+  {
+    "id": "work_cooking_set",
+    "module": "work",
+    "order": 45,
+    "nameKey": "equipment_secondary_class.work_cooking_set.name",
+    "descKey": "equipment_secondary_class.work_cooking_set.desc",
+    "zhCN": { "name": "烹饪套装", "desc": "偏向烹饪效率的工作装备组合。" },
+    "enUS": { "name": "Cooking Set", "desc": "Work gear focused on cooking efficiency." }
+  },
+  {
+    "id": "work_sewing_set",
+    "module": "work",
+    "order": 50,
+    "nameKey": "equipment_secondary_class.work_sewing_set.name",
+    "descKey": "equipment_secondary_class.work_sewing_set.desc",
+    "zhCN": { "name": "缝纫套装", "desc": "偏向缝纫与纺织流程的工作装备组合。" },
+    "enUS": { "name": "Sewing Set", "desc": "Work gear for sewing and textile workflows." }
+  },
+  {
+    "id": "work_forging_set",
+    "module": "work",
+    "order": 60,
+    "nameKey": "equipment_secondary_class.work_forging_set.name",
+    "descKey": "equipment_secondary_class.work_forging_set.desc",
+    "zhCN": { "name": "锻造套装", "desc": "偏向锻造流程的工作装备组合。" },
+    "enUS": { "name": "Forging Set", "desc": "Work gear for forging workflows." }
+  },
+  {
+    "id": "work_enhancing_set",
+    "module": "work",
+    "order": 70,
+    "nameKey": "equipment_secondary_class.work_enhancing_set.name",
+    "descKey": "equipment_secondary_class.work_enhancing_set.desc",
+    "zhCN": { "name": "强化套装", "desc": "偏向强化流程的工作装备组合。" },
+    "enUS": { "name": "Enhancing Set", "desc": "Work gear focused on enhancement workflows." }
+  },
+  {
+    "id": "work_alchemy_set",
+    "module": "work",
+    "order": 75,
+    "nameKey": "equipment_secondary_class.work_alchemy_set.name",
+    "descKey": "equipment_secondary_class.work_alchemy_set.desc",
+    "zhCN": { "name": "炼金套装", "desc": "偏向炼金精度与炼金稳定的工作装备组合。" },
+    "enUS": { "name": "Alchemy Set", "desc": "Work gear focused on alchemy precision and alchemy stability." }
+  },
+  {
+    "id": "cute_lucky_set",
+    "module": "work",
+    "order": 80,
+    "nameKey": "equipment_secondary_class.cute_lucky_set.name",
+    "descKey": "equipment_secondary_class.cute_lucky_set.desc",
+    "zhCN": { "name": "可爱幸运套装", "desc": "偏向幸运，并兼顾生活效率、炼金效率、炼金精度与炼金稳定的生活装备组合。" },
+    "enUS": { "name": "Cute Lucky Set", "desc": "Life gear focused on luck while also supporting work efficiency, alchemy efficiency, precision, and stability." }
+  },
+  {
+    "id": "battle_heavy_armor_set",
+    "module": "battle",
+    "order": 110,
+    "nameKey": "equipment_secondary_class.battle_heavy_armor_set.name",
+    "descKey": "equipment_secondary_class.battle_heavy_armor_set.desc",
+    "zhCN": { "name": "重甲套装", "desc": "偏向护甲与抗打击能力的战斗装备组合。" },
+    "enUS": { "name": "Heavy Armor Set", "desc": "Battle gear focused on armor and toughness." }
+  },
+  {
+    "id": "battle_light_armor_set",
+    "module": "battle",
+    "order": 120,
+    "nameKey": "equipment_secondary_class.battle_light_armor_set.name",
+    "descKey": "equipment_secondary_class.battle_light_armor_set.desc",
+    "zhCN": { "name": "轻甲套装", "desc": "偏向机动与平衡防护的战斗装备组合。" },
+    "enUS": { "name": "Light Armor Set", "desc": "Battle gear focused on mobility and balanced defense." }
+  },
+  {
+    "id": "battle_caster_set",
+    "module": "battle",
+    "order": 130,
+    "nameKey": "equipment_secondary_class.battle_caster_set.name",
+    "descKey": "equipment_secondary_class.battle_caster_set.desc",
+    "zhCN": { "name": "施法套装", "desc": "偏向法术输出与资源循环的战斗装备组合。" },
+    "enUS": { "name": "Caster Set", "desc": "Battle gear focused on spellcasting and resource flow." }
+  },
+  {
+    "id": "battle_accessory_set",
+    "module": "battle",
+    "order": 140,
+    "nameKey": "equipment_secondary_class.battle_accessory_set.name",
+    "descKey": "equipment_secondary_class.battle_accessory_set.desc",
+    "zhCN": { "name": "饰品套装", "desc": "偏向饰品位收益的战斗装备组合。" },
+    "enUS": { "name": "Accessory Set", "desc": "Battle setup oriented around accessory-slot value." }
+  },
+  {
+    "id": "battle_focus_set",
+    "module": "battle",
+    "order": 150,
+    "nameKey": "equipment_secondary_class.battle_focus_set.name",
+    "descKey": "equipment_secondary_class.battle_focus_set.desc",
+    "zhCN": { "name": "战术器具", "desc": "偏向功能器具与特殊右手装备的战斗组合。" },
+    "enUS": { "name": "Tactical Focus Set", "desc": "Battle setup centered on utility tools and special off-weapon right-hand gear." }
+  }
+]

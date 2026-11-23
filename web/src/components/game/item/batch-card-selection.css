@@ -1,0 +1,48 @@
+.batch-card-wrapper {
+  position: relative;
+  display: grid;
+  width: fit-content;
+  margin-inline: auto;
+  padding: 3px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.batch-card-wrapper--selected {
+  box-shadow: 0 0 0 2px var(--el-color-warning), 0 0 8px 0 color-mix(in srgb, var(--el-color-warning) 35%, transparent);
+}
+
+.batch-card-wrapper--selected::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--el-color-warning) 12%, transparent);
+  pointer-events: none;
+}
+
+.batch-card-wrapper--unselectable {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.batch-card-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  z-index: 10;
+  background: var(--el-color-warning);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--el-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}

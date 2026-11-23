@@ -1,0 +1,3 @@
+# Confirmed disposable email providers, one domain per line.
+# Each rule also blocks its subdomains. Keep this list conservative to avoid false positives.
+pugb.vip

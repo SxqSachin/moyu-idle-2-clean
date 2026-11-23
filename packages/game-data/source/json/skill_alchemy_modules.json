@@ -1,0 +1,5556 @@
+{
+  "version": 9,
+  "skill_alchemy_modules": [
+    {
+      "id": "skill_forge.wood_blank_all_enemies",
+      "itemId": "wood_blank",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_group",
+        "scope": "enemy",
+        "excludeSelf": false
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 6,
+      "minAlchemyLevel": 5,
+      "failBaseChance": 0.1,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.006,
+      "nameParts": {
+        "coreKey": "item.wood_blank.name",
+        "suffixKey": "skillForge.name.reach"
+      },
+      "icon": "item.wood_blank",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.035
+    },
+    {
+      "id": "skill_forge.sturdy_wood_blank_all_allies",
+      "itemId": "sturdy_wood_blank",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_group",
+        "scope": "ally",
+        "excludeSelf": false
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 6,
+      "minAlchemyLevel": 10,
+      "failBaseChance": 0.12,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.006,
+      "nameParts": {
+        "coreKey": "item.sturdy_wood_blank.name",
+        "suffixKey": "skillForge.name.guard"
+      },
+      "icon": "item.sturdy_wood_blank",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.035
+    },
+    {
+      "id": "skill_forge.silverleaf_wood_blank_other_allies",
+      "itemId": "silverleaf_wood_blank",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_group",
+        "scope": "ally",
+        "excludeSelf": true
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 6,
+      "minAlchemyLevel": 12,
+      "failBaseChance": 0.14,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.006,
+      "nameParts": {
+        "coreKey": "item.silverleaf_wood_blank.name",
+        "suffixKey": "skillForge.name.guard"
+      },
+      "icon": "item.silverleaf_wood_blank",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.035
+    },
+    {
+      "id": "skill_forge.flax_fiber_all_units",
+      "itemId": "flax_fiber",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_group",
+        "scope": "all",
+        "excludeSelf": false
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 6,
+      "minAlchemyLevel": 8,
+      "failBaseChance": 0.13,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.006,
+      "nameParts": {
+        "coreKey": "item.flax_fiber.name",
+        "suffixKey": "skillForge.name.multicast"
+      },
+      "icon": "item.flax_fiber",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.035
+    },
+    {
+      "id": "skill_forge.cotton_fiber_self",
+      "itemId": "cotton_fiber",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_group",
+        "scope": "self",
+        "excludeSelf": false
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 6,
+      "minAlchemyLevel": 10,
+      "failBaseChance": 0.12,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.006,
+      "nameParts": {
+        "coreKey": "item.cotton_fiber.name",
+        "suffixKey": "skillForge.name.guard"
+      },
+      "icon": "item.cotton_fiber",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.035
+    },
+    {
+      "id": "skill_forge.silkwood",
+      "itemId": "silkwood",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "damage",
+        "attrKey": "dexterity"
+      },
+      "valuePerUnit": {
+        "min": 0.0004,
+        "max": 0.00088
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 20,
+      "minAlchemyLevel": 15,
+      "failBaseChance": 0.16,
+      "failChancePerLevelAbove": 0.006,
+      "budgetCreditPerUnit": 0.0056,
+      "nameParts": {
+        "coreKey": "item.silkwood.name",
+        "suffixKey": "skillForge.name.damage"
+      },
+      "icon": "item.silkwood",
+      "disabled": true,
+      "successChanceModifier": -0.035
+    },
+    {
+      "id": "skill_forge.goldvine_wood",
+      "itemId": "goldvine_wood",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "damage",
+        "attrKey": "strength"
+      },
+      "valuePerUnit": {
+        "min": 0.00056,
+        "max": 0.0012
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 20,
+      "minAlchemyLevel": 25,
+      "failBaseChance": 0.22,
+      "failChancePerLevelAbove": 0.007,
+      "budgetCreditPerUnit": 0.0072,
+      "nameParts": {
+        "coreKey": "item.goldvine_wood.name",
+        "suffixKey": "skillForge.name.damage"
+      },
+      "icon": "item.goldvine_wood",
+      "disabled": true,
+      "successChanceModifier": -0.03
+    },
+    {
+      "id": "skill_forge.moonwood",
+      "itemId": "moonwood",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "damage",
+        "attrKey": "intelligence"
+      },
+      "valuePerUnit": {
+        "min": 0.00072,
+        "max": 0.00152
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 20,
+      "minAlchemyLevel": 35,
+      "failBaseChance": 0.28,
+      "failChancePerLevelAbove": 0.008,
+      "budgetCreditPerUnit": 0.0088,
+      "nameParts": {
+        "coreKey": "item.moonwood.name",
+        "suffixKey": "skillForge.name.arcane"
+      },
+      "icon": "item.moonwood",
+      "disabled": true,
+      "successChanceModifier": -0.025
+    },
+    {
+      "id": "skill_forge.silkweed_fiber",
+      "itemId": "silkweed_fiber",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_count"
+      },
+      "valuePerUnit": {
+        "min": 0.0032,
+        "max": 0.0056
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 12,
+      "minAlchemyLevel": 15,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0.005,
+      "budgetCreditPerUnit": 0.008,
+      "nameParts": {
+        "coreKey": "item.silkweed_fiber.name",
+        "suffixKey": "skillForge.name.multicast"
+      },
+      "icon": "item.silkweed_fiber",
+      "disabled": true,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.goldvine_fiber",
+      "itemId": "goldvine_fiber",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_position",
+        "positions": [
+          "vanguard",
+          "midguard"
+        ]
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 8,
+      "minAlchemyLevel": 25,
+      "failBaseChance": 0.2,
+      "failChancePerLevelAbove": 0.006,
+      "budgetCreditPerUnit": 0.0032,
+      "nameParts": {
+        "coreKey": "item.goldvine_fiber.name",
+        "suffixKey": "skillForge.name.reach"
+      },
+      "icon": "item.goldvine_fiber",
+      "disabled": true,
+      "successChanceModifier": -0.045
+    },
+    {
+      "id": "skill_forge.moonvine_fiber",
+      "itemId": "moonvine_fiber",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_position",
+        "positions": [
+          "vanguard",
+          "midguard",
+          "rearguard"
+        ]
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 8,
+      "minAlchemyLevel": 35,
+      "failBaseChance": 0.26,
+      "failChancePerLevelAbove": 0.007,
+      "budgetCreditPerUnit": 0.0048,
+      "nameParts": {
+        "coreKey": "item.moonvine_fiber.name",
+        "suffixKey": "skillForge.name.reach"
+      },
+      "icon": "item.moonvine_fiber",
+      "disabled": true,
+      "successChanceModifier": -0.04
+    },
+    {
+      "id": "skill_forge.clear_resin",
+      "itemId": "clear_resin",
+      "nodeKind": "flow",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "hit_count"
+      },
+      "valuePerUnit": {
+        "min": 0.0028,
+        "max": 0.0048
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 12,
+      "minAlchemyLevel": 15,
+      "failBaseChance": 0.17,
+      "failChancePerLevelAbove": 0.006,
+      "budgetCreditPerUnit": 0.008,
+      "nameParts": {
+        "coreKey": "item.clear_resin.name",
+        "suffixKey": "skillForge.name.echo"
+      },
+      "icon": "item.clear_resin",
+      "disabled": true,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.sun_resin",
+      "itemId": "sun_resin",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_duration"
+      },
+      "valuePerUnit": {
+        "min": 0.0032,
+        "max": 0.0064
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 12,
+      "minAlchemyLevel": 25,
+      "failBaseChance": 0.23,
+      "failChancePerLevelAbove": 0.007,
+      "budgetCreditPerUnit": 0.0064,
+      "nameParts": {
+        "coreKey": "item.sun_resin.name",
+        "suffixKey": "skillForge.name.lingering"
+      },
+      "icon": "item.sun_resin",
+      "disabled": true,
+      "successChanceModifier": -0.03
+    },
+    {
+      "id": "skill_forge.moon_resin",
+      "itemId": "moon_resin",
+      "nodeKind": "flow",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "effect_chain"
+      },
+      "valuePerUnit": {
+        "min": 0.0008,
+        "max": 0.002
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 10,
+      "minAlchemyLevel": 35,
+      "failBaseChance": 0.3,
+      "failChancePerLevelAbove": 0.008,
+      "budgetCreditPerUnit": 0.0096,
+      "nameParts": {
+        "coreKey": "item.moon_resin.name",
+        "suffixKey": "skillForge.name.chain"
+      },
+      "icon": "item.moon_resin",
+      "disabled": true,
+      "successChanceModifier": -0.04
+    },
+    {
+      "id": "skill_forge.silkweed_nectar",
+      "itemId": "silkweed_nectar",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "heal",
+        "attrKey": "intelligence"
+      },
+      "valuePerUnit": {
+        "min": 0.00005,
+        "max": 0.00005
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 20,
+      "minAlchemyLevel": 15,
+      "failBaseChance": 0.14,
+      "failChancePerLevelAbove": 0.005,
+      "budgetCreditPerUnit": 0.0052,
+      "nameParts": {
+        "coreKey": "item.silkweed_nectar.name",
+        "suffixKey": "skillForge.name.heal"
+      },
+      "icon": "item.silkweed_nectar",
+      "disabled": true,
+      "successChanceModifier": -0.035
+    },
+    {
+      "id": "skill_forge.sunlit_nectar",
+      "itemId": "sunlit_nectar",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "heal",
+        "attrKey": "perception"
+      },
+      "valuePerUnit": {
+        "min": 0.00064,
+        "max": 0.00136
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 20,
+      "minAlchemyLevel": 25,
+      "failBaseChance": 0.2,
+      "failChancePerLevelAbove": 0.006,
+      "budgetCreditPerUnit": 0.0068,
+      "nameParts": {
+        "coreKey": "item.sunlit_nectar.name",
+        "suffixKey": "skillForge.name.heal"
+      },
+      "icon": "item.sunlit_nectar",
+      "disabled": true,
+      "successChanceModifier": -0.03
+    },
+    {
+      "id": "skill_forge.moon_dew",
+      "itemId": "moon_dew",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "cooldown",
+        "direction": "reduce"
+      },
+      "valuePerUnit": {
+        "min": 0.0006,
+        "max": 0.0012
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 16,
+      "minAlchemyLevel": 35,
+      "failBaseChance": 0.27,
+      "failChancePerLevelAbove": 0.008,
+      "budgetCreditPerUnit": 0.01,
+      "nameParts": {
+        "coreKey": "item.moon_dew.name",
+        "suffixKey": "skillForge.name.swift"
+      },
+      "icon": "item.moon_dew",
+      "disabled": true,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.silver_ore",
+      "itemId": "silver_ore",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "flat_amount",
+        "effectKind": "damage",
+        "damageType": "physical"
+      },
+      "valuePerUnit": {
+        "min": 0.024,
+        "max": 0.044
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 20,
+      "minAlchemyLevel": 15,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0.006,
+      "budgetCreditPerUnit": 0.004,
+      "nameParts": {
+        "coreKey": "item.silver_ore.name",
+        "suffixKey": "skillForge.name.damage"
+      },
+      "icon": "item.silver_ore",
+      "disabled": true,
+      "successChanceModifier": -0.035
+    },
+    {
+      "id": "skill_forge.gold_ore",
+      "itemId": "gold_ore",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "damage",
+        "attrKey": "physics_damage"
+      },
+      "valuePerUnit": {
+        "min": 0.00072,
+        "max": 0.0016
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 20,
+      "minAlchemyLevel": 25,
+      "failBaseChance": 0.24,
+      "failChancePerLevelAbove": 0.007,
+      "budgetCreditPerUnit": 0.008,
+      "nameParts": {
+        "coreKey": "item.gold_ore.name",
+        "suffixKey": "skillForge.name.damage"
+      },
+      "icon": "item.gold_ore",
+      "disabled": true,
+      "successChanceModifier": -0.03
+    },
+    {
+      "id": "skill_forge.crystal_chunk",
+      "itemId": "crystal_chunk",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_apply",
+        "buffId": "frozen_action_suppressed",
+        "targetScope": "enemy",
+        "durationBaseTurns": 1
+      },
+      "valuePerUnit": {
+        "min": 0.0016,
+        "max": 0.004
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 12,
+      "minAlchemyLevel": 35,
+      "failBaseChance": 0.3,
+      "failChancePerLevelAbove": 0.008,
+      "budgetCreditPerUnit": 0.01,
+      "nameParts": {
+        "coreKey": "item.crystal_chunk.name",
+        "suffixKey": "skillForge.name.arcane"
+      },
+      "icon": "item.crystal_chunk",
+      "disabled": true,
+      "successChanceModifier": -0.04
+    },
+    {
+      "id": "skill_forge.silkwood_blank",
+      "itemId": "silkwood_blank",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "select_rule",
+        "rule": "hp_min"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 6,
+      "minAlchemyLevel": 15,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0.005,
+      "budgetCreditPerUnit": 0.003,
+      "nameParts": {
+        "coreKey": "item.silkwood_blank.name",
+        "suffixKey": "skillForge.name.hunt"
+      },
+      "icon": "item.silkwood_blank",
+      "disabled": true,
+      "successChanceModifier": -0.05
+    },
+    {
+      "id": "skill_forge.goldvine_wood_blank",
+      "itemId": "goldvine_wood_blank",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "select_rule",
+        "rule": "hp_max"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 6,
+      "minAlchemyLevel": 25,
+      "failBaseChance": 0.21,
+      "failChancePerLevelAbove": 0.006,
+      "budgetCreditPerUnit": 0.0036,
+      "nameParts": {
+        "coreKey": "item.goldvine_wood_blank.name",
+        "suffixKey": "skillForge.name.hunt"
+      },
+      "icon": "item.goldvine_wood_blank",
+      "disabled": true,
+      "successChanceModifier": -0.045
+    },
+    {
+      "id": "skill_forge.moonwood_blank",
+      "itemId": "moonwood_blank",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_scope",
+        "scope": "ally"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 6,
+      "minAlchemyLevel": 35,
+      "failBaseChance": 0.27,
+      "failChancePerLevelAbove": 0.007,
+      "budgetCreditPerUnit": 0.0044,
+      "nameParts": {
+        "coreKey": "item.moonwood_blank.name",
+        "suffixKey": "skillForge.name.guard"
+      },
+      "icon": "item.moonwood_blank",
+      "disabled": true,
+      "successChanceModifier": -0.04
+    },
+    {
+      "id": "skill_forge.silver",
+      "itemId": "silver",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "skill_level_term",
+        "effectKind": "heal"
+      },
+      "valuePerUnit": {
+        "min": 0.0005,
+        "max": 0.0005
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 20,
+      "minAlchemyLevel": 15,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0.006,
+      "budgetCreditPerUnit": 0.004,
+      "nameParts": {
+        "coreKey": "item.silver.name",
+        "suffixKey": "skillForge.name.precise"
+      },
+      "icon": "item.silver",
+      "disabled": true,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.gold",
+      "itemId": "gold",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "mp_cost",
+        "direction": "increase"
+      },
+      "valuePerUnit": {
+        "min": 0.008,
+        "max": 0.018
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 16,
+      "minAlchemyLevel": 25,
+      "failBaseChance": 0.22,
+      "failChancePerLevelAbove": 0.006,
+      "budgetCreditPerUnit": 0.0096,
+      "nameParts": {
+        "coreKey": "item.gold.name",
+        "suffixKey": "skillForge.name.costly"
+      },
+      "icon": "item.gold",
+      "disabled": true,
+      "successChanceModifier": 0.035
+    },
+    {
+      "id": "skill_forge.crystal",
+      "itemId": "crystal",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "mp_cost",
+        "direction": "reduce"
+      },
+      "valuePerUnit": {
+        "min": 0.0048,
+        "max": 0.01
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 16,
+      "minAlchemyLevel": 35,
+      "failBaseChance": 0.29,
+      "failChancePerLevelAbove": 0.008,
+      "budgetCreditPerUnit": 0.008,
+      "nameParts": {
+        "coreKey": "item.crystal.name",
+        "suffixKey": "skillForge.name.efficient"
+      },
+      "icon": "item.crystal",
+      "disabled": true,
+      "successChanceModifier": -0.05
+    },
+    {
+      "id": "skill_forge.silver_vein_silk",
+      "itemId": "silver_vein_silk",
+      "nodeKind": "condition",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "condition"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "true",
+            "type": "effect"
+          },
+          {
+            "id": "false",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_status_condition",
+        "buffId": "armor_break"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 6,
+      "minAlchemyLevel": 15,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0.006,
+      "budgetCreditPerUnit": 0.0036,
+      "nameParts": {
+        "coreKey": "item.silver_vein_silk.name",
+        "suffixKey": "skillForge.name.conditional"
+      },
+      "icon": "item.silver_vein_silk",
+      "disabled": true,
+      "successChanceModifier": -0.05
+    },
+    {
+      "id": "skill_forge.wisp_weave",
+      "itemId": "wisp_weave",
+      "nodeKind": "condition",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "condition"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "true",
+            "type": "effect"
+          },
+          {
+            "id": "false",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "caster_status_condition",
+        "buffId": "stealth"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 6,
+      "minAlchemyLevel": 25,
+      "failBaseChance": 0.23,
+      "failChancePerLevelAbove": 0.007,
+      "budgetCreditPerUnit": 0.004,
+      "nameParts": {
+        "coreKey": "item.wisp_weave.name",
+        "suffixKey": "skillForge.name.conditional"
+      },
+      "icon": "item.wisp_weave",
+      "disabled": true,
+      "successChanceModifier": -0.045
+    },
+    {
+      "id": "skill_forge.gilded_brocade",
+      "itemId": "gilded_brocade",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_apply",
+        "buffId": "blessing",
+        "targetScope": "ally",
+        "durationBaseTurns": 1
+      },
+      "valuePerUnit": {
+        "min": 0.0016,
+        "max": 0.0032
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 12,
+      "minAlchemyLevel": 25,
+      "failBaseChance": 0.24,
+      "failChancePerLevelAbove": 0.007,
+      "budgetCreditPerUnit": 0.0088,
+      "nameParts": {
+        "coreKey": "item.gilded_brocade.name",
+        "suffixKey": "skillForge.name.blessing"
+      },
+      "icon": "item.gilded_brocade",
+      "disabled": true,
+      "successChanceModifier": -0.045
+    },
+    {
+      "id": "skill_forge.lunar_veil",
+      "itemId": "lunar_veil",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_apply",
+        "buffId": "stealth",
+        "targetScope": "self",
+        "durationBaseTurns": 1
+      },
+      "valuePerUnit": {
+        "min": 0.0016,
+        "max": 0.0036
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 12,
+      "minAlchemyLevel": 35,
+      "failBaseChance": 0.3,
+      "failChancePerLevelAbove": 0.008,
+      "budgetCreditPerUnit": 0.01,
+      "nameParts": {
+        "coreKey": "item.lunar_veil.name",
+        "suffixKey": "skillForge.name.shadow"
+      },
+      "icon": "item.lunar_veil",
+      "disabled": true,
+      "successChanceModifier": -0.04
+    },
+    {
+      "id": "skill_forge.base4_shadow_iron",
+      "itemId": "base4_shadow_iron",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_apply",
+        "buffId": "base4_shadow_mark",
+        "targetScope": "enemy",
+        "durationBaseTurns": 1
+      },
+      "valuePerUnit": {
+        "min": 0.0012,
+        "max": 0.0028
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 12,
+      "minAlchemyLevel": 15,
+      "failBaseChance": 0.2,
+      "failChancePerLevelAbove": 0.006,
+      "budgetCreditPerUnit": 0.008,
+      "nameParts": {
+        "coreKey": "item.base4_shadow_iron.name",
+        "suffixKey": "skillForge.name.shadow"
+      },
+      "icon": "item.base4_shadow_iron",
+      "disabled": true,
+      "successChanceModifier": -0.05
+    },
+    {
+      "id": "skill_forge.holy_cat_luminous_thread",
+      "itemId": "holy_cat_luminous_thread",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_apply",
+        "buffId": "holy_cat_regen",
+        "targetScope": "ally",
+        "durationBaseTurns": 1
+      },
+      "valuePerUnit": {
+        "min": 0.0012,
+        "max": 0.0028
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 12,
+      "minAlchemyLevel": 15,
+      "failBaseChance": 0.19,
+      "failChancePerLevelAbove": 0.006,
+      "budgetCreditPerUnit": 0.008,
+      "nameParts": {
+        "coreKey": "item.holy_cat_luminous_thread.name",
+        "suffixKey": "skillForge.name.heal"
+      },
+      "icon": "item.holy_cat_luminous_thread",
+      "disabled": true,
+      "successChanceModifier": -0.05
+    },
+    {
+      "id": "skill_forge.glow_core",
+      "itemId": "glow_core",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_apply",
+        "buffId": "armor_break",
+        "targetScope": "enemy",
+        "durationBaseTurns": 1
+      },
+      "valuePerUnit": {
+        "min": 0.0016,
+        "max": 0.004
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 12,
+      "minAlchemyLevel": 25,
+      "failBaseChance": 0.25,
+      "failChancePerLevelAbove": 0.007,
+      "budgetCreditPerUnit": 0.0096,
+      "nameParts": {
+        "coreKey": "item.glow_core.name",
+        "suffixKey": "skillForge.name.break"
+      },
+      "icon": "item.glow_core",
+      "disabled": true,
+      "successChanceModifier": -0.045
+    },
+    {
+      "id": "skill_forge.harmonic_embryo",
+      "itemId": "harmonic_embryo",
+      "nodeKind": "structure",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "effect_slot"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 2,
+      "minAlchemyLevel": 45,
+      "failBaseChance": 0.36,
+      "failChancePerLevelAbove": 0.009,
+      "budgetCreditPerUnit": 0.0075,
+      "nameParts": {
+        "coreKey": "item.harmonic_embryo.name",
+        "suffixKey": "skillForge.name.chain"
+      },
+      "icon": "item.harmonic_embryo",
+      "disabled": true,
+      "successChanceModifier": -0.1
+    },
+    {
+      "id": "skill_forge.harmonic_crystal_lens",
+      "itemId": "harmonic_crystal_lens",
+      "nodeKind": "condition",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "condition"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "consume_target_status",
+        "buffId": "armor_break"
+      },
+      "valuePerUnit": {
+        "min": 0.0016,
+        "max": 0.0032
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 8,
+      "minAlchemyLevel": 45,
+      "failBaseChance": 0.38,
+      "failChancePerLevelAbove": 0.009,
+      "budgetCreditPerUnit": 0.008,
+      "nameParts": {
+        "coreKey": "item.harmonic_crystal_lens.name",
+        "suffixKey": "skillForge.name.consume"
+      },
+      "icon": "item.harmonic_crystal_lens",
+      "disabled": true,
+      "successChanceModifier": -0.035
+    },
+    {
+      "id": "skill_forge.harmonic_moonwood_frame",
+      "itemId": "harmonic_moonwood_frame",
+      "nodeKind": "condition",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "condition"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "consume_caster_status",
+        "buffId": "stealth"
+      },
+      "valuePerUnit": {
+        "min": 0.0016,
+        "max": 0.0032
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 8,
+      "minAlchemyLevel": 45,
+      "failBaseChance": 0.38,
+      "failChancePerLevelAbove": 0.009,
+      "budgetCreditPerUnit": 0.008,
+      "nameParts": {
+        "coreKey": "item.harmonic_moonwood_frame.name",
+        "suffixKey": "skillForge.name.consume"
+      },
+      "icon": "item.harmonic_moonwood_frame",
+      "disabled": true,
+      "successChanceModifier": -0.035
+    },
+    {
+      "id": "skill_forge.harmonic_royal_prism",
+      "itemId": "harmonic_royal_prism",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "self_current_hp_loss",
+        "effectKind": "resource"
+      },
+      "valuePerUnit": {
+        "min": 0.0015,
+        "max": 0.0015
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 3,
+      "minAlchemyLevel": 45,
+      "failBaseChance": 0.4,
+      "failChancePerLevelAbove": 0.01,
+      "budgetCreditPerUnit": 0.01,
+      "nameParts": {
+        "coreKey": "item.harmonic_royal_prism.name",
+        "suffixKey": "skillForge.name.sacrifice"
+      },
+      "icon": "item.harmonic_royal_prism",
+      "disabled": true,
+      "successChanceModifier": 0.035
+    },
+    {
+      "id": "skill_forge.star_rail_copper_plate",
+      "itemId": "star_rail_copper_plate",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_count"
+      },
+      "valuePerUnit": {
+        "min": 0.002,
+        "max": 0.0045
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 12,
+      "minAlchemyLevel": 45,
+      "failBaseChance": 0.32,
+      "failChancePerLevelAbove": 0.008,
+      "budgetCreditPerUnit": 0.008,
+      "nameParts": {
+        "coreKey": "item.star_rail_copper_plate.name",
+        "suffixKey": "skillForge.name.multicast"
+      },
+      "icon": "item.star_rail_copper_plate",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.refraction_lens_shard",
+      "itemId": "refraction_lens_shard",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "select_rule",
+        "rule": "hp_percent_min"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 8,
+      "minAlchemyLevel": 45,
+      "failBaseChance": 0.34,
+      "failChancePerLevelAbove": 0.008,
+      "budgetCreditPerUnit": 0.006,
+      "nameParts": {
+        "coreKey": "item.refraction_lens_shard.name",
+        "suffixKey": "skillForge.name.hunt"
+      },
+      "icon": "item.refraction_lens_shard",
+      "disabled": true,
+      "successChanceModifier": -0.05
+    },
+    {
+      "id": "skill_forge.meteor_core_fragment",
+      "itemId": "meteor_core_fragment",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "damage",
+        "attrKey": "magical_damage"
+      },
+      "valuePerUnit": {
+        "min": 0.0004,
+        "max": 0.0009
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 20,
+      "minAlchemyLevel": 45,
+      "failBaseChance": 0.35,
+      "failChancePerLevelAbove": 0.008,
+      "budgetCreditPerUnit": 0.009,
+      "nameParts": {
+        "coreKey": "item.meteor_core_fragment.name",
+        "suffixKey": "skillForge.name.arcane"
+      },
+      "icon": "item.meteor_core_fragment",
+      "disabled": true,
+      "successChanceModifier": -0.035
+    },
+    {
+      "id": "skill_forge.condensed_stardust",
+      "itemId": "condensed_stardust",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "damage",
+        "attrKey": "intelligence"
+      },
+      "valuePerUnit": {
+        "min": 0.0006,
+        "max": 0.00125
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 20,
+      "minAlchemyLevel": 50,
+      "failBaseChance": 0.38,
+      "failChancePerLevelAbove": 0.009,
+      "budgetCreditPerUnit": 0.011,
+      "nameParts": {
+        "coreKey": "item.condensed_stardust.name",
+        "suffixKey": "skillForge.name.arcane"
+      },
+      "icon": "item.condensed_stardust",
+      "disabled": true,
+      "successChanceModifier": -0.03
+    },
+    {
+      "id": "skill_forge.timekeeper_core",
+      "itemId": "timekeeper_core",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "cooldown",
+        "direction": "reduce"
+      },
+      "valuePerUnit": {
+        "min": 0.004,
+        "max": 0.006
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 12,
+      "minAlchemyLevel": 55,
+      "failBaseChance": 0.43,
+      "failChancePerLevelAbove": 0.01,
+      "budgetCreditPerUnit": 0.013,
+      "nameParts": {
+        "coreKey": "item.timekeeper_core.name",
+        "suffixKey": "skillForge.name.swift"
+      },
+      "icon": "item.timekeeper_core",
+      "disabled": true,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.hushed_ink_crystal",
+      "itemId": "hushed_ink_crystal",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "mp_cost",
+        "direction": "reduce"
+      },
+      "valuePerUnit": {
+        "min": 0.0075,
+        "max": 0.015
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 16,
+      "minAlchemyLevel": 45,
+      "failBaseChance": 0.34,
+      "failChancePerLevelAbove": 0.008,
+      "budgetCreditPerUnit": 0.0075,
+      "nameParts": {
+        "coreKey": "item.hushed_ink_crystal.name",
+        "suffixKey": "skillForge.name.efficient"
+      },
+      "icon": "item.hushed_ink_crystal",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.05
+    },
+    {
+      "id": "skill_forge.wandering_page_silk",
+      "itemId": "wandering_page_silk",
+      "nodeKind": "condition",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "condition"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "true",
+            "type": "effect"
+          },
+          {
+            "id": "false",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_status_condition",
+        "buffId": "silence"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 6,
+      "minAlchemyLevel": 48,
+      "failBaseChance": 0.36,
+      "failChancePerLevelAbove": 0.008,
+      "budgetCreditPerUnit": 0.007,
+      "nameParts": {
+        "coreKey": "item.wandering_page_silk.name",
+        "suffixKey": "skillForge.name.conditional"
+      },
+      "icon": "item.wandering_page_silk",
+      "disabled": true,
+      "successChanceModifier": -0.05
+    },
+    {
+      "id": "skill_forge.blue_night_audit_feather",
+      "itemId": "blue_night_audit_feather",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_position",
+        "positions": [
+          "rearguard",
+          "midguard"
+        ]
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 8,
+      "minAlchemyLevel": 48,
+      "failBaseChance": 0.37,
+      "failChancePerLevelAbove": 0.008,
+      "budgetCreditPerUnit": 0.006,
+      "nameParts": {
+        "coreKey": "item.blue_night_audit_feather.name",
+        "suffixKey": "skillForge.name.reach"
+      },
+      "icon": "item.blue_night_audit_feather",
+      "disabled": true,
+      "successChanceModifier": -0.05
+    },
+    {
+      "id": "skill_forge.spell_seal_lock_plate",
+      "itemId": "spell_seal_lock_plate",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_apply",
+        "buffId": "silence",
+        "targetScope": "enemy",
+        "durationBaseTurns": 1
+      },
+      "valuePerUnit": {
+        "min": 0.00175,
+        "max": 0.00375
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 12,
+      "minAlchemyLevel": 52,
+      "failBaseChance": 0.4,
+      "failChancePerLevelAbove": 0.009,
+      "budgetCreditPerUnit": 0.01,
+      "nameParts": {
+        "coreKey": "item.spell_seal_lock_plate.name",
+        "suffixKey": "skillForge.name.conditional"
+      },
+      "icon": "item.spell_seal_lock_plate",
+      "disabled": true,
+      "successChanceModifier": -0.045
+    },
+    {
+      "id": "skill_forge.final_volume_key_sigil",
+      "itemId": "final_volume_key_sigil",
+      "nodeKind": "structure",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "effect_slot"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 2,
+      "minAlchemyLevel": 58,
+      "failBaseChance": 0.46,
+      "failChancePerLevelAbove": 0.01,
+      "budgetCreditPerUnit": 0.01,
+      "nameParts": {
+        "coreKey": "item.final_volume_key_sigil.name",
+        "suffixKey": "skillForge.name.chain"
+      },
+      "icon": "item.final_volume_key_sigil",
+      "disabled": true,
+      "successChanceModifier": -0.1
+    },
+    {
+      "id": "skill_forge.wood_requirement",
+      "itemId": "wood",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "requirement_reduction"
+      },
+      "valuePerUnit": {
+        "min": 0.00015,
+        "max": 0.0003
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 10,
+      "minAlchemyLevel": 3,
+      "failBaseChance": 0.1,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.003,
+      "nameParts": {
+        "coreKey": "item.wood.name",
+        "suffixKey": "skillForge.name.efficient"
+      },
+      "icon": "item.wood",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.sturdy_wood_requirement",
+      "itemId": "sturdy_wood",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "requirement_reduction"
+      },
+      "valuePerUnit": {
+        "min": 0.0002,
+        "max": 0.0004
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 10,
+      "minAlchemyLevel": 6,
+      "failBaseChance": 0.12,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.0035,
+      "nameParts": {
+        "coreKey": "item.sturdy_wood.name",
+        "suffixKey": "skillForge.name.efficient"
+      },
+      "icon": "item.sturdy_wood",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.silverleaf_wood_requirement",
+      "itemId": "silverleaf_wood",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "requirement_reduction"
+      },
+      "valuePerUnit": {
+        "min": 0.00025,
+        "max": 0.00045
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 10,
+      "minAlchemyLevel": 9,
+      "failBaseChance": 0.14,
+      "failChancePerLevelAbove": 0.005,
+      "budgetCreditPerUnit": 0.004,
+      "nameParts": {
+        "coreKey": "item.silverleaf_wood.name",
+        "suffixKey": "skillForge.name.efficient"
+      },
+      "icon": "item.silverleaf_wood",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.silverleaf_fiber_target_count",
+      "itemId": "silverleaf_fiber",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_count"
+      },
+      "valuePerUnit": {
+        "min": 0.003,
+        "max": 0.006
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 8,
+      "minAlchemyLevel": 9,
+      "failBaseChance": 0.14,
+      "failChancePerLevelAbove": 0.005,
+      "budgetCreditPerUnit": 0.005,
+      "nameParts": {
+        "coreKey": "item.silverleaf_fiber.name",
+        "suffixKey": "skillForge.name.multicast"
+      },
+      "icon": "item.silverleaf_fiber",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.tree_sap_hp_cost",
+      "itemId": "tree_sap",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "hp_cost",
+        "direction": "increase"
+      },
+      "valuePerUnit": {
+        "min": 0.004,
+        "max": 0.007
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 8,
+      "minAlchemyLevel": 3,
+      "failBaseChance": 0.1,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.004,
+      "nameParts": {
+        "coreKey": "item.tree_sap.name",
+        "suffixKey": "skillForge.name.costly"
+      },
+      "icon": "item.tree_sap",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": 0.04
+    },
+    {
+      "id": "skill_forge.soft_resin_hp_cost",
+      "itemId": "soft_resin",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "hp_cost",
+        "direction": "reduce"
+      },
+      "valuePerUnit": {
+        "min": 0.003,
+        "max": 0.006
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 8,
+      "minAlchemyLevel": 6,
+      "failBaseChance": 0.12,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.004,
+      "nameParts": {
+        "coreKey": "item.soft_resin.name",
+        "suffixKey": "skillForge.name.efficient"
+      },
+      "icon": "item.soft_resin",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.05
+    },
+    {
+      "id": "skill_forge.silverleaf_resin_hp_cost",
+      "itemId": "silverleaf_resin",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "hp_cost",
+        "direction": "increase"
+      },
+      "valuePerUnit": {
+        "min": 0.006,
+        "max": 0.01
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 8,
+      "minAlchemyLevel": 9,
+      "failBaseChance": 0.14,
+      "failChancePerLevelAbove": 0.005,
+      "budgetCreditPerUnit": 0.0045,
+      "nameParts": {
+        "coreKey": "item.silverleaf_resin.name",
+        "suffixKey": "skillForge.name.costly"
+      },
+      "icon": "item.silverleaf_resin",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": 0.04
+    },
+    {
+      "id": "skill_forge.morning_dew_duration",
+      "itemId": "morning_dew",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_duration"
+      },
+      "valuePerUnit": {
+        "min": 0.003,
+        "max": 0.006
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 8,
+      "minAlchemyLevel": 3,
+      "failBaseChance": 0.1,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.004,
+      "nameParts": {
+        "coreKey": "item.morning_dew.name",
+        "suffixKey": "skillForge.name.lingering"
+      },
+      "icon": "item.morning_dew",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.04
+    },
+    {
+      "id": "skill_forge.sweet_nectar_duration",
+      "itemId": "sweet_nectar",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_duration"
+      },
+      "valuePerUnit": {
+        "min": 0.004,
+        "max": 0.008
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 8,
+      "minAlchemyLevel": 6,
+      "failBaseChance": 0.12,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.0045,
+      "nameParts": {
+        "coreKey": "item.sweet_nectar.name",
+        "suffixKey": "skillForge.name.lingering"
+      },
+      "icon": "item.sweet_nectar",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.038
+    },
+    {
+      "id": "skill_forge.silverleaf_dew_chain",
+      "itemId": "silverleaf_dew",
+      "nodeKind": "flow",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "effect_chain"
+      },
+      "valuePerUnit": {
+        "min": 0.005,
+        "max": 0.005
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 3,
+      "minAlchemyLevel": 9,
+      "failBaseChance": 0.14,
+      "failChancePerLevelAbove": 0.005,
+      "budgetCreditPerUnit": 0.004,
+      "nameParts": {
+        "coreKey": "item.silverleaf_dew.name",
+        "suffixKey": "skillForge.name.chain"
+      },
+      "icon": "item.silverleaf_dew",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.035
+    },
+    {
+      "id": "skill_forge.stone_hit_count",
+      "itemId": "stone",
+      "nodeKind": "flow",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "hit_count"
+      },
+      "valuePerUnit": {
+        "min": 0.003,
+        "max": 0.006
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 8,
+      "minAlchemyLevel": 3,
+      "failBaseChance": 0.1,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.005,
+      "nameParts": {
+        "coreKey": "item.stone.name",
+        "suffixKey": "skillForge.name.multicast"
+      },
+      "icon": "item.stone",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.coal_hit_count",
+      "itemId": "coal",
+      "nodeKind": "flow",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "hit_count"
+      },
+      "valuePerUnit": {
+        "min": 0.004,
+        "max": 0.008
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 8,
+      "minAlchemyLevel": 5,
+      "failBaseChance": 0.11,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.0055,
+      "nameParts": {
+        "coreKey": "item.coal.name",
+        "suffixKey": "skillForge.name.multicast"
+      },
+      "icon": "item.coal",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.copper_ore_cooldown",
+      "itemId": "copper_ore",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "cooldown",
+        "direction": "increase"
+      },
+      "valuePerUnit": {
+        "min": 0.003,
+        "max": 0.006
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 8,
+      "minAlchemyLevel": 6,
+      "failBaseChance": 0.12,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.0045,
+      "nameParts": {
+        "coreKey": "item.copper_ore.name",
+        "suffixKey": "skillForge.name.costly"
+      },
+      "icon": "item.copper_ore",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": 0.045
+    },
+    {
+      "id": "skill_forge.iron_ore_chain",
+      "itemId": "iron_ore",
+      "nodeKind": "flow",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "effect_chain"
+      },
+      "valuePerUnit": {
+        "min": 0.005,
+        "max": 0.005
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 3,
+      "minAlchemyLevel": 8,
+      "failBaseChance": 0.13,
+      "failChancePerLevelAbove": 0.005,
+      "budgetCreditPerUnit": 0.004,
+      "nameParts": {
+        "coreKey": "item.iron_ore.name",
+        "suffixKey": "skillForge.name.chain"
+      },
+      "icon": "item.iron_ore",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.035
+    },
+    {
+      "id": "skill_forge.egg_heal",
+      "itemId": "egg",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "heal",
+        "attrKey": "intelligence"
+      },
+      "valuePerUnit": {
+        "min": 0.0002,
+        "max": 0.00045
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 10,
+      "minAlchemyLevel": 3,
+      "failBaseChance": 0.1,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.004,
+      "nameParts": {
+        "coreKey": "item.egg.name",
+        "suffixKey": "skillForge.name.heal"
+      },
+      "icon": "item.egg",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.04
+    },
+    {
+      "id": "skill_forge.milk_heal",
+      "itemId": "milk",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "flat_amount",
+        "effectKind": "heal"
+      },
+      "valuePerUnit": {
+        "min": 0.015,
+        "max": 0.04
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 10,
+      "minAlchemyLevel": 3,
+      "failBaseChance": 0.1,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.004,
+      "nameParts": {
+        "coreKey": "item.milk.name",
+        "suffixKey": "skillForge.name.heal"
+      },
+      "icon": "item.milk",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.04
+    },
+    {
+      "id": "skill_forge.wool_sacrifice",
+      "itemId": "wool",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "self_current_hp_loss",
+        "effectKind": "resource"
+      },
+      "valuePerUnit": {
+        "min": 0.0004,
+        "max": 0.0007
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 8,
+      "minAlchemyLevel": 4,
+      "failBaseChance": 0.11,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.004,
+      "nameParts": {
+        "coreKey": "item.wool.name",
+        "suffixKey": "skillForge.name.sacrifice"
+      },
+      "icon": "item.wool",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": 0.035
+    },
+    {
+      "id": "skill_forge.copper_mp_cost",
+      "itemId": "copper",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "mp_cost",
+        "direction": "increase"
+      },
+      "valuePerUnit": {
+        "min": 0.004,
+        "max": 0.008
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 8,
+      "minAlchemyLevel": 7,
+      "failBaseChance": 0.13,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.0045,
+      "nameParts": {
+        "coreKey": "item.copper.name",
+        "suffixKey": "skillForge.name.costly"
+      },
+      "icon": "item.copper",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": 0.035
+    },
+    {
+      "id": "skill_forge.iron_front_position",
+      "itemId": "iron",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_position",
+        "positions": [
+          "vanguard"
+        ]
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 6,
+      "minAlchemyLevel": 8,
+      "failBaseChance": 0.13,
+      "failChancePerLevelAbove": 0.005,
+      "budgetCreditPerUnit": 0.004,
+      "nameParts": {
+        "coreKey": "item.iron.name",
+        "suffixKey": "skillForge.name.reach"
+      },
+      "icon": "item.iron",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.035
+    },
+    {
+      "id": "skill_forge.coarse_linen_first",
+      "itemId": "coarse_linen",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "select_rule",
+        "rule": "first"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 6,
+      "minAlchemyLevel": 7,
+      "failBaseChance": 0.13,
+      "failChancePerLevelAbove": 0.004,
+      "budgetCreditPerUnit": 0.004,
+      "nameParts": {
+        "coreKey": "item.coarse_linen.name",
+        "suffixKey": "skillForge.name.hunt"
+      },
+      "icon": "item.coarse_linen",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.035
+    },
+    {
+      "id": "skill_forge.soft_cotton_rear_position",
+      "itemId": "soft_cotton",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_position",
+        "positions": [
+          "rearguard"
+        ]
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 6,
+      "minAlchemyLevel": 8,
+      "failBaseChance": 0.13,
+      "failChancePerLevelAbove": 0.005,
+      "budgetCreditPerUnit": 0.004,
+      "nameParts": {
+        "coreKey": "item.soft_cotton.name",
+        "suffixKey": "skillForge.name.reach"
+      },
+      "icon": "item.soft_cotton",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": -0.035
+    },
+    {
+      "id": "skill_forge.afterglow_sacrifice",
+      "itemId": "afterglow",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "self_current_hp_loss",
+        "effectKind": "resource"
+      },
+      "valuePerUnit": {
+        "min": 0.0006,
+        "max": 0.001
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 8,
+      "minAlchemyLevel": 10,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0.005,
+      "budgetCreditPerUnit": 0.005,
+      "nameParts": {
+        "coreKey": "item.afterglow.name",
+        "suffixKey": "skillForge.name.sacrifice"
+      },
+      "icon": "item.afterglow",
+      "lowRarityWhitelist": true,
+      "disabled": true,
+      "successChanceModifier": 0.035
+    },
+    {
+      "id": "skill_forge.v3.frost_ledger_page",
+      "itemId": "frost_ledger_page",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_duration"
+      },
+      "valuePerUnit": {
+        "min": 0.001,
+        "max": 0.001
+      },
+      "unitBasis": 1000,
+      "maxBasisMultiplier": 3,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.0015,
+      "nameParts": {
+        "coreKey": "item.frost_ledger_page.name",
+        "suffixKey": "skillForge.name.lingering"
+      },
+      "icon": "item.frost_ledger_page",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v3.white_coin_shard",
+      "itemId": "white_coin_shard",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "mp_cost",
+        "direction": "increase"
+      },
+      "valuePerUnit": {
+        "min": 0.001,
+        "max": 0.001
+      },
+      "unitBasis": 1000,
+      "maxBasisMultiplier": 5,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.0015,
+      "nameParts": {
+        "coreKey": "item.white_coin_shard.name",
+        "suffixKey": "skillForge.name.costly"
+      },
+      "icon": "item.white_coin_shard",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": 0.05
+    },
+    {
+      "id": "skill_forge.v3.snowseal_wax",
+      "itemId": "snowseal_wax",
+      "nodeKind": "condition",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "condition"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "true",
+            "type": "effect"
+          },
+          {
+            "id": "false",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_status_condition",
+        "buffId": "frozen_action_suppressed"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 5000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.0015,
+      "nameParts": {
+        "coreKey": "item.snowseal_wax.name",
+        "suffixKey": "skillForge.name.conditional"
+      },
+      "icon": "item.snowseal_wax",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.v3.rimebone_handle",
+      "itemId": "rimebone_handle",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "damage",
+        "attrKey": "physics_damage"
+      },
+      "valuePerUnit": {
+        "min": 0.000025,
+        "max": 0.00005
+      },
+      "unitBasis": 400,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.rimebone_handle.name",
+        "suffixKey": "skillForge.name.damage"
+      },
+      "icon": "item.rimebone_handle",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.04
+    },
+    {
+      "id": "skill_forge.v3.ice_abacus_bead",
+      "itemId": "ice_abacus_bead",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_scope",
+        "scope": "enemy",
+        "excludeSelf": false
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 2000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.ice_abacus_bead.name",
+        "suffixKey": "skillForge.name.reach"
+      },
+      "icon": "item.ice_abacus_bead",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.1
+    },
+    {
+      "id": "skill_forge.v3.warm_thread_core",
+      "itemId": "warm_thread_core",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "hp_cost",
+        "direction": "reduce"
+      },
+      "valuePerUnit": {
+        "min": 0.0025,
+        "max": 0.0025
+      },
+      "unitBasis": 400,
+      "maxBasisMultiplier": 5,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.warm_thread_core.name",
+        "suffixKey": "skillForge.name.efficient"
+      },
+      "icon": "item.warm_thread_core",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.07
+    },
+    {
+      "id": "skill_forge.v3.base2_moss_spore",
+      "itemId": "base2_moss_spore",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "heal",
+        "attrKey": "intelligence"
+      },
+      "valuePerUnit": {
+        "min": 0.000002,
+        "max": 0.000004
+      },
+      "unitBasis": 1000,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.22,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.001,
+      "nameParts": {
+        "coreKey": "item.base2_moss_spore.name",
+        "suffixKey": "skillForge.name.heal"
+      },
+      "icon": "item.base2_moss_spore",
+      "disabled": false,
+      "lowRarityWhitelist": true,
+      "successChanceModifier": -0.01
+    },
+    {
+      "id": "skill_forge.v3.base2_cave_membrane",
+      "itemId": "base2_cave_membrane",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "select_rule",
+        "rule": "hp_min"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 5000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.0015,
+      "nameParts": {
+        "coreKey": "item.base2_cave_membrane.name",
+        "suffixKey": "skillForge.name.hunt"
+      },
+      "icon": "item.base2_cave_membrane",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.v3.base2_ruin_core_shard",
+      "itemId": "base2_ruin_core_shard",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_direction",
+        "seek": "rear_to_front"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 5000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.0015,
+      "nameParts": {
+        "coreKey": "item.base2_ruin_core_shard.name",
+        "suffixKey": "skillForge.name.hunt"
+      },
+      "icon": "item.base2_ruin_core_shard",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.v3.base2_dragon_scale_chip",
+      "itemId": "base2_dragon_scale_chip",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_apply",
+        "buffId": "armor_break",
+        "targetScope": "enemy",
+        "durationBaseTurns": 1
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 400,
+      "maxBasisMultiplier": 5,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.base2_dragon_scale_chip.name",
+        "suffixKey": "skillForge.name.lingering"
+      },
+      "icon": "item.base2_dragon_scale_chip",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v3.base4_shadow_silk",
+      "itemId": "base4_shadow_silk",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "damage",
+        "attrKey": "luck"
+      },
+      "valuePerUnit": {
+        "min": 0.000002,
+        "max": 0.000004
+      },
+      "unitBasis": 1000,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.22,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.001,
+      "nameParts": {
+        "coreKey": "item.base4_shadow_silk.name",
+        "suffixKey": "skillForge.name.shadow"
+      },
+      "icon": "item.base4_shadow_silk",
+      "disabled": false,
+      "lowRarityWhitelist": true,
+      "successChanceModifier": -0.01
+    },
+    {
+      "id": "skill_forge.v3.base4_phantom_claw",
+      "itemId": "base4_phantom_claw",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "select_rule",
+        "rule": "attr_max",
+        "attrKey": "physics_damage"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 5000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.0015,
+      "nameParts": {
+        "coreKey": "item.base4_phantom_claw.name",
+        "suffixKey": "skillForge.name.hunt"
+      },
+      "icon": "item.base4_phantom_claw",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.v3.base4_cursed_wing_membrane",
+      "itemId": "base4_cursed_wing_membrane",
+      "nodeKind": "condition",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "condition"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "true",
+            "type": "effect"
+          },
+          {
+            "id": "false",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_status_condition",
+        "buffId": "silence"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 5000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.0015,
+      "nameParts": {
+        "coreKey": "item.base4_cursed_wing_membrane.name",
+        "suffixKey": "skillForge.name.conditional"
+      },
+      "icon": "item.base4_cursed_wing_membrane",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.v3.base4_golem_dark_core",
+      "itemId": "base4_golem_dark_core",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_apply",
+        "buffId": "silence",
+        "targetScope": "enemy",
+        "durationBaseTurns": 1
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 400,
+      "maxBasisMultiplier": 5,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.base4_golem_dark_core.name",
+        "suffixKey": "skillForge.name.lingering"
+      },
+      "icon": "item.base4_golem_dark_core",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v3.base4_abyssal_core",
+      "itemId": "base4_abyssal_core",
+      "nodeKind": "flow",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "effect_chain"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 2000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.base4_abyssal_core.name",
+        "suffixKey": "skillForge.name.chain"
+      },
+      "icon": "item.base4_abyssal_core",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.1
+    },
+    {
+      "id": "skill_forge.v3.base4_ancestor_shadow_jade",
+      "itemId": "base4_ancestor_shadow_jade",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_scope",
+        "scope": "ally",
+        "excludeSelf": true
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 2000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.base4_ancestor_shadow_jade.name",
+        "suffixKey": "skillForge.name.reach"
+      },
+      "icon": "item.base4_ancestor_shadow_jade",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.1
+    },
+    {
+      "id": "skill_forge.v3.base4_shadow_orb",
+      "itemId": "base4_shadow_orb",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "select_rule",
+        "rule": "hp_percent_max"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 5000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.0015,
+      "nameParts": {
+        "coreKey": "item.base4_shadow_orb.name",
+        "suffixKey": "skillForge.name.hunt"
+      },
+      "icon": "item.base4_shadow_orb",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.v3.holy_cat_blessed_fur",
+      "itemId": "holy_cat_blessed_fur",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "heal",
+        "attrKey": "perception"
+      },
+      "valuePerUnit": {
+        "min": 0.000002,
+        "max": 0.000004
+      },
+      "unitBasis": 1000,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.22,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.001,
+      "nameParts": {
+        "coreKey": "item.holy_cat_blessed_fur.name",
+        "suffixKey": "skillForge.name.heal"
+      },
+      "icon": "item.holy_cat_blessed_fur",
+      "disabled": false,
+      "lowRarityWhitelist": true,
+      "successChanceModifier": -0.01
+    },
+    {
+      "id": "skill_forge.v3.holy_cat_incense",
+      "itemId": "holy_cat_incense",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_duration"
+      },
+      "valuePerUnit": {
+        "min": 0.001,
+        "max": 0.001
+      },
+      "unitBasis": 1000,
+      "maxBasisMultiplier": 3,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.0015,
+      "nameParts": {
+        "coreKey": "item.holy_cat_incense.name",
+        "suffixKey": "skillForge.name.lingering"
+      },
+      "icon": "item.holy_cat_incense",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v3.holy_cat_guardian_medal",
+      "itemId": "holy_cat_guardian_medal",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "select_rule",
+        "rule": "attr_min",
+        "attrKey": "speed"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 5000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.0015,
+      "nameParts": {
+        "coreKey": "item.holy_cat_guardian_medal.name",
+        "suffixKey": "skillForge.name.hunt"
+      },
+      "icon": "item.holy_cat_guardian_medal",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.v3.holy_cat_sage_scroll",
+      "itemId": "holy_cat_sage_scroll",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_apply",
+        "buffId": "blessing",
+        "targetScope": "ally",
+        "durationBaseTurns": 1
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 400,
+      "maxBasisMultiplier": 5,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.holy_cat_sage_scroll.name",
+        "suffixKey": "skillForge.name.lingering"
+      },
+      "icon": "item.holy_cat_sage_scroll",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v3.holy_cat_royal_jewel",
+      "itemId": "holy_cat_royal_jewel",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_position",
+        "positions": [
+          "vanguard"
+        ]
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 1000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.12,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.01,
+      "nameParts": {
+        "coreKey": "item.holy_cat_royal_jewel.name",
+        "suffixKey": "skillForge.name.reach"
+      },
+      "icon": "item.holy_cat_royal_jewel",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.v3.strange_wolf_fur",
+      "itemId": "strange_wolf_fur",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_direction",
+        "seek": "front_to_rear"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 5000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.0015,
+      "nameParts": {
+        "coreKey": "item.strange_wolf_fur.name",
+        "suffixKey": "skillForge.name.hunt"
+      },
+      "icon": "item.strange_wolf_fur",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.v3.wolf_king_fang",
+      "itemId": "wolf_king_fang",
+      "nodeKind": "flow",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "hit_count"
+      },
+      "valuePerUnit": {
+        "min": 0.066666666667,
+        "max": 0.066666666667
+      },
+      "unitBasis": 15,
+      "maxBasisMultiplier": 3,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.1,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.166666666667,
+      "nameParts": {
+        "coreKey": "item.wolf_king_fang.name",
+        "suffixKey": "skillForge.name.multicast"
+      },
+      "icon": "item.wolf_king_fang",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.15
+    },
+    {
+      "id": "skill_forge.v3.luminous_berry_core",
+      "itemId": "luminous_berry_core",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_count"
+      },
+      "valuePerUnit": {
+        "min": 0.066666666667,
+        "max": 0.066666666667
+      },
+      "unitBasis": 15,
+      "maxBasisMultiplier": 3,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.1,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.166666666667,
+      "nameParts": {
+        "coreKey": "item.luminous_berry_core.name",
+        "suffixKey": "skillForge.name.reach"
+      },
+      "icon": "item.luminous_berry_core",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.12
+    },
+    {
+      "id": "skill_forge.v3.assassination_core",
+      "itemId": "assassination_core",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "damage",
+        "attrKey": "dexterity"
+      },
+      "valuePerUnit": {
+        "min": 0.002666666667,
+        "max": 0.005333333333
+      },
+      "unitBasis": 15,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.1,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.166666666667,
+      "nameParts": {
+        "coreKey": "item.assassination_core.name",
+        "suffixKey": "skillForge.name.damage"
+      },
+      "icon": "item.assassination_core",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.09
+    },
+    {
+      "id": "skill_forge.v3.glacial_phantom_crystal",
+      "itemId": "glacial_phantom_crystal",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "cooldown",
+        "direction": "reduce"
+      },
+      "valuePerUnit": {
+        "min": 0.066666666667,
+        "max": 0.066666666667
+      },
+      "unitBasis": 15,
+      "maxBasisMultiplier": 5,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.1,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.166666666667,
+      "nameParts": {
+        "coreKey": "item.glacial_phantom_crystal.name",
+        "suffixKey": "skillForge.name.swift"
+      },
+      "icon": "item.glacial_phantom_crystal",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.12
+    },
+    {
+      "id": "skill_forge.v3.shadow_paw_silk",
+      "itemId": "shadow_paw_silk",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "damage",
+        "attrKey": "dexterity"
+      },
+      "valuePerUnit": {
+        "min": 0.000002,
+        "max": 0.000004
+      },
+      "unitBasis": 1000,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.22,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.001,
+      "nameParts": {
+        "coreKey": "item.shadow_paw_silk.name",
+        "suffixKey": "skillForge.name.damage"
+      },
+      "icon": "item.shadow_paw_silk",
+      "disabled": false,
+      "lowRarityWhitelist": true,
+      "successChanceModifier": -0.01
+    },
+    {
+      "id": "skill_forge.v3.toxic_claw_venom",
+      "itemId": "toxic_claw_venom",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "self_current_hp_loss",
+        "effectKind": "resource"
+      },
+      "valuePerUnit": {
+        "min": 0.000005,
+        "max": 0.00001
+      },
+      "unitBasis": 1000,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.0015,
+      "nameParts": {
+        "coreKey": "item.toxic_claw_venom.name",
+        "suffixKey": "skillForge.name.sacrifice"
+      },
+      "icon": "item.toxic_claw_venom",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": 0.05
+    },
+    {
+      "id": "skill_forge.v3.silent_whisker_thread",
+      "itemId": "silent_whisker_thread",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_direction",
+        "seek": "random_alive"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 5000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.0015,
+      "nameParts": {
+        "coreKey": "item.silent_whisker_thread.name",
+        "suffixKey": "skillForge.name.hunt"
+      },
+      "icon": "item.silent_whisker_thread",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.v3.mirror_paw_shard",
+      "itemId": "mirror_paw_shard",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_scope",
+        "scope": "self",
+        "excludeSelf": false
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 2000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.mirror_paw_shard.name",
+        "suffixKey": "skillForge.name.reach"
+      },
+      "icon": "item.mirror_paw_shard",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.1
+    },
+    {
+      "id": "skill_forge.v3.shadow_paw_master_sigil",
+      "itemId": "shadow_paw_master_sigil",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_position",
+        "positions": [
+          "midguard"
+        ]
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 1000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.12,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.01,
+      "nameParts": {
+        "coreKey": "item.shadow_paw_master_sigil.name",
+        "suffixKey": "skillForge.name.reach"
+      },
+      "icon": "item.shadow_paw_master_sigil",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.v3.star_rail_copper_plate",
+      "itemId": "star_rail_copper_plate",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "hp_cost",
+        "direction": "increase"
+      },
+      "valuePerUnit": {
+        "min": 0.001,
+        "max": 0.001
+      },
+      "unitBasis": 1000,
+      "maxBasisMultiplier": 5,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.22,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.001,
+      "nameParts": {
+        "coreKey": "item.star_rail_copper_plate.name",
+        "suffixKey": "skillForge.name.efficient"
+      },
+      "icon": "item.star_rail_copper_plate",
+      "disabled": false,
+      "lowRarityWhitelist": true,
+      "successChanceModifier": 0.04
+    },
+    {
+      "id": "skill_forge.v3.refraction_lens_shard",
+      "itemId": "refraction_lens_shard",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "select_rule",
+        "rule": "boss_first"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 5000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.0015,
+      "nameParts": {
+        "coreKey": "item.refraction_lens_shard.name",
+        "suffixKey": "skillForge.name.hunt"
+      },
+      "icon": "item.refraction_lens_shard",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.v3.meteor_core_fragment",
+      "itemId": "meteor_core_fragment",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "damage",
+        "attrKey": "magical_damage"
+      },
+      "valuePerUnit": {
+        "min": 0.000005,
+        "max": 0.00001
+      },
+      "unitBasis": 1000,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.0015,
+      "nameParts": {
+        "coreKey": "item.meteor_core_fragment.name",
+        "suffixKey": "skillForge.name.damage"
+      },
+      "icon": "item.meteor_core_fragment",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.025
+    },
+    {
+      "id": "skill_forge.v3.condensed_stardust",
+      "itemId": "condensed_stardust",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_scope",
+        "scope": "all",
+        "excludeSelf": false
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 2000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.condensed_stardust.name",
+        "suffixKey": "skillForge.name.reach"
+      },
+      "icon": "item.condensed_stardust",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.1
+    },
+    {
+      "id": "skill_forge.v3.timekeeper_core",
+      "itemId": "timekeeper_core",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_position",
+        "positions": [
+          "rearguard"
+        ]
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 1000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.12,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.01,
+      "nameParts": {
+        "coreKey": "item.timekeeper_core.name",
+        "suffixKey": "skillForge.name.reach"
+      },
+      "icon": "item.timekeeper_core",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.v3.hushed_ink_crystal",
+      "itemId": "hushed_ink_crystal",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "flat_amount",
+        "effectKind": "damage"
+      },
+      "valuePerUnit": {
+        "min": 0.001,
+        "max": 0.002
+      },
+      "unitBasis": 1000,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.22,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.001,
+      "nameParts": {
+        "coreKey": "item.hushed_ink_crystal.name",
+        "suffixKey": "skillForge.name.damage"
+      },
+      "icon": "item.hushed_ink_crystal",
+      "disabled": false,
+      "lowRarityWhitelist": true,
+      "successChanceModifier": -0.01
+    },
+    {
+      "id": "skill_forge.v3.wandering_page_silk",
+      "itemId": "wandering_page_silk",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "cooldown",
+        "direction": "increase"
+      },
+      "valuePerUnit": {
+        "min": 0.001,
+        "max": 0.001
+      },
+      "unitBasis": 1000,
+      "maxBasisMultiplier": 5,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.0015,
+      "nameParts": {
+        "coreKey": "item.wandering_page_silk.name",
+        "suffixKey": "skillForge.name.costly"
+      },
+      "icon": "item.wandering_page_silk",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": 0.05
+    },
+    {
+      "id": "skill_forge.v3.blue_night_audit_feather",
+      "itemId": "blue_night_audit_feather",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "select_rule",
+        "rule": "first"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 5000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.18,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.0015,
+      "nameParts": {
+        "coreKey": "item.blue_night_audit_feather.name",
+        "suffixKey": "skillForge.name.hunt"
+      },
+      "icon": "item.blue_night_audit_feather",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.v3.spell_seal_lock_plate",
+      "itemId": "spell_seal_lock_plate",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_scope",
+        "scope": "ally",
+        "excludeSelf": false
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 2000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.spell_seal_lock_plate.name",
+        "suffixKey": "skillForge.name.reach"
+      },
+      "icon": "item.spell_seal_lock_plate",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.1
+    },
+    {
+      "id": "skill_forge.v3.final_volume_key_sigil",
+      "itemId": "final_volume_key_sigil",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_position",
+        "positions": [
+          "vanguard",
+          "midguard",
+          "rearguard"
+        ]
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 1000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.12,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.01,
+      "nameParts": {
+        "coreKey": "item.final_volume_key_sigil.name",
+        "suffixKey": "skillForge.name.reach"
+      },
+      "icon": "item.final_volume_key_sigil",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.v3.harmonic_embryo",
+      "itemId": "harmonic_embryo",
+      "nodeKind": "structure",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "effect_slot"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 15,
+      "maxBasisMultiplier": 2,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.1,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.166666666667,
+      "nameParts": {
+        "coreKey": "item.harmonic_embryo.name",
+        "suffixKey": "skillForge.name.multicast"
+      },
+      "icon": "item.harmonic_embryo",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.2
+    },
+    {
+      "id": "skill_forge.v3.harmonic_crystal_lens",
+      "itemId": "harmonic_crystal_lens",
+      "nodeKind": "target",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_count_max"
+      },
+      "valuePerUnit": {
+        "min": 0.066666666667,
+        "max": 0.066666666667
+      },
+      "unitBasis": 15,
+      "maxBasisMultiplier": 3,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.1,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.166666666667,
+      "nameParts": {
+        "coreKey": "item.harmonic_crystal_lens.name",
+        "suffixKey": "skillForge.name.reach"
+      },
+      "icon": "item.harmonic_crystal_lens",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.12
+    },
+    {
+      "id": "skill_forge.v3.harmonic_moonwood_frame",
+      "itemId": "harmonic_moonwood_frame",
+      "nodeKind": "cost",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "skill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "skill"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "requirement_reduction"
+      },
+      "valuePerUnit": {
+        "min": 0.001333333333,
+        "max": 0.002666666667
+      },
+      "unitBasis": 15,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.1,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.166666666667,
+      "nameParts": {
+        "coreKey": "item.harmonic_moonwood_frame.name",
+        "suffixKey": "skillForge.name.efficient"
+      },
+      "icon": "item.harmonic_moonwood_frame",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.1
+    },
+    {
+      "id": "skill_forge.v3.harmonic_royal_prism",
+      "itemId": "harmonic_royal_prism",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "skill_level_term",
+        "effectKind": "heal"
+      },
+      "valuePerUnit": {
+        "min": 0.002666666667,
+        "max": 0.005333333333
+      },
+      "unitBasis": 15,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.1,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.166666666667,
+      "nameParts": {
+        "coreKey": "item.harmonic_royal_prism.name",
+        "suffixKey": "skillForge.name.heal"
+      },
+      "icon": "item.harmonic_royal_prism",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.1
+    },
+    {
+      "id": "skill_forge.v4.goldvine_wood",
+      "itemId": "goldvine_wood",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_apply",
+        "buffId": "rage_power",
+        "targetScope": "ally",
+        "durationBaseTurns": 1
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 400,
+      "maxBasisMultiplier": 5,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.goldvine_wood.name",
+        "suffixKey": "skillForge.name.blessing"
+      },
+      "icon": "item.goldvine_wood",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v4.goldvine_fiber",
+      "itemId": "goldvine_fiber",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_apply",
+        "buffId": "regen_aura",
+        "targetScope": "ally",
+        "durationBaseTurns": 1
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 400,
+      "maxBasisMultiplier": 5,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.goldvine_fiber.name",
+        "suffixKey": "skillForge.name.heal"
+      },
+      "icon": "item.goldvine_fiber",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v4.sun_resin",
+      "itemId": "sun_resin",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_apply",
+        "buffId": "last_stand_guard",
+        "targetScope": "ally",
+        "durationBaseTurns": 1
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 400,
+      "maxBasisMultiplier": 5,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.sun_resin.name",
+        "suffixKey": "skillForge.name.guard"
+      },
+      "icon": "item.sun_resin",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v4.sunlit_nectar",
+      "itemId": "sunlit_nectar",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_apply",
+        "buffId": "counter_focus",
+        "targetScope": "ally",
+        "durationBaseTurns": 1
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 400,
+      "maxBasisMultiplier": 5,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.sunlit_nectar.name",
+        "suffixKey": "skillForge.name.precise"
+      },
+      "icon": "item.sunlit_nectar",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v4.gold_ore",
+      "itemId": "gold_ore",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_apply",
+        "buffId": "ice_debt",
+        "targetScope": "enemy",
+        "durationBaseTurns": 1
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 400,
+      "maxBasisMultiplier": 5,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.gold_ore.name",
+        "suffixKey": "skillForge.name.break"
+      },
+      "icon": "item.gold_ore",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v4.wisp_weave",
+      "itemId": "wisp_weave",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_apply",
+        "buffId": "mirror_paw_guard_focus",
+        "targetScope": "self",
+        "durationBaseTurns": 1
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 400,
+      "maxBasisMultiplier": 5,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.wisp_weave.name",
+        "suffixKey": "skillForge.name.guard"
+      },
+      "icon": "item.wisp_weave",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v4.gilded_brocade",
+      "itemId": "gilded_brocade",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_apply",
+        "buffId": "starlight_resistance_buff",
+        "targetScope": "ally",
+        "durationBaseTurns": 1
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 400,
+      "maxBasisMultiplier": 5,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.gilded_brocade.name",
+        "suffixKey": "skillForge.name.guard"
+      },
+      "icon": "item.gilded_brocade",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v4.glow_core",
+      "itemId": "glow_core",
+      "nodeKind": "status",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "status_apply",
+        "buffId": "base4_shadow_mark",
+        "targetScope": "enemy",
+        "durationBaseTurns": 1
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 400,
+      "maxBasisMultiplier": 5,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.glow_core.name",
+        "suffixKey": "skillForge.name.shadow"
+      },
+      "icon": "item.glow_core",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v4.goldvine_wood_blank",
+      "itemId": "goldvine_wood_blank",
+      "nodeKind": "condition",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "condition"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "true",
+            "type": "effect"
+          },
+          {
+            "id": "false",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "target_status_condition",
+        "buffId": "ice_debt"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 2000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.goldvine_wood_blank.name",
+        "suffixKey": "skillForge.name.conditional"
+      },
+      "icon": "item.goldvine_wood_blank",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.v4.gold",
+      "itemId": "gold",
+      "nodeKind": "condition",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "condition"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "consume_target_status",
+        "buffId": "base4_shadow_mark"
+      },
+      "valuePerUnit": {
+        "min": 0,
+        "max": 0
+      },
+      "unitBasis": 2000,
+      "maxBasisMultiplier": 1,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.15,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.00375,
+      "nameParts": {
+        "coreKey": "item.gold.name",
+        "suffixKey": "skillForge.name.consume"
+      },
+      "icon": "item.gold",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.08
+    },
+    {
+      "id": "skill_forge.v4.moonwood",
+      "itemId": "moonwood",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "damage",
+        "attrKey": "collecting"
+      },
+      "valuePerUnit": {
+        "min": 0.0001,
+        "max": 0.0002
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.12,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.01,
+      "nameParts": {
+        "coreKey": "item.moonwood.name",
+        "suffixKey": "skillForge.name.arcane"
+      },
+      "icon": "item.moonwood",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v4.moonvine_fiber",
+      "itemId": "moonvine_fiber",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "heal",
+        "attrKey": "collecting"
+      },
+      "valuePerUnit": {
+        "min": 0.0001,
+        "max": 0.0002
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.12,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.01,
+      "nameParts": {
+        "coreKey": "item.moonvine_fiber.name",
+        "suffixKey": "skillForge.name.heal"
+      },
+      "icon": "item.moonvine_fiber",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v4.moon_resin",
+      "itemId": "moon_resin",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "heal",
+        "attrKey": "collecting"
+      },
+      "valuePerUnit": {
+        "min": 0.0001,
+        "max": 0.0002
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.12,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.01,
+      "nameParts": {
+        "coreKey": "item.moon_resin.name",
+        "suffixKey": "skillForge.name.heal"
+      },
+      "icon": "item.moon_resin",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v4.moon_dew",
+      "itemId": "moon_dew",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "heal",
+        "attrKey": "collecting"
+      },
+      "valuePerUnit": {
+        "min": 0.0001,
+        "max": 0.0002
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.12,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.01,
+      "nameParts": {
+        "coreKey": "item.moon_dew.name",
+        "suffixKey": "skillForge.name.heal"
+      },
+      "icon": "item.moon_dew",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v4.crystal_chunk",
+      "itemId": "crystal_chunk",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "damage",
+        "attrKey": "mining"
+      },
+      "valuePerUnit": {
+        "min": 0.0001,
+        "max": 0.0002
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.12,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.01,
+      "nameParts": {
+        "coreKey": "item.crystal_chunk.name",
+        "suffixKey": "skillForge.name.damage"
+      },
+      "icon": "item.crystal_chunk",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v4.moonwood_blank",
+      "itemId": "moonwood_blank",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "damage",
+        "attrKey": "crafting"
+      },
+      "valuePerUnit": {
+        "min": 0.0001,
+        "max": 0.0002
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.12,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.01,
+      "nameParts": {
+        "coreKey": "item.moonwood_blank.name",
+        "suffixKey": "skillForge.name.precise"
+      },
+      "icon": "item.moonwood_blank",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v4.crystal",
+      "itemId": "crystal",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "damage",
+        "attrKey": "forging"
+      },
+      "valuePerUnit": {
+        "min": 0.0001,
+        "max": 0.0002
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.12,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.01,
+      "nameParts": {
+        "coreKey": "item.crystal.name",
+        "suffixKey": "skillForge.name.arcane"
+      },
+      "icon": "item.crystal",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v4.lunar_veil",
+      "itemId": "lunar_veil",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "heal",
+        "attrKey": "sewing"
+      },
+      "valuePerUnit": {
+        "min": 0.0001,
+        "max": 0.0002
+      },
+      "unitBasis": 200,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.12,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.01,
+      "nameParts": {
+        "coreKey": "item.lunar_veil.name",
+        "suffixKey": "skillForge.name.heal"
+      },
+      "icon": "item.lunar_veil",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.06
+    },
+    {
+      "id": "skill_forge.v3.congealed_vow_ember",
+      "itemId": "congealed_vow_ember",
+      "nodeKind": "formula",
+      "typedPorts": {
+        "inputs": [
+          {
+            "id": "in",
+            "type": "effect"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "out",
+            "type": "effect"
+          }
+        ]
+      },
+      "compileOp": {
+        "kind": "formula_term",
+        "effectKind": "heal",
+        "attrKey": "perception"
+      },
+      "valuePerUnit": {
+        "min": 0.002666666667,
+        "max": 0.005333333333
+      },
+      "unitBasis": 15,
+      "maxBasisMultiplier": 4,
+      "minAlchemyLevel": 1,
+      "failBaseChance": 0.1,
+      "failChancePerLevelAbove": 0,
+      "budgetCreditPerUnit": 0.166666666667,
+      "nameParts": {
+        "coreKey": "item.congealed_vow_ember.name",
+        "suffixKey": "skillForge.name.heal"
+      },
+      "icon": "item.congealed_vow_ember",
+      "disabled": false,
+      "lowRarityWhitelist": false,
+      "successChanceModifier": -0.09
+    }
+  ]
+}

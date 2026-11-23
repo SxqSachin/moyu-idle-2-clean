@@ -1,0 +1,2 @@
+ALTER TABLE player_presence
+  ADD COLUMN IF NOT EXISTS last_login_ip TEXT NOT NULL DEFAULT '';

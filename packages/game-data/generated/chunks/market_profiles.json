@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "market_profiles": [
+    {
+      "id": "effect_consumable_v1",
+      "schemaVersion": 1,
+      "groupingVersion": 1,
+      "catalogKeys": [],
+      "groupKeys": [
+        {
+          "source": "resolved.operationEffect",
+          "path": "",
+          "compare": "exact"
+        }
+      ],
+      "presentation": [
+        {
+          "source": "resolved.operationEffect",
+          "path": "",
+          "compare": "exact",
+          "labelKey": "game.instanceMarket.effect",
+          "format": "operation_effect"
+        }
+      ]
+    },
+    {
+      "id": "individual_specimen_v1",
+      "catalogSource": {
+        "table": "fishing_species",
+        "namesPath": "/names",
+        "valuePaths": [
+          "/id"
+        ]
+      },
+      "schemaVersion": 1,
+      "groupingVersion": 1,
+      "catalogKeys": [
+        {
+          "source": "instance",
+          "path": "/fishData/speciesId",
+          "compare": "exact"
+        }
+      ],
+      "groupKeys": [
+        {
+          "source": "instance",
+          "path": "/fishData",
+          "compare": "exact"
+        }
+      ],
+      "uniqueByInstance": true,
+      "presentation": [
+        {
+          "source": "instance",
+          "path": "/specimenNames",
+          "compare": "exact",
+          "labelKey": "game.instanceMarket.species",
+          "format": "text"
+        },
+        {
+          "source": "instance",
+          "path": "/fishData/lengthCm",
+          "compare": "exact",
+          "labelKey": "game.instanceMarket.length",
+          "format": "number"
+        },
+        {
+          "source": "instance",
+          "path": "/fishData/weightKg",
+          "compare": "exact",
+          "labelKey": "game.instanceMarket.weight",
+          "format": "number"
+        },
+        {
+          "source": "instance",
+          "path": "/fishData/sex",
+          "compare": "exact",
+          "labelKey": "game.instanceMarket.sex",
+          "format": "text"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "gameDataVersion": 1,
+  "buildId": "1-d675cb59d4b3",
+  "generatedAt": "2026-09-07T07:53:02.839Z",
+  "loadOrder": [
+    "core",
+    "equipment",
+    "actions",
+    "combat",
+    "misc"
+  ],
+  "files": {
+    "core": {
+      "url": "/game-data/assets/core.50d02eaccd65.json",
+      "hash": "50d02eaccd65",
+      "bytes": 528405,
+      "label": "core",
+      "contains": [
+        "core"
+      ]
+    },
+    "equipment": {
+      "url": "/game-data/assets/equipment.cb1abbc08643.json",
+      "hash": "cb1abbc08643",
+      "bytes": 640266,
+      "label": "equipment",
+      "contains": [
+        "equipment_templates",
+        "item_traits",
+        "item_types"
+      ]
+    },
+    "actions": {
+      "url": "/game-data/assets/actions.5cddeb364e44.json",
+      "hash": "5cddeb364e44",
+      "bytes": 421048,
+      "label": "actions",
+      "contains": [
+        "action_main_types",
+        "action_sub_types",
+        "actions",
+        "activity_mutex_rules"
+      ]
+    },
+    "combat": {
+      "url": "/game-data/assets/combat.ca16f79fb433.json",
+      "hash": "ca16f79fb433",
+      "bytes": 934196,
+      "label": "combat",
+      "contains": [
+        "arena_formats",
+        "battle_usable_items",
+        "buff_effects",
+        "buff_type",
+        "buff",
+        "combat_config_rules",
+        "combat_trial_formats",
+        "combat_trial_metrics",
+        "combat_trigger_items",
+        "drop_tables",
+        "effects",
+        "enemies",
+        "skill_alchemy_modules",
+        "skill_rule_sets",
+        "skill_type",
+        "skills",
+        "specialization_trees"
+      ]
+    },
+    "misc": {
+      "url": "/game-data/assets/misc.57549957f1b1.json",
+      "hash": "57549957f1b1",
+      "bytes": 641611,
+      "label": "misc",
+      "contains": [
+        "achievement_categories",
+        "achievements",
+        "affix_carrier_rules",
+        "affix_definitions",
+        "affix_detach_rules",
+        "affix_enchant_rules",
+        "affix_smelt_rules",
+        "alchemy_combo_recipes",
+        "alchemy_groups",
+        "alchemy_inherit_mediums",
+        "alchemy_mediums",
+        "alchemy_transmute_rules",
+        "attribute_exp_profiles",
+        "attributes",
+        "buildings",
+        "cat_village_commissions",
+        "cat_village_rep_levels",
+        "cattery_furniture",
+        "collectible_categories",
+        "collectibles",
+        "daily_task_refresh_rules",
+        "daily_tasks",
+        "events_world",
+        "fish_food_recipes",
+        "fishing_infusion_profiles",
+        "fishing_pond_species",
+        "fishing_species",
+        "fishing_spots",
+        "fishing_tackle",
+        "fishing_waters",
+        "item_rule_sets",
+        "kitty_journal_personality_grants",
+        "kitty_personalities",
+        "market_fee_tiers",
+        "market_npc_offers",
+        "market_profiles",
+        "operation_effects",
+        "rarity_definitions",
+        "title_categories",
+        "title_prefixes",
+        "title_suffixes",
+        "warehouse_rules",
+        "weapon_classes",
+        "world"
+      ]
+    }
+  }
+}

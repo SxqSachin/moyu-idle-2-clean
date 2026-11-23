@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "collectible_categories": [
+    {
+      "id": "plains",
+      "nameKey": "collectible_category.plains.name",
+      "order": 10,
+      "disabled": false
+    },
+    {
+      "id": "forest",
+      "nameKey": "collectible_category.forest.name",
+      "order": 20,
+      "disabled": false
+    },
+    {
+      "id": "cave",
+      "nameKey": "collectible_category.cave.name",
+      "order": 30,
+      "disabled": false
+    },
+    {
+      "id": "ruins",
+      "nameKey": "collectible_category.ruins.name",
+      "order": 40,
+      "disabled": false
+    },
+    {
+      "id": "dragon",
+      "nameKey": "collectible_category.dragon.name",
+      "order": 50,
+      "disabled": false
+    },
+    {
+      "id": "snowfield",
+      "nameKey": "collectible_category.snowfield.name",
+      "order": 60,
+      "disabled": false
+    },
+    {
+      "id": "shadow",
+      "nameKey": "collectible_category.shadow.name",
+      "order": 70,
+      "disabled": false
+    },
+    {
+      "id": "holy_temple",
+      "nameKey": "collectible_category.holy_temple.name",
+      "order": 80,
+      "disabled": false
+    },
+    {
+      "id": "special",
+      "nameKey": "collectible_category.special.name",
+      "order": 90,
+      "disabled": false
+    },
+    {
+      "id": "shadow_paw",
+      "nameKey": "collectible_category.shadow_paw.name",
+      "order": 85,
+      "disabled": false
+    },
+    {
+      "id": "meteor_corridor",
+      "nameKey": "collectible_category.meteor_corridor.name",
+      "order": 86,
+      "disabled": false
+    },
+    {
+      "id": "forbidden_library",
+      "nameKey": "collectible_category.forbidden_library.name",
+      "order": 87,
+      "disabled": false
+    },
+    {
+      "id": "amusement_park",
+      "nameKey": "collectible_category.amusement_park.name",
+      "order": 88,
+      "disabled": false
+    },
+    {
+      "id": "fishing",
+      "nameKey": "collectible_category.fishing.name",
+      "order": 89,
+      "disabled": false,
+      "names": {
+        "zh-CN": "钓鱼纪念",
+        "zh-TW": "釣魚紀念",
+        "en-US": "Fishing Mementos",
+        "ja": "釣りの記念品",
+        "ko": "낚시 기념품",
+        "ru": "Рыбацкие сувениры"
+      }
+    }
+  ]
+}

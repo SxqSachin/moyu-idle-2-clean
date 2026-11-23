@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "affix_enchant_rules": [
+    {
+      "id": "enchant.moon_essence",
+      "toolItemId": "moon_essence",
+      "consumeCount": 1,
+      "costs": {
+        "gold_coin": 10000
+      },
+      "failChance": 0,
+      "rarityWeights": {
+        "uncommon": 60,
+        "rare": 28,
+        "epic": 8,
+        "legendary": 4
+      },
+      "allowedAffixIds": [],
+      "allowedAffixScopes": [
+        {
+          "equipType": "battle",
+          "slots": [],
+          "weaponClasses": [],
+          "allowedAffixIds": [
+            "strength",
+            "dexterity",
+            "intelligence",
+            "perception",
+            "stamina",
+            "hp",
+            "hp_regen",
+            "mp",
+            "mp_regen",
+            "speed",
+            "physics_damage_amplification",
+            "physics_damage_resist",
+            "physics_flat_defense_penetration",
+            "physics_percent_defense_penetration",
+            "magical_damage_amplification",
+            "magical_damage_resist",
+            "magicial_flat_defense_penetration",
+            "magicial_percent_defense_penetration",
+            "physics_damage",
+            "physics_defence",
+            "magical_damage",
+            "magical_defence",
+            "crit_chance",
+            "crit_damage"
+          ]
+        },
+        {
+          "equipType": "battle",
+          "slots": [
+            "right_hand"
+          ],
+          "weaponClasses": [],
+          "allowedAffixIds": [
+            "physics_damage",
+            "magical_damage",
+            "strength",
+            "dexterity",
+            "intelligence",
+            "perception"
+          ]
+        },
+        {
+          "equipType": "battle",
+          "slots": [
+            "arm"
+          ],
+          "weaponClasses": [],
+          "allowedAffixIds": [
+            "physics_damage",
+            "crit_chance",
+            "crit_damage"
+          ]
+        },
+        {
+          "equipType": "battle",
+          "slots": [
+            "body"
+          ],
+          "weaponClasses": [],
+          "allowedAffixIds": [
+            "hp",
+            "stamina",
+            "physics_defence",
+            "magical_defence"
+          ]
+        },
+        {
+          "equipType": "battle",
+          "slots": [
+            "right_hand"
+          ],
+          "weaponClasses": [
+            "shield"
+          ],
+          "allowedAffixIds": [
+            "hp",
+            "hp_regen",
+            "physics_defence",
+            "magical_defence"
+          ]
+        },
+        {
+          "equipType": "work",
+          "slots": [],
+          "weaponClasses": [],
+          "allowedAffixIds": [
+            "farming_animal_speed_minor",
+            "mining_speed_minor",
+            "crafting_speed_minor",
+            "collecting_speed_minor",
+            "sewing_speed_minor",
+            "forging_speed_minor",
+            "enhancement_success_rate_minor"
+          ]
+        }
+      ],
+      "active": true,
+      "disabled": false
+    },
+    {
+      "id": "enchant.base4_shadow_ink",
+      "toolItemId": "base4_shadow_ink",
+      "consumeCount": 1,
+      "costs": {
+        "gold_coin": 18000
+      },
+      "failChance": 0,
+      "rarityWeights": {
+        "rare": 65,
+        "epic": 27,
+        "legendary": 8
+      },
+      "allowedAffixIds": [],
+      "allowedAffixScopes": [
+        {
+          "equipType": "battle",
+          "slots": [],
+          "weaponClasses": [],
+          "allowedAffixIds": [
+            "base4_affix_shadow_vigor",
+            "base4_affix_shadow_hunger",
+            "base4_affix_shadow_rush",
+            "base4_affix_shadow_rush_magic",
+            "base4_affix_shadow_pierce"
+          ]
+        }
+      ],
+      "active": true,
+      "disabled": false
+    }
+  ]
+}

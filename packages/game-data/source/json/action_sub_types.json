@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "action_sub_types": [
+    {
+      "id": "cooking_fish_feed",
+      "nameKey": "action_sub_type.cooking_fish_feed.name",
+      "descKey": "action_sub_type.cooking_fish_feed.desc",
+      "icon": "lucide:wheat",
+      "color": "#287d68",
+      "order": 18,
+      "actions": [
+        "cook_pond_feed_herbal",
+        "cook_pond_feed_insect",
+        "cook_pond_feed_protein",
+        "cook_pond_feed_arcane",
+        "cook_pond_feed_selective_herbal",
+        "cook_pond_feed_length_growth",
+        "cook_pond_feed_weight_growth",
+        "cook_pond_feed_health_recovery",
+        "cook_pond_feed_satiety_risk",
+        "cook_pond_feed_forced_growth",
+        "cook_pond_broodstock_mash",
+        "cook_pond_lineage_reagent"
+      ]
+    },
+    {
+      "id": "craft_fishing_tackle",
+      "nameKey": "action_sub_type.craft_fishing_tackle.name",
+      "descKey": "action_sub_type.craft_fishing_tackle.desc",
+      "icon": "game-icons:fishing-hook",
+      "color": "#2f7f83",
+      "order": 19,
+      "actions": [
+        "craft_basic_spinning_reel",
+        "craft_light_copper_reel",
+        "craft_sealed_drag_reel",
+        "craft_braided_main_line",
+        "craft_stretch_mono_line",
+        "craft_clear_leader",
+        "craft_wire_leader",
+        "craft_fine_fishing_hook",
+        "craft_barbless_hook",
+        "craft_reed_float",
+        "craft_slip_float",
+        "craft_river_sinker",
+        "craft_silver_shad_lure",
+        "craft_frost_jig",
+        "craft_earthworm_bait",
+        "craft_sweet_dough_bait",
+        "craft_starripple_bait"
+      ]
+    },
+    {
+      "id": "forge_fishing_rod",
+      "nameKey": "action_sub_type.forge_fishing_rod.name",
+      "descKey": "action_sub_type.forge_fishing_rod.desc",
+      "icon": "game-icons:fishing-pole",
+      "color": "#2f7f83",
+      "order": 19,
+      "actions": [
+        "craft_basic_fishing_rod",
+        "craft_silverleaf_float_rod",
+        "craft_silkwood_search_rod",
+        "craft_rimebone_deep_rod",
+        "craft_moonwood_precision_rod"
+      ]
+    },
+    {
+      "id": "fishing_trip",
+      "nameKey": "action_sub_type.fishing_trip.name",
+      "descKey": "action_sub_type.fishing_trip.desc",
+      "icon": "game-icons:fishing-hook",
+      "color": "#2f7f83",
+      "order": 20,
+      "actions": [
+        "fishing.trip"
+      ]
+    },
+    {
+      "id": "cooking_grilled_fish",
+      "nameKey": "game.fishCuisine.grilled_fish",
+      "descKey": "game.fishCuisine.grilled_fish",
+      "icon": "lucide:flame",
+      "color": "#b45309",
+      "order": 16,
+      "actions": [
+        "cook_mossfire_dual_fish_grill",
+        "cook_starlight_silverfish_grill",
+        "cook_steadyfin_grill",
+        "cook_frugal_river_grill",
+        "cook_harvest_river_grill",
+        "cook_reedbank_grill"
+      ]
+    },
+    {
+      "id": "cooking_fish_soup",
+      "nameKey": "game.fishCuisine.fish_soup",
+      "descKey": "game.fishCuisine.fish_soup",
+      "icon": "lucide:soup",
+      "color": "#287d68",
+      "order": 17,
+      "actions": [
+        "cook_mossfire_dual_fish_soup",
+        "cook_starlight_silverfish_soup",
+        "cook_steadyfin_soup",
+        "cook_frugal_river_soup",
+        "cook_harvest_river_soup",
+        "cook_reedbank_soup"
+      ]
+    }
+  ]
+}

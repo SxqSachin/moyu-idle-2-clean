@@ -1,0 +1,37 @@
+- generic [ref=f1e4]:
+  - banner [ref=f1e5]:
+    - button "菜单" [ref=f1e300] [cursor=pointer]
+    - generic [ref=f1e6]:
+      - button [ref=f1e8] [cursor=pointer]
+      - button "🌙" [ref=f1e13] [cursor=pointer]
+      - button "当 当前名字" [ref=f1e16] [cursor=pointer]:
+        - generic [ref=f1e17]: 当
+        - generic [ref=f1e18]: 当前名字
+  - main [ref=f1e184]:
+    - generic [ref=f1e189]:
+      - generic [ref=f1e191]:
+        - generic [ref=f1e192]: 玩家设置
+        - button "教程" [ref=f1e195] [cursor=pointer]
+      - generic [ref=f1e201]:
+        - tablist [ref=f1e205]:
+          - tab "修改用户名" [selected] [ref=f1e207]
+          - tab "修改密码" [ref=f1e208]
+          - tab "绑定邮箱" [ref=f1e209]
+          - tab "个性化" [ref=f1e210]
+        - tabpanel "修改用户名" [ref=f1e212]:
+          - generic [ref=f1e213]:
+            - generic [ref=f1e214]:
+              - generic [ref=f1e215]: 修改用户名
+              - textbox "修改用户名" [ref=f1e219]:
+                - /placeholder: 请输入新用户名
+                - text: 崭新名字
+            - generic [ref=f1e220]:
+              - paragraph [ref=f1e221]: 改名后，新用户名将用于后续登录和公开显示；当前用户名会成为公开曾用名。
+              - generic [ref=f1e222]:
+                - generic [ref=f1e223]: 本次改名消耗
+                - generic [ref=f1e226]:
+                  - img "调和核心" [ref=f1e227]
+                  - generic [ref=f1e228]: 调和核心
+                  - generic [ref=f1e229]: ": 1(3)"
+            - button "保存用户名" [active] [ref=f1e231] [cursor=pointer]
+  - button [ref=f1e234] [cursor=pointer]

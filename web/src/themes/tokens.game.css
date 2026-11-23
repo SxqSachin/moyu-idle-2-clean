@@ -1,0 +1,27 @@
+/* ── Game semantic tokens ──
+ * Theme-agnostic defaults. Skins (skins.css) may override hue values;
+ * brightness (.dark in style.css) overrides surface/bg values independently.
+ * Components consume these via var(--game-*), never hardcoded hex. */
+
+:root {
+  /* Economy & progression */
+  --game-gold: #d4a017;
+  --game-xp: #7c3aed;
+  --game-hp: #dc2626;
+
+  /* Outcome semantics (distinct from --app-primary for clarity) */
+  --game-success: #16a34a;
+  --game-danger: #dc2626;
+
+  /* Item rarity tiers — neutral defaults; skins may tint */
+  --game-rarity-common: #9ca3af;
+  --game-rarity-uncommon: #22c55e;
+  --game-rarity-rare: #3b82f6;
+  --game-rarity-epic: #a855f7;
+
+  /* Surface accent — subtle offset from --app-surface for section panels */
+  --game-section-bg: color-mix(in srgb, var(--app-surface-elevated) 60%, var(--app-bg));
+
+  /* Focus ring / active element glow */
+  --game-accent-glow: 0 0 0 2px color-mix(in srgb, var(--app-primary) 30%, transparent);
+}

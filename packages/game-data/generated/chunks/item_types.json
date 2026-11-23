@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "item_types": [
+    {
+      "id": "currency",
+      "nameKey": "item_type.currency.name",
+      "descKey": "item_type.currency.desc",
+      "sortOrder": 1,
+      "enabled": true,
+      "note": ""
+    },
+    {
+      "id": "material",
+      "nameKey": "item_type.material.name",
+      "descKey": "item_type.material.desc",
+      "sortOrder": 2,
+      "enabled": true,
+      "note": ""
+    },
+    {
+      "id": "equipment",
+      "nameKey": "item_type.equipment.name",
+      "descKey": "item_type.equipment.desc",
+      "sortOrder": 3,
+      "enabled": true,
+      "note": ""
+    },
+    {
+      "id": "special",
+      "nameKey": "item_type.special.name",
+      "descKey": "item_type.special.desc",
+      "sortOrder": 4,
+      "enabled": true,
+      "note": ""
+    },
+    {
+      "id": "loot",
+      "nameKey": "item_type.loot.name",
+      "descKey": "item_type.loot.desc",
+      "sortOrder": 6,
+      "enabled": true,
+      "note": ""
+    },
+    {
+      "id": "accessory",
+      "nameKey": "item_type.accessory.name",
+      "descKey": "item_type.accessory.desc",
+      "sortOrder": 8,
+      "enabled": true,
+      "note": ""
+    },
+    {
+      "id": "food",
+      "nameKey": "item_type.food.name",
+      "descKey": "item_type.food.desc",
+      "sortOrder": 5,
+      "enabled": true,
+      "note": "Edible consumables used before or during combat."
+    },
+    {
+      "id": "consumable",
+      "nameKey": "item_type.consumable.name",
+      "descKey": "item_type.consumable.desc",
+      "sortOrder": 6,
+      "enabled": true,
+      "note": "Non-edible combat consumables used during battle."
+    },
+    {
+      "id": "trigger_item",
+      "nameKey": "item_type.trigger_item.name",
+      "descKey": "item_type.trigger_item.desc",
+      "sortOrder": 20,
+      "enabled": true,
+      "note": "Passive trigger items carried into battle to spawn special enemies."
+    },
+    {
+      "id": "collectible",
+      "nameKey": "item_type.collectible.name",
+      "descKey": "item_type.collectible.desc",
+      "sortOrder": 21,
+      "enabled": true,
+      "note": "Collectible trophies that grant permanent attribute bonuses when added to collection."
+    },
+    {
+      "id": "fish",
+      "nameKey": "item_type.fish.name",
+      "descKey": "item_type.fish.desc",
+      "sortOrder": 22,
+      "enabled": true,
+      "note": "Individually tracked fish catches with species, size, condition, and capture data."
+    },
+    {
+      "id": "fishing_gear",
+      "nameKey": "item_type.fishing_gear.name",
+      "descKey": "item_type.fishing_gear.desc",
+      "sortOrder": 23,
+      "enabled": true,
+      "note": "Fishing rods, reels, lines, hooks, terminal tackle, lures, and bait."
+    },
+    {
+      "id": "skillbook",
+      "nameKey": "item_type.skillbook.name",
+      "descKey": "item_type.skillbook.desc"
+    }
+  ]
+}

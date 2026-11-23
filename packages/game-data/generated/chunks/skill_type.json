@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "skill_type": [
+    {
+      "id": "arcane",
+      "nameKey": "skill_type.arcane.name",
+      "descKey": "skill_type.arcane.desc",
+      "color": "#3b82f6",
+      "disabled": false
+    },
+    {
+      "id": "blade",
+      "nameKey": "skill_type.blade.name",
+      "descKey": "skill_type.blade.desc",
+      "color": "#ef4444",
+      "disabled": false
+    },
+    {
+      "id": "bow",
+      "nameKey": "skill_type.bow.name",
+      "descKey": "skill_type.bow.desc",
+      "color": "#22c55e",
+      "disabled": false
+    },
+    {
+      "id": "holy",
+      "nameKey": "skill_type.holy.name",
+      "descKey": "skill_type.holy.desc",
+      "color": "#a855f7",
+      "disabled": false
+    },
+    {
+      "id": "holy_cat",
+      "nameKey": "skill_type.holy_cat.name",
+      "descKey": "skill_type.holy_cat.desc",
+      "color": "#facc15",
+      "disabled": false
+    },
+    {
+      "id": "perception",
+      "nameKey": "skill_type.perception.name",
+      "descKey": "skill_type.perception.desc",
+      "color": "#8b5cf6",
+      "disabled": false
+    },
+    {
+      "id": "snowpact",
+      "nameKey": "skill_type.snowpact.name",
+      "descKey": "skill_type.snowpact.desc",
+      "color": "#7dd3fc",
+      "disabled": false
+    },
+    {
+      "id": "spear",
+      "nameKey": "skill_type.spear.name",
+      "descKey": "skill_type.spear.desc",
+      "color": "#f97316",
+      "disabled": false
+    },
+    {
+      "id": "tactical",
+      "nameKey": "skill_type.tactical.name",
+      "descKey": "skill_type.tactical.desc",
+      "color": "#14b8a6",
+      "disabled": false
+    }
+  ]
+}

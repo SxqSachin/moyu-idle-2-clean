@@ -1,0 +1,1 @@
+ALTER TABLE player_cat_village_tasks ADD COLUMN IF NOT EXISTS refreshed BOOLEAN NOT NULL DEFAULT FALSE;

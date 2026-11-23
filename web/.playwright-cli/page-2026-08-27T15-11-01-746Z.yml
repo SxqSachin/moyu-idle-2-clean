@@ -1,0 +1,6 @@
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]: 摸鱼放置
+    - heading "正在进入游戏" [level=1] [ref=e5]
+    - generic "application loading progress" [ref=e6]:
+      - paragraph [ref=e8]: 正在启动客户端

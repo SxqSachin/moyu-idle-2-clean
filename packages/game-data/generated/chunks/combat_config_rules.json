@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "combat_config_rules": [
+    {
+      "base_skill_slots": 3,
+      "int_per_extra_slot": 15,
+      "min_skill_slots": 2,
+      "max_skill_slots": 15
+    }
+  ]
+}

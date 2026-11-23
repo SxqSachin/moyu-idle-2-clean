@@ -1,0 +1,14 @@
+FROM golang:1.22-alpine AS builder
+WORKDIR /app
+COPY go.mod go.sum* ./
+RUN go mod download
+COPY . .
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o /battle-worker ./cmd/battle_worker
+
+FROM alpine:3.20
+WORKDIR /app
+RUN adduser -D -u 10001 appuser
+COPY --from=builder /battle-worker /usr/local/bin/battle-worker
+COPY schema ./schema
+USER appuser
+CMD ["battle-worker"]

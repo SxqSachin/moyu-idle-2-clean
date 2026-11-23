@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "kitty_journal_personality_grants": [
+    {
+      "id": "diary_working_skills",
+      "matchType": "category",
+      "matchValue": "diary.working",
+      "personalityIds": [
+        "ore_lover",
+        "deep_delver",
+        "forager",
+        "dew_chaser",
+        "barn_keeper",
+        "meticulous_crafter",
+        "furnace_friend",
+        "stitch_fixer",
+        "night_shift",
+        "fleetfoot",
+        "lazy_gourmet"
+      ],
+      "chance": 0.04,
+      "disabled": false
+    },
+    {
+      "id": "diary_idle_general",
+      "matchType": "category",
+      "matchValue": "diary.idle",
+      "personalityIds": [
+        "balanced",
+        "cowardly",
+        "vanguard_heart",
+        "muscle_brain",
+        "overthinker",
+        "keen_eyes",
+        "iron_hide",
+        "glass_paw",
+        "battle_dancer",
+        "lazy_gourmet",
+        "night_shift",
+        "fleetfoot",
+        "taunting_tail",
+        "smoke_tail",
+        "last_stand",
+        "formation_captain",
+        "sweeping_claws",
+        "precise_paws",
+        "spell_echo",
+        "marking_strike"
+      ],
+      "chance": 0.02,
+      "disabled": false
+    },
+    {
+      "id": "encounter_battle",
+      "matchType": "category",
+      "matchValue": "encounter",
+      "personalityIds": [
+        "taunting_tail",
+        "smoke_tail",
+        "last_stand",
+        "formation_captain",
+        "sweeping_claws",
+        "precise_paws",
+        "spell_echo",
+        "marking_strike",
+        "balanced",
+        "cowardly",
+        "vanguard_heart",
+        "muscle_brain",
+        "overthinker",
+        "keen_eyes",
+        "iron_hide",
+        "glass_paw",
+        "battle_dancer"
+      ],
+      "chance": 0.08,
+      "disabled": false
+    }
+  ]
+}

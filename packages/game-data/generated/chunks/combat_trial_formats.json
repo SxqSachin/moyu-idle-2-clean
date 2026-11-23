@@ -1,0 +1,584 @@
+{
+  "version": 1,
+  "combat_trial_formats": [
+    {
+      "id": "standard",
+      "schemaVersion": 2,
+      "rulesetVersion": "combat-trial-format-v2",
+      "balanceRevision": 4,
+      "nameKey": "game.combatTrial.formats.standard.name",
+      "shortDescKey": "game.combatTrial.formats.standard.shortDesc",
+      "descKey": "game.combatTrial.formats.standard.desc",
+      "icon": "lucide:target",
+      "sortOrder": 0,
+      "enabled": true,
+      "lineupRules": {
+        "positionPolicy": "shared"
+      },
+      "metricIds": [
+        "damage_total",
+        "damage_max_segment"
+      ],
+      "limits": [
+        {
+          "kind": "player_main_actions",
+          "value": 20
+        }
+      ],
+      "encounter": {
+        "kind": "unit_roster",
+        "units": [
+          {
+            "id": "front_dummy",
+            "kind": "training_target",
+            "nameKey": "game.combatTrial.dummies.vanguard",
+            "position": "vanguard",
+            "behavior": "passive",
+            "healthMode": "immutable_full",
+            "objectiveTarget": true,
+            "defenseSource": "combat_balance_defense_k",
+            "maxHp": 1000000000000,
+            "damageResist": 0.2,
+            "criticalDamageResist": 0.5
+          },
+          {
+            "id": "middle_dummy",
+            "kind": "training_target",
+            "nameKey": "game.combatTrial.dummies.midguard",
+            "position": "midguard",
+            "behavior": "passive",
+            "healthMode": "immutable_full",
+            "objectiveTarget": true,
+            "defenseSource": "combat_balance_defense_k",
+            "maxHp": 1000000000000,
+            "damageResist": 0.1,
+            "criticalDamageResist": 0.5
+          },
+          {
+            "id": "rear_dummy",
+            "kind": "training_target",
+            "nameKey": "game.combatTrial.dummies.rearguard",
+            "position": "rearguard",
+            "behavior": "passive",
+            "healthMode": "immutable_full",
+            "objectiveTarget": true,
+            "defenseSource": "combat_balance_defense_k",
+            "maxHp": 1000000000000,
+            "damageResist": 0,
+            "criticalDamageResist": 0.5
+          }
+        ]
+      },
+      "endConditions": [
+        {
+          "kind": "player_team_defeated",
+          "reason": "team_defeated",
+          "labelKey": "game.combatTrial.endReason.teamDefeated"
+        },
+        {
+          "kind": "player_main_actions_reached",
+          "reason": "action_budget_reached",
+          "labelKey": "game.combatTrial.endReason.actionBudgetReached"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "id": "gauntlet",
+      "schemaVersion": 2,
+      "rulesetVersion": "combat-trial-format-v2",
+      "balanceRevision": 4,
+      "nameKey": "game.combatTrial.formats.gauntlet.name",
+      "shortDescKey": "game.combatTrial.formats.gauntlet.shortDesc",
+      "descKey": "game.combatTrial.formats.gauntlet.desc",
+      "icon": "lucide:repeat-2",
+      "sortOrder": 10,
+      "enabled": true,
+      "lineupRules": {
+        "positionPolicy": "shared"
+      },
+      "metricIds": [
+        "waves_cleared",
+        "actions_to_victory"
+      ],
+      "limits": [
+        {
+          "kind": "player_main_actions",
+          "value": 400
+        }
+      ],
+      "encounter": {
+        "kind": "wave_roster",
+        "waves": [
+          {
+            "id": "meadow_patrol",
+            "nameKey": "game.combatTrial.formats.gauntlet.waves.meadowPatrol",
+            "enemyStatProfile": {
+              "difficultyLevel": 2,
+              "multiplier": 1.35,
+              "flatBonuses": {
+                "hp": 90,
+                "physics_defence": 13,
+                "magical_defence": 13,
+                "physics_damage": 15.6,
+                "magical_damage": 15.6
+              }
+            },
+            "units": [
+              {
+                "id": "gauntlet_slime",
+                "kind": "authored_enemy",
+                "enemyId": "slime_001",
+                "position": "vanguard",
+                "behavior": "active",
+                "healthMode": "normal",
+                "statOverrides": {
+                  "hp": 14000,
+                  "physics_damage": 450,
+                  "magical_damage": 500,
+                  "physics_defence": 35,
+                  "magical_defence": 45,
+                  "speed": 120,
+                  "crit_damage_resist": 0.15
+                },
+                "objectiveTarget": true
+              },
+              {
+                "id": "gauntlet_goblin",
+                "kind": "authored_enemy",
+                "enemyId": "goblin_001",
+                "position": "midguard",
+                "behavior": "active",
+                "healthMode": "normal",
+                "statOverrides": {
+                  "hp": 15000,
+                  "physics_damage": 650,
+                  "magical_damage": 300,
+                  "physics_defence": 45,
+                  "magical_defence": 35,
+                  "speed": 140,
+                  "crit_damage_resist": 0.15
+                },
+                "objectiveTarget": true
+              },
+              {
+                "id": "gauntlet_bat",
+                "kind": "authored_enemy",
+                "enemyId": "bat_001",
+                "position": "rearguard",
+                "behavior": "active",
+                "healthMode": "normal",
+                "statOverrides": {
+                  "hp": 12000,
+                  "physics_damage": 550,
+                  "magical_damage": 350,
+                  "physics_defence": 30,
+                  "magical_defence": 35,
+                  "speed": 220,
+                  "crit_damage_resist": 0.12
+                },
+                "objectiveTarget": true
+              }
+            ]
+          },
+          {
+            "id": "forest_hunt",
+            "nameKey": "game.combatTrial.formats.gauntlet.waves.forestHunt",
+            "enemyStatProfile": {
+              "difficultyLevel": 5,
+              "multiplier": 2.6,
+              "flatBonuses": {
+                "hp": 180,
+                "physics_defence": 22,
+                "magical_defence": 22,
+                "physics_damage": 26.4,
+                "magical_damage": 26.4
+              }
+            },
+            "units": [
+              {
+                "id": "gauntlet_wolf",
+                "kind": "authored_enemy",
+                "enemyId": "wolf_001",
+                "position": "vanguard",
+                "behavior": "active",
+                "healthMode": "normal",
+                "statOverrides": {
+                  "hp": 30000,
+                  "physics_damage": 1100,
+                  "magical_damage": 450,
+                  "physics_defence": 70,
+                  "magical_defence": 60,
+                  "speed": 320,
+                  "crit_damage_resist": 0.3
+                },
+                "objectiveTarget": true
+              },
+              {
+                "id": "gauntlet_mushroom",
+                "kind": "authored_enemy",
+                "enemyId": "mushroom_001",
+                "position": "midguard",
+                "behavior": "active",
+                "healthMode": "normal",
+                "statOverrides": {
+                  "hp": 34000,
+                  "physics_damage": 500,
+                  "magical_damage": 1600,
+                  "physics_defence": 60,
+                  "magical_defence": 100,
+                  "speed": 250,
+                  "crit_damage_resist": 0.35
+                },
+                "objectiveTarget": true
+              },
+              {
+                "id": "gauntlet_lizard",
+                "kind": "authored_enemy",
+                "enemyId": "lizard_001",
+                "position": "rearguard",
+                "behavior": "active",
+                "healthMode": "normal",
+                "statOverrides": {
+                  "hp": 40000,
+                  "physics_damage": 1600,
+                  "magical_damage": 500,
+                  "physics_defence": 110,
+                  "magical_defence": 80,
+                  "speed": 280,
+                  "crit_damage_resist": 0.4
+                },
+                "objectiveTarget": true
+              }
+            ]
+          },
+          {
+            "id": "snowfield_scouts",
+            "nameKey": "game.combatTrial.formats.gauntlet.waves.snowfieldScouts",
+            "enemyStatProfile": {
+              "difficultyLevel": 10,
+              "multiplier": 6,
+              "flatBonuses": {
+                "hp": 1550,
+                "physics_defence": 69,
+                "magical_defence": 69,
+                "physics_damage": 69,
+                "magical_damage": 69,
+                "physics_damage_resist": 0.118,
+                "magical_damage_resist": 0.118
+              }
+            },
+            "units": [
+              {
+                "id": "gauntlet_ice_slime",
+                "kind": "authored_enemy",
+                "enemyId": "ice_slime_001",
+                "position": "vanguard",
+                "behavior": "active",
+                "healthMode": "normal",
+                "statOverrides": {
+                  "hp": 90000,
+                  "physics_damage": 1000,
+                  "magical_damage": 2500,
+                  "physics_defence": 140,
+                  "magical_defence": 220,
+                  "speed": 550,
+                  "crit_damage_resist": 0.6
+                },
+                "objectiveTarget": true
+              },
+              {
+                "id": "gauntlet_snow_rabbit",
+                "kind": "authored_enemy",
+                "enemyId": "snow_rabbit_001",
+                "position": "midguard",
+                "behavior": "active",
+                "healthMode": "normal",
+                "statOverrides": {
+                  "hp": 70000,
+                  "physics_damage": 1800,
+                  "magical_damage": 800,
+                  "physics_defence": 105,
+                  "magical_defence": 125,
+                  "speed": 1000,
+                  "crit_damage_resist": 0.5
+                },
+                "objectiveTarget": true
+              },
+              {
+                "id": "gauntlet_ice_bat",
+                "kind": "authored_enemy",
+                "enemyId": "ice_bat_001",
+                "position": "rearguard",
+                "behavior": "active",
+                "healthMode": "normal",
+                "statOverrides": {
+                  "hp": 65000,
+                  "physics_damage": 2100,
+                  "magical_damage": 700,
+                  "physics_defence": 95,
+                  "magical_defence": 115,
+                  "speed": 1100,
+                  "crit_damage_resist": 0.5
+                },
+                "objectiveTarget": true
+              }
+            ]
+          },
+          {
+            "id": "blizzard_line",
+            "nameKey": "game.combatTrial.formats.gauntlet.waves.blizzardLine",
+            "enemyStatProfile": {
+              "difficultyLevel": 15,
+              "multiplier": 12.25,
+              "flatBonuses": {
+                "hp": 2300,
+                "physics_defence": 99,
+                "magical_defence": 99,
+                "physics_damage": 99,
+                "magical_damage": 99,
+                "physics_damage_resist": 0.128,
+                "magical_damage_resist": 0.128
+              }
+            },
+            "units": [
+              {
+                "id": "gauntlet_frost_goblin",
+                "kind": "authored_enemy",
+                "enemyId": "frost_goblin_001",
+                "position": "vanguard",
+                "behavior": "active",
+                "healthMode": "normal",
+                "statOverrides": {
+                  "hp": 180000,
+                  "physics_damage": 5200,
+                  "magical_damage": 1200,
+                  "physics_defence": 260,
+                  "magical_defence": 210,
+                  "speed": 900,
+                  "crit_damage_resist": 0.7
+                },
+                "objectiveTarget": true
+              },
+              {
+                "id": "gauntlet_snow_wolf",
+                "kind": "authored_enemy",
+                "enemyId": "snow_wolf_001",
+                "position": "midguard",
+                "behavior": "active",
+                "healthMode": "normal",
+                "statOverrides": {
+                  "hp": 190000,
+                  "physics_damage": 4400,
+                  "magical_damage": 900,
+                  "physics_defence": 220,
+                  "magical_defence": 190,
+                  "speed": 1450,
+                  "crit_damage_resist": 0.65
+                },
+                "objectiveTarget": true
+              },
+              {
+                "id": "gauntlet_frost_spirit",
+                "kind": "authored_enemy",
+                "enemyId": "frost_spirit_001",
+                "position": "rearguard",
+                "behavior": "active",
+                "healthMode": "normal",
+                "statOverrides": {
+                  "hp": 200000,
+                  "physics_damage": 900,
+                  "magical_damage": 6500,
+                  "physics_defence": 180,
+                  "magical_defence": 320,
+                  "speed": 1100,
+                  "crit_damage_resist": 0.7
+                },
+                "objectiveTarget": true
+              }
+            ]
+          },
+          {
+            "id": "snowfield_crown",
+            "nameKey": "game.combatTrial.formats.gauntlet.waves.snowfieldCrown",
+            "enemyStatProfile": {
+              "difficultyLevel": 20,
+              "multiplier": 21,
+              "flatBonuses": {
+                "hp": 3050,
+                "physics_defence": 129,
+                "magical_defence": 129,
+                "physics_damage": 129,
+                "magical_damage": 129,
+                "physics_damage_resist": 0.138,
+                "magical_damage_resist": 0.138
+              }
+            },
+            "units": [
+              {
+                "id": "gauntlet_snowfield_lord",
+                "kind": "authored_enemy",
+                "enemyId": "snowfield_boss_001",
+                "position": "vanguard",
+                "behavior": "active",
+                "healthMode": "normal",
+                "statOverrides": {
+                  "hp": 350000,
+                  "physics_damage": 9000,
+                  "magical_damage": 3000,
+                  "physics_defence": 400,
+                  "magical_defence": 300,
+                  "speed": 1600,
+                  "crit_damage_resist": 0.8
+                },
+                "objectiveTarget": true
+              },
+              {
+                "id": "gauntlet_snowfield_witch",
+                "kind": "authored_enemy",
+                "enemyId": "snowfield_boss_002",
+                "position": "rearguard",
+                "behavior": "active",
+                "healthMode": "normal",
+                "statOverrides": {
+                  "hp": 500000,
+                  "physics_damage": 3000,
+                  "magical_damage": 12000,
+                  "physics_defence": 300,
+                  "magical_defence": 500,
+                  "speed": 2000,
+                  "crit_damage_resist": 0.8
+                },
+                "objectiveTarget": true
+              }
+            ]
+          }
+        ]
+      },
+      "endConditions": [
+        {
+          "kind": "player_team_defeated",
+          "reason": "team_defeated",
+          "labelKey": "game.combatTrial.endReason.teamDefeated"
+        },
+        {
+          "kind": "encounter_completed",
+          "reason": "all_waves_cleared",
+          "labelKey": "game.combatTrial.endReason.allWavesCleared"
+        },
+        {
+          "kind": "player_main_actions_reached",
+          "reason": "action_budget_reached",
+          "labelKey": "game.combatTrial.endReason.actionBudgetReached"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "id": "recovery",
+      "schemaVersion": 2,
+      "rulesetVersion": "combat-trial-format-v2",
+      "balanceRevision": 2,
+      "nameKey": "game.combatTrial.formats.recovery.name",
+      "shortDescKey": "game.combatTrial.formats.recovery.shortDesc",
+      "descKey": "game.combatTrial.formats.recovery.desc",
+      "icon": "lucide:heart-pulse",
+      "sortOrder": 20,
+      "enabled": true,
+      "lineupRules": {
+        "positionPolicy": "shared"
+      },
+      "metricIds": [
+        "effective_healing",
+        "objective_remaining_hp"
+      ],
+      "limits": [
+        {
+          "kind": "player_main_actions",
+          "value": 20
+        }
+      ],
+      "encounter": {
+        "kind": "unit_roster",
+        "units": [
+          {
+            "id": "wounded_patient",
+            "kind": "scripted_ally",
+            "nameKey": "game.combatTrial.objectives.woundedPatient",
+            "side": "player",
+            "position": "midguard",
+            "behavior": "passive",
+            "healthMode": "normal",
+            "objectiveTarget": true,
+            "initialHpRatio": 0.5,
+            "skipTurnOrder": true,
+            "initialBuffs": [
+              {
+                "buffId": "combat_trial_patient_deterioration",
+                "payload": {
+                  "max_hp_loss_ratio": 0.05
+                }
+              }
+            ],
+            "defenseSource": "combat_balance_defense_k",
+            "maxHp": 100000000,
+            "damageResist": 0,
+            "criticalDamageResist": 0.5
+          },
+          {
+            "id": "recovery_clock_vanguard",
+            "kind": "training_target",
+            "nameKey": "game.combatTrial.objectives.recoveryClockVanguard",
+            "position": "vanguard",
+            "behavior": "passive",
+            "healthMode": "immutable_full",
+            "objectiveTarget": false,
+            "defenseSource": "combat_balance_defense_k",
+            "maxHp": 1000000000000,
+            "damageResist": 0.9,
+            "criticalDamageResist": 0.5
+          },
+          {
+            "id": "recovery_clock_midguard",
+            "kind": "training_target",
+            "nameKey": "game.combatTrial.objectives.recoveryClockMidguard",
+            "position": "midguard",
+            "behavior": "passive",
+            "healthMode": "immutable_full",
+            "objectiveTarget": false,
+            "defenseSource": "combat_balance_defense_k",
+            "maxHp": 1000000000000,
+            "damageResist": 0.9,
+            "criticalDamageResist": 0.5
+          },
+          {
+            "id": "recovery_clock_rearguard",
+            "kind": "training_target",
+            "nameKey": "game.combatTrial.objectives.recoveryClockRearguard",
+            "position": "rearguard",
+            "behavior": "passive",
+            "healthMode": "immutable_full",
+            "objectiveTarget": false,
+            "defenseSource": "combat_balance_defense_k",
+            "maxHp": 1000000000000,
+            "damageResist": 0.9,
+            "criticalDamageResist": 0.5
+          }
+        ]
+      },
+      "endConditions": [
+        {
+          "kind": "player_team_defeated",
+          "reason": "team_defeated",
+          "labelKey": "game.combatTrial.endReason.teamDefeated"
+        },
+        {
+          "kind": "player_main_actions_reached",
+          "reason": "action_budget_reached",
+          "labelKey": "game.combatTrial.endReason.actionBudgetReached"
+        }
+      ],
+      "triggers": []
+    }
+  ]
+}

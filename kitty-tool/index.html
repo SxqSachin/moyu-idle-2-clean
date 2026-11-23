@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>猫咪配置工具</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <div>
+          <h1>猫咪配置工具</h1>
+          <p>编辑 <code>kitty-config.json</code>、委托、随记奖励池和 i18n patch。</p>
+        </div>
+        <div class="hero-actions">
+          <button id="copy-config-btn" class="primary">复制 kitty-config.json</button>
+          <button id="copy-i18n-btn">复制 i18n patch</button>
+        </div>
+      </header>
+
+      <section class="panel toolbar">
+        <button id="import-config-btn">导入配置</button>
+        <button id="format-btn">格式化 JSON</button>
+        <button id="reset-btn">重置示例</button>
+        <span id="status" class="status">准备就绪</span>
+      </section>
+
+      <section class="panel editor-grid">
+        <aside class="tabs">
+          <button class="active" data-tab="leveling">等级</button>
+          <button data-tab="commissions">委托</button>
+          <button data-tab="commissionPools">发布池</button>
+          <button data-tab="journalRewards">随记奖励</button>
+          <button data-tab="rewardPools">奖励池</button>
+          <button data-tab="i18n">i18n</button>
+          <button data-tab="raw">原始 JSON</button>
+        </aside>
+        <section id="content" class="content"></section>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

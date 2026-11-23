@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Affix 工具</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <h1>Affix 工具</h1>
+        <div class="hero-actions">
+          <button id="copy-tsv-btn" class="primary">复制 affix_definitions TSV</button>
+          <button id="copy-effect-params-btn">复制当前行 effectParams JSON</button>
+          <button id="copy-examples-btn">复制文档示例 JSON</button>
+        </div>
+      </header>
+
+      <section class="panel toolbar">
+        <button id="add-row-btn">新增一行</button>
+        <button id="reset-btn">重置示例</button>
+        <span id="status" class="status">准备就绪</span>
+      </section>
+
+      <section class="panel table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>词条ID</th>
+              <th>效果类型</th>
+              <th>可用稀有度</th>
+              <th>数值精度</th>
+              <th>启用</th>
+              <th>效果参数</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <div id="editor-modal" class="modal hidden" aria-hidden="true">
+      <div class="modal-backdrop" data-action="close"></div>
+      <div class="modal-panel">
+        <header class="modal-header">
+          <h2 id="editor-title">effectParams 可视化编辑</h2>
+          <button class="icon-btn" data-action="close">✕</button>
+        </header>
+        <div id="editor-body" class="modal-body"></div>
+        <footer class="modal-footer">
+          <button data-action="close">取消</button>
+          <button id="save-editor-btn" class="primary">保存</button>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./affix-editor.js"></script>
+  </body>
+</html>

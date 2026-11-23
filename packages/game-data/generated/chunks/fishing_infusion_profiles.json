@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "fishing_infusion_profiles": [
+    {
+      "speciesId": "common_carp",
+      "traitKind": "combat",
+      "attrKey": "physics_damage",
+      "unitScale": 1
+    },
+    {
+      "speciesId": "grass_carp",
+      "traitKind": "combat",
+      "attrKey": "hp",
+      "unitScale": 4
+    },
+    {
+      "speciesId": "snakehead",
+      "traitKind": "combat",
+      "attrKey": "physics_flat_defense_penetration",
+      "unitScale": 0.5
+    },
+    {
+      "speciesId": "emberfin",
+      "traitKind": "combat",
+      "attrKey": "magical_damage",
+      "unitScale": 1
+    },
+    {
+      "speciesId": "brown_trout",
+      "traitKind": "combat",
+      "attrKey": "speed",
+      "unitScale": 0.00004
+    },
+    {
+      "speciesId": "barbel",
+      "traitKind": "combat",
+      "attrKey": "physics_defence",
+      "unitScale": 0.8
+    },
+    {
+      "speciesId": "freshwater_perch",
+      "traitKind": "combat",
+      "attrKey": "crit_chance",
+      "unitScale": 0.00005
+    },
+    {
+      "speciesId": "river_eel",
+      "traitKind": "combat",
+      "attrKey": "magic_crit_chance",
+      "unitScale": 0.00005
+    },
+    {
+      "speciesId": "thunder_whisker",
+      "traitKind": "combat",
+      "attrKey": "crit_damage",
+      "unitScale": 0.00008
+    },
+    {
+      "speciesId": "lake_trout",
+      "traitKind": "combat",
+      "attrKey": "magical_defence",
+      "unitScale": 0.8
+    },
+    {
+      "speciesId": "northern_pike",
+      "traitKind": "combat",
+      "attrKey": "physics_damage_amplification",
+      "unitScale": 0.00005
+    },
+    {
+      "speciesId": "frostveil_sturgeon",
+      "traitKind": "combat",
+      "attrKey": "magical_damage_resist",
+      "unitScale": 0.00005
+    },
+    {
+      "speciesId": "crucian_carp",
+      "traitKind": "life",
+      "attrKey": "collecting_speed",
+      "unitScale": 0.00008
+    },
+    {
+      "speciesId": "bluegill",
+      "traitKind": "life",
+      "attrKey": "crafting_speed",
+      "unitScale": 0.00008
+    },
+    {
+      "speciesId": "mud_loach",
+      "traitKind": "life",
+      "attrKey": "mining_speed",
+      "unitScale": 0.00008
+    },
+    {
+      "speciesId": "lotus_koi",
+      "traitKind": "life",
+      "attrKey": "alchemy_efficiency",
+      "unitScale": 0.00008
+    },
+    {
+      "speciesId": "chub",
+      "traitKind": "life",
+      "attrKey": "farming_animal_speed",
+      "unitScale": 0.00008
+    },
+    {
+      "speciesId": "dace",
+      "traitKind": "life",
+      "attrKey": "sewing_speed",
+      "unitScale": 0.00008
+    },
+    {
+      "speciesId": "glassback_darter",
+      "traitKind": "life",
+      "attrKey": "forging_speed",
+      "unitScale": 0.00008
+    },
+    {
+      "speciesId": "arctic_char",
+      "traitKind": "life",
+      "attrKey": "cooking_speed",
+      "unitScale": 0.00008
+    },
+    {
+      "speciesId": "burbot",
+      "traitKind": "life",
+      "attrKey": "fishing_efficiency",
+      "unitScale": 0.00008
+    },
+    {
+      "speciesId": "whitefish",
+      "traitKind": "life",
+      "attrKey": "fishing_control",
+      "unitScale": 0.01
+    },
+    {
+      "speciesId": "grayling",
+      "traitKind": "life",
+      "attrKey": "fishing_sensitivity",
+      "unitScale": 0.01
+    },
+    {
+      "speciesId": "moonmirror_carp",
+      "traitKind": "life",
+      "attrKey": "fishing_power",
+      "unitScale": 0.0001
+    }
+  ]
+}

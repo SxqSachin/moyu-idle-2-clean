@@ -1,0 +1,709 @@
+{
+  "version": 1,
+  "title_prefixes": [
+    {
+      "id": "angry",
+      "nameKey": "title_prefix.angry.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 1,
+      "disabled": false
+    },
+    {
+      "id": "sleepy",
+      "nameKey": "title_prefix.sleepy.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 2,
+      "disabled": false
+    },
+    {
+      "id": "brave",
+      "nameKey": "title_prefix.brave.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 3,
+      "disabled": false
+    },
+    {
+      "id": "holy",
+      "nameKey": "title_prefix.holy.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 4,
+      "disabled": false
+    },
+    {
+      "id": "gentle",
+      "nameKey": "title_prefix.gentle.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 5,
+      "disabled": false
+    },
+    {
+      "id": "swift",
+      "nameKey": "title_prefix.swift.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 6,
+      "disabled": false
+    },
+    {
+      "id": "mysterious",
+      "nameKey": "title_prefix.mysterious.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 7,
+      "disabled": false
+    },
+    {
+      "id": "cold",
+      "nameKey": "title_prefix.cold.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 8,
+      "disabled": false
+    },
+    {
+      "id": "wise",
+      "nameKey": "title_prefix.wise.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 9,
+      "disabled": false
+    },
+    {
+      "id": "slacking",
+      "nameKey": "title_prefix.slacking.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 10,
+      "disabled": false
+    },
+    {
+      "id": "fishing",
+      "nameKey": "title_prefix.fishing.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 11,
+      "disabled": false
+    },
+    {
+      "id": "eating",
+      "nameKey": "title_prefix.eating.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 12,
+      "disabled": false
+    },
+    {
+      "id": "rotten",
+      "nameKey": "title_prefix.rotten.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 13,
+      "disabled": false
+    },
+    {
+      "id": "bald",
+      "nameKey": "title_prefix.bald.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 14,
+      "disabled": false
+    },
+    {
+      "id": "shadow",
+      "nameKey": "title_prefix.shadow.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 15,
+      "disabled": false
+    },
+    {
+      "id": "flame",
+      "nameKey": "title_prefix.flame.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 16,
+      "disabled": false
+    },
+    {
+      "id": "thunder",
+      "nameKey": "title_prefix.thunder.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 17,
+      "disabled": false
+    },
+    {
+      "id": "immortal",
+      "nameKey": "title_prefix.immortal.name",
+      "rarity": "legendary",
+      "category": "special",
+      "order": 18,
+      "disabled": false
+    },
+    {
+      "id": "chaotic",
+      "nameKey": "title_prefix.chaotic.name",
+      "rarity": "legendary",
+      "category": "special",
+      "order": 19,
+      "disabled": false
+    },
+    {
+      "id": "super_invincible",
+      "nameKey": "title_prefix.super_invincible.name",
+      "rarity": "legendary",
+      "category": "special",
+      "order": 20,
+      "disabled": false
+    },
+    {
+      "id": "mentally_stable",
+      "nameKey": "title_prefix.mentally_stable.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 21,
+      "disabled": false
+    },
+    {
+      "id": "zen_master",
+      "nameKey": "title_prefix.zen_master.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 22,
+      "disabled": false
+    },
+    {
+      "id": "grind_king",
+      "nameKey": "title_prefix.grind_king.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 23,
+      "disabled": false
+    },
+    {
+      "id": "social_phobia",
+      "nameKey": "title_prefix.social_phobia.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 24,
+      "disabled": false
+    },
+    {
+      "id": "read_no_reply",
+      "nameKey": "title_prefix.read_no_reply.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 25,
+      "disabled": false
+    },
+    {
+      "id": "next_time_sure",
+      "nameKey": "title_prefix.next_time_sure.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 26,
+      "disabled": false
+    },
+    {
+      "id": "far_ahead",
+      "nameKey": "title_prefix.far_ahead.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 27,
+      "disabled": false
+    },
+    {
+      "id": "want_it_all",
+      "nameKey": "title_prefix.want_it_all.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 28,
+      "disabled": false
+    },
+    {
+      "id": "good_at_nothing",
+      "nameKey": "title_prefix.good_at_nothing.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 29,
+      "disabled": false
+    },
+    {
+      "id": "cat_slave",
+      "nameKey": "title_prefix.cat_slave.name",
+      "rarity": "uncommon",
+      "category": "special",
+      "order": 30,
+      "disabled": false
+    },
+    {
+      "id": "grind_emperor",
+      "nameKey": "title_prefix.grind_emperor.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 31,
+      "disabled": false
+    },
+    {
+      "id": "arcane",
+      "nameKey": "title_prefix.arcane.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 32,
+      "disabled": false
+    },
+    {
+      "id": "errand",
+      "nameKey": "title_prefix.errand.name",
+      "rarity": "uncommon",
+      "category": "special",
+      "order": 33,
+      "disabled": false
+    },
+    {
+      "id": "slayer",
+      "nameKey": "title_prefix.slayer.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 34,
+      "disabled": false
+    },
+    {
+      "id": "crystal_tears",
+      "nameKey": "title_prefix.crystal_tears.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 100,
+      "disabled": false
+    },
+    {
+      "id": "cloud_weaver",
+      "nameKey": "title_prefix.cloud_weaver.name",
+      "rarity": "uncommon",
+      "category": "special",
+      "order": 101,
+      "disabled": false
+    },
+    {
+      "id": "flaxen",
+      "nameKey": "title_prefix.flaxen.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 102,
+      "disabled": false
+    },
+    {
+      "id": "golden_thread",
+      "nameKey": "title_prefix.golden_thread.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 103,
+      "disabled": false
+    },
+    {
+      "id": "gilded_harvest",
+      "nameKey": "title_prefix.gilded_harvest.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 104,
+      "disabled": false
+    },
+    {
+      "id": "moon_tears",
+      "nameKey": "title_prefix.moon_tears.name",
+      "rarity": "legendary",
+      "category": "special",
+      "order": 105,
+      "disabled": false
+    },
+    {
+      "id": "lunar_drop",
+      "nameKey": "title_prefix.lunar_drop.name",
+      "rarity": "legendary",
+      "category": "special",
+      "order": 106,
+      "disabled": false
+    },
+    {
+      "id": "moon_weaver",
+      "nameKey": "title_prefix.moon_weaver.name",
+      "rarity": "legendary",
+      "category": "special",
+      "order": 107,
+      "disabled": false
+    },
+    {
+      "id": "moonlit",
+      "nameKey": "title_prefix.moonlit.name",
+      "rarity": "legendary",
+      "category": "special",
+      "order": 108,
+      "disabled": false
+    },
+    {
+      "id": "dawn_kissed",
+      "nameKey": "title_prefix.dawn_kissed.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 109,
+      "disabled": false
+    },
+    {
+      "id": "silk_spider",
+      "nameKey": "title_prefix.silk_spider.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 110,
+      "disabled": false
+    },
+    {
+      "id": "honey_drip",
+      "nameKey": "title_prefix.honey_drip.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 111,
+      "disabled": false
+    },
+    {
+      "id": "silk_bark",
+      "nameKey": "title_prefix.silk_bark.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 112,
+      "disabled": false
+    },
+    {
+      "id": "silver_dew",
+      "nameKey": "title_prefix.silver_dew.name",
+      "rarity": "uncommon",
+      "category": "special",
+      "order": 113,
+      "disabled": false
+    },
+    {
+      "id": "silver_thread",
+      "nameKey": "title_prefix.silver_thread.name",
+      "rarity": "uncommon",
+      "category": "special",
+      "order": 114,
+      "disabled": false
+    },
+    {
+      "id": "silver_resin",
+      "nameKey": "title_prefix.silver_resin.name",
+      "rarity": "uncommon",
+      "category": "special",
+      "order": 115,
+      "disabled": false
+    },
+    {
+      "id": "silver_leaf",
+      "nameKey": "title_prefix.silver_leaf.name",
+      "rarity": "uncommon",
+      "category": "special",
+      "order": 116,
+      "disabled": false
+    },
+    {
+      "id": "amber_tears",
+      "nameKey": "title_prefix.amber_tears.name",
+      "rarity": "uncommon",
+      "category": "special",
+      "order": 117,
+      "disabled": false
+    },
+    {
+      "id": "oak_heart",
+      "nameKey": "title_prefix.oak_heart.name",
+      "rarity": "uncommon",
+      "category": "special",
+      "order": 118,
+      "disabled": false
+    },
+    {
+      "id": "sun_kissed",
+      "nameKey": "title_prefix.sun_kissed.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 119,
+      "disabled": false
+    },
+    {
+      "id": "sunlit",
+      "nameKey": "title_prefix.sunlit.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 120,
+      "disabled": false
+    },
+    {
+      "id": "sweet_tooth",
+      "nameKey": "title_prefix.sweet_tooth.name",
+      "rarity": "uncommon",
+      "category": "special",
+      "order": 121,
+      "disabled": false
+    },
+    {
+      "id": "tree_hugger",
+      "nameKey": "title_prefix.tree_hugger.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 122,
+      "disabled": false
+    },
+    {
+      "id": "golden_grain",
+      "nameKey": "title_prefix.golden_grain.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 123,
+      "disabled": false
+    },
+    {
+      "id": "moon_shaped",
+      "nameKey": "title_prefix.moon_shaped.name",
+      "rarity": "legendary",
+      "category": "special",
+      "order": 124,
+      "disabled": false
+    },
+    {
+      "id": "silk_form",
+      "nameKey": "title_prefix.silk_form.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 125,
+      "disabled": false
+    },
+    {
+      "id": "silver_mold",
+      "nameKey": "title_prefix.silver_mold.name",
+      "rarity": "uncommon",
+      "category": "special",
+      "order": 126,
+      "disabled": false
+    },
+    {
+      "id": "ironwood",
+      "nameKey": "title_prefix.ironwood.name",
+      "rarity": "uncommon",
+      "category": "special",
+      "order": 127,
+      "disabled": false
+    },
+    {
+      "id": "blank_canvas",
+      "nameKey": "title_prefix.blank_canvas.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 128,
+      "disabled": false
+    },
+    {
+      "id": "cluck_caller",
+      "nameKey": "title_prefix.cluck_caller.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 129,
+      "disabled": false
+    },
+    {
+      "id": "moo_master",
+      "nameKey": "title_prefix.moo_master.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 130,
+      "disabled": false
+    },
+    {
+      "id": "wool_whisperer",
+      "nameKey": "title_prefix.wool_whisperer.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 131,
+      "disabled": false
+    },
+    {
+      "id": "shadow_forger",
+      "nameKey": "title_prefix.shadow_forger.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 132,
+      "disabled": false
+    },
+    {
+      "id": "copper_smith",
+      "nameKey": "title_prefix.copper_smith.name",
+      "rarity": "uncommon",
+      "category": "special",
+      "order": 133,
+      "disabled": false
+    },
+    {
+      "id": "crystal_forge",
+      "nameKey": "title_prefix.crystal_forge.name",
+      "rarity": "legendary",
+      "category": "special",
+      "order": 134,
+      "disabled": false
+    },
+    {
+      "id": "aurum",
+      "nameKey": "title_prefix.aurum.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 135,
+      "disabled": false
+    },
+    {
+      "id": "iron_will",
+      "nameKey": "title_prefix.iron_will.name",
+      "rarity": "uncommon",
+      "category": "special",
+      "order": 136,
+      "disabled": false
+    },
+    {
+      "id": "silver_hammer",
+      "nameKey": "title_prefix.silver_hammer.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 137,
+      "disabled": false
+    },
+    {
+      "id": "lumberjack",
+      "nameKey": "title_prefix.lumberjack.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 138,
+      "disabled": false
+    },
+    {
+      "id": "black_lung",
+      "nameKey": "title_prefix.black_lung.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 139,
+      "disabled": false
+    },
+    {
+      "id": "ore_finder",
+      "nameKey": "title_prefix.ore_finder.name",
+      "rarity": "uncommon",
+      "category": "special",
+      "order": 140,
+      "disabled": false
+    },
+    {
+      "id": "crystal_cave",
+      "nameKey": "title_prefix.crystal_cave.name",
+      "rarity": "legendary",
+      "category": "special",
+      "order": 141,
+      "disabled": false
+    },
+    {
+      "id": "gold_rush",
+      "nameKey": "title_prefix.gold_rush.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 142,
+      "disabled": false
+    },
+    {
+      "id": "iron_heart",
+      "nameKey": "title_prefix.iron_heart.name",
+      "rarity": "uncommon",
+      "category": "special",
+      "order": 143,
+      "disabled": false
+    },
+    {
+      "id": "deep_silver",
+      "nameKey": "title_prefix.deep_silver.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 144,
+      "disabled": false
+    },
+    {
+      "id": "stone_breaker",
+      "nameKey": "title_prefix.stone_breaker.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 145,
+      "disabled": false
+    },
+    {
+      "id": "rough_spinner",
+      "nameKey": "title_prefix.rough_spinner.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 146,
+      "disabled": false
+    },
+    {
+      "id": "golden_stitch",
+      "nameKey": "title_prefix.golden_stitch.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 147,
+      "disabled": false
+    },
+    {
+      "id": "holy_thread",
+      "nameKey": "title_prefix.holy_thread.name",
+      "rarity": "common",
+      "category": "special",
+      "order": 148,
+      "disabled": false
+    },
+    {
+      "id": "moonlit_seam",
+      "nameKey": "title_prefix.moonlit_seam.name",
+      "rarity": "legendary",
+      "category": "special",
+      "order": 149,
+      "disabled": false
+    },
+    {
+      "id": "silver_needle",
+      "nameKey": "title_prefix.silver_needle.name",
+      "rarity": "uncommon",
+      "category": "special",
+      "order": 150,
+      "disabled": false
+    },
+    {
+      "id": "soft_paws",
+      "nameKey": "title_prefix.soft_paws.name",
+      "rarity": "uncommon",
+      "category": "special",
+      "order": 151,
+      "disabled": false
+    },
+    {
+      "id": "wisp_weaver",
+      "nameKey": "title_prefix.wisp_weaver.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 152,
+      "disabled": false
+    },
+    {
+      "id": "fishing_champion",
+      "nameKey": "title_prefix.fishing_champion.name",
+      "rarity": "legendary",
+      "category": "special",
+      "order": 153,
+      "disabled": false
+    }
+  ]
+}

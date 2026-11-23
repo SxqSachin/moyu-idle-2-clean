@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "action_main_types": [
+    { "id": "fishing", "nameKey": "action_main_type.fishing.name", "descKey": "action_main_type.fishing.desc", "icon": "game-icons:fishing-hook", "color": "#2f7f83", "order": 2, "actions": ["fishing.trip"] }
+  ]
+}

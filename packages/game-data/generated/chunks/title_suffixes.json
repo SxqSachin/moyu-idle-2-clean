@@ -1,0 +1,893 @@
+{
+  "version": 1,
+  "title_suffixes": [
+    {
+      "id": "cat_lord",
+      "nameKey": "title_suffix.cat_lord.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 10,
+      "disabled": false
+    },
+    {
+      "id": "berry_bird_001",
+      "nameKey": "enemy.berry_bird_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 20,
+      "disabled": false
+    },
+    {
+      "id": "mushroom_bug_001",
+      "nameKey": "enemy.mushroom_bug_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 30,
+      "disabled": false
+    },
+    {
+      "id": "plain_mouse_001",
+      "nameKey": "enemy.plain_mouse_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 40,
+      "disabled": false
+    },
+    {
+      "id": "lazy_rabbit_001",
+      "nameKey": "enemy.lazy_rabbit_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 50,
+      "disabled": false
+    },
+    {
+      "id": "snail_001",
+      "nameKey": "enemy.snail_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 60,
+      "disabled": false
+    },
+    {
+      "id": "catnip_kitten_001",
+      "nameKey": "enemy.catnip_kitten_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 70,
+      "disabled": false
+    },
+    {
+      "id": "plain_boss_001",
+      "nameKey": "enemy.plain_boss_001.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 80,
+      "disabled": false
+    },
+    {
+      "id": "forest_healer_001",
+      "nameKey": "enemy.forest_healer_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 90,
+      "disabled": false
+    },
+    {
+      "id": "slime_001",
+      "nameKey": "enemy.slime_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 100,
+      "disabled": false
+    },
+    {
+      "id": "slime_002",
+      "nameKey": "enemy.slime_002.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 110,
+      "disabled": false
+    },
+    {
+      "id": "goblin_001",
+      "nameKey": "enemy.goblin_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 120,
+      "disabled": false
+    },
+    {
+      "id": "goblin_002",
+      "nameKey": "enemy.goblin_002.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 130,
+      "disabled": false
+    },
+    {
+      "id": "bat_001",
+      "nameKey": "enemy.bat_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 140,
+      "disabled": false
+    },
+    {
+      "id": "wolf_001",
+      "nameKey": "enemy.wolf_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 150,
+      "disabled": false
+    },
+    {
+      "id": "skeleton_001",
+      "nameKey": "enemy.skeleton_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 160,
+      "disabled": false
+    },
+    {
+      "id": "mushroom_001",
+      "nameKey": "enemy.mushroom_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 170,
+      "disabled": false
+    },
+    {
+      "id": "lizard_001",
+      "nameKey": "enemy.lizard_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 180,
+      "disabled": false
+    },
+    {
+      "id": "spirit_001",
+      "nameKey": "enemy.spirit_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 190,
+      "disabled": false
+    },
+    {
+      "id": "forest_boss_001",
+      "nameKey": "enemy.forest_boss_001.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 200,
+      "disabled": false
+    },
+    {
+      "id": "cave_boss_001",
+      "nameKey": "enemy.cave_boss_001.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 210,
+      "disabled": false
+    },
+    {
+      "id": "ruins_boss_001",
+      "nameKey": "enemy.ruins_boss_001.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 220,
+      "disabled": false
+    },
+    {
+      "id": "dragon_boss_001",
+      "nameKey": "enemy.dragon_boss_001.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 230,
+      "disabled": false
+    },
+    {
+      "id": "ice_slime_001",
+      "nameKey": "enemy.ice_slime_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 240,
+      "disabled": false
+    },
+    {
+      "id": "snow_wolf_001",
+      "nameKey": "enemy.snow_wolf_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 250,
+      "disabled": false
+    },
+    {
+      "id": "frost_goblin_001",
+      "nameKey": "enemy.frost_goblin_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 260,
+      "disabled": false
+    },
+    {
+      "id": "ice_bat_001",
+      "nameKey": "enemy.ice_bat_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 270,
+      "disabled": false
+    },
+    {
+      "id": "snow_rabbit_001",
+      "nameKey": "enemy.snow_rabbit_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 280,
+      "disabled": false
+    },
+    {
+      "id": "frost_spirit_001",
+      "nameKey": "enemy.frost_spirit_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 290,
+      "disabled": false
+    },
+    {
+      "id": "snowfield_boss_001",
+      "nameKey": "enemy.snowfield_boss_001.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 300,
+      "disabled": false
+    },
+    {
+      "id": "snowfield_boss_002",
+      "nameKey": "enemy.snowfield_boss_002.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 310,
+      "disabled": false
+    },
+    {
+      "id": "shadow_cat_001",
+      "nameKey": "enemy.shadow_cat_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 320,
+      "disabled": false
+    },
+    {
+      "id": "dungeon_guard_001",
+      "nameKey": "enemy.dungeon_guard_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 330,
+      "disabled": false
+    },
+    {
+      "id": "phantom_mouse_001",
+      "nameKey": "enemy.phantom_mouse_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 340,
+      "disabled": false
+    },
+    {
+      "id": "curse_bat_001",
+      "nameKey": "enemy.curse_bat_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 350,
+      "disabled": false
+    },
+    {
+      "id": "iron_golem_001",
+      "nameKey": "enemy.iron_golem_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 360,
+      "disabled": false
+    },
+    {
+      "id": "rock_golem",
+      "nameKey": "enemy.rock_golem.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 370,
+      "disabled": false
+    },
+    {
+      "id": "witch_cat_001",
+      "nameKey": "enemy.witch_cat_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 380,
+      "disabled": false
+    },
+    {
+      "id": "shadow_mage_001",
+      "nameKey": "enemy.shadow_mage_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 390,
+      "disabled": false
+    },
+    {
+      "id": "abyssal_lord_001",
+      "nameKey": "enemy.abyssal_lord_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 400,
+      "disabled": false
+    },
+    {
+      "id": "cat_ancestor_king_001",
+      "nameKey": "enemy.cat_ancestor_king_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 410,
+      "disabled": false
+    },
+    {
+      "id": "cat_acolyte_001",
+      "nameKey": "enemy.cat_acolyte_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 420,
+      "disabled": false
+    },
+    {
+      "id": "cat_priest_001",
+      "nameKey": "enemy.cat_priest_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 430,
+      "disabled": false
+    },
+    {
+      "id": "cat_paladin_001",
+      "nameKey": "enemy.cat_paladin_001.name",
+      "rarity": "common",
+      "category": "unit",
+      "order": 440,
+      "disabled": false
+    },
+    {
+      "id": "cat_sage_001",
+      "nameKey": "enemy.cat_sage_001.name",
+      "rarity": "common",
+      "category": "unit",
+      "order": 450,
+      "disabled": false
+    },
+    {
+      "id": "cat_guardian_001",
+      "nameKey": "enemy.cat_guardian_001.name",
+      "rarity": "common",
+      "category": "unit",
+      "order": 460,
+      "disabled": false
+    },
+    {
+      "id": "holy_cat_king_001",
+      "nameKey": "enemy.holy_cat_king_001.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 470,
+      "disabled": false
+    },
+    {
+      "id": "player_echo",
+      "nameKey": "enemy.player_echo.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 480,
+      "disabled": false
+    },
+    {
+      "id": "super_berry_bird_001",
+      "nameKey": "enemy.super_berry_bird_001.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 490,
+      "disabled": false
+    },
+    {
+      "id": "wolf_king_001",
+      "nameKey": "enemy.wolf_king_001.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 500,
+      "disabled": false
+    },
+    {
+      "id": "frenzy_berry_bird_001",
+      "nameKey": "enemy.frenzy_berry_bird_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 510,
+      "disabled": false
+    },
+    {
+      "id": "cat_food",
+      "nameKey": "title_suffix.cat_food.name",
+      "rarity": "rare",
+      "category": "special",
+      "order": 520,
+      "disabled": false
+    },
+    {
+      "id": "anvil",
+      "nameKey": "title_suffix.anvil.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 530,
+      "disabled": false
+    },
+    {
+      "id": "enchanter",
+      "nameKey": "title_suffix.enchanter.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 540,
+      "disabled": false
+    },
+    {
+      "id": "errand_master",
+      "nameKey": "title_suffix.errand_master.name",
+      "rarity": "epic",
+      "category": "special",
+      "order": 550,
+      "disabled": false
+    },
+    {
+      "id": "boss_slayer",
+      "nameKey": "title_suffix.boss_slayer.name",
+      "rarity": "legendary",
+      "category": "special",
+      "order": 560,
+      "disabled": false
+    },
+    {
+      "id": "shadow_assassin_cat_001",
+      "nameKey": "enemy.shadow_assassin_cat_001.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 510,
+      "disabled": false
+    },
+    {
+      "id": "glacial_phantom_001",
+      "nameKey": "enemy.glacial_phantom_001.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 520,
+      "disabled": false
+    },
+    {
+      "id": "shadow_paw_apprentice_001",
+      "nameKey": "enemy.shadow_paw_apprentice_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 530,
+      "disabled": false
+    },
+    {
+      "id": "toxic_claw_001",
+      "nameKey": "enemy.toxic_claw_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 540,
+      "disabled": false
+    },
+    {
+      "id": "silent_whisker_001",
+      "nameKey": "enemy.silent_whisker_001.name",
+      "rarity": "epic",
+      "category": "unit",
+      "order": 550,
+      "disabled": false
+    },
+    {
+      "id": "smoke_tail_001",
+      "nameKey": "enemy.smoke_tail_001.name",
+      "rarity": "epic",
+      "category": "unit",
+      "order": 560,
+      "disabled": false
+    },
+    {
+      "id": "mirror_paw_001",
+      "nameKey": "enemy.mirror_paw_001.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 570,
+      "disabled": false
+    },
+    {
+      "id": "shadow_paw_master_boss_001",
+      "nameKey": "enemy.shadow_paw_master_boss_001.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 580,
+      "disabled": false
+    },
+    {
+      "id": "astral_guard_001",
+      "nameKey": "enemy.astral_guard_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 590,
+      "disabled": false
+    },
+    {
+      "id": "astral_mage_001",
+      "nameKey": "enemy.astral_mage_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 600,
+      "disabled": false
+    },
+    {
+      "id": "starlight_healer_001",
+      "nameKey": "enemy.starlight_healer_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 610,
+      "disabled": false
+    },
+    {
+      "id": "refraction_mirror_doll_001",
+      "nameKey": "enemy.refraction_mirror_doll_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 620,
+      "disabled": false
+    },
+    {
+      "id": "meteor_core_porter_001",
+      "nameKey": "enemy.meteor_core_porter_001.name",
+      "rarity": "epic",
+      "category": "unit",
+      "order": 630,
+      "disabled": false
+    },
+    {
+      "id": "deranged_calibrator_001",
+      "nameKey": "enemy.deranged_calibrator_001.name",
+      "rarity": "epic",
+      "category": "unit",
+      "order": 640,
+      "disabled": false
+    },
+    {
+      "id": "corridor_timekeeper_cat_boss_001",
+      "nameKey": "enemy.corridor_timekeeper_cat_boss_001.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 650,
+      "disabled": false
+    },
+    {
+      "id": "silence_tome_001",
+      "nameKey": "enemy.silence_tome_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 660,
+      "disabled": false
+    },
+    {
+      "id": "brass_book_guard_001",
+      "nameKey": "enemy.brass_book_guard_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 670,
+      "disabled": false
+    },
+    {
+      "id": "living_bookmark_001",
+      "nameKey": "enemy.living_bookmark_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 680,
+      "disabled": false
+    },
+    {
+      "id": "watcher_owl_001",
+      "nameKey": "enemy.watcher_owl_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 690,
+      "disabled": false
+    },
+    {
+      "id": "binding_librarian_001",
+      "nameKey": "enemy.binding_librarian_001.name",
+      "rarity": "epic",
+      "category": "unit",
+      "order": 700,
+      "disabled": false
+    },
+    {
+      "id": "banished_spellcat_001",
+      "nameKey": "enemy.banished_spellcat_001.name",
+      "rarity": "epic",
+      "category": "unit",
+      "order": 710,
+      "disabled": false
+    },
+    {
+      "id": "forbidden_library_keeper_boss_001",
+      "nameKey": "enemy.forbidden_library_keeper_boss_001.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 720,
+      "disabled": false
+    },
+    {
+      "id": "stardust_mouse_001",
+      "nameKey": "enemy.stardust_mouse_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 730,
+      "disabled": false
+    },
+    {
+      "id": "carousel_cat_001",
+      "nameKey": "enemy.carousel_cat_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 740,
+      "disabled": false
+    },
+    {
+      "id": "candy_clown_001",
+      "nameKey": "enemy.candy_clown_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 750,
+      "disabled": false
+    },
+    {
+      "id": "plush_guard_001",
+      "nameKey": "enemy.plush_guard_001.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 760,
+      "disabled": false
+    },
+    {
+      "id": "starlight_healer_002",
+      "nameKey": "enemy.starlight_healer_002.name",
+      "rarity": "rare",
+      "category": "unit",
+      "order": 770,
+      "disabled": false
+    },
+    {
+      "id": "ghostly_rider_001",
+      "nameKey": "enemy.ghostly_rider_001.name",
+      "rarity": "epic",
+      "category": "unit",
+      "order": 780,
+      "disabled": false
+    },
+    {
+      "id": "parade_king_boss_001",
+      "nameKey": "enemy.parade_king_boss_001.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 790,
+      "disabled": false
+    },
+    {
+      "id": "midnight_ticket_collector_001",
+      "nameKey": "enemy.midnight_ticket_collector_001.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 800,
+      "disabled": false
+    },
+    {
+      "id": "faceless_understudy_001",
+      "nameKey": "enemy.faceless_understudy_001.name",
+      "rarity": "legendary",
+      "category": "unit",
+      "order": 810,
+      "disabled": false
+    },
+    {
+      "id": "fishing_crucian_carp",
+      "nameKey": "collectible.fishing_crucian_carp.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 900,
+      "disabled": false
+    },
+    {
+      "id": "fishing_common_carp",
+      "nameKey": "collectible.fishing_common_carp.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 910,
+      "disabled": false
+    },
+    {
+      "id": "fishing_bluegill",
+      "nameKey": "collectible.fishing_bluegill.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 920,
+      "disabled": false
+    },
+    {
+      "id": "fishing_grass_carp",
+      "nameKey": "collectible.fishing_grass_carp.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 930,
+      "disabled": false
+    },
+    {
+      "id": "fishing_mud_loach",
+      "nameKey": "collectible.fishing_mud_loach.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 940,
+      "disabled": false
+    },
+    {
+      "id": "fishing_snakehead",
+      "nameKey": "collectible.fishing_snakehead.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 950,
+      "disabled": false
+    },
+    {
+      "id": "fishing_lotus_koi",
+      "nameKey": "collectible.fishing_lotus_koi.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 960,
+      "disabled": false
+    },
+    {
+      "id": "fishing_emberfin",
+      "nameKey": "collectible.fishing_emberfin.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 970,
+      "disabled": false
+    },
+    {
+      "id": "fishing_brown_trout",
+      "nameKey": "collectible.fishing_brown_trout.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 980,
+      "disabled": false
+    },
+    {
+      "id": "fishing_chub",
+      "nameKey": "collectible.fishing_chub.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 990,
+      "disabled": false
+    },
+    {
+      "id": "fishing_dace",
+      "nameKey": "collectible.fishing_dace.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 1000,
+      "disabled": false
+    },
+    {
+      "id": "fishing_barbel",
+      "nameKey": "collectible.fishing_barbel.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 1010,
+      "disabled": false
+    },
+    {
+      "id": "fishing_freshwater_perch",
+      "nameKey": "collectible.fishing_freshwater_perch.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 1020,
+      "disabled": false
+    },
+    {
+      "id": "fishing_river_eel",
+      "nameKey": "collectible.fishing_river_eel.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 1030,
+      "disabled": false
+    },
+    {
+      "id": "fishing_glassback_darter",
+      "nameKey": "collectible.fishing_glassback_darter.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 1040,
+      "disabled": false
+    },
+    {
+      "id": "fishing_thunder_whisker",
+      "nameKey": "collectible.fishing_thunder_whisker.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 1050,
+      "disabled": false
+    },
+    {
+      "id": "fishing_lake_trout",
+      "nameKey": "collectible.fishing_lake_trout.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 1060,
+      "disabled": false
+    },
+    {
+      "id": "fishing_arctic_char",
+      "nameKey": "collectible.fishing_arctic_char.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 1070,
+      "disabled": false
+    },
+    {
+      "id": "fishing_burbot",
+      "nameKey": "collectible.fishing_burbot.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 1080,
+      "disabled": false
+    },
+    {
+      "id": "fishing_whitefish",
+      "nameKey": "collectible.fishing_whitefish.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 1090,
+      "disabled": false
+    },
+    {
+      "id": "fishing_northern_pike",
+      "nameKey": "collectible.fishing_northern_pike.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 1100,
+      "disabled": false
+    },
+    {
+      "id": "fishing_grayling",
+      "nameKey": "collectible.fishing_grayling.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 1110,
+      "disabled": false
+    },
+    {
+      "id": "fishing_moonmirror_carp",
+      "nameKey": "collectible.fishing_moonmirror_carp.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 1120,
+      "disabled": false
+    },
+    {
+      "id": "fishing_frostveil_sturgeon",
+      "nameKey": "collectible.fishing_frostveil_sturgeon.title",
+      "rarity": "rare",
+      "category": "special",
+      "order": 1130,
+      "disabled": false
+    }
+  ]
+}

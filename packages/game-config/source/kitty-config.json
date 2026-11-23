@@ -1,0 +1,218 @@
+{
+  "version": "v1",
+  "leveling": {
+    "maxLevel": 30,
+    "fallbackFormula": {
+      "base": 100,
+      "perLevel": 50,
+      "power": 1.25
+    },
+    "levels": [
+      { "level": 1, "nextExp": 80 },
+      { "level": 2, "nextExp": 120 },
+      { "level": 3, "nextExp": 180 },
+      { "level": 4, "nextExp": 260 },
+      { "level": 5, "nextExp": 360 }
+    ],
+    "milestones": [
+      {
+        "level": 5,
+        "nameKey": "game.catteryKittyMilestone.level5.name",
+        "descKey": "game.catteryKittyMilestone.level5.desc",
+        "effects": { "commissionSlotBonus": 1 }
+      }
+    ]
+  },
+  "journalRewards": {
+    "enabled": true,
+    "contentPoolMap": {},
+    "categoryPoolMap": {
+      "diary.idle": "idle_default_pool",
+      "diary.working": "working_default_pool"
+    },
+    "scheduledAffection": {
+      "enabled": true,
+      "timezone": "Asia/Shanghai",
+      "times": ["09:00", "18:00"],
+      "rewardKey": "scheduled_affection",
+      "rewardItemId": "kitty_affection",
+      "quantity": 2,
+      "contentKey": "game.catteryJournal.diary.affectionGrant",
+      "maxMissedDays": 0
+    },
+    "cuteEquipmentDrop": {
+      "enabled": true,
+      "chance": 0.005,
+      "itemIds": ["cute_hat", "cute_clothes", "cute_gloves", "cute_shoes", "cute_cape"]
+    },
+    "rareItemDrops": [
+      {
+        "enabled": true,
+        "chance": 0.0005,
+        "itemId": "harmonic_embryo",
+        "quantity": 1,
+        "contentKeys": [
+          "game.catteryJournal.diary.harmonicEmbryoVariants.1",
+          "game.catteryJournal.diary.harmonicEmbryoVariants.2",
+          "game.catteryJournal.diary.harmonicEmbryoVariants.3"
+        ]
+      }
+    ],
+    "encounterRareItemDrops": [
+      {
+        "enabled": true,
+        "chance": 0.0005,
+        "itemId": "cat_sword",
+        "quantity": 1,
+        "contentKeys": [
+          "game.catteryJournal.encounter.catSwordVariants.1",
+          "game.catteryJournal.encounter.catSwordVariants.2",
+          "game.catteryJournal.encounter.catSwordVariants.3"
+        ]
+      }
+    ],
+    "pools": {
+      "idle_default_pool": {
+        "labelKey": "game.catteryRewardPool.idle_default_pool",
+        "minKittyLevel": 1,
+        "kittyExp": { "min": 1, "max": 3 },
+        "bondExp": { "min": 1, "max": 1 },
+        "moodDelta": 0.01,
+        "rolls": [
+          {
+            "chance": 0.2,
+            "mode": "weightedOne",
+            "entries": [
+              { "itemId": "wood", "weight": 1, "min": 1, "max": 2 }
+            ]
+          }
+        ]
+      },
+      "working_default_pool": {
+        "labelKey": "game.catteryRewardPool.working_default_pool",
+        "minKittyLevel": 1,
+        "kittyExp": { "min": 2, "max": 5 },
+        "bondExp": { "min": 1, "max": 2 },
+        "moodDelta": 0.01,
+        "rolls": [
+          {
+            "chance": 0.25,
+            "mode": "weightedOne",
+            "entries": [
+              { "itemId": "gold_coin", "weight": 1, "min": 1, "max": 3 }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "commissions": {
+    "enabled": true,
+    "refreshMode": "daily",
+    "visibleCount": 3,
+    "dailyLimitPerKitty": 6,
+    "pools": [
+      {
+        "id": "default_daily",
+        "minKittyLevel": 1,
+        "entries": [
+          { "commissionId": "bring_back_wood", "weight": 80 },
+          { "commissionId": "find_gold_coin", "weight": 35 },
+          { "commissionId": "gather_silverleaf", "weight": 10 }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "id": "bring_back_wood",
+        "rarity": "common",
+        "nameKey": "game.catteryCommission.bring_back_wood.name",
+        "descKey": "game.catteryCommission.bring_back_wood.desc",
+        "resultKey": "game.catteryCommission.bring_back_wood.result",
+        "minKittyLevel": 1,
+        "durationSeconds": 1800,
+        "costs": { "wood": 2 },
+        "rewardPoolId": "commission_wood_pool",
+        "kittyExp": 30,
+        "bondExp": 8,
+        "moodDelta": 0.03
+      },
+      {
+        "id": "find_gold_coin",
+        "rarity": "uncommon",
+        "nameKey": "game.catteryCommission.find_gold_coin.name",
+        "descKey": "game.catteryCommission.find_gold_coin.desc",
+        "resultKey": "game.catteryCommission.find_gold_coin.result",
+        "minKittyLevel": 2,
+        "durationSeconds": 3600,
+        "costs": { "wood": 5 },
+        "rewardPoolId": "commission_coin_pool",
+        "kittyExp": 45,
+        "bondExp": 10,
+        "moodDelta": 0.04
+      },
+      {
+        "id": "gather_silverleaf",
+        "rarity": "rare",
+        "nameKey": "game.catteryCommission.gather_silverleaf.name",
+        "descKey": "game.catteryCommission.gather_silverleaf.desc",
+        "resultKey": "game.catteryCommission.gather_silverleaf.result",
+        "minKittyLevel": 5,
+        "durationSeconds": 7200,
+        "costs": { "sturdy_wood": 2, "gold_coin": 20 },
+        "rewardPoolId": "commission_silverleaf_pool",
+        "kittyExp": 90,
+        "bondExp": 18,
+        "moodDelta": 0.05
+      }
+    ],
+    "rewardPools": {
+      "commission_wood_pool": {
+        "labelKey": "game.catteryRewardPool.commission_wood_pool",
+        "minKittyLevel": 1,
+        "rolls": [
+          {
+            "chance": 1,
+            "mode": "weightedOne",
+            "entries": [
+              { "itemId": "wood", "weight": 1, "min": 1, "max": 4 }
+            ]
+          }
+        ]
+      },
+      "commission_coin_pool": {
+        "labelKey": "game.catteryRewardPool.commission_coin_pool",
+        "minKittyLevel": 1,
+        "rolls": [
+          {
+            "chance": 1,
+            "mode": "weightedOne",
+            "entries": [
+              { "itemId": "gold_coin", "weight": 1, "min": 20, "max": 45 }
+            ]
+          }
+        ]
+      },
+      "commission_silverleaf_pool": {
+        "labelKey": "game.catteryRewardPool.commission_silverleaf_pool",
+        "minKittyLevel": 5,
+        "rolls": [
+          {
+            "chance": 1,
+            "mode": "weightedOne",
+            "entries": [
+              { "itemId": "silverleaf_wood", "weight": 1, "min": 1, "max": 2 }
+            ]
+          },
+          {
+            "chance": 0.35,
+            "mode": "weightedOne",
+            "entries": [
+              { "itemId": "gold_coin", "weight": 1, "min": 30, "max": 80 }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "alchemy_inherit_mediums": [
+    {
+      "id": "harmonic_crystal_lens_inherit",
+      "itemId": "harmonic_crystal_lens",
+      "nameKey": "item.harmonic_crystal_lens.name",
+      "descKey": "item.harmonic_crystal_lens.desc",
+      "consumePerCraft": 1,
+      "minAlchemyLevel": 30,
+      "modifiers": {
+        "inheritSlots": 6,
+        "suppressSlots": 0,
+        "ignoreKeepChance": 0.12,
+        "positiveIgnoreKeepChanceBase": 0.5,
+        "positiveIgnoreKeepChanceBonus": 0.14,
+        "negativeIgnoreKeepChanceBase": 1,
+        "negativeIgnoreSuppressChanceBonus": 0.05,
+        "inheritCost": {
+          "gold": 10000,
+          "items": {}
+        },
+        "suppressCost": {
+          "gold": 0,
+          "items": {}
+        },
+        "hybridMergeDivisor": 1.8,
+        "inbreedMutationChance": 0.72,
+        "inbreedGoodChance": 0.06,
+        "inbreedGoodMultiplierRange": {
+          "min": 1.1,
+          "max": 1.35
+        },
+        "inbreedBadMultiplierRange": {
+          "min": 0.38,
+          "max": 0.82
+        },
+        "mutationChance": 0.06,
+        "precisionScaling": {
+          "hybridDivisorReductionPerPoint": 0.01,
+          "hybridDivisorReductionCap": 0.13
+        },
+        "luckyScaling": {
+          "ignoreKeepChancePerPoint": 0.01,
+          "ignoreKeepChanceCap": 0.1,
+          "inbreedGoodChancePerPoint": 0.003,
+          "inbreedGoodChanceCap": 0.05
+        },
+        "stabilityScaling": {
+          "inbreedMutationChanceReductionPerPoint": 0.011,
+          "inbreedMutationChanceReductionCap": 0.13,
+          "badMultiplierFloorBonusPerPoint": 0.011,
+          "badMultiplierFloorBonusCap": 0.13
+        }
+      },
+      "active": true,
+      "disabled": false
+    },
+    {
+      "id": "harmonic_moonwood_frame_inherit",
+      "itemId": "harmonic_moonwood_frame",
+      "nameKey": "item.harmonic_moonwood_frame.name",
+      "descKey": "item.harmonic_moonwood_frame.desc",
+      "consumePerCraft": 1,
+      "minAlchemyLevel": 30,
+      "modifiers": {
+        "inheritSlots": 1,
+        "suppressSlots": 3,
+        "ignoreKeepChance": 0.04,
+        "positiveIgnoreKeepChanceBase": 0.8,
+        "positiveIgnoreKeepChanceBonus": 0.04,
+        "negativeIgnoreKeepChanceBase": 0.9,
+        "negativeIgnoreSuppressChanceBonus": 0.28,
+        "inheritCost": {
+          "gold": 50000,
+          "items": {}
+        },
+        "suppressCost": {
+          "gold": 50000,
+          "items": {}
+        },
+        "hybridMergeDivisor": 1.72,
+        "inbreedMutationChance": 0.7,
+        "inbreedGoodChance": 0.05,
+        "inbreedGoodMultiplierRange": {
+          "min": 1.1,
+          "max": 1.32
+        },
+        "inbreedBadMultiplierRange": {
+          "min": 0.4,
+          "max": 0.84
+        },
+        "mutationChance": 0.05,
+        "precisionScaling": {
+          "hybridDivisorReductionPerPoint": 0.009,
+          "hybridDivisorReductionCap": 0.1
+        },
+        "luckyScaling": {
+          "ignoreKeepChancePerPoint": 0.008,
+          "ignoreKeepChanceCap": 0.08,
+          "inbreedGoodChancePerPoint": 0.003,
+          "inbreedGoodChanceCap": 0.05
+        },
+        "stabilityScaling": {
+          "inbreedMutationChanceReductionPerPoint": 0.012,
+          "inbreedMutationChanceReductionCap": 0.15,
+          "badMultiplierFloorBonusPerPoint": 0.012,
+          "badMultiplierFloorBonusCap": 0.15
+        }
+      },
+      "active": true,
+      "disabled": false
+    },
+    {
+      "id": "harmonic_royal_prism_inherit",
+      "itemId": "harmonic_royal_prism",
+      "nameKey": "item.harmonic_royal_prism.name",
+      "descKey": "item.harmonic_royal_prism.desc",
+      "consumePerCraft": 1,
+      "minAlchemyLevel": 30,
+      "modifiers": {
+        "inheritSlots": 2,
+        "suppressSlots": 2,
+        "ignoreKeepChance": 0.09,
+        "positiveIgnoreKeepChanceBase": 0.5,
+        "positiveIgnoreKeepChanceBonus": 0.1,
+        "negativeIgnoreKeepChanceBase": 0.9,
+        "negativeIgnoreSuppressChanceBonus": 0.18,
+        "inheritCost": {
+          "gold": 30000,
+          "items": {}
+        },
+        "suppressCost": {
+          "gold": 30000,
+          "items": {}
+        },
+        "hybridMergeDivisor": 1.7,
+        "inbreedMutationChance": 0.68,
+        "inbreedGoodChance": 0.065,
+        "inbreedGoodMultiplierRange": {
+          "min": 1.1,
+          "max": 1.35
+        },
+        "inbreedBadMultiplierRange": {
+          "min": 0.42,
+          "max": 0.84
+        },
+        "mutationChance": 0.045,
+        "precisionScaling": {
+          "hybridDivisorReductionPerPoint": 0.011,
+          "hybridDivisorReductionCap": 0.14
+        },
+        "luckyScaling": {
+          "ignoreKeepChancePerPoint": 0.009,
+          "ignoreKeepChanceCap": 0.09,
+          "inbreedGoodChancePerPoint": 0.003,
+          "inbreedGoodChanceCap": 0.05
+        },
+        "stabilityScaling": {
+          "inbreedMutationChanceReductionPerPoint": 0.012,
+          "inbreedMutationChanceReductionCap": 0.15,
+          "badMultiplierFloorBonusPerPoint": 0.012,
+          "badMultiplierFloorBonusCap": 0.15
+        }
+      },
+      "active": true,
+      "disabled": false
+    }
+  ]
+}

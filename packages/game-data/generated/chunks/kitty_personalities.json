@@ -1,0 +1,584 @@
+{
+  "version": 1,
+  "kitty_personalities": [
+    {
+      "id": "balanced",
+      "nameKey": "kitty.personality.balanced.name",
+      "descKey": "kitty.personality.balanced.desc",
+      "weight": 1,
+      "effects": []
+    },
+    {
+      "id": "ore_lover",
+      "nameKey": "kitty.personality.ore_lover.name",
+      "descKey": "kitty.personality.ore_lover.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "mining_speed": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "cowardly",
+      "nameKey": "kitty.personality.cowardly.name",
+      "descKey": "kitty.personality.cowardly.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "battle_position_lock",
+          "position": "rearguard"
+        },
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "intelligence": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "forager",
+      "nameKey": "kitty.personality.forager.name",
+      "descKey": "kitty.personality.forager.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "collecting_speed": 0.15
+          }
+        },
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "farming_animal_speed": 0.15
+          }
+        }
+      ]
+    },
+    {
+      "id": "vanguard_heart",
+      "nameKey": "kitty.personality.vanguard_heart.name",
+      "descKey": "kitty.personality.vanguard_heart.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "battle_position_lock",
+          "position": "vanguard"
+        },
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "strength": 6
+          }
+        }
+      ]
+    },
+    {
+      "id": "fleetfoot",
+      "nameKey": "kitty.personality.fleetfoot.name",
+      "descKey": "kitty.personality.fleetfoot.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "speed": 12
+          }
+        },
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "crafting_speed": 0.1,
+            "forging_speed": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": "deep_delver",
+      "nameKey": "kitty.personality.deep_delver.name",
+      "descKey": "kitty.personality.deep_delver.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "mining_speed": 0.35,
+            "stamina": 6
+          }
+        }
+      ]
+    },
+    {
+      "id": "dew_chaser",
+      "nameKey": "kitty.personality.dew_chaser.name",
+      "descKey": "kitty.personality.dew_chaser.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "collecting_speed": 0.28,
+            "perception": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "barn_keeper",
+      "nameKey": "kitty.personality.barn_keeper.name",
+      "descKey": "kitty.personality.barn_keeper.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "farming_animal_speed": 0.25,
+            "stamina": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "meticulous_crafter",
+      "nameKey": "kitty.personality.meticulous_crafter.name",
+      "descKey": "kitty.personality.meticulous_crafter.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "crafting_speed": 0.12,
+            "enhancement_success_rate": 0.03
+          }
+        }
+      ]
+    },
+    {
+      "id": "furnace_friend",
+      "nameKey": "kitty.personality.furnace_friend.name",
+      "descKey": "kitty.personality.furnace_friend.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "forging_speed": 0.22,
+            "magical_defence": 6
+          }
+        }
+      ]
+    },
+    {
+      "id": "stitch_fixer",
+      "nameKey": "kitty.personality.stitch_fixer.name",
+      "descKey": "kitty.personality.stitch_fixer.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "sewing_speed": 0.25,
+            "dexterity": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "night_shift",
+      "nameKey": "kitty.personality.night_shift.name",
+      "descKey": "kitty.personality.night_shift.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "crafting_speed": 0.08,
+            "sewing_speed": 0.08,
+            "forging_speed": 0.08
+          }
+        }
+      ]
+    },
+    {
+      "id": "lazy_gourmet",
+      "nameKey": "kitty.personality.lazy_gourmet.name",
+      "descKey": "kitty.personality.lazy_gourmet.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "speed": -8,
+            "stamina": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "muscle_brain",
+      "nameKey": "kitty.personality.muscle_brain.name",
+      "descKey": "kitty.personality.muscle_brain.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "strength": 8,
+            "hp": 24,
+            "intelligence": -4
+          }
+        }
+      ]
+    },
+    {
+      "id": "overthinker",
+      "nameKey": "kitty.personality.overthinker.name",
+      "descKey": "kitty.personality.overthinker.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "intelligence": 8,
+            "magical_damage": 10,
+            "strength": -3
+          }
+        }
+      ]
+    },
+    {
+      "id": "keen_eyes",
+      "nameKey": "kitty.personality.keen_eyes.name",
+      "descKey": "kitty.personality.keen_eyes.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "perception": 7,
+            "crit_chance": 0.03,
+            "magic_crit_chance": 0.03
+          }
+        }
+      ]
+    },
+    {
+      "id": "iron_hide",
+      "nameKey": "kitty.personality.iron_hide.name",
+      "descKey": "kitty.personality.iron_hide.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "stamina": 8,
+            "physics_defence": 10,
+            "speed": -6
+          }
+        }
+      ]
+    },
+    {
+      "id": "glass_paw",
+      "nameKey": "kitty.personality.glass_paw.name",
+      "descKey": "kitty.personality.glass_paw.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "speed": 10,
+            "physics_damage": 8,
+            "physics_defence": -6
+          }
+        }
+      ]
+    },
+    {
+      "id": "battle_dancer",
+      "nameKey": "kitty.personality.battle_dancer.name",
+      "descKey": "kitty.personality.battle_dancer.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "attr_modifier",
+          "attrs": {
+            "dexterity": 6,
+            "speed": 8,
+            "crit_damage": 0.08
+          }
+        }
+      ]
+    },
+    {
+      "id": "taunting_tail",
+      "nameKey": "kitty.personality.taunting_tail.name",
+      "descKey": "kitty.personality.taunting_tail.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "battle_hook",
+          "battleHooks": [
+            {
+              "trigger": "on_battle_start",
+              "priority": 0,
+              "conditions": [],
+              "effects": [
+                {
+                  "kind": "add_buff",
+                  "buffId": "taunt",
+                  "durationTurns": 2,
+                  "targetMode": "self"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smoke_tail",
+      "nameKey": "kitty.personality.smoke_tail.name",
+      "descKey": "kitty.personality.smoke_tail.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "battle_hook",
+          "battleHooks": [
+            {
+              "trigger": "on_after_take_damage",
+              "priority": 0,
+              "conditions": [],
+              "effects": [
+                {
+                  "kind": "add_buff",
+                  "buffId": "camouflage",
+                  "durationTurns": 2,
+                  "targetMode": "self"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "last_stand",
+      "nameKey": "kitty.personality.last_stand.name",
+      "descKey": "kitty.personality.last_stand.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "battle_hook",
+          "battleHooks": [
+            {
+              "trigger": "on_after_take_damage",
+              "priority": 0,
+              "conditions": [
+                {
+                  "type": "self_hp_percent_lte",
+                  "value": 40
+                }
+              ],
+              "effects": [
+                {
+                  "kind": "add_buff",
+                  "buffId": "last_stand_guard",
+                  "durationTurns": 2,
+                  "targetMode": "self"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "formation_captain",
+      "nameKey": "kitty.personality.formation_captain.name",
+      "descKey": "kitty.personality.formation_captain.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "battle_hook",
+          "battleHooks": [
+            {
+              "trigger": "on_battle_start",
+              "priority": 0,
+              "conditions": [],
+              "effects": [
+                {
+                  "kind": "add_buff",
+                  "buffId": "formation_frontline_guard",
+                  "durationTurns": 2,
+                  "targetMode": "self"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sweeping_claws",
+      "nameKey": "kitty.personality.sweeping_claws.name",
+      "descKey": "kitty.personality.sweeping_claws.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "effect_mutation",
+          "effectMutations": [
+            {
+              "scope": "basic_attack",
+              "effectSelector": {
+                "mode": "index",
+                "indexes": [
+                  1
+                ]
+              },
+              "ops": {
+                "targetCountDelta": 2,
+                "amountBaseAddDelta": 0
+              },
+              "constraints": {
+                "targetCountMin": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "precise_paws",
+      "nameKey": "kitty.personality.precise_paws.name",
+      "descKey": "kitty.personality.precise_paws.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "effect_mutation",
+          "effectMutations": [
+            {
+              "scope": "basic_attack",
+              "effectSelector": {
+                "mode": "index",
+                "indexes": [
+                  1
+                ]
+              },
+              "ops": {
+                "amountTermsAppend": [
+                  {
+                    "attrKey": "physics_flat_defense_penetration",
+                    "coefficient": 0.35,
+                    "perSkillLevel": 0
+                  }
+                ]
+              },
+              "constraints": {
+                "targetCountMin": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spell_echo",
+      "nameKey": "kitty.personality.spell_echo.name",
+      "descKey": "kitty.personality.spell_echo.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "effect_mutation",
+          "effectMutations": [
+            {
+              "scope": "skill",
+              "skillIds": [
+                "arcane_missile",
+                "magic_bombardment",
+                "arcane_chain_bolt"
+              ],
+              "effectSelector": {
+                "mode": "index",
+                "indexes": [
+                  1
+                ]
+              },
+              "ops": {
+                "amountBaseAddDelta": 8,
+                "amountTermsAppend": [
+                  {
+                    "attrKey": "magical_damage",
+                    "coefficient": 0.16,
+                    "perSkillLevel": 0.004
+                  }
+                ],
+                "targetCountDelta": 1
+              },
+              "constraints": {
+                "targetCountMin": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marking_strike",
+      "nameKey": "kitty.personality.marking_strike.name",
+      "descKey": "kitty.personality.marking_strike.desc",
+      "weight": 1,
+      "effects": [
+        {
+          "kind": "effect_mutation",
+          "effectMutations": [
+            {
+              "scope": "basic_attack",
+              "effectSelector": {
+                "mode": "all"
+              },
+              "ops": {
+                "appendEffects": [
+                  {
+                    "kind": "status",
+                    "targeting": {
+                      "targetPositions": [
+                        "vanguard"
+                      ],
+                      "secondarySeek": "front_to_rear",
+                      "targetScope": "enemy",
+                      "selectRule": "random",
+                      "selectAttrKey": "",
+                      "fallbackSelfIfEmpty": false,
+                      "targetCount": {
+                        "base": 1,
+                        "formula": [],
+                        "max": 1
+                      }
+                    },
+                    "statusPayload": {
+                      "statusIds": [
+                        "holy_cat_consecrated_mark"
+                      ],
+                      "durationBaseTurns": 2,
+                      "durationPerSkillLevelTurns": 0
+                    }
+                  }
+                ]
+              },
+              "constraints": {
+                "targetCountMin": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

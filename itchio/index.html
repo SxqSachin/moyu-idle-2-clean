@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  />
+  <title>Moyu Idle</title>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+    }
+
+    iframe {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      border: 0;
+      background: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <iframe
+    id="game"
+    src="https://test.moyu-idle.com/?platform=itch"
+    title="Moyu Idle"
+    allow="fullscreen; autoplay; gamepad; clipboard-write"
+    allowfullscreen
+    referrerpolicy="origin-when-cross-origin"
+  ></iframe>
+</body>
+</html>

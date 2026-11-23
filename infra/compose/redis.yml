@@ -1,0 +1,15 @@
+services:
+  redis:
+    image: ${REDIS_IMAGE:-docker.m.daocloud.io/library/redis:7}
+    container_name: game-redis
+    command:
+      - redis-server
+      - --appendonly
+      - "yes"
+      - --requirepass
+      - ${REDIS_PASSWORD:-change-this-redis-password}
+    ports:
+      - "${REDIS_BIND_IP:-0.0.0.0}:${REDIS_PORT:-6379}:6379"
+    volumes:
+      - ${REDIS_DATA_DIR:-/data/game/redis}:/data
+    restart: unless-stopped

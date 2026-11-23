@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "item_types": [
+    {
+      "id": "food",
+      "nameKey": "item_type.food.name",
+      "descKey": "item_type.food.desc",
+      "sortOrder": 5,
+      "enabled": true,
+      "note": "Edible consumables used before or during combat."
+    },
+    {
+      "id": "consumable",
+      "nameKey": "item_type.consumable.name",
+      "descKey": "item_type.consumable.desc",
+      "sortOrder": 6,
+      "enabled": true,
+      "note": "Non-edible combat consumables used during battle."
+    },
+    {
+      "id": "trigger_item",
+      "nameKey": "item_type.trigger_item.name",
+      "descKey": "item_type.trigger_item.desc",
+      "sortOrder": 20,
+      "enabled": true,
+      "note": "Passive trigger items carried into battle to spawn special enemies."
+    },
+    {
+      "id": "collectible",
+      "nameKey": "item_type.collectible.name",
+      "descKey": "item_type.collectible.desc",
+      "sortOrder": 21,
+      "enabled": true,
+      "note": "Collectible trophies that grant permanent attribute bonuses when added to collection."
+    },
+    {
+      "id": "fish",
+      "nameKey": "item_type.fish.name",
+      "descKey": "item_type.fish.desc",
+      "sortOrder": 22,
+      "enabled": true,
+      "note": "Individually tracked fish catches with species, size, condition, and capture data."
+    },
+    {
+      "id": "fishing_gear",
+      "nameKey": "item_type.fishing_gear.name",
+      "descKey": "item_type.fishing_gear.desc",
+      "sortOrder": 23,
+      "enabled": true,
+      "note": "Fishing rods, reels, lines, hooks, terminal tackle, lures, and bait."
+    }
+  ]
+}

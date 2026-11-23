@@ -1,0 +1,241 @@
+{
+  "version": 1,
+  "alchemy_transmute_rules": [
+    {
+      "id": "transmute.hidden",
+      "itemIds": [
+        "faceless_understudy_mask"
+      ],
+      "priority": 300,
+      "default": false,
+      "returnRatio": {
+        "minRatio": 0.75,
+        "maxRatio": 0.95
+      },
+      "durationSec": 8,
+      "rarityDurationAddSecByRarityIndex": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        4
+      ],
+      "alchemyExp": 1.25,
+      "failChanceBase": 0.3,
+      "minFailChance": 0.18,
+      "luckyChanceBase": 0.005,
+      "luckyTiers": [
+        {
+          "id": "small_bonus",
+          "weight": 75,
+          "kind": "gold_multiplier",
+          "value": 1.15,
+          "itemId": "",
+          "min": 0,
+          "max": 0
+        },
+        {
+          "id": "good_bonus",
+          "weight": 20,
+          "kind": "gold_multiplier",
+          "value": 1.35,
+          "itemId": "",
+          "min": 0,
+          "max": 0
+        },
+        {
+          "id": "great_bonus",
+          "weight": 5,
+          "kind": "gold_multiplier",
+          "value": 1.8,
+          "itemId": "",
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "minAlchemyLevel": 35,
+      "disabled": false
+    },
+    {
+      "id": "transmute.boss",
+      "itemIds": [
+        "timekeeper_core",
+        "final_volume_key_sigil",
+        "parade_king_medal"
+      ],
+      "priority": 200,
+      "default": false,
+      "returnRatio": {
+        "minRatio": 0.75,
+        "maxRatio": 0.95
+      },
+      "durationSec": 8,
+      "rarityDurationAddSecByRarityIndex": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        4
+      ],
+      "alchemyExp": 1.25,
+      "failChanceBase": 0.26,
+      "minFailChance": 0.15,
+      "luckyChanceBase": 0.015,
+      "luckyTiers": [
+        {
+          "id": "small_bonus",
+          "weight": 75,
+          "kind": "gold_multiplier",
+          "value": 1.15,
+          "itemId": "",
+          "min": 0,
+          "max": 0
+        },
+        {
+          "id": "good_bonus",
+          "weight": 20,
+          "kind": "gold_multiplier",
+          "value": 1.35,
+          "itemId": "",
+          "min": 0,
+          "max": 0
+        },
+        {
+          "id": "great_bonus",
+          "weight": 5,
+          "kind": "gold_multiplier",
+          "value": 1.8,
+          "itemId": "",
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "minAlchemyLevel": 25,
+      "disabled": false
+    },
+    {
+      "id": "transmute.advanced",
+      "itemIds": [
+        "star_rail_copper_plate",
+        "refraction_lens_shard",
+        "meteor_core_fragment",
+        "condensed_stardust",
+        "hushed_ink_crystal",
+        "wandering_page_silk",
+        "blue_night_audit_feather",
+        "spell_seal_lock_plate",
+        "wayward_carousel_spring",
+        "candy_bomb",
+        "plush_fur",
+        "bottled_starlight",
+        "ghost_essence"
+      ],
+      "priority": 100,
+      "default": false,
+      "returnRatio": {
+        "minRatio": 0.75,
+        "maxRatio": 0.95
+      },
+      "durationSec": 8,
+      "rarityDurationAddSecByRarityIndex": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        4
+      ],
+      "alchemyExp": 1.25,
+      "failChanceBase": 0.22,
+      "minFailChance": 0.12,
+      "luckyChanceBase": 0.025,
+      "luckyTiers": [
+        {
+          "id": "small_bonus",
+          "weight": 75,
+          "kind": "gold_multiplier",
+          "value": 1.15,
+          "itemId": "",
+          "min": 0,
+          "max": 0
+        },
+        {
+          "id": "good_bonus",
+          "weight": 20,
+          "kind": "gold_multiplier",
+          "value": 1.35,
+          "itemId": "",
+          "min": 0,
+          "max": 0
+        },
+        {
+          "id": "great_bonus",
+          "weight": 5,
+          "kind": "gold_multiplier",
+          "value": 1.8,
+          "itemId": "",
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "minAlchemyLevel": 15,
+      "disabled": false
+    },
+    {
+      "id": "transmute.default",
+      "itemIds": [],
+      "priority": 0,
+      "default": true,
+      "returnRatio": {
+        "minRatio": 0.75,
+        "maxRatio": 0.95
+      },
+      "durationSec": 8,
+      "rarityDurationAddSecByRarityIndex": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        4
+      ],
+      "alchemyExp": 1.25,
+      "failChanceBase": 0.18,
+      "minFailChance": 0.1,
+      "luckyChanceBase": 0.04,
+      "luckyTiers": [
+        {
+          "id": "small_bonus",
+          "weight": 75,
+          "kind": "gold_multiplier",
+          "value": 1.15,
+          "itemId": "",
+          "min": 0,
+          "max": 0
+        },
+        {
+          "id": "good_bonus",
+          "weight": 20,
+          "kind": "gold_multiplier",
+          "value": 1.35,
+          "itemId": "",
+          "min": 0,
+          "max": 0
+        },
+        {
+          "id": "great_bonus",
+          "weight": 5,
+          "kind": "gold_multiplier",
+          "value": 1.8,
+          "itemId": "",
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "minAlchemyLevel": 1,
+      "disabled": false
+    }
+  ]
+}

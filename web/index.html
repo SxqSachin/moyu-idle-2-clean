@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/public/js/gt.js"></script>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>摸鱼放置</title>
+    <style>
+      html,
+      body,
+      #app {
+        min-height: 100%;
+      }
+
+      body {
+        margin: 0;
+        background: #000;
+        color: #fff;
+      }
+
+      .app-preboot {
+        min-height: 100vh;
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+        padding: 28px;
+        box-sizing: border-box;
+        background: rgb(0 0 0 / 92%);
+        color: #fff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .app-preboot__panel {
+        width: min(360px, 100%);
+        display: grid;
+        gap: 11px;
+      }
+
+      .app-preboot__eyebrow {
+        color: rgb(255 255 255 / 48%);
+        font-size: 11px;
+        line-height: 1.4;
+      }
+
+      .app-preboot__title {
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.35;
+        font-weight: 560;
+      }
+
+      .app-preboot__status {
+        margin: 0;
+        color: rgb(255 255 255 / 58%);
+        font-size: 12px;
+        line-height: 1.5;
+      }
+
+      .app-preboot__loading {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        margin-top: 2px;
+      }
+
+      .app-preboot__spinner {
+        width: 12px;
+        height: 12px;
+        box-sizing: border-box;
+        border: 2px solid rgb(255 255 255 / 20%);
+        border-top-color: rgb(255 255 255 / 82%);
+        border-radius: 999px;
+        animation: app-preboot-spin 0.9s linear infinite;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .app-preboot__spinner {
+          animation: none;
+        }
+      }
+
+      @keyframes app-preboot-spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-neutral-950 text-neutral-100">
+    <div id="app"></div>
+    <main id="app-preboot" class="app-preboot">
+      <section class="app-preboot__panel">
+        <div class="app-preboot__eyebrow">摸鱼放置</div>
+        <h1 class="app-preboot__title">正在进入游戏</h1>
+        <div class="app-preboot__loading" aria-label="application loading progress">
+          <span class="app-preboot__spinner"></span>
+          <p class="app-preboot__status">正在启动客户端</p>
+        </div>
+      </section>
+    </main>
+    <script>
+      (() => {
+        const labels = {
+          "zh-CN": { title: "摸鱼放置", prebootTitle: "正在进入游戏", status: "正在启动客户端" },
+          "zh-TW": { title: "摸魚放置", prebootTitle: "正在進入遊戲", status: "正在啟動客戶端" },
+          "en-US": { title: "Moyu-Idle", prebootTitle: "Entering Game", status: "Starting client" },
+          ja: { title: "Moyu-Idle", prebootTitle: "ゲームに入っています", status: "クライアントを起動中" },
+          ko: { title: "Moyu-Idle", prebootTitle: "게임에 들어가는 중", status: "클라이언트 시작 중" },
+          ru: { title: "Moyu-Idle", prebootTitle: "Вход в игру", status: "Запуск клиента" }
+        }
+        const supported = Object.keys(labels)
+        const mapLocale = (raw) => {
+          const value = String(raw || "").trim()
+          if (supported.includes(value)) return value
+          if (/^zh-(tw|hk|mo)\b/i.test(value)) return "zh-TW"
+          if (/^zh\b/i.test(value)) return "zh-CN"
+          if (/^en\b/i.test(value)) return "en-US"
+          if (/^ja\b/i.test(value)) return "ja"
+          if (/^ko\b/i.test(value)) return "ko"
+          if (/^ru\b/i.test(value)) return "ru"
+          return ""
+        }
+        let locale = ""
+        try {
+          locale = mapLocale(localStorage.getItem("locale"))
+        } catch {
+          locale = ""
+        }
+        if (!locale) {
+          const languages = Array.isArray(navigator.languages) && navigator.languages.length > 0 ? navigator.languages : [navigator.language]
+          for (const language of languages) {
+            locale = mapLocale(language)
+            if (locale) break
+          }
+        }
+        locale ||= "en-US"
+        const copy = labels[locale] || labels["en-US"]
+        document.documentElement.lang = locale
+        document.title = copy.title
+        document.querySelector(".app-preboot__eyebrow").textContent = copy.title
+        document.querySelector(".app-preboot__title").textContent = copy.prebootTitle
+        document.querySelector(".app-preboot__status").textContent = copy.status
+      })()
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

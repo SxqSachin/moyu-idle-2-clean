@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "achievement_categories": [
+    {
+      "id": "action",
+      "nameKey": "achievement_category.action.name",
+      "iconId": "achievement.action",
+      "order": 10,
+      "hidden": false,
+      "disabled": false
+    },
+    {
+      "id": "combat",
+      "nameKey": "achievement_category.combat.name",
+      "iconId": "achievement.combat",
+      "order": 20,
+      "hidden": false,
+      "disabled": false
+    },
+    {
+      "id": "fishing",
+      "nameKey": "achievement_category.fishing.name",
+      "iconId": "achievement.fishing",
+      "order": 30,
+      "hidden": false,
+      "disabled": false,
+      "names": {
+        "zh-CN": "钓鱼见闻",
+        "zh-TW": "釣魚見聞",
+        "en-US": "Fishing Journal",
+        "ja": "釣り見聞録",
+        "ko": "낚시 견문록",
+        "ru": "Рыбацкий журнал"
+      }
+    },
+    {
+      "id": "collection",
+      "nameKey": "achievement_category.collection.name",
+      "iconId": "achievement.collection",
+      "order": 40,
+      "hidden": false,
+      "disabled": false
+    },
+    {
+      "id": "commission",
+      "nameKey": "achievement_category.commission.name",
+      "iconId": "achievement.commission",
+      "order": 50,
+      "hidden": false,
+      "disabled": false
+    },
+    {
+      "id": "hidden",
+      "nameKey": "achievement_category.hidden.name",
+      "iconId": "achievement.hidden",
+      "order": 90,
+      "hidden": true,
+      "disabled": false
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buff 表工具</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <div>
+          <h1>Buff 表工具</h1>
+          <p>按“状态”统一编辑：每个状态在同一个弹窗里维护 <code>buff_type</code> / <code>buff</code> / <code>buff_effects</code>，导出时再拆成 3 个表。</p>
+        </div>
+        <div class="hero-actions">
+          <button id="add-status-btn">新增状态</button>
+          <button id="copy-all-btn" class="primary">复制全部 TSV（分段）</button>
+          <button id="download-all-btn">下载全部 TSV（3 文件）</button>
+        </div>
+      </header>
+
+      <section class="panel toolbar">
+        <button id="reset-all-btn">重置全部示例</button>
+        <span id="status" class="status">准备就绪</span>
+      </section>
+
+      <section class="panel note">
+        <strong>用法</strong>
+        <span>在下方状态列表中点“编辑”，在一个弹窗里完成该状态的分类、基础信息和效果规则；可视化配置会自动转成 JSON。</span>
+      </section>
+
+      <section class="panel table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>状态ID</th>
+              <th>状态类型</th>
+              <th>分类ID</th>
+              <th>持续回合</th>
+              <th>永久</th>
+              <th>可驱散</th>
+              <th>规则数量</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody id="status-body"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <div id="editor-modal" class="modal hidden" aria-hidden="true">
+      <div class="modal-backdrop" data-action="close-editor"></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="editor-title">
+        <header class="modal-header">
+          <h2 id="editor-title">编辑器</h2>
+          <button type="button" class="icon-btn" data-action="close-editor">✕</button>
+        </header>
+        <div id="editor-content" class="modal-body"></div>
+        <footer class="modal-footer">
+          <button type="button" data-action="close-editor">取消</button>
+          <button type="button" class="primary" data-action="save-editor">保存</button>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

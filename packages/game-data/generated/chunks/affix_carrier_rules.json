@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "affix_carrier_rules": [
+    {
+      "id": "carrier.engrave_stone",
+      "carrierItemId": "engrave_stone",
+      "allowedRarityIds": [],
+      "active": true,
+      "disabled": false,
+      "maxCustomAffixes": 1,
+      "allowedTraitKind": "both"
+    }
+  ]
+}

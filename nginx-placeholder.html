@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摸鱼放置</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            background-color: #1a1a1a;
+            border: 2px solid #333333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: float 3s ease-in-out infinite alternate;
+        }
+
+        .inner-square {
+            width: 24px;
+            height: 24px;
+            background-color: white;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            100% {
+                transform: translateY(-8px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="inner-square"></div>
+        </div>
+    </div>
+</body>
+</html>

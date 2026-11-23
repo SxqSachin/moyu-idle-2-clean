@@ -1,0 +1,1178 @@
+{
+  "market": {
+    "priceSteps": [
+      {
+        "min": 0,
+        "max": 100,
+        "step": 1
+      },
+      {
+        "min": 100,
+        "max": 1000,
+        "step": 10
+      },
+      {
+        "min": 1000,
+        "max": 10000,
+        "step": 50
+      },
+      {
+        "min": 10000,
+        "max": 100000,
+        "step": 100
+      },
+      {
+        "min": 100000,
+        "max": 1000000,
+        "step": 1000
+      },
+      {
+        "min": 1000000,
+        "max": 10000000,
+        "step": 10000
+      },
+      {
+        "min": 10000000,
+        "max": null,
+        "step": 100000
+      }
+    ]
+  },
+  "auction": {
+    "feeRateBps": 500,
+    "minBidIncrement": 1,
+    "antiSnipeTriggerSeconds": 1800,
+    "antiSnipeExtendSeconds": 600,
+    "minRepLevel": 3
+  },
+  "itemRename": {
+    "cost": {
+      "harmonic_embryo": 1
+    },
+    "maxNameRunes": 16,
+    "labelColors": [
+      "gold",
+      "rose",
+      "violet",
+      "amber",
+      "sky",
+      "emerald",
+      "fuchsia"
+    ]
+  },
+  "playerUsernameRename": {
+    "costItemId": "harmonic_embryo",
+    "costItemCount": 1
+  },
+  "kitty": {
+    "actionDurationMultiplier": 1.5,
+    "statusExpMultiplier": 0,
+    "battleAttrExpMultiplier": 1,
+    "battleSkillExpMultiplier": 1,
+    "battleLevelCapDefault": 100,
+    "battleLevelCapPerKittyLevel": 50,
+    "battleEquipSlots": [
+      "head",
+      "left_hand",
+      "body",
+      "right_hand",
+      "legs",
+      "feet",
+      "accessory_1"
+    ],
+    "removePersonalityItemId": "gold_coin",
+    "removePersonalityCount": 10000,
+    "defaultPersonalityId": "balanced",
+    "maxPersonalities": 4
+  },
+  "presence": {
+    "visibilityOfflineDelaySeconds": 120
+  },
+  "action": {
+    "enhanceInheritanceRatio": 0.5,
+    "queueLaneLimit": 25,
+    "kittyQueueLaneLimit": 3
+  },
+  "attributeLayout": {
+    "scenes": {
+      "character_stats": {
+        "battlePrimary": [
+          "battle",
+          "strength",
+          "dexterity",
+          "intelligence",
+          "perception",
+          "stamina",
+          "luck"
+        ],
+        "battle": [
+          [
+            "hp",
+            "mp",
+            "speed",
+            "physics_damage",
+            "physics_defence",
+            "physics_damage_amplification",
+            "physics_damage_resist",
+            "physics_flat_defense_penetration",
+            "physics_percent_defense_penetration",
+            "crit_chance",
+            "crit_damage",
+            "battle_drop_rate_bonus",
+            "battle_exp_bonus"
+          ],
+          [
+            "hp_regen",
+            "mp_regen",
+            "",
+            "magical_damage",
+            "magical_defence",
+            "magical_damage_amplification",
+            "magical_damage_resist",
+            "magicial_flat_defense_penetration",
+            "magicial_percent_defense_penetration",
+            "magic_crit_chance",
+            "magic_crit_damage",
+            "crit_damage_resist"
+          ]
+        ],
+        "work": [
+          "mining",
+          "collecting",
+          "farming_animal",
+          "cooking",
+          "cooking_speed",
+          "crafting",
+          "sewing",
+          "forging",
+          "enhance",
+          "alchemy_level",
+          "enhancement_success_rate",
+          "collecting_speed",
+          "mining_speed",
+          "farming_animal_speed",
+          "crafting_speed",
+          "sewing_speed",
+          "forging_speed",
+          "alchemy_precision",
+          "alchemy_lucky_chance",
+          "alchemy_craft_success",
+          "alchemy_efficiency"
+        ]
+      },
+      "battle_unit_card": {
+        "battlePrimary": [
+          "strength",
+          "dexterity",
+          "intelligence",
+          "stamina",
+          "luck",
+          "perception"
+        ],
+        "battle": [
+          [
+            "hp",
+            "mp",
+            "speed",
+            "physics_damage",
+            "physics_defence",
+            "physics_damage_amplification",
+            "physics_damage_resist",
+            "physics_flat_defense_penetration",
+            "physics_percent_defense_penetration",
+            "crit_chance",
+            "crit_damage",
+            "battle_drop_rate_bonus",
+            "battle_exp_bonus"
+          ],
+          [
+            "hp_regen",
+            "mp_regen",
+            "",
+            "magical_damage",
+            "magical_defence",
+            "magical_damage_amplification",
+            "magical_damage_resist",
+            "magicial_flat_defense_penetration",
+            "magicial_percent_defense_penetration",
+            "magic_crit_chance",
+            "magic_crit_damage",
+            "crit_damage_resist"
+          ]
+        ],
+        "previewLimit": 8
+      },
+      "battle_unit_card_popover": {
+        "battlePrimary": [
+          "battle"
+        ],
+        "battle": [
+          [
+            "hp",
+            "physics_damage",
+            "physics_defence",
+            "crit_chance",
+            "crit_damage"
+          ],
+          [
+            "mp",
+            "magical_damage",
+            "magical_defence",
+            "magic_crit_chance",
+            "magic_crit_damage"
+          ]
+        ],
+        "previewLimit": 9
+      },
+      "enemy_quick_ref": {
+        "battlePrimary": [
+          "battle",
+          "strength",
+          "dexterity",
+          "intelligence",
+          "stamina",
+          "luck",
+          "perception"
+        ],
+        "battle": [
+          [
+            "hp",
+            "mp",
+            "speed",
+            "physics_damage",
+            "physics_defence",
+            "physics_damage_amplification",
+            "physics_damage_resist",
+            "physics_flat_defense_penetration",
+            "physics_percent_defense_penetration",
+            "crit_chance",
+            "crit_damage"
+          ],
+          [
+            "hp_regen",
+            "mp_regen",
+            "",
+            "magical_damage",
+            "magical_defence",
+            "magical_damage_amplification",
+            "magical_damage_resist",
+            "magicial_flat_defense_penetration",
+            "magicial_percent_defense_penetration",
+            "magic_crit_chance",
+            "magic_crit_damage",
+            "crit_damage_resist"
+          ]
+        ],
+        "previewLimit": 14
+      }
+    }
+  },
+  "catVillageCommission": {
+    "refreshCost": {
+      "gold_coin": 50
+    }
+  },
+  "battleItemBagMaxKinds": 4,
+  "battleItemBagMaxTotalQuantity": 1000,
+  "intervalBetweenItemAndAction": 100,
+  "intervalBetweenMultiHitDamage": 100,
+  "battleChainFloatJitterScale": 4,
+  "combatScoring": {
+    "constants": {
+      "goldPerSecond": 1,
+      "expSeconds": 8,
+      "goldPerBudget": 12,
+      "levelBudgetBase": 10,
+      "levelBudgetGrowth": 10,
+      "levelBudgetPower": 1.18,
+      "affixSlotBaseBudget": 50,
+      "enhanceBaseCostGold": 24,
+      "enhanceCostPower": 1.48,
+      "milestoneWeight": 1,
+      "extraSkillTargetValue": 25,
+      "extraBuffTargetValue": 0.55,
+      "extraTurnValue": 0.45,
+      "cooldownPenaltyPerTurn": 0.08,
+      "mpCostPenalty": 0.55,
+      "targetPositionValue": 4,
+      "rearTargetValue": 12,
+      "seekStrategyValue": 6,
+      "selectRuleValue": 5,
+      "fallbackSelfValue": 3,
+      "battleHookValue": 18,
+      "effectMutationValue": 50,
+      "enhanceAttrScoreMultiplier": 0.72,
+      "affixInstanceScoreMultiplier": 1,
+      "enemySkillScoreMultiplier": 0.45,
+      "enemyGoldRewardRate": 0.18,
+      "enemyExpRewardRate": 0.018,
+      "basicAttackMultiTargetFactor": 0.35,
+      "skillDpsRefPerRound": 0.85,
+      "skillBalanceWarnRatio": 1,
+      "skillBalanceOvertuneRatio": 1.5
+    },
+    "attributeUnitValues": {
+      "hp": 0.1,
+      "mp": 0.25,
+      "hp_regen": 4.5,
+      "mp_regen": 10,
+      "strength": 1,
+      "dexterity": 1,
+      "intelligence": 1,
+      "stamina": 0.9,
+      "luck": 100,
+      "perception": 1,
+      "physics_damage": 1.8182,
+      "magical_damage": 1,
+      "physics_defence": 2,
+      "magical_defence": 2.2222,
+      "crit_chance": 1.0714,
+      "crit_damage": 1.1111,
+      "magic_crit_chance": 1.0714,
+      "magic_crit_damage": 1.1111,
+      "crit_damage_resist": 1.1111,
+      "speed": 2.2222,
+      "physics_damage_amplification": 60,
+      "magical_damage_amplification": 60,
+      "physics_damage_resist": 58,
+      "magical_damage_resist": 58,
+      "physics_flat_defense_penetration": 15,
+      "magicial_flat_defense_penetration": 15,
+      "physics_percent_defense_penetration": 48,
+      "magicial_percent_defense_penetration": 48,
+      "battle_drop_rate_bonus": 16,
+      "battle_exp_bonus": 12,
+      "mining_speed": 1.8,
+      "collecting_speed": 1.8,
+      "farming_animal_speed": 1.8,
+      "cooking_speed": 2,
+      "crafting_speed": 2,
+      "sewing_speed": 2,
+      "forging_speed": 2,
+      "alchemy_precision": 2,
+      "alchemy_lucky_chance": 80,
+      "alchemy_craft_success": 8,
+      "alchemy_efficiency": 2,
+      "enhancement_success_rate": 40
+    },
+    "rarityMultipliers": {
+      "common": 1,
+      "uncommon": 1.18,
+      "rare": 1.45,
+      "epic": 1.82,
+      "legendary": 2.35
+    },
+    "slotMultipliers": {
+      "weapon": 1.35,
+      "helmet": 0.9,
+      "armor": 1.05,
+      "gloves": 0.85,
+      "pants": 0.95,
+      "boots": 0.8,
+      "accessory": 0.95
+    },
+    "enemyAttributeTemplates": {
+      "tiers": [
+        {
+          "key": "normal",
+          "label": "普通",
+          "enemyType": "normal",
+          "budgetMultiplier": 1,
+          "scoreMult": 1,
+          "rewardMult": 1,
+          "pressurePct": 0.15,
+          "targetRounds": {
+            "min": 1,
+            "max": 3
+          },
+          "hpMultiplier": 1
+        },
+        {
+          "key": "elite",
+          "label": "精英",
+          "enemyType": "elite",
+          "budgetMultiplier": 1.35,
+          "scoreMult": 2.3,
+          "rewardMult": 1.33,
+          "pressurePct": 0.2,
+          "targetRounds": {
+            "min": 3,
+            "max": 12
+          },
+          "hpMultiplier": 1
+        },
+        {
+          "key": "boss",
+          "label": "首领",
+          "enemyType": "boss",
+          "budgetMultiplier": 1.8,
+          "scoreMult": 6.5,
+          "rewardMult": 2,
+          "pressurePct": 0.3,
+          "targetRounds": {
+            "min": 4,
+            "max": 25
+          },
+          "hpMultiplier": 1
+        },
+        {
+          "key": "world_boss",
+          "label": "世界首领",
+          "enemyType": "world_boss",
+          "budgetMultiplier": 2.5,
+          "scoreMult": 10,
+          "rewardMult": 2.5,
+          "pressurePct": 0.4,
+          "targetRounds": {
+            "min": 8,
+            "max": 100
+          },
+          "hpMultiplier": 1
+        }
+      ],
+      "roles": [
+        {
+          "key": "tank",
+          "label": "坦克",
+          "weights": {
+            "stamina": 0.35,
+            "strength": 0.2,
+            "perception": 0.12,
+            "dexterity": 0.1,
+            "intelligence": 0.08,
+            "physics_defence": 0.07
+          },
+          "preferredSkillTypes": [
+            "physical",
+            "taunt",
+            "heal"
+          ]
+        },
+        {
+          "key": "warrior",
+          "label": "战士",
+          "weights": {
+            "strength": 0.4,
+            "stamina": 0.22,
+            "dexterity": 0.15,
+            "perception": 0.08,
+            "intelligence": 0.05,
+            "physics_damage": 0.05
+          },
+          "preferredSkillTypes": [
+            "physical",
+            "melee",
+            "aoe"
+          ]
+        },
+        {
+          "key": "mage",
+          "label": "法师",
+          "weights": {
+            "intelligence": 0.42,
+            "perception": 0.28,
+            "stamina": 0.1,
+            "dexterity": 0.08,
+            "strength": 0.05
+          },
+          "preferredSkillTypes": [
+            "magical",
+            "aoe",
+            "debuff"
+          ]
+        },
+        {
+          "key": "assassin",
+          "label": "刺客",
+          "weights": {
+            "dexterity": 0.38,
+            "strength": 0.28,
+            "perception": 0.16,
+            "stamina": 0.1,
+            "intelligence": 0.04
+          },
+          "preferredSkillTypes": [
+            "physical",
+            "single",
+            "crit",
+            "pierce"
+          ],
+          "baseAttrs": {
+            "physics_damage": 8,
+            "crit_chance": 0.03
+          }
+        },
+        {
+          "key": "support",
+          "label": "辅助",
+          "weights": {
+            "intelligence": 0.32,
+            "perception": 0.3,
+            "stamina": 0.18,
+            "dexterity": 0.1,
+            "strength": 0.05
+          },
+          "preferredSkillTypes": [
+            "heal",
+            "buff",
+            "magical"
+          ]
+        },
+        {
+          "key": "magic_tank",
+          "label": "法坦",
+          "weights": {
+            "stamina": 0.3,
+            "intelligence": 0.25,
+            "perception": 0.22,
+            "strength": 0.12,
+            "dexterity": 0.06
+          },
+          "preferredSkillTypes": [
+            "magical",
+            "taunt",
+            "debuff"
+          ]
+        },
+        {
+          "key": "priest",
+          "label": "牧师",
+          "weights": {
+            "perception": 0.4,
+            "intelligence": 0.28,
+            "stamina": 0.18,
+            "dexterity": 0.06,
+            "strength": 0.04
+          },
+          "preferredSkillTypes": [
+            "heal",
+            "magical",
+            "buff"
+          ],
+          "baseAttrs": {
+            "magical_defence": 12,
+            "hp_regen": 3,
+            "mp_regen": 2
+          }
+        },
+        {
+          "key": "archer",
+          "label": "弓手",
+          "weights": {
+            "dexterity": 0.42,
+            "strength": 0.24,
+            "perception": 0.15,
+            "stamina": 0.1,
+            "intelligence": 0.04
+          },
+          "preferredSkillTypes": [
+            "physical",
+            "single",
+            "pierce"
+          ],
+          "baseAttrs": {
+            "physics_damage": 6,
+            "crit_chance": 0.02
+          }
+        },
+        {
+          "key": "berserker",
+          "label": "狂战士",
+          "weights": {
+            "strength": 0.48,
+            "stamina": 0.24,
+            "dexterity": 0.12,
+            "perception": 0.08,
+            "intelligence": 0.04
+          },
+          "preferredSkillTypes": [
+            "physical",
+            "melee",
+            "aoe"
+          ],
+          "baseAttrs": {
+            "physics_damage": 10,
+            "crit_damage": 0.05
+          }
+        },
+        {
+          "key": "scout",
+          "label": "游侠",
+          "weights": {
+            "dexterity": 0.34,
+            "perception": 0.28,
+            "stamina": 0.16,
+            "strength": 0.1,
+            "intelligence": 0.08,
+            "hp": 0.04
+          },
+          "preferredSkillTypes": [
+            "physical",
+            "single",
+            "debuff"
+          ]
+        }
+      ],
+      "species": [
+        {
+          "key": "beast",
+          "label": "野兽",
+          "weights": {
+            "dexterity": 0.04,
+            "strength": 0.03,
+            "stamina": 0.02,
+            "perception": 0.01
+          },
+          "preferredSkillTypes": [
+            "physical",
+            "charge",
+            "speed"
+          ]
+        },
+        {
+          "key": "humanoid",
+          "label": "人形",
+          "weights": {
+            "strength": 0.03,
+            "dexterity": 0.03,
+            "intelligence": 0.02,
+            "perception": 0.02
+          },
+          "preferredSkillTypes": [
+            "physical",
+            "magical",
+            "melee"
+          ]
+        },
+        {
+          "key": "undead",
+          "label": "亡灵",
+          "weights": {
+            "stamina": 0.05,
+            "strength": 0.03,
+            "perception": 0.02
+          },
+          "preferredSkillTypes": [
+            "magical",
+            "debuff",
+            "drain"
+          ],
+          "baseAttrs": {
+            "hp": 15
+          }
+        },
+        {
+          "key": "construct",
+          "label": "构装体",
+          "weights": {
+            "stamina": 0.05,
+            "strength": 0.03,
+            "perception": 0.02
+          },
+          "preferredSkillTypes": [
+            "physical",
+            "aoe",
+            "shield"
+          ],
+          "multipliers": {
+            "physics_defence": 1.12,
+            "speed": 0.88
+          }
+        },
+        {
+          "key": "spirit",
+          "label": "灵体",
+          "weights": {
+            "intelligence": 0.05,
+            "perception": 0.04,
+            "stamina": 0.01
+          },
+          "preferredSkillTypes": [
+            "magical",
+            "pierce",
+            "debuff"
+          ],
+          "baseAttrs": {
+            "magical_damage": 4
+          }
+        },
+        {
+          "key": "plant",
+          "label": "植物",
+          "weights": {
+            "stamina": 0.06,
+            "perception": 0.03,
+            "strength": 0.01
+          },
+          "preferredSkillTypes": [
+            "heal",
+            "buff",
+            "poison"
+          ],
+          "baseAttrs": {
+            "hp_regen": 2
+          }
+        },
+        {
+          "key": "insect",
+          "label": "虫群",
+          "weights": {
+            "dexterity": 0.06,
+            "perception": 0.03,
+            "strength": 0.01
+          },
+          "preferredSkillTypes": [
+            "physical",
+            "speed",
+            "poison"
+          ],
+          "multipliers": {
+            "speed": 1.08
+          }
+        },
+        {
+          "key": "shadow",
+          "label": "暗影",
+          "weights": {
+            "dexterity": 0.05,
+            "perception": 0.04,
+            "strength": 0.01
+          },
+          "preferredSkillTypes": [
+            "physical",
+            "crit",
+            "single"
+          ],
+          "baseAttrs": {
+            "crit_chance": 0.02
+          }
+        },
+        {
+          "key": "elemental",
+          "label": "元素",
+          "weights": {
+            "intelligence": 0.05,
+            "perception": 0.03,
+            "stamina": 0.02
+          },
+          "preferredSkillTypes": [
+            "magical",
+            "aoe",
+            "amplify"
+          ],
+          "baseAttrs": {
+            "magical_damage": 3
+          }
+        },
+        {
+          "key": "feline",
+          "label": "猫族",
+          "weights": {
+            "dexterity": 0.05,
+            "perception": 0.03,
+            "strength": 0.02
+          },
+          "preferredSkillTypes": [
+            "physical",
+            "crit",
+            "speed"
+          ],
+          "baseAttrs": {
+            "speed": 6,
+            "crit_chance": 0.02
+          }
+        },
+        {
+          "key": "dragon",
+          "label": "龙族",
+          "weights": {
+            "strength": 0.03,
+            "stamina": 0.03,
+            "intelligence": 0.02,
+            "perception": 0.02
+          },
+          "preferredSkillTypes": [
+            "magical",
+            "aoe",
+            "breath"
+          ],
+          "baseAttrs": {
+            "hp": 25,
+            "physics_damage": 4,
+            "magical_damage": 4
+          }
+        }
+      ],
+      "derivedStatMinimums": {
+        "hp": 1,
+        "physics_damage": 1,
+        "physics_defence": 1,
+        "magical_damage": 1,
+        "magical_defence": 1
+      }
+    },
+    "dropPricing": {
+      "targetGoldPerSecond": 1,
+      "dropBudgetShare": 0.3,
+      "defaultPlayerCount": 1,
+      "waveScorePerSecond": 12,
+      "specialWaveHorizon": 30,
+      "worldFloorGrowth": 0.25,
+      "worldFloorMaxMultiplier": 2.25,
+      "enemyLevelPriceGrowth": 0.01,
+      "enemyLevelPriceMaxMultiplier": 1.8,
+      "ignoreExistingPriceBelow": 1,
+      "overpricedWarnRatio": 1.5,
+      "enemyTemplateDeviationWarnRatio": 0.5,
+      "enemyTypeWeights": {
+        "normal": 1,
+        "elite": 1.12,
+        "boss": 1.25,
+        "world_boss": 1.5
+      },
+      "rarityRules": [
+        {
+          "key": "common",
+          "weight": 1,
+          "softFloor": 20,
+          "hardCap": 80
+        },
+        {
+          "key": "uncommon",
+          "weight": 1.2,
+          "softFloor": 24,
+          "hardCap": 120
+        },
+        {
+          "key": "rare",
+          "weight": 1.45,
+          "softFloor": 32,
+          "hardCap": 240
+        },
+        {
+          "key": "epic",
+          "weight": 1.75,
+          "softFloor": 48,
+          "hardCap": 320
+        },
+        {
+          "key": "legendary",
+          "weight": 2.2,
+          "softFloor": 120,
+          "hardCap": 500
+        }
+      ]
+    }
+  },
+  "combatDifficulty": {
+    "levels": [
+      {
+        "level": 1,
+        "labelKey": "game.difficulty.level1",
+        "statMultiplierCurve": {
+          "base": 1.15,
+          "step": 0,
+          "overrides": {}
+        },
+        "battleExpBonus": 0.1,
+        "battleDropRateBonus": 0.1
+      },
+      {
+        "level": 2,
+        "labelKey": "game.difficulty.level2",
+        "statMultiplierCurve": {
+          "base": 1.35,
+          "step": 0,
+          "overrides": {}
+        },
+        "battleExpBonus": 0.15,
+        "battleDropRateBonus": 0.15
+      },
+      {
+        "level": 3,
+        "labelKey": "game.difficulty.level3",
+        "statMultiplierCurve": {
+          "base": 1.65,
+          "step": 0,
+          "overrides": {}
+        },
+        "battleExpBonus": 0.2,
+        "battleDropRateBonus": 0.2
+      },
+      {
+        "level": 4,
+        "labelKey": "game.difficulty.level4",
+        "statMultiplierCurve": {
+          "base": 2.1,
+          "step": 0,
+          "overrides": {}
+        },
+        "battleExpBonus": 0.3,
+        "battleDropRateBonus": 0.3
+      },
+      {
+        "level": 5,
+        "labelKey": "game.difficulty.level5",
+        "statMultiplierCurve": {
+          "base": 2.6,
+          "step": 0,
+          "overrides": {}
+        },
+        "battleExpBonus": 0.45,
+        "battleDropRateBonus": 0.45
+      },
+      {
+        "level": 6,
+        "labelKey": "game.difficulty.level6",
+        "statMultiplierCurve": {
+          "base": 3.15,
+          "step": 0,
+          "overrides": {}
+        },
+        "battleExpBonus": 0.6,
+        "battleDropRateBonus": 0.6
+      },
+      {
+        "level": 7,
+        "labelKey": "game.difficulty.level7",
+        "statMultiplierCurve": {
+          "base": 3.8,
+          "step": 0,
+          "overrides": {}
+        },
+        "battleExpBonus": 0.8,
+        "battleDropRateBonus": 0.8
+      },
+      {
+        "level": 8,
+        "labelKey": "game.difficulty.level8",
+        "statMultiplierCurve": {
+          "base": 4.5,
+          "step": 0,
+          "overrides": {}
+        },
+        "battleExpBonus": 1.05,
+        "battleDropRateBonus": 1.05
+      },
+      {
+        "level": 9,
+        "labelKey": "game.difficulty.level9",
+        "statMultiplierCurve": {
+          "base": 5.2,
+          "step": 0,
+          "overrides": {}
+        },
+        "battleExpBonus": 1.3,
+        "battleDropRateBonus": 1.3
+      },
+      {
+        "level": 10,
+        "labelKey": "game.difficulty.level10",
+        "statMultiplierCurve": {
+          "base": 6,
+          "step": 0,
+          "overrides": {}
+        },
+        "battleExpBonus": 1.6,
+        "battleDropRateBonus": 1.6
+      }
+    ],
+    "authoringGuardrails": {
+      "minEnemyLevel": 40,
+      "defenseRetainRatio": 0.12,
+      "defenseBaseCapsByEnemyType": {
+        "normal": 20,
+        "elite": 25,
+        "boss": 30,
+        "world_boss": 35
+      },
+      "critDamageResistRetainRatio": 0.25,
+      "critDamageResistBaseFloorsByEnemyType": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0.12,
+        "world_boss": 0.14
+      },
+      "critDamageResistBaseCapsByEnemyType": {
+        "normal": 0.116667,
+        "elite": 0.125,
+        "boss": 0.133333,
+        "world_boss": 0.141667
+      }
+    }
+  },
+  "combatBalanceModel": {
+    "version": 1,
+    "maxBattleLevel": 500,
+    "primaryPointCap": 500,
+    "primaryPointAttrs": [
+      "strength",
+      "dexterity",
+      "intelligence",
+      "perception",
+      "stamina"
+    ],
+    "defenseK": 100,
+    "enemyHpRegenRatio": 0.34,
+    "percentPenetrationCap": 0.8,
+    "expPerPower": 0.018,
+    "teamExtraEnemyScale": 0.45,
+    "teamRewardEfficiencyCap": 1.15,
+    "comboBudgetMinShare": 0.08,
+    "comboBudgetMaxShare": 0.18,
+    "levelBands": [
+      {
+        "level": 1,
+        "playerDpr": 2,
+        "playerHp": 100,
+        "playerMp": 20,
+        "playerSpeed": 5,
+        "expRate": 1
+      },
+      {
+        "level": 10,
+        "playerDpr": 10,
+        "playerHp": 220,
+        "playerMp": 55,
+        "playerSpeed": 12,
+        "expRate": 1.1
+      },
+      {
+        "level": 20,
+        "playerDpr": 20,
+        "playerHp": 350,
+        "playerMp": 110,
+        "playerSpeed": 20,
+        "expRate": 1.3
+      },
+      {
+        "level": 40,
+        "playerDpr": 40,
+        "playerHp": 400,
+        "playerMp": 260,
+        "playerSpeed": 35,
+        "expRate": 1.6
+      },
+      {
+        "level": 60,
+        "playerDpr": 80,
+        "playerHp": 450,
+        "playerMp": 480,
+        "playerSpeed": 50,
+        "expRate": 2
+      },
+      {
+        "level": 80,
+        "playerDpr": 160,
+        "playerHp": 460,
+        "playerMp": 780,
+        "playerSpeed": 55,
+        "expRate": 2.3
+      },
+      {
+        "level": 100,
+        "playerDpr": 280,
+        "playerHp": 480,
+        "playerMp": 1200,
+        "playerSpeed": 60,
+        "expRate": 2.6
+      },
+      {
+        "level": 120,
+        "playerDpr": 390,
+        "playerHp": 500,
+        "playerMp": 1700,
+        "playerSpeed": 65,
+        "expRate": 3
+      },
+      {
+        "level": 150,
+        "playerDpr": 500,
+        "playerHp": 520,
+        "playerMp": 2500,
+        "playerSpeed": 70,
+        "expRate": 3.4
+      },
+      {
+        "level": 200,
+        "playerDpr": 700,
+        "playerHp": 1000,
+        "playerMp": 3200,
+        "playerSpeed": 75,
+        "expRate": 3.8
+      },
+      {
+        "level": 300,
+        "playerDpr": 1000,
+        "playerHp": 1500,
+        "playerMp": 5000,
+        "playerSpeed": 80,
+        "expRate": 4.4
+      },
+      {
+        "level": 400,
+        "playerDpr": 1250,
+        "playerHp": 2000,
+        "playerMp": 6800,
+        "playerSpeed": 90,
+        "expRate": 5
+      },
+      {
+        "level": 500,
+        "playerDpr": 1800,
+        "playerHp": 2500,
+        "playerMp": 8500,
+        "playerSpeed": 100,
+        "expRate": 5.5
+      }
+    ]
+  },
+  "fogMode": {
+    "playerEncounterChance": 0.1,
+    "specialWaveEvery": 10,
+    "fogPlayerDrops": []
+  },
+  "alchemy": {
+    "infusionBaseGoldCost": 32,
+    "infusionBaseDurationSec": 16,
+    "infusionBaseExp": 2,
+    "durationsSec": {
+      "default": 16,
+      "convert": 14,
+      "bench": 16,
+      "transmute": 8,
+      "smelt": 24
+    },
+    "transmuteDurationByRarityIndex": [8, 9, 10, 11, 12, 12],
+    "levelDeficitFailChancePerLevel": 0.06,
+    "levelDeficitFailChanceCap": 0.85,
+    "inherit": {
+      "baseInheritSlots": 0,
+      "baseSuppressSlots": 0,
+      "inheritSlotPrecisionScalePerPoint": 1,
+      "suppressSlotStabilityBonusPerPoint": 1,
+      "positiveIgnoreKeepChanceBase": 0.4,
+      "negativeIgnoreKeepChanceBase": 1,
+      "hybridMergeDivisor": 1.9,
+      "inbreedMutationChance": 0.99,
+      "inbreedGoodChance": 0.05,
+      "inbreedGoodMultiplierRange": {
+        "min": 1.1,
+        "max": 1.35
+      },
+      "inbreedBadMultiplierRange": {
+        "min": 0.35,
+        "max": 0.8
+      },
+      "mutationChance": 0.15,
+      "numericValueCapMultiplier": 3
+    },
+    "convertGroupEconomyByRarity": {
+      "common": { "gold": 45, "duration": 14, "exp": 2.0, "upgrade": 0.02 },
+      "uncommon": { "gold": 105, "duration": 27, "exp": 3.5, "upgrade": 0.018 },
+      "rare": { "gold": 245, "duration": 39, "exp": 5.0, "upgrade": 0.016 },
+      "epic": { "gold": 550, "duration": 52, "exp": 6.5, "upgrade": 0.014 },
+      "legendary": { "gold": 1200, "duration": 64, "exp": 8.0, "upgrade": 0.0 }
+    }
+  }
+}
